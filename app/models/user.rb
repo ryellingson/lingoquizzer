@@ -3,6 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   attr_writer :login
 
+  has_many :plays
+
   validates :email, uniqueness: true
   validates :username, uniqueness: true
 
