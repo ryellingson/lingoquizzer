@@ -1,1 +1,14 @@
 <%= @game.name %>
+<table>
+    <tr>
+      <th>Character</th>
+      <th>Answer</th>
+    </tr>
+    <% @problems.each do |problem| %>
+      <tr class="problem-tr">
+        <td>
+          <%= problem.question  %>
+        </td>
+      </tr>
+    <% end %>
+  </table>

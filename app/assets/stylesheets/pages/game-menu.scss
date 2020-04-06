@@ -1,0 +1,101 @@
+.main-container {
+  /*border: 1px solid red;*/
+  background-color: ghostwhite;
+  height: 685px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-wrapper {
+  /*border: 1px solid green;*/
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  justify-content: center;
+}
+
+.icon {  /*it doesnt need to be icon cause different image in html*/
+  border: 1px dotted gray;
+  border-radius: 5px;
+  border-bottom: none;
+  object-fit: cover;
+  background-color: rgb(219, 255, 239);
+  height: 110px;
+  width: 110px;
+  padding: 25px 30px;
+}
+
+.kana-wrapper {
+/*border: 1px solid blue;*/
+}
+
+.kana-content {
+ /* border: 1px solid blue;*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.vocab-wrapper {
+/*border: 1px solid orange;*/
+}
+
+.vocab-content {
+  /*border: 1px solid lightblue;*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.grammar-wrapper {
+/*border: 1px solid purple;*/
+}
+
+.grammar-content {
+  /*border: 1px solid purple;*/
+  display: flex;
+  justify-content: center;
+
+}
+
+.level-header {
+  border-bottom: 1px solid black;
+  display: flex;
+  padding: 5px;
+  margin: 15px;
+  font-size: 25px;
+  justify-content: center;
+  font-family: Karla;
+  text-shadow: 2px 2px 6px #3D3D3D;
+}
+
+.level-card {
+  border: 1px solid grey;
+  background-color: ghostwhite;
+  height: 150px;
+  width: 125px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.level-card:hover {
+  opacity: 1.0;
+  -webkit-box-shadow: 0px 24px 85px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 24px 85px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.75);
+}
+
+.level-title {
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 100%;
+  font-family: Karla;
+}
