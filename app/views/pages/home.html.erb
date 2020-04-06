@@ -1,38 +1,47 @@
-<main class="main">
-  <div class="gateway-wrapper">
-    <div class="gateway">
-      <div class="gateway-content">
-        <div class="gateway-tagline">
-          <h2>Have fun while learning Japanese. 始めましょう</h2>
-        </div>
-        <a href="games-menu.html">
-          <div class="gateway-to-games">
-            <h2>Games</h2>
+<div class="home-image">
+  <main class="main">
+    <div class="gateway-wrapper">
+      <div class="gateway">
+        <div class="gateway-content">
+          <div class="gateway-tagline">
+            <h2>Have fun while learning Japanese. 始めましょう</h2>
           </div>
-        </a>
-        <a href="forum.html">
-          <div class="gateway-to-forum">
-            <h2>Forum</h2>
+          <a href="games-menu.html">
+            <div class="gateway-to-games">
+              <h2>Games</h2>
+            </div>
+          </a>
+          <a href="forum.html">
+            <div class="gateway-to-forum">
+              <h2>Forum</h2>
+            </div>
+          </a>
+          <div class="gateway-to-join modal-btn">
+            <h2>Join for free</h2>
           </div>
-        </a>
-        <div class="gateway-to-join modal-btn">
-          <h2>Join for free</h2>
         </div>
       </div>
     </div>
-  </div>
-  <div class="modal-bg">
-    <div class="modal">
-      <h2>Join our community!</h2>
-      <label for="username">Username: </label>
-      <input type="text" name="username">
-      <label for="email">Email: </label>
-      <input type="email" name="email">
-      <label for="password">Password: </label>
-      <input type="password" name="password">
-      <button>Join</button>
-      <span class="modal-close">X</span>
+    <div class="modal-bg">
+      <div class="modal">
+        <h2>Join our community!</h2>
+        <label for="username">Username: </label>
+        <input type="text" name="username">
+        <label for="email">Email: </label>
+        <input type="email" name="email">
+        <label for="password">Password: </label>
+        <input type="password" name="password">
+        <button>Join</button>
+        <span class="modal-close">X</span>
+      </div>
     </div>
-  </div>
+  </main>
+</div>
 
-</main>
+  <div class="create-hangout-btn-home">
+    <% if user_signed_in? %>
+      <%= link_to "Create a hangout", new_hangout_path, class: "hangout-btn btn-primary" %>
+    <% else %>
+      <%= link_to "Create a hangout", new_user_registration_path, class: "hangout-btn btn-primary" %>
+    <% end %>
+  </div>
