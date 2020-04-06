@@ -1,0 +1,242 @@
+[
+  {
+    "char_id": "a",
+    "character": "あ",
+    "romanization": "a"
+  },
+  {
+    "char_id": "i",
+    "character": "い",
+    "romanization": "i"
+  },
+  {
+    "char_id": "u",
+    "character": "う",
+    "romanization": "u"
+  },
+  {
+    "char_id": "e",
+    "character": "え",
+    "romanization": "e"
+  },
+  {
+    "char_id": "o",
+    "character": "お",
+    "romanization": "o"
+  },
+  {
+    "char_id": "ka",
+    "character": "か",
+    "romanization": "ka"
+  },
+  {
+    "char_id": "ki",
+    "character": "き",
+    "romanization": "ki"
+  },
+  {
+    "char_id": "ku",
+    "character": "く",
+    "romanization": "ku"
+  },
+  {
+    "char_id": "ke",
+    "character": "け",
+    "romanization": "ke"
+  },
+  {
+    "char_id": "ko",
+    "character": "こ",
+    "romanization": "ko"
+  },
+  {
+    "char_id": "sa",
+    "character": "さ",
+    "romanization": "sa"
+  },
+  {
+    "char_id": "si",
+    "character": "し",
+    "romanization": "shi"
+  },
+  {
+    "char_id": "su",
+    "character": "す",
+    "romanization": "su"
+  },
+  {
+    "char_id": "se",
+    "character": "せ",
+    "romanization": "se"
+  },
+  {
+    "char_id": "so",
+    "character": "そ",
+    "romanization": "so"
+  },
+  {
+    "char_id": "ta",
+    "character": "た",
+    "romanization": "ta"
+  },
+  {
+    "char_id": "ti",
+    "character": "ち",
+    "romanization": "chi"
+  },
+  {
+    "char_id": "tu",
+    "character": "つ",
+    "romanization": "tsu"
+  },
+  {
+    "char_id": "te",
+    "character": "て",
+    "romanization": "te"
+  },
+  {
+    "char_id": "to",
+    "character": "と",
+    "romanization": "to"
+  },
+  {
+    "char_id": "na",
+    "character": "な",
+    "romanization": "na"
+  },
+  {
+    "char_id": "ni",
+    "character": "に",
+    "romanization": "ni"
+  },
+  {
+    "char_id": "nu",
+    "character": "ぬ",
+    "romanization": "nu"
+  },
+  {
+    "char_id": "ne",
+    "character": "ね",
+    "romanization": "ne"
+  },
+  {
+    "char_id": "no",
+    "character": "の",
+    "romanization": "no"
+  },
+  {
+    "char_id": "ha",
+    "character": "は",
+    "romanization": "ha"
+  },
+  {
+    "char_id": "hi",
+    "character": "ひ",
+    "romanization": "hi"
+  },
+  {
+    "char_id": "hu",
+    "character": "ふ",
+    "romanization": "fu"
+  },
+  {
+    "char_id": "he",
+    "character": "へ",
+    "romanization": "he"
+  },
+  {
+    "char_id": "ho",
+    "character": "ほ",
+    "romanization": "ho"
+  },
+  {
+    "char_id": "ma",
+    "character": "ま",
+    "romanization": "ma"
+  },
+  {
+    "char_id": "mi",
+    "character": "み",
+    "romanization": "mi"
+  },
+  {
+    "char_id": "mu",
+    "character": "む",
+    "romanization": "mu"
+  },
+  {
+    "char_id": "me",
+    "character": "め",
+    "romanization": "me"
+  },
+  {
+    "char_id": "mo",
+    "character": "も",
+    "romanization": "mo"
+  },
+  {
+    "char_id": "ya",
+    "character": "や",
+    "romanization": "ya"
+  },
+  {
+    "char_id": "yu",
+    "character": "ゆ",
+    "romanization": "yu"
+  },
+  {
+    "char_id": "yo",
+    "character": "よ",
+    "romanization": "yo"
+  },
+  {
+    "char_id": "ra",
+    "character": "ら",
+    "romanization": "ra"
+  },
+  {
+    "char_id": "ri",
+    "character": "り",
+    "romanization": "ri"
+  },
+  {
+    "char_id": "ru",
+    "character": "る",
+    "romanization": "ru"
+  },
+  {
+    "char_id": "re",
+    "character": "れ",
+    "romanization": "re"
+  },
+  {
+    "char_id": "ro",
+    "character": "ろ",
+    "romanization": "ro"
+  },
+  {
+    "char_id": "wa",
+    "character": "わ",
+    "romanization": "wa"
+  },
+  {
+    "char_id": "wi",
+    "character": "ゐ",
+    "romanization": "wi"
+  },
+  {
+    "char_id": "we",
+    "character": "ゑ",
+    "romanization": "we"
+  },
+  {
+    "char_id": "wo",
+    "character": "を",
+    "romanization": "wo"
+  },
+  {
+    "char_id": "-n",
+    "character": "ん",
+    "romanization": "n"
+  }
+]
