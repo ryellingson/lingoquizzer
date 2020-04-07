@@ -13,7 +13,7 @@
           </a>
           <a href="forum.html">
             <div class="gateway-to-forum">
-              <h2>Forum</h2>
+              <h2><%= link_to "Forum", forum_path %></h2>
             </div>
           </a>
           <div class="gateway-to-join modal-btn">
@@ -36,12 +36,4 @@
       </div>
     </div>
   </main>
-</div>
-
-<div class="create-hangout-btn-home">
-  <% if user_signed_in? %>
-  <%= link_to "Create a hangout", new_hangout_path, class: "hangout-btn btn-primary" %>
-  <% else %>
-  <%= link_to "Create a hangout", new_user_registration_path, class: "hangout-btn btn-primary" %>
-  <% end %>
 </div>
