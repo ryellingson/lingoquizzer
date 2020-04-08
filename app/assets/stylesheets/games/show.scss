@@ -1,0 +1,123 @@
+h1 {
+  font-family: Karla;
+}
+table {
+  font-family: Karla;
+  border-collapse: collapse;
+}
+
+.table-wrapper {
+  display: flex;
+}
+
+.title-wrapper {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.table-title {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  color: #009879;
+  border-bottom: 3px solid #009879;
+  border-radius: 15px;
+  text-shadow: 1px 2px 2px #616161;
+
+
+}
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.content-table thead tr {
+  background-color: #009879; /*nice green*/
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td  {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+  text-align: center;
+
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd; /*light grey*/
+}
+
+.content-table tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879; /*header green*/
+}
+
+.last-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-controls {
+  border: 1px solid #dddddd;
+  height: 420px;
+}
+
+.play-button {
+  border: 1px solid grey;
+  background-color: rgb(23, 255, 243);
+  color: white;
+  text-shadow: 1px 2px 10px rgba(0,0,0,0.6);
+  font-size: 25px;
+  font-family: 'Karla';
+  font-weight: 900;
+  margin: 10px;
+}
+
+.play-button:hover {
+  background-color: rgb(24, 222, 212);
+}
+
+.count {
+  border: 1px solid lightgrey;
+  font-size: 25px;
+  font-family: 'Karla';
+  margin: 10px;
+  background-color: #f3f3f3;
+}
+
+.timer {
+  border: 1px solid lightgrey;
+  font-size: 25px;
+  font-family: 'Karla';
+  margin: 10px;
+  background-color: #f3f3f3;
+}
+
+.score {
+  border: 1px solid lightgrey;
+  font-size: 25px;
+  font-family: 'Karla';
+  margin: 10px;
+  background-color: #f3f3f3;
+}
+

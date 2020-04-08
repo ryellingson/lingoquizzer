@@ -1,14 +1,142 @@
 <%= @game.name %>
-<table>
-    <tr>
-      <th>Character</th>
-      <th>Answer</th>
-    </tr>
-    <% @problems.each do |problem| %>
-      <tr class="problem-tr">
-        <td>
-          <%= problem.question  %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
+
+<div class="main-container">
+  <div class="title-wrapper">
+    <h2>JQ</h2>
+    <div class="table-title">
+      <h1>Hiragana Sprint</h1>
+    </div>
+    <input type="text">
+  </div>
+  <div class="table-wrapper">
+    <table class="content-table" id="gameTable">
+      <tbody>
+        <tr>
+          <td class="gametable-col">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>English Syllable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[0...11].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td>
+                    <%= problem.answer %>
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+          <td class="gametable-col">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>English Syllable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[11...22].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td>
+                    <%= problem.answer %>
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+          <td class="gametable-col">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>English Syllable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[22...33].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td>
+                    <%= problem.answer %>
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+          <td class="gametable-col">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>English Syllable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[33...44].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td>
+                    <%= problem.answer %>
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+          <td class="gametable-col last-table">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>English Syllable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[44...46].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td>
+                    <%= problem.answer %>
+                  </td>
+                </tr>
+                <% end %>
+                <div class="game-controls">
+                  <div class="play-button">
+                   <p>Play</p>
+                 </div>
+                 <div class="count">
+                   <p>0/46</p>
+                 </div>
+                 <div class="timer">
+                   <p>2:00m</p>
+                 </div>
+                 <div class="score">
+                   <p>75pts</p>
+                 </div>
+               </div>
+             </tbody>
+           </table>
+         </td>
+       </table>
+     </div>
+   </div>
+ </div>
