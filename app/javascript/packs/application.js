@@ -8,20 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-const initModal = () => {
-  var modalBtn = document.querySelector('.modal-btn');
-  var modalBg = document.querySelector('.modal-bg');
-  var modalClose = document.querySelector('.modal-close');
-
-  modalBtn.addEventListener('click', function () {
-    modalBg.classList.add('bg-active');
-  });
-
-  modalClose.addEventListener('click', function () {
-    modalBg.classList.remove('bg-active');
-  });
-}
-
+import { initModal } from "../components/modal"
 document.addEventListener('turbolinks:load', function(e) {
   initModal();
 });
