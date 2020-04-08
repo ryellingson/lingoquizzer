@@ -1,0 +1,40 @@
+.sidebar-left {
+  background: #261B25;
+  flex-direction: column;
+}
+.sidebar-right {
+  background: #4B3949;
+  width: 200px;
+  color: white;
+}
+.sidebar-button {
+  font-size: 18px;
+  color: white;
+  opacity: 0.3;
+  display: inline-block;
+  background: none;
+}
+.sidebar-button:hover {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.sidebar-left > .active {
+  background: #514851;
+  opacity: 1;
+  font-weight: bold;
+}
+.sidebar-right p {
+  margin: 0;
+  opacity: 0.7;
+}
+.sidebar-section h3, .sidebar-section i {
+  font-size: 16px;
+}
+.sidebar-section {
+  margin-top: 16px;
+}
+.sidebar-right > .active {
+  opacity: 1;
+}

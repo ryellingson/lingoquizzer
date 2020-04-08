@@ -1,0 +1,8 @@
+.chat-container {
+  flex-grow: 1;
+  flex-direction: column;
+}
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: scroll;
+}

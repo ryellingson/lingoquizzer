@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+h3 {
+  font-size: 23px;
+}
+.padded {
+  padding: 30px 0;
+}
+a {
+  text-decoration: none;
+}
+ /*sidebar start*/
+
+.sidebar-left {
+  background: rgb(36,80,54); /*dark green*/
+  flex-direction: column;
+}
+.sidebar-right {
+  background: rgb(102,138,106); /*green*/
+  width: 200px;
+  color: white;
+}
+.sidebar-button {
+  font-size: 25px;
+  width: 60px;
+  color: white;
+  /*opacity: 0.9;*/
+  display: inline-block;
+  background-color: rgb(233,63,51);
+}
+.sidebar-button:hover {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-right p {
+  margin: 0;
+  opacity: 0.7;
+}
+.sidebar-section h3, .sidebar-section i {
+  font-size: 16px;
+}
+.sidebar-section {
+  margin-top: 16px;
+}
+.sidebar-right > .active {
+  opacity: 1;
+}
+
+/*sidebar end */
+
+/*badges start*/
+
+.green-circle {
+  color: #1FE5BD;
+  font-size: 12px !important;
+  padding: 0 2px 2px 0;
+  opacity: 1;
+}
+.white-circle {
+  color: white;
+  font-size: 12px !important;
+  padding: 0 2px 2px 0;
+  opacity: 0.7;
+}
+.active {
+  opacity: 1 !important;
+}
+
+/*badges end*/
+
+/*chat start*/
+
+.chat-container {
+  flex-grow: 1;
+  flex-direction: column;
+}
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+/*chat end*/
+
+/*messages start*/
+
+.message {
+  display: flex;
+  margin-bottom: 8px;
+}
+.message img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+.message-content {
+  flex-grow: 1;
+}
+.message-title p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/*messages end*/
+
