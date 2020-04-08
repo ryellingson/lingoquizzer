@@ -1,4 +1,3 @@
-
 const initModal = () => {
   var modalBtn = document.querySelector('.modal-btn');
   var modalBg = document.querySelector('.modal-bg');
@@ -13,4 +12,4 @@ const initModal = () => {
   });
 }
 
-export { initModal };
+export { initModal }
