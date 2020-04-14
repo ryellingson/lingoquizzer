@@ -14,7 +14,16 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css?family=Karla|Nunito+Sans&display=swap');
+ // Graphical variables
+@import "library/fonts";
+
+// External libraries
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// My CSS
+@import "components/index";
+@import "pages/index";
 @import "games/*";
-@import "components/*";
-// @import "config/*";
+
+// @import "config/*"; Why does this break everything?
