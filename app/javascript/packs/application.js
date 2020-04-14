@@ -10,6 +10,8 @@ require("channels")
 
 import { initModal } from "../components/modal";
 
+import { initDropDown } from "../components/dropdown"
+
 document.addEventListener('turbolinks:load', function(e) {
   initModal();
 });
