@@ -8,8 +8,6 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-console.log("Webpack");
-
 import { initModal } from "../components/modal";
 
 document.addEventListener('turbolinks:load', function(e) {

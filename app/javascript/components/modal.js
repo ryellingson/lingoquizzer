@@ -12,4 +12,4 @@ const initModal = () => {
   });
 }
 
-export { initModal }
+export { initModal };
