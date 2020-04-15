@@ -1,19 +1,20 @@
+<%= render 'shared/header' %>
 <main>
-  <div class="main-container">
+  <div class="main-container games-container">
     <div class="games-wrapper">
       <div class="kana-wrapper">
         <div class="level-header">
           <h2>Kana</h2>
         </div>
         <div class="kana-content">
-          <a href="games/4" target="_blank" class="level-card">
-            <div class="icon">
-              <%= image_tag "icon-hiragana.jpg" %>
-            </div>
-            <div class="level-title">
-              <h3>Hiragana</h3>
-            </div>
-          </a>
+          <%= link_to game_path(Game.first), class: "level-card" do %>
+          <div class="icon">
+            <%= image_tag "icon-hiragana.jpg" %>
+          </div>
+          <div class="level-title">
+            <h3>Hiragana</h3>
+          </div>
+          <% end  %>
           <a href="#" class="level-card">
            <div class="icon">
             <img src="../media/images/icon-katakana-5.jpg" alt="katakana">

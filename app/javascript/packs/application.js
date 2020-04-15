@@ -14,6 +14,7 @@ import { initDropDown } from "../components/dropdown"
 
 document.addEventListener('turbolinks:load', function(e) {
   initModal();
+  initDropDown();
 });
 
 

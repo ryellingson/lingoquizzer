@@ -1,6 +1,9 @@
 .main-container {
   /*border: 1px solid red;*/
   background-color: ghostwhite;
+}
+
+.games-container {
   height: 685px;
   display: flex;
   justify-content: center;
@@ -34,8 +37,8 @@
 
 .kana-content {
  /* border: 1px solid blue;*/
-  display: flex;
-  justify-content: space-around;
+ display: flex;
+ justify-content: space-around;
 }
 
 .vocab-wrapper {
