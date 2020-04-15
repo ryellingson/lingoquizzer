@@ -16,7 +16,7 @@
                 <thead>
                   <tr>
                     <th>Hiragana</th>
-                    <th>English Syllable</th>
+                    <th>Romaji</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -38,17 +38,17 @@
                 <thead>
                   <tr>
                     <th>Hiragana</th>
-                    <th>English Syllable</th>
+                    <th>Romaji</th>
                   </tr>
                 </thead>
                 <tbody>
                   <% @problems[11...22].each do |problem| %>
                   <tr class="#">
-                    <td>
+                    <td data-answer="<%= problem.answer %>">
                       <%= problem.question %>
                     </td>
                     <td>
-                      <%= problem.answer %>
+                      <!-- space for answer -->
                     </td>
                   </tr>
                   <% end %>
@@ -60,17 +60,17 @@
                 <thead>
                   <tr>
                     <th>Hiragana</th>
-                    <th>English Syllable</th>
+                    <th>Romaji</th>
                   </tr>
                 </thead>
                 <tbody>
                   <% @problems[22...33].each do |problem| %>
                   <tr class="#">
-                    <td>
+                    <td data-answer="<%= problem.answer %>">
                       <%= problem.question %>
                     </td>
                     <td>
-                      <%= problem.answer %>
+                      <!-- space for answer -->
                     </td>
                   </tr>
                   <% end %>
@@ -82,17 +82,17 @@
                 <thead>
                   <tr>
                     <th>Hiragana</th>
-                    <th>English Syllable</th>
+                    <th>Romaji</th>
                   </tr>
                 </thead>
                 <tbody>
                   <% @problems[33...44].each do |problem| %>
                   <tr class="#">
-                    <td>
+                    <td data-answer="<%= problem.answer %>">
                       <%= problem.question %>
                     </td>
                     <td>
-                      <%= problem.answer %>
+                      <!-- space for answer -->
                     </td>
                   </tr>
                   <% end %>
@@ -104,17 +104,17 @@
                 <thead>
                   <tr>
                     <th>Hiragana</th>
-                    <th>English Syllable</th>
+                    <th>Romaji</th>
                   </tr>
                 </thead>
                 <tbody>
                   <% @problems[44...46].each do |problem| %>
                   <tr class="#">
-                    <td>
+                    <td data-answer="<%= problem.answer %>">
                       <%= problem.question %>
                     </td>
                     <td>
-                      <%= problem.answer %>
+                      <!-- space for answer -->
                     </td>
                   </tr>
                   <% end %>
