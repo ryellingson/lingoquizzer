@@ -18,7 +18,7 @@ table {
 }
 
 .table-title {
-  border: 1px solid red;
+  // border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 400px;
@@ -91,6 +91,7 @@ table {
   font-family: 'Karla';
   font-weight: 900;
   margin: 10px;
+  padding: 15px;
 }
 
 .play-button:hover {
@@ -119,5 +120,9 @@ table {
   font-family: 'Karla';
   margin: 10px;
   background-color: #f3f3f3;
+}
+
+.hidden {
+  display: none;
 }
 

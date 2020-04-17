@@ -22,10 +22,10 @@
                 <tbody>
                   <% @problems[0...11].each do |problem| %>
                   <tr class="#">
-                    <td data-answer="<%= problem.answer %>">
+                    <td>
                       <%= problem.question %>
                     </td>
-                    <td>
+                    <td data-answer="<%= problem.answer %>" class="answer">
                       <!-- space for answer -->
                     </td>
                   </tr>
@@ -44,10 +44,10 @@
                 <tbody>
                   <% @problems[11...22].each do |problem| %>
                   <tr class="#">
-                    <td data-answer="<%= problem.answer %>">
+                    <td>
                       <%= problem.question %>
                     </td>
-                    <td>
+                    <td data-answer="<%= problem.answer %>" class="answer">
                       <!-- space for answer -->
                     </td>
                   </tr>
@@ -88,10 +88,10 @@
                 <tbody>
                   <% @problems[33...44].each do |problem| %>
                   <tr class="#">
-                    <td data-answer="<%= problem.answer %>">
+                    <td>
                       <%= problem.question %>
                     </td>
-                    <td>
+                    <td data-answer="<%= problem.answer %>" class="answer">
                       <!-- space for answer -->
                     </td>
                   </tr>
@@ -110,10 +110,10 @@
                 <tbody>
                   <% @problems[44...46].each do |problem| %>
                   <tr class="#">
-                    <td data-answer="<%= problem.answer %>">
+                    <td>
                       <%= problem.question %>
                     </td>
-                    <td>
+                    <td data-answer="<%= problem.answer %>" class="answer">
                       <!-- space for answer -->
                     </td>
                   </tr>
@@ -122,6 +122,7 @@
                     <div class="play-button">
                      <p>Play</p>
                    </div>
+                   <input type="text" class="game-input hidden">
                    <div class="count">
                      <p>0/46</p>
                    </div>

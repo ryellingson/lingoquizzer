@@ -12,9 +12,12 @@ import { initModal } from "../components/modal";
 
 import { initDropDown } from "../components/dropdown"
 
+import { initGame } from "../components/kana_game"
+
 document.addEventListener('turbolinks:load', function(e) {
   initModal();
   initDropDown();
+  initGame();
 });
 
 
