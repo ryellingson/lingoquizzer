@@ -69,7 +69,7 @@
                     <td data-answer="<%= problem.answer %>">
                       <%= problem.question %>
                     </td>
-                    <td>
+                    <td data-answer="<%= problem.answer %>" class="answer">
                       <!-- space for answer -->
                     </td>
                   </tr>
@@ -119,25 +119,32 @@
                   </tr>
                   <% end %>
                   <div class="game-controls">
-                    <div class="play-button">
-                     <p>Play</p>
+                      <div class="play-button">
+                       <p>Play</p>
+                     </div>
+                     <div class="hidden">
+                       <button class="back-button">Back</button>
+                       <button class="next-button">Next</button>
+                       <input type="text" class="game-input">
+                     </div>
+                     <div class="correct-count">
+                       <p>0/46</p>
+                     </div>
+                     <div class="timer">
+                       <p>2:00m</p>
+                     </div>
+                     <div class="score">
+                       <p>0pts</p>
+                     </div>
+                     <div class="game-status hidden">
+                       Game Over
+                     </div>
                    </div>
-                   <input type="text" class="game-input hidden">
-                   <div class="count">
-                     <p>0/46</p>
-                   </div>
-                   <div class="timer">
-                     <p>2:00m</p>
-                   </div>
-                   <div class="score">
-                     <p>75pts</p>
-                   </div>
-                 </div>
-               </tbody>
-             </table>
-           </td>
-         </table>
+                 </tbody>
+               </table>
+             </td>
+           </table>
+         </div>
        </div>
      </div>
    </div>
- </div>
