@@ -3,16 +3,16 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
-require("channels")
+require("@rails/ujs").start();
+require("turbolinks").start();
+require("@rails/activestorage").start();
+require("channels");
 
 import { initModal } from "../components/modal";
 
-import { initDropDown } from "../components/dropdown"
+import { initDropDown } from "../components/dropdown";
 
-import { initGame } from "../components/kana_game"
+import { initGame } from "../components/kana_game";
 
 document.addEventListener('turbolinks:load', function(e) {
   initModal();
