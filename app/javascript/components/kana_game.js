@@ -10,7 +10,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 5;
+  let timeLeft = 120;
   let interval;
 
   const startGame = () => {
@@ -60,11 +60,11 @@ const initGame = () => {
 
 export { initGame }
 
-// making an array with all the all the question answers
+// make an array with all the all the question answers
 // set the current answer as the first answer
 // set the current index as 0
 // add an event listener to the game input that listens to a change in the value
-// check if the value is the as the current answer, if it is we empty the input and put answer in cell
+// check if the value is the same as the current answer, if it is we empty the input and put answer in cell
 // update our current index and current answer
 // add active row to next cell
 // post results to db
