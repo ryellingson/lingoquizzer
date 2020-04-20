@@ -1,17 +1,20 @@
 const initGame = () => {
   const playButton = document.querySelector(".play-button");
+  const replayButton = document.querySelector(".restart")
   const gameInput = document.querySelector(".game-input");
   const answers = document.querySelectorAll(".answer");
   const backButton = document.querySelector(".back-button");
   const nextButton = document.querySelector(".next-button");
   const correctCountShow = document.querySelector(".correct-count");
   const timeShow = document.querySelector(".timer");
-  const scoreShow = document.querySelector(".score")
+  const scoreShow = document.querySelector(".score");
+  const endGameModal = document.querySelector(".modal-bg");
+  const gameStats = document.querySelector(".game-stats");
 
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 120;
+  let timeLeft = 10;
   let interval;
   let score = 0;
 
@@ -62,8 +65,6 @@ const initGame = () => {
   }
 
   const displayEndGameModal = () => {
-    const endGameModal = document.querySelector(".modal-bg");
-    const gameStats = document.querySelector(".game-stats");
     endGameModal.classList.add("bg-active");
     gameStats.insertAdjacentHTML("afterbegin",
       `<div>Correct Answers: ${correctCountValue}/46</div>
@@ -72,6 +73,20 @@ const initGame = () => {
        `);
   }
 
+  const restartGame = () => {
+    // endGameModal.classList.remove("bg-active");
+    // interval = setInterval(updateTimer, 1000);
+    // gameInput.addEventListener('input', handleInputChange);
+    // gameInput.focus();
+    // currentAnswer.parentNode.classList.add("active-row");
+    // score = 0;
+    // correctCountValue = 0;
+    // timeLeft = 120;
+    location.reload();
+    startGame();
+  }
+
+  replayButton.addEventListener('click', restartGame);
   playButton.addEventListener('click', startGame);
   nextButton.addEventListener('click', () => updateCurrentAnswer("next"));
   backButton.addEventListener('click', () => updateCurrentAnswer("back"));
