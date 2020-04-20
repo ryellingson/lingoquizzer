@@ -1,10 +1,14 @@
 .main-container {
-  /*border: 1px solid red;*/
+  border: 3px solid cyan;
   background-color: ghostwhite;
+  display: flex;
+  justify-content: space-around
 }
 
 .games-container {
+  border: 3px solid pink;
   height: 685px;
+  width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,4 +105,9 @@
   height: 32px;
   width: 100%;
   font-family: Karla;
+}
+
+.menu-leaderboard {
+  border: 1px solid black;
+  width: 300px;
 }

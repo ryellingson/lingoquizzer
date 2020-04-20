@@ -1,60 +1,61 @@
 <%= render 'shared/header' %>
 <main>
-  <div class="main-container games-container">
-    <div class="games-wrapper">
-      <div class="kana-wrapper">
-        <div class="level-header">
-          <h2>Kana and Kanji</h2>
+  <div class="main-container">
+    <div class="games-container">
+      <div class="games-wrapper">
+        <div class="kana-wrapper">
+          <div class="level-header">
+            <h2>Kana and Kanji</h2>
+          </div>
+          <div class="kana-content">
+            <%= link_to game_path(Game.first), class: "level-card" do %>
+            <div class="icon">
+              <%= image_tag "icon-hiragana.jpg" %>
+            </div>
+            <div class="level-title">
+              <h3>Hiragana</h3>
+            </div>
+            <% end %>
+            <a href="#" class="level-card">
+             <div class="icon">
+              <%= image_tag "icon-katakana-5.jpg" %>
+            </div>
+            <div class="level-title">
+              <h3>Katakana</h3>
+            </div>
+          </a>
         </div>
-        <div class="kana-content">
-          <%= link_to game_path(Game.first), class: "level-card" do %>
-          <div class="icon">
-            <%= image_tag "icon-hiragana.jpg" %>
-          </div>
-          <div class="level-title">
-            <h3>Hiragana</h3>
-          </div>
-          <% end %>
+      </div>
+      <div class="vocab-wrapper">
+        <div class="level-header">
+          <h2>Vocab</h2>
+        </div>
+        <div class="vocab-content">
           <a href="#" class="level-card">
            <div class="icon">
-            <%= image_tag "icon-katakana-5.jpg" %>
+            <%= image_tag "icon-food-1.jpg" %>
           </div>
           <div class="level-title">
-            <h3>Katakana</h3>
+            <h3>Food</h3>
           </div>
         </a>
-      </div>
-    </div>
-    <div class="vocab-wrapper">
-      <div class="level-header">
-        <h2>Vocab</h2>
-      </div>
-      <div class="vocab-content">
         <a href="#" class="level-card">
          <div class="icon">
-          <%= image_tag "icon-food-1.jpg" %>
+          <%= image_tag "icon-animals-1.jpg" %>
         </div>
         <div class="level-title">
-          <h3>Food</h3>
+          <h3>Animals</h3>
         </div>
       </a>
       <a href="#" class="level-card">
        <div class="icon">
-        <%= image_tag "icon-animals-1.jpg" %>
+        <%= image_tag "icon-tech-2.jpg" %>
       </div>
       <div class="level-title">
-        <h3>Animals</h3>
+        <h3>TechLab</h3>
       </div>
     </a>
-    <a href="#" class="level-card">
-     <div class="icon">
-      <%= image_tag "icon-tech-2.jpg" %>
-    </div>
-    <div class="level-title">
-      <h3>TechLab</h3>
-    </div>
-  </a>
-</div>
+  </div>
 </div>
 <div class="grammer-wrapper">
   <div class="level-header">
@@ -73,6 +74,10 @@
   </a>
 </div>
 </div>
+</div>
+</div>
+<div class="menu-leaderboard">
+  Leaderboard
 </div>
 </div>
 </main>
