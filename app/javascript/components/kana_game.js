@@ -11,7 +11,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 5;
+  let timeLeft = 120;
   let interval;
   let score = 0;
 
@@ -65,7 +65,7 @@ const initGame = () => {
     const endGameModal = document.querySelector(".modal-bg");
     const gameStats = document.querySelector(".game-stats");
     endGameModal.classList.add("bg-active");
-    gameStats.insertAdjacentHTML("beforeend",
+    gameStats.insertAdjacentHTML("afterbegin",
       `<div>Correct Answers: ${correctCountValue}/46</div>
        <div>Time Bonus: ${timeLeft}pts</div>
        <div>Score: ${score}pts</div>
