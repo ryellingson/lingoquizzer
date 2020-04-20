@@ -7,16 +7,20 @@
           <div class="gateway-tagline">
             <h2>Have fun while learning Japanese. 始めましょう</h2>
           </div>
-          <a href="games-menu.html">
-            <div class="gateway-to-games">
-             <h2><%= link_to "Games", games_path %></h2>
-            </div>
-          </a>
-          <a href="forum.html">
-            <div class="gateway-to-forum">
-              <h2><%= link_to "Forum", forum_path %></h2>
-            </div>
-          </a>
+          <%= link_to games_path do %>
+          <div class="gateway-to-games stroke">
+            <h2 class="test">Games</h2>
+            <svg>
+              <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+              <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+            </svg>
+          </div>
+          <% end %>
+          <%= link_to forum_path do %>
+          <div class="gateway-to-forum">
+            <h2>Forum</h2>
+          </div>
+          <% end %>
           <div class="gateway-to-join modal-btn">
             <h2>Join for free</h2>
           </div>
