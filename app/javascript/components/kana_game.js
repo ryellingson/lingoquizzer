@@ -45,7 +45,7 @@ const initGame = () => {
       correctCountValue += 1;
       correctCountShow.innerHTML = `<p>${correctCountValue}/46</p>`;
     if (correctCountValue == 46) { endGame() };
-    // if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
+    if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
     }
   }
 
