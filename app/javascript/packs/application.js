@@ -8,14 +8,14 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
 
-import { initModal } from "../components/modal";
+import { initSignUpModal } from "../components/modal";
 
 import { initDropDown } from "../components/dropdown";
 
 import { initGame } from "../components/kana_game";
 
 document.addEventListener('turbolinks:load', function(e) {
-  initModal();
+  initSignUpModal();
   initDropDown();
   initGame();
 });

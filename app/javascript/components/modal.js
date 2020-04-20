@@ -1,4 +1,4 @@
-const initModal = () => {
+const initSignUpModal = () => {
   var modalBtn = document.querySelector('.modal-btn');
   var modalBg = document.querySelector('.modal-bg');
   var modalClose = document.querySelector('.modal-close');
@@ -13,4 +13,4 @@ const initModal = () => {
     });
   }
 }
-export { initModal };
+export { initSignUpModal };

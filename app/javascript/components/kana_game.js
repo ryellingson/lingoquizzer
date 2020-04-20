@@ -6,31 +6,35 @@ const initGame = () => {
   const nextButton = document.querySelector(".next-button");
   const correctCountShow = document.querySelector(".correct-count");
   const timeShow = document.querySelector(".timer");
+  const scoreShow = document.querySelector(".score")
 
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
   let timeLeft = 120;
   let interval;
+  let score = 0;
 
   const startGame = () => {
     interval = setInterval(updateTimer, 1000);
     playButton.classList.add("hidden");
     gameInput.parentNode.classList.remove("hidden");
     gameInput.addEventListener('input', handleInputChange);
+    gameInput.focus();
     currentAnswer.parentNode.classList.add("active-row");
   }
 
   const updateTimer = () => {
     timeLeft -= 1;
     const sec = timeLeft % 60;
-    console.log(timeLeft);
     timeShow.innerHTML = `${Math.floor(timeLeft / 60)}:${sec < 10 ? "0" + sec : sec}`;
     if (timeLeft == 0) { endGame() };
   }
 
   const handleInputChange = () => {
     if (gameInput.value === currentAnswer.dataset.answer) {
+      score += 2;
+      scoreShow.innerHTML = `<p>${score}pts<p>`;
       gameInput.value = "";
       currentAnswer.innerHTML = currentAnswer.dataset.answer;
       updateCurrentAnswer("next");
@@ -52,6 +56,16 @@ const initGame = () => {
   const endGame = () => {
     document.querySelector(".game-status").classList.remove("hidden");
     clearInterval(interval);
+    score += timeLeft;
+    scoreShow.innerHTML = `<p>${score}pts<p>`;
+    displayEndGameModal();
+  }
+
+  const displayEndGameModal = () => {
+    const endGameModal = document.querySelector(".modal-bg");
+    endGameModal.classList.add("bg-active");
+    endGameModal.insertAdjacentHTML("beforeend",
+      `<p>${score}<p>`)
   }
 
   playButton.addEventListener('click', startGame);
