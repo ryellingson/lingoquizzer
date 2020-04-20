@@ -43,7 +43,8 @@ const initGame = () => {
   const updateCurrentAnswer = (shift) => {
     currentAnswer.parentNode.classList.remove("active-row");
     // if shift = "next" add an index else it subtracts an index
-    currentIndex += (shift == "next" ? 1 : -1);
+    const change = (shift == "next" ? 1 : -1);
+    currentIndex = (((currentIndex + change) % 46) + 46) % 46;
     currentAnswer = answers[currentIndex];
     currentAnswer.parentNode.classList.add("active-row");
   }
