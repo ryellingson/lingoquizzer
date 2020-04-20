@@ -1,150 +1,167 @@
 <div class="main-container">
   <div class="game-container">
-    <div class="title-wrapper">
-      <h2>JQ</h2>
-      <div class="table-title">
-        <h1>Hiragana Sprint</h1>
+    <div class="game-header">
+      <%= link_to root_path do %>
+      <div class="logo">
+        <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
       </div>
-      <input type="text">
-    </div>
-    <div class="table-wrapper">
-      <table class="content-table" id="gameTable">
-        <tbody>
-          <tr>
-            <td class="gametable-col">
-              <table class="data">
-                <thead>
-                  <tr>
-                    <th>Hiragana</th>
-                    <th>Romaji</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <% @problems[0...11].each do |problem| %>
-                  <tr class="#">
-                    <td>
-                      <%= problem.question %>
-                    </td>
-                    <td data-answer="<%= problem.answer %>" class="answer">
-                      <!-- space for answer -->
-                    </td>
-                  </tr>
-                  <% end %>
-                </tbody>
-              </table>
-            </td>
-            <td class="gametable-col">
-              <table class="data">
-                <thead>
-                  <tr>
-                    <th>Hiragana</th>
-                    <th>Romaji</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <% @problems[11...22].each do |problem| %>
-                  <tr class="#">
-                    <td>
-                      <%= problem.question %>
-                    </td>
-                    <td data-answer="<%= problem.answer %>" class="answer">
-                      <!-- space for answer -->
-                    </td>
-                  </tr>
-                  <% end %>
-                </tbody>
-              </table>
-            </td>
-            <td class="gametable-col">
-              <table class="data">
-                <thead>
-                  <tr>
-                    <th>Hiragana</th>
-                    <th>Romaji</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <% @problems[22...33].each do |problem| %>
-                  <tr class="#">
-                    <td data-answer="<%= problem.answer %>">
-                      <%= problem.question %>
-                    </td>
-                    <td data-answer="<%= problem.answer %>" class="answer">
-                      <!-- space for answer -->
-                    </td>
-                  </tr>
-                  <% end %>
-                </tbody>
-              </table>
-            </td>
-            <td class="gametable-col">
-              <table class="data">
-                <thead>
-                  <tr>
-                    <th>Hiragana</th>
-                    <th>Romaji</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <% @problems[33...44].each do |problem| %>
-                  <tr class="#">
-                    <td>
-                      <%= problem.question %>
-                    </td>
-                    <td data-answer="<%= problem.answer %>" class="answer">
-                      <!-- space for answer -->
-                    </td>
-                  </tr>
-                  <% end %>
-                </tbody>
-              </table>
-            </td>
-            <td class="gametable-col last-table">
-              <table class="data">
-                <thead>
-                  <tr>
-                    <th>Hiragana</th>
-                    <th>Romaji</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <% @problems[44...46].each do |problem| %>
-                  <tr class="#">
-                    <td>
-                      <%= problem.question %>
-                    </td>
-                    <td data-answer="<%= problem.answer %>" class="answer">
-                      <!-- space for answer -->
-                    </td>
-                  </tr>
-                  <% end %>
-                  <div class="game-controls">
-                      <div class="play-button border-glow">
-                       <p>Play</p>
-                     </div>
-                     <div class="hidden">
-                       <button class="back-button">Back</button>
-                       <button class="next-button">Next</button>
-                       <input type="text" class="game-input">
-                     </div>
-                     <div class="correct-count">
-                       <p>0/46</p>
-                     </div>
-                     <div class="timer">
-                       <p>2:00m</p>
-                     </div>
-                     <div class="score">
-                       <p>0pts</p>
-                     </div>
-                     <div class="game-status hidden">
-                       Game Over
-                     </div>
-                   </div>
-                 </tbody>
-               </table>
-             </td>
-           </table>
-         </div>
-       </div>
+      <% end %>
+      <div class="games-link">
+       <h2>Games</h2>
      </div>
-   </div>
+     <div class="table-title">
+      <h1><%= @game.name %></h1>
+    </div>
+    <div class="help">
+      <p>?</p>
+    </div>
+    <div class="profile-link">
+      <p>User profile</p>
+    </div>
+  </div>
+  <div class="table-wrapper">
+    <table class="content-table" id="gameTable">
+      <tbody>
+        <tr>
+          <td class="gametable-col">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>Romaji</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[0...11].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td data-answer="<%= problem.answer %>" class="answer">
+                    <!-- space for answer -->
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+          <td class="gametable-col">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>Romaji</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[11...22].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td data-answer="<%= problem.answer %>" class="answer">
+                    <!-- space for answer -->
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+          <td class="gametable-col">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>Romaji</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[22...33].each do |problem| %>
+                <tr class="#">
+                  <td data-answer="<%= problem.answer %>">
+                    <%= problem.question %>
+                  </td>
+                  <td data-answer="<%= problem.answer %>" class="answer">
+                    <!-- space for answer -->
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+          <td class="gametable-col">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>Romaji</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[33...44].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td data-answer="<%= problem.answer %>" class="answer">
+                    <!-- space for answer -->
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+          <td class="gametable-col last-table">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Hiragana</th>
+                  <th>Romaji</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @problems[44...46].each do |problem| %>
+                <tr class="#">
+                  <td>
+                    <%= problem.question %>
+                  </td>
+                  <td data-answer="<%= problem.answer %>" class="answer">
+                    <!-- space for answer -->
+                  </td>
+                </tr>
+                <% end %>
+                <div class="game-controls">
+                  <div class="play-button border-glow">
+                   <p>Play</p>
+                 </div>
+                 <div class="hidden">
+                   <button class="back-button">Back</button>
+                   <button class="next-button">Next</button>
+                   <input type="text" class="game-input">
+                 </div>
+                 <div class="correct-count">
+                   <p>0/46</p>
+                 </div>
+                 <div class="timer">
+                   <p>2:00m</p>
+                 </div>
+                 <div class="score">
+                   <p>0pts</p>
+                 </div>
+                 <div class="game-status modal-btn">
+                  <h2>Game Over!</h2>
+                </div>
+                <div class="modal-bg">
+                  <div class="modal">
+                    <h2>Game Over!</h2>
+                    <span class="modal-close">X</span>
+                  </div>
+                </div>
+              </tbody>
+            </table>
+          </td>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
