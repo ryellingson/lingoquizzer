@@ -11,7 +11,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 120;
+  let timeLeft = 5;
   let interval;
   let score = 0;
 
@@ -54,7 +54,7 @@ const initGame = () => {
   }
 
   const endGame = () => {
-    document.querySelector(".game-status").classList.remove("hidden");
+    document.querySelector(".game-stats").classList.remove("hidden");
     clearInterval(interval);
     score += timeLeft;
     scoreShow.innerHTML = `<p>${score}pts<p>`;
@@ -63,9 +63,13 @@ const initGame = () => {
 
   const displayEndGameModal = () => {
     const endGameModal = document.querySelector(".modal-bg");
+    const gameStats = document.querySelector(".game-stats");
     endGameModal.classList.add("bg-active");
-    endGameModal.insertAdjacentHTML("beforeend",
-      `<p>${score}<p>`)
+    gameStats.insertAdjacentHTML("beforeend",
+      `<div>Correct Answers: ${correctCountValue}/46</div>
+       <div>Time Bonus: ${timeLeft}pts</div>
+       <div>Score: ${score}pts</div>
+       `);
   }
 
   playButton.addEventListener('click', startGame);
