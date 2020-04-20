@@ -101,6 +101,21 @@ table {
   background-color: #f3f3f3;
 }
 
+.correct-answer {
+  background-color: #7cffcb;
+  background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}
+
+.empty-answer {
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+
+.wrong-answer {
+  background-color: #fc5296;
+  background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+}
+
 .timer {
   border: 1px solid lightgrey;
   font-size: 25px;

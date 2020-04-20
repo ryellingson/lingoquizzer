@@ -36,6 +36,7 @@ const initGame = () => {
 
   const handleInputChange = () => {
     if (gameInput.value === currentAnswer.dataset.answer) {
+      currentAnswer.classList.add("correct-answer");
       score += 2;
       scoreShow.innerHTML = `<p>${score}pts<p>`;
       gameInput.value = "";
@@ -44,6 +45,7 @@ const initGame = () => {
       correctCountValue += 1;
       correctCountShow.innerHTML = `<p>${correctCountValue}/46</p>`;
     if (correctCountValue == 46) { endGame() };
+    // if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
     }
   }
 
