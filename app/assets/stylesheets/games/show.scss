@@ -1,6 +1,5 @@
-h1 {
-  font-family: Karla;
-}
+$blue: #3498db;
+
 table {
   font-family: Karla;
   border-collapse: collapse;
@@ -84,7 +83,7 @@ table {
 
 .play-button {
   border: 1px solid grey;
-  background-color: rgb(23, 255, 243);
+  background-color: rgba(23, 255, 243, 0.4);
   color: white;
   text-shadow: 1px 2px 10px rgba(0,0,0,0.6);
   font-size: 25px;
@@ -94,9 +93,9 @@ table {
   padding: 15px;
 }
 
-.play-button:hover {
-  background-color: rgb(24, 222, 212);
-}
+// .play-button:hover {
+//   background-color: rgb(24, 222, 212);
+// }
 
 .correct-count {
   border: 1px solid lightgrey;
@@ -124,5 +123,16 @@ table {
 
 .hidden {
   display: none;
+}
+
+.third {
+  border-color: $blue;
+  color: #fff;
+  box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
+  }
 }
 
