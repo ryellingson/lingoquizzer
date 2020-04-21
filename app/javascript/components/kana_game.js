@@ -17,7 +17,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 5;
+  let timeLeft = 50;
   let interval;
   let score = 0;
 
@@ -103,9 +103,24 @@ const initGame = () => {
   nextButton.addEventListener('click', () => updateCurrentAnswer("next"));
   backButton.addEventListener('click', () => updateCurrentAnswer("back"));
 
+  document.onkeydown = function(event) {
+    switch (event.keyCode) {
+     case 37: // left
+       updateCurrentAnswer("back");
+     break;
+     case 38: // up
+       updateCurrentAnswer("back");
+     break;
+     case 39: // right
+       updateCurrentAnswer("next");
+     break;
+     case 40: // down
+       updateCurrentAnswer("next");
+     break;
+   }
+  }
 
-  console.log(autoplay);
-  if (autoplay == "true") {
+   if (autoplay == "true") {
     startGame();
   }
 }
