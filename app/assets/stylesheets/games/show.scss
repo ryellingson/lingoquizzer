@@ -64,8 +64,10 @@ table {
 }
 
 .content-table tbody tr.active-row {
+  font-size: 20px;
   font-weight: bold;
   color: #009879; /*header green*/
+  background-color: rgba(173, 216, 231, 0.4);
 }
 
 .last-table {

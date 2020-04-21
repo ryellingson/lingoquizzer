@@ -17,7 +17,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 500;
+  let timeLeft = 5;
   let interval;
   let score = 0;
 
@@ -47,8 +47,8 @@ const initGame = () => {
       updateCurrentAnswer("next");
       correctCountValue += 1;
       correctCountShow.innerHTML = `<p>${correctCountValue}/46</p>`;
-    if (correctCountValue == 46) { endGame() };
-    if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
+      if (correctCountValue == 46) { endGame() };
+      if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
     }
   }
 
@@ -56,6 +56,8 @@ const initGame = () => {
     console.log(currentAnswer.innerHTML)
     if (!currentAnswer.innerHTML) {
       currentAnswer.classList.add("empty-answer");
+    } else {
+      currentAnswer.classList.remove("empty-answer");
     }
     currentAnswer.parentNode.classList.remove("active-row");
     // if shift = "next" add an index else it subtracts an index
@@ -63,9 +65,15 @@ const initGame = () => {
     currentIndex = (((currentIndex + change) % 46) + 46) % 46;
     currentAnswer = answers[currentIndex];
     currentAnswer.parentNode.classList.add("active-row");
+    gameInput.focus();
   }
 
   const endGame = () => {
+    answers.forEach((answer) => {
+      if (!answer.innerHTML) {
+        answer.classList.add("wrong-answer");
+      }
+    })
     document.querySelector(".game-stats").classList.remove("hidden");
     clearInterval(interval);
     score += timeLeft;
@@ -77,16 +85,16 @@ const initGame = () => {
     endGameModal.classList.add("bg-active");
     gameStats.insertAdjacentHTML("afterbegin",
       `<div>Correct Answers: ${correctCountValue}/46</div>
-       <div>Time Bonus: ${timeLeft}pts</div>
-       <div>Score: ${score}pts</div>
-       `);
+      <div>Time Bonus: ${timeLeft}pts</div>
+      <div>Score: ${score}pts</div>
+      `);
   }
 
   const restartGame = () => {
     if (autoplay == "true") {
       window.location.reload();
     } else {
-    window.location.replace(window.location.href + "?autoplay=true");
+      window.location.replace(window.location.href + "?autoplay=true");
     }
   }
 
