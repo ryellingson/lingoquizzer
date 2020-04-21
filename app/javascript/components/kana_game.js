@@ -84,7 +84,7 @@ const initGame = () => {
     // score = 0;
     // correctCountValue = 0;
     // timeLeft = 120;
-    location.reload();
+    window.location.replace(window.location.href + "?autoplay=true");
     startGame();
   }
 
@@ -92,6 +92,14 @@ const initGame = () => {
   playButton.addEventListener('click', startGame);
   nextButton.addEventListener('click', () => updateCurrentAnswer("next"));
   backButton.addEventListener('click', () => updateCurrentAnswer("back"));
+
+  const url_string = window.location.href;
+  const url = new URL(url_string);
+  const autoplay = url.searchParams.get("autoplay");
+  console.log(autoplay);
+  if (autoplay == "true") {
+    startGame();
+  }
 }
 
 export { initGame }
