@@ -17,7 +17,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 50;
+  let timeLeft = 5;
   let interval;
   let score = 0;
 
