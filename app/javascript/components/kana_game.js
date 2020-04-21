@@ -10,11 +10,14 @@ const initGame = () => {
   const scoreShow = document.querySelector(".score");
   const endGameModal = document.querySelector(".modal-bg");
   const gameStats = document.querySelector(".game-stats");
+  const url_string = window.location.href;
+  const url = new URL(url_string);
+  const autoplay = url.searchParams.get("autoplay");
 
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 10;
+  let timeLeft = 500;
   let interval;
   let score = 0;
 
@@ -50,6 +53,10 @@ const initGame = () => {
   }
 
   const updateCurrentAnswer = (shift) => {
+    console.log(currentAnswer.innerHTML)
+    if (!currentAnswer.innerHTML) {
+      currentAnswer.classList.add("empty-answer");
+    }
     currentAnswer.parentNode.classList.remove("active-row");
     // if shift = "next" add an index else it subtracts an index
     const change = (shift == "next" ? 1 : -1);
@@ -76,16 +83,11 @@ const initGame = () => {
   }
 
   const restartGame = () => {
-    // endGameModal.classList.remove("bg-active");
-    // interval = setInterval(updateTimer, 1000);
-    // gameInput.addEventListener('input', handleInputChange);
-    // gameInput.focus();
-    // currentAnswer.parentNode.classList.add("active-row");
-    // score = 0;
-    // correctCountValue = 0;
-    // timeLeft = 120;
+    if (autoplay == "true") {
+      window.location.reload();
+    } else {
     window.location.replace(window.location.href + "?autoplay=true");
-    startGame();
+    }
   }
 
   replayButton.addEventListener('click', restartGame);
@@ -93,9 +95,7 @@ const initGame = () => {
   nextButton.addEventListener('click', () => updateCurrentAnswer("next"));
   backButton.addEventListener('click', () => updateCurrentAnswer("back"));
 
-  const url_string = window.location.href;
-  const url = new URL(url_string);
-  const autoplay = url.searchParams.get("autoplay");
+
   console.log(autoplay);
   if (autoplay == "true") {
     startGame();
