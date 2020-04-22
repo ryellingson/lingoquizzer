@@ -17,7 +17,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 5;
+  let timeLeft = 120;
   let interval;
   let score = 0;
 
@@ -66,6 +66,10 @@ const initGame = () => {
     currentAnswer = answers[currentIndex];
     currentAnswer.parentNode.classList.add("active-row");
     gameInput.focus();
+  }
+
+  const postResults = () => {
+
   }
 
   const endGame = () => {

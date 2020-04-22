@@ -21,9 +21,16 @@
             <h2>Forum</h2>
           </div>
           <% end %>
+          <% if user_signed_in? %>
+          <div class="gateway-to-join">
+            <h2>Your Profile</h2>
+            <p><%= current_user.username %></p>
+          </div>
+          <% else %>
           <div class="gateway-to-join modal-btn">
             <h2>Join for free</h2>
           </div>
+          <% end %>
         </div>
       </div>
     </div>
