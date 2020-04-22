@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :username, uniqueness: true
 
   devise :database_authenticatable, :registerable,
-  :recoverable, :rememberable, :trackable, :validatable, authentication_keys: [:login]
+  :recoverable, :rememberable, :validatable, authentication_keys: [:login]
 
   def login
     @login || self.username || self.email
