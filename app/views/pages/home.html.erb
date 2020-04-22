@@ -28,18 +28,26 @@
       </div>
     </div>
     <div class="modal-bg">
-      <div class="modal">
-        <h2>Join our community!</h2>
-        <label for="username">Username: </label>
-        <input type="text" name="username">
-        <label for="email">Email: </label>
-        <input type="email" name="email">
-        <label for="password">Password: </label>
-        <input type="password" name="password">
-        <label for="password">Repeat Password: </label>
-        <input type="password" name="password">
-        <button>Join</button>
-        <span class="modal-close">X</span>
+      <div class="sign-up modal">
+        <div class="signup-content">
+          <h2 class="signup-tagline">Join the Community!</h2>
+          <form>
+            <span>
+              <label for="username" class="text-small-uppercase">Username</label>
+              <input class="text-body" id="username" name="username" type="text" required>
+            </span>
+            <span>
+              <label for="email" class="text-small-uppercase">Email</label>
+              <input class="text-body" id="email" name="email" type="email" required>
+            </span>
+            <span>
+              <label for="city" class="text-small-uppercase">City</label>
+              <input class="text-body" id="city" name="city" type="text" required>
+            </span>
+            <input class="text-small-uppercase" id="submit" type="submit" value="Join Now!">
+          </form>
+          <span class="modal-close">X</span>
+        </div>
       </div>
     </div>
   </main>

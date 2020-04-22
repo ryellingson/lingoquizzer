@@ -13,4 +13,4 @@ const initSignUpModal = () => {
     });
   }
 }
-export { initSignUpModal };
+export { initSignUpModal }
