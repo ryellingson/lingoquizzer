@@ -1,5 +1,5 @@
 class PlaysController < ApplicationController
   def create
-    raise
+    binding.pry
   end
 end

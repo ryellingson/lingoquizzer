@@ -1,3 +1,5 @@
+import Rails from "@rails/ujs"
+
 const initGame = () => {
   const playButton = document.querySelector(".play-button");
   const replayButton = document.querySelector(".restart")
@@ -17,7 +19,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 120;
+  let timeLeft = 5;
   let interval;
   let score = 0;
 
@@ -69,7 +71,19 @@ const initGame = () => {
   }
 
   const postResults = () => {
-
+    const postURL = document.querySelector(".game-container").dataset.url;
+    fetch(postURL, {
+      method: "POST",
+      body: JSON.stringify({
+        score: score,
+        time: (120 - timeLeft),
+        count: correctCountValue
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": Rails.csrfToken(),
+      }
+    })
   }
 
   const endGame = () => {
@@ -83,6 +97,7 @@ const initGame = () => {
     score += timeLeft;
     scoreShow.innerHTML = `<p>${score}pts<p>`;
     displayEndGameModal();
+    postResults();
   }
 
   const displayEndGameModal = () => {
