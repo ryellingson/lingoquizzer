@@ -8,6 +8,8 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
 
+import { initSignupForm } from "../components/signup_form";
+
 import { initSignUpModal } from "../components/modal";
 
 import { initDropDown } from "../components/dropdown";
