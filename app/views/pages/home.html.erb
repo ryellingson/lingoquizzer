@@ -23,8 +23,9 @@
           <% end %>
           <% if user_signed_in? %>
           <div class="gateway-to-join">
-            <h2>Your Profile</h2>
+            <h2>Welcome!</h2>
             <p><%= current_user.username %></p>
+            <%= link_to 'logout', destroy_user_session_path, method: :delete %>
           </div>
           <% else %>
           <div class="gateway-to-join modal-btn">
