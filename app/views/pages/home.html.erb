@@ -9,7 +9,7 @@
           </div>
           <%= link_to games_path do %>
           <div class="gateway-to-games stroke">
-            <h2 class="test">Games</h2>
+            <h2 class="p-absolute">Games</h2>
             <svg>
               <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
               <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
@@ -23,8 +23,9 @@
           <% end %>
           <% if user_signed_in? %>
           <div class="gateway-to-join">
-            <h2>Your Profile</h2>
+            <h2>Welcome!</h2>
             <p><%= current_user.username %></p>
+            <%= link_to 'logout', destroy_user_session_path, method: :delete %>
           </div>
           <% else %>
           <div class="gateway-to-join modal-btn">

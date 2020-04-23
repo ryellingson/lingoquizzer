@@ -1,132 +1,169 @@
-<div class="main-container">
-  <div class="game-container" data-url="<%= game_plays_url(@game) %>">
-    <div class="game-header">
-      <%= link_to root_path do %>
-      <div class="logo">
-        <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
-      </div>
-      <% end %>
-      <div class="games-link">
-       <h2>Games</h2>
-     </div>
-     <div class="table-title">
+<div class="game-main-container">
+
+  <div class="game-header">
+    <%= link_to root_path do %>
+    <div class="logo">
+      <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
+    </div>
+    <% end %>
+    <%= link_to games_path do %>
+    <div class="stroke">
+      <h2 class="p-absolute">Games</h2>
+      <svg>
+        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+      </svg>
+    </div>
+    <% end %>
+    <div class="table-title">
       <h1><%= @game.name %></h1>
     </div>
-    <div class="help">
-      <p>?</p>
+    <%= link_to games_path do %>
+    <div class="stroke">
+      <h2 class="p-absolute">
+        <% if user_signed_in? %>
+        <div class="profile-link">
+          <p><%= current_user.username %></p>
+          <% else %>
+          <p>Login</p>
+          <% end %>
+        </div>
+      </h2>
+      <svg>
+        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+      </svg>
     </div>
-    <div class="profile-link">
-      <p>User profile</p>
+    <% end %>
+    <div class="help-tip">
+      <p> Hiragana is the basic Japanese phonetic alphabet.
+        It represents every sound in the Japanese language.
+        Therefore, you can theoretically write everything in hiragana.
+        It is one of the 3 Japanese alphabets along with Katakana and Kanji.
+
+        Romaji is the romanization of the Japanese written language.
+        You can think of it as an English syllable that represents a
+        sound in the Japanese written language.
+
+        Your goal is to fill out the table with the Romaji as quickly
+        as possible to get the highest possible score.
+
+      Good Luck!</p>
+
     </div>
+
   </div>
-  <div class="table-wrapper">
-    <table class="content-table" id="gameTable">
-      <tbody>
-        <tr>
-          <td class="gametable-col">
-            <table class="data">
-              <thead>
-                <tr>
-                  <th>Hiragana</th>
-                  <th>Romaji</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @problems[0...11].each do |problem| %>
-                <tr class="#">
-                  <td>
-                    <%= problem.question %>
-                  </td>
-                  <td data-answer="<%= problem.answer %>" class="answer"></td>
-                </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </td>
-          <td class="gametable-col">
-            <table class="data">
-              <thead>
-                <tr>
-                  <th>Hiragana</th>
-                  <th>Romaji</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @problems[11...22].each do |problem| %>
-                <tr class="#">
-                  <td>
-                    <%= problem.question %>
-                  </td>
-                  <td data-answer="<%= problem.answer %>" class="answer"></td>
-                </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </td>
-          <td class="gametable-col">
-            <table class="data">
-              <thead>
-                <tr>
-                  <th>Hiragana</th>
-                  <th>Romaji</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @problems[22...33].each do |problem| %>
-                <tr class="#">
-                  <td>
-                    <%= problem.question %>
-                  </td>
-                  <td data-answer="<%= problem.answer %>" class="answer"></td>
-                </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </td>
-          <td class="gametable-col">
-            <table class="data">
-              <thead>
-                <tr>
-                  <th>Hiragana</th>
-                  <th>Romaji</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @problems[33...44].each do |problem| %>
-                <tr class="#">
-                  <td>
-                    <%= problem.question %>
-                  </td>
-                  <td data-answer="<%= problem.answer %>" class="answer"></td>
-                </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </td>
-          <td class="gametable-col last-table">
-            <table class="data">
-              <thead>
-                <tr>
-                  <th>Hiragana</th>
-                  <th>Romaji</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @problems[44...46].each do |problem| %>
-                <tr class="#">
-                  <td>
-                    <%= problem.question %>
-                  </td>
-                  <td data-answer="<%= problem.answer %>" class="answer"></td>
-                </tr>
-                <% end %>
-                <div class="game-controls">
-                  <div class="play-button border-glow">
-                   <p>Play</p>
-                 </div>
-                 <div class="hidden">
-                   <button class="back-button">Back</button>
-                   <button class="next-button">Next</button>
+  <div class="game-container" data-url="<%= game_plays_url(@game) %>">
+    <div class="table-wrapper">
+      <table class="content-table" id="gameTable">
+        <tbody>
+          <tr>
+            <td class="gametable-col">
+              <table class="data">
+                <thead>
+                  <tr>
+                    <th>Hiragana</th>
+                    <th>Romaji</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @problems[0...11].each do |problem| %>
+                  <tr class="#">
+                    <td>
+                      <%= problem.question %>
+                    </td>
+                    <td data-answer="<%= problem.answer %>" class="answer"></td>
+                  </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </td>
+            <td class="gametable-col">
+              <table class="data">
+                <thead>
+                  <tr>
+                    <th>Hiragana</th>
+                    <th>Romaji</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @problems[11...22].each do |problem| %>
+                  <tr class="#">
+                    <td>
+                      <%= problem.question %>
+                    </td>
+                    <td data-answer="<%= problem.answer %>" class="answer"></td>
+                  </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </td>
+            <td class="gametable-col">
+              <table class="data">
+                <thead>
+                  <tr>
+                    <th>Hiragana</th>
+                    <th>Romaji</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @problems[22...33].each do |problem| %>
+                  <tr class="#">
+                    <td>
+                      <%= problem.question %>
+                    </td>
+                    <td data-answer="<%= problem.answer %>" class="answer"></td>
+                  </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </td>
+            <td class="gametable-col">
+              <table class="data">
+                <thead>
+                  <tr>
+                    <th>Hiragana</th>
+                    <th>Romaji</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @problems[33...44].each do |problem| %>
+                  <tr class="#">
+                    <td>
+                      <%= problem.question %>
+                    </td>
+                    <td data-answer="<%= problem.answer %>" class="answer"></td>
+                  </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </td>
+            <td class="gametable-col last-table">
+              <table class="data">
+                <thead>
+                  <tr>
+                    <th>Hiragana</th>
+                    <th>Romaji</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @problems[44...46].each do |problem| %>
+                  <tr class="#">
+                    <td>
+                      <%= problem.question %>
+                    </td>
+                    <td data-answer="<%= problem.answer %>" class="answer"></td>
+                  </tr>
+                  <% end %>
+                  <div class="game-controls">
+                    <div class="play-button border-glow">
+                     <p>Play</p>
+                   </div>
+                   <div class="hidden hub">
+                    <div class="shift-buttons">
+                     <button class="back-button">Back</button>
+                     <button class="next-button">Next</button>
+                   </div>
                    <input type="text" class="game-input">
                  </div>
                  <div class="correct-count">
@@ -138,7 +175,7 @@
                  <div class="score">
                    <p>0pts</p>
                  </div>
-                <div class="modal-bg">
+                 <div class="modal-bg">
                   <div class="game-stats modal">
                     <h2>Game Over!</h2>
                     <div class="restart play-button border-glow">
