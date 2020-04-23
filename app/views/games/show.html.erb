@@ -1,59 +1,59 @@
-<div class="main-container">
-  <div class="game-container" data-url="<%= game_plays_url(@game) %>">
-    <div class="game-header">
-      <%= link_to root_path do %>
-      <div class="logo">
-        <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
-      </div>
-      <% end %>
-      <%= link_to games_path do %>
-      <div class="stroke">
-        <h2 class="p-absolute">Games</h2>
-        <svg>
-          <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-          <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-        </svg>
-      </div>
-      <% end %>
-      <div class="table-title">
-        <h1><%= @game.name %></h1>
-      </div>
-      <div class="help-tip">
-        <p> Hiragana is the basic Japanese phonetic alphabet.
+<div class="game-main-container">
+
+  <div class="game-header">
+    <%= link_to root_path do %>
+    <div class="logo">
+      <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
+    </div>
+    <% end %>
+    <%= link_to games_path do %>
+    <div class="stroke">
+      <h2 class="p-absolute">Games</h2>
+      <svg>
+        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+      </svg>
+    </div>
+    <% end %>
+    <div class="table-title">
+      <h1><%= @game.name %></h1>
+    </div>
+    <%= link_to games_path do %>
+    <div class="stroke">
+      <h2 class="p-absolute">
+        <% if user_signed_in? %>
+        <div class="profile-link">
+          <p><%= current_user.username %></p>
+          <% else %>
+          <p>Login</p>
+          <% end %>
+        </div>
+      </h2>
+      <svg>
+        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+      </svg>
+    </div>
+    <% end %>
+    <div class="help-tip">
+      <p> Hiragana is the basic Japanese phonetic alphabet.
         It represents every sound in the Japanese language.
-      Therefore, you can theoretically write everything in hiragana.
-    It is one of the 3 Japanese alphabets along with Katakana and Kanji.
+        Therefore, you can theoretically write everything in hiragana.
+        It is one of the 3 Japanese alphabets along with Katakana and Kanji.
 
-    Romaji is the romanization of the Japanese written language.
-    You can think of it as an English syllable that represents a
-    sound in the Japanese written language.
+        Romaji is the romanization of the Japanese written language.
+        You can think of it as an English syllable that represents a
+        sound in the Japanese written language.
 
-    Your goal is to fill out the table with the Romaji as quickly
-    as possible to get the highest possible score.
+        Your goal is to fill out the table with the Romaji as quickly
+        as possible to get the highest possible score.
 
-    Good Luck!</p>
-
-      </div>
-      <%= link_to games_path do %>
-      <div class="stroke">
-        <h2 class="p-absolute">
-
-          <% if user_signed_in? %>
-          <div class="profile-link">
-            <p><%= current_user.username %></p>
-            <% else %>
-            <p>Login</p>
-            <% end %>
-          </div>
-        </h2>
-        <svg>
-          <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-          <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-        </svg>
-      </div>
-      <% end %>
+      Good Luck!</p>
 
     </div>
+
+  </div>
+  <div class="game-container" data-url="<%= game_plays_url(@game) %>">
     <div class="table-wrapper">
       <table class="content-table" id="gameTable">
         <tbody>
@@ -159,33 +159,35 @@
                     <div class="play-button border-glow">
                      <p>Play</p>
                    </div>
-                   <div class="hidden">
+                   <div class="hidden hub">
+                    <div class="shift-buttons">
                      <button class="back-button">Back</button>
                      <button class="next-button">Next</button>
-                     <input type="text" class="game-input">
                    </div>
-                   <div class="correct-count">
-                     <p>0/46</p>
-                   </div>
-                   <div class="timer">
-                     <p>2:00m</p>
-                   </div>
-                   <div class="score">
-                     <p>0pts</p>
-                   </div>
-                   <div class="modal-bg">
-                    <div class="game-stats modal">
-                      <h2>Game Over!</h2>
-                      <div class="restart play-button border-glow">
-                        <p>Replay</p>
-                      </div>
+                   <input type="text" class="game-input">
+                 </div>
+                 <div class="correct-count">
+                   <p>0/46</p>
+                 </div>
+                 <div class="timer">
+                   <p>2:00m</p>
+                 </div>
+                 <div class="score">
+                   <p>0pts</p>
+                 </div>
+                 <div class="modal-bg">
+                  <div class="game-stats modal">
+                    <h2>Game Over!</h2>
+                    <div class="restart play-button border-glow">
+                      <p>Replay</p>
                     </div>
                   </div>
-                </tbody>
-              </table>
-            </td>
-          </table>
-        </div>
+                </div>
+              </tbody>
+            </table>
+          </td>
+        </table>
       </div>
     </div>
   </div>
+</div>
