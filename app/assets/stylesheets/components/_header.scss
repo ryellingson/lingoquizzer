@@ -10,7 +10,7 @@
   border: 1px solid rgba(93, 96, 99, 0.5);
 }
 
-.menu {
+.header-menu {
   margin-top: 30px;
   color: darkslategrey;
   font-family: 'Karla';
@@ -18,12 +18,12 @@
 /*  text-shadow: 1px 1px 15px darkslategrey;*/
 }
 
-.menu > li {
+.header-menu > li {
   display: inline;
   margin-right: 60px;
 }
 
-.menu > li:last-of-type {
+.header-menu > li:last-of-type {
   margin-right: 0;
 }
 
