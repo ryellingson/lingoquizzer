@@ -1,6 +1,7 @@
 
-.forum-container {
-
+.forum-main-container {
+  display: flex;
+  height: 100vh;
 }
 
 .padded {
@@ -9,14 +10,16 @@
 
  /*sidebar start*/
 
-.sidebar-left {
-  background: rgb(36,80,54); /*dark green*/
-  flex-direction: column;
+ .sidebar-left {
+  background: rgb(102,138,106); /*green*/
+  width: 20%;
+  color: white;
+  padding: 20px
 }
 .sidebar-right {
-  background: rgb(102,138,106); /*green*/
-  width: 200px;
-  color: white;
+  background: rgb(36,80,54); /*dark green*/
+  flex-direction: column;
+  width: 30%;
 }
 .sidebar-button {
   font-size: 25px;
@@ -72,12 +75,38 @@
 /*chat start*/
 
 .chat-container {
+  width: 50%;
   flex-grow: 1;
   flex-direction: column;
 }
+
 .chat-messages {
+  height: 89%;
+  align-items: center;
   flex-grow: 1;
   overflow-y: scroll;
+  margin-left: 20px;
+}
+
+.chat-hub {
+  border: 1px solid rgb(96, 96, 96);
+  border-radius: 5px;
+  height: 82px;
+  width: 98%;
+  margin-left: 7px;
+}
+
+.form-group-chat {
+  border-radius: 5px;
+  height: 40px;
+
+}
+
+.chat-tools {
+  border-top: 1px solid #eee;
+  border-radius: 5px;
+  height: 40px;
+  background: rgb(248, 248, 248);
 }
 
 /*chat end*/
