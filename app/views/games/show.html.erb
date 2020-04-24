@@ -23,7 +23,10 @@
       <h2 class="p-absolute">
         <% if user_signed_in? %>
         <div class="profile-link">
-          <p><%= current_user.username %></p>
+          <div class="avatar">て</div>
+          <div class="username-game">
+            <p><%= current_user.username %></p>
+          </div>
           <% else %>
           <p>Login</p>
           <% end %>
@@ -37,6 +40,7 @@
     <% end %>
     <div class="help-tip">
       <p> Hiragana is the basic Japanese phonetic alphabet.
+
         It represents every sound in the Japanese language.
         Therefore, you can theoretically write everything in hiragana.
         It is one of the 3 Japanese alphabets along with Katakana and Kanji.
@@ -44,6 +48,8 @@
         Romaji is the romanization of the Japanese written language.
         You can think of it as an English syllable that represents a
         sound in the Japanese written language.
+
+        You will typically use Romaji when you type out Japanese sentences using a keyboard.
 
         Your goal is to fill out the table with the Romaji as quickly
         as possible to get the highest possible score.

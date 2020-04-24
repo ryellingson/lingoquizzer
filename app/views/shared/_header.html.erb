@@ -4,12 +4,26 @@
     <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
   </div>
   <% end %>
-  <ul class='menu'>
-    <div id="dd" class="wrapper-dropdown-3" tabindex="1">
-      <span>Login</span>
-      <ul class="dropdown">
-       <li><a href='#'>Username</a></li>
-       <li><a href='#'>PW</a></li>
-     </ul>
-   </div>
- </header>
+  <ul class='header-menu'>
+   <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+    <span>Login</span>
+    <ul class="dropdown">
+     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+     <div class="field">
+      <%= f.label :username %><br />
+      <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
+    </div>
+    <div class="field">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "current-password" %>
+    </div>
+
+
+    <div class="actions">
+      <%= f.submit "Log in" %>
+    </div>
+
+    <% end %>
+  </ul>
+</div>
+</header>
