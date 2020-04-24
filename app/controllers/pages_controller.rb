@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def forum
   end
+
+  def user_profile
+  end
 end
