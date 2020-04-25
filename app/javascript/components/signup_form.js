@@ -1,6 +1,7 @@
-const initSignupForm = () => {
-  var inputs = document.querySelectorAll( 'input[type=text], input[type=email]' );
-  for (i = 0; i < inputs.length; i ++) {
+const initInteractiveForm = () => {
+  var inputs = document.querySelectorAll( '.interactive-form input[type=text], .interactive-form input[type=email], .interactive-form input[type=password]'  );
+  console.log(inputs);
+  for (let i = 0; i < inputs.length; i ++) {
     var inputEl = inputs[i];
     if( inputEl.value.trim() !== '' ) {
       inputEl.parentNode.classList.add( 'input--filled' );
@@ -33,13 +34,13 @@ const initSignupForm = () => {
     }
   }
 
-  var submitBtn = document.querySelector( 'input[type=submit]' );
+  var submitBtn = document.querySelector( '.interactive-form input[type=submit]' );
   submitBtn.addEventListener( 'click', onSubmit );
 
   function onSubmit( ev ) {
     var inputsWrappers = ev.target.parentNode.querySelectorAll( 'span' );
-    for (i = 0; i < inputsWrappers.length; i ++) {
-      input = inputsWrappers[i].querySelector( 'input[type=text], input[type=email]' );
+    for (let i = 0; i < inputsWrappers.length; i ++) {
+      input = inputsWrappers[i].querySelector( 'input[type=text], input[type=email], input[type=password' );
       if ( input.checkValidity() == false ) {
         inputsWrappers[i].classList.add( 'inputs--invalid' );
       } else if ( input.checkValidity() == true ) {
@@ -49,4 +50,4 @@ const initSignupForm = () => {
   }
 }
 
-export { initSignupForm }
+export { initInteractiveForm }
