@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get '/forum', controller: 'pages', action: 'forum'
 
+  get '/user_profile', controller: 'pages', action: 'user_profile'
+
   resources :games, only: [ :show, :index ] do
     resources :plays, only: :create
   end
