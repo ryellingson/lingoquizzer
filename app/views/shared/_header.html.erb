@@ -7,15 +7,15 @@
   <ul class='header-menu'>
    <div id="dd" class="wrapper-dropdown-3" tabindex="1">
     <span>Login</span>
-    <ul class="dropdown">
-     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <ul class="dropdown interactive-form">
+     <%= form_for(resource, as: "login", url: session_path(resource_name), html: { id: "login-form" } ) do |f| %>
      <div class="field">
-      <%= f.label :username %><br />
-      <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
+      <%= f.label :username, class: "text-small-uppercase" %><br />
+      <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "text-body" %>
     </div>
     <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "current-password" %>
+      <%= f.label :password, class: "text-small-uppercase" %><br />
+      <%= f.password_field :password, autocomplete: "current-password", class: "text-body" %>
     </div>
 
 

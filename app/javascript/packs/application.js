@@ -8,7 +8,7 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
 
-import { initSignupForm } from "../components/signup_form";
+import { initInteractiveForm } from "../components/signup_form";
 
 import { initSignUpModal } from "../components/modal";
 
@@ -18,6 +18,7 @@ import { initGame } from "../components/kana_game";
 
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
+  initInteractiveForm();
   initDropDown();
   initGame();
 });

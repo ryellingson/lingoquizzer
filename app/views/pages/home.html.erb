@@ -37,9 +37,39 @@
     </div>
     <div class="modal-bg">
       <div class="sign-up modal">
-        <div class="signup-content">
+        <div class="signup-content interactive-form">
           <h2 class="signup-tagline">Join the Community!</h2>
-          <form>
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+
+          <div class="field">
+            <%= f.label :username, class: "text-small-uppercase" %><br />
+            <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "text-body" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :email, class: "text-small-uppercase" %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "text-body" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password, class: "text-small-uppercase" %>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "new-password", class: "text-body" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password_confirmation, class: "text-small-uppercase" %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "text-body" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Sign up", class: "text-small-uppercase" %>
+          </div>
+          <% end %>
+<!--           <form>
             <span>
               <label for="username" class="text-small-uppercase">Username</label>
               <input class="text-body" id="username" name="username" type="text" required>
@@ -53,7 +83,7 @@
               <input class="text-body" id="city" name="city" type="text" required>
             </span>
             <input class="text-small-uppercase" id="submit" type="submit" value="Join Now!">
-          </form>
+          </form> -->
           <span class="modal-close">X</span>
         </div>
       </div>
@@ -61,14 +91,14 @@
   </main>
   <footer class="footer">
     <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="footer-copyright">
-    <p><i class="fas fa-camera"></i> : Manuel Cosentino -- @manucosen</p>
-  </div>
- </footer>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+      <p><i class="fas fa-camera"></i> : Manuel Cosentino -- @manucosen</p>
+    </div>
+  </footer>
 </div>
