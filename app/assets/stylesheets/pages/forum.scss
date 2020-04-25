@@ -4,10 +4,6 @@
   height: 100vh;
 }
 
-.padded {
-  padding: 30px 0;
-}
-
  /*sidebar start*/
 
  .sidebar-left {
@@ -133,4 +129,20 @@
 }
 
 /*messages end*/
+.sidebar-right-media {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
+.forum-lesson {
+  border: 1px solid red;
+  height: 300px;
+}
+
+.forum-entertainment {
+  border: 1px solid yellow;
+  background: image-url("ramen.jpg") no-repeat center center fixed;
+  height: 300px;
+}
