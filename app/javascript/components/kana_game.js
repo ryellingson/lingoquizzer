@@ -16,10 +16,12 @@ const initGame = () => {
   const url = new URL(url_string);
   const autoplay = url.searchParams.get("autoplay");
 
+  const kanaCount = 46;
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  let timeLeft = 5000;
+  const initialTime = 3;
+  let timeLeft = initialTime;
   let interval;
   let score = 0;
 
@@ -49,7 +51,7 @@ const initGame = () => {
       updateCurrentAnswer("next");
       correctCountValue += 1;
       correctCountShow.innerHTML = `<p>${correctCountValue}/46</p>`;
-      if (correctCountValue == 46) { endGame() };
+      if (correctCountValue == kanaCount) { endGame() };
       if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
     }
   }
@@ -64,7 +66,7 @@ const initGame = () => {
     currentAnswer.parentNode.classList.remove("active-row");
     // if shift = "next" add an index else it subtracts an index
     const change = (shift == "next" ? 1 : -1);
-    currentIndex = (((currentIndex + change) % 46) + 46) % 46;
+    currentIndex = (((currentIndex + change) % kanaCount) + kanaCount) % kanaCount;
     currentAnswer = answers[currentIndex];
     currentAnswer.parentNode.classList.add("active-row");
     gameInput.focus();
@@ -75,9 +77,11 @@ const initGame = () => {
     fetch(postURL, {
       method: "POST",
       body: JSON.stringify({
-        score: score,
-        time: (120 - timeLeft),
-        count: correctCountValue
+        play: {
+          score: score,
+          time: (initialTime - timeLeft),
+          count: correctCountValue
+        }
       }),
       headers: {
         "Content-Type": "application/json",
