@@ -11,8 +11,7 @@
     <span><%= link_to current_user.username, user_profile_path %></span>
     <% else %>
     <span>Login</span>
-    <% end %>
-    <ul class="dropdown interactive-form">
+    <ul class="dropdown">
      <%= form_for(resource, as: "login", url: session_path(resource_name), html: { id: "login-form" } ) do |f| %>
      <div class="field">
       <%= f.label :username, class: "text-small-uppercase" %><br />
@@ -28,6 +27,7 @@
       <%= f.submit "Log in" %>
     </div>
 
+    <% end %>
     <% end %>
   </ul>
 </div>

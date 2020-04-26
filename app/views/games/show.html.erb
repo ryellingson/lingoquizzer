@@ -25,7 +25,7 @@
         <div class="profile-link">
           <div class="avatar">て</div>
           <div class="username-game">
-            <p><%= current_user.username %></p>
+            <p><%= link_to current_user.username, user_profile_path %></p>
           </div>
           <% else %>
           <p>Login</p>
