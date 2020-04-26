@@ -24,7 +24,7 @@
           <% if user_signed_in? %>
           <div class="gateway-to-join">
             <h2>Welcome!</h2>
-            <p><%= current_user.username %></p>
+            <p><%= link_to current_user.username, user_profile_path %></p>
             <%= link_to 'logout', destroy_user_session_path, method: :delete %>
           </div>
           <% else %>
@@ -39,6 +39,7 @@
       <div class="sign-up modal">
         <div class="signup-content interactive-form">
           <h2 class="signup-tagline">Join the Community!</h2>
+          <span class="modal-close">X</span>
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -84,7 +85,7 @@
             </span>
             <input class="text-small-uppercase" id="submit" type="submit" value="Join Now!">
           </form> -->
-          <span class="modal-close">X</span>
+
         </div>
       </div>
     </div>

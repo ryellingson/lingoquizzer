@@ -6,8 +6,12 @@
   <% end %>
   <ul class='header-menu'>
    <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+    <% if user_signed_in? %>
+    <div class="login-avatar">ら</div>
+    <span><%= link_to current_user.username, user_profile_path %></span>
+    <% else %>
     <span>Login</span>
-    <ul class="dropdown interactive-form">
+    <ul class="dropdown">
      <%= form_for(resource, as: "login", url: session_path(resource_name), html: { id: "login-form" } ) do |f| %>
      <div class="field">
       <%= f.label :username, class: "text-small-uppercase" %><br />
@@ -23,6 +27,7 @@
       <%= f.submit "Log in" %>
     </div>
 
+    <% end %>
     <% end %>
   </ul>
 </div>

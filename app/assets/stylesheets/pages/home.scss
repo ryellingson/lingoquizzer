@@ -54,7 +54,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   font-family: 'Karla';
-  text-shadow: 1px 1px 4px #7FA269;
+  text-shadow: 1px 1px 2px #7FA269;
 }
 
 .gateway-tagline {
@@ -111,8 +111,8 @@ a:active {
   border: 2px solid darkslategrey;
 }
 
+// signup - stylings - start
 .signup-content {
-  border: 1px solid red;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -120,13 +120,25 @@ a:active {
 }
 
 .signup-tagline {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 8px;
   margin: 10px;
+  width: 100%;
+  padding-left: 25px;
+  background: white;
+}
+
+.new_user {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 .interactive-form { //begin nested form effect
-  background-color: ghostwhite;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: gainsboro;
   height: 400px;
+  width: 300px;
   box-shadow: 0 1px 5px 1px rgba(0,0,0,0.3);
   border-radius: 12px;
 
@@ -161,17 +173,21 @@ a:active {
   }
 
   input[type=submit] {
-    background: #f37b56;
-    border: none;
-    color: #fff;
+    color: black;
+    background: palegreen;
+    border: 1px solid grey;
+    border-radius: 4px;
     padding: 0 2rem;
+    opacity: 0.8;
+    text-shadow: 1px 1px 2px #7FA269;
   }
 
   input[type=submit]:hover,
   input[type=submit]:focus {
-    background: #f79577;
     cursor: pointer;
     outline: none;
+    opacity: 1.0;
+    color: darkslategrey;
   }
 
   .inputs--filled label {
@@ -254,6 +270,8 @@ a:active {
     }
   }
 } // end nested form effect
+
+// signup - stylings - end
 
 // Button Effect
 
