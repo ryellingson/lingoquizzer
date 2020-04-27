@@ -1,6 +1,8 @@
 const initInteractiveForm = () => {
   var inputs = document.querySelectorAll( '.interactive-form input[type=text], .interactive-form input[type=email], .interactive-form input[type=password]'  );
-  console.log(inputs);
+  if (inputs.length === 0) {
+    return
+  }
   for (let i = 0; i < inputs.length; i ++) {
     var inputEl = inputs[i];
     if( inputEl.value.trim() !== '' ) {

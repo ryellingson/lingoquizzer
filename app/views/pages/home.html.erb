@@ -40,7 +40,7 @@
         <div class="signup-content interactive-form">
           <h2 class="signup-tagline">Join the Community!</h2>
           <span class="modal-close">X</span>
-          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true) do |f| %>
           <%= render "devise/shared/error_messages", resource: resource %>
 
           <div class="field">

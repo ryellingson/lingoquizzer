@@ -12,7 +12,7 @@
     <% else %>
     <span>Login</span>
     <ul class="dropdown">
-     <%= form_for(resource, as: "login", url: session_path(resource_name), html: { id: "login-form" } ) do |f| %>
+     <%= form_for(resource, as: "login", url: session_path(resource_name), html: { id: "login-form" }, remote: true) do |f| %>
      <div class="field">
       <%= f.label :username, class: "text-small-uppercase" %><br />
       <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "text-body" %>

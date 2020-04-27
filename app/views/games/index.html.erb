@@ -8,7 +8,7 @@
             <h2>Kana and Kanji</h2>
           </div>
           <div class="kana-content">
-            <%= link_to game_path(Game.first), class: "level-card" do %>
+            <%= link_to game_path(Game.find_by_name("Hiragana 1")), class: "level-card" do %>
             <div class="icon">
               <%= image_tag "icon-hiragana.jpg" %>
             </div>
@@ -16,63 +16,63 @@
               <h3>Hiragana</h3>
             </div>
             <% end %>
-            <a href="#" class="level-card">
-             <div class="icon">
+            <%= link_to game_path(Game.find_by_name("Katakana 1")), class: "level-card" do %>
+            <div class="icon">
               <%= image_tag "icon-katakana-5.jpg" %>
             </div>
             <div class="level-title">
               <h3>Katakana</h3>
             </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="vocab-wrapper">
+          <div class="level-header">
+            <h2>Vocab</h2>
+          </div>
+          <div class="vocab-content">
+            <a href="#" class="level-card">
+             <div class="icon">
+              <%= image_tag "icon-food-1.jpg" %>
+            </div>
+            <div class="level-title">
+              <h3>Food</h3>
+            </div>
           </a>
-        </div>
-      </div>
-      <div class="vocab-wrapper">
-        <div class="level-header">
-          <h2>Vocab</h2>
-        </div>
-        <div class="vocab-content">
           <a href="#" class="level-card">
            <div class="icon">
-            <%= image_tag "icon-food-1.jpg" %>
+            <%= image_tag "icon-animals-1.jpg" %>
           </div>
           <div class="level-title">
-            <h3>Food</h3>
+            <h3>Animals</h3>
           </div>
         </a>
         <a href="#" class="level-card">
          <div class="icon">
-          <%= image_tag "icon-animals-1.jpg" %>
+          <%= image_tag "icon-tech-2.jpg" %>
         </div>
         <div class="level-title">
-          <h3>Animals</h3>
+          <h3>TechLab</h3>
         </div>
       </a>
+    </div>
+  </div>
+  <div class="grammer-wrapper">
+    <div class="level-header">
+      <h2>Grammar</h2>
+    </div>
+    <div class="grammar-content">
       <a href="#" class="level-card">
        <div class="icon">
-        <%= image_tag "icon-tech-2.jpg" %>
+        <%= image_tag "icon-temaker-1.jpg" %>
       </div>
       <div class="level-title">
-        <h3>TechLab</h3>
+        <div class="level-title">
+          <h3>Te Maker</h3>
+        </div>
       </div>
     </a>
   </div>
-</div>
-<div class="grammer-wrapper">
-  <div class="level-header">
-    <h2>Grammar</h2>
-  </div>
-  <div class="grammar-content">
-    <a href="#" class="level-card">
-     <div class="icon">
-      <%= image_tag "icon-temaker-1.jpg" %>
-    </div>
-    <div class="level-title">
-      <div class="level-title">
-        <h3>Te Maker</h3>
-      </div>
-    </div>
-  </a>
-</div>
 </div>
 </div>
 </div>
