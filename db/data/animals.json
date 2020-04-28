@@ -275,5 +275,46 @@
     "kanji": "豹",
     "romanization": "hyou"
   },
-
+  {
+    "problem_icon": "lion.png",
+    "kana": "ライオン",
+    "kanji": "",
+    "romanization": "raion"
+  },
+  {
+    "problem_icon": "lizard.png",
+    "kana": "とかげ",
+    "kanji": "蜥蜴",
+    "romanization": "tokage"
+  },
+  {
+    "problem_icon": "llama.png",
+    "kana": "ラマ",
+    "kanji": "",
+    "romanization": "rama"
+  },
+  {
+    "problem_icon": "lobster.png",
+    "kana": "ロブスター",
+    "kanji": "",
+    "romanization": "robusuta-"
+  },
+  {
+    "problem_icon": "monkey.png",
+    "kana": "さる",
+    "kanji": "猿",
+    "romanization": "saru"
+  },
+  {
+    "problem_icon": "mosquito.png",
+    "kana": "か",
+    "kanji": "蚊",
+    "romanization": "ka"
+  },
+  {
+    "problem_icon": "mouse.png",
+    "kana": "ねぜみ",
+    "kanji": "鼠",
+    "romanization": "hyou"
+  },
 ]
