@@ -1,0 +1,127 @@
+ [
+    {
+        "char_id": "ga",
+        "character": "が",
+        "romanization": "ga"
+    },
+    {
+        "char_id": "gi",
+        "character": "ぎ",
+        "romanization": "gi"
+    },
+    {
+        "char_id": "gu",
+        "character": "ぐ",
+        "romanization": "gu"
+    },
+    {
+        "char_id": "ge",
+        "character": "げ",
+        "romanization": "ge"
+    },
+    {
+        "char_id": "go",
+        "character": "ご",
+        "romanization": "go"
+    },
+    {
+        "char_id": "za",
+        "character": "ざ",
+        "romanization": "za"
+    },
+    {
+        "char_id": "zi",
+        "character": "じ",
+        "romanization": "ji"
+    },
+    {
+        "char_id": "zu",
+        "character": "ず",
+        "romanization": "zu"
+    },
+    {
+        "char_id": "ze",
+        "character": "ぜ",
+        "romanization": "ze"
+    },
+    {
+        "char_id": "zo",
+        "character": "ぞ",
+        "romanization": "zo"
+    },
+    {
+        "char_id": "da",
+        "character": "だ",
+        "romanization": "da"
+    },
+    {
+        "char_id": "di",
+        "character": "ぢ",
+        "romanization": "ji"
+    },
+    {
+        "char_id": "du",
+        "character": "づ",
+        "romanization": "zu"
+    },
+    {
+        "char_id": "de",
+        "character": "で",
+        "romanization": "de"
+    },
+    {
+        "char_id": "do",
+        "character": "ど",
+        "romanization": "do"
+    },
+    {
+        "char_id": "ba",
+        "character": "ば",
+        "romanization": "ba"
+    },
+    {
+        "char_id": "bi",
+        "character": "び",
+        "romanization": "bi"
+    },
+    {
+        "char_id": "bu",
+        "character": "ぶ",
+        "romanization": "bu"
+    },
+    {
+        "char_id": "be",
+        "character": "べ",
+        "romanization": "be"
+    },
+    {
+        "char_id": "bo",
+        "character": "ぼ",
+        "romanization": "bo"
+    },
+    {
+        "char_id": "pa",
+        "character": "ぱ",
+        "romanization": "pa"
+    },
+    {
+        "char_id": "pi",
+        "character": "ぴ",
+        "romanization": "pi"
+    },
+    {
+        "char_id": "pu",
+        "character": "ぷ",
+        "romanization": "pu"
+    },
+    {
+        "char_id": "pe",
+        "character": "ぺ",
+        "romanization": "pe"
+    },
+    {
+        "char_id": "po",
+        "character": "ぽ",
+        "romanization": "po"
+    }
+  ]

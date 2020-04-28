@@ -1,0 +1,132 @@
+[
+  {
+    "char_id": "ga",
+    "character": "ガ",
+    "romanization": "ga"
+  },
+  {
+    "char_id": "gi",
+    "character": "ギ",
+    "romanization": "gi"
+  },
+  {
+    "char_id": "gu",
+    "character": "グ",
+    "romanization": "gu"
+  },
+  {
+    "char_id": "ge",
+    "character": "ゲ",
+    "romanization": "ge"
+  },
+  {
+    "char_id": "go",
+    "character": "ゴ",
+    "romanization": "go"
+  },
+  {
+    "char_id": "za",
+    "character": "ザ",
+    "romanization": "za"
+  },
+  {
+    "char_id": "zi",
+    "character": "ジ",
+    "romanization": "ji"
+  },
+  {
+    "char_id": "zu",
+    "character": "ズ",
+    "romanization": "zu"
+  },
+  {
+    "char_id": "ze",
+    "character": "ゼ",
+    "romanization": "ze"
+  },
+  {
+    "char_id": "zo",
+    "character": "ゾ",
+    "romanization": "zo"
+  },
+  {
+    "char_id": "da",
+    "character": "ダ",
+    "romanization": "da"
+  },
+  {
+    "char_id": "di",
+    "character": "ヂ",
+    "romanization": "ji"
+  },
+  {
+    "char_id": "du",
+    "character": "ヅ",
+    "romanization": "zu"
+  },
+  {
+    "char_id": "de",
+    "character": "デ",
+    "romanization": "de"
+  },
+  {
+    "char_id": "do",
+    "character": "ド",
+    "romanization": "do"
+  },
+  {
+    "char_id": "ba",
+    "character": "バ",
+    "romanization": "ba"
+  },
+  {
+    "char_id": "bi",
+    "character": "ビ",
+    "romanization": "bi"
+  },
+  {
+    "char_id": "bu",
+    "character": "ブ",
+    "romanization": "bu"
+  },
+  {
+    "char_id": "be",
+    "character": "ベ",
+    "romanization": "be"
+  },
+  {
+    "char_id": "bo",
+    "character": "ボ",
+    "romanization": "bo"
+  },
+  {
+    "char_id": "pa",
+    "character": "パ",
+    "romanization": "pa"
+  },
+  {
+    "char_id": "pi",
+    "character": "ピ",
+    "romanization": "pi"
+  },
+  {
+    "char_id": "pu",
+    "character": "プ",
+    "romanization": "pu"
+  },
+  {
+    "char_id": "pe",
+    "character": "ペ",
+    "romanization": "pe"
+  },
+  {
+    "char_id": "po",
+    "character": "ポ",
+    "romanization": "po"
+  },
+  {
+    "char_id": "vu",
+    "character": "ヴ",
+    "romanization": "vu"
+  }
+]
