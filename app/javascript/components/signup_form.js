@@ -12,6 +12,16 @@ const initInteractiveForm = () => {
     inputEl.addEventListener( 'blur', onBlur );
   }
 
+  const passwordInput = document.querySelector("#user_password");
+  const passwordConfirmation = document.querySelector("#user_password_confirmation");
+  passwordConfirmation.addEventListener('input', () => {
+    if (passwordInput.value !== passwordConfirmation.value) {
+      passwordConfirmation.setCustomValidity("Passwords don't match!")
+    } else {
+      passwordConfirmation.setCustomValidity("");
+    }
+  });
+
   function onFocus( ev ) {
     ev.target.parentNode.classList.add( 'inputs--filled' );
   }

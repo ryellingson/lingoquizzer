@@ -121,11 +121,13 @@ a:active {
 
 .signup-tagline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 8px;
-  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px 12px 0px 0px;
   width: 100%;
   padding-left: 25px;
   background: white;
+  margin-bottom: 20px;
 }
 
 .new_user {
@@ -134,13 +136,17 @@ a:active {
   border-radius: 5px;
 }
 
-.interactive-form { //begin nested form effect
+.sign-up.modal {
+  background: gainsboro;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.3);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  background-color: gainsboro;
+}
+
+.interactive-form { //begin nested form effect
   height: 400px;
   width: 300px;
-  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.3);
-  border-radius: 12px;
+
 
 
   input[type=submit] {
