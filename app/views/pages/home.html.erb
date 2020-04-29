@@ -45,12 +45,12 @@
 
           <div class="field">
             <%= f.label :username, class: "text-small-uppercase" %><br />
-            <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "text-body" %>
+            <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "text-body", required: true %>
           </div>
 
           <div class="field">
             <%= f.label :email, class: "text-small-uppercase" %><br />
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "text-body" %>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "text-body", required: true %>
           </div>
 
           <div class="field">
@@ -58,12 +58,12 @@
             <% if @minimum_password_length %>
             <em>(<%= @minimum_password_length %> characters minimum)</em>
             <% end %><br />
-            <%= f.password_field :password, autocomplete: "new-password", class: "text-body" %>
+            <%= f.password_field :password, autocomplete: "new-password", class: "text-body", minlength: 6, required: true %>
           </div>
 
           <div class="field">
             <%= f.label :password_confirmation, class: "text-small-uppercase" %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "text-body" %>
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "text-body", required: true %>
           </div>
 
           <div class="actions">
