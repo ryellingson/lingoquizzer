@@ -11,65 +11,74 @@
           <div class="gateway-to-games stroke">
             <h2 class="p-absolute">Games</h2>
             <svg>
-              <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-              <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+              <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
+              <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
             </svg>
           </div>
           <% end %>
           <%= link_to forum_path do %>
-          <div class="gateway-to-forum">
-            <h2>Forum</h2>
+          <div class="gateway-to-games stroke">
+            <h2 class="p-absolute">Forum</h2>
+            <svg>
+              <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
+              <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+            </svg>
           </div>
           <% end %>
           <% if user_signed_in? %>
-          <div class="gateway-to-join">
-            <h2>Welcome!</h2>
-            <p><%= link_to current_user.username, user_profile_path %></p>
-            <%= link_to 'logout', destroy_user_session_path, method: :delete %>
+          <div class="gateway-to-games stroke">
+            <h2 class="p-absolute">Welcome!</h2>
+            <svg>
+              <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
+              <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+            </svg>
           </div>
-          <% else %>
-          <div class="gateway-to-join modal-btn">
-            <h2>Join for free</h2>
-          </div>
-          <% end %>
+          <p><%= link_to current_user.username, user_profile_path %></p>
+          <%= link_to 'logout', destroy_user_session_path, method: :delete %>
         </div>
+        <% else %>
+        <div class="gateway-to-games stroke modal-btn">
+          <h2>Join for free</h2>
+        </div>
+        <% end %>
       </div>
     </div>
-    <div class="modal-bg">
-      <div class="sign-up modal">
-        <div class="signup-content interactive-form">
-          <h2 class="signup-tagline">Join the Community!</h2>
-          <span class="modal-close">X</span>
-          <%= form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true) do |f| %>
-          <%= render "devise/shared/error_messages", resource: resource %>
+  </div>
+  <div class="modal-bg">
+    <div class="sign-up modal">
+      <div class="signup-content interactive-form">
+        <h2 class="signup-tagline">Join the Community!</h2>
+        <span class="modal-close">X</span>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
 
-          <div class="field">
-            <%= f.label :username, class: "text-small-uppercase" %><br />
-            <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "text-body", required: true %>
-          </div>
+        <div class="field">
+          <%= f.label :username, class: "text-small-uppercase" %><br />
+          <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "text-body", required: true %>
+        </div>
 
-          <div class="field">
-            <%= f.label :email, class: "text-small-uppercase" %><br />
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "text-body", required: true %>
-          </div>
+        <div class="field">
+          <%= f.label :email, class: "text-small-uppercase" %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "text-body", required: true %>
+        </div>
 
-          <div class="field">
-            <%= f.label :password, class: "text-small-uppercase" %>
-            <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "new-password", class: "text-body", minlength: 6, required: true %>
-          </div>
+        <div class="field">
+          <%= f.label :password, class: "text-small-uppercase" %>
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "new-password", class: "text-body", minlength: 6, required: true %>
+        </div>
 
-          <div class="field">
-            <%= f.label :password_confirmation, class: "text-small-uppercase" %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "text-body", required: true %>
-          </div>
+        <div class="field">
+          <%= f.label :password_confirmation, class: "text-small-uppercase" %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "text-body", required: true %>
+        </div>
 
-          <div class="actions">
-            <%= f.submit "Sign up", class: "text-small-uppercase" %>
-          </div>
-          <% end %>
+        <div class="actions">
+          <%= f.submit "Sign up", class: "text-small-uppercase" %>
+        </div>
+        <% end %>
 <!--           <form>
             <span>
               <label for="username" class="text-small-uppercase">Username</label>

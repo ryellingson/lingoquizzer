@@ -12,7 +12,6 @@ const initDropDown = () => {
 
       obj.dd.on('click', function(event){
         $(this).toggleClass('active');
-        return false;
       });
     }
   }

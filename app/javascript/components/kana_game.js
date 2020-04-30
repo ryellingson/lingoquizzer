@@ -94,6 +94,7 @@ const initGame = () => {
     answers.forEach((answer) => {
       if (!answer.innerHTML) {
         answer.classList.add("wrong-answer");
+        // answer.innerHTML = `<p>${answers.dataset.answer}<p>`;
       }
     })
     document.querySelector(".game-stats").classList.remove("hidden");
