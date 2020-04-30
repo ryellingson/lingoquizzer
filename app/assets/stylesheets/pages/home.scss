@@ -302,15 +302,15 @@ a:active {
   // align-items: center;
 }
 
-.gateway-to-games {
-  background-color: palegreen;
-  padding: 30px 80px;
-  margin: 6px;
-  margin-top: 20px;
-  border : solid grey 1px;
-  border-radius: 4px;
-  opacity: 0.8;
-}
+// .gateway-to-games {
+//   background-color: palegreen;
+//   padding: 30px 80px;
+//   margin: 6px;
+//   margin-top: 20px;
+//   border : solid grey 1px;
+//   border-radius: 4px;
+//   opacity: 0.8;
+// }
 
 .p-absolute {
   position: absolute;
@@ -326,10 +326,10 @@ a:active {
  cursor: pointer;
 
  svg {
-  height: 55px;
-  width: 150px;
+  height: 100px;
+  width: 240px;
   fill: none;
-  stroke-width: 5;
+  stroke-width: 2;
 
   .o1 {
     stroke: rgba(grey, 0.7);
