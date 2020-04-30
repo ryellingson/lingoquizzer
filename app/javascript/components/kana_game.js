@@ -20,7 +20,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  const initialTime = 120;
+  const initialTime = 5;
   let timeLeft = initialTime;
   let interval;
   let score = 0;
@@ -94,6 +94,7 @@ const initGame = () => {
     answers.forEach((answer) => {
       if (!answer.innerHTML) {
         answer.classList.add("wrong-answer");
+        // answer.innerHTML = `<p>${answers.dataset.answer}<p>`;
       }
     })
     document.querySelector(".game-stats").classList.remove("hidden");
