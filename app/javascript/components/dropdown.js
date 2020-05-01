@@ -1,23 +1,16 @@
-const initDropDown = () => {
+const initDropDowns = () => {
 
-  function DropDown(el) {
-    this.dd = el;
-    this.placeholder = this.dd.children('span');
-    this.content = this.dd.find('.dropdown');
-    this.initEvents();
-  }
-  DropDown.prototype = {
-    initEvents : function() {
-      var obj = this;
-
-      obj.dd.on('click', function(event){
-        $(this).toggleClass('active');
-      });
-    }
+  const startDropDownFromSelector = (selector) => {
+    const dropdown = document.querySelector(selector);
+    const trigger = dropdown.querySelector(".dropdown-trigger");
+    trigger.addEventListener('click', () => {
+      dropdown.classList.toggle("active");
+    });
   }
 
-  var dd = new DropDown( $('#dd') );
+  startDropDownFromSelector("#login-dropdown");
+  // startDropDownFromSelector("#contact-dropdown");
 
 }
 
-export { initDropDown }
+export { initDropDowns }

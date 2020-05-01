@@ -7,7 +7,7 @@
     </div>
     <% end %>
     <%= link_to games_path do %>
-    <div class="stroke">
+    <div class="game-header-button stroke">
       <h2 class="p-absolute">Games</h2>
       <svg>
         <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
@@ -19,7 +19,7 @@
       <h1><%= @game.name %></h1>
     </div>
     <%= link_to games_path do %>
-    <div class="stroke">
+    <div class="game-header-button stroke">
       <h2 class="p-absolute">
         <% if user_signed_in? %>
         <div class="profile-link">

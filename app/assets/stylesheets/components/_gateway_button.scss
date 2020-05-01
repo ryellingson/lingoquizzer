@@ -1,0 +1,62 @@
+.gateway-buttons{
+  margin-top: 15px;
+}
+
+.gateway-button {
+  margin: 8px;
+  svg {
+    height: 100px;
+    width: 240px;
+  }
+}
+
+.game-header-button {
+  svg {
+    height: 55px;
+    width: 150px;
+  }
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.stroke {
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ cursor: pointer;
+
+ svg {
+  fill: none;
+  stroke-width: 2;
+
+  .o1 {
+    stroke: rgba(grey, 0.7);
+    fill: palegreen;
+    transition: all 1s ease-in-out;
+  }
+
+  .o2 {
+    stroke: rgba(grey, 0.7);
+    stroke-dasharray: 20 420;  //10px would be 10 on then 10 off This seems to be set to 20 on 420 off
+    stroke-dashoffset: 120;  // changes where the stroke on and off starts
+    transition: stroke-dashoffset 1s ease-in-out;
+  }
+}
+
+
+&:hover {
+  .o1{
+    fill: rgba(#18f060, 0.3);
+  }
+
+  .o2 {
+    stroke: white;
+    stroke-dashoffset: -420;
+  }
+}
+}
