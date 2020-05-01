@@ -17,7 +17,7 @@
           </div>
           <% end %>
           <%= link_to forum_path do %>
-          <div class="gateway-to-games stroke">
+          <div class="gateway-to-forum stroke">
             <h2 class="p-absolute">Forum</h2>
             <svg>
               <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
@@ -26,7 +26,7 @@
           </div>
           <% end %>
           <% if user_signed_in? %>
-          <div class="gateway-to-games stroke">
+          <div class="gateway-to-join stroke">
             <h2 class="p-absolute">Welcome!</h2>
             <svg>
               <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
@@ -37,7 +37,7 @@
           <%= link_to 'logout', destroy_user_session_path, method: :delete %>
         </div>
         <% else %>
-        <div class="gateway-to-games stroke modal-btn">
+        <div class="gateway-to-join stroke modal-btn">
           <h2>Join for free</h2>
         </div>
         <% end %>

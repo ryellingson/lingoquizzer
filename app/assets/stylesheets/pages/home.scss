@@ -21,7 +21,7 @@ a:hover {
   text-decoration: none;
 }
 a:active {
-  color: red;
+  opacity: 0.7;
 }
 
 .main {
@@ -59,7 +59,7 @@ a:active {
 
 .gateway-tagline {
   border-bottom: 3px groove;
-  font-size: 17px;
+  font-size: 16px;
   text-align: center;
   color: darkslategrey;
   padding: 15px;
@@ -81,35 +81,35 @@ a:active {
 //   border: 2px solid darkslategrey;
 // }
 
-.gateway-to-forum {
-  background-color: palegreen;
-  padding: 30px 80px;
-  margin: 6px;
-  border : solid grey 1px;
-  border-radius: 4px;
-  opacity: 0.8;
-}
+// .gateway-to-forum {
+//   background-color: palegreen;
+//   padding: 30px 80px;
+//   margin: 6px;
+//   border : solid grey 1px;
+//   border-radius: 4px;
+//   opacity: 0.8;
+// }
 
-.gateway-to-forum:hover {
-  opacity: 1.0;
-  color: darkslategrey;
-  border: 2px solid darkslategrey;
-}
+// .gateway-to-forum:hover {
+//   opacity: 1.0;
+//   color: darkslategrey;
+//   border: 2px solid darkslategrey;
+// }
 
-.gateway-to-join {
-  background-color: palegreen;
-  padding: 30px 80px;
-  margin: 6px;
-  border : solid grey 1px;
-  border-radius: 4px;
-  opacity: 0.8;
-}
+// .gateway-to-join {
+//   background-color: palegreen;
+//   padding: 30px 80px;
+//   margin: 6px;
+//   border : solid grey 1px;
+//   border-radius: 4px;
+//   opacity: 0.8;
+// }
 
-.gateway-to-join:hover {
-  opacity: 1.0;
-  color: darkslategrey;
-  border: 2px solid darkslategrey;
-}
+// .gateway-to-join:hover {
+//   opacity: 1.0;
+//   color: darkslategrey;
+//   border: 2px solid darkslategrey;
+// }
 
 // signup - stylings - start
 .signup-content {
@@ -302,15 +302,17 @@ a:active {
   // align-items: center;
 }
 
-// .gateway-to-games {
-//   background-color: palegreen;
-//   padding: 30px 80px;
-//   margin: 6px;
-//   margin-top: 20px;
-//   border : solid grey 1px;
-//   border-radius: 4px;
-//   opacity: 0.8;
-// }
+.gateway-to-games {
+  margin: 8px;
+}
+
+.gateway-to-forum {
+  margin: 8px;
+}
+
+.gateway-to-join {
+  margin: 8px;
+}
 
 .p-absolute {
   position: absolute;

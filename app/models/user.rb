@@ -2,6 +2,8 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   attr_writer :login
+  devise :database_authenticatable, :registerable,
+  :recoverable, :rememberable, :validatable, authentication_keys: [:login]
 
   has_many :plays
 
@@ -11,8 +13,14 @@ class User < ApplicationRecord
   # Only allow letter, number, underscore and punctuation.
   validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
 
-  devise :database_authenticatable, :registerable,
-  :recoverable, :rememberable, :validatable, authentication_keys: [:login]
+  # has_one_attached :photo
+
+  # after_create :attach_avatar, unless: Proc.new { self.photo.attached? }
+
+  def attach_avatar
+    # avatar = URI.open('https://source.unsplash.com/500x500/?avatar')
+    # self.photo.attach(io: avatar, filename: 'avatar.jpg', content_type: 'image/jpg')
+  end
 
   def login
     @login || self.username || self.email
