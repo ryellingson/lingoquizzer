@@ -10,14 +10,16 @@
         <div class="profile-avatar">て</div>
       </div>
       <div class="profile-header-b">
-        <div class="profile-username"><%= current_user.username %></div>
+        <div class="profile-username"><%= @user.username %></div>
         <div class="profile-city">Add your city</div>
       </div>
+      <% if @user == current_user %>
       <div class="profile-edit-icon">
         <%= link_to edit_user_registration_path do %>
         <i class="fas fa-edit"></i></div>
         <% end %>
       </div>
+      <% end %>
       <div class="profile-record">
         <div class="profile-record-header">
           <h2>Game</h2>
@@ -68,3 +70,4 @@
       </div>
     </div>
   </div>
+

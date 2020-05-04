@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
@@ -8,7 +9,9 @@ Rails.application.routes.draw do
 
   get '/forum', controller: 'pages', action: 'forum'
 
-  get '/user_profile', controller: 'pages', action: 'user_profile'
+  post '/contact/send', controller: 'contact', action: 'send_message'
+
+  resources :users, only: [ :show ]
 
   resources :games, only: [ :show, :index ] do
     resources :plays, only: :create

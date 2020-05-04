@@ -27,7 +27,7 @@
             </div>
             <% end %>
             <% if user_signed_in? %>
-            <%= link_to user_profile_path do %>
+            <%= link_to user_path(current_user) do %>
             <div class="gateway-button stroke">
               <h2 class="p-absolute">My Profile</h2>
               <svg>

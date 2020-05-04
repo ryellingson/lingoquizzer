@@ -5,33 +5,62 @@
   </div>
   <% end %>
 
-    <ul class='header-menu'>
-     <div id="login-dropdown" class="wrapper-dropdown" tabindex="1">
-      <% if user_signed_in? %>
-      <div class="login-avatar">ら</div>
-      <span><%= link_to current_user.username, user_profile_path %></span>
-      <% else %>
+  <div class='header-menu'>
+    <div class="wrapper-dropdown" id="contact-dropdown">
       <div class="dropdown-trigger">
-      <span>Login</span>
+        <span>Contact Us</span>
       </div>
       <ul class="dropdown">
-       <%= form_for(resource, url: session_path(resource_name), html: { id: "login-form" }, remote: true) do |f| %>
-       <div class="field">
-        <%= f.label :login, class: "text-small-uppercase" %><br />
-        <%= f.text_field :login, autofocus: true, autocomplete: "username", class: "text-body" %>
+        <%= form_for(ContactForm.new, remote: :true, url: contact_send_path) do |f| %>
+        <% unless user_signed_in? && current_user.email.present? %>
+          <%= f.label :email %>
+          <%= f.email_field :email %>
+        <% end %>
+        <%= f.label :subject %>
+        <%= f.text_field :subject %>
+        <%= f.label :message %>
+        <%= f.text_area :message %>
+        <%= f.label :file %>
+        <%= f.file_field :file %>
+        <%= f.submit "Send" %>
+
+        <% end %>
+
+      </ul>
+    </div>
+    <div id="login-dropdown" class="wrapper-dropdown" tabindex="1">
+      <% if user_signed_in? %>
+      <div class="dropdown-trigger">
+        <div class="login-avatar">ら</div>
+        <span><%= current_user.username %></span>
       </div>
-      <div class="field">
-        <%= f.label :password, class: "text-small-uppercase" %><br />
-        <%= f.password_field :password, autocomplete: "current-password", class: "text-body" %>
+      <ul class="dropdown">
+        <li><%= link_to "My Profile", user_path(current_user) %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+      </ul>
+      <% else %>
+      <div class="dropdown-trigger">
+        <span>Login</span>
       </div>
+      <ul class="dropdown">
+        <%= form_for(resource, url: session_path(resource_name), namespace: "login", remote: true) do |f| %>
+        <div class="field">
+          <%= f.label :login, class: "text-small-uppercase" %><br />
+          <%= f.text_field :login, autofocus: true, autocomplete: "username", class: "text-body" %>
+        </div>
+        <div class="field">
+          <%= f.label :password, class: "text-small-uppercase" %><br />
+          <%= f.password_field :password, autocomplete: "current-password", class: "text-body" %>
+        </div>
 
 
-      <div class="actions">
-        <%= f.submit "Log in" %>
-      </div>
+        <div class="actions">
+          <%= f.submit "Log in" %>
+        </div>
 
-      <% end %>
-      <% end %>
-    </ul>
+        <% end %>
+        <% end %>
+      </ul>
+    </div>
   </div>
 </header>

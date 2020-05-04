@@ -1,8 +1,6 @@
 var usernameError = "<%= raw @user.errors.full_messages_for(:username).first %>";
 var emailError = "<%= raw @user.errors.full_messages_for(:email).first %>";
 
-console.log(usernameError);
-
 signUpForm = document.querySelector("#new_user");
 usernameInput = signUpForm.querySelector("#user_username");
 emailInput = signUpForm.querySelector("#user_email");
