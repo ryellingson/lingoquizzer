@@ -16,8 +16,19 @@ table {
 .game-header {
   border-bottom: 1px solid #dddddd;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.game-header-hub {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-left: 160px
+}
+
+.game-header .logo {
+  align-self: flex-start;
 }
 
 .profile-link {

@@ -6,38 +6,40 @@
       <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
     </div>
     <% end %>
-    <%= link_to games_path do %>
-    <div class="game-header-button stroke">
-      <h2 class="p-absolute">Games</h2>
-      <svg>
-        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-      </svg>
-    </div>
-    <% end %>
-    <div class="table-title">
-      <h1><%= @game.name %></h1>
-    </div>
-    <%= link_to games_path do %>
-    <div class="game-header-button stroke">
-      <h2 class="p-absolute">
-        <% if user_signed_in? %>
-        <div class="profile-link">
-          <div class="avatar">て</div>
-          <div class="username-game">
-            <p><%= link_to current_user.username, user_profile_path %></p>
+    <div class="game-header-hub">
+      <%= link_to games_path do %>
+      <div class="game-header-button stroke">
+        <h2 class="p-absolute">Games</h2>
+        <svg>
+          <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+          <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        </svg>
+      </div>
+      <% end %>
+      <div class="table-title">
+        <h1><%= @game.name %></h1>
+      </div>
+      <%= link_to games_path do %>
+      <div class="game-header-button stroke">
+        <h2 class="p-absolute">
+          <% if user_signed_in? %>
+          <div class="profile-link">
+            <div class="avatar">て</div>
+            <div class="username-game">
+              <p><%= link_to current_user.username, user_profile_path %></p>
+            </div>
+            <% else %>
+            <p>Login</p>
+            <% end %>
           </div>
-          <% else %>
-          <p>Login</p>
-          <% end %>
-        </div>
-      </h2>
-      <svg>
-        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-      </svg>
+        </h2>
+        <svg>
+          <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+          <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        </svg>
+      </div>
+      <% end %>
     </div>
-    <% end %>
     <div class="help-tip">
       <p> Hiragana is the basic Japanese phonetic alphabet.
 

@@ -19,7 +19,7 @@ import { initGame } from "../components/kana_game";
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
   initInteractiveForm();
-  initDropDowns();
+  // initDropDowns();
   initGame();
 });
 
