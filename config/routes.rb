@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
@@ -7,6 +8,8 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get '/forum', controller: 'pages', action: 'forum'
+
+  post '/contact/send', controller: 'contact', action: 'send_message'
 
   resources :users, only: [ :show ]
 

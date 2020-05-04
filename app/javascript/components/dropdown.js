@@ -9,7 +9,7 @@ const initDropDowns = () => {
   }
 
   startDropDownFromSelector("#login-dropdown");
-  // startDropDownFromSelector("#contact-dropdown");
+  startDropDownFromSelector("#contact-dropdown");
 
 }
 
