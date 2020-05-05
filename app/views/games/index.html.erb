@@ -84,16 +84,18 @@
     </div>
     <div class="menu-leaderboard-content">
       <ul class="menu-leaderboard-rows">
+          <% User.top_users.each_with_index do |user, index| %>
         <li class="menu-leaderboard-row">
           <span class="menu-leaderboard-avatar">て</span>
-          <span class="menu-leaderboard-rank">1.</span>
+          <span class="menu-leaderboard-rank"><%= index + 1 %></span>
           <span class="menu-leaderboard-username">
-            <span>USER/LINK</span>
+            <span><%= link_to user.username, user_path(user) %></span>
           </span>
           <span class="menu-leaderboard-points">
-            <span>3,444</span>
+            <span><%= user.total_score %></span>
           </span>
         </li>
+        <% end %>
       </ul>
     </div>
   </div>

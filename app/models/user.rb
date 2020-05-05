@@ -11,9 +11,9 @@ class User < ApplicationRecord
   validates :username, uniqueness: true
 
   # Only allow letter, number, underscore and punctuation.
-  validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
+  validates_format_of :username, with: /[一-龠]+|[ぁ-ゔ]+|[ァ-ヴー]+|[a-zA-Z0-9]+|[ａ-ｚＡ-Ｚ０-９]+|[々〆〤]+/u, :multiline => true
 
-  # has_one_attached :photo
+  has_one_attached :avatar
 
   # after_create :attach_avatar, unless: Proc.new { self.photo.attached? }
 
@@ -22,8 +22,16 @@ class User < ApplicationRecord
     # self.photo.attach(io: avatar, filename: 'avatar.jpg', content_type: 'image/jpg')
   end
 
+  def best_plays
+    self.plays.order(score: :desc).first(10)
+  end
+
   def login
     @login || self.username || self.email
+  end
+
+  def self.top_users
+    self.order(total_score: :desc).first(25)
   end
 
   def self.find_for_database_authentication(warden_conditions)

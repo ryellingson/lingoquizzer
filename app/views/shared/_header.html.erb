@@ -13,8 +13,8 @@
       <ul class="dropdown">
         <%= form_for(ContactForm.new, remote: :true, url: contact_send_path) do |f| %>
         <% unless user_signed_in? && current_user.email.present? %>
-          <%= f.label :email %>
-          <%= f.email_field :email %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
         <% end %>
         <%= f.label :subject %>
         <%= f.text_field :subject %>
@@ -31,7 +31,13 @@
     <div id="login-dropdown" class="wrapper-dropdown" tabindex="1">
       <% if user_signed_in? %>
       <div class="dropdown-trigger">
-        <div class="login-avatar">ら</div>
+        <% if current_user.avatar.attached? %>
+        <%= cl_image_tag current_user.avatar.key, class: 'login-avatar' %>
+        <% else %>
+        <div class="login-avatar">
+          て
+        </div>
+        <% end %>
         <span><%= current_user.username %></span>
       </div>
       <ul class="dropdown">
