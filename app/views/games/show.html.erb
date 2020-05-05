@@ -24,7 +24,7 @@
         <h2 class="p-absolute">
           <% if user_signed_in? %>
           <div class="profile-link">
-            <div class="avatar">て</div>
+            <%= cl_image_tag current_user.avatar.key, class: 'avatar' %>
             <div class="username-game">
               <p><%= link_to current_user.username, user_path(current_user) %></p>
             </div>
