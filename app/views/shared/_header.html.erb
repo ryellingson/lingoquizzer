@@ -22,7 +22,7 @@
         <%= f.text_area :message %>
         <%= f.label :file %>
         <%= f.file_field :file %>
-        <%= f.submit "Send" %>
+        <%= f.submit "Send", class: "contact-form-button" %>
 
         <% end %>
 
@@ -55,7 +55,7 @@
 
 
         <div class="actions">
-          <%= f.submit "Log in" %>
+          <%= f.submit "Log in", class: "login-button" %>
         </div>
 
         <% end %>
