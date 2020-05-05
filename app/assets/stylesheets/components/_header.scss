@@ -1,3 +1,44 @@
+#login_new_user {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 150px;
+  border: none;
+}
+
+.login-button {
+  color: black;
+  background: palegreen;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 0 2rem;
+  opacity: 0.8;
+  text-shadow: 0px 1px 0px #7FA269;
+  height: 28px;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+.new_contact_form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 150px;
+}
+
+.contact-form-button {
+  color: black;
+  background: palegreen;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 0 2rem;
+  opacity: 0.8;
+  text-shadow: 0px 1px 0px #7FA269;
+  height: 28px;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
 .header {
   background-color: #7FA269;  /*dark green*/
   display: flex;

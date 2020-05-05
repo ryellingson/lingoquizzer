@@ -4,7 +4,11 @@
   justify-content: center;
   height: 100%;
   width: 100%;
-  margin: 5px 20px;
+}
+
+.profile-main-container .logo {
+  position: absolute;
+  left: 0px;
 }
 
 .profile-wrapper {
@@ -18,7 +22,7 @@
 
 .profile-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 10px;
 }
 
@@ -30,6 +34,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.profile-header-c {
+
 }
 
 .profile-avatar {
@@ -46,7 +54,8 @@
 }
 
 .profile-username {
-  font-size: 50px;
+  margin-right: 75px;
+  font-size: 60px;
   border-bottom: 1px solid rgba(200,200,200,0.8);
 }
 
