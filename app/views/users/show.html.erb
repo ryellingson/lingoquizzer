@@ -7,7 +7,13 @@
   <div class="profile-wrapper">
     <div class="profile-header">
       <div class="profile-header-a">
+        <% if current_user.avatar.attached? %>
         <%= cl_image_tag current_user.avatar.key, class: 'profile-avatar' %>
+        <% else %>
+        <div class="profile-avatar">
+          <%= current_user.default_avatar %>
+        </div>
+        <% end %>
       </div>
       <div class="profile-header-b">
         <div class="profile-username"><%= @user.username %></div>

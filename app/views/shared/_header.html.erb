@@ -22,7 +22,7 @@
         <%= f.text_area :message %>
         <%= f.label :file %>
         <%= f.file_field :file %>
-        <%= f.submit "Send", class: "contact-form-button", data: { disable_with: false } %>
+        <%= f.submit "Send", class: "contact-form-button" %>
 
         <% end %>
 
@@ -35,10 +35,10 @@
         <%= cl_image_tag current_user.avatar.key, class: 'login-avatar' %>
         <% else %>
         <div class="login-avatar">
-          て
+          <%= current_user.default_avatar %>
         </div>
         <% end %>
-        <span><%= current_user.username %></span>
+        <span class="username-dropdown-text"><%= current_user.username %></span>
       </div>
       <ul class="dropdown">
         <li><%= link_to "My Profile", user_path(current_user) %></li>

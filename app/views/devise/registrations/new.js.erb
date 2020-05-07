@@ -8,6 +8,9 @@ emailInput = signUpForm.querySelector("#user_email");
 if (usernameError !== '') {
   usernameInput.setCustomValidity(usernameError);
   usernameInput.reportValidity();
+  usernameInput.addEventListener('input', () => {
+    usernameInput.setCustomValidity("");
+  })
 }
 
 if (emailError !== '') {

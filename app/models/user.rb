@@ -8,18 +8,18 @@ class User < ApplicationRecord
   has_many :plays
 
   validates :email, uniqueness: true
-  validates :username, uniqueness: true
+  validates :username, uniqueness: true, length: { in: 3..16 }
 
   # Only allow letter, number, underscore and punctuation.
   validates_format_of :username, with: /[一-龠]+|[ぁ-ゔ]+|[ァ-ヴー]+|[a-zA-Z0-9]+|[ａ-ｚＡ-Ｚ０-９]+|[々〆〤]+/u, :multiline => true
 
   has_one_attached :avatar
 
-  # after_create :attach_avatar, unless: Proc.new { self.photo.attached? }
+  after_create :assign_default_avatar, unless: Proc.new { self.avatar.attached? }
 
-  def attach_avatar
-    # avatar = URI.open('https://source.unsplash.com/500x500/?avatar')
-    # self.photo.attach(io: avatar, filename: 'avatar.jpg', content_type: 'image/jpg')
+  def assign_default_avatar
+    default_avatars = JSON.parse(File.read(Rails.application.root + "db/data/hiragana_1.json"))
+    self.update(default_avatar: default_avatars.sample["character"])
   end
 
   def best_plays

@@ -32,6 +32,13 @@
   font-size: 25px;
 }
 
+.username-dropdown-text {
+  width: 115px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
 .new_contact_form {
   display: flex;
   flex-direction: column;
