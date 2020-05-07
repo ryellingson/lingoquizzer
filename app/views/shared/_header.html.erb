@@ -8,7 +8,7 @@
   <div class='header-menu'>
     <div class="wrapper-dropdown" id="contact-dropdown">
       <div class="dropdown-trigger">
-        <span>Contact Us</span>
+        <span class="contact-dropdown-text">Contact Us</span>
       </div>
       <ul class="dropdown">
         <%= form_for(ContactForm.new, remote: :true, url: contact_send_path) do |f| %>
@@ -22,7 +22,7 @@
         <%= f.text_area :message %>
         <%= f.label :file %>
         <%= f.file_field :file %>
-        <%= f.submit "Send", class: "contact-form-button" %>
+        <%= f.submit "Send", class: "contact-form-button", data: { disable_with: false } %>
 
         <% end %>
 
@@ -46,7 +46,7 @@
       </ul>
       <% else %>
       <div class="dropdown-trigger">
-        <span>Login</span>
+        <span class="login-dropdown-text">Login</span>
       </div>
       <ul class="dropdown">
         <%= form_for(resource, url: session_path(resource_name), namespace: "login", remote: true) do |f| %>
