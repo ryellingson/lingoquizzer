@@ -7,6 +7,7 @@
 }
 
 .login-button {
+  opacity: 0.6;
   color: black;
   background: palegreen;
   border: 1px solid grey;
@@ -17,6 +18,18 @@
   height: 28px;
   font-size: 16px;
   margin: 10px 0px;
+}
+
+.login-button:hover {
+  opacity: 1.0;
+}
+
+.login-dropdown-text {
+  font-size: 25px;
+}
+
+.contact-dropdown-text {
+  font-size: 25px;
 }
 
 .new_contact_form {
@@ -27,6 +40,7 @@
 }
 
 .contact-form-button {
+  opacity: 0.6;
   color: black;
   background: palegreen;
   border: 1px solid grey;
@@ -37,6 +51,11 @@
   height: 28px;
   font-size: 16px;
   margin: 10px 0px;
+}
+
+.contact-form-button:hover {
+  opacity: 1.0;
+  cursor: pointer;
 }
 
 .header {
