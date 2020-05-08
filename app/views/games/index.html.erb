@@ -87,7 +87,7 @@
         <% User.top_users.each_with_index do |user, index| %>
         <li class="menu-leaderboard-row">
           <% if user.avatar.attached? %>
-          <%= cl_image_tag current_user.avatar.key, class: 'menu-leaderboard-avatar' %>
+          <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
           <% else %>
           <div class="default-menu-leaderboard-avatar">
             <%= user.default_avatar %>

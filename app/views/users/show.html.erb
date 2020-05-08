@@ -1,9 +1,11 @@
 <div class="profile-main-container">
-  <%= link_to root_path do %>
-  <div class="logo">
-    <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
+  <div class="profile-sidebar-left">
+    <%= link_to root_path do %>
+    <div class="logo">
+      <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
+    </div>
+    <% end %>
   </div>
-  <% end %>
   <div class="profile-wrapper">
     <div class="profile-header">
       <div class="profile-header-a">
@@ -82,6 +84,17 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="profile-sidebar-right">
+    <%= link_to games_path do %>
+    <div class="game-header-button stroke">
+      <h2 class="p-absolute">Games</h2>
+      <svg>
+        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+      </svg>
+    </div>
+    <% end %>
   </div>
 </div>
 

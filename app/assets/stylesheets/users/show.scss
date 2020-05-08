@@ -1,9 +1,19 @@
 .profile-main-container {
   background-color: rgba(102,138,106, 0.9);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
+}
+
+.profile-sidebar-left {
+  width: 30vw;
+}
+
+.profile-sidebar-right {
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .profile-main-container .logo {
