@@ -84,9 +84,15 @@
     </div>
     <div class="menu-leaderboard-content">
       <ul class="menu-leaderboard-rows">
-          <% User.top_users.each_with_index do |user, index| %>
+        <% User.top_users.each_with_index do |user, index| %>
         <li class="menu-leaderboard-row">
-          <span class="menu-leaderboard-avatar">て</span>
+          <% if user.avatar.attached? %>
+          <%= cl_image_tag current_user.avatar.key, class: 'menu-leaderboard-avatar' %>
+          <% else %>
+          <div class="menu-leaderboard-avatar">
+            <%= user.default_avatar %>
+          </div>
+          <% end %>
           <span class="menu-leaderboard-rank"><%= index + 1 %></span>
           <span class="menu-leaderboard-username">
             <span><%= link_to user.username, user_path(user) %></span>
