@@ -10,7 +10,7 @@
         <% if current_user.avatar.attached? %>
         <%= cl_image_tag current_user.avatar.key, class: 'profile-avatar' %>
         <% else %>
-        <div class="profile-avatar">
+        <div class="default-profile-avatar">
           <%= current_user.default_avatar %>
         </div>
         <% end %>
