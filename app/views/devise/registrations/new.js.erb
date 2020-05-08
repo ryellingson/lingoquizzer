@@ -16,4 +16,7 @@ if (usernameError !== '') {
 if (emailError !== '') {
   emailInput.setCustomValidity(emailError);
   emailInput.reportValidity();
+  emailInput.addEventListener('input', () => {
+    emailInput.setCustomValidity("");
+  })
 }
