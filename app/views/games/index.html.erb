@@ -89,13 +89,13 @@
           <% if user.avatar.attached? %>
           <%= cl_image_tag current_user.avatar.key, class: 'menu-leaderboard-avatar' %>
           <% else %>
-          <div class="menu-leaderboard-avatar">
+          <div class="default-menu-leaderboard-avatar">
             <%= user.default_avatar %>
           </div>
           <% end %>
           <span class="menu-leaderboard-rank"><%= index + 1 %></span>
           <span class="menu-leaderboard-username">
-            <span><%= link_to user.username, user_path(user) %></span>
+            <%= link_to user.username, user_path(user) %>
           </span>
           <span class="menu-leaderboard-points">
             <span><%= user.total_score %></span>
