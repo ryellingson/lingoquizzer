@@ -161,16 +161,30 @@
 
 .menu-leaderboard-avatar {
   border: 1px solid rgba(47, 79, 79, 0.6);
-  font-size: 30px;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   height: 40px;
   width: 40px;
   display: flex;
   justify-content: center;
-  background-color: aliceblue;
   margin: 6px;
 }
+
+.default-menu-leaderboard-avatar {
+  border: 1px solid rgba(47, 79, 79, 0.6);
+  font-size: 30px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 5px;
+  margin: 6px;
+}
+
 
 .menu-leaderboard-rank {
   border: 1px solid lightgrey;
@@ -178,11 +192,17 @@
   font-weight: 900;
   font-size: 18px;
   padding: 0px 4px;
+  margin-left: 18px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .menu-leaderboard-username {
-  margin: 5px;
+  width: 200px;
+  font-size: 20px;
+  margin-left: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .menu-leaderboard-points {

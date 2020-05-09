@@ -1,9 +1,19 @@
 .profile-main-container {
   background-color: rgba(102,138,106, 0.9);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
+}
+
+.profile-sidebar-left {
+  width: 30vw;
+}
+
+.profile-sidebar-right {
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .profile-main-container .logo {
@@ -42,11 +52,22 @@
 
 .profile-avatar {
   border: 1px solid rgba(47, 79, 79, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.default-profile-avatar {
+  border: 1px solid rgba(47, 79, 79, 0.6);
   font-size: 100px;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   height: 150px;
-  width: 140px;
+  width: 150px;
   display: flex;
   justify-content: center;
   background-color: aliceblue;
