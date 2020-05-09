@@ -20,7 +20,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  const initialTime = 120;
+  const initialTime = 5;
   let timeLeft = initialTime;
   let interval;
   let score = 0;
@@ -94,7 +94,7 @@ const initGame = () => {
     answers.forEach((answer) => {
       if (!answer.innerHTML) {
         answer.classList.add("wrong-answer");
-        // answer.innerHTML = `<p>${answers.dataset.answer}<p>`;
+        answer.innerHTML = answer.dataset.answer;
       }
     })
     document.querySelector(".game-stats").classList.remove("hidden");
@@ -121,12 +121,12 @@ const initGame = () => {
       window.location.replace(window.location.href + "?autoplay=true");
     }
   }
-
-  replayButton.addEventListener('click', restartGame);
-  playButton.addEventListener('click', startGame);
-  nextButton.addEventListener('click', () => updateCurrentAnswer("next"));
-  backButton.addEventListener('click', () => updateCurrentAnswer("back"));
-
+  if (playButton) {
+    replayButton.addEventListener('click', restartGame);
+    // playButton.addEventListener('click', startGame);
+    nextButton.addEventListener('click', () => updateCurrentAnswer("next"));
+    backButton.addEventListener('click', () => updateCurrentAnswer("back"));
+  }
   document.onkeydown = function(event) {
     switch (event.keyCode) {
      case 37: // left

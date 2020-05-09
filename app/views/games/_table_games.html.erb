@@ -1,0 +1,35 @@
+<div class="table-wrapper">
+  <table class="content-table" id="gameTable">
+    <tbody>
+      <tr>
+        <% @problems.each_slice(11) do |array| %>
+        <td class="gametable-col">
+          <table class="data">
+            <thead>
+              <tr>
+                <th>Hiragana</th>
+                <th>Romaji</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% array.each do |problem| %>
+              <tr class="#">
+                <td>
+                  <%= problem.question %>
+                </td>
+                <td data-answer="<%= problem.answer %>" class="answer"></td>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </td>
+        <% end %>
+        <td>
+          <%= render "game_controls" %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

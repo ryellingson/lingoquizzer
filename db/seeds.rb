@@ -143,24 +143,24 @@ puts "Ultimate Katakana is ready アルティメート"
 
 puts "次"
 
-puts "checking to see if Kana vs Kana 1 exists, if not creating it"
+# puts "checking to see if Kana vs Kana 1 exists, if not creating it"
 
-kana_vs_kana_1 = Game.find_or_create_by(name: "Kana vs Kana 1")
+# kana_vs_kana_1 = Game.find_or_create_by(name: "Kana vs Kana 1")
 
-puts "game created"
-puts "parsing kana_vs_kana_1 json"
+# puts "game created"
+# puts "parsing kana_vs_kana_1 json"
 
-kana_vs_kana_1_data = JSON.parse(File.read(Rails.root + 'db/data/kana_vs_kana_1.json'))
+# kana_vs_kana_1_data = JSON.parse(File.read(Rails.root + 'db/data/kana_vs_kana_1.json'))
 
-puts "parsed"
-puts "populating game with problems..."
+# puts "parsed"
+# puts "populating game with problems..."
 
-kana_vs_kana_1_data.each do |problem_data|
-  Problem.find_or_create_by!(game: kana_vs_kana_1, question: problem_data["character"], answer: problem_data["romanization"])
-end
+# kana_vs_kana_1_data.each do |problem_data|
+#   Problem.find_or_create_by!(game: kana_vs_kana_1, question: problem_data["character"], answer: problem_data["romanization"])
+# end
 
-puts "job done"
-puts "Kana vs Kana 1 is ready ハは"
+# puts "job done"
+# puts "Kana vs Kana 1 is ready ハは"
 
 puts "次"
 

@@ -1,0 +1,31 @@
+<div class="game-controls">
+  <%= link_to game_path(@game, autoplay: true) do %>
+  <div class="play-button border-glow">
+    <p>Play</p>
+  </div>
+  <% end %>
+  <div class="hidden hub">
+    <div class="shift-buttons">
+      <button class="back-button">Back</button>
+      <button class="next-button">Next</button>
+    </div>
+    <input type="text" class="game-input">
+  </div>
+  <div class="correct-count">
+    <p>0/46</p>
+  </div>
+  <div class="timer">
+    <p>2:00m</p>
+  </div>
+  <div class="score">
+    <p>0pts</p>
+  </div>
+  <div class="modal-bg">
+    <div class="game-stats modal">
+      <h2>Game Over!</h2>
+      <div class="restart play-button border-glow">
+        <p>Replay</p>
+      </div>
+    </div>
+  </div>
+</div>
