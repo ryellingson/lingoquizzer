@@ -53,9 +53,12 @@
   display: flex;
   justify-content: center;
   height: 30px;
-  width: 200px;
   margin: 0px;
+  input {
+    width: 150px;
+  }
 }
+
 
 .edit-form-button {
   opacity: 0.6;
