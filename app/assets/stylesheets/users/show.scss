@@ -191,7 +191,16 @@
   justify-content: center;
   align-items: center;
   height: 30px;
+  padding: 4px;
   margin-bottom: 10px;
+}
+
+.profile-best-plays-subheader {
+  border-bottom: 1px solid rgba(200,200,200,0.8);
+  display: flex;
+  justify-content: space-around;
+  height: 20px;
+  margin-bottom: 5px;
 }
 
 .profile-best-plays-content {
@@ -203,5 +212,6 @@
   border-bottom: 1px solid #eee;
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
