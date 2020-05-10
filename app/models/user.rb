@@ -22,6 +22,10 @@ class User < ApplicationRecord
     self.update(default_avatar: default_avatars.sample["character"])
   end
 
+  def display_plays
+    self.plays.order(created_at: :desc).first(10)
+  end
+
   def best_plays
     self.plays.order(score: :desc).first(10)
   end

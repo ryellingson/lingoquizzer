@@ -39,7 +39,7 @@
         <h2>Correct Count</h2>
       </div>
       <div class="profile-record-content">
-        <% @user.plays.each do |play| %>
+        <% @user.display_plays.each do |play| %>
         <div class="profile-record-row">
           <p><%= play.game.name %></p>
           <p><%= play.score %></p>
@@ -79,6 +79,8 @@
           <div class="profile-best-plays-row">
             <p><%= play.game.name %></p>
             <p><%= play.score %></p>
+            <p><%= play.time %></p>
+            <p><%= play.count %></p>
           </div>
           <% end %>
         </div>
