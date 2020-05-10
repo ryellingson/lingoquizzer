@@ -95,7 +95,16 @@
 .form-group-chat {
   border-radius: 5px;
   height: 40px;
+}
 
+.chat-input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .chat-tools {
