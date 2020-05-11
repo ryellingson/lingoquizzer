@@ -42,7 +42,7 @@ const initGame = () => {
   }
 
   const handleInputChange = () => {
-    if (gameInput.value === currentAnswer.dataset.answer) {
+    if (gameInput.value.trim() === currentAnswer.dataset.answer) {
       currentAnswer.classList.add("correct-answer");
       score += 2;
       scoreShow.innerHTML = `<p>${score}pts<p>`;
