@@ -5,8 +5,8 @@
       <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
     </div>
     <% end %>
-    <h2>Chill Space Forum</h2>
-    <p><i class="fas fa-circle green-circle"></i>Amaterasu</p>
+    <h2>Chill Space</h2>
+    <p><i class="fas fa-circle green-circle"></i><%= current_user.username %></p>
     <div class="sidebar-section">
       <div class="#">
         <h3>Channel</h3>
@@ -17,7 +17,7 @@
     </div>
     <div class="sidebar-section">
       <div class="#">
-        <h3>Direct Messages</h3>
+        <h3>Online</h3>
         <h3><i class="fas fa-plus"></i></h3>
       </div>
       <p><i class="fas fa-circle green-circle"></i>Evan</p>
@@ -33,42 +33,42 @@
         <img src="https://kitt.lewagon.com/placeholder/users/LouiseDarche">
         <div class="message-content">
           <div class="message-title"><p><strong>LouiseDarche</strong></p></div>
-          <div class="message-text"><p>Hey everyone 👋 We’ve just launched a new Le Wagon UI Kit 🚀 👉 <a href="#">https://uikit.lewagon.com/</a></p></div>
+          <div class="message-text"><p>おはよう 👋 工学において 🚀 </div>
         </div>
       </div>
       <div class="message">
         <img src="https://kitt.lewagon.com/placeholder/users/primaulia">
         <div class="message-content">
           <div class="message-title"><p><strong>primaulia</strong></p></div>
-          <div class="message-text"><p>yay! 🤘</p></div>
+          <div class="message-text"><p>すごい! 🤘</p></div>
         </div>
       </div>
       <div class="message">
         <img src="https://kitt.lewagon.com/placeholder/users/Avalonvdhorst">
         <div class="message-content">
           <div class="message-title"><p><strong>Avalonvdhorst</strong></p></div>
-          <div class="message-text"><p>That looks great, why don't you add a <code>.card</code> like on dribbble with a cool hover effect? 😎</p></div>
+          <div class="message-text"><p>自然科学などで発見された原理や法則でもたらされる</p></div>
         </div>
       </div>
       <div class="message">
         <img src="https://kitt.lewagon.com/placeholder/users/EllynBsc">
         <div class="message-content">
           <div class="message-title"><p><strong>EllynBsc</strong></p></div>
-          <div class="message-text"><p>Does it work on Linux? 🤓</p></div>
+          <div class="message-text"><p>たとえば八木・宇田アンテナの導波器や反射器はか？ 🤓</p></div>
         </div>
       </div>
       <div class="message">
         <img src="https://kitt.lewagon.com/placeholder/users/valerieschraauwers">
         <div class="message-content">
           <div class="message-title"><p><strong>valerieschraauwers</strong></p></div>
-          <div class="message-text"><p>Hi designers! A little tutorial I’ve made (french only, 🇬🇧 version coming soon!!!) covering:<br><br>- UX data (GA, Hotjar) and how to use it to re-think your sitemap<br><br>- Advanced UX workflow (Sketch > Invision > Abstract)<br><br>👉 <a href="#">https://kitt.lewagon.com/knowledge/tutorials/ux_advanced</a><br><br>Hope you’ll enjoy 📺 !</p></div>
+          <div class="message-text"><p>素子は自然科学の各々の分野の名称を前置して</p></div>
         </div>
       </div>
     </div>
     <div class="chat-hub">
       <form action="#">
         <div class="form-group-chat">
-          <input type="text" placeholder="Type your message..." class="form-control">
+          <input type="text" placeholder="Message the chat..." class="chat-input form-control">
         </div>
       </form>
       <div class="chat-tools">

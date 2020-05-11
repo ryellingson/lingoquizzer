@@ -20,7 +20,7 @@ const initGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  const initialTime = 120;
+  const initialTime = 10;
   let timeLeft = initialTime;
   let interval;
   let score = 0;
