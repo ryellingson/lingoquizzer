@@ -14,7 +14,7 @@
           <%= f.label :username %><br />
         </div>
         <div class="edit-form-input ">
-          <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
+          <%= f.text_field :username, autocomplete: "username" %>
         </div>
       </div>
 
@@ -58,8 +58,6 @@
         </div>
         <div class="edit-form-input">
           <%= f.password_field :password, autocomplete: "new-password" %>
-          <% if @minimum_password_length %>
-          <% end %>  <!-- ????? -->
         </div>
         <div class="edit-form-info">
           <p><%= @minimum_password_length %> characters minimum</p>

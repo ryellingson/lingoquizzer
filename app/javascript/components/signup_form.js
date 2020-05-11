@@ -3,7 +3,7 @@ const initInteractiveForm = () => {
   if (inputs.length === 0) {
     return
   }
-  for (let i = 0; i < inputs.length; i ++) {
+  for (let i = 0; i < inputs.length; i++) {
     var inputEl = inputs[i];
     if( inputEl.value.trim() !== '' ) {
       inputEl.parentNode.classList.add( 'input--filled' );
