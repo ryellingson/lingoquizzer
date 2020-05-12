@@ -15,7 +15,11 @@
               <% array.each do |problem| %>
               <tr class="#">
                 <td>
-                  <%= problem.question %>
+                  <% if @game.icon_based %>
+                    <%= image_tag problem.question %>
+                  <% else %>
+                    <%= problem.question %>
+                  <% end %>
                 </td>
                 <td data-answer="<%= problem.answer %>" class="answer"></td>
               </tr>
