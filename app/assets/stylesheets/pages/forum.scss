@@ -1,7 +1,11 @@
 
-.forum-main-container {
+.chat-main-container {
   display: flex;
   height: 100vh;
+}
+
+.chat-logo {
+  width: fit-content;
 }
 
  /*sidebar start*/
@@ -10,13 +14,15 @@
   background: rgb(102,138,106); /*green*/
   width: 20%;
   color: white;
-  padding: 20px
+  padding: 20px;
 }
+
 .sidebar-right {
   background: rgb(36,80,54); /*dark green*/
   flex-direction: column;
-  width: 30%;
+  width: 35vw;
 }
+
 .sidebar-button {
   font-size: 25px;
   width: 60px;
@@ -25,25 +31,12 @@
   display: inline-block;
   background-color: rgb(233,63,51);
 }
+
 .sidebar-button:hover {
   opacity: 1;
   font-weight: bold;
   text-decoration: none;
   color: white;
-}
-
-.sidebar-right p {
-  margin: 0;
-  opacity: 0.7;
-}
-.sidebar-section h3, .sidebar-section i {
-  font-size: 16px;
-}
-.sidebar-section {
-  margin-top: 16px;
-}
-.sidebar-right > .active {
-  opacity: 1;
 }
 
 /*sidebar end */
@@ -74,6 +67,7 @@
   width: 50%;
   flex-grow: 1;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .chat-messages {
@@ -122,6 +116,7 @@
   display: flex;
   margin-bottom: 8px;
 }
+
 .message img {
   width: 50px;
   height: 50px;
@@ -129,15 +124,18 @@
   border-radius: 3px;
   margin-right: 8px;
 }
+
 .message-content {
   flex-grow: 1;
 }
+
 .message-title p {
   margin-bottom: 0;
   margin-top: 0;
 }
 
 /*messages end*/
+
 .sidebar-right-media {
   height: 100%;
   display: flex;
@@ -145,13 +143,21 @@
   justify-content: space-around;
 }
 
-.forum-lesson {
+.chat-lesson {
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
   height: 300px;
 }
 
-.forum-entertainment {
+.chat-entertainment {
   border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
   background: image-url("ramen.jpg") no-repeat center center fixed;
-  height: 300px;
+  height: 303px;
+}
+
+.chat-entertainment img {
+  width: 475px;
 }
