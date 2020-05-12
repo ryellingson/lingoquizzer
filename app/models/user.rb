@@ -6,6 +6,7 @@ class User < ApplicationRecord
   :recoverable, :rememberable, :validatable, authentication_keys: [:login]
 
   has_many :plays
+  has_many :messages
 
   validates :email, uniqueness: true
   validates :username, uniqueness: true, length: { in: 3..16 }

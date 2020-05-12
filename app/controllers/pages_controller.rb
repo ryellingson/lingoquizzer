@@ -6,6 +6,8 @@ class PagesController < ApplicationController
   end
 
   def forum
+    @messages = Message.all
+    @message = Message.new
   end
 
   def user_profile

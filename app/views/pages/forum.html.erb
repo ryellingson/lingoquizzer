@@ -28,43 +28,17 @@
   </div>
 
   <div class="chat-container">
-    <div class="chat-messages">
-      <div class="message">
+    <div class="chat-messages" id="chatbox">
+      <% @messages.each do |message| %>
+        <%= render 'messages/message', message: message %>
+      <% end %>
+    </div>
+<!--       <div class="message">
         <img src="https://kitt.lewagon.com/placeholder/users/LouiseDarche">
         <div class="message-content">
           <div class="message-title"><p><strong>LouiseDarche</strong></p></div>
           <div class="message-text"><p>おはよう 👋 工学において 🚀 </div>
-        </div>
-      </div>
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/primaulia">
-        <div class="message-content">
-          <div class="message-title"><p><strong>primaulia</strong></p></div>
-          <div class="message-text"><p>すごい! 🤘</p></div>
-        </div>
-      </div>
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/Avalonvdhorst">
-        <div class="message-content">
-          <div class="message-title"><p><strong>Avalonvdhorst</strong></p></div>
-          <div class="message-text"><p>自然科学などで発見された原理や法則でもたらされる</p></div>
-        </div>
-      </div>
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/EllynBsc">
-        <div class="message-content">
-          <div class="message-title"><p><strong>EllynBsc</strong></p></div>
-          <div class="message-text"><p>たとえば八木・宇田アンテナの導波器や反射器はか？ 🤓</p></div>
-        </div>
-      </div>
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/valerieschraauwers">
-        <div class="message-content">
-          <div class="message-title"><p><strong>valerieschraauwers</strong></p></div>
-          <div class="message-text"><p>素子は自然科学の各々の分野の名称を前置して</p></div>
-        </div>
-      </div>
-    </div>
+        </div> -->
     <div class="chat-hub">
       <form action="#">
         <div class="form-group-chat">
