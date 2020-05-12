@@ -34,15 +34,9 @@
     </div>
     <div class="chat-hub">
       <%= form_with model: @message do |f| %>
-
         <div class="form-group-chat">
           <%= f.text_field :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
         </div>
-
-        <div class="send-button">
-          <%= f.submit "Send", class: "send-button" %>
-        </div>
-
         <% end %>
       <div class="chat-tools">
         <i class="far fa-grin-beam"></i>

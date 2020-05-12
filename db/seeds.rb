@@ -168,7 +168,7 @@ puts "ワンワン"
 
 puts "checking to see if Animals exists, if not creating it"
 
-animals = Game.find_or_create_by(name: "Animals")
+animals = Game.find_or_create_by(name: "Animals", icon_based: true)
 
 puts "game created"
 puts "parsing animals json"
