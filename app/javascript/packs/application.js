@@ -7,6 +7,8 @@ require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
+require("popper");
+require("tether");
 
 import { initInteractiveForm } from "../components/signup_form";
 

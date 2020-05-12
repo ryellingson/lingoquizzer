@@ -1,7 +1,7 @@
-<div class="forum-main-container">
+<div class="chat-main-container">
   <div class="sidebar-left">
     <%= link_to root_path do %>
-    <div class="logo">
+    <div class="logo chat-logo">
       <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
     </div>
     <% end %>
@@ -26,51 +26,24 @@
       <p><i class="fas fa-circle white-circle"></i>Abe-chan</p>
     </div>
   </div>
-
   <div class="chat-container">
-    <div class="chat-messages">
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/LouiseDarche">
-        <div class="message-content">
-          <div class="message-title"><p><strong>LouiseDarche</strong></p></div>
-          <div class="message-text"><p>おはよう 👋 工学において 🚀 </div>
-        </div>
-      </div>
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/primaulia">
-        <div class="message-content">
-          <div class="message-title"><p><strong>primaulia</strong></p></div>
-          <div class="message-text"><p>すごい! 🤘</p></div>
-        </div>
-      </div>
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/Avalonvdhorst">
-        <div class="message-content">
-          <div class="message-title"><p><strong>Avalonvdhorst</strong></p></div>
-          <div class="message-text"><p>自然科学などで発見された原理や法則でもたらされる</p></div>
-        </div>
-      </div>
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/EllynBsc">
-        <div class="message-content">
-          <div class="message-title"><p><strong>EllynBsc</strong></p></div>
-          <div class="message-text"><p>たとえば八木・宇田アンテナの導波器や反射器はか？ 🤓</p></div>
-        </div>
-      </div>
-      <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/valerieschraauwers">
-        <div class="message-content">
-          <div class="message-title"><p><strong>valerieschraauwers</strong></p></div>
-          <div class="message-text"><p>素子は自然科学の各々の分野の名称を前置して</p></div>
-        </div>
-      </div>
+    <div class="chat-messages" id="chatbox">
+      <% @messages.each do |message| %>
+        <%= render 'messages/message', message: message %>
+      <% end %>
     </div>
     <div class="chat-hub">
-      <form action="#">
+      <%= form_with model: @message do |f| %>
+
         <div class="form-group-chat">
-          <input type="text" placeholder="Message the chat..." class="chat-input form-control">
+          <%= f.text_field :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
         </div>
-      </form>
+
+        <div class="send-button">
+          <%= f.submit "Send", class: "send-button" %>
+        </div>
+
+        <% end %>
       <div class="chat-tools">
         <i class="far fa-grin-beam"></i>
       </div>
@@ -78,9 +51,9 @@
   </div>
   <div class="sidebar-right">
     <div class="sidebar-right-media">
-      <div class="forum-lesson">
-        <iframe width="425" height="300" src="https://www.youtube.com/embed/45vSd2dLaQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </div>
-        <div class="forum-entertainment">
+      <div class="chat-lesson">
+        <iframe width="475" height="300" src="https://www.youtube.com/embed/45vSd2dLaQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </div>
+        <div class="chat-entertainment">
           <%= image_tag "japanese-street.jpg" %>
         </div>
       </div>

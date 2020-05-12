@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
+# Begin Custom Gems
+
 gem 'cloudinary'
 
 gem 'mail_form'
@@ -10,6 +12,12 @@ gem 'mail_form'
 gem 'simple_form'
 
 gem 'font-awesome-sass', '~> 5.12.0'
+
+gem 'jquery-rails'
+
+gem 'popper_js'
+
+gem 'tether-rails'
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
