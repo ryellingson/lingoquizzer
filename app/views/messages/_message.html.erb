@@ -1,0 +1,12 @@
+<div class="message">
+  <img src="https://kitt.lewagon.com/placeholder/users/LouiseDarche">
+  <div class="message-content">
+    <p>[<%= message.created_at.strftime("%I:%M %p") %>]</p>
+    <div class="message-user">
+      <p><%= message.user.username %></p>
+    </div>
+    <div class="message-text"><p>
+      <%= message.content %>
+    </p></div>
+  </div>
+</div>

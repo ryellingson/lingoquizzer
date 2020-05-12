@@ -26,25 +26,24 @@
       <p><i class="fas fa-circle white-circle"></i>Abe-chan</p>
     </div>
   </div>
-
   <div class="chat-container">
     <div class="chat-messages" id="chatbox">
       <% @messages.each do |message| %>
         <%= render 'messages/message', message: message %>
       <% end %>
     </div>
-<!--       <div class="message">
-        <img src="https://kitt.lewagon.com/placeholder/users/LouiseDarche">
-        <div class="message-content">
-          <div class="message-title"><p><strong>LouiseDarche</strong></p></div>
-          <div class="message-text"><p>おはよう 👋 工学において 🚀 </div>
-        </div> -->
     <div class="chat-hub">
-      <form action="#">
+      <%= form_with model: @message do |f| %>
+
         <div class="form-group-chat">
-          <input type="text" placeholder="Message the chat..." class="chat-input form-control">
+          <%= f.text_field :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
         </div>
-      </form>
+
+        <div class="send-button">
+          <%= f.submit "Send", class: "send-button" %>
+        </div>
+
+        <% end %>
       <div class="chat-tools">
         <i class="far fa-grin-beam"></i>
       </div>
