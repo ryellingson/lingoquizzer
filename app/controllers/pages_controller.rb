@@ -8,6 +8,10 @@ class PagesController < ApplicationController
   def forum
     @messages = Message.all
     @message = Message.new
+    @posts = Post.all
+    @post = Post.new
+    @comments = Comment.all
+    @comment = Comment.new
   end
 
   def user_profile

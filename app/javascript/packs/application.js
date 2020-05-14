@@ -24,7 +24,7 @@ document.addEventListener('turbolinks:load', function(e) {
   initInteractiveForm();
   initDropDowns();
   initGame();
-  initMessageScroll();
+  // initMessageScroll();
 });
 
 
