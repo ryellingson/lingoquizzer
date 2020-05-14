@@ -13,6 +13,12 @@ Rails.application.routes.draw do
 
   post '/contact/send', controller: 'contact', action: 'send_message'
 
+  resources :posts do
+    resources :comments, only: [:create, :show, :destroy]
+  end
+
+  resources :messages, only: [ :new, :create ]
+
   resources :users, only: [ :show ]
 
   resources :games, only: [ :show, :index ] do

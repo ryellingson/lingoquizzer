@@ -7,6 +7,8 @@ class User < ApplicationRecord
 
   has_many :plays
   has_many :messages
+  has_many :posts
+  has_many :comments
 
   validates :email, uniqueness: true
   validates :username, uniqueness: true, length: { in: 3..16 }
