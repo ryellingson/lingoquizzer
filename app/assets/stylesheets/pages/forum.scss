@@ -1,9 +1,17 @@
+.forum-tab-content {
+  display: none;
+}
+
+.forum-tab-content.active-tab {
+  display: block;
+}
+
 .channel-container {
   width: 50%;
   overflow: scroll;
 }
 
-.chat-main-container {
+.chillspace-main-container {
   display: flex;
   height: 100vh;
 }
@@ -68,10 +76,11 @@
 /*chat start*/
 
 .chat-container {
+  height: calc(100vh - 20px);
   width: 100%;
   flex-grow: 1;
   flex-direction: column;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .chat-messages {

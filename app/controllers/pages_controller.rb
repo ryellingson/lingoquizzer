@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def index
   end
 
-  def forum
+  def chillspace
     @messages = Message.all
     @message = Message.new
     @posts = Post.all
