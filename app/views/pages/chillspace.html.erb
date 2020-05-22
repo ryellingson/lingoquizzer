@@ -1,4 +1,4 @@
-<div class="chat-main-container">
+<div class="chillspace-main-container">
   <div class="sidebar-left">
     <%= link_to root_path do %>
     <div class="logo chat-logo">
@@ -12,8 +12,8 @@
         <h3>Channel</h3>
         <h3><i class="fas fa-plus"></i></h3>
       </div>
-      <p><i class="fab fa-slack-hash"></i> Chat</p>
-      <p><i class="fab fa-slack-hash"></i> Forum</p>
+      <p class="forum_tab"><i class="fab fa-slack-hash"></i> Forum</p>
+      <p class="forum_tab"><i class="fa-slack-hash"></i> Chat</p>
     </div>
     <div class="sidebar-section">
       <div class="#">
@@ -27,8 +27,12 @@
     </div>
   </div>
   <div class="channel-container">
-    <%= render "forum_chat/forum_container" %>
-    <%#= render "forum_chat/chat_container" %>
+    <div class="forum-tab-content">
+      <%= render "forum_chat/forum_container", posts: @posts %>
+    </div>
+    <div class="forum-tab-content">
+      <%= render "forum_chat/chat_container" %>
+    </div>
   </div>
   <div class="sidebar-right">
     <div class="sidebar-right-media">

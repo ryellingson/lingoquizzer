@@ -1,20 +1,22 @@
 <div class="forum_container">
+  <% posts.each do |post| %>
   <div class="post-title">
-    <p>Title:<%= @post.title %></p>
+    <p>Title:<%= post.title %></p>
   </div>
   <div class="post-content">
-    <p>Content:<%= @post.content %></p>
+    <p>Content:<%= post.content %></p>
   </div>
   <div class="post-user">
-    <p>User:<%= @post.user %></p>
+    <p>User:<%= post.user %></p>
   </div>
 
   <div class="comment">
     <p>Comment:</p>
-    <%= form_for ([@post, Comment.new]) do |f| %>
+    <%= form_for ([post, Comment.new]) do |f| %>
 
     <%= f.text_area :content %>
 
     <% end %>
   </div>
+  <% end %>
 </div>

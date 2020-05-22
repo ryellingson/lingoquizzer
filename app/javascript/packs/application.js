@@ -19,11 +19,14 @@ import { initGame } from "../components/kana_game";
 
 import { initMessageScroll } from "../channels/message_scroll.js";
 
+import { initForumTabs } from "../components/forum_tabs"
+
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
   initInteractiveForm();
   initDropDowns();
   initGame();
+  initForumTabs();
   // initMessageScroll();
 });
 
