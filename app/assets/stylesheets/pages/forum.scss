@@ -1,3 +1,12 @@
+.forum-tab {
+  padding: 3px;
+}
+
+.forum-tab:hover {
+  cursor: pointer;
+  text-shadow: 0px 2px 2px black;
+}
+
 .forum-tab-content {
   display: none;
 }
@@ -27,6 +36,7 @@
   width: 20%;
   color: white;
   padding: 20px;
+  text-shadow: 0px 1px 0px black;
 }
 
 .sidebar-right {
@@ -185,6 +195,37 @@
 
 /*messages end*/
 
+// sidebar left starts
+
+.room-header {
+  font-size: 20px;
+  margin: 5px 0px;
+  border-bottom: 2px solid rgba(255,255,255, 0.5);
+}
+
+.chillspace-current-user {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.left-sidebar-section {
+  margin-bottom: 10px;
+}
+
+.chillspace-section-header {
+  font-size: 25px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255,255,255, 0.5);
+}
+
+.chillspace-channels {
+  font-size: 20px;
+}
+
+// sidebar left ends
+
+// sidebar right starts
+
 .sidebar-right-media {
   height: 100%;
   display: flex;
@@ -210,3 +251,5 @@
 .chat-entertainment img {
   object-fit: scale-down;
 }
+
+// sidebar right ends

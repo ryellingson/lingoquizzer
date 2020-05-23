@@ -14,7 +14,7 @@
         <p><%= message.user.username %></p>
       </div>
       <div class="message-creation-time">
-        <p>[<%= message.created_at.strftime("%I:%M %p") %>]</p>
+        <p><%= message.created_at.strftime("%l:%M %p") %></p>
       </div>
     </div>
     <div class="message-text">
