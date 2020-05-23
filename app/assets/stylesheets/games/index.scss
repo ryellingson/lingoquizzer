@@ -17,10 +17,10 @@
   background-color: gainsboro;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 95%;
   border-radius: 5px;
-  justify-content: center;
 }
 
 .icon {  /*it doesnt need to be icon cause different image in html*/
@@ -34,14 +34,11 @@
   padding: 25px 30px;
 }
 
-.kana-wrapper {
-/*border: 1px solid blue;*/
-}
-
-.kana-content {
- /* border: 1px solid blue;*/
- display: flex;
- justify-content: space-around;
+.games-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 25px;
+  justify-items: center;
 }
 
 .vocab-wrapper {

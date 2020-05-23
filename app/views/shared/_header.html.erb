@@ -37,7 +37,7 @@
         <div class="default-login-avatar">
           <%= current_user.default_avatar %>
         </div>
-        <% end %>
+        <% end %> <!-- if current_user.avatar.attached? -->
         <span class="username-dropdown-text"><%= current_user.username %></span>
       </div>
       <ul class="dropdown">
@@ -64,9 +64,14 @@
           <%= f.submit "Log in", class: "login-button" %>
         </div>
 
-        <% end %>
+        <% end %> <!-- form_for url session path -->
+        <%= link_to new_user_password_path do %>
+          <div class="password-recovery">
+            <p>Forgot your password?</p>
+          </div>
         <% end %>
       </ul>
+      <% end %> <!-- if user_signed_in? -->
     </div>
   </div>
 </header>

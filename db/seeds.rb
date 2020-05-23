@@ -11,7 +11,7 @@ puts "おはよう"
 
 puts "checking to see if Hiragana 1 exists, if not creating it"
 
-hiragana_1 = Game.find_or_create_by(name: "Hiragana 1")
+hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", category: "writing")
 
 # if found?
 
@@ -34,7 +34,7 @@ puts "次"
 
 puts "checking to see if Hiragana 2 exists, if not creating it"
 
-hiragana_2 = Game.find_or_create_by(name: "Hiragana 2")
+hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", category: "writing")
 
 # if found?
 
@@ -57,7 +57,7 @@ puts "次"
 
 puts "checking to see if Ultimate Hiragana exists, if not creating it"
 
-ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana")
+ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", category: "writing")
 
 # if found?
 
@@ -82,7 +82,7 @@ puts "ヘロ"
 
 puts "checking to see if Katakana 1 exists, if not creating it"
 
-katakana_1 = Game.find_or_create_by(name: "Katakana 1")
+katakana_1 = Game.find_or_create_by(name: "Katakana 1", category: "writing")
 
 puts "game created"
 puts "parsing katakana json"
@@ -103,7 +103,7 @@ puts "次"
 
 puts "checking to see if Katakana 2 exists, if not creating it"
 
-katakana_2 = Game.find_or_create_by(name: "Katakana 2")
+katakana_2 = Game.find_or_create_by(name: "Katakana 2", category: "writing")
 
 puts "game created"
 puts "parsing katakana_2 json"
@@ -124,7 +124,7 @@ puts "次"
 
 puts "checking to see if Ultimate Katakana exists, if not creating it"
 
-ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana")
+ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", category: "writing")
 
 puts "game created"
 puts "parsing utimate_katakana json"
@@ -168,7 +168,7 @@ puts "ワンワン"
 
 puts "checking to see if Animals exists, if not creating it"
 
-animals = Game.find_or_create_by(name: "Animals", icon_based: true)
+animals = Game.find_or_create_by(name: "Animals", icon_based: true, category: "vocabulary")
 
 puts "game created"
 puts "parsing animals json"

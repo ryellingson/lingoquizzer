@@ -2,9 +2,6 @@ class PagesController < ApplicationController
   def home
   end
 
-  def index
-  end
-
   def chillspace
     @messages = Message.all
     @message = Message.new
