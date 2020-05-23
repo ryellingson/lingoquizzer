@@ -89,7 +89,7 @@
           <% if user.avatar.attached? %>
           <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
           <% else %>
-          <div class="default-menu-leaderboard-avatar">
+          <div class="menu-leaderboard-avatar default-avatar">
             <%= user.default_avatar %>
           </div>
           <% end %>
