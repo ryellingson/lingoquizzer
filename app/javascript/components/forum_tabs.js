@@ -1,5 +1,5 @@
 const initForumTabs = () => {
-  const forumTabs = document.querySelectorAll(".forum_tab")
+  const forumTabs = document.querySelectorAll(".forum-tab")
   if (forumTabs.length !== 0) {
     const forumTabContent = document.querySelectorAll(".forum-tab-content")
     forumTabs.forEach((tab, i) => {

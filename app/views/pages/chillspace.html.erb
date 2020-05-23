@@ -5,25 +5,31 @@
       <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
     </div>
     <% end %>
-    <h2>Chill Space</h2>
-    <p><i class="fas fa-circle green-circle"></i><%= current_user.username %></p>
-    <div class="sidebar-section">
-      <div class="#">
-        <h3>Channel</h3>
-        <h3><i class="fas fa-plus"></i></h3>
-      </div>
-      <p class="forum_tab"><i class="fab fa-slack-hash"></i> Forum</p>
-      <p class="forum_tab"><i class="fa-slack-hash"></i> Chat</p>
+    <div class="room-header">
+      <h2>Chill Space</h2>
     </div>
-    <div class="sidebar-section">
-      <div class="#">
-        <h3>Online</h3>
-        <h3><i class="fas fa-plus"></i></h3>
+    <div class="chillspace-current-user">
+      <p><i class="fas fa-circle green-circle"></i><%= current_user.username %></p>
+    </div>
+    <div class="left-sidebar-section">
+      <div class="chillspace-section-header">
+        <h3>Channel <i class="fas fa-comments"></i></h3>
       </div>
-      <p><i class="fas fa-circle green-circle"></i>Evan</p>
-      <p><i class="fas fa-circle green-circle"></i>Sora Aoi</p>
-      <p><i class="fas fa-circle white-circle"></i>spanky_douglas</p>
-      <p><i class="fas fa-circle white-circle"></i>Abe-chan</p>
+      <div class="chillspace-channels">
+        <p class="forum-tab"><i class="fas fa-circle-notch"></i></i> Forum</p>
+        <p class="forum-tab"><i class="fas fa-circle-notch"></i></i> Chat</p>
+      </div>
+    </div>
+    <div class="left-sidebar-section">
+      <div class="chillspace-section-header">
+        <h3>Online <i class="fas fa-user"></i></h3>
+      </div>
+      <div class="chillspace-online-users">
+        <p><i class="fas fa-circle green-circle"></i>Evan</p>
+        <p><i class="fas fa-circle green-circle"></i>Sora Aoi</p>
+        <p><i class="fas fa-circle white-circle"></i>spanky_douglas</p>
+        <p><i class="fas fa-circle white-circle"></i>Abe-chan</p>
+      </div>
     </div>
   </div>
   <div class="channel-container">

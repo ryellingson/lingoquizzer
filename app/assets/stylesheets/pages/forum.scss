@@ -1,3 +1,12 @@
+.forum-tab {
+  padding: 3px;
+}
+
+.forum-tab:hover {
+  cursor: pointer;
+  text-shadow: 0px 2px 2px black;
+}
+
 .forum-tab-content {
   display: none;
 }
@@ -27,6 +36,7 @@
   width: 20%;
   color: white;
   padding: 20px;
+  text-shadow: 0px 1px 0px black;
 }
 
 .sidebar-right {
@@ -88,7 +98,7 @@
   align-items: center;
   flex-grow: 1;
   overflow-y: scroll;
-  margin-left: 20px;
+  padding-left: 10px;
 }
 
 .chat-hub {
@@ -129,6 +139,9 @@
 .message {
   display: flex;
   margin-bottom: 8px;
+  border: 1px solid rgba(0,0,0, 0.1);
+  border-radius: 20px;
+  width: fit-content;
 }
 
 .message img {
@@ -143,13 +156,75 @@
   flex-grow: 1;
 }
 
+.message-header {
+  display: flex;
+  padding-top: 6px;
+}
+
 .message-user p {
-  margin-bottom: 0;
-  margin-top: 0;
+  border-bottom: 1px solid rgba(0,0,0, 0.08);
   font-weight: bold;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.message-creation-time {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.message-text {
+  font-size: 16px;
+}
+
+.default-message-avatar {
+  border: 1px solid rgba(47, 79, 79, 0.6);
+  font-size: 30px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 5px;
+  margin: 6px;
 }
 
 /*messages end*/
+
+// sidebar left starts
+
+.room-header {
+  font-size: 20px;
+  margin: 5px 0px;
+  border-bottom: 2px solid rgba(255,255,255, 0.5);
+}
+
+.chillspace-current-user {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.left-sidebar-section {
+  margin-bottom: 10px;
+}
+
+.chillspace-section-header {
+  font-size: 25px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255,255,255, 0.5);
+}
+
+.chillspace-channels {
+  font-size: 20px;
+}
+
+// sidebar left ends
+
+// sidebar right starts
 
 .sidebar-right-media {
   height: 100%;
@@ -176,3 +251,5 @@
 .chat-entertainment img {
   object-fit: scale-down;
 }
+
+// sidebar right ends
