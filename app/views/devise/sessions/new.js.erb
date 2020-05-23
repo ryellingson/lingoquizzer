@@ -1,6 +1,14 @@
 const loginEmailInput = document.querySelector("#login_user_login");
+const passwordInput = document.querySelector("#login_user_password")
 
 loginEmailInput.setCustomValidity("Invalid Login Info");
 loginEmailInput.reportValidity();
+loginEmailInput.addEventListener('input', () => {
+  loginEmailInput.setCustomValidity("");
+}, true)
+
+passwordInput.addEventListener('input', () => {
+  loginEmailInput.setCustomValidity("");
+}, true)
 
 
