@@ -11,7 +11,7 @@ puts "おはよう"
 
 puts "checking to see if Hiragana 1 exists, if not creating it"
 
-hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", category: "writing")
+hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", category: "writing", question_header: "hiragana")
 
 # if found?
 

@@ -1,0 +1,14 @@
+<div class="leaderboard-wrapper">
+  <% @games.each do |game| %>
+  <div class="leaderboard-header">
+    <p><%= game.name %></p>
+  </div>
+  <div class="leaderboard-row">
+    <% game.top_users_specific.each_with_index do |top_user, index| %>
+    <%= index + 1 %>
+    <%= top_user.username %>
+    <%= top_user.specific_score %>
+    <% end %> <!-- top users iteration -->
+  </div>
+  <% end %> <!-- game iteration -->
+</div>
