@@ -2,13 +2,14 @@
   <table class="content-table" id="gameTable">
     <tbody>
       <tr>
-        <% @problems.each_slice(11) do |array| %>
+        <% column_length = (@problems.count / 5.to_f).ceil %>
+        <% @problems.each_slice(column_length) do |array| %>
         <td class="gametable-col">
           <table class="data">
             <thead>
               <tr>
-                <th>Hiragana</th>
-                <th>Romaji</th>
+                <th><%= @game.question_header || "question" %></th>
+                <th>Answer</th>
               </tr>
             </thead>
             <tbody>

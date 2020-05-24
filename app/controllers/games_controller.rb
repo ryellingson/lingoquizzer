@@ -8,7 +8,7 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
     #create an instance variable assigning problems to the game instance
     if @game.icon_based
-      @problems = @game.problems.sample(33)
+      @problems = @game.problems.sample(32)
     else
       @problems = @game.problems.shuffle
     end

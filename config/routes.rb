@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get '/chillspace/chat', controller: 'pages', action: 'chillspace', as: :chat
 
+  get '/leaderboards', controller: 'pages', action: 'leaderboards'
+
   post '/contact/send', controller: 'contact', action: 'send_message'
 
   resources :posts do

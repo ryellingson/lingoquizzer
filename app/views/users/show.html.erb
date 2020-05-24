@@ -9,11 +9,11 @@
   <div class="profile-wrapper">
     <div class="profile-header">
       <div class="profile-header-a">
-        <% if current_user.avatar.attached? %>
-        <%= cl_image_tag current_user.avatar.key, class: 'profile-avatar' %>
+        <% if @user.avatar.attached? %>
+        <%= cl_image_tag @user.avatar.key, class: 'profile-avatar' %>
         <% else %>
         <div class="default-profile-avatar">
-          <%= current_user.default_avatar %>
+          <%= @user.default_avatar %>
         </div>
         <% end %>
       </div>

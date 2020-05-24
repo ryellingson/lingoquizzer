@@ -13,4 +13,8 @@ class PagesController < ApplicationController
 
   def user_profile
   end
+
+  def leaderboards
+    @games = Game.all
+  end
 end
