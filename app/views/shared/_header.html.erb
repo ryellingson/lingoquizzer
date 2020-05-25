@@ -50,8 +50,8 @@
       </div>
       <ul class="dropdown">
         <%= form_for(resource, url: session_path(resource_name), namespace: "login", remote: true) do |f| %>
-        <div class="field">
-          <%= f.label :login, class: "text-small-uppercase" %><br />
+        <div class="field login-ceiling">
+          <%= f.label :login, class: "text-small-uppercase login-ceiling" %><br />
           <%= f.text_field :login, autofocus: true, autocomplete: "username", class: "text-body" %>
         </div>
         <div class="field">
