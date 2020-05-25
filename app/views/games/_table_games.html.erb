@@ -2,7 +2,7 @@
   <table class="content-table" id="gameTable">
     <tbody>
       <tr>
-        <% column_length = (@problems.count / 5.to_f).ceil %>
+        <% column_length = (@problems.count / 5.to_f).ceil %> <!-- makes the last column look better -->
         <% @problems.each_slice(column_length) do |array| %>
         <td class="gametable-col">
           <table class="data">
