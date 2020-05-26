@@ -23,7 +23,10 @@
   border-radius: 5px;
 }
 
-.icon {  /*it doesnt need to be icon cause different image in html*/
+.level-icon {  /*it doesnt need to be icon cause different image in html*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px dotted gray;
   border-radius: 5px;
   border-bottom: none;
@@ -34,32 +37,18 @@
   padding: 25px 30px;
 }
 
-.games-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-row-gap: 25px;
-  justify-items: center;
-}
-
-.vocab-wrapper {
-/*border: 1px solid orange;*/
-}
-
-.vocab-content {
-  /*border: 1px solid lightblue;*/
-  display: flex;
-  justify-content: space-around;
-}
-
-.grammar-wrapper {
-/*border: 1px solid purple;*/
-}
-
-.grammar-content {
-  /*border: 1px solid purple;*/
+.text-icon {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
 
+.games-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 25px;
+  justify-items: center;
 }
 
 .level-header {
@@ -100,7 +89,7 @@
   align-items: center;
   height: 32px;
   width: 100%;
-  font-family: Karla;
+  font-size: 0.9vw;
 }
 
 .menu-leaderboard-container {

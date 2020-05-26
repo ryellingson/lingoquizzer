@@ -9,7 +9,7 @@
         <div class="games-grid">
           <% @games.each do |game| %>
           <%= link_to game_path(game), class: "level-card" do %>
-          <div class="icon">
+          <div class="level-icon">
             <% problem = game.problems.order("RANDOM()").first %>
             <% if game.icon_based %>
               <%= image_tag problem.question %>

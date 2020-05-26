@@ -16,7 +16,7 @@
                 <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
               </svg>
             </div>
-            <% end %>
+            <% end %> <!-- link to games path -->
             <% if user_signed_in? %>
             <%= link_to forum_path do %>
             <div class="gateway-button stroke">
@@ -26,7 +26,7 @@
                 <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
               </svg>
             </div>
-            <% end %>
+            <% end %> <!-- link to forum path -->
             <% else %>
             <div class="gateway-button stroke modal-btn">
               <h2 class="p-absolute">Forum</h2>
@@ -35,7 +35,7 @@
                 <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
               </svg>
             </div>
-            <% end %>
+            <% end %> <!-- if user signed in forum modal -->
             <% if user_signed_in? %>
             <%= link_to user_path(current_user) do %>
             <div class="gateway-button stroke">
@@ -45,7 +45,7 @@
                 <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
               </svg>
             </div>
-            <% end %>
+            <% end %> <!-- link to user_path -->
           </div>
           <% else %>
           <div class="gateway-button stroke modal-btn">
@@ -55,7 +55,7 @@
               <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
             </svg>
           </div>
-          <% end %>
+          <% end %> <!-- if user signed in join modal -->
         </div>
       </div>
     </div>
