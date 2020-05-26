@@ -6,10 +6,26 @@
 
 .games-container {
   height: 100%;
-  width: 70%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.language-select {
+  border: 2px solid #eee;
+}
+
+.classifications {
+
+}
+
+.category {
+  border: 2px solid #eee;
+}
+
+.difficulty {
+  border: 2px solid #eee;
 }
 
 .games-wrapper {
@@ -58,7 +74,6 @@
   margin: 15px;
   font-size: 25px;
   justify-content: center;
-  font-family: Karla;
   text-shadow: 2px 2px 4px rgba(61, 61, 61, 0.5);
 }
 
@@ -89,7 +104,7 @@
   align-items: center;
   height: 32px;
   width: 100%;
-  font-size: 0.9vw;
+  font-size: 0.8vw;
 }
 
 .menu-leaderboard-container {
