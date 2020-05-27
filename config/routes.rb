@@ -9,9 +9,9 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  get '/chillspace/forum', controller: 'pages', action: 'chillspace', as: :forum
+  get '/conversations/forum', controller: 'pages', action: 'conversations', as: :forum
 
-  get '/chillspace/chat', controller: 'pages', action: 'chillspace', as: :chat
+  get '/conversations/chat', controller: 'pages', action: 'conversations', as: :chat
 
   get '/leaderboards', controller: 'pages', action: 'leaderboards'
 
