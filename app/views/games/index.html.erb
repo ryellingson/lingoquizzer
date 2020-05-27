@@ -1,6 +1,22 @@
 <%= render 'shared/header' %>
 <main>
   <div class="games-main-container">
+    <div class="game-type-select">
+      <div class="game-type-select-header">
+        <h2>Language</h2>
+      </div>
+      <div class="game-type-select-content">
+        <div class="game-type-select-content-item type-japanese">
+          <h3>Japanese</h3>
+        </div>
+        <div class="game-type-select-content-item type-english">
+          <h3>English</h3>
+        </div>
+        <div class="game-type-select-content-item type-spanish">
+          <h3>Spanish</h3>
+        </div>
+      </div>
+    </div>
     <div class="games-container">
       <div class="games-wrapper">
         <div class="level-header">
@@ -9,10 +25,10 @@
         <div class="games-grid">
           <% @games.each do |game| %>
           <%= link_to game_path(game), class: "level-card" do %>
-          <div class="icon">
+          <div class="level-icon">
             <% problem = game.problems.order("RANDOM()").first %>
             <% if game.icon_based %>
-              <%= image_tag problem.question %>
+            <%= image_tag problem.question %>
             <% else %>
             <div class="text-icon">
               <%= problem.question %>
@@ -27,13 +43,47 @@
         </div>
       </div>
     </div>
+    <div class="classifications">
+      <div class="game-type-select">
+        <div class="game-type-select-header">
+          <h2>Category</h2>
+        </div>
+        <div class="game-type-select-content">
+          <div class="game-type-select-content-item ">
+            <h3>Typing</h3> <!-- symbols or spelling -->
+          </div>
+          <div class="game-type-select-content-item">
+            <h3>Vocab</h3>
+          </div>
+          <div class="game-type-select-content-item">
+            <h3>Grammar</h3>
+          </div>
+        </div>
+      </div>
+      <div class="game-type-select">
+        <div class="game-type-select-header">
+          <h2>Difficulty</h2>
+        </div>
+        <div class="game-type-select-content">
+          <div class="game-type-select-content-item">
+            <h3>Beginner</h3>
+          </div>
+          <div class="game-type-select-content-item">
+            <h3>Intermediate</h3>
+          </div>
+          <div class="game-type-select-content-item">
+            <h3>Advanced</h3>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="menu-leaderboard-container">
       <div class="menu-leaderboard">
         <%= link_to leaderboards_path do %>
-          <div class="menu-leaderboard-header">
-            <span class="menu-leaderboard-image"><i class="fas fa-trophy"></i></span>
-            <span class="menu-leaderboard-text">Leaderboard</span>
-          </div>
+        <div class="menu-leaderboard-header">
+          <span class="menu-leaderboard-image"><i class="fas fa-trophy"></i></span>
+          <span class="menu-leaderboard-text">Leaderboard</span>
+        </div>
         <% end %> <!-- link to leaderboards -->
         <div class="menu-leaderboard-content">
           <ul class="menu-leaderboard-rows">

@@ -108,9 +108,9 @@ const initGame = () => {
   const displayEndGameModal = () => {
     endGameModal.classList.add("bg-active");
     gameStats.insertAdjacentHTML("afterbegin",
-      `<div>Correct Answers: ${correctCountValue}/46</div>
-      <div>Time Bonus: ${timeLeft}pts</div>
-      <div>Score: ${score}pts</div>
+      `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/46</div>
+      <div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>
+      <div class="endgame-modal-item">Score: ${score}pts</div>
       `);
   }
 

@@ -20,7 +20,7 @@
   overflow: scroll;
 }
 
-.chillspace-main-container {
+.conversations-main-container {
   display: flex;
   height: 100vh;
 }
@@ -203,7 +203,7 @@
   border-bottom: 2px solid rgba(255,255,255, 0.5);
 }
 
-.chillspace-current-user {
+.conversations-current-user {
   font-size: 25px;
   margin-bottom: 30px;
 }
@@ -212,13 +212,13 @@
   margin-bottom: 10px;
 }
 
-.chillspace-section-header {
+.conversations-section-header {
   font-size: 25px;
   margin-bottom: 10px;
   border-bottom: 2px solid rgba(255,255,255, 0.5);
 }
 
-.chillspace-channels {
+.conversations-channels {
   font-size: 20px;
 }
 

@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def home
   end
 
-  def chillspace
+  def conversations
     @messages = Message.all
     @message = Message.new
     @posts = Post.all
