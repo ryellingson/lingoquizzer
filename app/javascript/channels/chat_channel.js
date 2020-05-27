@@ -11,11 +11,38 @@ consumer.subscriptions.create("ChatChannel", {
   },
 
   received(data) {
-    // $(".message-text").append('<div class="message-broadcast">' + data.content + '</div>')
+    const messageAvatar = data.avatar.default ?
+    `<div class="default-message-avatar">
+      ${data.avatar.content}
+    </div>`
+     :
+    `<img src=${data.avatar.content} class="message-avatar">`
 
-    // const chatMessages document.querySelector(".chat-messages");
-    // const message document.querySelector(".message");
+    const message =
+    `<div class="message">
+      <div class="message-avatar-wrapper">
+        ${messageAvatar}
+      </div>
+      <div class="message-content">
+        <div class="message-header">
+          <div class="message-user">
+            <p>${data.username}</p>
+          </div>
+          <div class="message-creation-time">
+            <p>${data.created_at}</p>
+          </div>
+        </div>
+        <div class="message-text">
+          ${data.content}
+        </div>
+      </div>
+    </div>`;
 
+    const chatBox = document.getElementById("chatbox");
+
+    chatBox.insertAdjacentHTML('beforeend', message);
+
+    chatBox.scrollTop = chatBox.scrollHeight;
 
 
     console.log(data.content);
