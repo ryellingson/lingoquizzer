@@ -7,11 +7,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 
+language_names = ["japanese", "spanish", "english", "french"]
+
+language_names.each do |language|
+  Language.create(name: language)
+end
+
+table_games = Genre.create(name: "table games")
+
 puts "おはよう"
 
 puts "checking to see if Hiragana 1 exists, if not creating it"
 
-hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", category: "writing", question_header: "hiragana")
+hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", category: "writing", genre: table_games, question_header: "hiragana")
 
 # if found?
 
