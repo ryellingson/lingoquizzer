@@ -1,0 +1,1174 @@
+[
+  {
+    "question": "agree.png",
+    "kanji": "サムズアップ",
+    "kana": "サムズアップ",
+    "romaji": "samuzuappu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Ichidan verb",
+      "Transitive verb"
+    ]
+  },
+  {
+    "question": "alien.png",
+    "kanji": "宇宙人",
+    "kana": "うちゅうじん",
+    "romaji": "uchuujin",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "arm.png",
+    "kanji": "腕",
+    "kana": "うで",
+    "romaji": "ude",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "astronaut.png",
+    "kanji": "宇宙飛行士",
+    "kana": "うちゅうひこうし",
+    "romaji": "uchuuhikoushi",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "baby.png",
+    "kanji": "赤ちゃん",
+    "kana": "あかちゃん",
+    "romaji": "akachan",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "back-off!.png",
+    "kanji": "ほっといてくれ",
+    "kana": "ほっといてくれ",
+    "romaji": "hottoitekure",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression"
+    ]
+  },
+  {
+    "question": "bald.png",
+    "kanji": "禿げる",
+    "kana": "はげる",
+    "romaji": "hakeru",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Ichidan verb",
+      "intransitive verb"
+    ]
+  },
+  {
+    "question": "beard.png",
+    "kanji": "髭",
+    "kana": "ひげ",
+    "romaji": "hike",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "blind.png",
+    "kanji": "盲人",
+    "kana": "もうじん",
+    "romaji": "moujin",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "blond.png",
+    "kanji": "金髪",
+    "kana": "きんぱつ",
+    "romaji": "kinpatsu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "bone.png",
+    "kanji": "骨-1",
+    "kana": "ほね",
+    "romaji": "hone",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bow.png",
+    "kanji": "お辞儀",
+    "kana": "おじぎ",
+    "romaji": "ojigi",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "brain.png",
+    "kanji": "脳",
+    "kana": "のう",
+    "romaji": "nou",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "breast-feeding.png",
+    "kanji": "母乳栄養",
+    "kana": "ぼにゅうえいよう",
+    "romaji": "bonyuueiyou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bride.png",
+    "kanji": "花嫁",
+    "kana": "はなよめ",
+    "romaji": "hanayome",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "brunette.png",
+    "kanji": "ブルネット",
+    "kana": "ブルネット",
+    "romaji": "burunetto",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "caca.png",
+    "kanji": "うんち",
+    "kana": "うんち",
+    "romaji": "unchi",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "clapping.png",
+    "kanji": "拍手",
+    "kana": "はくしゅ",
+    "romaji": "hakushu",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "clown.png",
+    "kanji": "道化師",
+    "kana": "どうけし",
+    "romaji": "doukeshi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "construction-worker.png",
+    "kanji": "土方",
+    "kana": "どかた",
+    "romaji": "dokata",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cook.png",
+    "kanji": "料理人",
+    "kana": "りょうりにん",
+    "romaji": "ryourinin",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "crossed-fingers.png",
+    "kanji": "えんがちょ",
+    "kana": "えんがちょ",
+    "romaji": "engacho",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cupid.png",
+    "kanji": "キューピッド",
+    "kana": "キューピッド",
+    "romaji": "kyuupiddo",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "curly-hair.png",
+    "kanji": "巻き髪",
+    "kana": "まきがみ",
+    "romaji": "makigami",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "deaf.png",
+    "kanji": "聾者",
+    "kana": "ろうしゃ",
+    "romaji": "rousha",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "demon.png",
+    "kanji": "悪魔",
+    "kana": "あくま",
+    "romaji": "akuma",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "detective.png",
+    "kanji": "探偵",
+    "kana": "たんてい",
+    "romaji": "tantei",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "disagree.png",
+    "kanji": "揉める",
+    "kana": "もめる",
+    "romaji": "momeru",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Ichidan verb",
+      "intransitive verb"
+    ]
+  },
+  {
+    "question": "doctor.png",
+    "kanji": "医者",
+    "kana": "いしゃ",
+    "romaji": "isha",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "ear.png",
+    "kanji": "耳",
+    "kana": "みみ",
+    "romaji": "mimi",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "elf.png",
+    "kanji": "妖精",
+    "kana": "ようせい",
+    "romaji": "yousei",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "eye.png",
+    "kanji": "目",
+    "kana": "め",
+    "romaji": "me",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "fairy.png",
+    "kanji": "妖精",
+    "kana": "ようせい",
+    "romaji": "yousei",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "farmer.png",
+    "kanji": "農家",
+    "kana": "のうか",
+    "romaji": "nouka",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "feature.png",
+    "kanji": "恥",
+    "kana": "はじ",
+    "romaji": "haji",
+    "is_common": "-",
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "female-office-worker.png",
+    "kanji": "ＯＬ",
+    "kana": "オーエル",
+    "romaji": "ooeru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "firefighter.png",
+    "kanji": "消防士",
+    "kana": "しょうぼうし",
+    "romaji": "shouboushi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "fist.png",
+    "kanji": "拳",
+    "kana": "こぶし",
+    "romaji": "kobushi",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "foot.png",
+    "kanji": "足",
+    "kana": "あし",
+    "romaji": "ashi",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "footprints.png",
+    "kanji": "足跡",
+    "kana": "あしあと",
+    "romaji": "ashiato",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "gay-person.png",
+    "kanji": "ゲイ",
+    "kana": "ゲイ",
+    "romaji": "gei",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "genie.png",
+    "kanji": "魔神",
+    "kana": "まじん",
+    "romaji": "majin",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ghost.png",
+    "kanji": "幽霊",
+    "kana": "ゆうれい",
+    "romaji": "yuurei",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "goblin.png",
+    "kanji": "お化け",
+    "kana": "おばけ",
+    "romaji": "obake",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "grandma.png",
+    "kanji": "お婆ちゃん",
+    "kana": "おばあちゃん",
+    "romaji": "obaachan",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "grandpa.png",
+    "kanji": "お祖父ちゃん",
+    "kana": "おじいちゃん",
+    "romaji": "ojiichan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "grey-hair.png",
+    "kanji": "白髪",
+    "kana": "しらが",
+    "romaji": "shiraga",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "guard.png",
+    "kanji": "護衛",
+    "kana": "ごえい",
+    "romaji": "goei",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "haircut.png",
+    "kanji": "散髪",
+    "kana": "さんぱつ",
+    "romaji": "sanpatsu",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "hand.png",
+    "kanji": "手",
+    "kana": "て",
+    "romaji": "te",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "handicapped.png",
+    "kanji": "障害者",
+    "kana": "しょうがいしゃ",
+    "romaji": "shougaisha",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "hands.png",
+    "kanji": "祝う",
+    "kana": "いわう",
+    "romaji": "iwau",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "hearing-aid.png",
+    "kanji": "補聴器",
+    "kana": "ほちょうき",
+    "romaji": "hochouki",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "hijab.png",
+    "kanji": "ヒジャーブ",
+    "kana": "ヒジャーブ",
+    "romaji": "hijaabu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "judge.png",
+    "kanji": "判事",
+    "kana": "はんじ",
+    "romaji": "hanji",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "kneel.png",
+    "kanji": "跪く",
+    "kana": "ひざまずく",
+    "romaji": "hizamazu",
+    "is_common": true,
+    "jlpt": "[",
+    "parts_of_speech": [
+      "Godan verb with ku ending",
+      "intransitive verb"
+    ]
+  },
+  {
+    "question": "leg.png",
+    "kanji": "足",
+    "kana": "あし",
+    "romaji": "ashi",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mage.png",
+    "kanji": "メイジ",
+    "kana": "メイジ",
+    "romaji": "めいじ",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mechanic.png",
+    "kanji": "職人",
+    "kana": "しょくにん",
+    "romaji": "shokunin",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mermaid.png",
+    "kanji": "人魚",
+    "kana": "にんぎょ",
+    "romaji": "ningyo",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "merman.png",
+    "kanji": "人魚",
+    "kana": "にんぎょ",
+    "romaji": "ningyo",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mouth.png",
+    "kanji": "口",
+    "kana": "くち",
+    "romaji": "kuchi",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mrs.png",
+    "kanji": "クラウス夫人",
+    "kana": "クラウスふじん",
+    "romaji": "kurausufujin",
+    "is_common": "-",
+    "jlpt": "",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "nonke.png",
+    "kanji": "ストレート ",
+    "kana": "ストレート ",
+    "romaji": "sutoreeto",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "nose.png",
+    "kanji": "鼻",
+    "kana": "はな",
+    "romaji": "hana",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "office-worker.png",
+    "kanji": "サラリーマン",
+    "kana": "サラリーマン",
+    "romaji": "sarariiman",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ogre.png",
+    "kanji": "鬼",
+    "kana": "おに",
+    "romaji": "oni",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ok.png",
+    "kanji": "大丈夫",
+    "kana": "だいじょうぶ",
+    "romaji": "daijoubu",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "painter.png",
+    "kanji": "画家",
+    "kana": "がか",
+    "romaji": "gaka",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "peace.png",
+    "kanji": "平和",
+    "kana": "へいわ",
+    "romaji": "heiwa",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Na-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "pilot.png",
+    "kanji": "パイロット",
+    "kana": "パイロット",
+    "romaji": "pairotto",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "police-officer.png",
+    "kanji": "警官",
+    "kana": "けいかん",
+    "romaji": "keikan",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "prayer.png",
+    "kanji": "祈り",
+    "kana": "いのり",
+    "romaji": "inori",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "pregnant.png",
+    "kanji": "妊婦",
+    "kana": "にんぷ",
+    "romaji": "ninpu",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "No-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "prince.png",
+    "kanji": "王子",
+    "kana": "おうじ",
+    "romaji": "ouji",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "princess.png",
+    "kanji": "王女",
+    "kana": "おうじょ",
+    "romaji": "oujo",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "programmer.png",
+    "kanji": "プログラマー",
+    "kana": "プログラマー",
+    "romaji": "puroguramaa",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "raise-hand.png",
+    "kanji": "手を挙げる",
+    "kana": "てをあげる",
+    "romaji": "teoageru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression",
+      "Ichidan verb"
+    ]
+  },
+  {
+    "question": "redhead.png",
+    "kanji": "赤毛",
+    "kana": "あかげ",
+    "romaji": "okage",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "rezubian.png",
+    "kanji": "レズビアン",
+    "kana": "レズビアン",
+    "romaji": "resubian",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "robot.png",
+    "kanji": "ロボット",
+    "kana": "ロボット",
+    "romaji": "robotto",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "rock-on.png",
+    "kanji": "ロックしようぜ",
+    "kana": "ロックしようぜ",
+    "romaji": "rokkushiyouze",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "santa-claus.png",
+    "kanji": "サンタクロース",
+    "kana": "サンタクロース",
+    "romaji": "santakuroosu",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "scientist.png",
+    "kanji": "科学者",
+    "kana": "かがくしゃ",
+    "romaji": "kagukusha",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "shrug.png",
+    "kanji": "竦める",
+    "kana": "すくめる",
+    "romaji": "sukumeru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Ichidan verb",
+      "Transitive verb"
+    ]
+  },
+  {
+    "question": "singer.png",
+    "kanji": "歌手",
+    "kana": "かしゅ",
+    "romaji": "kashuu",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "skull.png",
+    "kanji": "頭蓋骨",
+    "kana": "ずがいこつ",
+    "romaji": "zugaikotsu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "spa.png",
+    "kanji": "温泉地",
+    "kana": "おんせんち",
+    "romaji": "onsenchi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "student.png",
+    "kanji": "学生",
+    "kana": "がくせい",
+    "romaji": "gakusei",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "superhero.png",
+    "kanji": "スーパーヒーロー",
+    "kana": "スーパーヒーロー",
+    "romaji": "suupaahiiroo",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "supervillain.png",
+    "kanji": "超悪玉",
+    "kana": "ちょうあくだま",
+    "romaji": "chouakudama",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "teacher.png",
+    "kanji": "先生",
+    "kana": "せんせい",
+    "romaji": "sensei",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "to-pinch.png",
+    "kanji": "摘む-1",
+    "kana": "つまむ",
+    "romaji": "tsumamu",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Godan verb with mu ending",
+      "Transitive verb"
+    ]
+  },
+  {
+    "question": "to-stand.png",
+    "kanji": "立つ",
+    "kana": "たつ",
+    "romaji": "tatsu",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Godan verb with tsu ending",
+      "intransitive verb"
+    ]
+  },
+  {
+    "question": "tongue.png",
+    "kanji": "舌",
+    "kana": "した",
+    "romaji": "shita",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "tooth.png",
+    "kanji": "歯",
+    "kana": "は",
+    "romaji": "ha",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "turban.png",
+    "kanji": "ターバン",
+    "kana": "ターバン",
+    "romaji": "taaban",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "vampire.png",
+    "kanji": "吸血鬼",
+    "kana": "きゅうけつき",
+    "romaji": "kyougetsuki",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "vulcan.png",
+    "kanji": "バルカン人",
+    "kana": "バルカンひと",
+    "romaji": "barucanhito",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "wave-hand.png",
+    "kanji": "手を振る",
+    "kana": "てをふる",
+    "romaji": "teofuru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression",
+      "Godan verb with ru ending"
+    ]
+  },
+  {
+    "question": "welder.png",
+    "kanji": "溶接工",
+    "kana": "ようせつこう",
+    "romaji": "yousetsukou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "witch.png",
+    "kanji": "魔女",
+    "kana": "まじょ",
+    "romaji": "majo",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "wizard.png",
+    "kanji": "魔法使い",
+    "kana": "まほうつかい",
+    "romaji": "mahoutsukai",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "zombie.png",
+    "kanji": "ゾンビ",
+    "kana": "ゾンビ",
+    "romaji": "zonbi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  }
+]

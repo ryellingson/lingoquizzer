@@ -1,0 +1,1029 @@
+
+[
+  {
+    "question": "adventurous.png",
+    "kanji": "冒険的",
+    "kana": "ぼうけんてき",
+    "romaji": "boukentekina",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "affection.png",
+    "kanji": "愛",
+    "kana": "あい",
+    "romaji": "ai",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun",
+      "Noun - used as a suffix"
+    ]
+  },
+  {
+    "question": "anguish.png",
+    "kanji": "苦しみ",
+    "kana": "くるしみ",
+    "romaji": "kuroshimi",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "anxious.png",
+    "kanji": "悩ましげ",
+    "kana": "なやましげ",
+    "romaji": "nayamashigena",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "astonishment.png",
+    "kanji": "驚愕",
+    "kana": "きょうがく",
+    "romaji": "kyougaku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "beaming.png",
+    "kanji": "にこやか",
+    "kana": "にこやか",
+    "romaji": "nikoyaka",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "blush.png",
+    "kanji": "紅潮",
+    "kana": "こうちょう",
+    "romaji": "kouchou",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "calmly.png",
+    "kanji": "静かに",
+    "kana": "しずかに",
+    "romaji": "yasuyasu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Adverb"
+    ]
+  },
+  {
+    "question": "cheeky.png",
+    "kanji": "生意気",
+    "kana": "なまいき",
+    "romaji": "namoiki",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Na-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "confound.png",
+    "kanji": "交絡",
+    "kana": "こうらく",
+    "romaji": "koraku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "confusion.png",
+    "kanji": "錯乱",
+    "kana": "さくらん",
+    "romaji": "sakuran",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "crazy-about.png",
+    "kanji": "夢中",
+    "kana": "むちゅう",
+    "romaji": "muchuu",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Na-adjective",
+      "No-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "dead.png",
+    "kanji": "死者",
+    "kana": "ししゃ",
+    "romaji": "shisha",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "disappointment.png",
+    "kanji": "失望",
+    "kana": "しつぼう",
+    "romaji": "shitsubou",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "disapproval.png",
+    "kanji": "難色",
+    "kana": "なんしょく",
+    "romaji": "nanshoku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "distress.png",
+    "kanji": "痛み",
+    "kana": "いたみ",
+    "romaji": "itami",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "dizzy.png",
+    "kanji": "くらくら",
+    "kana": "クラクラ",
+    "romaji": "kurakura",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Adverb",
+      "Adverb taking the 'to' particle",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "downcast.png",
+    "kanji": "伏し目",
+    "kana": "ふしめ",
+    "romaji": "fushime",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "dubious.png",
+    "kanji": "怪しい",
+    "kana": "あやしい",
+    "romaji": "ayashi",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "duck-face.png",
+    "kanji": "アヒル口",
+    "kana": "アヒルぐち",
+    "romaji": "ahiruguchi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "embarrassment.png",
+    "kanji": "恥",
+    "kana": "はじ",
+    "romaji": "haji",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "expressionless.png",
+    "kanji": "無表情",
+    "kana": "むひょうじょう",
+    "romaji": "muhyoujou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "fatigue.png",
+    "kanji": "疲労",
+    "kana": "ひろう",
+    "romaji": "hirou",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "fearful.png",
+    "kanji": "冷や冷や",
+    "kana": "ひやひや",
+    "romaji": "hiyahiya",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Adverb",
+      "Adverb taking the 'to' particle",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "fever.png",
+    "kanji": "熱",
+    "kana": "ねつ",
+    "romaji": "netsu",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "flattery.png",
+    "kanji": "お世辞",
+    "kana": "おせじ",
+    "romaji": "oseji",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "flirtatious.png",
+    "kanji": "浮気性",
+    "kana": "うわきしょう",
+    "romaji": "uwakishou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "No-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "frustrated.png",
+    "kanji": "隔靴掻痒",
+    "kana": "かっかそうよう",
+    "romaji": "kakkasouyou",
+    "is_common": "0",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "gasp.png",
+    "kanji": "はあはあ",
+    "kana": "はあはあ",
+    "romaji": "haahaa",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Adverb",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "greed.png",
+    "kanji": "欲張り",
+    "kana": "よくばり",
+    "romaji": "yokubari",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun",
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "grimace.png",
+    "kanji": "渋面",
+    "kana": "じゅうめん",
+    "romaji": "juumen",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "grin.png",
+    "kanji": "にっこり",
+    "kana": "にっこり",
+    "romaji": "nikkori",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Adverb",
+      "Adverb taking the 'to' particle",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "happy.png",
+    "kanji": "嬉しい",
+    "kana": "うれしい",
+    "romaji": "ureshi",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "hurt.png",
+    "kanji": "傷付く",
+    "kana": "きずつく",
+    "romaji": "kizutsuku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "hysterical.png",
+    "kanji": "ヒステリック",
+    "kana": "ヒステリック",
+    "romaji": "hisuterikku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "insane.png",
+    "kanji": "頭がおかしい",
+    "kana": "あたまがおかしい",
+    "romaji": "atamagaokashi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression",
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "joy.png",
+    "kanji": "喜び",
+    "kana": "よろこび",
+    "romaji": "yorokobi",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "kakkoi.png",
+    "kanji": "格好いい",
+    "kana": "かっこいい",
+    "romaji": "kakkoi",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "I-adjective (yoi/ii class)"
+    ]
+  },
+  {
+    "question": "kiss.png",
+    "kanji": "接吻",
+    "kana": "せっぷん",
+    "romaji": "seppun",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "laugh.png",
+    "kanji": "笑い",
+    "kana": "わらい",
+    "romaji": "warai",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "love.png",
+    "kanji": "恋愛",
+    "kana": "れんあい",
+    "romaji": "renai",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "melancholy.png",
+    "kanji": "憂鬱",
+    "kana": "ゆううつ",
+    "romaji": "yuutsu",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "mind.png",
+    "kanji": "衝撃的な事実",
+    "kana": "しょうげきいてきなじじつ",
+    "romaji": "shougekiitekinajijitsu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mischievous.png",
+    "kanji": "腕白",
+    "kana": "わんぱく",
+    "romaji": "wanpaku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "nauseous.png",
+    "kanji": "吐き気がする",
+    "kana": "はきけがする",
+    "romaji": "hakikegasuru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression",
+      "Suru verb - irregular"
+    ]
+  },
+  {
+    "question": "otaku-nerd.png",
+    "kanji": "オタク",
+    "kana": "オタク",
+    "romaji": "otaku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "partying.png",
+    "kanji": "宴楽",
+    "kana": "えんらく",
+    "romaji": "enraku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "pensive.png",
+    "kanji": "哀れ気",
+    "kana": "あわれげ",
+    "romaji": "awarege",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "pissed.png",
+    "kanji": "頭に来る",
+    "kana": "あたまにくる",
+    "romaji": "atamanikuru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression",
+      "Kuru verb - special class"
+    ]
+  },
+  {
+    "question": "playful.png",
+    "kanji": "遊戯的",
+    "kana": "ゆうぎてき",
+    "romaji": "yuugiteki",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "plead.png",
+    "kanji": "強請る",
+    "kana": "ねだる",
+    "romaji": "nedaru",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Godan verb with ru ending",
+      "Transitive verb"
+    ]
+  },
+  {
+    "question": "pleased.png",
+    "kanji": "嬉しい",
+    "kana": "うれしい",
+    "romaji": "ureshi",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "pout.png",
+    "kanji": "不機嫌",
+    "kana": "ふきげん",
+    "romaji": "fukigen",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "pretentious.png",
+    "kanji": "気障",
+    "kana": "きざ",
+    "romaji": "kiza",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Na-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "pure-heart.png",
+    "kanji": "純情",
+    "kana": "じゅんじょう",
+    "romaji": "junjou",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun",
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "relief.png",
+    "kanji": "安心",
+    "kana": "あんしん",
+    "romaji": "anshin",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "Na-adjective",
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "roar-of-laughter.png",
+    "kanji": "爆笑",
+    "kana": "ばくしょう",
+    "romaji": "bakushou",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "sad.png",
+    "kanji": "悲しい",
+    "kana": "かなしい",
+    "romaji": "kanashi",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "samui.png",
+    "kanji": "寒い",
+    "kana": "さむい",
+    "romaji": "samui",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "sarcastic.png",
+    "kanji": "口の悪い",
+    "kana": "くちのわるい",
+    "romaji": "kuchinowarui",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression",
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "sick.png",
+    "kanji": "病気",
+    "kana": "びょうき",
+    "romaji": "byouki",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "silly.png",
+    "kanji": "馬鹿らしい",
+    "kana": "ばからしい",
+    "romaji": "bakarashi",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "sleeping.png",
+    "kanji": "眠り",
+    "kana": "ねむり",
+    "romaji": "nemuri",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "sleepy.png",
+    "kanji": "眠い",
+    "kana": "ねむい",
+    "romaji": "nemui",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "smirk.png",
+    "kanji": "似非笑い",
+    "kana": "えせわらい",
+    "romaji": "esewarai",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "sneeze.png",
+    "kanji": "嚏",
+    "kana": "くしゃみ",
+    "romaji": "kushami",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "snicker.png",
+    "kanji": "譏笑",
+    "kana": "きしょう",
+    "romaji": "kishou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "sob.png",
+    "kanji": "泣きじゃくる",
+    "kana": "なきじゃくる",
+    "romaji": "nakijakuru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Godan verb with ru ending"
+    ]
+  },
+  {
+    "question": "sober.png",
+    "kanji": "真面目-1",
+    "kana": "まじめ",
+    "romaji": "majime",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Na-adjective",
+      "Noun"
+    ]
+  },
+  {
+    "question": "speechless.png",
+    "kanji": "おたおた",
+    "kana": "オタオタ",
+    "romaji": "otaota",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Adverb",
+      "Adverb taking the 'to' particle",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "star-struck.png",
+    "kanji": "切火",
+    "kana": "きりび",
+    "romaji": "kiribi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "surprise.png",
+    "kanji": "驚き",
+    "kana": "おどろき",
+    "romaji": "odoro",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "terror.png",
+    "kanji": "恐怖",
+    "kana": "きょうふ",
+    "romaji": "kyoufu",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "thought-consideration.png",
+    "kanji": "思考",
+    "kana": "しこう",
+    "romaji": "shikou",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "to-be-upset.png",
+    "kanji": "引っ繰り返る",
+    "kana": "ひっくりかえる",
+    "romaji": "-",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Godan verb with ru ending",
+      "intransitive verb"
+    ]
+  },
+  {
+    "question": "to-cry.png",
+    "kanji": "泣く",
+    "kana": "なく",
+    "romaji": "naku",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "Godan verb with ku ending"
+    ]
+  },
+  {
+    "question": "to-drool.png",
+    "kanji": "よだれを垂らす",
+    "kana": "よだれをたらす",
+    "romaji": "yodareotarasu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression",
+      "Godan verb with su ending"
+    ]
+  },
+  {
+    "question": "to-get-drunk.png",
+    "kanji": "酔う",
+    "kana": "よう",
+    "romaji": "you",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Godan verb with u ending",
+      "intransitive verb"
+    ]
+  },
+  {
+    "question": "to-get-irritated.png",
+    "kanji": "苛々",
+    "kana": "いらいら",
+    "romaji": "iraira",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Suru verb",
+      "Noun",
+      "Adverb",
+      "Adverb taking the 'to' particle"
+    ]
+  },
+  {
+    "question": "to-lie.png",
+    "kanji": "偽る",
+    "kana": "いつわる",
+    "romaji": "itsuwaru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Godan verb with ru ending",
+      "intransitive verb",
+      "Transitive verb"
+    ]
+  },
+  {
+    "question": "to-vomit.png",
+    "kanji": "吐く-1",
+    "kana": "はく",
+    "romaji": "haku",
+    "is_common": true,
+    "jlpt": "jlpt-n3",
+    "parts_of_speech": [
+      "Godan verb with ku ending",
+      "Transitive verb"
+    ]
+  },
+  {
+    "question": "unamused.png",
+    "kanji": "白ける",
+    "kana": "しらける",
+    "romaji": " shirakeru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Ichidan verb",
+      "intransitive verb"
+    ]
+  },
+  {
+    "question": "wacky.png",
+    "kanji": "奇抜",
+    "kana": "きばつ",
+    "romaji": "kibatsu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Na-adjective"
+    ]
+  },
+  {
+    "question": "weary.png",
+    "kanji": "物憂い",
+    "kana": "ものうい",
+    "romaji": "monouri",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "I-adjective"
+    ]
+  },
+  {
+    "question": "wink.png",
+    "kanji": "瞬き",
+    "kana": "まばたき",
+    "romaji": "mabataki",
+    "is_common": "-",
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "worried.png",
+    "kanji": "困る",
+    "kana": "こまる",
+    "romaji": "komaru",
+    "is_common": true,
+    "jlpt": "jlpt-n5",
+    "parts_of_speech": [
+      "Godan verb with ru ending",
+      "intransitive verb"
+    ]
+  },
+  {
+    "question": "yawn.png",
+    "kanji": "欠伸",
+    "kana": "あくび",
+    "romaji": "akubi",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "zip-it.png",
+    "kanji": "口にチャック",
+    "kana": "くちにチャック",
+    "romaji": "kuchinichakku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Expression"
+    ]
+  }
+]

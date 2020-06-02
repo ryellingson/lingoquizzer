@@ -1,0 +1,2856 @@
+[
+  {
+    "question": "afghanistan.png",
+    "kanji": "亜富汗斯坦",
+    "kana": "アフガニスタン",
+    "romaji": "afuganisutan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "aland-islands.png",
+    "kanji": "オーランドしょとう",
+    "kana": "オーランドしょとう",
+    "romaji": "oorandoshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "albania.png",
+    "kanji": "アルバニア",
+    "kana": "アルバニア",
+    "romaji": "arubania",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "algeria.png",
+    "kanji": "阿爾及",
+    "kana": "アルジェリア",
+    "romaji": "arujeria",
+    "is_common": "",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "american-samoa.png",
+    "kanji": "アメリカりょうサモア",
+    "kana": "アメリカりょうサモア",
+    "romaji": "amerikaryousamoa",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "andorra.png",
+    "kanji": "アンドラ",
+    "kana": "アンドラ",
+    "romaji": "andora",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "angola.png",
+    "kanji": "アンゴラ",
+    "kana": "アンゴラ",
+    "romaji": "angora",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "anguilla.png",
+    "kanji": "アングィラ島",
+    "kana": "アングィラとう",
+    "romaji": "anguiratou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "antarctica.png",
+    "kanji": "南極大陸",
+    "kana": "なんきょくたいりく",
+    "romaji": "nankyokutairiku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "antigua-and-barbuda.png",
+    "kanji": "アンティグア・バーブーダ",
+    "kana": "アンティグアバーブーダ",
+    "romaji": "antiguabaabuuda",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "argentina.png",
+    "kanji": "亜国",
+    "kana": "あこく",
+    "romaji": "-",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "armenia.png",
+    "kanji": "アルメニア",
+    "kana": "アルメニア",
+    "romaji": "arumenia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "aruba.png",
+    "kanji": "アルバー",
+    "kana": "アルバー",
+    "romaji": "arubaa",
+    "is_common": "=",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ascension-island.png",
+    "kanji": "アセンションとう",
+    "kana": "アセンションとう",
+    "romaji": "asenshonshima",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "australia.png",
+    "kanji": "濠太剌利",
+    "kana": "オーストラリア",
+    "romaji": "oosutoraria",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "austria.png",
+    "kanji": "墺太利",
+    "kana": "オーストリア",
+    "romaji": "oosutoria",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "azerbaijan.png",
+    "kanji": "アゼルバイジャン",
+    "kana": "アゼルバイジャン",
+    "romaji": "azerubaijan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bahamas.png",
+    "kanji": "バハマ",
+    "kana": "バハマ",
+    "romaji": "bahama",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bahrain.png",
+    "kanji": "バーレーン",
+    "kana": "バーレーン",
+    "romaji": "baareen",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bangladesh.png",
+    "kanji": "バングラデシュ",
+    "kana": "バングラデシュ",
+    "romaji": "banguradeshu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "barbados.png",
+    "kanji": "バルバドス",
+    "kana": "バルバドス",
+    "romaji": "barubadosu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "barth.png",
+    "kanji": "バルト",
+    "kana": "バルト",
+    "romaji": "baruto",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "belarus.png",
+    "kanji": "ベラルーシ",
+    "kana": "ベラルーシ",
+    "romaji": "beraruushi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "belgium.png",
+    "kanji": "白耳義",
+    "kana": "ベルギー",
+    "romaji": "berugii",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "belize.png",
+    "kanji": "ベリーズ",
+    "kana": "ベリーズ",
+    "romaji": "beriizu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "benin.png",
+    "kanji": "ベナン",
+    "kana": "ベナン",
+    "romaji": "benan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bermuda.png",
+    "kanji": "バーミューダ",
+    "kana": "バミューダ",
+    "romaji": "bamyuuda",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bhutan.png",
+    "kanji": "不丹",
+    "kana": "ブータン",
+    "romaji": "buutan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bolivia.png",
+    "kanji": "暮利比亜",
+    "kana": "ボリビア",
+    "romaji": "boribia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bosnia-and-herzegovina.png",
+    "kanji": "ボスニアヘルツェゴビナ",
+    "kana": "ボスニアヘルツェゴビナ",
+    "romaji": "bosuniaherutsuegobina",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "botswana.png",
+    "kanji": "ボツワナ",
+    "kana": "ボツワナ",
+    "romaji": "botsuwana",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bouvet-island.png",
+    "kanji": "ブーベとう",
+    "kana": "ブーベとう",
+    "romaji": "buubetou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "brazil.png",
+    "kanji": "伯剌西爾",
+    "kana": "ブラジル",
+    "romaji": "burajiru",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "british-indian-ocean-territory.png",
+    "kanji": "イギリス領インド洋地域",
+    "kana": "イギリスりょうインドちいき",
+    "romaji": "igirisuryouindoyouchiiki",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "british-virgin-islands.png",
+    "kanji": "イギリス領ヴァージン諸島",
+    "kana": "イギリスりょうヴァージンしょとう",
+    "romaji": "igirisuryoubaajinshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "brunei.png",
+    "kanji": "ブルネイ",
+    "kana": "ブルネイ",
+    "romaji": "burunei",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "bulgaria.png",
+    "kanji": "勃牙利",
+    "kana": "ブルガリア",
+    "romaji": "burgaria",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "burkina-faso.png",
+    "kanji": "ブルキナファソ",
+    "kana": "ブルキナファソ",
+    "romaji": "burukinafaso",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "burundi.png",
+    "kanji": "ブルンジ",
+    "kana": "ブルンジ",
+    "romaji": "burunji",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cambodia.png",
+    "kanji": "柬埔寨",
+    "kana": "カンボジア",
+    "romaji": "kanbojia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cameroon.png",
+    "kanji": "カメルーン",
+    "kana": "カメルーン",
+    "romaji": "kameruun",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "canada.png",
+    "kanji": "加奈陀",
+    "kana": "カナダ",
+    "romaji": "kanada",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "canary-islands.png",
+    "kanji": "カナリアしょとう",
+    "kana": "カナリアしょとう",
+    "romaji": "kanariashotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "cape-verde.png",
+    "kanji": "カボベルデ",
+    "kana": "カーボベルデ",
+    "romaji": "kaapoberude",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "caribbean-netherlands.png",
+    "kanji": "カリブかいのオランダ",
+    "kana": "カリブかいのオランダ",
+    "romaji": "karibukainooranda",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cayman-islands.png",
+    "kanji": "ケイマンしょとう",
+    "kana": "ケイマンしょとう",
+    "romaji": "keimanshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "central-african-republic.png",
+    "kanji": "中央アフリカ共和国",
+    "kana": "ちゅうおうアフリカきょうわこく",
+    "romaji": "chuuooafurikakyouwakoku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "chad.png",
+    "kanji": "屑",
+    "kana": "くず",
+    "romaji": "chado",
+    "is_common": true,
+    "jlpt": "jlpt-n2",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "chile.png",
+    "kanji": "智利",
+    "kana": "チリ",
+    "romaji": "chiri",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "china.png",
+    "kanji": "ちな",
+    "kana": "ちな",
+    "romaji": "chuugoku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "christmas-island.png",
+    "kanji": "クリススとう",
+    "kana": "クリススとう",
+    "romaji": "kurisumasutou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "clipperton-island.png",
+    "kanji": "クリッパートンとう",
+    "kana": "クリッパートンとう",
+    "romaji": "kurippaatontou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "cocos.png",
+    "kanji": "ココス諸島",
+    "kana": "ココスしょとう",
+    "romaji": "kokosushotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "colombia.png",
+    "kanji": "哥倫比亜",
+    "kana": "コロンビア",
+    "romaji": "koronbia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "comoros.png",
+    "kanji": "コモロ",
+    "kana": "コモロ",
+    "romaji": "komoro",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "congo-brazzaville.png",
+    "kanji": "ブラザビル",
+    "kana": "ブラザビル",
+    "romaji": "burazabiru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "congo-kinshasa.png",
+    "kanji": "キンシャサ",
+    "kana": "キンシャサ",
+    "romaji": "kinshasa",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cook-islands.png",
+    "kanji": "クックしょとう",
+    "kana": "クックしょとう",
+    "romaji": "kukkushotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "costa-rica.png",
+    "kanji": "コスタリカ",
+    "kana": "コスタリカ",
+    "romaji": "kosutarika",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cote-d'Ivoire.png",
+    "kanji": "コートジボワール",
+    "kana": "コートジボワール",
+    "romaji": "kootojibowaaru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "croatia.png",
+    "kanji": "クロアチア",
+    "kana": "クロアチア",
+    "romaji": "kuroachia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cuba.png",
+    "kanji": "玖馬",
+    "kana": "キューバ",
+    "romaji": "kyuuba",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "curacao.png",
+    "kanji": "キュラソー",
+    "kana": "キュラソー",
+    "romaji": "kyurasoo",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "cyprus.png",
+    "kanji": "キプロス",
+    "kana": "キプロス",
+    "romaji": "kipurosu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "czech-republic.png",
+    "kanji": "チェコ",
+    "kana": "チェコ",
+    "romaji": "cheko",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "denmark.png",
+    "kanji": "丁抹",
+    "kana": "デンマーク",
+    "romaji": "denmaaku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "diego-garcia.png",
+    "kanji": "ディエゴガルシア島",
+    "kana": "ディエゴガルシアとう",
+    "romaji": "diegogarushiatou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "djibouti.png",
+    "kanji": "ジブチ",
+    "kana": "ジブチ",
+    "romaji": "jibuchi",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "dominica.png",
+    "kanji": "ドミニカ",
+    "kana": "ドミニカ",
+    "romaji": "dominka",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "dominican-republic.png",
+    "kanji": "ドミニカ共和国",
+    "kana": "ドミニカきょうわこく",
+    "romaji": "domikokakyouwakoku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "east-timor.png",
+    "kanji": "東ティモール",
+    "kana": "ひがしティモール",
+    "romaji": "bigashitimooru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ecuador.png",
+    "kanji": "厄瓜多",
+    "kana": "エクアドル",
+    "romaji": "ekuadoru",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "egypt.png",
+    "kanji": "埃及",
+    "kana": "エジプト",
+    "romaji": "ejiputo",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "el-salvador.png",
+    "kanji": "エルサルバドル",
+    "kana": "エルサルバドル",
+    "romaji": "erusarubadoru",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "england.png",
+    "kanji": "イングランド",
+    "kana": "イングランド",
+    "romaji": "ingurando",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "equatorial-guinea.png",
+    "kanji": "赤道ギニア",
+    "kana": "せきどうギニア",
+    "romaji": "sekidouginia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "eritrea.png",
+    "kanji": "エリトリア",
+    "kana": "エリトリア",
+    "romaji": "eritoria",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "estonia.png",
+    "kanji": "エストニア",
+    "kana": "エストニア",
+    "romaji": "esutonia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "eswatini.png",
+    "kanji": "エスワティニ",
+    "kana": "エスワティニ",
+    "romaji": "esuwatini",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ethiopia.png",
+    "kanji": "エチオピア",
+    "kana": "エチオピア",
+    "romaji": "echiopia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "european-union.png",
+    "kanji": "欧州連合",
+    "kana": "おうしゅうれんごう",
+    "romaji": "oushuurengou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "falkland-islands.png",
+    "kanji": "フォークランド",
+    "kana": "フォークランドしょとう",
+    "romaji": "fookurandoshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "faroe-islands.png",
+    "kanji": "フェローしょとう",
+    "kana": "フェローしょとう",
+    "romaji": "ferooshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "fiji.png",
+    "kanji": "フィジー",
+    "kana": "フィジー",
+    "romaji": "fijii",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "finland.png",
+    "kanji": "芬蘭",
+    "kana": "フィンランド",
+    "romaji": "finrando",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "france.png",
+    "kanji": "仏蘭西",
+    "kana": "フランス",
+    "romaji": "furansu",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "french-guiana.png",
+    "kanji": "フランス領ギアナ",
+    "kana": "フランスりょうギアナ",
+    "romaji": "furansuryougiana",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "french-polynesia.png",
+    "kanji": "フランスりょうポリネシア",
+    "kana": "フランスりょうポリネシア",
+    "romaji": "furansuryouporineshia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "french.png",
+    "kanji": "フランス南方領土",
+    "kana": "フランスみなみかたりょうど",
+    "romaji": "furansuminamikataryoudo",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "gabon.png",
+    "kanji": "ガボン",
+    "kana": "ガボン",
+    "romaji": "gabon",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "gambia.png",
+    "kanji": "ガンビア",
+    "kana": "ガンビア",
+    "romaji": "ganbia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "georgia.png",
+    "kanji": "グルジア",
+    "kana": "グルジア",
+    "romaji": "gurujia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "germany.png",
+    "kanji": "独逸",
+    "kana": "ドイツ",
+    "romaji": "doitsu",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ghana.png",
+    "kanji": "ガーナ",
+    "kana": "ガーナ",
+    "romaji": "gaana",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "gibraltar.png",
+    "kanji": "ジブラルタル",
+    "kana": "ジブラルタル",
+    "romaji": "jiburarutaru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "greece.png",
+    "kanji": "希臘",
+    "kana": "ギリシャ",
+    "romaji": "girisha",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "greenland.png",
+    "kanji": "グリーンランド",
+    "kana": "グリーンランド",
+    "romaji": "guriinrando",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "grenada.png",
+    "kanji": "グレナダ",
+    "kana": "グレナダ",
+    "romaji": "gurenada",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "guadeloupe.png",
+    "kanji": "グアドループ島",
+    "kana": "グアドループとう",
+    "romaji": "guadoruuputou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "guam.png",
+    "kanji": "瓦無",
+    "kana": "グアム",
+    "romaji": "guamu",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "guatemala.png",
+    "kanji": "グアテマラ",
+    "kana": "グアテマラ",
+    "romaji": "guatemara",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "guernsey.png",
+    "kanji": "ガーンジー",
+    "kana": "ガーンジー",
+    "romaji": "gaanjii",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "guinea-bissau.png",
+    "kanji": "ビサウ",
+    "kana": "ビサウ",
+    "romaji": "gisau",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "guinea.png",
+    "kanji": "幾内亜",
+    "kana": "ギニア",
+    "romaji": "ginia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "guyana.png",
+    "kanji": "ガイアナ",
+    "kana": "ガイアナ",
+    "romaji": "gaiana",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "haiti.png",
+    "kanji": "配置",
+    "kana": "はいち",
+    "romaji": "haichi",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "heard-island.png",
+    "kanji": "ハード島とマクドナルド諸島",
+    "kana": "ハードとうとマクドナルドしょとう",
+    "romaji": "haadotoutomakudonarudoshoutou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "honduras.png",
+    "kanji": "ホンジェラス",
+    "kana": "ホンジェラス",
+    "romaji": "honjerasu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "hong-kong-sar-china.png",
+    "kanji": "特別行政区",
+    "kana": "とくべつぎょうせいく",
+    "romaji": "honkon",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "hungary.png",
+    "kanji": "洪牙利",
+    "kana": "ハンガリー",
+    "romaji": "hangarii",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "iceland.png",
+    "kanji": "愛斯蘭",
+    "kana": "アイスランド",
+    "romaji": "aisurando",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "india.png",
+    "kanji": "印度",
+    "kana": "インド",
+    "romaji": "indo",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "indonesia.png",
+    "kanji": "印度尼西亜",
+    "kana": "インドネシア",
+    "romaji": "indoneshia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "iran.png",
+    "kanji": "イラン",
+    "kana": "イラン",
+    "romaji": "iran",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "iraq.png",
+    "kanji": "イラク",
+    "kana": "イラク",
+    "romaji": "iraku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ireland.png",
+    "kanji": "愛蘭",
+    "kana": "アイルランド",
+    "romaji": "airurando",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "isle-of-man.png",
+    "kanji": "マンとう",
+    "kana": "マンとう",
+    "romaji": "mantou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "israel.png",
+    "kanji": "以色列",
+    "kana": "イスラエル",
+    "romaji": "isuraeru",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "italy.png",
+    "kanji": "伊太利",
+    "kana": "イタリア",
+    "romaji": "itaria",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "jamaica.png",
+    "kanji": "牙買加",
+    "kana": "ジャマイカ",
+    "romaji": "jamaika",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "japan.png",
+    "kanji": "ジャパン",
+    "kana": "ジャパン",
+    "romaji": "nihon",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "jersey.png",
+    "kanji": "ジャージー",
+    "kana": "ジャージー",
+    "romaji": "jaajii",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "jordan.png",
+    "kanji": "ヨルダン",
+    "kana": "ヨルダン",
+    "romaji": "yorudan",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "kazakhstan.png",
+    "kanji": "カザフスタン",
+    "kana": "カザフスタン",
+    "romaji": "kasafusutan",
+    "is_common": "=",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "kenya.png",
+    "kanji": "ケニア",
+    "kana": "ケニア",
+    "romaji": "kenia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "kiribati.png",
+    "kanji": "キリバス",
+    "kana": "キリバス",
+    "romaji": "kiribasu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "kosovo.png",
+    "kanji": "コソボ",
+    "kana": "コソボ",
+    "romaji": "kosobo",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "kuwait.png",
+    "kanji": "科威都",
+    "kana": "クウェート",
+    "romaji": "kuueeto",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "kyrgyzstan.png",
+    "kanji": "キルギス",
+    "kana": "キルギス",
+    "romaji": "kirugisu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "laos.png",
+    "kanji": "羅宇",
+    "kana": "ラオス",
+    "romaji": "raosu",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "latvia.png",
+    "kanji": "ラトビア",
+    "kana": "ラトビア",
+    "romaji": "ratobia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "lebanon.png",
+    "kanji": "黎巴嫩",
+    "kana": "レバノン",
+    "romaji": "rebanon",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "lesotho.png",
+    "kanji": "レソト",
+    "kana": "レソト",
+    "romaji": "resoto",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "liberia.png",
+    "kanji": "利比利亜",
+    "kana": "リベリア",
+    "romaji": "riberia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "libya.png",
+    "kanji": "利比亜",
+    "kana": "リビア",
+    "romaji": "ribia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "liechtenstein.png",
+    "kanji": "リヒテンシュタイン",
+    "kana": "リヒテンシュタイン",
+    "romaji": "rihitenshutain",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "lithuania.png",
+    "kanji": "リトアニア",
+    "kana": "リトアニア",
+    "romaji": "ritoania",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "luxembourg.png",
+    "kanji": "ルクセンブルク",
+    "kana": "ルクセンブルク",
+    "romaji": "rukusanburuku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "macao.png",
+    "kanji": "澳門",
+    "kana": "まかお",
+    "romaji": "makao",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "macedonia.png",
+    "kanji": "マケドニア",
+    "kana": "マケドニア",
+    "romaji": "makedonia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "madagascar.png",
+    "kanji": "馬達加斯加",
+    "kana": "マダガスカル",
+    "romaji": "madagasukaru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "malawi.png",
+    "kanji": "マラウイ",
+    "kana": "マラウイ",
+    "romaji": "maraui",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "malaysia.png",
+    "kanji": "馬来西亜",
+    "kana": "マレーシア",
+    "romaji": "mareeshia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "maldives.png",
+    "kanji": "マルディブ",
+    "kana": "マルディブ",
+    "romaji": "marudibu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mali.png",
+    "kanji": "マリ",
+    "kana": "マリ",
+    "romaji": "mari",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "malta.png",
+    "kanji": "マルタ",
+    "kana": "マルタ",
+    "romaji": "maruta",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "marshall-islands.png",
+    "kanji": "マーシャル諸島",
+    "kana": "マーシャルしょとう",
+    "romaji": "maasharushotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "martinique.png",
+    "kanji": "マルティニク",
+    "kana": "マルティニク",
+    "romaji": "maruteiniku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mauritania.png",
+    "kanji": "モーリタニア",
+    "kana": "モーリタニア",
+    "romaji": "mooritania",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mauritius.png",
+    "kanji": "毛里求斯",
+    "kana": "モーリシャス",
+    "romaji": "moorishasu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mayotte.png",
+    "kanji": "マヨット",
+    "kana": "マヨット",
+    "romaji": "mayotto",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mexico.png",
+    "kanji": "墨西哥",
+    "kana": "メキシコ",
+    "romaji": "mekishiko",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "micronesia.png",
+    "kanji": "ミクロネシア",
+    "kana": "ミクロネシア",
+    "romaji": "mikuroneshia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "moldova.png",
+    "kanji": "モルドバ",
+    "kana": "モルドバ",
+    "romaji": "morudoba",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "monaco.png",
+    "kanji": "摩納哥",
+    "kana": "モナコ",
+    "romaji": "monako",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mongolia.png",
+    "kanji": "蒙古",
+    "kana": "もうこ",
+    "romaji": "mouko",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "montenegro.png",
+    "kanji": "モンテネグロ",
+    "kana": "モンテネグロ",
+    "romaji": "monteneguro",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "montserrat.png",
+    "kanji": "モンセラー",
+    "kana": "モンセラー",
+    "romaji": "monseraa",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "morocco.png",
+    "kanji": "摩洛哥",
+    "kana": "モロッコ",
+    "romaji": "morokko",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "mozambique.png",
+    "kanji": "モザンビーク",
+    "kana": "モザンビーク",
+    "romaji": "mozanbiiku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "myanmar-burma.png",
+    "kanji": "緬甸",
+    "kana": "めんでん",
+    "romaji": "myanmaa",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "namibia.png",
+    "kanji": "ナミビア",
+    "kana": "ナミビア",
+    "romaji": "namibia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "nauru.png",
+    "kanji": "ナウル",
+    "kana": "ナウル",
+    "romaji": "nauru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "nepal.png",
+    "kanji": "捏巴爾",
+    "kana": "ネパール",
+    "romaji": "nepaaru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "netherlands.png",
+    "kanji": "和蘭",
+    "kana": "オランダ",
+    "romaji": "oranda",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "new-caledonia.png",
+    "kanji": "ニューカレドニア",
+    "kana": "ニューカレドニア",
+    "romaji": "nyuukaredonia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "new-zealand.png",
+    "kanji": "新西蘭",
+    "kana": "ニュージーランド",
+    "romaji": "nyuujiirando",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "nicaragua.png",
+    "kanji": "尼加拉瓦",
+    "kana": "ニカラグア",
+    "romaji": "nikaragua",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "niger.png",
+    "kanji": "ニジェール",
+    "kana": "ニジェール",
+    "romaji": "nijeeru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "nigeria.png",
+    "kanji": "ナイジェリア",
+    "kana": "ナイジェリア",
+    "romaji": "naijeria",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "niue.png",
+    "kanji": "ニウエ",
+    "kana": "ニウエ",
+    "romaji": "niue",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "norfolk-island.png",
+    "kanji": "ノーフォーク松",
+    "kana": "ノーフォークまつ",
+    "romaji": "noofookumatsu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "north-korea.png",
+    "kanji": "北朝鮮",
+    "kana": "きたちょうせん",
+    "romaji": "kitachousen",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "northern-mariana-islands.png",
+    "kanji": "きたマリアナしょとう",
+    "kana": "きたマリアナしょとう",
+    "romaji": "kitamarianashotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "norway.png",
+    "kanji": "諾威",
+    "kana": "ノルウェー",
+    "romaji": "noruuee",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "oman.png",
+    "kanji": "御饅",
+    "kana": "おまん",
+    "romaji": "oman",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "pakistan.png",
+    "kanji": "巴基斯担",
+    "kana": "パキスタン",
+    "romaji": "pakisutan",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "palau.png",
+    "kanji": "パラオ",
+    "kana": "パラオ",
+    "romaji": "parao",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "palestine.png",
+    "kanji": "パレスチナ",
+    "kana": "パレスチナ",
+    "romaji": "parusuchina",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "panama.png",
+    "kanji": "巴奈馬",
+    "kana": "パナマ",
+    "romaji": "panama",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "papua-new-guinea.png",
+    "kanji": "パプアニューギニア",
+    "kana": "パプアニューギニア",
+    "romaji": "papuanyuuginia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "paraguay.png",
+    "kanji": "巴拉圭",
+    "kana": "パラグアイ",
+    "romaji": "paraguai",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "peru.png",
+    "kanji": "ペル",
+    "kana": "ペル",
+    "romaji": "peru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "philippines.png",
+    "kanji": "比律賓",
+    "kana": "フィリピン",
+    "romaji": "firipin",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "pitcairn-islands.png",
+    "kanji": "ピトケアン諸島",
+    "kana": "ピトケアンしょうとう",
+    "romaji": "pitokeanshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "poland.png",
+    "kanji": "波蘭",
+    "kana": "ポーランド",
+    "romaji": "poorando",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "portugal.png",
+    "kanji": "葡萄牙",
+    "kana": "ポルトガル",
+    "romaji": "porutogaru",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "puerto-rico.png",
+    "kanji": "プエルトリコ",
+    "kana": "プエルトリコ",
+    "romaji": "puerutoriko",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "qatar.png",
+    "kanji": "カタール",
+    "kana": "カタール",
+    "romaji": "kataaru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "reunion.png",
+    "kanji": "レユニオン",
+    "kana": "レユニオン",
+    "romaji": "reyunion",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun",
+      "Suru verb"
+    ]
+  },
+  {
+    "question": "romania.png",
+    "kanji": "羅馬尼亜",
+    "kana": "ルーマニア",
+    "romaji": "ruumania",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "russia.png",
+    "kanji": "露西亜",
+    "kana": "ロシア",
+    "romaji": "roshia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "rwanda.png",
+    "kanji": "ルワンダ",
+    "kana": "ルワンダ",
+    "romaji": "ruwanda",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "saint-helena.png",
+    "kanji": "セントヘレナバタフライフィッシュ",
+    "kana": "セントヘレナバタフライフィッシュ",
+    "romaji": "santoherenabatafisshu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "saint-kitts-and-nevis.png",
+    "kanji": "セントキッツネイビス",
+    "kana": "セントキッツネイビス",
+    "romaji": "santokittsuneibisu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "saint-lucia.png",
+    "kanji": "セントルシア",
+    "kana": "セントルシア",
+    "romaji": "santorushia",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "saint-martin.png",
+    "kanji": "セントマーチン島",
+    "kana": "セントマーチンとう",
+    "romaji": "santomaachintou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "saint-pierre-and-miquelon.png",
+    "kanji": "サンピエール島・ミクロン島",
+    "kana": "サンピエールとうミクロンとう",
+    "romaji": "sanpieerutoumikurontou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "saint-vincent-and-grenadines.png",
+    "kanji": "セントビンセントおよびグレナディーン諸島",
+    "kana": "セントビンセントおよびグレナディーンしょとう",
+    "romaji": "santobinsantoouobugurenadiinshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "samoa.png",
+    "kanji": "サモア",
+    "kana": "サモア",
+    "romaji": "samoa",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "san-marino.png",
+    "kanji": "サンマリノ",
+    "kana": "サンマリノ",
+    "romaji": "sanmarino",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "sao-tome-and-principe.png",
+    "kanji": "サントメプリンシペ",
+    "kana": "サントメプリンシペ",
+    "romaji": "santomepurintsupe",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "saudi-arabia.png",
+    "kanji": "サウジアラビア",
+    "kana": "サウジアラビア",
+    "romaji": "saujiarabia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "scotland.png",
+    "kanji": "スコットランド",
+    "kana": "スコットランド",
+    "romaji": "sukottorando",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "senegal.png",
+    "kanji": "セネガル",
+    "kana": "セネガル",
+    "romaji": "senegaru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "serbia.png",
+    "kanji": "塞爾維",
+    "kana": "セルビア",
+    "romaji": "sarubia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "seychelles.png",
+    "kanji": "セーシェル",
+    "kana": "セイシェル",
+    "romaji": "seisheru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "sierra-leone.png",
+    "kanji": "シエラレオネ",
+    "kana": "シエラレオネ",
+    "romaji": "shierareone",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "singapore.png",
+    "kanji": "新嘉坡",
+    "kana": "シンガポール",
+    "romaji": "shingapooru",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "sint-maarten.png",
+    "kanji": "シントマールテン",
+    "kana": "シントマールテン",
+    "romaji": "shintomaaruten",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "slovakia.png",
+    "kanji": "スロバキア",
+    "kana": "スロバキア",
+    "romaji": "surobakia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "slovenia.png",
+    "kanji": "スロベニア",
+    "kana": "スロベニア",
+    "romaji": "surobenia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "solomon-islands.png",
+    "kanji": "ソロモン諸島",
+    "kana": "ソロモンしょとう",
+    "romaji": "soromonshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "somalia.png",
+    "kanji": "ソマリア",
+    "kana": "ソマリア",
+    "romaji": "somaria",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "south-africa.png",
+    "kanji": "南アフリカ",
+    "kana": "みなみアフリカ",
+    "romaji": "minamiafurika",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "south-georgia-and-south-sandwich-islands.png",
+    "kanji": "サウスジョージアサウスサンドウィッチ諸島",
+    "kana": "サウスジョージアサウスサンドウィッチしょうとう",
+    "romaji": "sausujoojiasaususandouicchishotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "south-korea.png",
+    "kanji": "韓国",
+    "kana": "かんこく",
+    "romaji": "kankoku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun",
+      "No-adjective"
+    ]
+  },
+  {
+    "question": "south-sudan.png",
+    "kanji": "南スーダン",
+    "kana": "みなみスーダン",
+    "romaji": "minamisuudan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "spain.png",
+    "kanji": "西班牙",
+    "kana": "スペイン",
+    "romaji": "supein",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "sri-lanka.png",
+    "kanji": "スリランカ",
+    "kana": "スリランカ",
+    "romaji": "suriranka",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "sudan.png",
+    "kanji": "蘇丹",
+    "kana": "スーダン",
+    "romaji": "suudan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "suriname.png",
+    "kanji": "スリナム",
+    "kana": "スリナム",
+    "romaji": "surinamu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "svalbard-and-jan-mayen.png",
+    "kanji": "スバールバル諸島とヤンマイエン島",
+    "kana": "スバールバルしょうとうとヤンマイエンとう",
+    "romaji": "subaarubarushoutoutoyanmaientou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "sweden.png",
+    "kanji": "瑞典",
+    "kana": "スウェーデン",
+    "romaji": "suueeden",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "switzerland.png",
+    "kanji": "瑞西",
+    "kana": "スイス",
+    "romaji": "suisu",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "syria.png",
+    "kanji": "叙利亜",
+    "kana": "シリア",
+    "romaji": "shiria",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "taiwan.png",
+    "kanji": "台湾",
+    "kana": "たいわん",
+    "romaji": "taiwan",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "tajikistan.png",
+    "kanji": "タジキスタン",
+    "kana": "タジキスタン",
+    "romaji": "tajikisutan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "tanzania.png",
+    "kanji": "タンザニア",
+    "kana": "タンザニア",
+    "romaji": "tanzania",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "thailand.png",
+    "kanji": "泰",
+    "kana": "タイ",
+    "romaji": "tai",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "togo.png",
+    "kanji": "都護",
+    "kana": "とご",
+    "romaji": "togo",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "tokelau.png",
+    "kanji": "トケラウ",
+    "kana": "トケラウ",
+    "romaji": "tokerau",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Place"
+    ]
+  },
+  {
+    "question": "tonga.png",
+    "kanji": "トンガ",
+    "kana": "トンガ",
+    "romaji": "tonga",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "trinidad-and-tobago.png",
+    "kanji": "トリニダード・トバゴ",
+    "kana": "トリニダードトバゴ",
+    "romaji": "torinidaadototobago",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "tristan.png",
+    "kanji": "トリスタンとイゾルデ",
+    "kana": "トリスタンとイゾルデ",
+    "romaji": "torisutantoizorude",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Full name"
+    ]
+  },
+  {
+    "question": "tunisia.png",
+    "kanji": "突尼斯",
+    "kana": "チュニジア",
+    "romaji": "chunishia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "turkey.png",
+    "kanji": "土耳古",
+    "kana": "トルコ",
+    "romaji": "toruko",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "turkmenistan.png",
+    "kanji": "トルクメニスタン",
+    "kana": "トルクメニスタン",
+    "romaji": "torukumenisutan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "turks-and-caicos-islands.png",
+    "kanji": "タークス・カイコス諸島",
+    "kana": "タークスカイコスしょとう",
+    "romaji": "taakusukaikosushotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "tuvalu.png",
+    "kanji": "ツバル",
+    "kana": "ツバル",
+    "romaji": "tsubaru",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "uganda.png",
+    "kanji": "ウガンダ",
+    "kana": "ウガンダ",
+    "romaji": "uganda",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "ukraine.png",
+    "kanji": "烏克蘭",
+    "kana": "ウクライナ",
+    "romaji": "ukuraina",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "united-arab-emirates.png",
+    "kanji": "アラブ首長国連邦",
+    "kana": "アラブしゅちょうこくれんぽう",
+    "romaji": "urabushuchoukokurenbou",
+    "is_common": "-",
+    "jlpt": "",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "united-kingdom.png",
+    "kanji": "英国",
+    "kana": "えいこく",
+    "romaji": "eikoku",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "united-nations.png",
+    "kanji": "国連",
+    "kana": "こくれん",
+    "romaji": "kokuren",
+    "is_common": true,
+    "jlpt": "jlpt-n1",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "united-states-virgin-islands.png",
+    "kanji": "アメリカ領ヴァージン諸島",
+    "kana": "アメリカりょうヴァージンしょとう",
+    "romaji": "amerikaryovuaajinshotou",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "united-states.png",
+    "kanji": "亜米利加",
+    "kana": "アメリカ",
+    "romaji": "amerika",
+    "is_common": true,
+    "jlpt": "jlpt-n4",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "uruguay.png",
+    "kanji": "宇柳貝",
+    "kana": "ウルグアイ",
+    "romaji": "uruguai",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "uzbekistan.png",
+    "kanji": "ウズベキスタン",
+    "kana": "ウズベキスタン",
+    "romaji": "uzubekisutan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "vanuatu.png",
+    "kanji": "バヌアツ",
+    "kana": "バヌアツ",
+    "romaji": "banuatsu",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "vatican-city.png",
+    "kanji": "ヴァチカン市国",
+    "kana": "バチカンしこく",
+    "romaji": "bachikanshikoku",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "venezuela.png",
+    "kanji": "委内瑞拉",
+    "kana": "ベネズエラ",
+    "romaji": "benezuera",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "vietnam.png",
+    "kanji": "越南",
+    "kana": "えつなん",
+    "romaji": "etsunan",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "wales.png",
+    "kanji": "ウェールズ",
+    "kana": "ウェールズ",
+    "romaji": "ueerusu",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "wallis-and-futuna.png",
+    "kanji": "ウォリスフツナ",
+    "kana": "ウォリスフツナ",
+    "romaji": "uorisufutsuna",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "western-sahara.png",
+    "kanji": "西サハラ",
+    "kana": "にしサハラ",
+    "romaji": "nishisahara",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "yemen.png",
+    "kanji": "イエメン",
+    "kana": "イエメン",
+    "romaji": "iemen",
+    "is_common": "-",
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "zambia.png",
+    "kanji": "ザンビア",
+    "kana": "ザンビア",
+    "romaji": "zanbia",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  },
+  {
+    "question": "zimbabwe.png",
+    "kanji": "ジンバブエ",
+    "kana": "ジンバブエ",
+    "romaji": "zinbabue",
+    "is_common": true,
+    "jlpt": "-",
+    "parts_of_speech": [
+      "Noun"
+    ]
+  }
+]
+
