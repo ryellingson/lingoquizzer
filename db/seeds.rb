@@ -15,11 +15,23 @@ end
 
 table_games = Genre.create(name: "table games")
 
+difficulty_levels = ["beginner", "intermediate", "advanced"]
+
+difficulty_levels.each do |level|
+  Difficulty.create(level: level)
+end
+
+category_types = ["typing", "vocabulary", "grammar"]
+
+category_types.each do |type|
+  Category.create(name: type)
+end
+
 puts "おはよう"
 
 puts "checking to see if Hiragana 1 exists, if not creating it"
 
-hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", category: "writing", genre: table_games, question_header: "hiragana")
+hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", question_header: "Hiragana", language: "japanese" genre: table_games, difficulty: "beginner", category: "typing")
 
 # if found?
 
@@ -42,7 +54,7 @@ puts "次"
 
 puts "checking to see if Hiragana 2 exists, if not creating it"
 
-hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", category: "writing")
+hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", question_header: "Hiragana", language: "japanese" genre: table_games, difficulty: "intermediate", category: "typing")
 
 # if found?
 
@@ -65,7 +77,7 @@ puts "次"
 
 puts "checking to see if Ultimate Hiragana exists, if not creating it"
 
-ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", category: "writing")
+ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", question_header: "Hiragana", language: "japanese" genre: table_games, difficulty: "advanced", category: "typing")
 
 # if found?
 
@@ -90,7 +102,7 @@ puts "ヘロ"
 
 puts "checking to see if Katakana 1 exists, if not creating it"
 
-katakana_1 = Game.find_or_create_by(name: "Katakana 1", category: "writing")
+katakana_1 = Game.find_or_create_by(name: "Katakana 1", question_header: "Katakana", language: "japanese" genre: table_games, difficulty: "beginner", category: "typing")
 
 puts "game created"
 puts "parsing katakana json"
@@ -111,7 +123,7 @@ puts "次"
 
 puts "checking to see if Katakana 2 exists, if not creating it"
 
-katakana_2 = Game.find_or_create_by(name: "Katakana 2", category: "writing")
+katakana_2 = Game.find_or_create_by(name: "Katakana 2", question_header: "Katakana", language: "japanese" genre: table_games, difficulty: "intermediate", category: "typing")
 
 puts "game created"
 puts "parsing katakana_2 json"
@@ -132,7 +144,7 @@ puts "次"
 
 puts "checking to see if Ultimate Katakana exists, if not creating it"
 
-ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", category: "writing")
+ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", question_header: "Katakana", language: "japanese" genre: table_games, difficulty: "advanced", category: "typing")
 
 puts "game created"
 puts "parsing utimate_katakana json"
@@ -176,7 +188,7 @@ puts "ワンワン"
 
 puts "checking to see if Animals exists, if not creating it"
 
-animals = Game.find_or_create_by(name: "Animals", icon_based: true, category: "vocabulary")
+animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language: "japanese" genre: table_games, difficulty: "intermediate", category: "typing")
 
 puts "game created"
 puts "parsing animals json"
