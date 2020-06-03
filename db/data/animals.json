@@ -19,7 +19,7 @@
   },
   {
     "problem_icon": "bat.png",
-    "kana": "",
+    "kana": "こうもり",
     "kanji": "蝙蝠",
     "romanization": "koumori"
   },
@@ -27,7 +27,7 @@
     "problem_icon": "bear.png",
     "kana": "くま",
     "kanji": "熊",
-    "romanization": "koumori"
+    "romanization": "kuma"
   },
   {
     "problem_icon": "bird.png",
@@ -40,12 +40,6 @@
     "kana": "ふぐ",
     "kanji": "河豚",
     "romanization": "fugu"
-  },
-  {
-    "problem_icon": "boar.png",
-    "kana": "いののし",
-    "kanji": "猪",
-    "romanization": "inonoshi"
   },
   {
     "problem_icon": "bug.png",
@@ -62,7 +56,7 @@
   {
     "problem_icon": "camel.png",
     "kana": "キャメル",
-    "kanji": "",
+    "kanji": "キャメル",
     "romanization": "kyameru"
   },
   {
@@ -176,7 +170,7 @@
   {
     "problem_icon": "flamingo.png",
     "kana": "フラミンゴ",
-    "kanji": "",
+    "kanji": "フラミンゴ",
     "romanization": "furamingo"
   },
   {
@@ -199,39 +193,33 @@
   },
   {
     "problem_icon": "goat.png",
-    "kana": "",
-    "kanji": "猪",
-    "romanization": "inonoshi"
+    "kana": "やぎ",
+    "kanji": "山羊",
+    "romanization": "yagi"
   },
   {
     "problem_icon": "gorilla.png",
     "kana": "ゴリラ",
-    "kanji": "",
+    "kanji": "ゴリラ",
     "romanization": "gorira"
-  },
-  {
-    "problem_icon": "boar.png",
-    "kana": "いののし",
-    "kanji": "猪",
-    "romanization": "inonoshi"
   },
   {
     "problem_icon": "hamster.png",
     "kana": "ハムスター",
-    "kanji": "",
-    "romanization": "hamusuta-"
+    "kanji": "ハムスター",
+    "romanization": "hamusutaa"
   },
   {
     "problem_icon": "hedgehog.png",
     "kana": "はりねずみ",
     "kanji": "針鼠",
-    "romanization": "inonoshi"
+    "romanization": "harinezumi"
   },
   {
     "problem_icon": "hippopotamus.png",
     "kana": "かば",
     "kanji": "河馬",
-    "romanization": "inonoshi"
+    "romanization": "kaba"
   },
   {
     "problem_icon": "honeybee.png",
@@ -249,12 +237,12 @@
     "problem_icon": "kangaroo.png",
     "kana": "カンガルー",
     "kanji": "",
-    "romanization": "kangaru-"
+    "romanization": "kangaruu"
   },
   {
     "problem_icon": "koala.png",
     "kana": "コアラ",
-    "kanji": "",
+    "kanji": "コアラ",
     "romanization": "koara"
   },
   {
@@ -272,7 +260,7 @@
   {
     "problem_icon": "lion.png",
     "kana": "ライオン",
-    "kanji": "",
+    "kanji": "ライオン",
     "romanization": "raion"
   },
   {
@@ -284,14 +272,14 @@
   {
     "problem_icon": "llama.png",
     "kana": "ラマ",
-    "kanji": "",
+    "kanji": "ラマ",
     "romanization": "rama"
   },
   {
     "problem_icon": "lobster.png",
     "kana": "ロブスター",
-    "kanji": "",
-    "romanization": "robusuta-"
+    "kanji": "ロブスター",
+    "romanization": "robusutaa"
   },
   {
     "problem_icon": "monkey.png",
@@ -320,8 +308,8 @@
   {
     "problem_icon": "orangutan.png",
     "kana": "オランウータン",
-    "kanji": "",
-    "romanization": "oranu-tan"
+    "kanji": "オランウータン",
+    "romanization": "oranuutan"
   },
   {
     "problem_icon": "otter.png",
@@ -350,25 +338,25 @@
   {
     "problem_icon": "panda.png",
     "kana": "パンダ",
-    "kanji": "",
+    "kanji": "パンダ",
     "romanization": "panda"
   },
   {
     "problem_icon": "parrot.png",
     "kana": "オウム",
-    "kanji": "",
+    "kanji": "オウム",
     "romanization": "oumu"
   },
   {
     "problem_icon": "peacock.png",
     "kana": "ピーコック",
-    "kanji": "",
-    "romanization": "pi-kokku"
+    "kanji": "ピーコック",
+    "romanization": "piikokku"
   },
   {
     "problem_icon": "penguin.png",
     "kana": "ペンギン",
-    "kanji": "",
+    "kanji": "ペンギン",
     "romanization": "pengin"
   },
   {
@@ -380,7 +368,7 @@
   {
     "problem_icon": "poodle.png",
     "kana": "プードル",
-    "kanji": "",
+    "kanji": "プードル",
     "romanization": "pu-doru"
   },
   {
@@ -416,7 +404,7 @@
   {
     "problem_icon": "sauropod.png",
     "kana": "ブロントザウルス",
-    "kanji": "",
+    "kanji": "ブロントザウルス",
     "romanization": "burontozaurusu"
   },
   {
@@ -440,7 +428,7 @@
   {
     "problem_icon": "skunk.png",
     "kana": "スカンク",
-    "kanji": "",
+    "kanji": "スカンク",
     "romanization": "sukanku"
   },
   {
@@ -518,8 +506,8 @@
   {
     "problem_icon": "unicorn.png",
     "kana": "ユニコーン",
-    "kanji": "",
-    "romanization": "yuniko-n"
+    "kanji": "ユニコーン",
+    "romanization": "yunikoon"
   },
   {
     "problem_icon": "water-buffalo.png",
