@@ -186,12 +186,12 @@ puts "次"
 
 puts "ワンワン"
 
-puts "checking to see if Animals exists, if not creating it"
+puts "creating animals"
 
-animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language: "japanese" genre: table_games, difficulty: "intermediate", category: "typing")
+animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language: "japanese" genre: table_games, difficulty: "intermediate", category: "vocabulary")
 
 puts "game created"
-puts "parsing animals json"
+puts "parsing json"
 
 animals_data = JSON.parse(File.read(Rails.root + 'db/data/animals.json'))
 
@@ -205,6 +205,193 @@ end
 puts "job done"
 puts "Animals is ready にゃんにゃん"
 
+puts "次"
 
+puts "creating around the house"
 
+around_the_house = Game.find_or_create_by(name: "Around the house", icon_based: true, question_header: "Question", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
 
+puts "game created"
+puts "parsing json"
+
+around_the_house_data = JSON.parse(File.read(Rails.root + 'db/data/around_the_house.json'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+around_the_house_data.each do |problem_data|
+  Problem.find_or_create_by!(game: around_the_house, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "around the house is ready"
+
+puts "次"
+
+puts "creating countries"
+
+countries = Game.find_or_create_by(name: "Countries", icon_based: true, question_header: "Country", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
+
+puts "game created"
+puts "parsing json"
+
+countries_data = JSON.parse(File.read(Rails.root + 'db/data/countries.json'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+countries_data.each do |problem_data|
+  Problem.find_or_create_by!(game: countries, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "countries is ready"
+
+puts "次"
+
+puts "creating emotions and feelings"
+
+emotions_and_feelings = Game.find_or_create_by(name: "Emotions and Feelings", icon_based: true, question_header: "Emotion", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
+
+puts "game created"
+puts "parsing json"
+
+emotions_and_feelings_data = JSON.parse(File.read(Rails.root + 'db/data/emotions_and_feelings'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+emotions_and_feelings_data.each do |problem_data|
+  Problem.find_or_create_by!(game: emotions_and_feelings, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "emotions and feelings is ready"
+
+puts "次"
+
+puts "creating food"
+
+food = Game.find_or_create_by(name: "Food", icon_based: true, question_header: "Food", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
+
+puts "game created"
+puts "parsing json"
+
+food_data = JSON.parse(File.read(Rails.root + 'db/data/food.json'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+food_data.each do |problem_data|
+  Problem.find_or_create_by!(game: food, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "emotions and feelings is ready"
+
+puts "次"
+
+puts "creating nature and weather"
+
+nature_and_weather = Game.find_or_create_by(name: "Nature and Weather", icon_based: true, question_header: "Question", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
+
+puts "game created"
+puts "parsing json"
+
+nature_and_weather_data = JSON.parse(File.read(Rails.root + 'db/data/nature_and_weather.json'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+nature_and_weather_data.each do |problem_data|
+  Problem.find_or_create_by!(game: nature_and_weather, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "nature and weather is ready"
+
+puts "次"
+
+puts "creating people and jobs"
+
+people_and_jobs = Game.find_or_create_by(name: "People and Jobs", icon_based: true, question_header: "Question", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
+
+puts "game created"
+puts "parsing json"
+
+people_and_jobs_data = JSON.parse(File.read(Rails.root + 'db/data/people_and_jobs.json'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+people_and_jobs_data.each do |problem_data|
+  Problem.find_or_create_by!(game: people_and_jobs, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "people and jobs is ready"
+
+puts "次"
+
+puts "creating sports and activities"
+
+sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
+
+puts "game created"
+puts "parsing json"
+
+sports_and_activites_data = JSON.parse(File.read(Rails.root + 'db/data/sports_and_activites.json'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+sports_and_activites_data.each do |problem_data|
+  Problem.find_or_create_by!(game: sports_and_activites, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "sports and activities is ready"
+
+puts "次"
+
+puts "creating tech and tools"
+
+tech_and_tools = Game.find_or_create_by(name: "Tech and Tools", icon_based: true, question_header: "Question", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
+
+puts "game created"
+puts "parsing json"
+
+tech_and_tools_data + JSON.parse(File.read(Rails.root + 'db/data/tech_and_tools.json'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+tech_and_tools_data.each do |problem_data|
+  Problem.find_or_create_by!(game: tech_and_tools, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "tech and tools is ready"
+
+puts "次"
+
+puts "creating travel and places"
+
+travel_and_places = Game.find_or_create_by(name: "Travel and Places", icon_based: true, question_header: "Question", language: "japanese", genre: table_games, difficulty: "intermediate", category: "vocabulary")
+
+puts "game created"
+puts "parsing json"
+
+travel_and_places_data = JSON.parse(File.read(Rails.root + 'db/data/travel_and_places.json'))
+
+puts "parsed"
+puts "populating game with problems..."
+
+travel_and_places_data.each do |problem_data|
+  Problem.find_or_create_by!(game: travel_and_places, question: problem_data["question"], answer: problem_data["romaji"])
+end
+
+puts "job done"
+puts "travel and places is ready"
+
+puts "おわり"
