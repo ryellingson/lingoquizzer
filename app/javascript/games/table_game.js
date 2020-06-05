@@ -20,7 +20,7 @@ const initTableGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  const initialTime = 30;
+  const initialTime = 10;
   let timeLeft = initialTime;
   let interval;
   let score = 0;
@@ -149,7 +149,7 @@ const initTableGame = () => {
   }
 }
 
-export { initGame }
+export { initTableGame }
 
 // make an array with all the all the question answers
 // set the current answer as the first answer
@@ -159,8 +159,3 @@ export { initGame }
 // update our current index and current answer
 // add active row to next cell
 // post results to db
-
-
-// timer
-// score
-// kana count
