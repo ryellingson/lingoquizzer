@@ -42,12 +42,12 @@ const initTableGame = () => {
   }
 
   const handleInputChange = () => {
-    if (gameInput.value.trim() === currentAnswer.dataset.answer) {
+    if (JSON.parse(currentAnswer.dataset.answers).includes(gameInput.value.trim())) {
       currentAnswer.classList.add("correct-answer");
       score += 2;
       scoreShow.innerHTML = `<p>${score}pts<p>`;
       gameInput.value = "";
-      currentAnswer.innerHTML = currentAnswer.dataset.answer;
+      currentAnswer.innerHTML = currentAnswer.dataset.answers.replace(/[\[\]']+/g,''); // replace removes square brackets
       updateCurrentAnswer("next");
       correctCountValue += 1;
       correctCountShow.innerHTML = `<p>${correctCountValue}/46</p>`;
@@ -94,7 +94,7 @@ const initTableGame = () => {
     answers.forEach((answer) => {
       if (!answer.innerHTML) {
         answer.classList.add("wrong-answer");
-        answer.innerHTML = answer.dataset.answer;
+        answer.innerHTML = answer.dataset.answers.replace(/[\[\]']+/g,'');
       }
     })
     document.querySelector(".game-stats").classList.remove("hidden");
