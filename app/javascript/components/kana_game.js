@@ -1,6 +1,6 @@
 import Rails from "@rails/ujs"
 
-const initGame = () => {
+const initTableGame = () => {
   const playButton = document.querySelector(".play-button");
   const replayButton = document.querySelector(".restart")
   const gameInput = document.querySelector(".game-input");

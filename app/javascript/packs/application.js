@@ -15,7 +15,7 @@ import { initSignUpModal } from "../components/modal";
 
 import { initDropDowns } from "../components/dropdown";
 
-import { initGame } from "../components/kana_game";
+import { initTableGame } from "../components/table_game";
 
 import { initMessageScroll } from "../channels/message_scroll.js";
 
@@ -25,7 +25,7 @@ document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
   initInteractiveForm();
   initDropDowns();
-  initGame();
+  initTableGame();
   initForumTabs();
   // initMessageScroll();
 });
