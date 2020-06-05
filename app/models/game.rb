@@ -2,7 +2,10 @@ class Game < ApplicationRecord
   validates :name, uniqueness: :true
   has_many :problems, dependent: :destroy
   has_many :plays, dependent: :destroy
-  has_many :languages
+  belongs_to :language
+  belongs_to :genre
+  belongs_to :category
+  belongs_to :difficulty
 
   def top_users_specific
     sql = <<-SQL

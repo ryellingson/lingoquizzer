@@ -19,6 +19,8 @@ language_names.each do |language|
   Language.create(name: language)
 end
 
+japanese = Language.find_by(name: "japanese")
+
 table_games = Genre.create(name: "table games")
 
 difficulty_levels = ["beginner", "intermediate", "advanced"]
@@ -27,17 +29,29 @@ difficulty_levels.each do |level|
   Difficulty.create(level: level)
 end
 
+beginner = Difficulty.find_by(level: "beginner")
+
+intermediate = Difficulty.find_by(level: "intermediate")
+
+advanced = Difficulty.find_by(level: "advanced")
+
 category_types = ["typing", "vocabulary", "grammar"]
 
 category_types.each do |type|
   Category.create(name: type)
 end
 
+typing = Category.find_by(name: "typing")
+
+vocabulary = Category.find_by(name: "vocabulary")
+
+grammar = Category.find_by(name: "grammar")
+
 puts "おはよう"
 
 puts "checking to see if Hiragana 1 exists, if not creating it"
 
-hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", question_header: "Hiragana", language_id: "japanese", genre_id: table_games, difficulty_id: "beginner", category_id: "typing")
+hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: beginner, category: typing)
 
 # if found?
 
@@ -49,8 +63,11 @@ hiragana_1_data = JSON.parse(File.read(Rails.root + 'db/data/hiragana_1.json'))
 puts "parsed"
 puts "populating game with problems..."
 
+hiragana_1 = Game.find_by(name: "Hiragana 1")
+
 hiragana_1_data.each do |problem_data|
-  Problem.find_or_create_by!(game: hiragana_1, question: problem_data["character"], answer: problem_data["romanization"])
+  problem = Problem.find_or_create_by!(game: hiragana_1, question: problem_data["character"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
 end
 
 puts "job done"
@@ -60,7 +77,7 @@ puts "次"
 
 puts "checking to see if Hiragana 2 exists, if not creating it"
 
-hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", question_header: "Hiragana", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "typing")
+hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: intermediate, category: typing)
 
 # if found?
 
@@ -73,7 +90,8 @@ puts "parsed"
 puts "populating game with problems..."
 
 hiragana_2_data.each do |problem_data|
-  Problem.find_or_create_by!(game: hiragana_2, question: problem_data["character"], answer: problem_data["romanization"])
+ problem = Problem.find_or_create_by!(game: hiragana_2, question: problem_data["character"])
+ Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
 end
 
 puts "job done"
@@ -83,7 +101,7 @@ puts "次"
 
 puts "checking to see if Ultimate Hiragana exists, if not creating it"
 
-ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", question_header: "Hiragana", language_id: "japanese", genre_id: table_games, difficulty_id: "advanced", category_id: "typing")
+ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: advanced, category: typing)
 
 # if found?
 
@@ -96,7 +114,8 @@ puts "parsed"
 puts "populating game with problems..."
 
 ultimate_hiragana_data.each do |problem_data|
-  Problem.find_or_create_by!(game: ultimate_hiragana, question: problem_data["character"], answer: problem_data["romanization"])
+  problem = Problem.find_or_create_by!(game: ultimate_hiragana, question: problem_data["character"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
 end
 
 puts "job done"
@@ -108,7 +127,7 @@ puts "ヘロ"
 
 puts "checking to see if Katakana 1 exists, if not creating it"
 
-katakana_1 = Game.find_or_create_by(name: "Katakana 1", question_header: "Katakana", language_id: "japanese", genre_id: table_games, difficulty_id: "beginner", category_id: "typing")
+katakana_1 = Game.find_or_create_by(name: "Katakana 1", question_header: "Katakana", language: japanese, genre: table_games, difficulty: beginner, category: typing)
 
 puts "game created"
 puts "parsing katakana json"
@@ -119,7 +138,8 @@ puts "parsed"
 puts "populating game with problems..."
 
 katakana_1_data.each do |problem_data|
-  Problem.find_or_create_by!(game: katakana_1, question: problem_data["character"], answer: problem_data["romanization"])
+  problem = Problem.find_or_create_by!(game: katakana_1, question: problem_data["character"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
 end
 
 puts "job done"
@@ -129,7 +149,7 @@ puts "次"
 
 puts "checking to see if Katakana 2 exists, if not creating it"
 
-katakana_2 = Game.find_or_create_by(name: "Katakana 2", question_header: "Katakana", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "typing")
+katakana_2 = Game.find_or_create_by(name: "Katakana 2", question_header: "Katakana", language: japanese, genre: table_games, difficulty: intermediate, category: typing)
 
 puts "game created"
 puts "parsing katakana_2 json"
@@ -140,7 +160,8 @@ puts "parsed"
 puts "populating game with problems..."
 
 katakana_2_data.each do |problem_data|
-  Problem.find_or_create_by!(game: katakana_2, question: problem_data["character"], answer: problem_data["romanization"])
+ problem = Problem.find_or_create_by!(game: katakana_2, question: problem_data["character"])
+ Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
 end
 
 puts "job done"
@@ -150,7 +171,7 @@ puts "次"
 
 puts "checking to see if Ultimate Katakana exists, if not creating it"
 
-ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", question_header: "Katakana", language_id: "japanese", genre_id: table_games, difficulty_id: "advanced", category_id: "typing")
+ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", question_header: "Katakana", language: japanese, genre: table_games, difficulty: advanced, category: typing)
 
 puts "game created"
 puts "parsing utimate_katakana json"
@@ -161,7 +182,8 @@ puts "parsed"
 puts "populating game with problems..."
 
 ultimate_katakana_data.each do |problem_data|
-  Problem.find_or_create_by!(game: ultimate_katakana, question: problem_data["character"], answer: problem_data["romanization"])
+  problem = Problem.find_or_create_by!(game: ultimate_katakana, question: problem_data["character"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
 end
 
 puts "job done"
@@ -194,7 +216,7 @@ puts "ワンワン"
 
 puts "creating animals"
 
-animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
@@ -205,7 +227,10 @@ puts "parsed"
 puts "populating game with problems..."
 
 animals_data.each do |problem_data|
-  Problem.find_or_create_by!(game: animals, question: problem_data["problem_icon"], answer: problem_data["romanization"])
+  problem = Problem.find_or_create_by!(game: animals, question: problem_data["problem_icon"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -215,7 +240,7 @@ puts "次"
 
 puts "creating around the house"
 
-around_the_house = Game.find_or_create_by(name: "Around the house", icon_based: true, question_header: "Question", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+around_the_house = Game.find_or_create_by(name: "Around the house", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
@@ -226,7 +251,10 @@ puts "parsed"
 puts "populating game with problems..."
 
 around_the_house_data.each do |problem_data|
-  Problem.find_or_create_by!(game: around_the_house, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: around_the_house, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -236,7 +264,7 @@ puts "次"
 
 puts "creating countries"
 
-countries = Game.find_or_create_by(name: "Countries", icon_based: true, question_header: "Country", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+countries = Game.find_or_create_by(name: "Countries", icon_based: true, question_header: "Country", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
@@ -247,7 +275,10 @@ puts "parsed"
 puts "populating game with problems..."
 
 countries_data.each do |problem_data|
-  Problem.find_or_create_by!(game: countries, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: countries, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -257,18 +288,21 @@ puts "次"
 
 puts "creating emotions and feelings"
 
-emotions_and_feelings = Game.find_or_create_by(name: "Emotions and Feelings", icon_based: true, question_header: "Emotion", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+emotions_and_feelings = Game.find_or_create_by(name: "Emotions and Feelings", icon_based: true, question_header: "Emotion", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
 
-emotions_and_feelings_data = JSON.parse(File.read(Rails.root + 'db/data/emotions_and_feelings'))
+emotions_and_feelings_data = JSON.parse(File.read(Rails.root + 'db/data/emotions_and_feelings.json'))
 
 puts "parsed"
 puts "populating game with problems..."
 
 emotions_and_feelings_data.each do |problem_data|
-  Problem.find_or_create_by!(game: emotions_and_feelings, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: emotions_and_feelings, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -278,7 +312,7 @@ puts "次"
 
 puts "creating food"
 
-food = Game.find_or_create_by(name: "Food", icon_based: true, question_header: "Food", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+food = Game.find_or_create_by(name: "Food", icon_based: true, question_header: "Food", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
@@ -289,7 +323,10 @@ puts "parsed"
 puts "populating game with problems..."
 
 food_data.each do |problem_data|
-  Problem.find_or_create_by!(game: food, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: food, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -299,7 +336,7 @@ puts "次"
 
 puts "creating nature and weather"
 
-nature_and_weather = Game.find_or_create_by(name: "Nature and Weather", icon_based: true, question_header: "Question", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+nature_and_weather = Game.find_or_create_by(name: "Nature and Weather", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
@@ -310,7 +347,10 @@ puts "parsed"
 puts "populating game with problems..."
 
 nature_and_weather_data.each do |problem_data|
-  Problem.find_or_create_by!(game: nature_and_weather, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: nature_and_weather, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -320,7 +360,7 @@ puts "次"
 
 puts "creating people and jobs"
 
-people_and_jobs = Game.find_or_create_by(name: "People and Jobs", icon_based: true, question_header: "Question", language_id: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+people_and_jobs = Game.find_or_create_by(name: "People and Jobs", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
@@ -331,7 +371,10 @@ puts "parsed"
 puts "populating game with problems..."
 
 people_and_jobs_data.each do |problem_data|
-  Problem.find_or_create_by!(game: people_and_jobs, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: people_and_jobs, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -341,7 +384,7 @@ puts "次"
 
 puts "creating sports and activities"
 
-sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
@@ -352,7 +395,10 @@ puts "parsed"
 puts "populating game with problems..."
 
 sports_and_activites_data.each do |problem_data|
-  Problem.find_or_create_by!(game: sports_and_activites, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: sports_and_activites, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -362,18 +408,21 @@ puts "次"
 
 puts "creating tech and tools"
 
-tech_and_tools = Game.find_or_create_by(name: "Tech and Tools", icon_based: true, question_header: "Question", language: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+tech_and_tools = Game.find_or_create_by(name: "Tech and Tools", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
 
-tech_and_tools_data + JSON.parse(File.read(Rails.root + 'db/data/tech_and_tools.json'))
+tech_and_tools_data = JSON.parse(File.read(Rails.root + 'db/data/tech_and_tools.json'))
 
 puts "parsed"
 puts "populating game with problems..."
 
 tech_and_tools_data.each do |problem_data|
-  Problem.find_or_create_by!(game: tech_and_tools, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: tech_and_tools, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
@@ -383,7 +432,7 @@ puts "次"
 
 puts "creating travel and places"
 
-travel_and_places = Game.find_or_create_by(name: "Travel and Places", icon_based: true, question_header: "Question", language: "japanese", genre_id: table_games, difficulty_id: "intermediate", category_id: "vocabulary")
+travel_and_places = Game.find_or_create_by(name: "Travel and Places", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
 
 puts "game created"
 puts "parsing json"
@@ -394,7 +443,10 @@ puts "parsed"
 puts "populating game with problems..."
 
 travel_and_places_data.each do |problem_data|
-  Problem.find_or_create_by!(game: travel_and_places, question: problem_data["question"], answer: problem_data["romaji"])
+  problem = Problem.find_or_create_by!(game: travel_and_places, question: problem_data["question"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
 end
 
 puts "job done"
