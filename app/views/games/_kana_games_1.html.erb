@@ -16,7 +16,7 @@
                 <td>
                   <%= problem.question %>
                 </td>
-                <td data-answer="<%= problem.answer %>" class="answer"></td>
+                <td data-answers="<%= problem.answers.map(&:data) %>" class="answer"></td>
               </tr>
               <% end %>
             </tbody>
@@ -36,7 +36,7 @@
                 <td>
                   <%= problem.question %>
                 </td>
-                <td data-answer="<%= problem.answer %>" class="answer"></td>
+                <td data-answers="<%= problem.answers.map(&:data) %>" class="answer"></td>
               </tr>
               <% end %>
             </tbody>
@@ -56,7 +56,7 @@
                 <td>
                   <%= problem.question %>
                 </td>
-                <td data-answer="<%= problem.answer %>" class="answer"></td>
+                <td data-answers="<%= problem.answers.map(&:data) %>" class="answer"></td>
               </tr>
               <% end %>
             </tbody>
@@ -76,7 +76,7 @@
                 <td>
                   <%= problem.question %>
                 </td>
-                <td data-answer="<%= problem.answer %>" class="answer"></td>
+                <td data-answers="<%= problem.answers.map(&:data) %>" class="answer"></td>
               </tr>
               <% end %>
             </tbody>
@@ -96,7 +96,7 @@
                 <td>
                   <%= problem.question %>
                 </td>
-                <td data-answer="<%= problem.answer %>" class="answer"></td>
+                <td data-answers="<%= problem.answers.map(&:data) %>" class="answer"></td>
               </tr>
               <% end %>
               <%= render "game_controls" %>

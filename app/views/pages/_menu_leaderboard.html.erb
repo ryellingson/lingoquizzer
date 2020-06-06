@@ -1,0 +1,32 @@
+<div class="menu-leaderboard-container">
+  <div class="menu-leaderboard">
+    <%= link_to leaderboards_path do %>
+    <div class="menu-leaderboard-header">
+      <span class="menu-leaderboard-image"><i class="fas fa-trophy"></i></span>
+      <span class="menu-leaderboard-text">Leaderboard</span>
+    </div>
+    <% end %> <!-- link to leaderboards -->
+    <div class="menu-leaderboard-content">
+      <ul class="menu-leaderboard-rows">
+        <% User.top_users.each_with_index do |user, index| %>
+        <li class="menu-leaderboard-row">
+          <% if user.avatar.attached? %>
+            <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
+          <% else %>
+            <div class="menu-leaderboard-avatar default-avatar">
+              <%= user.default_avatar %>
+            </div>
+          <% end %>
+          <span class="menu-leaderboard-rank"><%= index + 1 %></span>
+          <span class="menu-leaderboard-username">
+            <%= link_to user.username, user_path(user) %>
+          </span>
+          <span class="menu-leaderboard-points">
+            <span><%= user.total_score %></span>
+          </span>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
