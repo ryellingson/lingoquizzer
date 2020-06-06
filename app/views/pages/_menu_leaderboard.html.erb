@@ -11,11 +11,11 @@
         <% User.top_users.each_with_index do |user, index| %>
         <li class="menu-leaderboard-row">
           <% if user.avatar.attached? %>
-          <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
+            <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
           <% else %>
-          <div class="menu-leaderboard-avatar default-avatar">
-            <%= user.default_avatar %>
-          </div>
+            <div class="menu-leaderboard-avatar default-avatar">
+              <%= user.default_avatar %>
+            </div>
           <% end %>
           <span class="menu-leaderboard-rank"><%= index + 1 %></span>
           <span class="menu-leaderboard-username">

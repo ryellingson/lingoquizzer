@@ -1,29 +1,10 @@
-.edit-sidebar-left {
-  width: 30vw;
-}
-
-.edit-sidebar-right {
-  width: 30vw;
-}
-
-.leaderboards-main-container {
-  background-color: rgba(102,138,106, 0.9);
+.menu-leaderboard-container {
+  width: 350px;
   display: flex;
   justify-content: center;
-  height: 100%;
-  width: 100%;
 }
 
-.leaderboards-wrapper {
-  background-color: white;
-  border: 2px solid #eee;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100vh;
-}
-
-.leaderboard {
+.menu-leaderboard {
   border: 2px solid #eee;
   width: 325px;
   background-color: white;
@@ -31,13 +12,17 @@
   margin-top: 15px;
 }
 
-.leaderboard-header {
+.menu-leaderboard-header {
   border-bottom: 1px solid rgba(0,0,0,0.08);
   padding: 18px 0;
   text-align: center;
 }
 
-.leaderboard-text {
+.menu-leaderboard-image {
+  // for the trophy
+}
+
+.menu-leaderboard-text {
   vertical-align: middle;
   color: #2B3648;
   font-weight: 600;
@@ -46,14 +31,14 @@
   margin: 10px;
 }
 
-.leaderboard-rows {
+.menu-leaderboard-rows {
   list-style-type: none;
   background-color: white;
   margin: 0;
   font-size: 12px;
 }
 
-.leaderboard-row {
+.menu-leaderboard-row {
   height: 60px;
   width: 100%;
   line-height: 42px;
@@ -67,7 +52,7 @@
   justify-content: space-between;
 }
 
-.leaderboard-avatar {
+.menu-leaderboard-avatar {
   border: 1px solid rgba(47, 79, 79, 0.6);
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -78,7 +63,7 @@
   justify-content: center;
   margin: 6px;
 
-  &.default-leaderboard-avatar {
+  &.default-avatar {
     font-size: 30px;
     align-items: center;
     background-color: aliceblue;
@@ -87,7 +72,7 @@
   }
 }
 
-.leaderboard-rank {
+.menu-leaderboard-rank {
   border: 1px solid lightgrey;
   border-radius: 20%;
   font-weight: 900;
@@ -97,8 +82,16 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+.menu-leaderboard-username {
+  width: 200px;
+  font-size: 20px;
+  margin-left: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
 .menu-leaderboard-points {
   margin-left: 75px;
   margin-right: 15px
 }
-
