@@ -6,10 +6,6 @@
   <% end %> <!-- posts iteration  -->
 
   <div class="post-create-button-wrapper">
-    <%= form_for ([post, Post.new]) do |f| %>
-
-    <%= link_to "Create post", class: "play-button border-glow" %>
-
-    <% end %>
+    <%= link_to "Create post", new_post_path, class: "" %>
   </div>
 </div>

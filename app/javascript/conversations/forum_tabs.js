@@ -1,7 +1,7 @@
 const initForumTabs = () => {
-  const forumTabs = document.querySelectorAll(".forum-tab")
+  const forumTabs = document.querySelectorAll(".channel-tab")
   if (forumTabs.length !== 0) {
-    const forumTabContent = document.querySelectorAll(".forum-tab-content")
+    const forumTabContent = document.querySelectorAll(".channel-tab-content")
     forumTabs.forEach((tab, i) => {
       tab.addEventListener('click', () => {
         forumTabContent.forEach(content => content.classList.remove("active-tab"))
