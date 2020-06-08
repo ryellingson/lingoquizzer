@@ -1,22 +1,15 @@
 <div class="forum_container">
   <% posts.each do |post| %>
-  <div class="post-title">
-    <p>Title:<%= post.title %></p>
+  <div class="posts">
+    <%= render "post" %>
   </div>
-  <div class="post-content">
-    <p>Content:<%= post.content %></p>
-  </div>
-  <div class="post-user">
-    <p>User:<%= post.user %></p>
-  </div>
+  <% end %> <!-- posts iteration  -->
 
-  <div class="comment">
-    <p>Comment:</p>
-    <%= form_for ([post, Comment.new]) do |f| %>
+  <div class="post-create-button-wrapper">
+    <%= form_for ([post, Post.new]) do |f| %>
 
-    <%= f.text_area :content %>
+    <%= link_to "Create post", class: "play-button border-glow" %>
 
     <% end %>
   </div>
-  <% end %>
 </div>
