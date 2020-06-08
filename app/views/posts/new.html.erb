@@ -1,5 +1,11 @@
 <%= form_for (Post.new) do |f| %>
 
-<%= f.submit "Create post", class: "play-button border-glow" %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+
+<%= f.label :content %>
+<%= f.text_area :content %>
+
+<%= f.submit "Create post", class: "post-button border-glow" %>
 
 <% end %>
