@@ -33,6 +33,10 @@ class User < ApplicationRecord
     self.plays.order(score: :desc).first(25)
   end
 
+  def best_score(game)
+
+  end
+
   def login
     @login || self.username || self.email
   end

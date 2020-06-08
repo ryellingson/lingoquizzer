@@ -1,0 +1,29 @@
+<div class="menu-leaderboard-content">
+  <ul class="menu-leaderboard-rows">
+    <% users = game ? game.top_users_specific : User.top_users %>
+    <% users.each_with_index do |user, index| %>
+    <li class="menu-leaderboard-row">
+      <% if user.avatar.attached? %>
+      <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
+      <% else %>
+      <div class="menu-leaderboard-avatar default-avatar">
+        <%= user.default_avatar %>
+      </div>
+      <% end %>
+      <span class="menu-leaderboard-rank"><%= index + 1 %></span>
+      <span class="menu-leaderboard-username">
+        <%= link_to user.username, user_path(user) %>
+      </span>
+      <span class="menu-leaderboard-points">
+        <span>
+          <% if game %>
+            <%= user.specific_score %>
+          <% else %>
+            <%= user.total_score %>
+          <% end %> <!-- conditional checking if game exists -->
+        </span>
+      </span>
+    </li>
+    <% end %>
+  </ul>
+</div>

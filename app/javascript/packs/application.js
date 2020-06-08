@@ -19,14 +19,14 @@ import { initTableGame } from "../games/table_game";
 
 import { initMessageScroll } from "../channels/message_scroll.js";
 
-import { initForumTabs } from "../conversations/forum_tabs"
+import { initChannelTabs } from "../conversations/forum_tabs"
 
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
   initInteractiveForm();
   initDropDowns();
   initTableGame();
-  initForumTabs();
+  initChannelTabs();
   // initMessageScroll();
 });
 

@@ -7,30 +7,9 @@
         <span class="leaderboard-image"><i class="fas fa-trophy"></i></span>
         <span class="leaderboard-text"><%= game.name %></span>
       </div>
-      <div class="leaderboard-content">
-        <ul class="leaderboard-rows">
-          <li class="leaderboard-row">
-            <% game.top_users_specific.each_with_index do |top_user, index| %>
-              <% if top_user.avatar.attached? %>
-                <%= cl_image_tag top_user.avatar.key, class: 'leaderboard-avatar' %>
-              <% else %>
-                <div class="leaderboard-avatar default-leaderboard-avatar">
-                  <%= top_user.default_avatar %>
-                </div>
-              <% end %> <!-- avatar iteration -->
-              <span class="leaderboard-rank"><%= index + 1 %></span>
-              <span class="leaderboard-username">
-                <%= link_to top_user.username, user_path(top_user) %>
-              </span>
-              <span class="leaderboard-points">
-                <%= top_user.specific_score %>
-              </span>
-            <% end %> <!-- top users iteration -->
-          </li>
-        </ul>
-        <% end %> <!-- game iteration -->
-      </div>
+      <%= render 'shared/leaderboard_content', game: game %>
     </div>
+    <% end %> <!-- game iteration -->
   </div>
   <div class="edit-sidebar-right"></div>
 </div>

@@ -1,0 +1,11 @@
+<div class="forum_container">
+  <div class="posts">
+    <% @posts.each do |post| %>
+      <%= render "posts/post", post: post %>
+    <% end %> <!-- posts iteration  -->
+  </div>
+
+  <div class="post-create-button-wrapper">
+    <%= link_to "Create post", new_post_path, class: "post-button border-glow" %>
+  </div>
+</div>

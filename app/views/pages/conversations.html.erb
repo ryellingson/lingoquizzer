@@ -16,8 +16,8 @@
         <h3>Channel <i class="fas fa-random"></i></h3>
       </div>
       <div class="conversations-channels">
-        <p class="forum-tab"><i class="fas fa-angle-double-right"></i>  Forum</p>
-        <p class="forum-tab"><i class="fas fa-angle-double-right"></i>  Chat  <i class="fas fa-arrow-circle-left"></i></p>
+        <p class="channel-tab"><i class="fas fa-angle-double-right"></i>  Forum</p>
+        <p class="channel-tab"><i class="fas fa-angle-double-right"></i>  Chat  <i class="fas fa-arrow-circle-left"></i></p>
       </div>
     </div>
     <div class="left-sidebar-section">
@@ -25,9 +25,9 @@
         <h3>Language <i class="fas fa-comments"></i></h3>
       </div>
       <div class="conversations-channels">
-        <p class="forum-tab"><i class="fas fa-circle-notch"></i>  Japanese  <i class="fas fa-arrow-circle-left"></i></p>
-        <p class="forum-tab"><i class="fas fa-circle-notch"></i>  English</p>
-        <p class="forum-tab"><i class="fas fa-circle-notch"></i>  Spanish</p>
+        <p class="language-tab"><i class="fas fa-circle-notch"></i>  Japanese  <i class="fas fa-arrow-circle-left"></i></p>
+        <p class="language-tab"><i class="fas fa-circle-notch"></i>  English</p>
+        <p class="language-tab"><i class="fas fa-circle-notch"></i>  Spanish</p>
       </div>
     </div>
     <div class="left-sidebar-section">
@@ -43,11 +43,11 @@
     </div>
   </div>
   <div class="channel-container">
-    <div class="forum-tab-content">
-      <%= render "conversations/forum_container", posts: @posts %>
+    <div class="channel-tab-content">
+      <%= render "posts/forum_container", posts: @posts %>
     </div>
-    <div class="forum-tab-content">
-      <%= render "conversations/chat_container" %>
+    <div class="channel-tab-content">
+      <%= render "messages/chat_container" %>
     </div>
   </div>
   <div class="sidebar-right">

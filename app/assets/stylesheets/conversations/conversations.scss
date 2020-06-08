@@ -1,17 +1,17 @@
-.forum-tab {
+.channel-tab {
   padding: 3px;
 }
 
-.forum-tab:hover {
+.channel-tab:hover {
   cursor: pointer;
   text-shadow: 0px 2px 2px black;
 }
 
-.forum-tab-content {
+.channel-tab-content {
   display: none;
 }
 
-.forum-tab-content.active-tab {
+.channel-tab-content.active-tab {
   display: block;
 }
 
