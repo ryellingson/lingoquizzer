@@ -19,7 +19,7 @@ import { initTableGame } from "../games/table_game";
 
 import { initMessageScroll } from "../channels/message_scroll.js";
 
-import { initForumTabs } from "../components/forum_tabs"
+import { initForumTabs } from "../conversations/forum_tabs"
 
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
