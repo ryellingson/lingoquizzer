@@ -10,8 +10,10 @@ require 'json'
 usernames = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15",]
 
 usernames.each do |username|
-  User.create(username: username, email: "#{username}#{'@example.com'}", encrypted_password: "#{username}#{'pass'}")
+  User.create(username: username, email: "#{username}#{'@example.com'}", password: "#{username}#{'pass'}", password_confirmation: "#{username}#{'pass'}")
 end
+
+User.create(username: "admin1", email: "admin1@go.com", password: "admin1pass", password_confirmation: "admin1pass", admin: true)
 
 language_names = ["japanese", "spanish", "english", "french"]
 
