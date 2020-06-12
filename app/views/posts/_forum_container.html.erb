@@ -1,11 +1,11 @@
-<div class="forum_container">
-  <div class="posts">
+<div class="conversations-content-container" data-controller="conversations">
+  <div class="conversations-content-items">
     <% @posts.each do |post| %>
       <%= render "posts/post", post: post %>
     <% end %> <!-- posts iteration  -->
   </div>
 
-  <div class="post-create-button-wrapper">
+  <div class="conversations-hub-wrapper">
     <%= link_to "Create post", new_post_path, class: "post-button border-glow" %>
   </div>
 </div>

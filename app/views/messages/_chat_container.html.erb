@@ -1,18 +1,19 @@
-<div class="chat-container">
-  <div class="chat-messages" id="chatbox">
+<div class="conversations-content-container">
+  <div class="conversations-content-items" id="chatbox">
     <% @messages.each do |message| %>
     <%= render 'messages/message', message: message %>
     <% end %>
   </div>
-  <div class="chat-hub">
-    <%= form_with model: @message do |f| %>
+  <div class="conversations-hub-wrapper">
+    <%= form_with model: @message, class: "w-100" do |f| %>
     <div class="form-group-chat">
       <%= f.text_field :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
     </div>
-    <%= f.submit "send" %>
-    <% end %>
+
     <div class="chat-tools">
       <i class="far fa-grin-beam"></i>
+      <%= f.submit "send" %>
     </div>
+    <% end %> <!-- form with model message -->
   </div>
 </div>
