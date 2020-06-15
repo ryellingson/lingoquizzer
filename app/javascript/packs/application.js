@@ -17,17 +17,11 @@ import { initDropDowns } from "../components/dropdown";
 
 import { initTableGame } from "../games/table_game";
 
-import { initMessageScroll } from "../channels/message_scroll.js";
-
-import { initChannelTabs } from "../conversations/forum_tabs"
-
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
   initInteractiveForm();
   initDropDowns();
   initTableGame();
-  initChannelTabs();
-  // initMessageScroll();
 });
 
 

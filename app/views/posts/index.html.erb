@@ -6,6 +6,6 @@
   </div>
 
   <div class="conversations-hub-wrapper">
-    <%= link_to "Create post", new_post_path, class: "post-button border-glow" %>
+    <%= link_to "Create post", new_post_path, class: "post-button border-glow", data: { action: "click->conversations#new" }, remote: true %>
   </div>
 </div>
