@@ -5,7 +5,7 @@
     <% end %>
   </div>
   <div class="conversations-hub-wrapper">
-    <%= form_with model: @message, class: "w-100" do |f| %>
+    <%= form_with model: Message.new, class: "w-100" do |f| %>
     <div class="form-group-chat">
       <%= f.text_field :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
     </div>

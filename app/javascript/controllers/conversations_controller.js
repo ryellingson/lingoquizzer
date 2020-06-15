@@ -6,4 +6,8 @@ export default class extends Controller {
   connect() {
     console.log('Hello, from the conversations controller')
   }
+
+  new() {
+    console.log('made it to the create partial')
+  }
 }
