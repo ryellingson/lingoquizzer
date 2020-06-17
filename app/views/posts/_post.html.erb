@@ -2,18 +2,22 @@
   <div class="post-group">
     <div class="post-header">
       <div class="post-creation-time">
-        <p><%= post.created_at.strftime("%l:%M %p") %></p>
+        <p>Posted by: <%= post.user.username %> at <%= post.created_at.strftime("%l:%M %p") %></p>
       </div>
     </div>
-      <div class="post-title-wrapper">
-        <p>Language: <%= post.language&.name %></p>
-        <p class="post-title">Title: <%= post.title %></p>
+      <div class="post-title">
+        <p><%= post.title %></p>
       </div>
     <div class="post-content">
-      <p>Content: <%= post.content %></p>
+      <p><%= post.content %></p>
     </div>
   </div>
   <div class="post-toolbar">
-    <div class="post-comment-button"></div>
+    <span class="post-comment-icon">
+      <img src="https://img.icons8.com/material-two-tone/24/000000/topic.png"/>
+    </span>
+    <span class="number-of-comments">
+      <p>number of comments</p>
+    </span>
   </div>
 </div>

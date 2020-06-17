@@ -11,8 +11,45 @@
 }
 
 .post-main-container {
-  border: 1px solid black;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.2);
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.post-main-container:hover {
+  border: 1px solid black;
+}
+
+.post-creation-time {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.8)
+}
+
+.post-content {
+  color: rgba(0,0,0,0.7);
+  padding: 5px 8px 10px;
+}
+
+.post-toolbar {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  background-color: rgb(248,249,250);
+}
+
+.number-of-comments {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.8)
 }
