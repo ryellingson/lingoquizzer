@@ -9,9 +9,14 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  get '/conversations/forum', controller: 'posts', action: 'index', as: :forum
-
-  get '/conversations/chat', controller: 'messages', action: 'index', as: :chat
+  resources :languages, only: :index, path: "/", param: :lang do
+    member do
+      resources :posts, only: :index, path: 'forum', as: :forum
+      resources :posts, only: [ :create, :new, :show ]
+      resources :messages, only: :index, path: 'chat', as: :chat
+      resources :messages, only: :create
+    end
+  end
 
   get '/leaderboards', controller: 'pages', action: 'leaderboards'
 

@@ -5,8 +5,9 @@
         <p><%= post.created_at.strftime("%l:%M %p") %></p>
       </div>
     </div>
-      <div class="post-title">
-        <p>Title: <%= post.title %></p>
+      <div class="post-title-wrapper">
+        <p>Language: <%= post.language&.name %></p>
+        <p class="post-title">Title: <%= post.title %></p>
       </div>
     <div class="post-content">
       <p>Content: <%= post.content %></p>
