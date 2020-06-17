@@ -32,13 +32,19 @@
         </div>
         <div class="conversations-channels">
           <p class="channel-tab">
-            <%= link_to forum_path do %>
+            <%= link_to forum_index_path params[:lang] do %>
               <i class="fas fa-angle-double-right"></i>  Forum
+              <% if params[:controller] == 'posts' %>
+                <i class="fas fa-arrow-circle-left"></i>
+              <% end %>
             <% end %>
           </p>
           <p class="channel-tab">
-            <%= link_to chat_path do %>
-              <i class="fas fa-angle-double-right"></i>  Chat  <i class="fas fa-arrow-circle-left"></i>
+            <%= link_to chat_index_path params[:lang] do %>
+            <i class="fas fa-angle-double-right"></i>  Chat
+              <% if params[:controller] == 'messages' %>
+                <i class="fas fa-arrow-circle-left"></i>
+              <% end %>
             <% end %>
           </p>
         </div>
@@ -48,13 +54,17 @@
           <h3>Language <i class="fas fa-comments"></i></h3>
         </div>
         <div class="conversations-channels">
-          <p class="language-tab">
-            <%= link_to "?lang=ja" do %>
-              <i class="fas fa-circle-notch"></i>  Japanese  <i class="fas fa-arrow-circle-left"></i>
-            <% end %>
-          </p>
-          <p class="language-tab"><i class="fas fa-circle-notch"></i>  English</p>
-          <p class="language-tab"><i class="fas fa-circle-notch"></i>  Spanish</p>
+          <% Language.all.each do |lang| %>
+            <p class="language-tab">
+              <% path = params[:controller] == 'posts' ? forum_index_path(lang.language_code) : chat_index_path(lang.language_code) %>
+              <%= link_to path do %>
+                <i class="fas fa-circle-notch"></i>  <%= lang.name.capitalize %>
+                <% if params[:lang] == lang.language_code %>
+                  <i class="fas fa-arrow-circle-left"></i>
+                <% end %>
+              <% end %>
+            </p>
+          <% end %>
         </div>
       </div>
       <div class="left-sidebar-section">

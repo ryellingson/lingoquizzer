@@ -1,5 +1,7 @@
 <%= form_for (Post.new), remote: true do |f| %>
 
+<%= f.text_field :language_id, value: @language.id, hidden: true %>
+
 <%= f.label :title %>
 <%= f.text_field :title %>
 

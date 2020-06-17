@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 
+Language.destroy_all
+
 usernames = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15",]
 
 usernames.each do |username|
@@ -15,10 +17,10 @@ end
 
 User.create(username: "admin1", email: "admin1@go.com", password: "admin1pass", password_confirmation: "admin1pass", admin: true)
 
-language_names = ["japanese", "spanish", "english", "french"]
+language_names = { ja: "japanese", es: "spanish", en: "english", fr: "french" }
 
-language_names.each do |language|
-  Language.create(name: language)
+language_names.each do |code, language|
+  Language.create(language_code: code, name: language)
 end
 
 japanese = Language.find_by(name: "japanese")
