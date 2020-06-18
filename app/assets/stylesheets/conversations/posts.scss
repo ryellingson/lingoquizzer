@@ -4,10 +4,16 @@
   background-color: rgba(61, 152, 212, 0.3);
   color: white;
   text-shadow: 1px 2px 10px rgba(0,0,0,0.6);
-  font-size: 36px;
+  font-size: 15px;
   font-weight: 900;
   margin: 10px;
-  padding: 20px;
+  padding: 10px 25px;
+}
+
+.post-create-submit-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
 }
 
 .post-main-container {
@@ -33,7 +39,7 @@
 .post-title {
   font-size: 20px;
   font-weight: bold;
-  color: rgba(0,0,0,0.8)
+  color: rgba(0,0,0,0.8);
 }
 
 .post-content {
@@ -51,5 +57,52 @@
 .number-of-comments {
   font-size: 12px;
   font-weight: bold;
-  color: rgba(0,0,0,0.8)
+  color: rgba(0,0,0,0.8);
+}
+
+// posts new
+
+.post-create-wrapper {
+  background: white;
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px 15px 10px 15px;
+}
+
+.post-create-tabs {
+  display: flex;
+  margin: 5px 5px 0px 10px;
+}
+
+.post-create-tab {
+  display: flex;
+  padding: 5px;
+}
+
+.post-create-header {
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  padding: 5px;
+  margin: 10px 5px 0px;
+  font-size: 20px;
+}
+
+.post-create-title {
+  width: 100%;
+}
+
+.pct-form {
+  width: 95%;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  height: 39px;
+  margin: 5px 5px 0px 10px;
+}
+
+.pcc-form {
+  width: 95%;
+  overflow-wrap: break-word;
+  height: 200px;
+  margin: 8px 5px 4px 10px;
 }
