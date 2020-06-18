@@ -93,14 +93,18 @@
   display: flex;
   justify-content: center;
   border-radius: 5px;
-  width: 98%;
-  margin: 7px;
 }
 
 .conversations-content-items {
   align-items: center;
   flex-grow: 1;
   overflow-y: scroll;
+}
+
+.forum-bg {
+  background-color: rgb(218,224,230);
+  border-radius: 4px;
+  height: 100%;
 }
 
 .conversations-content-container {
