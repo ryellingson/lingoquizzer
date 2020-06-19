@@ -1,7 +1,9 @@
 <div class="conversations-content-container" data-controller="conversations">
   <div class="conversations-content-items forum-bg">
     <% @posts.each do |post| %>
-      <%= render "posts/post", post: post %>
+      <%= link_to posts_path(post) do %>
+        <%= render "posts/post", post: post %>
+      <% end %> <!-- link -->
     <% end %> <!-- posts iteration  -->
   </div>
 
