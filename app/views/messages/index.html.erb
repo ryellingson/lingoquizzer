@@ -6,6 +6,7 @@
   </div>
   <div class="conversations-hub-wrapper">
     <%= form_with model: Message.new, class: "w-100" do |f| %>
+      <%= f.text_field :language_id, value: @language.id, hidden: true %>
     <div class="form-group-chat">
       <%= f.text_field :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
     </div>

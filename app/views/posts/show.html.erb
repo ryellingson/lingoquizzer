@@ -1,3 +1,26 @@
-<div class="conversations-content-items">
-  <%= render 'posts/show', post: @post %>
+<div class="conversations-content-items forum-bg">
+  <div class="post-main-container">
+    <div class="post-group">
+      <div class="post-header">
+        <div class="post-creation-time">
+          <p>Posted by: <%= @post.user.username %> at <%= @post.created_at.strftime("%l:%M %p") %></p>
+        </div>
+      </div>
+      <div class="post-title">
+        <p><%= @post.title %></p>
+      </div>
+      <div class="post-content">
+        <p><%= @post.content %></p>
+      </div>
+    </div>
+    <div class="post-toolbar">
+      <span class="post-comment-icon">
+        <img src="https://img.icons8.com/material-two-tone/24/000000/topic.png"/>
+      </span>
+      <span class="number-of-comments">
+        <p>number of comments</p>
+      </span>
+    </div>
+  </div>
+
 </div>

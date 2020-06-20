@@ -23,8 +23,6 @@
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  max-height: 400px;
-  overflow: hidden;
 }
 
 .post-main-container:hover {
@@ -46,6 +44,12 @@
 .post-content {
   color: rgba(0,0,0,0.7);
   padding: 5px 8px 10px;
+  position: relative;
+}
+
+.post-preview {
+  max-height: 400px;
+  overflow: hidden;
 }
 
 .post-toolbar {
@@ -107,4 +111,11 @@
   overflow-wrap: break-word;
   height: 200px;
   margin: 8px 5px 4px 10px;
+}
+
+.fade-overlay {
+  background: linear-gradient(transparent 75%, white);
+  height: 400px;
+  width: 100%;
+  position: absolute;
 }

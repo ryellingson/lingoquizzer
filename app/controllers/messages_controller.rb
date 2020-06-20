@@ -2,7 +2,12 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @messages = Message.all
+    if params[:lang]
+      @language = Language.find_by(language_code: params[:lang])
+      @messages = @language.messages
+    else
+      @messages = Message.all
+    end
     render layout: "conversations"
   end
 
@@ -21,6 +26,6 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:content)
+    params.require(:message).permit(:content, :language_id)
   end
 end
