@@ -3,7 +3,7 @@
     Create a post
   </div>
 
-  <%= form_for (Post.new), remote: true do |f| %>
+  <%= form_for (Post.new) do |f| %>
 
   <%= f.text_field :language_id, value: @language.id, hidden: true %>
   <div class="post-create-tabs">

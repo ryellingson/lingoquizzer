@@ -12,9 +12,8 @@ Rails.application.routes.draw do
   resources :languages, only: :index, path: "/", param: :lang do
     member do
       resources :posts, only: :index, path: 'forum', as: :forum
-      resources :posts, only: [ :create, :new, :show ]
+      resources :posts, only: :new
       resources :messages, only: :index, path: 'chat', as: :chat
-      resources :messages, only: :create
     end
   end
 
@@ -22,13 +21,13 @@ Rails.application.routes.draw do
 
   post '/contact/send', controller: 'contact', action: 'send_message'
 
-  resources :posts do
+  resources :posts, only: [ :create, :show ] do
     resources :comments, only: [:create, :show, :destroy]
   end
 
-  resources :messages, only: [ :new, :create ]
+  resources :messages, only: :create
 
-  resources :users, only: [ :show ]
+  resources :users, only: :show
 
   resources :games, only: [ :show, :index ] do
     resources :plays, only: :create

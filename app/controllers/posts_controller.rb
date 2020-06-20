@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   def index
     if params[:lang]
-      @posts = Language.find_by(language_code: params[:lang]).posts
+      @posts = @language.posts
     else
       @posts = Post.all
     end
@@ -12,6 +12,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @language = @post.language
     @comments = @post.comments
     render layout: "conversations"
   end
@@ -42,7 +43,6 @@ class PostsController < ApplicationController
 
   def set_language
     @language = Language.find_by(language_code: params[:lang])
-    # binding.pry
   end
 
   def post_params
