@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   def new
+    @comment = Comment.new
   end
 
   def create
@@ -14,6 +15,7 @@ class CommentsController < ApplicationController
   end
 
   def show
+    @comment = @post.comment
   end
 
   private

@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   post '/contact/send', controller: 'contact', action: 'send_message'
 
   resources :posts, only: [ :create, :show ] do
-    resources :comments, only: [:create, :show, :destroy]
+    resources :comments, only: [:new, :create, :show, :destroy]
   end
 
   resources :messages, only: :create
