@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :show_online, only: [:new]
+  # before_filter :show_online, only: [:new]
 
   def index
     @users = User.all
