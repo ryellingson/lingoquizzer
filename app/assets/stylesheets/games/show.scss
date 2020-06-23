@@ -166,12 +166,6 @@ table {
   }
 }
 
-
-
-// .play-button:hover {
-//   background-color: rgb(24, 222, 212);
-// }
-
 .correct-count {
   border: 1px solid lightgrey;
   padding: 15px;
@@ -183,6 +177,11 @@ table {
 .correct-answer {
   background-color: #7cffcb;
   background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}
+
+.answer {
+  // display: flex;
+  // flex-direction: column;
 }
 
 .empty-answer {
