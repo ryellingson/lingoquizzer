@@ -24,7 +24,7 @@
                 </td>
                   <% answers_hash = {} %>
                   <% problem.answers.pluck(:data, :character_type).each { |arr| answers_hash[arr[1]] = arr[0] } %>
-                  <td data-answers="<%= answers_hash.to_json %>" class="answer"></td>
+                  <td data-answers="<%= answers_hash.to_json %>" class="answer text-gray-500"></td>
               </tr>
               <% end %>
             </tbody>
