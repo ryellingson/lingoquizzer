@@ -3,534 +3,534 @@
     "problem_icon": "ant.png",
     "kana": "あり",
     "kanji": "蟻",
-    "romanization": "ari"
+    "romaji": "ari"
   },
   {
     "problem_icon": "baby-chick.png",
     "kana": "ひなどり",
     "kanji": "雛鳥",
-    "romanization": "hinadori"
+    "romaji": "hinadori"
   },
   {
     "problem_icon": "badger.png",
     "kana": "あなぐま",
     "kanji": "穴熊",
-    "romanization": "anaguma"
+    "romaji": "anaguma"
   },
   {
     "problem_icon": "bat.png",
     "kana": "こうもり",
     "kanji": "蝙蝠",
-    "romanization": "koumori"
+    "romaji": "koumori"
   },
   {
     "problem_icon": "bear.png",
     "kana": "くま",
     "kanji": "熊",
-    "romanization": "kuma"
+    "romaji": "kuma"
   },
   {
     "problem_icon": "bird.png",
     "kana": "とり",
     "kanji": "鳥",
-    "romanization": "tori"
+    "romaji": "tori"
   },
   {
     "problem_icon": "blowfish.png",
     "kana": "ふぐ",
     "kanji": "河豚",
-    "romanization": "fugu"
+    "romaji": "fugu"
   },
   {
     "problem_icon": "bug.png",
     "kana": "むし",
     "kanji": "虫",
-    "romanization": "mushi"
+    "romaji": "mushi"
   },
   {
     "problem_icon": "butterfly.png",
     "kana": "ちょうちょう",
     "kanji": "蝶々",
-    "romanization": "chouchou"
+    "romaji": "chouchou"
   },
   {
     "problem_icon": "camel.png",
     "kana": "キャメル",
     "kanji": "キャメル",
-    "romanization": "kyameru"
+    "romaji": "kyameru"
   },
   {
     "problem_icon": "cat.png",
     "kana": "ねこ",
     "kanji": "猫",
-    "romanization": "neko"
+    "romaji": "neko"
   },
   {
     "problem_icon": "rooster.png",
     "kana": "にわとり",
     "kanji": "鶏",
-    "romanization": "niwatori"
+    "romaji": "niwatori"
   },
   {
     "problem_icon": "chipmunk.png",
     "kana": "しまりる",
     "kanji": "縞栗鼠",
-    "romanization": "inonoshi"
+    "romaji": "inonoshi"
   },
   {
     "problem_icon": "cow.png",
     "kana": "うし",
     "kanji": "牛",
-    "romanization": "ushi"
+    "romaji": "ushi"
   },
   {
     "problem_icon": "crab.png",
     "kana": "かに",
     "kanji": "蟹",
-    "romanization": "inonoshi"
+    "romaji": "inonoshi"
   },
   {
     "problem_icon": "cricket.png",
     "kana": "こおろぎ",
     "kanji": "蟋蟀",
-    "romanization": "koorogi"
+    "romaji": "koorogi"
   },
   {
     "problem_icon": "crocodile.png",
     "kana": "わに",
     "kanji": "鰐",
-    "romanization": "wani"
+    "romaji": "wani"
   },
   {
     "problem_icon": "deer.png",
     "kana": "いののし",
     "kanji": "猪",
-    "romanization": "inonoshi"
+    "romaji": "inonoshi"
   },
   {
     "problem_icon": "dog.png",
     "kana": "いぬ",
     "kanji": "犬",
-    "romanization": "inu"
+    "romaji": "inu"
   },
   {
     "problem_icon": "boar.png",
     "kana": "いののし",
     "kanji": "猪",
-    "romanization": "inonoshi"
+    "romaji": "inonoshi"
   },
   {
     "problem_icon": "dolphin.png",
     "kana": "イルカ",
     "kanji": "海豚",
-    "romanization": "iruka"
+    "romaji": "iruka"
   },
   {
     "problem_icon": "dove.png",
     "kana": "はと",
     "kanji": "鳩",
-    "romanization": "hato"
+    "romaji": "hato"
   },
   {
     "problem_icon": "dragon.png",
     "kana": "りゅう",
     "kanji": "竜",
-    "romanization": "ryuu"
+    "romaji": "ryuu"
   },
   {
     "problem_icon": "duck.png",
     "kana": "アヒル",
     "kanji": "家鴨",
-    "romanization": "ahiru"
+    "romaji": "ahiru"
   },
   {
     "problem_icon": "eagle.png",
     "kana": "わし",
     "kanji": "鷲",
-    "romanization": "washi"
+    "romaji": "washi"
   },
   {
     "problem_icon": "elephant.png",
     "kana": "ぞう",
     "kanji": "象",
-    "romanization": "zou"
+    "romaji": "zou"
   },
   {
     "problem_icon": "ewe.png",
     "kana": "ひつじ",
     "kanji": "羊",
-    "romanization": "hitsuji"
+    "romaji": "hitsuji"
   },
   {
     "problem_icon": "fish.png",
     "kana": "さかな",
     "kanji": "魚",
-    "romanization": "sakana"
+    "romaji": "sakana"
   },
   {
     "problem_icon": "flamingo.png",
     "kana": "フラミンゴ",
     "kanji": "フラミンゴ",
-    "romanization": "furamingo"
+    "romaji": "furamingo"
   },
   {
     "problem_icon": "fox.png",
     "kana": "きつね",
     "kanji": "狐",
-    "romanization": "kitsune"
+    "romaji": "kitsune"
   },
   {
     "problem_icon": "frog.png",
     "kana": "かえる",
     "kanji": "蛙",
-    "romanization": "kaeru"
+    "romaji": "kaeru"
   },
   {
     "problem_icon": "giraffe.png",
     "kana": "きりん",
     "kanji": "麒麟",
-    "romanization": "inonoshi"
+    "romaji": "inonoshi"
   },
   {
     "problem_icon": "goat.png",
     "kana": "やぎ",
     "kanji": "山羊",
-    "romanization": "yagi"
+    "romaji": "yagi"
   },
   {
     "problem_icon": "gorilla.png",
     "kana": "ゴリラ",
     "kanji": "ゴリラ",
-    "romanization": "gorira"
+    "romaji": "gorira"
   },
   {
     "problem_icon": "hamster.png",
     "kana": "ハムスター",
     "kanji": "ハムスター",
-    "romanization": "hamusutaa"
+    "romaji": "hamusutaa"
   },
   {
     "problem_icon": "hedgehog.png",
     "kana": "はりねずみ",
     "kanji": "針鼠",
-    "romanization": "harinezumi"
+    "romaji": "harinezumi"
   },
   {
     "problem_icon": "hippopotamus.png",
     "kana": "かば",
     "kanji": "河馬",
-    "romanization": "kaba"
+    "romaji": "kaba"
   },
   {
     "problem_icon": "honeybee.png",
     "kana": "はち",
     "kanji": "蜂",
-    "romanization": "hachi"
+    "romaji": "hachi"
   },
   {
     "problem_icon": "horse.png",
     "kana": "うま",
     "kanji": "馬",
-    "romanization": "uma"
+    "romaji": "uma"
   },
   {
     "problem_icon": "kangaroo.png",
     "kana": "カンガルー",
     "kanji": "",
-    "romanization": "kangaruu"
+    "romaji": "kangaruu"
   },
   {
     "problem_icon": "koala.png",
     "kana": "コアラ",
     "kanji": "コアラ",
-    "romanization": "koara"
+    "romaji": "koara"
   },
   {
     "problem_icon": "lady-beetle.png",
     "kana": "てんとうむし",
     "kanji": "てんとう虫",
-    "romanization": "tentoumushi"
+    "romaji": "tentoumushi"
   },
   {
     "problem_icon": "leopard.png",
     "kana": "ひょう",
     "kanji": "豹",
-    "romanization": "hyou"
+    "romaji": "hyou"
   },
   {
     "problem_icon": "lion.png",
     "kana": "ライオン",
     "kanji": "ライオン",
-    "romanization": "raion"
+    "romaji": "raion"
   },
   {
     "problem_icon": "lizard.png",
     "kana": "とかげ",
     "kanji": "蜥蜴",
-    "romanization": "tokage"
+    "romaji": "tokage"
   },
   {
     "problem_icon": "llama.png",
     "kana": "ラマ",
     "kanji": "ラマ",
-    "romanization": "rama"
+    "romaji": "rama"
   },
   {
     "problem_icon": "lobster.png",
     "kana": "ロブスター",
     "kanji": "ロブスター",
-    "romanization": "robusutaa"
+    "romaji": "robusutaa"
   },
   {
     "problem_icon": "monkey.png",
     "kana": "さる",
     "kanji": "猿",
-    "romanization": "saru"
+    "romaji": "saru"
   },
   {
     "problem_icon": "mosquito.png",
     "kana": "か",
     "kanji": "蚊",
-    "romanization": "ka"
+    "romaji": "ka"
   },
   {
     "problem_icon": "mouse.png",
     "kana": "ねぜみ",
     "kanji": "鼠",
-    "romanization": "nezumi"
+    "romaji": "nezumi"
   },
   {
     "problem_icon": "octopus.png",
     "kana": "たこ",
     "kanji": "蛸",
-    "romanization": "tako"
+    "romaji": "tako"
   },
   {
     "problem_icon": "orangutan.png",
     "kana": "オランウータン",
     "kanji": "オランウータン",
-    "romanization": "oranuutan"
+    "romaji": "oranuutan"
   },
   {
     "problem_icon": "otter.png",
     "kana": "かわうそ",
     "kanji": "川獺",
-    "romanization": "kawauso"
+    "romaji": "kawauso"
   },
   {
     "problem_icon": "owl.png",
     "kana": "ふくろう",
     "kanji": "梟",
-    "romanization": "fukurou"
+    "romaji": "fukurou"
   },
   {
     "problem_icon": "ox.png",
     "kana": "きょせいうし",
     "kanji": "去勢牛",
-    "romanization": "kyoseiushi"
+    "romaji": "kyoseiushi"
   },
   {
     "problem_icon": "oyster.png",
     "kana": "かき",
     "kanji": "牡蠣",
-    "romanization": "kaki"
+    "romaji": "kaki"
   },
   {
     "problem_icon": "panda.png",
     "kana": "パンダ",
     "kanji": "パンダ",
-    "romanization": "panda"
+    "romaji": "panda"
   },
   {
     "problem_icon": "parrot.png",
     "kana": "オウム",
     "kanji": "オウム",
-    "romanization": "oumu"
+    "romaji": "oumu"
   },
   {
     "problem_icon": "peacock.png",
     "kana": "ピーコック",
     "kanji": "ピーコック",
-    "romanization": "piikokku"
+    "romaji": "piikokku"
   },
   {
     "problem_icon": "penguin.png",
     "kana": "ペンギン",
     "kanji": "ペンギン",
-    "romanization": "pengin"
+    "romaji": "pengin"
   },
   {
     "problem_icon": "pig.png",
     "kana": "ぶた",
     "kanji": "豚",
-    "romanization": "buta"
+    "romaji": "buta"
   },
   {
     "problem_icon": "poodle.png",
     "kana": "プードル",
     "kanji": "プードル",
-    "romanization": "pu-doru"
+    "romaji": "pu-doru"
   },
   {
     "problem_icon": "rabbit.png",
     "kana": "うさぎ",
     "kanji": "兎",
-    "romanization": "usagi"
+    "romaji": "usagi"
   },
   {
     "problem_icon": "raccoon.png",
     "kana": "たぬき",
     "kanji": "狸",
-    "romanization": "tanuki"
+    "romaji": "tanuki"
   },
   {
     "problem_icon": "ram.png",
     "kana": "おひつじ",
     "kanji": "牡羊",
-    "romanization": "ohitsuji"
+    "romaji": "ohitsuji"
   },
   {
     "problem_icon": "rat.png",
     "kana": "ねぜみ",
     "kanji": "鼠",
-    "romanization": "nezumi"
+    "romaji": "nezumi"
   },
   {
     "problem_icon": "rhinoceros.png",
     "kana": "サイ",
     "kanji": "犀",
-    "romanization": "sai"
+    "romaji": "sai"
   },
   {
     "problem_icon": "sauropod.png",
     "kana": "ブロントザウルス",
     "kanji": "ブロントザウルス",
-    "romanization": "burontozaurusu"
+    "romaji": "burontozaurusu"
   },
   {
     "problem_icon": "scorpion.png",
     "kana": "サソリ",
     "kanji": "蠍",
-    "romanization": "sasori"
+    "romaji": "sasori"
   },
   {
     "problem_icon": "shark.png",
     "kana": "さめ",
     "kanji": "鮫",
-    "romanization": "same"
+    "romaji": "same"
   },
   {
     "problem_icon": "shrimp.png",
     "kana": "えび",
     "kanji": "海老",
-    "romanization": "ebi"
+    "romaji": "ebi"
   },
   {
     "problem_icon": "skunk.png",
     "kana": "スカンク",
     "kanji": "スカンク",
-    "romanization": "sukanku"
+    "romaji": "sukanku"
   },
   {
     "problem_icon": "sloth.png",
     "kana": "ナマケモノ",
     "kanji": "樹懶",
-    "romanization": "namakemono"
+    "romaji": "namakemono"
   },
   {
     "problem_icon": "snail.png",
     "kana": "でんでんむし",
     "kanji": "蝸牛",
-    "romanization": "dendenmushi"
+    "romaji": "dendenmushi"
   },
   {
     "problem_icon": "mouse.png",
     "kana": "ねぜみ",
     "kanji": "鼠",
-    "romanization": "nezumi"
+    "romaji": "nezumi"
   },
   {
     "problem_icon": "snake.png",
     "kana": "へび",
     "kanji": "蛇",
-    "romanization": "hebi"
+    "romaji": "hebi"
   },
   {
     "problem_icon": "spider.png",
     "kana": "クモ",
     "kanji": "蜘蛛",
-    "romanization": "kumo"
+    "romaji": "kumo"
   },
   {
     "problem_icon": "squid.png",
     "kana": "いか",
     "kanji": "烏賊",
-    "romanization": "ika"
+    "romaji": "ika"
   },
   {
     "problem_icon": "swan.png",
     "kana": "はくちょう",
     "kanji": "白鳥",
-    "romanization": "hakuchou"
+    "romaji": "hakuchou"
   },
   {
     "problem_icon": "t-rex.png",
     "kana": "はおうりゅう",
     "kanji": "覇王竜",
-    "romanization": "haouryuu"
+    "romaji": "haouryuu"
   },
   {
     "problem_icon": "tiger.png",
     "kana": "とら",
     "kanji": "虎",
-    "romanization": "tora"
+    "romaji": "tora"
   },
   {
     "problem_icon": "tropical-fish.png",
     "kana": "ねったいぎょ",
     "kanji": "熱帯魚",
-    "romanization": "nettaigyo"
+    "romaji": "nettaigyo"
   },
   {
     "problem_icon": "turkey.png",
     "kana": "しちめんちょう",
     "kanji": "七面鳥",
-    "romanization": "shichimenchou"
+    "romaji": "shichimenchou"
   },
   {
     "problem_icon": "turtle.png",
     "kana": "かめ",
     "kanji": "亀",
-    "romanization": "kame"
+    "romaji": "kame"
   },
   {
     "problem_icon": "unicorn.png",
     "kana": "ユニコーン",
     "kanji": "ユニコーン",
-    "romanization": "yunikoon"
+    "romaji": "yunikoon"
   },
   {
     "problem_icon": "water-buffalo.png",
     "kana": "すいぎゅう",
     "kanji": "水牛",
-    "romanization": "suigyuu"
+    "romaji": "suigyuu"
   },
   {
     "problem_icon": "whale.png",
     "kana": "くじら",
     "kanji": "鯨",
-    "romanization": "kujira"
+    "romaji": "kujira"
   },
   {
     "problem_icon": "wolf.png",
     "kana": "おおかみ",
     "kanji": "狼",
-    "romanization": "ookami"
+    "romaji": "ookami"
   },
   {
     "problem_icon": "zebra.png",
     "kana": "しまうま",
     "kanji": "縞馬",
-    "romanization": "shimauma"
+    "romaji": "shimauma"
   }
 ]
