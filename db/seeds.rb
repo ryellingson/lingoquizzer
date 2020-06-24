@@ -9,6 +9,8 @@ require 'json'
 
 Language.destroy_all
 
+Game.destroy_all
+
 usernames = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15",]
 
 usernames.each do |username|
@@ -232,9 +234,9 @@ puts "populating game with problems..."
 
 animals_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: animals, question: problem_data["problem_icon"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -256,9 +258,9 @@ puts "populating game with problems..."
 
 around_the_house_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: around_the_house, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -280,9 +282,9 @@ puts "populating game with problems..."
 
 countries_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: countries, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -304,9 +306,9 @@ puts "populating game with problems..."
 
 emotions_and_feelings_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: emotions_and_feelings, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -328,9 +330,9 @@ puts "populating game with problems..."
 
 food_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: food, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -352,9 +354,9 @@ puts "populating game with problems..."
 
 nature_and_weather_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: nature_and_weather, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -376,9 +378,9 @@ puts "populating game with problems..."
 
 people_and_jobs_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: people_and_jobs, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -400,9 +402,9 @@ puts "populating game with problems..."
 
 sports_and_activites_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: sports_and_activites, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -424,9 +426,9 @@ puts "populating game with problems..."
 
 tech_and_tools_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: tech_and_tools, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"
@@ -448,9 +450,9 @@ puts "populating game with problems..."
 
 travel_and_places_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: travel_and_places, question: problem_data["question"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kanji"], character_type: "kanji")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["kana"], character_type: "kana")
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romaji"], character_type: "romaji")
 end
 
 puts "job done"

@@ -20,7 +20,7 @@ const initTableGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  const initialTime = 5000;
+  const initialTime = 30;
   let timeLeft = initialTime;
   let interval;
   let score = 0;
@@ -42,18 +42,34 @@ const initTableGame = () => {
   }
 
   const handleInputChange = () => {
-    if (JSON.parse(currentAnswer.dataset.answers).includes(gameInput.value.trim())) {
+    if (Object.values(JSON.parse(currentAnswer.dataset.answers)).includes(gameInput.value.trim())) {
       currentAnswer.classList.add("correct-answer");
       score += 2;
       scoreShow.innerHTML = `<p>${score}pts<p>`;
       gameInput.value = "";
-      currentAnswer.innerHTML = currentAnswer.dataset.answers.replace(/[\[\]']+/g,''); // replace removes square brackets
+      currentAnswer.innerHTML = buildAnswerCards(JSON.parse(currentAnswer.dataset.answers));
       updateCurrentAnswer("next");
       correctCountValue += 1;
       correctCountShow.innerHTML = `<p>${correctCountValue}/46</p>`;
       if (correctCountValue == kanaCount) { endGame() };
       if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
     }
+  }
+
+  const buildAnswerCards = (answer) => {
+    const answerKeys = Object.keys(answer);
+    let cards = "";
+    if (answerKeys.includes("kana")) {
+      cards += `<div>${answer["kana"]}</div>`;
+    }
+    if (answerKeys.includes("kanji") && answer["kanji"] !== answer["kana"]) {
+      cards += `<div>${answer["kanji"]}</div>`;
+    }
+    if (answerKeys.includes("romaji")) {
+      cards += `<div>${answer["romaji"]}</div>`;
+    }
+    console.log(cards);
+    return(cards);
   }
 
   const updateCurrentAnswer = (shift) => {
@@ -94,7 +110,7 @@ const initTableGame = () => {
     answers.forEach((answer) => {
       if (!answer.innerHTML) {
         answer.classList.add("wrong-answer");
-        answer.innerHTML = answer.dataset.answers.replace(/[\[\]']+/g,'');
+        answer.innerHTML = buildAnswerCards(JSON.parse(answer.dataset.answers));
       }
     })
     document.querySelector(".game-stats").classList.remove("hidden");
@@ -130,23 +146,23 @@ const initTableGame = () => {
   document.onkeydown = function(event) {
     switch (event.keyCode) {
      case 37: // left
-       updateCurrentAnswer("back");
+     updateCurrentAnswer("back");
      break;
      case 38: // up
-       updateCurrentAnswer("back");
+     updateCurrentAnswer("back");
      break;
      case 39: // right
-       updateCurrentAnswer("next");
+     updateCurrentAnswer("next");
      break;
      case 40: // down
-       updateCurrentAnswer("next");
+     updateCurrentAnswer("next");
      break;
    }
-  }
+ }
 
-   if (autoplay == "true") {
-    startGame();
-  }
+ if (autoplay == "true") {
+  startGame();
+}
 }
 
 export { initTableGame }
