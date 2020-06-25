@@ -20,7 +20,7 @@ const initTableGame = () => {
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  const initialTime = 30;
+  const initialTime = 3000;
   let timeLeft = initialTime;
   let interval;
   let score = 0;
@@ -60,13 +60,13 @@ const initTableGame = () => {
     const answerKeys = Object.keys(answer);
     let cards = "";
     if (answerKeys.includes("kana")) {
-      cards += `<div>${answer["kana"]}</div>`;
+      cards += `<div class="kana-box">${answer["kana"]}</div>`;
     }
     if (answerKeys.includes("kanji") && answer["kanji"] !== answer["kana"]) {
-      cards += `<div>${answer["kanji"]}</div>`;
+      cards += `<div class="kanji-box">${answer["kanji"]}</div>`;
     }
     if (answerKeys.includes("romaji")) {
-      cards += `<div>${answer["romaji"]}</div>`;
+      cards += `<div class="romaji-box">(${answer["romaji"]})</div>`;
     }
     console.log(cards);
     return(cards);
