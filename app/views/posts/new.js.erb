@@ -2,5 +2,5 @@ console.log('hello from new.js');
 
 var content = document.querySelector('.conversations-content-items');
 
-content.innerHTML = "<%=j render 'posts/new' %>";
+content.innerHTML = "<%=j render 'posts/new', post: @post %>";
 
