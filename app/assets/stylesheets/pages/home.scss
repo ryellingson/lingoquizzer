@@ -1,4 +1,4 @@
-.home-image {
+.home-image-1 {
   background: image-url("fujiandtemple.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6,8 +6,20 @@
   background-size: cover;
 }
 
+.home-image-2 {
+  background: image-url("japanese-street.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .main {
+  position: absolute;
+  top: 100px;
+  left: 40px;
   height: calc(100vh - 109px);
+  z-index: 10;
 }
 
 .gateway-wrapper {
@@ -49,3 +61,60 @@
 .footer {
   height: 25px;
 }
+
+.cb-slideshow,
+.cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+.cb-slideshow:after {
+  content: '';
+  background: repeat top left;
+  // url(../images.png)
+}
+
+.cb-slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  // color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li:nth-child(1) span {
+  background-image: url("https://res.cloudinary.com/rys-stuff/image/upload/v1593024988/lingoquizzer/home_images/sora-sagano-8sOZJ8JF0S8-unsplash_i4kacx.jpg")
+}
+.cb-slideshow li:nth-child(2) span {
+  background-image: url("japanese-street.jpg");
+  animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+  background-image: url("ramen.jpg");
+  animation-delay: 12s;
+}
+
+@keyframes imageAnimation {
+  0% { opacity: 0; animation-timing-function: ease-in; }
+  8% { opacity: 1; animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+  opacity: 1;
+}
+
+

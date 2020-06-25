@@ -1,67 +1,12 @@
 <%= render 'shared/header' %>
-<div class="home-image">
-  <main class="main">
-    <div class="gateway-wrapper">
-      <div class="gateway">
-        <div class="gateway-content">
-          <div class="gateway-tagline">
-            <h2>Have fun while mastering your favorite language!</h2>
-          </div>
-          <div class="gateway-buttons">
-            <%= link_to games_path do %>
-            <div class="gateway-button stroke">
-              <h2 class="p-absolute">Games</h2>
-              <svg>
-                <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-                <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-              </svg>
-            </div>
-            <% end %> <!-- link to games path -->
-            <% if user_signed_in? %>
-            <%= link_to forum_index_path(:en) do %>
-            <div class="gateway-button stroke">
-              <h2 class="p-absolute">Conversations</h2>
-              <svg>
-                <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-                <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-              </svg>
-            </div>
-            <% end %> <!-- link to forum path -->
-            <% else %>
-            <div class="gateway-button stroke modal-btn">
-              <h2 class="p-absolute">Conversations</h2>
-              <svg>
-                <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-                <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-              </svg>
-            </div>
-            <% end %> <!-- if user signed in forum modal -->
-            <% if user_signed_in? %>
-            <%= link_to user_path(current_user) do %>
-            <div class="gateway-button stroke">
-              <h2 class="p-absolute">My Profile</h2>
-              <svg>
-                <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-                <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-              </svg>
-            </div>
-            <% end %> <!-- link to user_path -->
-          </div>
-          <% else %>
-          <div class="gateway-button stroke modal-btn">
-            <h2 class="p-absolute">Join for free!</h2>
-            <svg>
-              <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-              <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-            </svg>
-          </div>
-          <% end %> <!-- if user signed in join modal -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <%= render "home_signup_modal" %>
-</main>
+<div class="#">
+    <%= render 'home_main' %>
+  <ul class="cb-slideshow">
+    <li><span><!-- Image 01 --></span></li>
+    <li><span><!-- Image 02 --></span></li>
+    <li><span><!-- Image 03 --></span></li>
+  </ul>
+</div>
 <footer class="footer">
   <div class="footer-links">
 <!--     <a href="#"><i class="fab fa-github"></i></a>
