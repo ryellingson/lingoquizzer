@@ -7,14 +7,14 @@
   <div class="conversations-hub-wrapper">
     <%= form_with model: Message.new, class: "w-100" do |f| %>
       <%= f.text_field :language_id, value: @language.id, hidden: true %>
-    <div class="form-group-chat">
-      <%= f.text_field :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
-    </div>
+      <div class="form-group-chat">
+        <%= f.rich_text_area :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
+      </div>
 
-    <div class="chat-tools">
-      <i class="far fa-grin-beam"></i>
-      <%= f.submit "send" %>
-    </div>
+      <div class="chat-tools">
+        <i class="far fa-grin-beam"></i>
+        <%= f.submit "send" %>
+      </div>
     <% end %> <!-- form with model message -->
   </div>
 </div>
