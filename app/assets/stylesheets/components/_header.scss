@@ -77,6 +77,8 @@
 }
 
 .header {
+  position: fixed;
+  z-index: 10;
   background-color: #7FA269;  /*dark green*/
   display: flex;
   justify-content: space-between;
