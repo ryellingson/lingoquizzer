@@ -5,6 +5,18 @@ table {
   border-collapse: collapse;
 }
 
+.kana-box {
+  font-size: 14px;
+}
+
+.kanji-box {
+  font-size: 25px;
+}
+
+.romaji-box {
+  font-size: 16px;
+}
+
 .game-main-container {
   background-color: ghostwhite;
   display: flex;
@@ -48,10 +60,11 @@ table {
 
 .content-table th,
 .content-table td  {
-  padding: 12px 15px;
+  padding: 6px 11px;
   border: 1px solid #dddddd;
   text-align: center;
-
+  min-height: 79px;
+  line-height: 23px;
 }
 
 .content-table tbody tr {
