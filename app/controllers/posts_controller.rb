@@ -29,13 +29,13 @@ class PostsController < ApplicationController
   end
 
   def create
+    @language = Language.find(params[:post][:language_id])
     @post = Post.new(post_params)
     @post.user = current_user
     if @post.save
-      respond_to do |format|
-        format.js
-        format.html { redirect_to post_path(@post) }
-      end
+      redirect_to post_path(@post)
+    else
+      render :new, layout: "conversations"
     end
   end
 

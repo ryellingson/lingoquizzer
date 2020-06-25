@@ -15,6 +15,8 @@ gem 'font-awesome-sass', '~> 5.12.0'
 
 gem 'jquery-rails'
 
+gem 'turbolinks_render'
+
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3'

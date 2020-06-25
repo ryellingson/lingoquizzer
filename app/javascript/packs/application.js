@@ -7,6 +7,8 @@ require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
+require("trix");
+require("@rails/actiontext");
 
 
 import { initInteractiveForm } from "../components/signup_form";
@@ -34,3 +36,6 @@ document.addEventListener('turbolinks:load', function(e) {
 
 import "controllers"
 // require("css/application.scss")
+
+require("trix")
+require("@rails/actiontext")
