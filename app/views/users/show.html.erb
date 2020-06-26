@@ -23,13 +23,13 @@
       </div>
       <% if @user == current_user %>
       <div class="profile-header-c">
-        <div class="profile-edit-icon">
-          <%= link_to edit_user_registration_path, data: { turbolinks: false } do %>
-          <i class="fas fa-edit"></i>
-        </div>
-        <% end %>
+        <%= link_to edit_user_registration_path, data: { turbolinks: false } do %>
+          <div class="profile-edit-icon">
+            <i class="fas fa-edit"></i>
+          </div>
+        <% end %> <!-- link to edit -->
       </div>
-      <% end %>
+      <% end %> <!-- if user -->
     </div>
     <div class="profile-record">
       <div class="profile-record-header">

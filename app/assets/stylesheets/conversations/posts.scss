@@ -33,6 +33,16 @@
   border: 1px solid black;
 }
 
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.icon-shrink {
+  font-size: 20px;
+}
+
 .post-creation-time {
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
