@@ -4,14 +4,16 @@ class PostsController < ApplicationController
   def index
     if params[:lang]
       @posts = @language.posts.with_rich_text_content_and_embeds
+    skip_policy_scope # pundit method used inside index
     else
-      @posts = Post.all
+      @posts = policy_scope(Post)
     end
     render layout: "conversations"
   end
 
   def show
     @post = Post.with_rich_text_content_and_embeds.find(params[:id])
+    authorize @post
     @language = @post.language
     @comments = @post.comments
     render layout: "conversations"
@@ -19,6 +21,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    authorize @post
     respond_to do |format|
       format.js
       format.html { render layout: "conversations" }
@@ -26,12 +29,15 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @post = Post.find(params[:id])
+    authorize @post
   end
 
   def create
     @language = Language.find(params[:post][:language_id])
     @post = Post.new(post_params)
     @post.user = current_user
+    authorize @post
     if @post.save
       redirect_to post_path(@post)
     else
