@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_language
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
     if params[:lang]
