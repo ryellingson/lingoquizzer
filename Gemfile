@@ -17,6 +17,8 @@ gem 'jquery-rails'
 
 gem 'turbolinks_render'
 
+gem 'mini_magick'
+
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3'

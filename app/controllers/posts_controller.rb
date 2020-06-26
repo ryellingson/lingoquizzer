@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   def index
     if params[:lang]
-      @posts = @language.posts
+      @posts = @language.posts.with_rich_text_content_and_embeds
     else
       @posts = Post.all
     end
@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
+    @post = Post.with_rich_text_content_and_embeds.find(params[:id])
     @language = @post.language
     @comments = @post.comments
     render layout: "conversations"
