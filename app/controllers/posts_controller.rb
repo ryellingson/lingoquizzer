@@ -5,9 +5,9 @@ class PostsController < ApplicationController
   def index
     if params[:lang]
       @posts = @language.posts.with_rich_text_content_and_embeds
-    skip_policy_scope # pundit method used inside index
+      skip_policy_scope # pundit method used inside index
     else
-      @posts = policy_scope(Post)
+      @posts = policy_scope(Post) # This substitutes Post.all
     end
     render layout: "conversations"
   end
