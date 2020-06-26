@@ -24,7 +24,7 @@
         <h2>Conversations</h2>
       </div>
       <div class="conversations-current-user">
-        <p><i class="fas fa-circle green-circle"></i><%= current_user.username %></p>
+        <p><i class="fas fa-circle green-circle"></i><%= current_user&.username || "Guest" %></p>
       </div>
       <div class="left-sidebar-section">
         <div class="conversations-section-header">

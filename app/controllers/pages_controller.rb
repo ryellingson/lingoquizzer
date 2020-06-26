@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
-  def home
-  end
+  skip_before_action :authenticate_user!, only: :home
+  skip_after_action :verify_authorized, only: [ :home, :leaderboards ]
 
-  def user_profile
+  def home
   end
 
   def leaderboards

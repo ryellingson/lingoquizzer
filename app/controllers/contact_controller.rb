@@ -2,6 +2,7 @@ class ContactController < ApplicationController
   def send_message
     contact_form = ContactForm.new(contact_form_params)
     contact_form.deliver
+    skip_authorization
   end
 
   private

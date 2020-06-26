@@ -4,6 +4,7 @@ class PlaysController < ApplicationController
     play = Play.new(plays_params)
     play.game = game
     play.user = current_user
+    authorize play
     play.save
     new_total_score = current_user.total_score + play.score
     current_user.update(total_score: new_total_score)
