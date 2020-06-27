@@ -11,6 +11,8 @@ Language.destroy_all
 
 Game.destroy_all
 
+User.destroy_all
+
 usernames = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15",]
 
 usernames.each do |username|
@@ -73,7 +75,7 @@ hiragana_1 = Game.find_by(name: "Hiragana 1")
 
 hiragana_1_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: hiragana_1, question: problem_data["character"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"], character_type: "romaji")
 end
 
 puts "job done"
@@ -97,7 +99,7 @@ puts "populating game with problems..."
 
 hiragana_2_data.each do |problem_data|
  problem = Problem.find_or_create_by!(game: hiragana_2, question: problem_data["character"])
- Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
+ answer = Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"], character_type: "romaji")
 end
 
 puts "job done"
@@ -121,7 +123,7 @@ puts "populating game with problems..."
 
 ultimate_hiragana_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: ultimate_hiragana, question: problem_data["character"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"], character_type: "romaji")
 end
 
 puts "job done"
@@ -145,7 +147,7 @@ puts "populating game with problems..."
 
 katakana_1_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: katakana_1, question: problem_data["character"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"], character_type: "romaji")
 end
 
 puts "job done"
@@ -167,7 +169,7 @@ puts "populating game with problems..."
 
 katakana_2_data.each do |problem_data|
  problem = Problem.find_or_create_by!(game: katakana_2, question: problem_data["character"])
- Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
+Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"], character_type: "romaji")
 end
 
 puts "job done"
@@ -189,7 +191,7 @@ puts "populating game with problems..."
 
 ultimate_katakana_data.each do |problem_data|
   problem = Problem.find_or_create_by!(game: ultimate_katakana, question: problem_data["character"])
-  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"])
+  Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"], character_type: "romaji")
 end
 
 puts "job done"

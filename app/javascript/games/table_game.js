@@ -60,14 +60,18 @@ const initTableGame = () => {
   const buildAnswerCards = (answer) => {
     const answerKeys = Object.keys(answer);
     let cards = "";
-    if (answerKeys.includes("kana")) {
-      cards += `<div class="kana-box">${answer["kana"]}</div>`;
-    }
-    if (answerKeys.includes("kanji") && answer["kanji"] !== answer["kana"]) {
-      cards += `<div class="kanji-box">${answer["kanji"]}</div>`;
-    }
-    if (answerKeys.includes("romaji")) {
-      cards += `<div class="romaji-box">(${answer["romaji"]})</div>`;
+    if (answer.icon_based) {
+      if (answerKeys.includes("kana")) {
+        cards += `<div class="kana-box">${answer["kana"]}</div>`;
+      }
+      if (answerKeys.includes("kanji") && answer["kanji"] !== answer["kana"]) {
+        cards += `<div class="kanji-box">${answer["kanji"]}</div>`;
+      }
+      if (answerKeys.includes("romaji")) {
+        cards += `<div class="romaji-box">${answer["romaji"]}</div>`;
+      }
+    } else {
+      cards += `<div>${answer["romaji"]}</div>`;
     }
     console.log(cards);
     return(cards);

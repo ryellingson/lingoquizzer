@@ -4,9 +4,9 @@
 
   <div class="game-container" data-url="<%= game_plays_url(@game) %>">
     <% if ["Hiragana 1", "Katakana 1"].include?(@game.name) %>
-    <%= render "kana_games_1" %>
+    <%= render "kana_game" %>
     <% else %>
-    <%= render "table_games" %>
+    <%= render "icon_game" %>
     <% end %>
   </div>
 </div>
