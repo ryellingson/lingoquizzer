@@ -29,6 +29,11 @@ table {
   justify-content: center;
 }
 
+.table-wrapper {
+  overflow: scroll;
+  width: 100%;
+}
+
 .table-title {
   // border: 1px solid red;
   display: flex;
