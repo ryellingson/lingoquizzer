@@ -1,0 +1,25 @@
+<% last_table ||= false %>
+<td class="gametable-col <%= "last-table" if last_table %>">
+  <table class="data">
+    <thead>
+      <tr>
+        <th><%= question_header %></th>
+        <th>Romaji</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% problems.each do |problem| %>
+      <tr class="#">
+        <td>
+          <%= problem.question %>
+        </td>
+        <% answers_hash = {} %>
+        <% problem.answers.pluck(:data, :character_type).each { |arr| answers_hash[arr[1]] = arr[0] } %>
+        <% answers_hash[:icon_based] = icon_based %>
+        <td data-answers="<%= answers_hash.to_json %>" class="answer"></td>
+      </tr>
+      <% end %>
+      <%= yield %>
+    </tbody>
+  </table>
+</td>
