@@ -5,6 +5,7 @@ const initTableGame = () => {
   const replayButton = document.querySelector(".restart")
   const gameInput = document.querySelector(".game-input");
   const answers = document.querySelectorAll(".answer");
+  const answerCount = answers.length
   const backButton = document.querySelector(".back-button");
   const nextButton = document.querySelector(".next-button");
   const correctCountShow = document.querySelector(".correct-count");
@@ -16,11 +17,11 @@ const initTableGame = () => {
   const url = new URL(url_string);
   const autoplay = url.searchParams.get("autoplay");
 
-  const kanaCount = 46;
+  // const kanaCount = 46;
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  const initialTime = 15;
+  const initialTime = 1500;
   let timeLeft = initialTime;
   let interval;
   let score = 0;
@@ -51,7 +52,7 @@ const initTableGame = () => {
       updateCurrentAnswer("next");
       correctCountValue += 1;
       correctCountShow.innerHTML = `<p>${correctCountValue}/46</p>`;
-      if (correctCountValue == kanaCount) { endGame() };
+      if (correctCountValue == answerCount) { endGame() };
       if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
     }
   }
@@ -82,7 +83,7 @@ const initTableGame = () => {
     currentAnswer.parentNode.classList.remove("active-row");
     // if shift = "next" add an index else it subtracts an index
     const change = (shift == "next" ? 1 : -1);
-    currentIndex = (((currentIndex + change) % kanaCount) + kanaCount) % kanaCount;
+    currentIndex = (((currentIndex + change) % answerCount) + answerCount) % answerCount;
     currentAnswer = answers[currentIndex];
     currentAnswer.parentNode.classList.add("active-row");
     gameInput.focus();
@@ -137,12 +138,14 @@ const initTableGame = () => {
       window.location.replace(window.location.href + "?autoplay=true");
     }
   }
+
   if (playButton) {
     replayButton.addEventListener('click', restartGame);
     // playButton.addEventListener('click', startGame);
     nextButton.addEventListener('click', () => updateCurrentAnswer("next"));
     backButton.addEventListener('click', () => updateCurrentAnswer("back"));
   }
+
   document.onkeydown = function(event) {
     switch (event.keyCode) {
      case 37: // left
@@ -160,9 +163,9 @@ const initTableGame = () => {
    }
  }
 
- if (autoplay == "true") {
-  startGame();
-}
+  if (autoplay == "true") {
+    startGame();
+  }
 }
 
 export { initTableGame }
