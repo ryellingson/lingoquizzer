@@ -2,7 +2,7 @@
   <div class="post-group">
     <div class="post-header">
       <div class="post-creation-time">
-        <p>Posted by: <%= post.user.username %> at <%= post.created_at.strftime("%l:%M %p") %></p>
+        <p>Posted by: <%= post.user.username %> <%= time_ago_in_words(post.created_at) %> ago</p>
       </div>
     </div>
       <div class="post-title">
