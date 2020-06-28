@@ -24,10 +24,7 @@ class PostsController < ApplicationController
     @post = Post.new
     @post.language = @language
     authorize @post
-    respond_to do |format|
-      format.js
-      format.html { render layout: "conversations" }
-    end
+    render layout: "conversations"
   end
 
   def edit
