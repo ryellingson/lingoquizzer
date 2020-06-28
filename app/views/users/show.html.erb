@@ -60,14 +60,14 @@
           </div>
         </div>
       </div>
-      <div class="profile-friends">
-        <div class="profile-friends-header">
-          <h3>Friends</h3>
+      <div class="profile-posts">
+        <div class="profile-posts-header">
+          <h3>Posts</h3>
         </div>
-        <div class="profile-friends-content">
-          <div class="profile-friends-row">
-            <p>Coming Soon</p>
-          </div>
+        <div class="profile-posts-content">
+            <% @user.posts.each do |post| %>
+              <%= render "posts/thin_preview", post: post %>
+            <% end %>
         </div>
       </div>
       <div class="profile-best-plays">

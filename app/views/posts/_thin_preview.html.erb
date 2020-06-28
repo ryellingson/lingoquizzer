@@ -1,0 +1,21 @@
+<div class="tp-wrapper">
+  <div class="tp-image">
+  <% if post.content.embeds[0] %>
+    <%= cl_image_tag post.content.embeds[0].key %>
+  <% else %>
+    <!-- add placeholder -->
+  <% end %>
+  </div>
+  <div class="tp-info">
+    <h3><%= post.title %></h3>
+    <p>Posted by: <%= post.user.username %> <%= time_ago_in_words(post.created_at) %> ago</p>
+    <div class="post-toolbar">
+      <span class="post-comment-icon">
+        <img src="https://img.icons8.com/material-two-tone/24/000000/topic.png"/>
+      </span>
+      <span class="number-of-comments">
+        <p>number of comments</p>
+      </span>
+    </div>
+  </div>
+</div>

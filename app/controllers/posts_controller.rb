@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
-  before_action :set_language
+  before_action :set_language, :set_online_users
   skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
     if params[:lang]
-      @posts = @language.posts.with_rich_text_content_and_embeds
+      @posts = @language.posts.order(created_at: :desc)
       skip_policy_scope # pundit method used inside index
     else
       @posts = policy_scope(Post) # This substitutes Post.all
@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.with_rich_text_content_and_embeds.find(params[:id])
+    @post = Post.find(params[:id])
     authorize @post
     @language = @post.language
     @comments = @post.comments
@@ -22,16 +22,26 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @post.language = @language
     authorize @post
-    respond_to do |format|
-      format.js
-      format.html { render layout: "conversations" }
-    end
+    render layout: "conversations"
   end
 
   def edit
     @post = Post.find(params[:id])
     authorize @post
+    @language = @post.language
+    render layout: "conversations"
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    authorize @post
+    if @post.update(post_params)
+      redirect_to post_path(@post)
+    else
+      render :edit, layout: "conversations"
+    end
   end
 
   def create
