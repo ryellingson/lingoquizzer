@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_language
+  before_action :set_language, :set_online_users
   skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index

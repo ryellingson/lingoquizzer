@@ -14,6 +14,11 @@ class ApplicationController < ActionController::Base
   #   redirect_to(root_path)
   # end
   private
+
+  def set_online_users
+    @online_users = User.where("last_seen_at > ?", 5.minutes.ago)
+  end
+
   def skip_pundit?
     devise_controller? || params[:controller] =~ /(^(rails_)?admin)|(^pages$)/
   end
