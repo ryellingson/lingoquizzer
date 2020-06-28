@@ -62,11 +62,13 @@
       </div>
       <div class="profile-friends">
         <div class="profile-friends-header">
-          <h3>Friends</h3>
+          <h3>Posts</h3>
         </div>
         <div class="profile-friends-content">
           <div class="profile-friends-row">
-            <p>Coming Soon</p>
+            <% @user.posts.each do |post| %>
+              <%= render "posts/thin_preview", post: post %>
+            <% end %>
           </div>
         </div>
       </div>
