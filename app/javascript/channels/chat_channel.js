@@ -1,4 +1,5 @@
 import consumer from "./consumer"
+console.log("Loading chat_channel.js");
 
 consumer.subscriptions.create("ChatChannel", {
   connected() {
@@ -34,7 +35,7 @@ consumer.subscriptions.create("ChatChannel", {
           </div>
         </div>
         <div class="message-text">
-          ${data.content}
+          ${data.content.body}
         </div>
       </div>
     </div>`;
@@ -45,26 +46,25 @@ consumer.subscriptions.create("ChatChannel", {
 
     chatBox.scrollTop = chatBox.scrollHeight;
 
-
     console.log(data.content);
     // Called when there's incoming data on the websocket for this channel
   }
 });
 
-var submit_messages;
+// var submit_messages;
 
-$(document).on('turbolinks:load', function() {
-  submit_messages();
-})
+// $(document).on('turbolinks:load', function() {
+//   submit_messages();
+// })
 
 
-submit_messages =  function(){
-  $('#message_content').on('keydown', function(event) {
-    if (event.keyCode === 13) {
-      $('input').click()
-      event.target.value = '';
-      event.preventDefault();
-      console.log('you hit enter lets clear input');
-    }
-  })
-}
+// submit_messages =  function(){
+//   $('#message_content').on('keydown', function(event) {
+//     if (event.keyCode === 13) {
+//       $('input').click()
+//       event.target.value = '';
+//       event.preventDefault();
+//       console.log('you hit enter lets clear input');
+//     }
+//   })
+// }

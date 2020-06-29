@@ -17,13 +17,13 @@ import { initSignUpModal } from "../components/modal";
 
 import { initDropDowns } from "../components/dropdown";
 
-import { initTableGame } from "../games/table_game";
+// import { initTableGame } from "../games/table_game";
 
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
   initInteractiveForm();
   initDropDowns();
-  initTableGame();
+  // initTableGame();
 });
 
 
@@ -36,6 +36,3 @@ document.addEventListener('turbolinks:load', function(e) {
 
 import "controllers"
 // require("css/application.scss")
-
-require("trix")
-require("@rails/actiontext")
