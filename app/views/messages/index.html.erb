@@ -1,19 +1,22 @@
-<div class="conversations-content-container">
-  <div class="conversations-content-items" id="chatbox">
+<div class="conversations-content-container" data-controller="chat">
+  <div class="conversations-content-items" id="chatbox" data-target="chat.messages">
     <% @messages.each do |message| %>
     <%= render 'messages/message', message: message %>
     <% end %>
   </div>
   <div class="conversations-hub-wrapper">
-    <%= form_with model: Message.new, class: "w-100" do |f| %>
+    <%= form_for Message.new, class: "w-100", remote: true, data: { target: "chat.form", action: "keydown->chat#submitOnKeyDown"} do |f| %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <%= f.text_field :language_id, value: @language.id, hidden: true %>
       <div class="form-group-chat">
-        <%= f.rich_text_area :content, placeholder: "Message the chat...", class: "chat-input form-control" %>
+        <%= f.rich_text_area :content, placeholder: "Message the chat...", class: "chat-input form-control", data: { target: "chat.chatInput" } %>
       </div>
 
       <div class="chat-tools">
-        <i class="far fa-grin-beam"></i>
-        <%= f.submit "send" %>
+        <i class="far fa-grin-beam pointer" data-action="click->chat#toggleEmojis"></i>
+        <%#= f.submit "<i class='far fa-paper-plane'></i>".html_safe %>
+        <i class="far fa-paper-plane pointer" data-action="click->chat#submit"></i>
+
       </div>
     <% end %> <!-- form with model message -->
   </div>

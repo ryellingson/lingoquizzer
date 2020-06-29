@@ -88,11 +88,15 @@
 /*content layout start*/
 
 .conversations-hub-wrapper {
+  position: relative;
   border: 1px solid black;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   border-radius: 5px;
+  form {
+    width: 100%;
+  }
 }
 
 .conversations-content-items {

@@ -23,23 +23,36 @@
 }
 
 .form-group-chat {
+  display: flex;
+  flex-direction: column-reverse;
   border-radius: 5px;
-  height: 40px;
+  .trix-button-group.trix-button-group--file-tools {
+    display: none;
+  }
+  trix-toolbar {
+    border-top: 1px solid #eee;
+    border-radius: 5px;
+    height: 40px;
+    background: rgb(248, 248, 248);
+  }
 }
 
 .chat-input {
   outline: none;
   border: none;
   border-radius: 5px;
-  height: 40px;
+  min-height: unset;
   width: 100%;
   font-size: 20px;
   padding-left: 10px;
 }
 
 .chat-tools {
-  border-top: 1px solid #eee;
-  border-radius: 5px;
-  height: 40px;
-  background: rgb(248, 248, 248);
+  // border-top: 1px solid #eee;
+  // border-radius: 5px;
+  // height: 40px;
+  // background: rgb(248, 248, 248);
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
