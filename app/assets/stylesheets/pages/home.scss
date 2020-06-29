@@ -74,8 +74,7 @@
 
 .cb-slideshow:after {
   content: '';
-  background: repeat top left;
-  // url(../images.png)
+  // background: no-repeat url("https://res.cloudinary.com/rys-stuff/image/upload/c_scale,h_1598/v1593283956/lingoquizzer/home_images/2mimi-thian-vdXMSiX-n6M-unsplash_kke3jd.jpg") center center;
 }
 
 .cb-slideshow li span {
@@ -90,11 +89,13 @@
   background-repeat: none;
   opacity: 0;
   z-index: 0;
-  animation: imageAnimation 36s linear infinite 0s;
+  // animation: imageAnimation 36s linear infinite 0s;
 }
 
 .cb-slideshow li:nth-child(1) span {
-  background-image: url("https://res.cloudinary.com/rys-stuff/image/upload/v1593024988/lingoquizzer/home_images/sora-sagano-8sOZJ8JF0S8-unsplash_i4kacx.jpg")
+  background-image: url("https://res.cloudinary.com/rys-stuff/image/upload/c_scale,h_2000/v1593353831/lingoquizzer/home_images/1jon-tyson-8MMtYM_3xMY-unsplash_uz1ztg.jpg");
+  background-size: cover;
+  background-position: center right;
 }
 .cb-slideshow li:nth-child(2) span {
   background-image: url("japanese-street.jpg");
