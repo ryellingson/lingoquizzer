@@ -1,0 +1,358 @@
+[
+  {
+    "problem_icon": "ant.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "baby-chick.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "badger.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "bat.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "bear.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "bird.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "blowfish.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "bug.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "butterfly.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "camel.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "cat.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "rooster.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "chipmunk.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "cow.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "crab.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "cricket.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "crocodile.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "deer.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "dog.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "boar.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "dolphin.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "dove.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "dragon.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "duck.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "eagle.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "elephant.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "ewe.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "fish.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "flamingo.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "fox.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "frog.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "giraffe.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "goat.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "gorilla.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "hamster.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "hedgehog.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "hippopotamus.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "honeybee.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "horse.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "kangaroo.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "koala.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "lady-beetle.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "leopard.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "lion.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "lizard.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "llama.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "lobster.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "monkey.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "mosquito.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "mouse.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "octopus.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "orangutan.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "otter.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "owl.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "ox.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "oyster.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "panda.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "parrot.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "peacock.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "penguin.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "pig.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "poodle.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "rabbit.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "raccoon.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "ram.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "rat.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "rhinoceros.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "sauropod.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "scorpion.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "shark.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "shrimp.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "skunk.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "sloth.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "snail.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "mouse.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "snake.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "spider.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "squid.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "swan.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "t-rex.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "tiger.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "tropical-fish.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "turkey.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "turtle.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "unicorn.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "water-buffalo.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "whale.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "wolf.png",
+    "answer": ""
+  },
+  {
+    "problem_icon": "zebra.png",
+    "answer": ""
+  }
+]

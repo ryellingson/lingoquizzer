@@ -1,0 +1,358 @@
+[
+  {
+    "problem_icon": "ant.png",
+    "answer": "ant"
+  },
+  {
+    "problem_icon": "baby-chick.png",
+    "answer": "chick"
+  },
+  {
+    "problem_icon": "badger.png",
+    "answer": "badger"
+  },
+  {
+    "problem_icon": "bat.png",
+    "answer": "bat"
+  },
+  {
+    "problem_icon": "bear.png",
+    "answer": "bear"
+  },
+  {
+    "problem_icon": "bird.png",
+    "answer": "bird"
+  },
+  {
+    "problem_icon": "blowfish.png",
+    "answer": "blowfish"
+  },
+  {
+    "problem_icon": "bug.png",
+    "answer": "bug"
+  },
+  {
+    "problem_icon": "butterfly.png",
+    "answer": "butterfly"
+  },
+  {
+    "problem_icon": "camel.png",
+    "answer": "camel"
+  },
+  {
+    "problem_icon": "cat.png",
+    "answer": "cat"
+  },
+  {
+    "problem_icon": "rooster.png",
+    "answer": "rooster"
+  },
+  {
+    "problem_icon": "chipmunk.png",
+    "answer": "chipmunk"
+  },
+  {
+    "problem_icon": "cow.png",
+    "answer": "cow"
+  },
+  {
+    "problem_icon": "crab.png",
+    "answer": "crab"
+  },
+  {
+    "problem_icon": "cricket.png",
+    "answer": "cricket"
+  },
+  {
+    "problem_icon": "crocodile.png",
+    "answer": "crocodile"
+  },
+  {
+    "problem_icon": "deer.png",
+    "answer": "deer"
+  },
+  {
+    "problem_icon": "dog.png",
+    "answer": "dog"
+  },
+  {
+    "problem_icon": "boar.png",
+    "answer": "boar"
+  },
+  {
+    "problem_icon": "dolphin.png",
+    "answer": "dolphin"
+  },
+  {
+    "problem_icon": "dove.png",
+    "answer": "dove"
+  },
+  {
+    "problem_icon": "dragon.png",
+    "answer": "dragon"
+  },
+  {
+    "problem_icon": "duck.png",
+    "answer": "duck"
+  },
+  {
+    "problem_icon": "eagle.png",
+    "answer": "eagle"
+  },
+  {
+    "problem_icon": "elephant.png",
+    "answer": "elephant"
+  },
+  {
+    "problem_icon": "ewe.png",
+    "answer": "ewe"
+  },
+  {
+    "problem_icon": "fish.png",
+    "answer": "fish"
+  },
+  {
+    "problem_icon": "flamingo.png",
+    "answer": "flamingo"
+  },
+  {
+    "problem_icon": "fox.png",
+    "answer": "fox"
+  },
+  {
+    "problem_icon": "frog.png",
+    "answer": "frog"
+  },
+  {
+    "problem_icon": "giraffe.png",
+    "answer": "giraffe"
+  },
+  {
+    "problem_icon": "goat.png",
+    "answer": "goat"
+  },
+  {
+    "problem_icon": "gorilla.png",
+    "answer": "gorilla"
+  },
+  {
+    "problem_icon": "hamster.png",
+    "answer": "hamster"
+  },
+  {
+    "problem_icon": "hedgehog.png",
+    "answer": "hedgehog"
+  },
+  {
+    "problem_icon": "hippopotamus.png",
+    "answer": "hippopotamus"
+  },
+  {
+    "problem_icon": "honeybee.png",
+    "answer": "honeybee"
+  },
+  {
+    "problem_icon": "horse.png",
+    "answer": "horse"
+  },
+  {
+    "problem_icon": "kangaroo.png",
+    "answer": "kangaroo"
+  },
+  {
+    "problem_icon": "koala.png",
+    "answer": "koala"
+  },
+  {
+    "problem_icon": "lady-beetle.png",
+    "answer": "ladybug"
+  },
+  {
+    "problem_icon": "leopard.png",
+    "answer": "leopard"
+  },
+  {
+    "problem_icon": "lion.png",
+    "answer": "lion"
+  },
+  {
+    "problem_icon": "lizard.png",
+    "answer": "lizard"
+  },
+  {
+    "problem_icon": "llama.png",
+    "answer": "llama"
+  },
+  {
+    "problem_icon": "lobster.png",
+    "answer": "lobster"
+  },
+  {
+    "problem_icon": "monkey.png",
+    "answer": "monkey"
+  },
+  {
+    "problem_icon": "mosquito.png",
+    "answer": "mosquito"
+  },
+  {
+    "problem_icon": "mouse.png",
+    "answer": "mouse"
+  },
+  {
+    "problem_icon": "octopus.png",
+    "answer": "octopus"
+  },
+  {
+    "problem_icon": "orangutan.png",
+    "answer": "orangutan"
+  },
+  {
+    "problem_icon": "otter.png",
+    "answer": "otter"
+  },
+  {
+    "problem_icon": "owl.png",
+    "answer": "owl"
+  },
+  {
+    "problem_icon": "ox.png",
+    "answer": "ox"
+  },
+  {
+    "problem_icon": "oyster.png",
+    "answer": "oyster"
+  },
+  {
+    "problem_icon": "panda.png",
+    "answer": "panda"
+  },
+  {
+    "problem_icon": "parrot.png",
+    "answer": "parrot"
+  },
+  {
+    "problem_icon": "peacock.png",
+    "answer": "peacock"
+  },
+  {
+    "problem_icon": "penguin.png",
+    "answer": "penguin"
+  },
+  {
+    "problem_icon": "pig.png",
+    "answer": "pig"
+  },
+  {
+    "problem_icon": "poodle.png",
+    "answer": "poodle"
+  },
+  {
+    "problem_icon": "rabbit.png",
+    "answer": "rabbit"
+  },
+  {
+    "problem_icon": "raccoon.png",
+    "answer": "raccoon"
+  },
+  {
+    "problem_icon": "ram.png",
+    "answer": "ram"
+  },
+  {
+    "problem_icon": "rat.png",
+    "answer": "rat"
+  },
+  {
+    "problem_icon": "rhinoceros.png",
+    "answer": "rhinoceros"
+  },
+  {
+    "problem_icon": "sauropod.png",
+    "answer": "sauropod"
+  },
+  {
+    "problem_icon": "scorpion.png",
+    "answer": "scorpion"
+  },
+  {
+    "problem_icon": "shark.png",
+    "answer": "shark"
+  },
+  {
+    "problem_icon": "shrimp.png",
+    "answer": "shrimp"
+  },
+  {
+    "problem_icon": "skunk.png",
+    "answer": "skunk"
+  },
+  {
+    "problem_icon": "sloth.png",
+    "answer": "sloth"
+  },
+  {
+    "problem_icon": "snail.png",
+    "answer": "snail"
+  },
+  {
+    "problem_icon": "mouse.png",
+    "answer": "mouse"
+  },
+  {
+    "problem_icon": "snake.png",
+    "answer": "snake"
+  },
+  {
+    "problem_icon": "spider.png",
+    "answer": "spider"
+  },
+  {
+    "problem_icon": "squid.png",
+    "answer": "squid"
+  },
+  {
+    "problem_icon": "swan.png",
+    "answer": "swan"
+  },
+  {
+    "problem_icon": "t-rex.png",
+    "answer": "trex"
+  },
+  {
+    "problem_icon": "tiger.png",
+    "answer": "tiger"
+  },
+  {
+    "problem_icon": "tropical-fish.png",
+    "answer": "tropical fish"
+  },
+  {
+    "problem_icon": "turkey.png",
+    "answer": "turkey"
+  },
+  {
+    "problem_icon": "turtle.png",
+    "answer": "turtle"
+  },
+  {
+    "problem_icon": "unicorn.png",
+    "answer": "unicorn"
+  },
+  {
+    "problem_icon": "water-buffalo.png",
+    "answer": "water buffalo"
+  },
+  {
+    "problem_icon": "whale.png",
+    "answer": "whale"
+  },
+  {
+    "problem_icon": "wolf.png",
+    "answer": "wolf"
+  },
+  {
+    "problem_icon": "zebra.png",
+    "answer": "zebra"
+  }
+]
