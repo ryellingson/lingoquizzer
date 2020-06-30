@@ -55,12 +55,6 @@ ActiveRecord::Schema.define(version: 2020_06_30_002428) do
     t.index ["problem_id"], name: "index_answers_on_problem_id"
   end
 
-  create_table "categories", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "comments", force: :cascade do |t|
     t.text "content"
     t.bigint "user_id", null: false
@@ -72,12 +66,6 @@ ActiveRecord::Schema.define(version: 2020_06_30_002428) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "difficulties", force: :cascade do |t|
-    t.string "level"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "games", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -86,7 +74,7 @@ ActiveRecord::Schema.define(version: 2020_06_30_002428) do
     t.string "question_header"
     t.text "help_tip"
     t.bigint "language_id"
-    t.integer "type"
+    t.integer "character_type"
     t.integer "score"
     t.integer "play_time"
     t.text "description"
@@ -94,12 +82,6 @@ ActiveRecord::Schema.define(version: 2020_06_30_002428) do
     t.integer "difficulty"
     t.integer "genre"
     t.index ["language_id"], name: "index_games_on_language_id"
-  end
-
-  create_table "genres", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "languages", force: :cascade do |t|

@@ -5,10 +5,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :validatable, authentication_keys: [:login]
 
-  has_many :plays
-  has_many :messages
-  has_many :posts
-  has_many :comments
+  has_many :plays, dependent: :destroy
+  has_many :messages, dependent: :destroy
+  has_many :posts, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   validates :email, uniqueness: true
   validates :username, uniqueness: true, length: { in: 3..16 }

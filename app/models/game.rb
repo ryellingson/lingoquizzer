@@ -3,10 +3,10 @@ class Game < ApplicationRecord
   has_many :problems, dependent: :destroy
   has_many :plays, dependent: :destroy
   belongs_to :language
-  belongs_to :genre
-  belongs_to :category
-  belongs_to :difficulty
-  enum type: { kana: 0, icon_based: 1, kanji: 2 }
+  enum genre: { table_game: 0, chart: 1, picture_click: 2 }
+  enum category: { typing: 0, vocabulary: 1, grammar: 2 }
+  enum difficulty: { beginner: 0, intermediate: 1, advanced: 2 }
+  enum character_type: { kana: 0, kanji: 1, romaji: 2 }
 
   def top_users_specific
     sql = <<-SQL
