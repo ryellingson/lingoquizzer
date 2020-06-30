@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_25_010711) do
+ActiveRecord::Schema.define(version: 2020_06_30_002428) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -86,12 +86,13 @@ ActiveRecord::Schema.define(version: 2020_06_25_010711) do
     t.string "question_header"
     t.text "help_tip"
     t.bigint "language_id"
-    t.bigint "category_id", null: false
-    t.bigint "genre_id", null: false
-    t.bigint "difficulty_id", null: false
-    t.index ["category_id"], name: "index_games_on_category_id"
-    t.index ["difficulty_id"], name: "index_games_on_difficulty_id"
-    t.index ["genre_id"], name: "index_games_on_genre_id"
+    t.integer "type"
+    t.integer "score"
+    t.integer "play_time"
+    t.text "description"
+    t.integer "category"
+    t.integer "difficulty"
+    t.integer "genre"
     t.index ["language_id"], name: "index_games_on_language_id"
   end
 
@@ -170,9 +171,6 @@ ActiveRecord::Schema.define(version: 2020_06_25_010711) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "answers", "problems"
   add_foreign_key "comments", "users"
-  add_foreign_key "games", "categories"
-  add_foreign_key "games", "difficulties"
-  add_foreign_key "games", "genres"
   add_foreign_key "messages", "users"
   add_foreign_key "plays", "games"
   add_foreign_key "plays", "users"

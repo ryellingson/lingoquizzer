@@ -6,6 +6,7 @@ class Game < ApplicationRecord
   belongs_to :genre
   belongs_to :category
   belongs_to :difficulty
+  enum type: { kana: 0, icon_based: 1, kanji: 2 }
 
   def top_users_specific
     sql = <<-SQL

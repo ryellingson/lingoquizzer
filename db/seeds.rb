@@ -59,7 +59,7 @@ puts "おはよう"
 
 puts "checking to see if Hiragana 1 exists, if not creating it"
 
-hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: beginner, category: typing)
+hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: beginner, category: typing, type: "kana" )
 
 # if found?
 
@@ -85,7 +85,7 @@ puts "次"
 
 puts "checking to see if Hiragana 2 exists, if not creating it"
 
-hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: intermediate, category: typing)
+hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: intermediate, category: typing, type: "kana")
 
 # if found?
 
@@ -109,7 +109,7 @@ puts "次"
 
 puts "checking to see if Ultimate Hiragana exists, if not creating it"
 
-ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: advanced, category: typing)
+ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", question_header: "Hiragana", language: japanese, genre: table_games, difficulty: advanced, category: typing, type: "kana")
 
 # if found?
 
@@ -135,7 +135,7 @@ puts "ヘロ"
 
 puts "checking to see if Katakana 1 exists, if not creating it"
 
-katakana_1 = Game.find_or_create_by(name: "Katakana 1", question_header: "Katakana", language: japanese, genre: table_games, difficulty: beginner, category: typing)
+katakana_1 = Game.find_or_create_by(name: "Katakana 1", question_header: "Katakana", language: japanese, genre: table_games, difficulty: beginner, category: typing, type: "kana")
 
 puts "game created"
 puts "parsing katakana json"
@@ -157,7 +157,7 @@ puts "次"
 
 puts "checking to see if Katakana 2 exists, if not creating it"
 
-katakana_2 = Game.find_or_create_by(name: "Katakana 2", question_header: "Katakana", language: japanese, genre: table_games, difficulty: intermediate, category: typing)
+katakana_2 = Game.find_or_create_by(name: "Katakana 2", question_header: "Katakana", language: japanese, genre: table_games, difficulty: intermediate, category: typing, type: "kana")
 
 puts "game created"
 puts "parsing katakana_2 json"
@@ -179,7 +179,7 @@ puts "次"
 
 puts "checking to see if Ultimate Katakana exists, if not creating it"
 
-ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", question_header: "Katakana", language: japanese, genre: table_games, difficulty: advanced, category: typing)
+ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", question_header: "Katakana", language: japanese, genre: table_games, difficulty: advanced, category: typing, type: "kana")
 
 puts "game created"
 puts "parsing utimate_katakana json"
@@ -224,7 +224,7 @@ puts "ワンワン"
 
 puts "creating animals"
 
-animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -248,7 +248,7 @@ puts "次"
 
 puts "creating around the house"
 
-around_the_house = Game.find_or_create_by(name: "Around the house", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+around_the_house = Game.find_or_create_by(name: "Around the house", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -272,7 +272,7 @@ puts "次"
 
 puts "creating countries"
 
-countries = Game.find_or_create_by(name: "Countries", icon_based: true, question_header: "Country", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+countries = Game.find_or_create_by(name: "Countries", icon_based: true, question_header: "Country", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -296,7 +296,7 @@ puts "次"
 
 puts "creating emotions and feelings"
 
-emotions_and_feelings = Game.find_or_create_by(name: "Emotions and Feelings", icon_based: true, question_header: "Emotion", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+emotions_and_feelings = Game.find_or_create_by(name: "Emotions and Feelings", icon_based: true, question_header: "Emotion", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -320,7 +320,7 @@ puts "次"
 
 puts "creating food"
 
-food = Game.find_or_create_by(name: "Food", icon_based: true, question_header: "Food", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+food = Game.find_or_create_by(name: "Food", icon_based: true, question_header: "Food", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -344,7 +344,7 @@ puts "次"
 
 puts "creating nature and weather"
 
-nature_and_weather = Game.find_or_create_by(name: "Nature and Weather", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+nature_and_weather = Game.find_or_create_by(name: "Nature and Weather", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -368,7 +368,7 @@ puts "次"
 
 puts "creating people and jobs"
 
-people_and_jobs = Game.find_or_create_by(name: "People and Jobs", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+people_and_jobs = Game.find_or_create_by(name: "People and Jobs", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -392,7 +392,7 @@ puts "次"
 
 puts "creating sports and activities"
 
-sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -416,7 +416,7 @@ puts "次"
 
 puts "creating tech and tools"
 
-tech_and_tools = Game.find_or_create_by(name: "Tech and Tools", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+tech_and_tools = Game.find_or_create_by(name: "Tech and Tools", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
@@ -440,7 +440,7 @@ puts "次"
 
 puts "creating travel and places"
 
-travel_and_places = Game.find_or_create_by(name: "Travel and Places", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary)
+travel_and_places = Game.find_or_create_by(name: "Travel and Places", icon_based: true, question_header: "Question", language: japanese, genre: table_games, difficulty: intermediate, category: vocabulary, type: "icon_based" )
 
 puts "game created"
 puts "parsing json"
