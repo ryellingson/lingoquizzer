@@ -198,7 +198,7 @@ puts "ワンワン"
 
 puts "creating animals"
 
-animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+animals = Game.find_or_create_by(name: "Animals", icon_based: true, question_header: "Animal", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/animals.md'))
 
 puts "game created"
 puts "parsing json"
