@@ -17,16 +17,30 @@ const initTableGame = () => {
   const url = new URL(url_string);
   const autoplay = url.searchParams.get("autoplay");
 
+  const gameData = document.querySelector("#game-data");
+
+  const gameDataObject = {
+    difficulty: gameData.dataset.difficulty,
+    genre: gameData.dataset.genre,
+    score: gameData.dataset.score,
+    playTime: gameData.dataset.playTime,
+    category: gameData.dataset.category,
+    characterType: gameData.dataset.characterType
+  }
+
   // const kanaCount = 46;
   let currentAnswer = answers[0];
   let currentIndex = 0;
   let correctCountValue = 0;
-  const initialTime = 1500;
+  const initialTime = gameDataObject.playTime;
   let timeLeft = initialTime;
   let interval;
   let score = 0;
 
+
+
   const startGame = () => {
+    console.log("startGame");
     interval = setInterval(updateTimer, 1000);
     playButton.classList.add("hidden");
     gameInput.parentNode.classList.remove("hidden");
@@ -45,13 +59,13 @@ const initTableGame = () => {
   const handleInputChange = () => {
     if (Object.values(JSON.parse(currentAnswer.dataset.answers)).includes(gameInput.value.trim())) {
       currentAnswer.classList.add("correct-answer");
-      score += 2;
+      score += gameDataObject.score;
       scoreShow.innerHTML = `<p>${score}pts<p>`;
       gameInput.value = "";
       currentAnswer.innerHTML = buildAnswerCards(JSON.parse(currentAnswer.dataset.answers));
       updateCurrentAnswer("next");
       correctCountValue += 1;
-      correctCountShow.innerHTML = `<p>${correctCountValue}/46</p>`;
+      correctCountShow.innerHTML = `<p>${correctCountValue}/${answerCount}</p>`;
       if (correctCountValue == answerCount) { endGame() };
       if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
     }
@@ -129,7 +143,7 @@ const initTableGame = () => {
   const displayEndGameModal = () => {
     endGameModal.classList.add("bg-active");
     gameStats.insertAdjacentHTML("afterbegin",
-      `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/46</div>
+      `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>
       <div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>
       <div class="endgame-modal-item">Score: ${score}pts</div>
       `);
@@ -145,7 +159,7 @@ const initTableGame = () => {
 
   if (playButton) {
     replayButton.addEventListener('click', restartGame);
-    // playButton.addEventListener('click', startGame);
+    playButton.addEventListener('click', startGame);
     nextButton.addEventListener('click', () => updateCurrentAnswer("next"));
     backButton.addEventListener('click', () => updateCurrentAnswer("back"));
   }

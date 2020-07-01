@@ -12,10 +12,10 @@
     <input type="text" class="game-input">
   </div>
   <div class="correct-count">
-    <p>0/46</p>
+    <p>0/<%= @problems.count %></p>
   </div>
   <div class="timer">
-    <p>2:00m</p>
+    <p><%= calculate_time_from_seconds(@game.play_time) %></p>
   </div>
   <div class="score">
     <p>0pts</p>
