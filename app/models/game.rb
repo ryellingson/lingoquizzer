@@ -1,6 +1,7 @@
 class Game < ApplicationRecord
   validates :name, uniqueness: :true
   has_many :problems, dependent: :destroy
+  has_many :answers, through: :problems
   has_many :plays, dependent: :destroy
   belongs_to :language
   enum genre: { table_game: 0, chart: 1, picture_click: 2 }

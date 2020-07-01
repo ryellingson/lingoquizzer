@@ -21,7 +21,7 @@ class User < ApplicationRecord
   after_create :assign_default_avatar, unless: Proc.new { self.avatar.attached? }
 
   def assign_default_avatar
-    default_avatars = JSON.parse(File.read(Rails.application.root + "db/data/hiragana_1.json"))
+    default_avatars = JSON.parse(File.read(Rails.application.root + "db/data/japanese/hiragana_1.json"))
     self.update(default_avatar: default_avatars.sample["character"])
   end
 

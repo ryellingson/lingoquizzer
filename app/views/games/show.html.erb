@@ -2,7 +2,7 @@
 
   <%= render "game_header" %>
 
-  <div class="game-container" data-url="<%= game_plays_url(@game) %>">
+  <div class="game-container" id="game-data" data-category="<%= @game.category %>" data-score="<%= @game.score %>" data-play-time="<%= @game.play_time %>" data-genre="<%= @game.genre %>" data-difficulty="<%= @game.difficulty %>" data-character-type="<%= @game.character_type %>" data-url="<%= game_plays_url(@game) %>">
     <% if ["Hiragana 1", "Katakana 1"].include?(@game.name) %>
     <%= render "kana_game" %>
     <% else %>
