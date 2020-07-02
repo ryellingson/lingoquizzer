@@ -1,5 +1,5 @@
 <div class="table-wrapper">
-  <table class="content-table" id="gameTable">
+  <table class="content-table" id="gameTable" data-controller="tablegame">
     <tbody>
       <tr>
         <%= render partial: "kana_game_col", locals: { problems: @problems[0...11], question_header: @game.question_header, icon_based: @game.icon_based } %>

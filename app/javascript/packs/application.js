@@ -17,13 +17,10 @@ import { initSignUpModal } from "../components/modal";
 
 import { initDropDowns } from "../components/dropdown";
 
-import { initTableGame } from "../games/table_game";
-
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
   initInteractiveForm();
   initDropDowns();
-  initTableGame();
 });
 
 

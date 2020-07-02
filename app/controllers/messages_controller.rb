@@ -4,10 +4,10 @@ class MessagesController < ApplicationController
   def index
     if params[:lang]
       @language = Language.find_by(language_code: params[:lang])
-      @messages = @language.messages
+      @messages = @language.messages.order(created_at: :desc).limit(100).reverse
       skip_policy_scope
     else
-      @messages = policy_scope(Message)
+      @messages = policy_scope(Message).order(created_at: :desc).limit(100).reverse
     end
     render layout: "conversations"
   end
