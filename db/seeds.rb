@@ -11,6 +11,9 @@ Game.destroy_all
 
 User.destroy_all
 
+Post.destroy_all
+
+
 usernames = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15"]
 
 usernames.each do |username|
@@ -27,6 +30,11 @@ end
 
 japanese = Language.find_by(name: "japanese")
 
+100.times do
+  post = Post.new(title: Faker::ChuckNorris.fact, language: Language.all.sample, user: User.all.sample)
+  post.content = Faker::Lorem.paragraphs(number: rand(1...5)).join
+  post.save
+end
 # "table_game" = Genre.create(name: "table_game games")
 
 puts "おはよう"

@@ -4,12 +4,17 @@ class PostsController < ApplicationController
 
   def index
     if params[:lang]
-      @posts = @language.posts.order(created_at: :desc)
+      @posts = @language.posts.order(created_at: :desc).paginate(page: params[:page], per_page: 5)
       skip_policy_scope # pundit method used inside index
     else
-      @posts = policy_scope(Post) # This substitutes Post.all
+      @posts = policy_scope(Post).paginate(page: params[:page], per_page: 5) # This substitutes Post.all
     end
-    render layout: "conversations"
+    respond_to do |format|
+      format.html { render layout: "conversations" }
+      format.json  do
+        render json: {content: render_to_string(partial: 'posts/page_content', locals: { posts: @posts }, formats: [:html]) }
+      end
+    end
   end
 
   def show
