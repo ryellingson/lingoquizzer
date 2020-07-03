@@ -1,27 +1,27 @@
 class PostsController < ApplicationController
-  before_action :set_language, :set_online_users
+  before_action :set_language
   skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
     if params[:lang]
-      @posts = @language.posts.order(created_at: :desc).paginate(page: params[:page], per_page: 5)
+      @posts = @language.posts.order(created_at: :desc).paginate(page: params[:page], per_page: 20)
       skip_policy_scope # pundit method used inside index
     else
-      @posts = policy_scope(Post).paginate(page: params[:page], per_page: 5) # This substitutes Post.all
+      @posts = policy_scope(Post).paginate(page: params[:page], per_page: 20) # This substitutes Post.all
     end
     respond_to do |format|
       format.html { render layout: "conversations" }
       format.json  do
         render json: {content: render_to_string(partial: 'posts/page_content', locals: { posts: @posts }, formats: [:html]) }
-      end
+      end # api for the infintite scroll
     end
   end
 
   def show
     @post = Post.find(params[:id])
     authorize @post
+    @comment = Comment.new
     @language = @post.language
-    @comments = @post.comments
     render layout: "conversations"
   end
 
