@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_language, :set_online_users
+  before_action :set_language
   skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
@@ -20,8 +20,8 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     authorize @post
+    @comment = Comment.new
     @language = @post.language
-    @comments = @post.comments
     render layout: "conversations"
   end
 

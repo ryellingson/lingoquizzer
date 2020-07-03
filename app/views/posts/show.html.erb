@@ -26,18 +26,21 @@
         <p>number of comments</p>
       </span>
     </div>
-    <div class="comment-form">
-      <%#= form_for (Comment.new) do |f| %>
-      <div class="post-create-title">
-        <%#= f.text_field :title, placeholder: "Title", class: "pct-form" %>
-      </div>
-      <div class="post-create-content">
-        <%#= f.text_area :content, placeholder: "Text (optional)", class: "pcc-form" %>
-      </div>
-    </div>
-    <div class="post-create-submit-wrapper">
-      <%#= f.submit "Comment", class: "post-button border-glow" %>
-    </div>
-    <%# end %>
   </div>
+    <div class="comment-form">
+      <%= form_for [@post, @comment] do |f| %>
+      <div class="post-create-content">
+        <%= f.text_area :content, placeholder: "Share your thoughts...", class: "pcc-form" %>
+      </div>
+      <div class="post-create-submit-wrapper">
+        <%= f.submit "Comment", class: "post-button border-glow" %>
+      </div>
+      <% end %>
+    </div>
+    <div class="comments-container">
+      <% @post.comments.each do |comment| %>
+        <%= render 'comments/comment', comment: comment %>
+      <% end %>
+    </div>
+
 </div>

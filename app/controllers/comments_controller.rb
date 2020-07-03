@@ -6,12 +6,15 @@ class CommentsController < ApplicationController
 
   def create
     @post = Post.find(params[:post_id])
-    @comment = @post.comments.create(comment_params)
+    @language = @post.language
+    @comment = Comment.new(comment_params)
+    @comment.user = current_user
+    @comment.post = @post
     authorize @comment
     if @comment.save
-      redirect_to @post
+      redirect_to post_path @post
     else
-      render :new
+      render "posts/show", layout: "conversations"
     end
   end
 
