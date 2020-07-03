@@ -13,7 +13,7 @@ class PostsController < ApplicationController
       format.html { render layout: "conversations" }
       format.json  do
         render json: {content: render_to_string(partial: 'posts/page_content', locals: { posts: @posts }, formats: [:html]) }
-      end
+      end # api for the infintite scroll
     end
   end
 
