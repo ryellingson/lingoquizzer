@@ -32,4 +32,4 @@ document.addEventListener('turbolinks:load', function(e) {
 // const imagePath = (name) => images(name, true)
 
 import "controllers"
-// require("css/application.scss")
+  require("css/application.scss")

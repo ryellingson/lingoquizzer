@@ -6,10 +6,12 @@ class GamesController < ApplicationController
   end
 
   def show
-    #select the game by id and store it in a variable creating an instance
+    #create an instance variable assigning problems to the game instance
     @game = Game.find(params[:id])
     authorize @game
-    #create an instance variable assigning problems to the game instance
+    # Initializes a Markdown parser
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    @description = markdown.render(@game.description)
     if @game.icon_based
       @problems = @game.problems.sample(32)
     else
