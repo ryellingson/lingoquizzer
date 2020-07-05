@@ -1,4 +1,5 @@
 import { Controller } from "stimulus"
+import Rails from "@rails/ujs";
 
 export default class extends Controller {
   static targets = []
@@ -26,7 +27,7 @@ export default class extends Controller {
     const gameDataObject = {
       difficulty: gameData.dataset.difficulty,
       genre: gameData.dataset.genre,
-      score: gameData.dataset.score,
+      score: parseInt(gameData.dataset.score),
       playTime: gameData.dataset.playTime,
       category: gameData.dataset.category,
       characterType: gameData.dataset.characterType
@@ -37,6 +38,7 @@ export default class extends Controller {
     let currentIndex = 0;
     let correctCountValue = 0;
     const initialTime = gameDataObject.playTime;
+    // const initialTime = 10;
     let timeLeft = initialTime;
     let interval;
     let score = 0;
@@ -146,11 +148,18 @@ export default class extends Controller {
 
     const displayEndGameModal = () => {
       endGameModal.classList.add("bg-active");
-      gameStats.insertAdjacentHTML("afterbegin",
-        `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>
-        <div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>
-        <div class="endgame-modal-item">Score: ${score}pts</div>
-        `);
+      const perfectPlayDisplay = correctCountValue === answerCount ?
+        `<div class="perfect-play-display">Perfect!</div>` : ""
+      const correctAnswers =
+        `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>`;
+      const timeBonus =
+        `<div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>`
+      const scoreDisplay =
+        `<div class="endgame-modal-item">Score: ${score}pts</div>`
+
+      const htmlToRender = perfectPlayDisplay + correctAnswers + timeBonus + scoreDisplay;
+
+      gameStats.insertAdjacentHTML("afterbegin", htmlToRender)
     }
 
     const restartGame = () => {

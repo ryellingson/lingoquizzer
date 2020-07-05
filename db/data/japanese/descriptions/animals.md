@@ -1,3 +1,3 @@
 **Animals**
 
-This is the animals game.
+This is the  japanese animals game.

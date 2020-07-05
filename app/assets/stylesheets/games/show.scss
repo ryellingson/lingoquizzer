@@ -276,7 +276,7 @@ table {
 
 }
 
-.help-tip p{    /* The tooltip */
+.help-tip > *{    /* The tooltip */
   display: none;
   text-align: left;
   background-color: #1E2021;
@@ -291,7 +291,7 @@ table {
   line-height: 1.4;
 }
 
-.help-tip p:before{ /* The pointer of the tooltip */
+.help-tip > *:before{ /* The pointer of the tooltip */
   position: absolute;
   content: '';
   width:0;
@@ -302,7 +302,7 @@ table {
   top:-12px;
 }
 
-.help-tip p:after{ /* Prevents the tooltip from being hidden */
+.help-tip > *:after{ /* Prevents the tooltip from being hidden */
   width:100%;
   height:40px;
   content:'';

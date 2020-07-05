@@ -1,73 +1,50 @@
-  <div class="game-header">
-    <%= link_to root_path do %>
-    <div class="logo">
-      <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
-    </div>
-    <% end %> <!-- link to root path -->
-    <div class="game-header-hub">
-      <%= link_to games_path do %>
-      <div class="game-header-button stroke">
-        <h2 class="p-absolute">Games</h2>
-        <svg>
-          <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-          <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-        </svg>
-      </div>
-      <% end %> <!-- link to games path -->
-      <div class="table-title">
-        <h1><%= @game.name %></h1>
-      </div>
-      <% if current_user %>
-        <%= link_to user_path(current_user) do %>
-          <div class="game-header-button stroke">
-            <h2 class="p-absolute">
-              <% if user_signed_in? %>
-              <div class="profile-link">
-                <% if current_user.avatar.attached? %>
-                  <%= cl_image_tag current_user.avatar.key, class: 'avatar' %>
-                <% else %>
-                <div class="avatar">
-                  <%= current_user.default_avatar %>
-                </div>
-                <% end %> <!-- avatar loop -->
-                <div class="username-game">
-                  <p><%= current_user.username %></p>
-                </div>
-              </div>
-              <% else %>
-                <p>Login</p>
-              <% end %>
-            </h2>
-            <svg>
-              <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-              <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-            </svg>
-          </div>
-        <% end %> <!-- Link to user path -->
-      <% end %> <!-- if current user -->
-    </div>
-    <div class="help-tip">
-      <p> Hiragana is the basic Japanese phonetic alphabet.
-
-        Mastery of Hiragana is one of the first steps of learning Japanese!
-
-        It represents every sound in the Japanese language.
-        Therefore, you can theoretically write everything in hiragana.
-        It is one of the 3 Japanese alphabets along with Katakana and Kanji.
-
-        Romaji is the romanization of the Japanese written language.
-        You can think of it as an English syllable that represents a
-        sound in the Japanese written language.
-
-        You will typically use Romaji when you type out Japanese sentences using a keyboard.
-
-        Your goal is to fill out the table with the Romaji as quickly
-        as possible to get the highest possible score.
-
-        You can skip answers you don't know with the blue buttons or the arrows on your keyboard.
-
-      Good Luck!</p>
-
-    </div>
-
+<div class="game-header">
+  <%= link_to root_path do %>
+  <div class="logo">
+    <%= image_tag "logo.jpg" %> <!-- change to svg?  -->
   </div>
+  <% end %> <!-- link to root path -->
+  <div class="game-header-hub">
+    <%= link_to games_path do %>
+    <div class="game-header-button stroke">
+      <h2 class="p-absolute">Games</h2>
+      <svg>
+        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+      </svg>
+    </div>
+    <% end %> <!-- link to games path -->
+    <div class="table-title text-4xl">
+      <h1><%= @game.name %></h1>
+    </div>
+    <% if current_user %>
+      <%= link_to user_path(current_user) do %>
+        <div class="game-header-button stroke">
+          <h2 class="p-absolute">
+            <% if user_signed_in? %>
+            <div class="profile-link">
+              <% if current_user.avatar.attached? %>
+                <%= cl_image_tag current_user.avatar.key, class: 'avatar' %>
+              <% else %>
+              <div class="avatar text-3xl">
+                <%= current_user.default_avatar %>
+              </div>
+              <% end %> <!-- avatar loop -->
+              <div class="username-game">
+                <p><%= current_user.username %></p>
+              </div>
+            </div>
+            <% else %>
+              <p>Login</p>
+            <% end %>
+          </h2>
+          <svg>
+            <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+            <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+          </svg>
+        </div>
+      <% end %> <!-- Link to user path -->
+    <% end %> <!-- if current user -->
+  </div>
+    <%= render "shared/tooltip", description: @description.html_safe %>
+</div>

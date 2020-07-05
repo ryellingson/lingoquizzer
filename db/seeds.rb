@@ -5,6 +5,8 @@
 
 require 'json'
 
+puts "destroying previous data"
+
 Language.destroy_all
 
 Game.destroy_all
@@ -13,6 +15,7 @@ User.destroy_all
 
 Post.destroy_all
 
+puts "generating users"
 
 usernames = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15"]
 
@@ -22,6 +25,8 @@ end
 
 User.create(username: "admin1", email: "admin1@go.com", password: "admin1pass", password_confirmation: "admin1pass", admin: true)
 
+puts "generating languages"
+
 language_names = { ja: "japanese", es: "spanish", en: "english", fr: "french" }
 
 language_names.each do |code, language|
@@ -29,6 +34,8 @@ language_names.each do |code, language|
 end
 
 japanese = Language.find_by(name: "japanese")
+
+puts "generating posts"
 
 100.times do
   post = Post.new(title: Faker::ChuckNorris.fact, language: Language.all.sample, user: User.all.sample)
@@ -41,7 +48,7 @@ puts "おはよう"
 
 puts "checking to see if Hiragana 1 exists, if not creating it"
 
-hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", question_header: "Hiragana", language: japanese, genre: "table_game", difficulty: "beginner", category: "typing", character_type: "kana", play_time: 120, score: 2)
+hiragana_1 = Game.find_or_create_by(name: "Hiragana 1", question_header: "Hiragana", language: japanese, genre: "table_game", difficulty: "beginner", category: "typing", character_type: "kana", play_time: 120, score: 2, description: File.read(Rails.root + 'db/data/japanese/descriptions/hiragana_1.md'))
 
 # if found?
 
@@ -67,7 +74,7 @@ puts "次"
 
 puts "checking to see if Hiragana 2 exists, if not creating it"
 
-hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", question_header: "Hiragana", language: japanese, genre: "table_game", difficulty: "intermediate", category: "typing", character_type: "kana", play_time: 180, score: 2)
+hiragana_2 = Game.find_or_create_by(name: "Hiragana 2", question_header: "Hiragana", language: japanese, genre: "table_game", difficulty: "intermediate", category: "typing", character_type: "kana", play_time: 180, score: 2, description: File.read(Rails.root + 'db/data/japanese/descriptions/hiragana_2.md'))
 
 # if found?
 
@@ -91,7 +98,7 @@ puts "次"
 
 puts "checking to see if Ultimate Hiragana exists, if not creating it"
 
-ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", question_header: "Hiragana", language: japanese, genre: "table_game", difficulty: "advanced", category: "typing", character_type: "kana", play_time: 240, score: 2)
+ultimate_hiragana = Game.find_or_create_by(name: "Ultimate Hiragana", question_header: "Hiragana", language: japanese, genre: "table_game", difficulty: "advanced", category: "typing", character_type: "kana", play_time: 240, score: 2, description: File.read(Rails.root + 'db/data/japanese/descriptions/ultimate_hiragana.md'))
 
 # if found?
 
@@ -117,7 +124,7 @@ puts "ヘロ"
 
 puts "checking to see if Katakana 1 exists, if not creating it"
 
-katakana_1 = Game.find_or_create_by(name: "Katakana 1", question_header: "Katakana", language: japanese, genre: "table_game", difficulty: "beginner", category: "typing", character_type: "kana", play_time: 120, score: 2)
+katakana_1 = Game.find_or_create_by(name: "Katakana 1", question_header: "Katakana", language: japanese, genre: "table_game", difficulty: "beginner", category: "typing", character_type: "kana", play_time: 120, score: 2, description: File.read(Rails.root + 'db/data/japanese/descriptions/katakana_1.md'))
 
 puts "game created"
 puts "parsing katakana json"
@@ -139,7 +146,7 @@ puts "次"
 
 puts "checking to see if Katakana 2 exists, if not creating it"
 
-katakana_2 = Game.find_or_create_by(name: "Katakana 2", question_header: "Katakana", language: japanese, genre: "table_game", difficulty: "intermediate", category: "typing", character_type: "kana", play_time: 180, score: 2)
+katakana_2 = Game.find_or_create_by(name: "Katakana 2", question_header: "Katakana", language: japanese, genre: "table_game", difficulty: "intermediate", category: "typing", character_type: "kana", play_time: 180, score: 2, description: File.read(Rails.root + 'db/data/japanese/descriptions/katakana_2.md'))
 
 puts "game created"
 puts "parsing katakana_2 json"
@@ -161,7 +168,7 @@ puts "次"
 
 puts "checking to see if Ultimate Katakana exists, if not creating it"
 
-ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", question_header: "Katakana", language: japanese, genre: "table_game", difficulty: "advanced", category: "typing", character_type: "kana", play_time: 240, score: 2)
+ultimate_katakana = Game.find_or_create_by(name: "Ultimate Katakana", question_header: "Katakana", language: japanese, genre: "table_game", difficulty: "advanced", category: "typing", character_type: "kana", play_time: 240, score: 2, description: File.read(Rails.root + 'db/data/japanese/descriptions/ultimate_katakana.md'))
 
 puts "game created"
 puts "parsing utimate_katakana json"
@@ -230,7 +237,7 @@ puts "次"
 
 puts "creating around the house"
 
-around_the_house = Game.find_or_create_by(name: "Around the house", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+around_the_house = Game.find_or_create_by(name: "Around the house", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/around_the_house.md'))
 
 puts "game created"
 puts "parsing json"
@@ -254,7 +261,7 @@ puts "次"
 
 puts "creating countries"
 
-countries = Game.find_or_create_by(name: "Countries", icon_based: true, question_header: "Country", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+countries = Game.find_or_create_by(name: "Countries", icon_based: true, question_header: "Country", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/countries.md'))
 
 puts "game created"
 puts "parsing json"
@@ -278,7 +285,7 @@ puts "次"
 
 puts "creating emotions and feelings"
 
-emotions_and_feelings = Game.find_or_create_by(name: "Emotions and Feelings", icon_based: true, question_header: "Emotion", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+emotions_and_feelings = Game.find_or_create_by(name: "Emotions and Feelings", icon_based: true, question_header: "Emotion", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/emotions_and_feelings.md'))
 
 puts "game created"
 puts "parsing json"
@@ -302,7 +309,7 @@ puts "次"
 
 puts "creating food"
 
-food = Game.find_or_create_by(name: "Food", icon_based: true, question_header: "Food", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+food = Game.find_or_create_by(name: "Food", icon_based: true, question_header: "Food", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/food.md'))
 
 puts "game created"
 puts "parsing json"
@@ -326,7 +333,7 @@ puts "次"
 
 puts "creating nature and weather"
 
-nature_and_weather = Game.find_or_create_by(name: "Nature and Weather", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+nature_and_weather = Game.find_or_create_by(name: "Nature and Weather", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/nature_and_weather.md'))
 
 puts "game created"
 puts "parsing json"
@@ -350,7 +357,7 @@ puts "次"
 
 puts "creating people and jobs"
 
-people_and_jobs = Game.find_or_create_by(name: "People and Jobs", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+people_and_jobs = Game.find_or_create_by(name: "People and Jobs", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/people_and_jobs.md'))
 
 puts "game created"
 puts "parsing json"
@@ -374,7 +381,7 @@ puts "次"
 
 puts "creating sports and activities"
 
-sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/sports_and_activites.md'))
 
 puts "game created"
 puts "parsing json"
@@ -398,7 +405,7 @@ puts "次"
 
 puts "creating tech and tools"
 
-tech_and_tools = Game.find_or_create_by(name: "Tech and Tools", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+tech_and_tools = Game.find_or_create_by(name: "Tech and Tools", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/tech_and_tools.md'))
 
 puts "game created"
 puts "parsing json"
@@ -422,7 +429,7 @@ puts "次"
 
 puts "creating travel and places"
 
-travel_and_places = Game.find_or_create_by(name: "Travel and Places", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5)
+travel_and_places = Game.find_or_create_by(name: "Travel and Places", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/travel_and_places.md'))
 
 puts "game created"
 puts "parsing json"

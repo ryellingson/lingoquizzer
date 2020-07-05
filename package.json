@@ -11,6 +11,7 @@
     "jquery": "^3.5.0",
     "stimulus": "^1.1.1",
     "tailwindcss": "^1.4.6",
+    "tailwindcss-stimulus-components": "^1.2.0",
     "trix": "^1.2.0",
     "turbolinks": "^5.2.0"
   },
