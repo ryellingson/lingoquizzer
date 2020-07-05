@@ -14,7 +14,7 @@
       </svg>
     </div>
     <% end %> <!-- link to games path -->
-    <div class="table-title">
+    <div class="table-title text-4xl">
       <h1><%= @game.name %></h1>
     </div>
     <% if current_user %>
@@ -26,7 +26,7 @@
               <% if current_user.avatar.attached? %>
                 <%= cl_image_tag current_user.avatar.key, class: 'avatar' %>
               <% else %>
-              <div class="avatar">
+              <div class="avatar text-3xl">
                 <%= current_user.default_avatar %>
               </div>
               <% end %> <!-- avatar loop -->

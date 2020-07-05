@@ -11,7 +11,7 @@
       <% problems.each do |problem| %>
       <tr class="#">
         <td>
-          <%= problem.question %>
+          <%= problem.question, class: "text-3xl" %>
         </td>
         <% answers_hash = {} %>
         <% problem.answers.pluck(:data, :character_type).each { |arr| answers_hash[arr[1]] = arr[0] } %>
