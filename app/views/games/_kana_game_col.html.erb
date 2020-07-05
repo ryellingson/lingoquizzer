@@ -9,9 +9,9 @@
     </thead>
     <tbody>
       <% problems.each do |problem| %>
-      <tr class="#">
+      <tr class="# text-xl">
         <td>
-          <%= problem.question, class: "text-3xl" %>
+          <%= problem.question %>
         </td>
         <% answers_hash = {} %>
         <% problem.answers.pluck(:data, :character_type).each { |arr| answers_hash[arr[1]] = arr[0] } %>

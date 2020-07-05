@@ -9,14 +9,14 @@
       <div class="password-reset-label">
         <%= f.label :login %>
       </div>
-      <%= f.text_field :login, autofocus: true, autocomplete: "username", class: "password-reset-input" %>
+      <%= f.text_field :login, autofocus: true, autocomplete: "username", class: "password-reset-input password-reset-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2" %>
     </div>
 
     <div class="field">
       <div class="password-reset-label">
         <%= f.label :password %>
       </div>
-      <%= f.password_field :password, autocomplete: "current-password", class: "password-reset-input" %>
+      <%= f.password_field :password, autocomplete: "current-password", class: "password-reset-input password-reset-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2" %>
     </div>
 
     <% if devise_mapping.rememberable? %>
@@ -28,6 +28,14 @@
 
     <div class="actions">
       <%= f.submit "Log in", class: "password-reset-button" %>
+    </div>
+
+    <div class="actions">
+      <%= link_to new_user_registration_path do %>
+        <div class="play-button border-glow">
+          <h2>Sign up</h2>
+        </div>
+      <% end %>
     </div>
 
     <% end %>
