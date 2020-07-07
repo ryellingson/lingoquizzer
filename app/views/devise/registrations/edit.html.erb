@@ -1,4 +1,4 @@
-<div class="edit-main-container">
+<div class="edit-main-container h-screen">
   <div class="edit-sidebar-left"></div>
   <div class="edit-content-wrapper">
     <div class="edit-content-header">
@@ -12,7 +12,7 @@
         <div class="edit-form-label eflw-a">
           <%= f.label :username %><br />
         </div>
-        <div class="edit-form-input ">
+        <div class="edit-form-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2 mx-5">
           <%= f.text_field :username, autocomplete: "username" %>
         </div>
       </div>
@@ -21,7 +21,7 @@
         <div class="edit-form-label eflw-b">
           <%= f.label :email %><br />
         </div>
-        <div class="edit-form-input">
+        <div class="edit-form-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2 mx-5">
           <%= f.email_field :email, autocomplete: "email" %>
         </div>
       </div>
@@ -43,7 +43,7 @@
         <div class="edit-form-label eflw-d">
           <%= f.label "Share Your City!" %>
         </div>
-        <div class="edit-form-input">
+        <div class="edit-form-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2 mx-5">
           <%= f.text_field :city %>
         </div>
       </div>
@@ -55,7 +55,7 @@
         <div class="edit-form-info">
           <p>(leave blank if you don't want to change it)</p>
         </div>
-        <div class="edit-form-input">
+        <div class="edit-form-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2 mx-5">
           <%= f.password_field :password, autocomplete: "new-password" %>
         </div>
         <div class="edit-form-info">
@@ -67,7 +67,7 @@
         <div class="edit-form-label eflw-f">
           <%= f.label :password_confirmation %><br />
         </div>
-        <div class="edit-form-input">
+        <div class="edit-form-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2 mx-5">
           <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
         </div>
       </div>
@@ -79,7 +79,7 @@
         <div class="edit-form-info">
           <p>(we need your current password to confirm your changes)</p>
         </div>
-        <div class="edit-form-input">
+        <div class="edit-form-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2 mx-5">
           <%= f.password_field :current_password, autocomplete: "current-password" %>
         </div>
       </div>

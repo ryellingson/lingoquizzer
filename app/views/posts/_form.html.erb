@@ -1,5 +1,5 @@
 <%= render 'devise/shared/error_messages', resource: post %>
-<%= form_for (post), remote: true do |f| %>
+<%= form_for (post), remote: true, builder: MyFormBuilder do |f| %>
 
   <%= f.text_field :language_id, value: post.language.id, hidden: true %>
 

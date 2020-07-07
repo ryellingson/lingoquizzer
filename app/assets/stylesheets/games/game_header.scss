@@ -1,7 +1,7 @@
 .game-header {
   border-bottom: 1px solid #dddddd;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   z-index: 10;
 }
@@ -43,4 +43,9 @@
   text-overflow: ellipsis;
   // display: inline-block;
   width: 90px;
+}
+
+.tooltip-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }

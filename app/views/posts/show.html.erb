@@ -6,9 +6,9 @@
           <p>Posted by: <%= @post.user.username %> at <%= @post.created_at.strftime("%l:%M %p") %></p>
         </div>
         <% if @post.user == current_user %>
-          <%= link_to edit_post_path do %>
-            <i class="fas fa-edit icon-shrink"></i>
-          <% end %> <!-- link to edit -->
+        <%= link_to edit_post_path do %>
+        <i class="fas fa-edit icon-shrink"></i>
+        <% end %> <!-- link to edit -->
         <% end %> <!-- if @user -->
       </div>
       <div class="post-title">
@@ -27,20 +27,21 @@
       </span>
     </div>
   </div>
+  <div class="comments-container">
     <div class="comment-form">
       <%= form_for [@post, @comment] do |f| %>
-      <div class="post-create-content">
+      <div class="post-create-comment">
         <%= f.text_area :content, placeholder: "Share your thoughts...", class: "pcc-form" %>
       </div>
-      <div class="post-create-submit-wrapper">
+      <div class="post-comment-submit-wrapper">
         <%= f.submit "Comment", class: "post-button border-glow" %>
       </div>
       <% end %>
     </div>
-    <div class="comments-container">
+    <div class="comments-display">
       <% @post.comments.each do |comment| %>
-        <%= render 'comments/comment', comment: comment %>
+      <%= render 'comments/comment', comment: comment %>
       <% end %>
     </div>
-
+  </div>
 </div>
