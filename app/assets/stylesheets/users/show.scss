@@ -155,8 +155,10 @@
   border-left: 1px solid rgba(200,200,200,0.8);
   border-right: 1px solid rgba(200,200,200,0.8);
   width: 34%;
+  height: 310px;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .profile-posts-header {
@@ -164,8 +166,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
   height: 30px;
+  width: 331px;
   margin-bottom: 10px;
+  background-color: white;
+
 }
 
 .profile-posts-content {
