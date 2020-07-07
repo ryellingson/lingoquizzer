@@ -381,7 +381,7 @@ puts "次"
 
 puts "creating sports and activities"
 
-sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/sports_and_activites.md'))
+sports_and_activites = Game.find_or_create_by(name: "Sports and Activities", icon_based: true, question_header: "Question", language: japanese, genre: "table_game", difficulty: "intermediate", category: "vocabulary", play_time: 180, score: 5, description: File.read(Rails.root + 'db/data/japanese/descriptions/sports_and_activities.md'))
 
 puts "game created"
 puts "parsing json"
