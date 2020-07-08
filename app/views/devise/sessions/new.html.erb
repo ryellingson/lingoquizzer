@@ -1,44 +1,19 @@
-<div class="password-reset-main-container">
-  <div class="password-reset-sidebar-left"></div>
-  <div class="password-reset-content-wrapper">
-    <div class="password-reset-header">
-      <h2>Log in</h2>
-    </div>
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="field">
-      <div class="password-reset-label">
-        <%= f.label :login %>
-      </div>
-      <%= f.text_field :login, autofocus: true, autocomplete: "username", class: "password-reset-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2" %>
-    </div>
 
-    <div class="field">
-      <div class="password-reset-label">
-        <%= f.label :password %>
-      </div>
-      <%= f.password_field :password, autocomplete: "current-password", class: "password-reset-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2" %>
-    </div>
+<h2>Log in</h2>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), builder: MyFormBuilder) do |f| %>
+  <%= f.text_section :login, "Login", autofocus: true, autocomplete: "username" %>
+  <%= f.password_section :password, "Password", autocomplete: "current-password" %>
 
-    <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-    <% end %>
 
-    <div class="actions">
-      <%= f.submit "Log in", class: "password-reset-button" %>
-    </div>
+  <% if devise_mapping.rememberable? %>
+    <%= f.check_box :remember_me %>
+    <%= f.label :remember_me %>
+  <% end %> <!-- if devise mapping -->
 
-    <div class="actions">
-      <%= link_to new_user_registration_path do %>
-        <div class="play-button border-glow">
-          <h2>Sign up</h2>
-        </div>
-      <% end %>
-    </div>
+  <%= f.submit "Log in", class: "password-reset-button" %>
 
-    <% end %>
-  </div>
-  <div class="password-reset-sidebar-right"></div>
-</div>
+  <%= link_to new_user_registration_path do %>
+    <h2>Sign up</h2>
+  <% end %> <!-- link -->
+  <% end %> <!-- form for -->
+

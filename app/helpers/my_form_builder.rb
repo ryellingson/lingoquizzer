@@ -1,15 +1,14 @@
 class MyFormBuilder < ActionView::Helpers::FormBuilder
 
   def text_section(method, title, options = {})
-    @template.content_tag(:label,
-      @template.content_tag(:span, title, { class: 'text-gray-700' }) +
-        @template.text_field(@object_name, method, objectify_options(options.merge(class: 'password-reset-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2 ml-2'))), { class: 'password-reset-label text-xl' })
+    @template.content_tag(:div,
+      @template.content_tag(:div, title, { class: 'text-gray-900 border-b border-gray-700 text-2xl', style: "width: fit-content;" }) +
+        @template.text_field(@object_name, method, objectify_options(options.merge(class: 'border bg-white shadow-md rounded p-2 mt-2'))), { class: '' })
   end
 
   def password_section(method, title, options = {})
-    @template.content_tag(:label,
-      @template.content_tag(:span, title, { class: 'text-gray-700' }) +
-        @template.password_field(@object_name, method, objectify_options(options.merge(class: 'password-reset-input border bg-white shadow-md rounded px-2 pt-6 pb-5 mb-2 ml-2'))), { class: 'password-reset-label text-xl' })
+    @template.content_tag(:div,
+      @template.content_tag(:div, title, { class: 'text-gray-900 border-b border-gray-700 text-2xl', style: "width: fit-content;" }) +
+        @template.password_field(@object_name, method, objectify_options(options.merge(class: 'border bg-white shadow-md rounded p-2 mt-2'))), { class: '' })
   end
-
 end
