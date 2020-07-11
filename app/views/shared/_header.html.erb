@@ -10,22 +10,20 @@
       <div class="dropdown-trigger">
         <span class="contact-dropdown-text">Contact Us</span>
       </div>
-      <ul class="dropdown">
+      <ul class="dropdown text-sm text-black">
         <%= form_for(ContactForm.new, remote: :true, url: contact_send_path) do |f| %>
         <% unless user_signed_in? && current_user.email.present? %>
         <%= f.label :email %>
-        <%= f.email_field :email %>
+        <%= f.email_field :email, class: "w-full border border-gray-400 rounded-lg" %>
         <% end %>
         <%= f.label :subject %>
-        <%= f.text_field :subject %>
+        <%= f.text_field :subject, class: "w-full border border-gray-400 rounded-lg" %>
         <%= f.label :message %>
-        <%= f.text_area :message %>
+        <%= f.text_area :message, class: "w-full border border-gray-400 rounded-lg" %>
         <%= f.label :file %>
-        <%= f.file_field :file %>
+        <%= f.file_field :file, class: "w-full border border-gray-400 rounded-lg" %>
         <%= f.submit "Send", class: "contact-form-button" %>
-
         <% end %>
-
       </ul>
     </div>
     <div id="login-dropdown" class="wrapper-dropdown" tabindex="1">
@@ -52,14 +50,12 @@
         <%= form_for(resource, url: session_path(resource_name), namespace: "login", remote: true) do |f| %>
         <div class="field login-ceiling">
           <%= f.label :login, class: "text-small-uppercase login-ceiling" %><br />
-          <%= f.text_field :login, autofocus: true, autocomplete: "username", class: "text-body" %>
+          <%= f.text_field :login, autofocus: true, autocomplete: "username", class: "text-body w-full border border-gray-400 rounded-lg" %>
         </div>
         <div class="field login-ceiling">
           <%= f.label :password, class: "text-small-uppercase" %><br />
-          <%= f.password_field :password, autocomplete: "current-password", class: "text-body" %>
+          <%= f.password_field :password, autocomplete: "current-password", class: "text-body w-full border border-gray-400 rounded-lg" %>
         </div>
-
-
         <div class="actions">
           <%= f.submit "Log in", class: "login-button" %>
         </div>
