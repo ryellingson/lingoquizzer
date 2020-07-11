@@ -28,19 +28,15 @@
     </div>
   </div>
   <div class="comments-container">
-    <div class="comment-form">
-      <%= form_for [@post, @comment] do |f| %>
-      <div class="post-create-comment">
-        <%= f.text_area :content, placeholder: "Share your thoughts...", class: "pcc-form" %>
-      </div>
-      <div class="post-comment-submit-wrapper">
-        <%= f.submit "Comment", class: "comment-button border-glow" %>
-      </div>
-      <% end %>
-    </div>
+    <%= render 'comments/comment_form', post: @post, comment: @comment %>
     <div class="comments-display">
-      <% @post.comments.each do |comment| %>
-        <%= render 'comments/comment', comment: comment %>
+      <% @post.comments.each do |parent_comment| %>
+        <%= render 'comments/comment', post: @post, comment: parent_comment, parent_comment: parent_comment %>
+        <div class="comment-replies">
+          <% parent_comment.replies.each do |reply| %>
+            <%= render 'comments/comment', post: @post, comment: reply, parent_comment: parent_comment %>
+          <% end %>
+        </div>
       <% end %>
     </div>
   </div>
