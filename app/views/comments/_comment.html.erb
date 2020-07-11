@@ -3,7 +3,9 @@
     <h3>
       <%= comment.user.username %>
     </h3>
-    <%= link_to "reply", "#", data: { action: "click->comments#showReplyForm"} %>
+    <%= link_to "reply", data: { action: "click->comments#showReplyForm"} do %>
+      <img src="https://img.icons8.com/material-two-tone/24/000000/topic.png"/> Reply
+    <% end %>
   </div>
   <div class="comment-content">
     <h4><%= comment.content %></h4>

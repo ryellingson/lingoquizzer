@@ -63,14 +63,14 @@
   }
   a {
     margin-left: 5px;
-    color: red;
+    display: flex;
   }
 }
 
 .comment-replies {
   margin-left: 1.5rem;
   padding-left: 0.75rem;
-  border-left: 2px solid gray;
+  border-left: 2px solid rgb(237,239,241);
   .comment-wrapper .comment-header a {
     display: none;
   }
