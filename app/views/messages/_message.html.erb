@@ -3,9 +3,9 @@
     <% if current_user.avatar.attached? %>
       <%= cl_image_tag current_user.avatar.key, class: 'message-avatar' %>
     <% else %>
-    <div class="default-message-avatar">
-      <%= message.user.default_avatar %>
-    </div>
+      <div class="default-message-avatar">
+        <%= message.user.default_avatar %>
+      </div>
     <% end %>
   </div>
   <div class="message-content">
