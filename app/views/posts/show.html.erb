@@ -34,13 +34,13 @@
         <%= f.text_area :content, placeholder: "Share your thoughts...", class: "pcc-form" %>
       </div>
       <div class="post-comment-submit-wrapper">
-        <%= f.submit "Comment", class: "post-button border-glow" %>
+        <%= f.submit "Comment", class: "comment-button border-glow" %>
       </div>
       <% end %>
     </div>
     <div class="comments-display">
       <% @post.comments.each do |comment| %>
-      <%= render 'comments/comment', comment: comment %>
+        <%= render 'comments/comment', comment: comment %>
       <% end %>
     </div>
   </div>
