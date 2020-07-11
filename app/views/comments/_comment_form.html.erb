@@ -1,0 +1,11 @@
+<div class="comment-form-hub">
+  <%= form_for [post, comment] do |f| %>
+    <%= f.text_field(:comment_id, value: parent_comment&.id, hidden: true) if defined?(parent_comment) %>
+    <div class="post-create-comment">
+      <%= f.text_area :content, placeholder: "Share your thoughts...", class: "comment-form" %>
+    </div>
+    <div class="post-comment-submit-wrapper">
+      <%= f.submit "Comment", class: "comment-button border-glow" %>
+    </div>
+  <% end %>
+</div>

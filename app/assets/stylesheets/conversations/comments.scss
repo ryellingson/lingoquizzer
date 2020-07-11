@@ -7,9 +7,24 @@
   margin: 10px;
 }
 
-.comment-form {
+.comment-form-hub {
   border: 1px solid rgb(237,239,241);
   margin: 5px;
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 2px;
+    // overflow-wrap: break-word;
+    // margin: 8px 5px 4px 10px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+}
 }
 
 .post-create-comment {
@@ -40,4 +55,30 @@
   margin: 3px;
   padding: 0px 10px;
 }
+
+.comment-header {
+  display: flex;
+  h3 {
+
+  }
+  a {
+    margin-left: 5px;
+    color: red;
+  }
+}
+
+.comment-replies {
+  margin-left: 1.5rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid gray;
+  .comment-wrapper .comment-header a {
+    display: none;
+  }
+  .comment-wrapper:last-child .comment-header a {
+    display: unset;
+  }
+}
+
+
+
 
