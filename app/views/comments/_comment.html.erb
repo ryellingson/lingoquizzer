@@ -1,9 +1,22 @@
 <div class="comment-wrapper" data-controller='comments'>
   <div class="comment-header">
+    <% if comment.user.avatar.attached? %>
+      <div class="comment-avatar">
+        <%= cl_image_tag comment.user.avatar.key, class: 'comment-avatar' %>
+      </div>
+    <% else %>
+      <div class="default-comment-avatar">
+        <%= comment.user.default_avatar %>
+      </div>
+    <% end %>
     <h3>
       <%= comment.user.username %>
     </h3>
-    <%= link_to "reply", "#", data: { action: "click->comments#showReplyForm"} %>
+    <div class="opacity-75 hover:opacity-100">
+      <%= link_to "reply", data: { action: "click->comments#showReplyForm"} do %>
+        <p class='ml-1 opacity-75'>-- Reply</p>  <img src="https://img.icons8.com/material-two-tone/24/000000/topic.png"/>
+      <% end %>
+    </div>
   </div>
   <div class="comment-content">
     <h4><%= comment.content %></h4>

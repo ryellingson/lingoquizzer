@@ -21,7 +21,7 @@ class MessagesController < ApplicationController
     }
     authorize @message
     if @message.save
-      ActionCable.server.broadcast 'chat_channel', content: @message.content, username: current_user.username, created_at: @message.created_at.strftime("%l:%M %p"), avatar: avatar
+      ActionCable.server.broadcast('chat_channel', content: render_to_string(partial: 'messages/message', locals: { message: @message }))
     end
   end
 

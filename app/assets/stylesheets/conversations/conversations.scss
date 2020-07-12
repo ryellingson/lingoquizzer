@@ -103,6 +103,7 @@
   align-items: center;
   flex-grow: 1;
   overflow-y: scroll;
+  padding: 5px;
 }
 
 .forum-bg {
@@ -131,6 +132,7 @@
 .conversations-current-user {
   font-size: 25px;
   margin-bottom: 30px;
+  display: flex;
 }
 
 .left-sidebar-section {
