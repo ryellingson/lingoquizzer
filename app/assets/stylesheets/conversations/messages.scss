@@ -4,6 +4,10 @@
   border: 1px solid rgba(0,0,0, 0.1);
   border-radius: 20px;
   width: fit-content;
+  &.current-user {
+    margin-left: auto;
+    border-color: black;
+  }
 }
 
 .message-content {

@@ -5,6 +5,7 @@ consumer.subscriptions.create("ChatChannel", {
   connected() {
     console.log("yeehaw we are live!");
     // Called when the subscription is ready for use on the server
+    this.alignMessages();
   },
 
   disconnected() {
@@ -13,41 +14,27 @@ consumer.subscriptions.create("ChatChannel", {
   },
 
   received(data) {
-    const messageAvatar = data.avatar.default ?
-    `<div class="default-message-avatar">
-      ${data.avatar.content}
-    </div>`
-     :
-    `<img src=${data.avatar.content} class="message-avatar">`
-
-    const message =
-    `<div class="message">
-      <div class="message-avatar-wrapper">
-        ${messageAvatar}
-      </div>
-      <div class="message-content">
-        <div class="message-header">
-          <div class="message-user">
-            <p>${data.username}</p>
-          </div>
-          <div class="message-creation-time">
-            <p>${data.created_at}</p>
-          </div>
-        </div>
-        <div class="message-text">
-          ${data.content.body}
-        </div>
-      </div>
-    </div>`;
 
     const chatBox = document.getElementById("chatbox");
 
-    chatBox.insertAdjacentHTML('beforeend', message);
+    chatBox.insertAdjacentHTML('beforeend', data.content);
+
+    this.alignMessages();
 
     chatBox.scrollTop = chatBox.scrollHeight;
 
     console.log(data.content);
     // Called when there's incoming data on the websocket for this channel
+  },
+
+  alignMessages() {
+    const messages = document.querySelectorAll('#chatbox .message');
+    const currentUserId = document.querySelector('body').dataset.userId;
+    messages.forEach(message => {
+      if (message.dataset.authorId === currentUserId) {
+        message.classList.add('current-user');
+      }
+    });
   }
 });
 
