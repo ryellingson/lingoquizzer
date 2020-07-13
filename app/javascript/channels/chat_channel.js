@@ -23,7 +23,7 @@ consumer.subscriptions.create("ChatChannel", {
 
     chatBox.scrollTop = chatBox.scrollHeight;
 
-    console.log(data.content);
+    // console.log(data.content);
     // Called when there's incoming data on the websocket for this channel
   },
 
