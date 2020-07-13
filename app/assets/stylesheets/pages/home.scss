@@ -26,6 +26,7 @@
   position: relative;
   width: 100%;
   padding: 75px 100px;
+  z-index: 1000;
 }
 
 .gateway {
@@ -39,6 +40,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1001;
 }
 
 .gateway-content {
@@ -48,6 +50,7 @@
   align-items: center;
   flex-direction: column;
   text-shadow: 0px 1px 2px #7FA269;
+  z-index: 1002;
 }
 
 .gateway-tagline {
@@ -74,7 +77,8 @@
 
 .cb-slideshow:after {
   content: '';
-  // background: no-repeat url("https://res.cloudinary.com/rys-stuff/image/upload/c_scale,h_1598/v1593283956/lingoquizzer/home_images/2mimi-thian-vdXMSiX-n6M-unsplash_kke3jd.jpg") center center;
+  background: no-repeat url("Hola05.jpg") center center;
+  z-index: 0;
 }
 
 .cb-slideshow li span {
