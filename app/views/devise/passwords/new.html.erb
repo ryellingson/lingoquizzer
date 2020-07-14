@@ -3,24 +3,14 @@
   <div class="password-reset-sidebar-left"></div>
 
   <div class="password-reset-content-wrapper">
-    <div class="password-reset-header">
-      <h2>Forgot your password?</h2>
-    </div>
-    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <h2 class='text-3xl text-center border-b w-full mb-2'>Forgot your password?</h2>
+
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), builder: MyFormBuilder, html: { method: :post }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
-    <div class="field">
-      <div class="password-reset-label">
-        <%= f.label :email %>
-      </div>
-      <div class="password-reset-form">
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "password-reset-input" %>
-      </div>
-    </div>
+    <%= f.text_section :email, "Email" %>
+    <%= f.submit "Send me reset password instructions", class: "btn btn-secondary" %>
 
-    <div class="actions">
-      <%= f.submit "Send me reset password instructions", class: "password-reset-button" %>
-    </div>
     <% end %>
   </div>
 

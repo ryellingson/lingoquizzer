@@ -6,7 +6,7 @@ export default class extends Controller {
 
   connect() {
     console.log("hello from tableGame in Stimulus")
-    const playButton = document.querySelector(".play-button");
+    const playButton = document.querySelector(".btn-primary");
     const replayButton = document.querySelector(".restart")
     const gameInput = document.querySelector(".game-input");
     const answers = document.querySelectorAll(".answer");
