@@ -12,12 +12,12 @@
       <%= f.password_section :password_confirmation, "Password Confirmation" %>
     </div>
     <div class="form-actions flex justify-center">
-      <%= f.submit "Sign up", class: "play-button border-glow mx-auto" %>
+      <%= f.submit "Sign up", class: "btn btn-primary border-glow mx-auto" %>
       <% end %>
     </div>
     <div class="form-actions flex justify-center">
       <%= link_to new_user_session_path do %>
-        <div class="password-reset-button flex justify-center items-center text-xl">
+        <div class="btn btn-secondary flex justify-center items-center text-xl">
           Login
         </div>
       <% end %>

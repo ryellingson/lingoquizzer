@@ -5,7 +5,7 @@
       <h2>Edit <%= resource_name.to_s.humanize %></h2>
     </div>
     <div class="edit-content-forms">
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }, builder: MyFormBuilder) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
@@ -16,7 +16,7 @@
           <%= f.text_field :username, autocomplete: "username" %>
         </div>
       </div>
-
+      <%= f.text_section :username, 'Username' %>
       <div class="field">
         <div class="edit-form-label eflw-b">
           <%= f.label :email %><br />
