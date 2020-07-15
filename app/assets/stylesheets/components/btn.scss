@@ -2,25 +2,11 @@ $blue: #3498db;
 $yellow: #f1c40f;
 
 .btn {
-  width: 300px;
-  padding: 10px;
+  padding: 15px;
   margin: 10px 0;
   border-radius: 4px;
   display: block;
   text-align: center;
-}
-
-.btn-secondary {
-  color: black;
-  background: palegreen;
-  border: 1px solid grey;
-  opacity: 0.8;
-  text-shadow: 0px 1px 0px #7FA269;
-}
-
-.btn-secondary:hover {
-  opacity: 1.0;
-  cursor: pointer;
 }
 
 .btn-primary {
@@ -42,3 +28,23 @@ $yellow: #f1c40f;
     cursor: pointer;
   }
 }
+
+.btn-secondary {
+  color: black;
+  background: palegreen;
+  border: 1px solid grey;
+  opacity: 0.8;
+  text-shadow: 0px 1px 0px #7FA269;
+}
+
+.btn-secondary:hover {
+  opacity: 1.0;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+  text-shadow: 1px 2px 10px rgba(0,0,0,0.6);
+}
+

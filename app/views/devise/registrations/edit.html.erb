@@ -1,55 +1,45 @@
-<div class="edit-main-container h-full">
-  <div class="edit-sidebar-left"></div>
-  <div class="edit-content-wrapper">
-    <div class="edit-content-header">
-      <h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+<div class="edit-content-header">
+  <h2>Edit <%= resource_name.to_s.humanize %></h2>
+</div>
+<div class="h-full">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }, builder: MyFormBuilder) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <%= f.text_section :username, 'Username' %>
+  <%= f.text_section :email, "Email" %>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+  <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <div class="edit-form-label eflw-c">
+      <%= f.label "Upload an Avatar" %>
     </div>
-    <div class="edit-content-forms">
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }, builder: MyFormBuilder) do |f| %>
-      <%= render "devise/shared/error_messages", resource: resource %>
-
-      <%= f.text_section :username, 'Username' %>
-      <%= f.text_section :email, "Email" %>
-
-      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-      <% end %>
-
-      <div class="field">
-        <div class="edit-form-label eflw-c">
-          <%= f.label "Upload an Avatar" %>
-        </div>
-        <div class="#">
-          <%= f.file_field :avatar, class: "edit-form-button efbw-avatar" %>
-        </div>
-      </div>
-
-      <%= f.text_section :city, "Share your city!" %>
-      <%= f.password_section :password, "Password" %>
-      <div class="edit-form-info">
-        <p>(leave blank if you don't want to change it,</p>
-        <p><%= @minimum_password_length %> characters minimum)</p>
-      </div>
-      <%= f.password_section :password_confirmation, "Password Confirmation" %>
-      <%= f.text_section :current_password, "Current Password" %>
-      <div class="edit-form-info">
-        <p>(we need your current password to confirm your changes)</p>
-      </div>
+    <div class="#">
+      <%= f.file_field :avatar, class: "edit-form-button efbw-avatar" %>
     </div>
-
-    <div class="flex justify-center">
-      <%= f.submit "Update", class: "btn btn-primary border-glow", data: { disable_with: false } %>
-    </div>
-    <% end %>
-    <div class="edit-back-button-wrapper">
-      <%= link_to "Back", user_path(current_user), class: "edit-back-button" %>
-    </div>
-
-    <div class="edit-cancel-button-wrapper">
-      <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "edit-cancel-button" %>
-    </div>
-
   </div>
 
-  <div class="edit-sidebar-right"></div>
+  <%= f.text_section :city, "Share your city!" %>
+  <%= f.password_section :password, "Password" %>
+  <div class="text-lg italic">
+    <p>(leave blank if you don't want to change it,</p>
+    <p><%= @minimum_password_length %> characters minimum)</p>
+  </div>
+  <%= f.password_section :password_confirmation, "Password Confirmation" %>
+  <%= f.password_section :current_password, "Current Password", autocomplete: "current-password" %>
+  <div class="text-lg italic">
+    <p>(we need your current password to confirm your changes)</p>
+  </div>
+ <div class="">
+  <%= f.submit "Update", class: "btn btn-primary border-glow", data: { disable_with: false } %>
+  <%= link_to "Back", user_path(current_user), class: "btn btn-secondary" %>
+  <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger" %>
+ </div>
+ <% end %>
 </div>
+
+
+
