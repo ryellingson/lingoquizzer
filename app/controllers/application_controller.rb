@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   before_action :update_last_seen_at, if: -> { user_signed_in? && (current_user.last_seen_at.nil? || current_user.last_seen_at < 5.minutes.ago) }
   before_action :authenticate_user!
   before_action :set_online_users
+  layout :layout_by_resource
 
   include Pundit
   # Pundit: white-list approach.
@@ -15,6 +16,14 @@ class ApplicationController < ActionController::Base
   #   redirect_to(root_path)
   # end
   private
+
+  def layout_by_resource
+    if devise_controller?
+      "devise"
+    else
+      "application"
+    end
+  end
 
   def set_online_users
     @online_users = User.where("last_seen_at > ?", 5.minutes.ago)

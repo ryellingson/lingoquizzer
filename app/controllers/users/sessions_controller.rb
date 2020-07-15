@@ -2,7 +2,6 @@
 
 class Users::SessionsController < Devise::SessionsController
   respond_to :html, :js
-  layout "guest"
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
