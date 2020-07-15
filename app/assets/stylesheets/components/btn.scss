@@ -7,14 +7,15 @@ $yellow: #f1c40f;
   margin: 10px 0;
   border-radius: 4px;
   display: block;
+  text-align: center;
 }
 
 .btn-secondary {
-    color: black;
-    background: palegreen;
-    border: 1px solid grey;
-    opacity: 0.8;
-    text-shadow: 0px 1px 0px #7FA269;
+  color: black;
+  background: palegreen;
+  border: 1px solid grey;
+  opacity: 0.8;
+  text-shadow: 0px 1px 0px #7FA269;
 }
 
 .btn-secondary:hover {
@@ -27,7 +28,6 @@ $yellow: #f1c40f;
   background-color: rgba(61, 152, 212, 0.3);
   color: white;
   text-shadow: 1px 2px 10px rgba(0,0,0,0.6);
-  text-align: center;
 }
 
 .border-glow {
