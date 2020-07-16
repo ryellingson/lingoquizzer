@@ -1,5 +1,4 @@
-class PostsController < ApplicationController
-  before_action :set_language
+class PostsController < ConversationsController
   skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
@@ -62,10 +61,6 @@ class PostsController < ApplicationController
   end
 
   private
-
-  def set_language
-    @language = Language.find_by(language_code: params[:lang])
-  end
 
   def post_params
     params.require(:post).permit(:language_id, :title, :content)
