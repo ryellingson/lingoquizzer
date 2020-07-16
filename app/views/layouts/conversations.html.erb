@@ -109,7 +109,7 @@
     <div class="sidebar-right">
       <div class="sidebar-right-media">
         <div class="chat-lesson">
-          <iframe width="475" height="300" src="https://www.youtube.com/embed/45vSd2dLaQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="475" height="300" src="<%= @language.video_url || 'https://www.youtube.com/embed/45vSd2dLaQU' %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="chat-entertainment">
           <%= image_tag "japanese-street.jpg" %>

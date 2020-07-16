@@ -1,9 +1,8 @@
-class MessagesController < ApplicationController
+class MessagesController < ConversationsController
   before_action :authenticate_user!, :set_online_users
 
   def index
     if params[:lang]
-      @language = Language.find_by(language_code: params[:lang])
       @messages = @language.messages.order(created_at: :desc).limit(100).reverse
       skip_policy_scope
     else
