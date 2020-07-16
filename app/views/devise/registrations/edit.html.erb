@@ -33,10 +33,10 @@
   <div class="text-lg italic">
     <p>(we need your current password to confirm your changes)</p>
   </div>
- <div class="">
-  <%= f.submit "Update", class: "btn btn-primary border-glow", data: { disable_with: false } %>
-  <%= link_to "Back", user_path(current_user), class: "btn btn-secondary" %>
-  <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger" %>
+ <div class="flex flex-col items-center">
+  <%= f.submit "Update", class: "btn btn-primary border-glow w-48", data: { disable_with: false } %>
+  <%= link_to "Back", user_path(current_user), class: "btn btn-secondary w-48" %>
+  <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger w-48" %>
  </div>
  <% end %>
 </div>
