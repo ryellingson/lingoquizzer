@@ -34,11 +34,14 @@ class User < ApplicationRecord
   end
 
   def best_score(game)
-
   end
 
   def login
     @login || self.username || self.email
+  end
+
+  def banned?
+    banned
   end
 
   def self.top_users

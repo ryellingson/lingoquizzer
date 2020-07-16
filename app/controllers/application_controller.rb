@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :set_online_users
   layout :layout_by_resource
-  before_filter :banned?
+  before_action :banned?
 
   include Pundit
   # Pundit: white-list approach.
@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
   def banned?
     if current_user.present? && current_user.banned?
       sign_out current_user
-      flash[:error] = "This account has been suspended..."
+      flash[:notice] = "This account has been suspended..."
       root_path
     end
   end
