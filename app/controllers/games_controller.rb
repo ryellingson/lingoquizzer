@@ -10,8 +10,7 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
     authorize @game
     # Initializes a Markdown parser
-    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-    @description = markdown.render(@game.description)
+    @description = @game.markdown_content
     if @game.icon_based
       @problems = @game.problems.sample(32)
     else

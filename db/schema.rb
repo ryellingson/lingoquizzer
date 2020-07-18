@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_16_013634) do
+ActiveRecord::Schema.define(version: 2020_07_18_022337) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(version: 2020_07_16_013634) do
     t.integer "category"
     t.integer "difficulty"
     t.integer "genre"
+    t.text "markdown_content"
     t.index ["language_id"], name: "index_games_on_language_id"
   end
 
@@ -90,6 +91,7 @@ ActiveRecord::Schema.define(version: 2020_07_16_013634) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "language_code"
+    t.string "video_url"
   end
 
   create_table "messages", force: :cascade do |t|
