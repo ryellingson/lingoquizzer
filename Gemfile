@@ -5,6 +5,10 @@ ruby '2.6.6'
 
 # Begin Custom Gems
 
+gem 'blazer'
+
+gem 'rails_admin'
+
 gem 'cloudinary'
 
 gem 'mail_form'

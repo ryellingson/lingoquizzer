@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  root to: 'pages#home'
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   post 'messages', to: 'messages#create'
 
   devise_for :users, controllers: {
@@ -7,7 +10,9 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  root to: 'pages#home'
+  authenticate :user, ->(user) { user.admin? } do
+    mount Blazer::Engine, at: "blazer"
+  end
 
   resources :languages, only: :index, path: "/", param: :lang do
     member do
