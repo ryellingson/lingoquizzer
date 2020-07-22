@@ -1,6 +1,5 @@
 class ConversationsController < ApplicationController
-  before_action :set_language
-
+  before_action :set_language, :set_slideshow_keywords
 
   private
 
@@ -8,9 +7,13 @@ class ConversationsController < ApplicationController
     @language = Language.find_by(language_code: params[:lang])
   end
 
-
-      # en: "https://www.youtube.com/embed/B1ed-pfqdZg"
-      # ja: "https://www.youtube.com/embed/45vSd2dLaQU"
-      # fr: "https://www.youtube.com/embed/ujDtm0hZyII"
-      # es: "https://www.youtube.com/embed/lO9X-7beRa8"
+  def set_slideshow_keywords
+    slideshow_keywords_data = {
+      ja: "japan,kyushu,hokkaido",
+      en: "england,united%20states,australia,new%20zealand",
+      es: "mexico,spain,latin%20america,costa%20rica",
+      fr: "france,cameroon,quebec"
+    }
+    @slideshow_keywords = slideshow_keywords_data[params[:lang].to_sym]
+  end
 end
