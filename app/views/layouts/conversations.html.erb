@@ -113,10 +113,15 @@
             <iframe width="475" height="300" src="<%= @language.video_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <% end %>
         </div>
-        <div class="chat-entertainment slideshow" data-controller="slideshow">
-          <%= image_tag "https://source.unsplash.com/900x900/?#{@slideshow_keywords}&#{rand(1000)}", data: {target: "slideshow.bottomImage"} %>
-          <img class="opacity-0 fade-out" data-target="slideshow.topImage" data-keywords="<%= @slideshow_keywords %>">
-          <%#= image_tag "", data: {target: "slideshow.topImage"}, class: "opacity-0 fade-out" %>
+        <div class="chat-entertainment slideshow"
+          data-controller="slideshow"
+          data-target="slideshow.settings"
+          data-slide-urls="<%= @slide_urls.to_json %>"
+          data-fade-duration=2000
+          data-slide-duration=5000>
+          <%= image_tag @slide_urls.first, data: {target: "slideshow.bottomImage"} %>
+          <!-- not using image_tag helper because it leaves a broken image icon for first image -->
+          <img class="opacity-0 fade-out" data-target="slideshow.topImage">
         </div>
       </div>
     </div>
