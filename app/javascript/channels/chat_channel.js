@@ -37,21 +37,3 @@ consumer.subscriptions.create("ChatChannel", {
     });
   }
 });
-
-// var submit_messages;
-
-// $(document).on('turbolinks:load', function() {
-//   submit_messages();
-// })
-
-
-// submit_messages =  function(){
-//   $('#message_content').on('keydown', function(event) {
-//     if (event.keyCode === 13) {
-//       $('input').click()
-//       event.target.value = '';
-//       event.preventDefault();
-//       console.log('you hit enter lets clear input');
-//     }
-//   })
-// }

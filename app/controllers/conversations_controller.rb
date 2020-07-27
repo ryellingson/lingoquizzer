@@ -1,5 +1,6 @@
 class ConversationsController < ApplicationController
-  before_action :set_language, :set_slideshow_keywords
+  before_action :set_language
+  before_action :set_slideshow_keywords
 
   private
 
@@ -14,7 +15,7 @@ class ConversationsController < ApplicationController
       es: "mexico,spain,latin%20america,costa%20rica",
       fr: "france,cameroon,quebec"
     }
-    @slideshow_keywords = slideshow_keywords_data[params[:lang].to_sym]
+    @slideshow_keywords = slideshow_keywords_data[@language.language_code.to_sym]
     @slide_urls = ["https://source.unsplash.com/900x900/?#{@slideshow_keywords}"]
   end
 end

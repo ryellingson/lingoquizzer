@@ -1,5 +1,6 @@
 class PostsController < ConversationsController
   skip_before_action :authenticate_user!, only: [ :index, :show ]
+  skip_before_action :set_slideshow_keywords, only: [ :update, :create, :show, :edit ]
 
   def index
     if params[:lang]
@@ -21,6 +22,7 @@ class PostsController < ConversationsController
     authorize @post
     @comment = Comment.new
     @language = @post.language
+    set_slideshow_keywords
     render layout: "conversations"
   end
 
@@ -35,15 +37,18 @@ class PostsController < ConversationsController
     @post = Post.find(params[:id])
     authorize @post
     @language = @post.language
+    set_slideshow_keywords
     render layout: "conversations"
   end
 
   def update
     @post = Post.find(params[:id])
+    @language = @post.language
     authorize @post
     if @post.update(post_params)
       redirect_to post_path(@post)
     else
+      set_slideshow_keywords
       render :edit, layout: "conversations"
     end
   end
@@ -56,6 +61,7 @@ class PostsController < ConversationsController
     if @post.save
       redirect_to post_path(@post)
     else
+      set_slideshow_keywords
       render :new, layout: "conversations"
     end
   end

@@ -1,5 +1,6 @@
 class MessagesController < ConversationsController
   before_action :authenticate_user!, :set_online_users
+  skip_before_action :set_slideshow_keywords, only: :create
 
   def index
     if params[:lang]

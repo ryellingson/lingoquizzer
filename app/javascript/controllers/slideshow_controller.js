@@ -13,7 +13,7 @@ export default class extends Controller {
     setInterval(() => {
       this.nextIndex += 1
       this.nextIndex = this.nextIndex % this.slideUrls.length
-      const imageUrl = this.slideUrls[this.nextIndex]
+      let imageUrl = this.slideUrls[this.nextIndex]
       if (imageUrl.match(/^https:\/\/source\.unsplash\.com/)) imageUrl += `&${Math.random()}`;
       this.imageTransition(imageUrl, fadeDuration)
     }, slideDuration)

@@ -90,7 +90,7 @@
 .post-create-wrapper {
   background: white;
   border-radius: 10px;
-  height: 400px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
