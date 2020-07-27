@@ -1,17 +1,25 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = [ "topImage", "bottomImage" ]
+  static targets = [ "topImage", "bottomImage", "settings" ]
 
   connect() {
     console.log(this.topImageTarget, this.bottomImageTarget);
-    this.keywords = this.topImageTarget.dataset.keywords
     this.transitionIn = true;
-    setInterval(() => this.imageTransition(), 5000)
+    const slideDuration = this.settingsTarget.dataset.slideDuration
+    const fadeDuration = this.settingsTarget.dataset.fadeDuration
+    this.slideUrls = JSON.parse(this.settingsTarget.dataset.slideUrls)
+    this.nextIndex = 0
+    setInterval(() => {
+      this.nextIndex += 1
+      this.nextIndex = this.nextIndex % this.slideUrls.length
+      const imageUrl = this.slideUrls[this.nextIndex]
+      if (imageUrl.match(/^https:\/\/source\.unsplash\.com/)) imageUrl += `&${Math.random()}`;
+      this.imageTransition(imageUrl, fadeDuration)
+    }, slideDuration)
   }
 
-  imageTransition() {
-    const imageUrl = `https://source.unsplash.com/900x900/?${this.keywords}&${Math.random()}`;
+  imageTransition(imageUrl, fadeDuration = 2000) {
     setTimeout(() => {
       this.topImageTarget.classList.toggle("fade-in")
       this.topImageTarget.classList.toggle("opacity-0")

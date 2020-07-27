@@ -1,11 +1,14 @@
 ## Animals
 
+---
+
 Time to practice your animals in Japanese!
 
- | Icon | Romaji | Kana | Kanji |
- | ----------  | -- | -- | --|
+ |Icon|Romaji|Kana|Kanji|
+ |:--|:--:|--:|:--|
  | :dog:　-> | inu | いぬ | 犬 |
  | :frog:　-> | kaeru | かえる | 蛙 |
+
  etc...
 
  Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
@@ -17,3 +20,10 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 Try to get everyone right for a **bonus**!!!
 
 がんばって!!!
+
+| 12 | Toby |
+
+| Icon | Romaji | Kana | Kanji |
+| ------------- | ------------- | -- | -- |
+| :dog:　->  | inu  | いぬ | 犬 |
+| :frog:　->  | kaeru  | かえる | 蛙 |

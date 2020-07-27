@@ -15,5 +15,6 @@ class ConversationsController < ApplicationController
       fr: "france,cameroon,quebec"
     }
     @slideshow_keywords = slideshow_keywords_data[params[:lang].to_sym]
+    @slide_urls = ["https://source.unsplash.com/900x900/?#{@slideshow_keywords}"]
   end
 end
