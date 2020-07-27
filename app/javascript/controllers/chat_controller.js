@@ -7,6 +7,7 @@ export default class extends Controller {
   connect() {
     console.log('Hello, from the conversations controller')
     this.scrollToBottom()
+    this.alignMessages()
   }
 
   new() {
@@ -41,5 +42,15 @@ export default class extends Controller {
       this.chatInputTarget.value += emoji;
     });
     picker.togglePicker(event.currentTarget);
+  }
+
+  alignMessages() {
+    const messages = document.querySelectorAll('#chatbox .message');
+    const currentUserId = document.querySelector('body').dataset.userId;
+    messages.forEach(message => {
+      if (message.dataset.authorId === currentUserId) {
+        message.classList.add('current-user');
+      }
+    });
   }
 }
