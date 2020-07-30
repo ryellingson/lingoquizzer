@@ -98,7 +98,6 @@ export default class extends Controller {
     }
 
     const updateCurrentAnswer = (shift) => {
-      console.log(currentAnswer.innerHTML)
       if (!currentAnswer.innerHTML) {
         currentAnswer.classList.add("empty-answer");
       } else {
@@ -106,11 +105,14 @@ export default class extends Controller {
       }
       currentAnswer.parentNode.classList.remove("active-row");
       // if shift = "next" add an index else it subtracts an index
+      gameInput.focus();
       const change = (shift == "next" ? 1 : -1);
       currentIndex = (((currentIndex + change) % answerCount) + answerCount) % answerCount;
       currentAnswer = answers[currentIndex];
       currentAnswer.parentNode.classList.add("active-row");
-      gameInput.focus();
+      console.log(currentAnswer);
+      // currentAnswer.parentNode.scrollIntoView({block: "center", behavior: "smooth"}); Breaks with input ????
+      currentAnswer.parentNode.scrollIntoView({block: "center"});
     }
 
     const postResults = () => {

@@ -1,18 +1,18 @@
-<div class="game-header">
+<div class="game-header hidden sm:flex">
   <%= link_to root_path do %>
-  <div class="logo">
-    <%= image_tag "logo.png" %> <!-- change to svg?  -->
-  </div>
+    <div class="logo">
+      <%= image_tag "logo.png" %> <!-- change to svg?  -->
+    </div>
   <% end %> <!-- link to root path -->
   <div class="game-header-hub">
     <%= link_to games_path do %>
-    <div class="game-header-button stroke">
-      <h2 class="p-absolute">Games</h2>
-      <svg>
-        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-      </svg>
-    </div>
+      <div class="game-header-button stroke">
+        <h2 class="p-absolute">Games</h2>
+        <svg>
+          <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+          <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        </svg>
+      </div>
     <% end %> <!-- link to games path -->
     <div class="table-title text-4xl">
       <h1><%= @game.name %></h1>

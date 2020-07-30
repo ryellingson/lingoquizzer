@@ -11,7 +11,7 @@ const initDropDowns = () => {
   }
   startDropDownFromSelector("#login-dropdown");
   startDropDownFromSelector("#contact-dropdown");
-
+  startDropDownFromSelector("#hamburger");
 }
 
 export { initDropDowns }
