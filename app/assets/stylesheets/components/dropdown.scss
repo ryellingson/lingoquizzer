@@ -20,7 +20,8 @@
     color: #8AA8BD;
   }
 
-  .wrapper-dropdown:after {
+  .wrapper-dropdown:after.on {
+    // must add the on class for the little arrow to display
     content: "";
     width: 0;
     height: 0;
