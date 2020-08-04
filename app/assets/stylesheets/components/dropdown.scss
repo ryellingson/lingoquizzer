@@ -42,6 +42,7 @@
   left: 0;
   right: 0;
 
+
     /* Styles */
     background: white;
     border-radius: inherit;
@@ -122,3 +123,13 @@
   width: 100%;
   z-index: 3;
 }
+
+#hamburger {
+  white-space: nowrap;
+  direction: rtl;
+  .dropdown {
+    width: fit-content;
+    font-size: 20px;
+  }
+}
+

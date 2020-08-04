@@ -46,7 +46,6 @@ export default class extends Controller {
 
 
     const startGame = () => {
-      console.log("startGame");
       interval = setInterval(updateTimer, 1000);
       playButton.classList.add("hidden");
       gameInput.parentNode.classList.remove("hidden");
@@ -66,6 +65,7 @@ export default class extends Controller {
       if (Object.values(JSON.parse(currentAnswer.dataset.answers)).includes(gameInput.value.trim())) {
         currentAnswer.classList.add("correct-answer");
         score += gameDataObject.score;
+        console.log("score", score);
         scoreShow.innerHTML = `<p>${score}pts<p>`;
         gameInput.value = "";
         currentAnswer.innerHTML = buildAnswerCards(JSON.parse(currentAnswer.dataset.answers));
@@ -93,7 +93,6 @@ export default class extends Controller {
       } else {
         cards += `<div>${answer["romaji"]}</div>`;
       }
-      console.log(cards);
       return(cards);
     }
 
@@ -104,13 +103,12 @@ export default class extends Controller {
         currentAnswer.classList.remove("empty-answer");
       }
       currentAnswer.parentNode.classList.remove("active-row");
-      // if shift = "next" add an index else it subtracts an index
       gameInput.focus();
+      // if shift = "next" add an index else it subtracts an index
       const change = (shift == "next" ? 1 : -1);
       currentIndex = (((currentIndex + change) % answerCount) + answerCount) % answerCount;
       currentAnswer = answers[currentIndex];
       currentAnswer.parentNode.classList.add("active-row");
-      console.log(currentAnswer);
       // currentAnswer.parentNode.scrollIntoView({block: "center", behavior: "smooth"}); Breaks with input ????
       currentAnswer.parentNode.scrollIntoView({block: "center"});
     }
@@ -153,13 +151,13 @@ export default class extends Controller {
       const perfectPlayDisplay = correctCountValue === answerCount ?
         `<div class="perfect-play-display">Perfect!</div>` : ""
       const correctAnswers =
-        `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>`;
+        `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>`
       const timeBonus =
         `<div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>`
       const scoreDisplay =
         `<div class="endgame-modal-item">Score: ${score}pts</div>`
 
-      const htmlToRender = perfectPlayDisplay + correctAnswers + timeBonus + scoreDisplay;
+      const htmlToRender = perfectPlayDisplay + timeBonus + correctAnswers  + scoreDisplay;
 
       gameStats.insertAdjacentHTML("afterbegin", htmlToRender)
     }
