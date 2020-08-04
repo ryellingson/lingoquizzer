@@ -1,24 +1,28 @@
-<div class="game-controls">
+<div class="game-controls p-3">
   <%= link_to game_path(@game, autoplay: true) do %>
   <div class="btn btn-primary border-glow text-3xl font-bold m-3">
     <p>Play</p>
   </div>
   <% end %>
   <div class="hidden hub">
-    <div class="shift-buttons">
-      <button class="back-button">Back</button>
+    <div class="shift-buttons flex mr-1">
+      <button class="back-button mr-1">Back</button>
       <button class="next-button">Next</button>
     </div>
-    <input type="text" class="game-input pl-1">
+    <input type="text" class="game-input pl-1 mr-1 mt-2">
   </div>
-  <div class="correct-count">
-    <p>0/<%= @problems.count %></p>
+  <div class="game-stat-box hidden sm:flex mr-1"> <!-- correct count -->
+    <p class="correct-count">0/<%= @problems.count %></p>
   </div>
-  <div class="timer">
-    <p><%= calculate_time_from_seconds(@game.play_time) %></p>
+  <div class="game-stat-box hidden sm:flex mr-1"> <!-- score -->
+    <p class="score">0pts</p>
   </div>
-  <div class="score">
-    <p>0pts</p>
+  <div class="game-stat-box sm:hidden text-xl mr-1"> <!-- mobile view -->
+    <p class='score'>0pts</p>
+    <p class='correct-count'>0/<%= @problems.count %></p>
+  </div>
+  <div class="game-stat-box"> <!-- timer -->
+    <p class='timer'><%= calculate_time_from_seconds(@game.play_time) %></p>
   </div>
   <div class="modal-bg">
     <div class="game-stats modal">
