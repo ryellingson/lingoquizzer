@@ -4,12 +4,12 @@
     <p>Play</p>
   </div>
   <% end %>
-  <div class="hidden hub">
-    <div class="shift-buttons flex mr-1">
+  <div class="hidden hub mr-1">
+    <div class="shift-buttons flex">
       <button class="back-button mr-1">Back</button>
       <button class="next-button">Next</button>
     </div>
-    <input type="text" class="game-input pl-1 mr-1 mt-2">
+    <input type="text" class="game-input pl-1 mt-2">
   </div>
   <div class="game-stat-box hidden sm:flex mr-1"> <!-- correct count -->
     <p class="correct-count">0/<%= @problems.count %></p>

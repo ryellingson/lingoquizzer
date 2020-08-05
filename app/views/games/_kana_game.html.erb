@@ -2,11 +2,7 @@
   <%= render "game_controls" %>
 </div>
 <div class="table-wrapper">
-  <table class="content-table" id="gameTable" data-controller="tablegame">
-    <tbody>
-      <tr class='grid grid-cols-2'>
-        <%= render partial: "kana_game_col", locals: { problems: @problems, question_header: @game.question_header, icon_based: @game.icon_based } %>
-      </tr>
-    </tbody>
-   </table>
+  <div class="content-table" id="gameTable" data-controller="tablegame">
+    <%= render partial: "kana_game_col", locals: { problems: @problems, question_header: @game.question_header, icon_based: @game.icon_based } %>
+  </div>
 </div>
