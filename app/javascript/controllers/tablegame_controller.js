@@ -13,9 +13,9 @@ export default class extends Controller {
     const answerCount = answers.length
     const backButton = document.querySelector(".back-button");
     const nextButton = document.querySelector(".next-button");
-    const correctCountShow = document.querySelector(".correct-count");
+    const correctCountShow = document.querySelectorAll(".correct-count");
     const timeShow = document.querySelector(".timer");
-    const scoreShow = document.querySelector(".score");
+    const scoreShow = document.querySelectorAll(".score");
     const endGameModal = document.querySelector(".modal-bg");
     const gameStats = document.querySelector(".game-stats-content");
     const url_string = window.location.href;
@@ -63,15 +63,17 @@ export default class extends Controller {
 
     const handleInputChange = () => {
       if (Object.values(JSON.parse(currentAnswer.dataset.answers)).includes(gameInput.value.trim())) {
-        currentAnswer.classList.add("correct-answer");
-        score += gameDataObject.score;
-        console.log("score", score);
-        scoreShow.innerHTML = `<p>${score}pts<p>`;
+        if (!currentAnswer.classList.contains("correct-answer")) {
+          currentAnswer.classList.add("correct-answer");
+          score += gameDataObject.score;
+          console.log("score", score, scoreShow);
+          scoreShow.forEach(element => element.innerHTML = `${score}pts`);
+          currentAnswer.innerHTML = buildAnswerCards(JSON.parse(currentAnswer.dataset.answers));
+        }
         gameInput.value = "";
-        currentAnswer.innerHTML = buildAnswerCards(JSON.parse(currentAnswer.dataset.answers));
         updateCurrentAnswer("next");
         correctCountValue += 1;
-        correctCountShow.innerHTML = `<p>${correctCountValue}/${answerCount}</p>`;
+        correctCountShow.forEach(element => element.innerHTML = `${correctCountValue}/${answerCount}`);
         if (correctCountValue == answerCount) { endGame() };
         if (gameInput.value == null) currentAnswer.classList.add("empty-answer");
       }
@@ -141,7 +143,7 @@ export default class extends Controller {
       document.querySelector(".game-stats").classList.remove("hidden");
       clearInterval(interval);
       score += timeLeft;
-      scoreShow.innerHTML = `<p>${score}pts<p>`;
+      scoreShow.forEach(element => element.innerHTML = `${score}pts`);
       displayEndGameModal();
       postResults();
     }
@@ -152,8 +154,8 @@ export default class extends Controller {
         `<div class="perfect-play-display">Perfect!</div>` : ""
       const correctAnswers =
         `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>`
-      const timeBonus =
-        `<div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>`
+      const timeBonus = timeLeft > 0 ?
+        `<div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>` : ``
       const scoreDisplay =
         `<div class="endgame-modal-item">Score: ${score}pts</div>`
 
