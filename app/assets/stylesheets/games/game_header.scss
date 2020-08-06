@@ -11,9 +11,6 @@
 
 .game-header {
   border-bottom: 1px solid #dddddd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 10;
 }
 
@@ -21,7 +18,6 @@
   display: flex;
   justify-content: space-between;
   width: 800px;
-  margin-left: 160px
 }
 
 .game-header .logo {
