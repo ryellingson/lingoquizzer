@@ -4,26 +4,19 @@
 
 Time to practice your animals in Japanese!
 
- |Icon|Romaji|Kana|Kanji|
- |:--|:--:|--:|:--|
- | :dog:　-> | inu | いぬ | 犬 |
- | :frog:　-> | kaeru | かえる | 蛙 |
+| Icon | Romaji | Kana | Kanji |
+| ------------- | ------------- | -- | -- |
+| 🐶　->  | inu  | いぬ | 犬 |
+| 🐸　->  | kaeru  | かえる | 蛙 |
 
- etc...
+etc...
 
- Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
 
- Just hit **PLAY** to get started!
+Just hit **PLAY** to get started!
 
 You can skip an answer you don't know with the **back** and **next** buttons, or with the **arrows** on your keyboard.
 
 Try to get everyone right for a **bonus**!!!
 
 がんばって!!!
-
-| 12 | Toby |
-
-| Icon | Romaji | Kana | Kanji |
-| ------------- | ------------- | -- | -- |
-| :dog:　->  | inu  | いぬ | 犬 |
-| :frog:　->  | kaeru  | かえる | 蛙 |
