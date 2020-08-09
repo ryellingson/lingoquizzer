@@ -18,7 +18,7 @@
               <tr class="#">
                 <td>
                   <% if @game.icon_based %>
-                    <%= image_tag problem.question %>
+                    <%= image_tag problem.question, class: "mx-auto" %>
                   <% else %>
                     <%= problem.question %>
                   <% end %>

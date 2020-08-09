@@ -3,11 +3,11 @@
   <%= render "game_header" %>
   <%= render "shared/header_mobile" %>
 
-  <div class="game-container mx-auto" id="game-data" data-category="<%= @game.category %>" data-score="<%= @game.score %>" data-play-time="<%= @game.play_time %>" data-genre="<%= @game.genre %>" data-difficulty="<%= @game.difficulty %>" data-character-type="<%= @game.character_type %>" data-url="<%= game_plays_url(@game) %>">
-    <% if ["Hiragana 1", "Katakana 1", "Hiragana 2", "Katakana 2", "Ultimate Hiragana", "Ultimate Katakana"].include?(@game.name) %>
+  <div class="game-container mx-auto sm:w-8/12 md:w-7/12 lg:w-5/12" id="game-data" data-category="<%= @game.category %>" data-score="<%= @game.score %>" data-play-time="<%= @game.play_time %>" data-genre="<%= @game.genre %>" data-difficulty="<%= @game.difficulty %>" data-character-type="<%= @game.character_type %>" data-url="<%= game_plays_url(@game) %>">
+    <%# if ["Hiragana 1", "Katakana 1", "Hiragana 2", "Katakana 2", "Ultimate Hiragana", "Ultimate Katakana"].include?(@game.name) %>
     <%= render "kana_game" %>
-    <% else %>
-    <%= render "icon_game" %>
-    <% end %>
+    <%# else %>
+    <%#= render "icon_game" %>
+    <%# end %>
   </div>
 </div>

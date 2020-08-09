@@ -19,3 +19,10 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 Try to get everyone right for a **bonus**!!!
 
 がんばって!!!
+
+| Hiragana | Romaji |
+| ---- | ---- |
+|
+
+
+

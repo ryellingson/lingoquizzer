@@ -1,0 +1,69 @@
+.markdown {
+  .content {
+    min-width: 345px;
+    right: 15px;
+    top: 70px;
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+
+  .popover span:hover + .content, .popover span:active + .content {
+    opacity: 1;
+  }
+
+  p {
+    margin: 10px 0px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  hr {
+    border-color: black;
+  }
+
+  table {
+    border: 1px solid rgb(221,221,221);
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table td, table th {
+    border: 1px solid rgb(221,221,221);
+    padding: 3px 4px;
+  }
+  table tbody td {
+    font-size: 13px;
+    background-color: rgba(0,0,0,0.1)
+  }
+  table td:nth-child(even) {
+    background: #EBEBEB;
+  }
+  table thead {
+    background: #FFFFFF;
+    border-bottom: 1px solid rgb(221,221,221);
+  }
+  table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-left: 1px solid rgb(221,221,221);
+    background-color: rgba(0,0,0,0.3)
+  }
+  table thead th:first-child {
+    border-left: none;
+  }
+
+  table tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    border-top: 1px solid rgb(221,221,221);
+  }
+  table tfoot td {
+    font-size: 14px;
+  }
+}
