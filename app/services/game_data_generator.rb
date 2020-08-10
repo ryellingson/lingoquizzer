@@ -1,5 +1,11 @@
 class GameDataGenerator < ApplicationService
-  def initialize(game, target_language)
+  require "google/cloud/translate"
+
+  def initialize(game_data, target_language)
+   # initializes a client
+ 　 @translate = Google::Cloud::Translate.new version: :v2, project_id: ENV["CLOUD_PROJECT_ID"]
+    @target_language = target_language
+    @game_data = JSON.parse(File.open(game_data))
     # loads the japanese game file
     # sets the target langauge
   end
