@@ -1,536 +1,354 @@
 [
   {
     "problem_icon": "ant.png",
-    "kana": "あり",
-    "kanji": "蟻",
-    "romaji": "ari"
+    "answer": "la hormiga"
   },
   {
     "problem_icon": "baby-chick.png",
-    "kana": "ひなどり",
-    "kanji": "雛鳥",
-    "romaji": "hinadori"
+    "answer": "el pollito"
   },
   {
     "problem_icon": "badger.png",
-    "kana": "あなぐま",
-    "kanji": "穴熊",
-    "romaji": "anaguma"
+    "answer": "el tejón"
   },
   {
     "problem_icon": "bat.png",
-    "kana": "こうもり",
-    "kanji": "蝙蝠",
-    "romaji": "koumori"
+    "answer": "el murciélago"
   },
   {
     "problem_icon": "bear.png",
-    "kana": "くま",
-    "kanji": "熊",
-    "romaji": "kuma"
+    "answer": "el oso"
   },
   {
     "problem_icon": "bird.png",
-    "kana": "とり",
-    "kanji": "鳥",
-    "romaji": "tori"
+    "answer": "el pájaro"
   },
   {
     "problem_icon": "blowfish.png",
-    "kana": "ふぐ",
-    "kanji": "河豚",
-    "romaji": "fugu"
+    "answer": "el pez globo"
   },
   {
     "problem_icon": "bug.png",
-    "kana": "むし",
-    "kanji": "虫",
-    "romaji": "mushi"
+    "answer": "el bicho"
   },
   {
     "problem_icon": "butterfly.png",
-    "kana": "ちょうちょう",
-    "kanji": "蝶々",
-    "romaji": "chouchou"
+    "answer": "la mariposa"
   },
   {
     "problem_icon": "camel.png",
-    "kana": "キャメル",
-    "kanji": "キャメル",
-    "romaji": "kyameru"
+    "answer": "el camello"
   },
   {
     "problem_icon": "cat.png",
-    "kana": "ねこ",
-    "kanji": "猫",
-    "romaji": "neko"
+    "answer": "el gato"
   },
   {
     "problem_icon": "rooster.png",
-    "kana": "にわとり",
-    "kanji": "鶏",
-    "romaji": "niwatori"
+    "answer": "el gallo"
   },
   {
     "problem_icon": "chipmunk.png",
-    "kana": "しまりる",
-    "kanji": "縞栗鼠",
-    "romaji": "inonoshi"
+    "answer": "la ardilla"
   },
   {
     "problem_icon": "cow.png",
-    "kana": "うし",
-    "kanji": "牛",
-    "romaji": "ushi"
+    "answer": "la vaca"
   },
   {
     "problem_icon": "crab.png",
-    "kana": "かに",
-    "kanji": "蟹",
-    "romaji": "inonoshi"
+    "answer": "el cangrejo"
   },
   {
     "problem_icon": "cricket.png",
-    "kana": "こおろぎ",
-    "kanji": "蟋蟀",
-    "romaji": "koorogi"
+    "answer": "el grillo"
   },
   {
     "problem_icon": "crocodile.png",
-    "kana": "わに",
-    "kanji": "鰐",
-    "romaji": "wani"
+    "answer": "el cocodrilo"
   },
   {
     "problem_icon": "deer.png",
-    "kana": "いののし",
-    "kanji": "猪",
-    "romaji": "inonoshi"
+    "answer": "el ciervo"
   },
   {
     "problem_icon": "dog.png",
-    "kana": "いぬ",
-    "kanji": "犬",
-    "romaji": "inu"
+    "answer": "el perro"
   },
   {
     "problem_icon": "boar.png",
-    "kana": "いののし",
-    "kanji": "猪",
-    "romaji": "inonoshi"
+    "answer": "el jabalí"
   },
   {
     "problem_icon": "dolphin.png",
-    "kana": "イルカ",
-    "kanji": "海豚",
-    "romaji": "iruka"
+    "answer": "el delfin"
   },
   {
     "problem_icon": "dove.png",
-    "kana": "はと",
-    "kanji": "鳩",
-    "romaji": "hato"
+    "answer": "la paloma"
   },
   {
     "problem_icon": "dragon.png",
-    "kana": "りゅう",
-    "kanji": "竜",
-    "romaji": "ryuu"
+    "answer": "el dragón"
   },
   {
     "problem_icon": "duck.png",
-    "kana": "アヒル",
-    "kanji": "家鴨",
-    "romaji": "ahiru"
+    "answer": "el pato"
   },
   {
     "problem_icon": "eagle.png",
-    "kana": "わし",
-    "kanji": "鷲",
-    "romaji": "washi"
+    "answer": "el águila"
   },
   {
     "problem_icon": "elephant.png",
-    "kana": "ぞう",
-    "kanji": "象",
-    "romaji": "zou"
+    "answer": "el elefante"
   },
   {
     "problem_icon": "ewe.png",
-    "kana": "ひつじ",
-    "kanji": "羊",
-    "romaji": "hitsuji"
+    "answer": "la oveja"
   },
   {
     "problem_icon": "fish.png",
-    "kana": "さかな",
-    "kanji": "魚",
-    "romaji": "sakana"
+    "answer": "el pez"
   },
   {
     "problem_icon": "flamingo.png",
-    "kana": "フラミンゴ",
-    "kanji": "フラミンゴ",
-    "romaji": "furamingo"
+    "answer": "el flamenco"
   },
   {
     "problem_icon": "fox.png",
-    "kana": "きつね",
-    "kanji": "狐",
-    "romaji": "kitsune"
+    "answer": "el zorro"
   },
   {
     "problem_icon": "frog.png",
-    "kana": "かえる",
-    "kanji": "蛙",
-    "romaji": "kaeru"
+    "answer": "la rana"
   },
   {
     "problem_icon": "giraffe.png",
-    "kana": "きりん",
-    "kanji": "麒麟",
-    "romaji": "inonoshi"
+    "answer": "la jirafa"
   },
   {
     "problem_icon": "goat.png",
-    "kana": "やぎ",
-    "kanji": "山羊",
-    "romaji": "yagi"
+    "answer": "la cabra"
   },
   {
     "problem_icon": "gorilla.png",
-    "kana": "ゴリラ",
-    "kanji": "ゴリラ",
-    "romaji": "gorira"
+    "answer": "el gorila"
   },
   {
     "problem_icon": "hamster.png",
-    "kana": "ハムスター",
-    "kanji": "ハムスター",
-    "romaji": "hamusutaa"
+    "answer": "el hamster"
   },
   {
     "problem_icon": "hedgehog.png",
-    "kana": "はりねずみ",
-    "kanji": "針鼠",
-    "romaji": "harinezumi"
+    "answer": "el erizo"
   },
   {
     "problem_icon": "hippopotamus.png",
-    "kana": "かば",
-    "kanji": "河馬",
-    "romaji": "kaba"
+    "answer": "el hipopótamo"
   },
   {
     "problem_icon": "honeybee.png",
-    "kana": "はち",
-    "kanji": "蜂",
-    "romaji": "hachi"
+    "answer": "la abeja"
   },
   {
     "problem_icon": "horse.png",
-    "kana": "うま",
-    "kanji": "馬",
-    "romaji": "uma"
+    "answer": "el caballo"
   },
   {
     "problem_icon": "kangaroo.png",
-    "kana": "カンガルー",
-    "kanji": "",
-    "romaji": "kangaruu"
+    "answer": "el canguro"
   },
   {
     "problem_icon": "koala.png",
-    "kana": "コアラ",
-    "kanji": "コアラ",
-    "romaji": "koara"
+    "answer": "el koala"
   },
   {
     "problem_icon": "lady-beetle.png",
-    "kana": "てんとうむし",
-    "kanji": "てんとう虫",
-    "romaji": "tentoumushi"
+    "answer": "la mariquita"
   },
   {
     "problem_icon": "leopard.png",
-    "kana": "ひょう",
-    "kanji": "豹",
-    "romaji": "hyou"
+    "answer": "el leopardo"
   },
   {
     "problem_icon": "lion.png",
-    "kana": "ライオン",
-    "kanji": "ライオン",
-    "romaji": "raion"
+    "answer": "el león"
   },
   {
     "problem_icon": "lizard.png",
-    "kana": "とかげ",
-    "kanji": "蜥蜴",
-    "romaji": "tokage"
+    "answer": "el lagarto"
   },
   {
     "problem_icon": "llama.png",
-    "kana": "ラマ",
-    "kanji": "ラマ",
-    "romaji": "rama"
+    "answer": "la llama"
   },
   {
     "problem_icon": "lobster.png",
-    "kana": "ロブスター",
-    "kanji": "ロブスター",
-    "romaji": "robusutaa"
+    "answer": "la langosta"
   },
   {
     "problem_icon": "monkey.png",
-    "kana": "さる",
-    "kanji": "猿",
-    "romaji": "saru"
+    "answer": "el mono"
   },
   {
     "problem_icon": "mosquito.png",
-    "kana": "か",
-    "kanji": "蚊",
-    "romaji": "ka"
-  },
-  {
-    "problem_icon": "mouse.png",
-    "kana": "ねぜみ",
-    "kanji": "鼠",
-    "romaji": "nezumi"
+    "answer": "el mosquito"
   },
   {
     "problem_icon": "octopus.png",
-    "kana": "たこ",
-    "kanji": "蛸",
-    "romaji": "tako"
+    "answer": "el pulpo"
   },
   {
     "problem_icon": "orangutan.png",
-    "kana": "オランウータン",
-    "kanji": "オランウータン",
-    "romaji": "oranuutan"
+    "answer": "El orangután"
   },
   {
     "problem_icon": "otter.png",
-    "kana": "かわうそ",
-    "kanji": "川獺",
-    "romaji": "kawauso"
+    "answer": "la nutria"
   },
   {
     "problem_icon": "owl.png",
-    "kana": "ふくろう",
-    "kanji": "梟",
-    "romaji": "fukurou"
+    "answer": "el búho"
   },
   {
     "problem_icon": "ox.png",
-    "kana": "きょせいうし",
-    "kanji": "去勢牛",
-    "romaji": "kyoseiushi"
+    "answer": "el buey"
   },
   {
     "problem_icon": "oyster.png",
-    "kana": "かき",
-    "kanji": "牡蠣",
-    "romaji": "kaki"
+    "answer": "la ostra"
   },
   {
     "problem_icon": "panda.png",
-    "kana": "パンダ",
-    "kanji": "パンダ",
-    "romaji": "panda"
+    "answer": "el panda"
   },
   {
     "problem_icon": "parrot.png",
-    "kana": "オウム",
-    "kanji": "オウム",
-    "romaji": "oumu"
+    "answer": "el loro"
   },
   {
     "problem_icon": "peacock.png",
-    "kana": "ピーコック",
-    "kanji": "ピーコック",
-    "romaji": "piikokku"
+    "answer": "el pavo real"
   },
   {
     "problem_icon": "penguin.png",
-    "kana": "ペンギン",
-    "kanji": "ペンギン",
-    "romaji": "pengin"
+    "answer": "el pinguino"
   },
   {
     "problem_icon": "pig.png",
-    "kana": "ぶた",
-    "kanji": "豚",
-    "romaji": "buta"
+    "answer": "el cerdo"
   },
   {
     "problem_icon": "poodle.png",
-    "kana": "プードル",
-    "kanji": "プードル",
-    "romaji": "pu-doru"
+    "answer": "la caniche"
   },
   {
     "problem_icon": "rabbit.png",
-    "kana": "うさぎ",
-    "kanji": "兎",
-    "romaji": "usagi"
+    "answer": "el conejo"
   },
   {
     "problem_icon": "raccoon.png",
-    "kana": "たぬき",
-    "kanji": "狸",
-    "romaji": "tanuki"
+    "answer": "el mapache"
   },
   {
     "problem_icon": "ram.png",
-    "kana": "おひつじ",
-    "kanji": "牡羊",
-    "romaji": "ohitsuji"
+    "answer": "el carnero"
   },
   {
     "problem_icon": "rat.png",
-    "kana": "ねぜみ",
-    "kanji": "鼠",
-    "romaji": "nezumi"
+    "answer": "la rata"
   },
   {
     "problem_icon": "rhinoceros.png",
-    "kana": "サイ",
-    "kanji": "犀",
-    "romaji": "sai"
+    "answer": "el rinoceronte"
   },
   {
     "problem_icon": "sauropod.png",
-    "kana": "ブロントザウルス",
-    "kanji": "ブロントザウルス",
-    "romaji": "burontozaurusu"
+    "answer": "el brontosaurio"
   },
   {
     "problem_icon": "scorpion.png",
-    "kana": "サソリ",
-    "kanji": "蠍",
-    "romaji": "sasori"
+    "answer": "el escorpión"
   },
   {
     "problem_icon": "shark.png",
-    "kana": "さめ",
-    "kanji": "鮫",
-    "romaji": "same"
+    "answer": "el tiburón"
   },
   {
     "problem_icon": "shrimp.png",
-    "kana": "えび",
-    "kanji": "海老",
-    "romaji": "ebi"
+    "answer": "el camarón"
   },
   {
     "problem_icon": "skunk.png",
-    "kana": "スカンク",
-    "kanji": "スカンク",
-    "romaji": "sukanku"
+    "answer": "el zorrillo"
   },
   {
     "problem_icon": "sloth.png",
-    "kana": "ナマケモノ",
-    "kanji": "樹懶",
-    "romaji": "namakemono"
+    "answer": "el perezoso"
   },
   {
     "problem_icon": "snail.png",
-    "kana": "でんでんむし",
-    "kanji": "蝸牛",
-    "romaji": "dendenmushi"
+    "answer": "el caracol"
   },
   {
     "problem_icon": "mouse.png",
-    "kana": "ねぜみ",
-    "kanji": "鼠",
-    "romaji": "nezumi"
+    "answer": "el ratón"
   },
   {
     "problem_icon": "snake.png",
-    "kana": "へび",
-    "kanji": "蛇",
-    "romaji": "hebi"
+    "answer": "la serpiente"
   },
   {
     "problem_icon": "spider.png",
-    "kana": "クモ",
-    "kanji": "蜘蛛",
-    "romaji": "kumo"
+    "answer": "la araña"
   },
   {
     "problem_icon": "squid.png",
-    "kana": "いか",
-    "kanji": "烏賊",
-    "romaji": "ika"
+    "answer": "el calamar"
   },
   {
     "problem_icon": "swan.png",
-    "kana": "はくちょう",
-    "kanji": "白鳥",
-    "romaji": "hakuchou"
+    "answer": "el cisne"
   },
   {
     "problem_icon": "t-rex.png",
-    "kana": "はおうりゅう",
-    "kanji": "覇王竜",
-    "romaji": "haouryuu"
+    "answer": "el tiranosaurio"
   },
   {
     "problem_icon": "tiger.png",
-    "kana": "とら",
-    "kanji": "虎",
-    "romaji": "tora"
+    "answer": "el tigre"
   },
   {
     "problem_icon": "tropical-fish.png",
-    "kana": "ねったいぎょ",
-    "kanji": "熱帯魚",
-    "romaji": "nettaigyo"
+    "answer": "el pez tropical"
   },
   {
     "problem_icon": "turkey.png",
-    "kana": "しちめんちょう",
-    "kanji": "七面鳥",
-    "romaji": "shichimenchou"
+    "answer": "el pavo"
   },
   {
     "problem_icon": "turtle.png",
-    "kana": "かめ",
-    "kanji": "亀",
-    "romaji": "kame"
+    "answer": "la tortuga"
   },
   {
     "problem_icon": "unicorn.png",
-    "kana": "ユニコーン",
-    "kanji": "ユニコーン",
-    "romaji": "yunikoon"
+    "answer": "el unicornio"
   },
   {
     "problem_icon": "water-buffalo.png",
-    "kana": "すいぎゅう",
-    "kanji": "水牛",
-    "romaji": "suigyuu"
+    "answer": "el búfalo de agua"
   },
   {
     "problem_icon": "whale.png",
-    "kana": "くじら",
-    "kanji": "鯨",
-    "romaji": "kujira"
+    "answer": "la ballena"
   },
   {
     "problem_icon": "wolf.png",
-    "kana": "おおかみ",
-    "kanji": "狼",
-    "romaji": "ookami"
+    "answer": "el lobo"
   },
   {
     "problem_icon": "zebra.png",
-    "kana": "しまうま",
-    "kanji": "縞馬",
-    "romaji": "shimauma"
+    "answer": "la cebra"
   }
 ]
