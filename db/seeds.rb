@@ -7,12 +7,19 @@ require 'json'
 
 puts "destroying previous data"
 
+puts "Language"
 Language.destroy_all
 
+puts "Game"
 Game.destroy_all
 
+puts "User"
 User.destroy_all
 
+puts "Comment"
+Comment.destroy_all
+
+puts "Post"
 Post.destroy_all
 
 puts "generating users"
