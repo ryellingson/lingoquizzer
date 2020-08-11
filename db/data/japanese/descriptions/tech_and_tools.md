@@ -1,16 +1,20 @@
 ## Tech and tools
 
+---
+
 Let's learn about technology and tools in Japanese!
 
- | Icon | Romaji | Kana | Kanji |
- | ----------  | -- | -- | --|
- | :hammer:　-> | kanazuchi | かなづち | 金槌 |
- | :wrench:　-> | renchi | レンチ | N/A |
- etc...
+Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
 
- Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+| Icon | Romaji | Kana | Kanji |
+| ----------  | -- | -- | --|
+| 🔨 -> | kanazuchi | かなづち | 金槌 |
+| 🔧 -> | renchi | レンチ | N/A |
 
- Just hit **PLAY** to get started!
+etc...
+
+
+Just hit **PLAY** to get started!
 
 You can skip an answer you don't know with the **back** and **next** buttons, or with the **arrows** on your keyboard.
 

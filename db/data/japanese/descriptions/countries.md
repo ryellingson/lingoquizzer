@@ -1,14 +1,17 @@
 ## Countries
 
+---
+
 Time to learn all the countries of the world in Japanese!
 
- | Icon | Romaji | Kana | Kanji |
- | ----------  | -- | -- | --|
- | :jp:　-> | nihon | にほん | 日本 |
- | :brazil:　-> | burajiru | ブラジル | 伯剌西爾 |
- etc...
+Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
 
- Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+| Icon | Romaji | Kana | Kanji |
+| ----------  | -- | -- | --|
+| 🇯🇵　-> | nihon | にほん | 日本 |
+| 🇧🇷　-> | burajiru | ブラジル | 伯剌西爾 |
+
+ etc...
 
  Just hit **PLAY** to get started!
 
