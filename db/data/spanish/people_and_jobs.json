@@ -1,414 +1,448 @@
 [
   {
     "question": "agree.png",
-    "answer": "thumbs up"
+    "answer": "estar de acuerdo"
   },
   {
     "question": "alien.png",
-    "answer": "alien"
+    "answer": "el extraterrestre"
   },
   {
     "question": "arm.png",
-    "answer": "arm"
+    "answer": "el brazo"
   },
   {
     "question": "astronaut.png",
-    "answer": "astronaut"
+    "answer": "el astronauta",
+    "answer": "la astronauta"
   },
   {
     "question": "baby.png",
-    "answer": "baby"
+    "answer": "el bebé"
   },
   {
     "question": "back-off!.png",
-    "answer": "back off"
+    "answer": "apártate"
   },
   {
     "question": "bald.png",
-    "answer": "bald"
+    "answer": "la calva",
+    "answer": "el calvo"
   },
   {
     "question": "beard.png",
-    "answer": "beard"
+    "answer": "la barba"
   },
   {
     "question": "blind.png",
-    "answer": "blind"
+    "answer": "el ciego",
+    "answer": "la ciega"
   },
   {
     "question": "blond.png",
-    "answer": "blond"
+    "answer": "el rubio",
+    "answer": "la rubia"
   },
   {
     "question": "bone.png",
-    "answer": "bone"
+    "answer": "el hueso"
   },
   {
     "question": "bow.png",
-    "answer": "bow"
+    "answer": "la reverencia"
   },
   {
     "question": "brain.png",
-    "answer": "brain"
+    "answer": "el cerebro"
   },
   {
     "question": "breast-feeding.png",
-    "answer": "breast feeding."
+    "answer": "el amamantamiento"
   },
   {
     "question": "bride.png",
-    "answer": "bride"
+    "answer": "la novia"
   },
   {
     "question": "brunette.png",
-    "answer": "brunette"
+    "answer": "la morena"
   },
   {
     "question": "caca.png",
-    "answer": "poop"
+    "answer": "la caca"
   },
   {
     "question": "clapping.png",
-    "answer": "applause"
+    "answer": "el aplauso"
   },
   {
     "question": "clown.png",
-    "answer": "clown"
+    "answer": "el payaso"
   },
   {
     "question": "construction-worker.png",
-    "answer": "construction worker"
+    "answer": "la trabajadora de la construcción",
+    "answer": "el trabajador de la construcción"
   },
   {
     "question": "cook.png",
-    "answer": "cook"
+    "answer": "la cocinera",
+    "answer": "el cocinero"
   },
   {
     "question": "crossed-fingers.png",
-    "answer": "fingers crossed"
+    "answer": "cruzar los dedos"
   },
   {
     "question": "cupid.png",
-    "answer": "cupid"
+    "answer": "el cupido"
   },
   {
     "question": "curly-hair.png",
-    "answer": "curly hair"
+    "answer": "el pelo rizado"
   },
   {
     "question": "deaf.png",
-    "answer": "deaf"
+    "answer": "el sordo",
+    "answer": "la sorda"
   },
   {
     "question": "demon.png",
-    "answer": "demon"
+    "answer": "el demonio"
   },
   {
     "question": "detective.png",
-    "answer": "detective"
+    "answer": "el detective",
+    "answer": "la detective"
   },
   {
     "question": "disagree.png",
-    "answer": "thumbs down"
+    "answer": "no estar de acuerdo"
   },
   {
     "question": "doctor.png",
-    "answer": "doctor"
+    "answer": "el médico",
+    "answer": "la médica"
   },
   {
     "question": "ear.png",
-    "answer": "ear"
+    "answer": "la oreja"
   },
   {
     "question": "elf.png",
-    "answer": "elf"
+    "answer": "el elfo"
   },
   {
     "question": "eye.png",
-    "answer": "eye"
+    "answer": "el ojo"
   },
   {
     "question": "fairy.png",
-    "answer": "fairy"
+    "answer": "el hada"
   },
   {
     "question": "farmer.png",
-    "answer": "farmer"
+    "answer": "el granjero",
+    "answer": "la granjera"
   },
   {
     "question": "feature.png",
-    "answer": "face palm"
+    "answer": "qué vergüenza"
   },
   {
     "question": "female-office-worker.png",
-    "answer": "professional"
+    "answer": "el profesional",
+    "answer": "la profesional"
   },
   {
     "question": "firefighter.png",
-    "answer": "firefighter"
+    "answer": "el bombero",
+    "answer": "la bombera"
   },
   {
     "question": "fist.png",
-    "answer": "fist"
+    "answer": "el puño"
   },
   {
     "question": "foot.png",
-    "answer": "foot"
+    "answer": "el pie"
   },
   {
     "question": "footprints.png",
-    "answer": "footprints"
+    "answer": "las huellas"
   },
   {
     "question": "gay-person.png",
-    "answer": "gay"
+    "answer": "el homosexual"
   },
   {
     "question": "genie.png",
-    "answer": "genie"
+    "answer": "el genio"
   },
   {
     "question": "ghost.png",
-    "answer": "ghost"
+    "answer": "el fantasma"
   },
   {
     "question": "goblin.png",
-    "answer": "goblin"
+    "answer": "el duende"
   },
   {
     "question": "grandma.png",
-    "answer": "grandma"
+    "answer": "la abuela"
   },
   {
     "question": "grandpa.png",
-    "answer": "grandpa"
+    "answer": "el abuelo"
   },
   {
     "question": "grey-hair.png",
-    "answer": "grey hair"
+    "answer": "el pelo canoso"
   },
   {
     "question": "guard.png",
-    "answer": "guard"
+    "answer": "el guardia",
+    "answer": "la guardia"
   },
   {
     "question": "haircut.png",
-    "answer": "haircut"
+    "answer": "el corte de cabello"
   },
   {
     "question": "hand.png",
-    "answer": "hand"
+    "answer": "la mano"
   },
   {
     "question": "handicapped.png",
-    "answer": "disabled"
+    "answer": "los discapacitados",
+    "answer": "las discapacitadas"
   },
   {
     "question": "hands.png",
-    "answer": "hands up"
+    "answer": "las manos arriba"
   },
   {
     "question": "hearing-aid.png",
-    "answer": "hearing-aid"
+    "answer": "el audífono"
   },
   {
     "question": "hijab.png",
-    "answer": "hijab"
+    "answer": "el hiyab"
   },
   {
     "question": "judge.png",
-    "answer": "judge"
+    "answer": "el juez",
+    "answer": "la jueza"
   },
   {
     "question": "kneel.png",
-    "answer": "kneel"
+    "answer": "arrodillarse"
   },
   {
     "question": "leg.png",
-    "answer": "leg"
+    "answer": "la pierna"
   },
   {
     "question": "mage.png",
-    "answer": "mage"
+    "answer": "el hechicero",
+    "answer": "la hercicera"
   },
   {
     "question": "mechanic.png",
-    "answer": "mechanic"
+    "answer": "el mecánico",
+    "answer": "la mecánica"
   },
   {
     "question": "mermaid.png",
-    "answer": "mermaid"
+    "answer": "la sirena"
   },
   {
     "question": "merman.png",
-    "answer": "merman"
+    "answer": "el tritón"
   },
   {
     "question": "mouth.png",
-    "answer": "mouth"
+    "answer": "la boca"
   },
   {
     "question": "nonke.png",
-    "answer": "straight"
+    "answer": "el heterosexual",
+    "answer": "la heterosexual"
   },
   {
     "question": "nose.png",
-    "answer": "nose"
+    "answer": "la nariz"
   },
   {
     "question": "office-worker.png",
-    "answer": "businessman"
+    "answer": "el empresario",
+    "answer": "el empresaria"
   },
   {
     "question": "ogre.png",
-    "answer": "ogre"
+    "answer": "el ogro"
   },
   {
     "question": "ok.png",
-    "answer": "ok"
+    "answer": "todo bien"
   },
   {
     "question": "painter.png",
-    "answer": "painter"
+    "answer": "el pintor",
+    "answer": "la pintora"
   },
   {
     "question": "peace.png",
-    "answer": "peace"
+    "answer": "la paz"
   },
   {
     "question": "pilot.png",
-    "answer": "pilot"
+    "answer": "el piloto"
   },
   {
     "question": "police-officer.png",
-    "answer": "police officer"
+    "answer": "la policía"
   },
   {
     "question": "prayer.png",
-    "answer": "prayer"
+    "answer": "rezar"
   },
   {
     "question": "pregnant.png",
-    "answer": "pregnant"
+    "answer": "embarazada"
   },
   {
     "question": "prince.png",
-    "answer": "prince"
+    "answer": "el príncipe"
   },
   {
     "question": "princess.png",
-    "answer": "princess"
+    "answer": "la princesa"
   },
   {
     "question": "programmer.png",
-    "answer": "programmer"
+    "answer": "el programador",
+    "answer": "la programadora"
   },
   {
     "question": "raise-hand.png",
-    "answer": "raise your hand"
+    "answer": "levanta tu mano"
   },
   {
     "question": "redhead.png",
-    "answer": "redhead"
+    "answer": "el pelirrojo",
+    "answer": "la pelirroja"
   },
   {
     "question": "rezubian.png",
-    "answer": "lesbian"
+    "answer": "lesbiana"
   },
   {
     "question": "robot.png",
-    "answer": "robot"
+    "answer": "el robot"
   },
   {
     "question": "rock-on.png",
-    "answer": "rock on"
+    "answer": "dale"
   },
   {
     "question": "santa-claus.png",
-    "answer": "santa claus"
+    "answer": "papá noel"
   },
   {
     "question": "scientist.png",
-    "answer": "scientist"
+    "answer": "el científico",
+    "answer": "la científica"
+
   },
   {
     "question": "shrug.png",
-    "answer": "shrug"
+    "answer": "encogerse de hombros"
   },
   {
     "question": "singer.png",
-    "answer": "singer"
+    "answer": "la cantante",
+    "answer": "el cantante"
   },
   {
     "question": "skull.png",
-    "answer": "skull"
+    "answer": "el cráneo"
   },
   {
     "question": "spa.png",
-    "answer": "spa"
+    "answer": "el spa"
   },
   {
     "question": "student.png",
-    "answer": "student"
+    "answer": "la estudiante",
+    "answer": "el estudiante"
   },
   {
     "question": "superhero.png",
-    "answer": "superhero"
+    "answer": "el superhéroe",
+    "answer": "la superhéroe"
   },
   {
     "question": "supervillain.png",
-    "answer": "supervillain"
+    "answer": "el supervillano",
+    "answer": "la supervillana"
   },
   {
     "question": "teacher.png",
-    "answer": "teacher"
+    "answer": "el profesor",
+    "answer": "la profesora"
   },
   {
     "question": "to-pinch.png",
-    "answer": "pinch"
+    "answer": "pellizcar"
   },
   {
     "question": "to-stand.png",
-    "answer": "stand"
+    "answer": "estar de pie"
   },
   {
     "question": "tongue.png",
-    "answer": "tongue"
+    "answer": "la lengua"
   },
   {
     "question": "tooth.png",
-    "answer": "tooth"
+    "answer": "el diente"
   },
   {
     "question": "turban.png",
-    "answer": "turban"
+    "answer": "el turbante"
   },
   {
     "question": "vampire.png",
-    "answer": "vampire"
+    "answer": "el vampiro",
+    "answer": "la vampira"
   },
   {
     "question": "vulcan.png",
-    "answer": "vulcan"
+    "answer": "el vulcan",
+    "answer": "la vulcan"
   },
   {
     "question": "wave-hand.png",
-    "answer": "wave"
+    "answer": "saludar"
   },
   {
     "question": "welder.png",
-    "answer": "welder"
+    "answer": "el soldador",
+    "answer": "la soldadora"
   },
   {
     "question": "witch.png",
-    "answer": "witch"
+    "answer": "la bruja"
   },
   {
     "question": "wizard.png",
-    "answer": "wizard"
+    "answer": "el mago",
+    "answer": "la maga"
   },
   {
     "question": "zombie.png",
-    "answer": "zombie"
+    "answer": "el zombi",
+    "answer": "la zombi"
   }
 ]

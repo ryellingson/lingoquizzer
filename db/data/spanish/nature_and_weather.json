@@ -1,0 +1,226 @@
+[
+  {
+    "question": "blossom.png",
+    "answer": "la flor"
+  },
+  {
+    "question": "cactus.png",
+    "answer": "el cactus"
+  },
+  {
+    "question": "cherry-blossom.png",
+    "answer": "la flor de cerezo"
+  },
+  {
+    "question": "christmas-tree.png",
+    "answer": "el árbol de navidad"
+  },
+  {
+    "question": "cloud.png",
+    "answer": "la nube"
+  },
+  {
+    "question": "clover.png",
+    "answer": "el trébol de cuatro hojas"
+  },
+  {
+    "question": "comet.png",
+    "answer": "el cometa"
+  },
+  {
+    "question": "crescent-moon.png",
+    "answer": "la luna creciente"
+  },
+  {
+    "question": "deciduous-tree.png",
+    "answer": "el árbol de hoja caduca"
+  },
+  {
+    "question": "desert-island.png",
+    "answer": "la isla desierta"
+  },
+  {
+    "question": "desert.png",
+    "answer": "el desierto"
+  },
+  {
+    "question": "earth.png",
+    "answer": "la tierra"
+  },
+  {
+    "question": "evergreen-tree.png",
+    "answer": "el árbol de hoja perenne"
+  },
+  {
+    "question": "fallen-leaf.png",
+    "answer": "la hoja caída"
+  },
+  {
+    "question": "fire.png",
+    "answer": "el fuego"
+  },
+  {
+    "question": "fog.png",
+    "answer": "la niebla"
+  },
+  {
+    "question": "full-moon.png",
+    "answer": "la luna llena"
+  },
+  {
+    "question": "half-moon.png",
+    "answer": "la media luna"
+  },
+  {
+    "question": "herb.png",
+    "answer": "la hierba"
+  },
+  {
+    "question": "hibiscus.png",
+    "answer": "el hibisco"
+  },
+  {
+    "question": "lightning.png",
+    "answer": "el relampago"
+  },
+  {
+    "question": "maple-leaf.png",
+    "answer": "la hoja de arce"
+  },
+  {
+    "question": "milky-way.png",
+    "answer": "la vía láctea"
+  },
+  {
+    "question": "mountain-range.png",
+    "answer": "la cordillera"
+  },
+  {
+    "question": "mountain.png",
+    "answer": "la montaña"
+  },
+  {
+    "question": "mushroom.png",
+    "answer": "el hongo"
+  },
+  {
+    "question": "new-moon.png",
+    "answer": "la luna nueva"
+  },
+  {
+    "question": "palm-tree.png",
+    "answer": "la palmera"
+  },
+  {
+    "question": "planet.png",
+    "answer": "el planeta"
+  },
+  {
+    "question": "rain.png",
+    "answer": "la lluvia"
+  },
+  {
+    "question": "rainbow.png",
+    "answer": "el arcoiris"
+  },
+  {
+    "question": "rose.png",
+    "answer": "la rosa"
+  },
+  {
+    "question": "seedling.png",
+    "answer": "la plántula"
+  },
+  {
+    "question": "shamrock.png",
+    "answer": "el trébol"
+  },
+  {
+    "question": "sheaf-of-rice.png",
+    "answer": "la gavilla de arroz"
+  },
+  {
+    "question": "shooting-star.png",
+    "answer": "la estrella fugaz"
+  },
+  {
+    "question": "smoke.png",
+    "answer": "el humo"
+  },
+  {
+    "question": "snow.png",
+    "answer": "la nieve"
+  },
+  {
+    "question": "snowflake.png",
+    "answer": "el copo de nieve"
+  },
+  {
+    "question": "snowman.png",
+    "answer": "el hombre de nieve"
+  },
+  {
+    "question": "spider-web.png",
+    "answer": "la telaraña"
+  },
+  {
+    "question": "spiral-shell.png",
+    "answer": "la concha en espiral"
+  },
+  {
+    "question": "star.png",
+    "answer": "la estrella"
+  },
+  {
+    "question": "sun.png",
+    "answer": "el sol"
+  },
+  {
+    "question": "sunflower.png",
+    "answer": "el girasol"
+  },
+  {
+    "question": "sunrise.png",
+    "answer": "el amanecer"
+  },
+  {
+    "question": "sunset.png",
+    "answer": "el atardecer"
+  },
+  {
+    "question": "tanabata.png",
+    "answer": "la tanabata"
+  },
+  {
+    "question": "thunderstorm.png",
+    "answer": "la tormenta"
+  },
+  {
+    "question": "tornado.png",
+    "answer": "el tornado"
+  },
+  {
+    "question": "tracks.png",
+    "answer": "las pistas"
+  },
+  {
+    "question": "tulip.png",
+    "answer": "el tulipán"
+  },
+  {
+    "question": "volcano.png",
+    "answer": "el volcan"
+  },
+  {
+    "question": "water.png",
+    "answer": "el agua"
+  },
+  {
+    "question": "wilt.png",
+    "answer": "marchitarse"
+  },
+  {
+    "question": "wind.png",
+    "answer": "el viento"
+  }
+]

@@ -1,370 +1,374 @@
 [
   {
     "question": "american-football.png",
-    "answer": "american football"
+    "answer": "el fútbol americano"
   },
   {
     "question": "badminton.png",
-    "answer": "badminton"
+    "answer": "el bádminton"
   },
   {
     "question": "banjo.png",
-    "answer": "banjo"
+    "answer": "el banjo"
   },
   {
     "question": "baseball.png",
-    "answer": "baseball"
+    "answer": "el beisbol"
   },
   {
     "question": "basketball.png",
-    "answer": "basketball"
+    "answer": "el baloncesto"
   },
   {
     "question": "bathing.png",
-    "answer": "bathing"
+    "answer": "bañarse"
   },
   {
     "question": "bike.png",
-    "answer": "mountain biking"
+    "answer": "el ciclismo de montaña"
   },
   {
     "question": "billiards.png",
-    "answer": "billiards"
+    "answer": "el billar"
   },
   {
     "question": "bow-and-arrow.png",
-    "answer": "bow and arrow"
+    "answer": "el arco y la flecha"
   },
   {
     "question": "bowling.png",
-    "answer": "bowling"
+    "answer": "el boliche"
   },
   {
     "question": "boxing.png",
-    "answer": "boxing"
+    "answer": "el boxeo"
   },
   {
     "question": "bullseye.png",
-    "answer": "darts"
+    "answer": "los dardos"
   },
   {
     "question": "camping.png",
-    "answer": "camping"
+    "answer": "el camping"
   },
   {
     "question": "canoe.png",
-    "answer": "canoe"
+    "answer": "la canoa"
   },
   {
     "question": "carousel.png",
-    "answer": "carousel"
+    "answer": "el carrusel"
   },
   {
     "question": "cheers.png",
-    "answer": "cheers"
+    "answer": "salud"
   },
   {
     "question": "chess.png",
-    "answer": "chess"
+    "answer": "el ajedrez"
   },
   {
     "question": "climbing.png",
-    "answer": "climbing"
+    "answer": "escalar"
   },
   {
     "question": "cricket-game.png",
-    "answer": "cricket"
+    "answer": "el críquet"
   },
   {
     "question": "curling.png",
-    "answer": "curling"
+    "answer": "el curling"
   },
   {
     "question": "cycling.png",
-    "answer": "cycling"
+    "answer": "el ciclismo"
   },
   {
     "question": "dice.png",
-    "answer": "dice"
+    "answer": "el dado"
   },
   {
     "question": "disco.png",
-    "answer": "disco"
+    "answer": "la disco"
   },
   {
     "question": "drum.png",
-    "answer": "drum"
+    "answer": "la batería"
   },
   {
     "question": "ferris-wheel.png",
-    "answer": "ferris wheel"
+    "answer": "la noria"
   },
   {
     "question": "field-hockey.png",
-    "answer": "field hockey"
+    "answer": "el hockey sobre césped"
   },
   {
     "question": "fireworks.png",
-    "answer": "fireworks"
+    "answer": "los fuegos artificiales"
   },
   {
     "question": "first-rank.png",
-    "answer": "first place"
+    "answer": "el primer lugar"
   },
   {
     "question": "fishing.png",
-    "answer": "fishing"
+    "answer": "pescar"
   },
   {
     "question": "flying-disc.png",
-    "answer": "frisbee"
+    "answer": "el frisbi"
   },
   {
     "question": "goal.png",
-    "answer": "goal"
+    "answer": "el gol"
   },
   {
     "question": "golf.png",
-    "answer": "golf"
+    "answer": "el golf"
   },
   {
     "question": "guitar.png",
-    "answer": "guitar"
+    "answer": "la guitarra"
   },
   {
     "question": "gymnastics.png",
-    "answer": "gymnastics"
+    "answer": "la gimnasia"
   },
   {
     "question": "handball.png",
-    "answer": "handball"
+    "answer": "el balonmano"
   },
   {
     "question": "headphone.png",
-    "answer": "headphones"
+    "answer": "los cascos"
   },
   {
     "question": "horse-racing.png",
-    "answer": "horse racing"
+    "answer": "las carreras de caballos"
   },
   {
     "question": "ice-hockey.png",
-    "answer": "ice hockey."
+    "answer": "el hockey sobre hielo"
   },
   {
     "question": "ice-skate.png",
-    "answer": "ice skate"
+    "answer": "los patines de hielo"
   },
   {
     "question": "juggling.png",
-    "answer": "juggling"
+    "answer": "hacer malabares"
   },
   {
     "question": "keyboard-piano.png",
-    "answer": "piano"
+    "answer": "el piano"
   },
   {
     "question": "kite.png",
-    "answer": "kite"
+    "answer": "la cometa"
   },
   {
     "question": "lacrosse.png",
-    "answer": "lacrosse"
+    "answer": "el lacrosse"
   },
   {
     "question": "lantern.png",
-    "answer": "jack o lantern"
+    "answer": "la calabaza de halloween"
   },
   {
     "question": "magic.png",
-    "answer": "magic"
+    "answer": "la magia"
   },
   {
     "question": "martial-arts.png",
-    "answer": "martial arts"
+    "answer": "las artes maritales"
   },
   {
     "question": "massage.png",
-    "answer": "massage"
+    "answer": "el masaje"
   },
   {
     "question": "meditation.png",
-    "answer": "meditation"
+    "answer": "la meditación"
   },
   {
     "question": "palette.png",
-    "answer": "palette"
+    "answer": "la paleta"
   },
   {
     "question": "parachute.png",
-    "answer": "skydiving"
+    "answer": "el paracaidismo"
   },
   {
     "question": "performing-arts.png",
-    "answer": "performing arts"
+    "answer": "las artes escénicas"
   },
   {
     "question": "ping-pong.png",
-    "answer": "ping pong"
+    "answer": "el ping pong"
   },
   {
     "question": "punch.png",
-    "answer": "punch"
+    "answer": "el puñetazo"
   },
   {
     "question": "puzzle.png",
-    "answer": "puzzle"
+    "answer": "el rompecabezas"
   },
   {
     "question": "roller-coaster.png",
-    "answer": "roller coaster"
+    "answer": "la montaña rusa"
   },
   {
     "question": "rosette.png",
-    "answer": "rosette"
+    "answer": "la roseta"
   },
   {
     "question": "rowing.png",
-    "answer": "rowing"
+    "answer": "remar"
   },
   {
     "question": "rugby-football.png",
-    "answer": "rugby"
+    "answer": "el rugby"
+  },
+  {
+    "question": "running-shirt.png",
+    "answer": "la camiseta de correr"
   },
   {
     "question": "running.png",
-    "answer": "running"
+    "answer": "correr"
   },
   {
     "question": "salsa-dance.png",
-    "answer": "dancing"
+    "answer": "bailar"
   },
   {
     "question": "saxophone.png",
-    "answer": "saxophone"
+    "answer": "el saxófono"
   },
   {
     "question": "score.png",
-    "answer": "music"
+    "answer": "la música"
   },
   {
     "question": "second-rank.png",
-    "answer": "second place"
+    "answer": "el segundo lugar"
   },
   {
     "question": "selfie.png",
-    "answer": "selfie"
+    "answer": "la selfie"
   },
   {
     "question": "skateboard.png",
-    "answer": "skateboard"
+    "answer": "la patineta"
   },
   {
     "question": "skis.png",
-    "answer": "skis"
+    "answer": "los esquís"
   },
   {
     "question": "sled.png",
-    "answer": "sled"
+    "answer": "el trineo"
   },
   {
     "question": "sleeping.png",
-    "answer": "sleeping"
+    "answer": "dormir"
   },
   {
     "question": "slot-machine.png",
-    "answer": "gambling"
+    "answer": "apostar"
   },
   {
     "question": "snorkeling.png",
-    "answer": "snorkeling"
+    "answer": "el snorkel"
   },
   {
     "question": "snowboarding.png",
-    "answer": "snowboarding"
+    "answer": "hacer snowboard"
   },
   {
     "question": "soccer-ball.png",
-    "answer": "soccer"
+    "answer": "fútbol"
   },
   {
     "question": "softball.png",
-    "answer": "softball"
+    "answer": "el softbol"
   },
   {
     "question": "support.png",
-    "answer": "support"
+    "answer": "apoyar"
   },
   {
     "question": "surfing.png",
-    "answer": "surfing"
+    "answer": "surfear"
   },
   {
     "question": "sweat.png",
-    "answer": "sweat"
+    "answer": "el sudor"
   },
   {
     "question": "swimming.png",
-    "answer": "swimming"
+    "answer": "nadar"
   },
   {
     "question": "tennis.png",
-    "answer": "tennis"
+    "answer": "el tenis"
   },
   {
     "question": "third-rank.png",
-    "answer": "third place"
+    "answer": "el tercer lugar"
   },
   {
     "question": "ticket.png",
-    "answer": "ticket"
+    "answer": "el boleto"
   },
   {
     "question": "to-your-health.png",
-    "answer": "to your health"
+    "answer": "el brindis"
   },
   {
     "question": "trophy.png",
-    "answer": "trophy"
+    "answer": "el trofeo"
   },
   {
     "question": "trumpet.png",
-    "answer": "trumpet"
+    "answer": "la trompeta"
   },
   {
     "question": "tsukimi.png",
-    "answer": "tsukimi"
+    "answer": "el tsukimi"
   },
   {
     "question": "violin.png",
-    "answer": "violin"
+    "answer": "el violin"
   },
   {
     "question": "volleyball.png",
-    "answer": "volleyball"
+    "answer": "el voleibol"
   },
   {
     "question": "walking.png",
-    "answer": "walking"
+    "answer": "caminar"
   },
   {
     "question": "water-polo.png",
-    "answer": "water polo"
+    "answer": "el waterpolo"
   },
   {
     "question": "wedding.png",
-    "answer": "wedding"
+    "answer": "la boda"
   },
   {
     "question": "weight-lifting.png",
-    "answer": "weight lifting"
+    "answer": "levantar pesas"
   },
   {
     "question": "writing.png",
-    "answer": "writing"
+    "answer": "escribir"
   },
   {
     "question": "yo-yo.png",
-    "answer": "yo yo"
+    "answer": "el yoyó"
   }
 ]

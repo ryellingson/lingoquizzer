@@ -687,9 +687,9 @@
   },
   {
     "question": "salsa-dance.png",
-    "kanji": "サルサ",
-    "kana": "サルサ",
-    "romaji": "sarusa",
+    "kanji": "踊る",
+    "kana": "おどる",
+    "romaji": "odoru",
     "is_common": true,
     "jlpt": "-",
     "parts_of_speech": [

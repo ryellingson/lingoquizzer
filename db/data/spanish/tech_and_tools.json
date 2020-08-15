@@ -1,0 +1,358 @@
+[
+  {
+    "question": "abacus.png",
+    "answer": "el ábaco"
+  },
+  {
+    "question": "alarm-clock.png",
+    "answer": "el reloj despertador"
+  },
+  {
+    "question": "anchor.png",
+    "answer": "el ancla"
+  },
+  {
+    "question": "axe.png",
+    "answer": "el hacha"
+  },
+  {
+    "question": "backpack.png",
+    "answer": "la mochila"
+  },
+  {
+    "question": "balance-scale.png",
+    "answer": "la balanza"
+  },
+  {
+    "question": "battery.png",
+    "answer": "la batería"
+  },
+  {
+    "question": "bomb.png",
+    "answer": "la bomba"
+  },
+  {
+    "question": "calendar.png",
+    "answer": "el calendario"
+  },
+  {
+    "question": "camera.png",
+    "answer": "la cámara"
+  },
+  {
+    "question": "chains.png",
+    "answer": "las cadenas"
+  },
+  {
+    "question": "chemistry.png",
+    "answer": "la química"
+  },
+  {
+    "question": "clamp.png",
+    "answer": "la abrazadera"
+  },
+  {
+    "question": "compass.png",
+    "answer": "la brújula"
+  },
+  {
+    "question": "computer-mouse.png",
+    "answer": "el ratón"
+  },
+  {
+    "question": "control-board.png",
+    "answer": "los controles"
+  },
+  {
+    "question": "crane.png",
+    "answer": "la grúa"
+  },
+  {
+    "question": "dagger.png",
+    "answer": "la daga"
+  },
+  {
+    "question": "desktop-computer.png",
+    "answer": "la computadora de escritorio"
+  },
+  {
+    "question": "dish.png",
+    "answer": "el plato"
+  },
+  {
+    "question": "dna.png",
+    "answer": "el adn"
+  },
+  {
+    "question": "dvd.png",
+    "answer": "el dvd"
+  },
+  {
+    "question": "e-mail.png",
+    "answer": "el correo electrónico"
+  },
+  {
+    "question": "electric-plug.png",
+    "answer": "el enchufe"
+  },
+  {
+    "question": "electricity.png",
+    "answer": "la electricidad"
+  },
+  {
+    "question": "fax-machine.png",
+    "answer": "la maquina de fax"
+  },
+  {
+    "question": "film-projector.png",
+    "answer": "el proyector de cine"
+  },
+  {
+    "question": "fire-extinguisher.png",
+    "answer": "el extintor"
+  },
+  {
+    "question": "firumu.png",
+    "answer": "la película"
+  },
+  {
+    "question": "flashlight.png",
+    "answer": "la linterna"
+  },
+  {
+    "question": "floppy-disk.png",
+    "answer": "el disquete"
+  },
+  {
+    "question": "gear.png",
+    "answer": "el engranaje"
+  },
+  {
+    "question": "hammer.png",
+    "answer": "el martillo"
+  },
+  {
+    "question": "hard-disk-drive.png",
+    "answer": "el disco duro"
+  },
+  {
+    "question": "headphone.png",
+    "answer": "los cascos"
+  },
+  {
+    "question": "hourglass.png",
+    "answer": "el reloj de arena"
+  },
+  {
+    "question": "inbox.png",
+    "answer": "la bandeja de entrada"
+  },
+  {
+    "question": "joystick.png",
+    "answer": "la palanca de mando"
+  },
+  {
+    "question": "key.png",
+    "answer": "la llave"
+  },
+  {
+    "question": "keyboard.png",
+    "answer": "el teclado"
+  },
+  {
+    "question": "label.png",
+    "answer": "la etiqueta"
+  },
+  {
+    "question": "laptop-computer.png",
+    "answer": "la computadora portátil"
+  },
+  {
+    "question": "light-bulb.png",
+    "answer": "la bombilla"
+  },
+  {
+    "question": "locked.png",
+    "answer": "cerrado con llave"
+  },
+  {
+    "question": "magnet.png",
+    "answer": "el imán"
+  },
+  {
+    "question": "magnifying-glass.png",
+    "answer": "la lupa"
+  },
+  {
+    "question": "microbe.png",
+    "answer": "microbio"
+  },
+  {
+    "question": "microphone.png",
+    "answer": "el micrófono"
+  },
+  {
+    "question": "microscope.png",
+    "answer": "el microscopio"
+  },
+  {
+    "question": "mobile-phone.png",
+    "answer": "el celular"
+  },
+  {
+    "question": "movie-camera.png",
+    "answer": "la cámara de cine"
+  },
+  {
+    "question": "nuts-and-bolts.png",
+    "answer": "la tuercas y pernos"
+  },
+  {
+    "question": "oil-drum.png",
+    "answer": "el bidón de aceite"
+  },
+  {
+    "question": "optical-disk.png",
+    "answer": "el cd"
+  },
+  {
+    "question": "out.png",
+    "answer": "la bandeja de salida"
+  },
+  {
+    "question": "package.png",
+    "answer": "el paquete"
+  },
+  {
+    "question": "pager.png",
+    "answer": "el buscapersonas"
+  },
+  {
+    "question": "paper-clip.png",
+    "answer": "el clip de papel"
+  },
+  {
+    "question": "pen.png",
+    "answer": "el bolígrafo"
+  },
+  {
+    "question": "pencil.png",
+    "answer": "el lápiz"
+  },
+  {
+    "question": "petri-dish.png",
+    "answer": "la placa de petri"
+  },
+  {
+    "question": "pick.png",
+    "answer": "el pico"
+  },
+  {
+    "question": "pistol.png",
+    "answer": "la pistola"
+  },
+  {
+    "question": "printer.png",
+    "answer": "la impresora"
+  },
+  {
+    "question": "protractor.png",
+    "answer": "el transportador"
+  },
+  {
+    "question": "pushpin.png",
+    "answer": "la chincheta"
+  },
+  {
+    "question": "radio.png",
+    "answer": "la radio"
+  },
+  {
+    "question": "satellite.png",
+    "answer": "el satélite"
+  },
+  {
+    "question": "scissors.png",
+    "answer": "las tijeras"
+  },
+  {
+    "question": "slate.png",
+    "answer": "la claqueta"
+  },
+  {
+    "question": "stethoscope.png",
+    "answer": "el estetoscopio"
+  },
+  {
+    "question": "sword.png",
+    "answer": "la espada"
+  },
+  {
+    "question": "syringe.png",
+    "answer": "la jeringa"
+  },
+  {
+    "question": "telephone.png",
+    "answer": "el telefono"
+  },
+  {
+    "question": "telescope.png",
+    "answer": "el telescopio"
+  },
+  {
+    "question": "television.png",
+    "answer": "la televisión"
+  },
+  {
+    "question": "test-tube.png",
+    "answer": "el tubo de ensayo"
+  },
+  {
+    "question": "thermometer.png",
+    "answer": "el termómetro"
+  },
+  {
+    "question": "timer.png",
+    "answer": "el temporizador"
+  },
+  {
+    "question": "toolbox.png",
+    "answer": "la caja de herramientas"
+  },
+  {
+    "question": "trackball.png",
+    "answer": "la bola de desplazamiento"
+  },
+  {
+    "question": "umbrella.png",
+    "answer": "el paraguas"
+  },
+  {
+    "question": "unlocked.png",
+    "answer": "abrir la cerradura"
+  },
+  {
+    "question": "video-camera.png",
+    "answer": "la cámara de video"
+  },
+  {
+    "question": "video-game.png",
+    "answer": "el videojuego"
+  },
+  {
+    "question": "videocassette.png",
+    "answer": "el videocasete"
+  },
+  {
+    "question": "volume.png",
+    "answer": "el volumen"
+  },
+  {
+    "question": "watch.png",
+    "answer": "el reloj"
+  },
+  {
+    "question": "wrench.png",
+    "answer": "la llave inglesa"
+  }
+]
