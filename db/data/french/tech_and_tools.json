@@ -1,0 +1,358 @@
+[
+  {
+    "question": "abacus.png",
+    "answer": "l'abaque"
+  },
+  {
+    "question": "alarm-clock.png",
+    "answer": "le réveil"
+  },
+  {
+    "question": "anchor.png",
+    "answer": "l'ancre"
+  },
+  {
+    "question": "axe.png",
+    "answer": "la hache"
+  },
+  {
+    "question": "backpack.png",
+    "answer": "le sac à dos"
+  },
+  {
+    "question": "balance-scale.png",
+    "answer": "l'échelle"
+  },
+  {
+    "question": "battery.png",
+    "answer": "la batterie"
+  },
+  {
+    "question": "bomb.png",
+    "answer": "la bombe"
+  },
+  {
+    "question": "calendar.png",
+    "answer": "le calendrier"
+  },
+  {
+    "question": "camera.png",
+    "answer": "l'appareil photo"
+  },
+  {
+    "question": "chains.png",
+    "answer": "les chaînes"
+  },
+  {
+    "question": "chemistry.png",
+    "answer": "la chimie"
+  },
+  {
+    "question": "clamp.png",
+    "answer": "la pince"
+  },
+  {
+    "question": "compass.png",
+    "answer": "la boussole"
+  },
+  {
+    "question": "computer-mouse.png",
+    "answer": "la souris"
+  },
+  {
+    "question": "control-board.png",
+    "answer": "les commandes"
+  },
+  {
+    "question": "crane.png",
+    "answer": "la grue"
+  },
+  {
+    "question": "dagger.png",
+    "answer": "le poignard"
+  },
+  {
+    "question": "desktop-computer.png",
+    "answer": "l'ordinateur de bureau"
+  },
+  {
+    "question": "dish.png",
+    "answer": "le plat"
+  },
+  {
+    "question": "dna.png",
+    "answer": "l'adn"
+  },
+  {
+    "question": "dvd.png",
+    "answer": "le dvd"
+  },
+  {
+    "question": "e-mail.png",
+    "answer": "le email"
+  },
+  {
+    "question": "electric-plug.png",
+    "answer": "la prise"
+  },
+  {
+    "question": "electricity.png",
+    "answer": "l'électricité"
+  },
+  {
+    "question": "fax-machine.png",
+    "answer": "le télécopieur"
+  },
+  {
+    "question": "film-projector.png",
+    "answer": "le projecteur de film"
+  },
+  {
+    "question": "fire-extinguisher.png",
+    "answer": "l'extincteur"
+  },
+  {
+    "question": "firumu.png",
+    "answer": "le film"
+  },
+  {
+    "question": "flashlight.png",
+    "answer": "la lampe de poche"
+  },
+  {
+    "question": "floppy-disk.png",
+    "answer": "la disquette"
+  },
+  {
+    "question": "gear.png",
+    "answer": "l'engrenage"
+  },
+  {
+    "question": "hammer.png",
+    "answer": "le marteau"
+  },
+  {
+    "question": "hard-disk-drive.png",
+    "answer": "le disque dur"
+  },
+  {
+    "question": "headphone.png",
+    "answer": "le casque"
+  },
+  {
+    "question": "hourglass.png",
+    "answer": "le sablier"
+  },
+  {
+    "question": "inbox.png",
+    "answer": "la boîte de réception"
+  },
+  {
+    "question": "joystick.png",
+    "answer": "le joystick"
+  },
+  {
+    "question": "key.png",
+    "answer": "la clé"
+  },
+  {
+    "question": "keyboard.png",
+    "answer": "le clavier"
+  },
+  {
+    "question": "label.png",
+    "answer": "l'étiquette"
+  },
+  {
+    "question": "laptop-computer.png",
+    "answer": "l'ordinateur portable"
+  },
+  {
+    "question": "light-bulb.png",
+    "answer": "l'ampoule"
+  },
+  {
+    "question": "locked.png",
+    "answer": "le verrouillé"
+  },
+  {
+    "question": "magnet.png",
+    "answer": "l'aimant"
+  },
+  {
+    "question": "magnifying-glass.png",
+    "answer": "la loupe"
+  },
+  {
+    "question": "microbe.png",
+    "answer": "le microbe"
+  },
+  {
+    "question": "microphone.png",
+    "answer": "le micro"
+  },
+  {
+    "question": "microscope.png",
+    "answer": "le microscope"
+  },
+  {
+    "question": "mobile-phone.png",
+    "answer": "le mobile"
+  },
+  {
+    "question": "movie-camera.png",
+    "answer": "la caméra de cinéma"
+  },
+  {
+    "question": "nuts-and-bolts.png",
+    "answer": "les écrous et les boulons"
+  },
+  {
+    "question": "oil-drum.png",
+    "answer": "le bidon d'huile"
+  },
+  {
+    "question": "optical-disk.png",
+    "answer": "le cd"
+  },
+  {
+    "question": "out.png",
+    "answer": "la boîte d'envoi"
+  },
+  {
+    "question": "package.png",
+    "answer": "le paquet"
+  },
+  {
+    "question": "pager.png",
+    "answer": "le téléavertisseur"
+  },
+  {
+    "question": "paper-clip.png",
+    "answer": "le trombone"
+  },
+  {
+    "question": "pen.png",
+    "answer": "le stylo"
+  },
+  {
+    "question": "pencil.png",
+    "answer": "le crayon"
+  },
+  {
+    "question": "petri-dish.png",
+    "answer": "la boîte de pétri"
+  },
+  {
+    "question": "pick.png",
+    "answer": "la pioche"
+  },
+  {
+    "question": "pistol.png",
+    "answer": "le pistolet"
+  },
+  {
+    "question": "printer.png",
+    "answer": "l'imprimante"
+  },
+  {
+    "question": "protractor.png",
+    "answer": "le rapporteur"
+  },
+  {
+    "question": "pushpin.png",
+    "answer": "la punaise"
+  },
+  {
+    "question": "radio.png",
+    "answer": "la radio"
+  },
+  {
+    "question": "satellite.png",
+    "answer": "le satellite"
+  },
+  {
+    "question": "scissors.png",
+    "answer": "les ciseaux"
+  },
+  {
+    "question": "slate.png",
+    "answer": "le clap"
+  },
+  {
+    "question": "stethoscope.png",
+    "answer": "le stéthoscope"
+  },
+  {
+    "question": "sword.png",
+    "answer": "l'épée"
+  },
+  {
+    "question": "syringe.png",
+    "answer": "la seringue"
+  },
+  {
+    "question": "telephone.png",
+    "answer": "le téléphone"
+  },
+  {
+    "question": "telescope.png",
+    "answer": "le télescope"
+  },
+  {
+    "question": "television.png",
+    "answer": "la télévision"
+  },
+  {
+    "question": "test-tube.png",
+    "answer": "le tube à essai"
+  },
+  {
+    "question": "thermometer.png",
+    "answer": "le thermomètre"
+  },
+  {
+    "question": "timer.png",
+    "answer": "la minuterie"
+  },
+  {
+    "question": "toolbox.png",
+    "answer": "la boîte à outils"
+  },
+  {
+    "question": "trackball.png",
+    "answer": "le trackball"
+  },
+  {
+    "question": "umbrella.png",
+    "answer": "le parapluie"
+  },
+  {
+    "question": "unlocked.png",
+    "answer": "le déverrouillé"
+  },
+  {
+    "question": "video-camera.png",
+    "answer": "la caméra vidéo"
+  },
+  {
+    "question": "video-game.png",
+    "answer": "le jeu vidéo"
+  },
+  {
+    "question": "videocassette.png",
+    "answer": "la vidéocassette"
+  },
+  {
+    "question": "volume.png",
+    "answer": "le volume"
+  },
+  {
+    "question": "watch.png",
+    "answer": "la montre"
+  },
+  {
+    "question": "wrench.png",
+    "answer": "la clé"
+  }
+]

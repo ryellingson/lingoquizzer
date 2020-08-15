@@ -11,17 +11,6 @@
     ]
   },
   {
-    "question": "aland-islands.png",
-    "kanji": "オーランドしょとう",
-    "kana": "オーランドしょとう",
-    "romaji": "oorandoshotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
-    ]
-  },
-  {
     "question": "albania.png",
     "kanji": "アルバニア",
     "kana": "アルバニア",
@@ -41,17 +30,6 @@
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
-    ]
-  },
-  {
-    "question": "american-samoa.png",
-    "kanji": "アメリカりょうサモア",
-    "kana": "アメリカりょうサモア",
-    "romaji": "amerikaryousamoa",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
     ]
   },
   {
@@ -77,32 +55,10 @@
     ]
   },
   {
-    "question": "anguilla.png",
-    "kanji": "アングィラ島",
-    "kana": "アングィラとう",
-    "romaji": "anguiratou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "antarctica.png",
     "kanji": "南極大陸",
     "kana": "なんきょくたいりく",
     "romaji": "nankyokutairiku",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "antigua-and-barbuda.png",
-    "kanji": "アンティグア・バーブーダ",
-    "kana": "アンティグアバーブーダ",
-    "romaji": "antiguabaabuuda",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -129,28 +85,6 @@
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
-    ]
-  },
-  {
-    "question": "aruba.png",
-    "kanji": "アルバー",
-    "kana": "アルバー",
-    "romaji": "arubaa",
-    "is_common": "=",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "ascension-island.png",
-    "kanji": "アセンションとう",
-    "kana": "アセンションとう",
-    "romaji": "asenshonshima",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
     ]
   },
   {
@@ -187,17 +121,6 @@
     ]
   },
   {
-    "question": "bahamas.png",
-    "kanji": "バハマ",
-    "kana": "バハマ",
-    "romaji": "bahama",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "bahrain.png",
     "kanji": "バーレーン",
     "kana": "バーレーン",
@@ -214,28 +137,6 @@
     "kana": "バングラデシュ",
     "romaji": "banguradeshu",
     "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "barbados.png",
-    "kanji": "バルバドス",
-    "kana": "バルバドス",
-    "romaji": "barubadosu",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "barth.png",
-    "kanji": "バルト",
-    "kana": "バルト",
-    "romaji": "baruto",
-    "is_common": true,
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
@@ -279,17 +180,6 @@
     "kanji": "ベナン",
     "kana": "ベナン",
     "romaji": "benan",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "bermuda.png",
-    "kanji": "バーミューダ",
-    "kana": "バミューダ",
-    "romaji": "bamyuuda",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -341,44 +231,11 @@
     ]
   },
   {
-    "question": "bouvet-island.png",
-    "kanji": "ブーベとう",
-    "kana": "ブーベとう",
-    "romaji": "buubetou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
-    ]
-  },
-  {
     "question": "brazil.png",
     "kanji": "伯剌西爾",
     "kana": "ブラジル",
     "romaji": "burajiru",
     "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "british-indian-ocean-territory.png",
-    "kanji": "イギリス領インド洋地域",
-    "kana": "イギリスりょうインドちいき",
-    "romaji": "igirisuryouindoyouchiiki",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "british-virgin-islands.png",
-    "kanji": "イギリス領ヴァージン諸島",
-    "kana": "イギリスりょうヴァージンしょとう",
-    "romaji": "igirisuryoubaajinshotou",
-    "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
@@ -462,50 +319,6 @@
     ]
   },
   {
-    "question": "canary-islands.png",
-    "kanji": "カナリアしょとう",
-    "kana": "カナリアしょとう",
-    "romaji": "kanariashotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
-    ]
-  },
-  {
-    "question": "cape-verde.png",
-    "kanji": "カボベルデ",
-    "kana": "カーボベルデ",
-    "romaji": "kaapoberude",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "caribbean-netherlands.png",
-    "kanji": "カリブかいのオランダ",
-    "kana": "カリブかいのオランダ",
-    "romaji": "karibukainooranda",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "cayman-islands.png",
-    "kanji": "ケイマンしょとう",
-    "kana": "ケイマンしょとう",
-    "romaji": "keimanshotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "central-african-republic.png",
     "kanji": "中央アフリカ共和国",
     "kana": "ちゅうおうアフリカきょうわこく",
@@ -550,54 +363,10 @@
     ]
   },
   {
-    "question": "christmas-island.png",
-    "kanji": "クリススとう",
-    "kana": "クリススとう",
-    "romaji": "kurisumasutou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "clipperton-island.png",
-    "kanji": "クリッパートンとう",
-    "kana": "クリッパートンとう",
-    "romaji": "kurippaatontou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
-    ]
-  },
-  {
-    "question": "cocos.png",
-    "kanji": "ココス諸島",
-    "kana": "ココスしょとう",
-    "romaji": "kokosushotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "colombia.png",
     "kanji": "哥倫比亜",
     "kana": "コロンビア",
     "romaji": "koronbia",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "comoros.png",
-    "kanji": "コモロ",
-    "kana": "コモロ",
-    "romaji": "komoro",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -624,17 +393,6 @@
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
-    ]
-  },
-  {
-    "question": "cook-islands.png",
-    "kanji": "クックしょとう",
-    "kana": "クックしょとう",
-    "romaji": "kukkushotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
     ]
   },
   {
@@ -682,17 +440,6 @@
     ]
   },
   {
-    "question": "curacao.png",
-    "kanji": "キュラソー",
-    "kana": "キュラソー",
-    "romaji": "kyurasoo",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "cyprus.png",
     "kanji": "キプロス",
     "kana": "キプロス",
@@ -719,17 +466,6 @@
     "kanji": "丁抹",
     "kana": "デンマーク",
     "romaji": "denmaaku",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "diego-garcia.png",
-    "kanji": "ディエゴガルシア島",
-    "kana": "ディエゴガルシアとう",
-    "romaji": "diegogarushiatou",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -892,28 +628,6 @@
     ]
   },
   {
-    "question": "falkland-islands.png",
-    "kanji": "フォークランド",
-    "kana": "フォークランドしょとう",
-    "romaji": "fookurandoshotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "faroe-islands.png",
-    "kanji": "フェローしょとう",
-    "kana": "フェローしょとう",
-    "romaji": "ferooshotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
-    ]
-  },
-  {
     "question": "fiji.png",
     "kanji": "フィジー",
     "kana": "フィジー",
@@ -955,17 +669,6 @@
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
-    ]
-  },
-  {
-    "question": "french-polynesia.png",
-    "kanji": "フランスりょうポリネシア",
-    "kana": "フランスりょうポリネシア",
-    "romaji": "furansuryouporineshia",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
     ]
   },
   {
@@ -1035,17 +738,6 @@
     ]
   },
   {
-    "question": "gibraltar.png",
-    "kanji": "ジブラルタル",
-    "kana": "ジブラルタル",
-    "romaji": "jiburarutaru",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "greece.png",
     "kanji": "希臘",
     "kana": "ギリシャ",
@@ -1068,55 +760,11 @@
     ]
   },
   {
-    "question": "grenada.png",
-    "kanji": "グレナダ",
-    "kana": "グレナダ",
-    "romaji": "gurenada",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "guadeloupe.png",
-    "kanji": "グアドループ島",
-    "kana": "グアドループとう",
-    "romaji": "guadoruuputou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "guam.png",
-    "kanji": "瓦無",
-    "kana": "グアム",
-    "romaji": "guamu",
-    "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "guatemala.png",
     "kanji": "グアテマラ",
     "kana": "グアテマラ",
     "romaji": "guatemara",
     "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "guernsey.png",
-    "kanji": "ガーンジー",
-    "kana": "ガーンジー",
-    "romaji": "gaanjii",
-    "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
@@ -1165,17 +813,6 @@
     "parts_of_speech": [
       "Noun",
       "Suru verb"
-    ]
-  },
-  {
-    "question": "heard-island.png",
-    "kanji": "ハード島とマクドナルド諸島",
-    "kana": "ハードとうとマクドナルドしょとう",
-    "romaji": "haadotoutomakudonarudoshoutou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
     ]
   },
   {
@@ -1278,17 +915,6 @@
     ]
   },
   {
-    "question": "isle-of-man.png",
-    "kanji": "マンとう",
-    "kana": "マンとう",
-    "romaji": "mantou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
-    ]
-  },
-  {
     "question": "israel.png",
     "kanji": "以色列",
     "kana": "イスラエル",
@@ -1333,17 +959,6 @@
     ]
   },
   {
-    "question": "jersey.png",
-    "kanji": "ジャージー",
-    "kana": "ジャージー",
-    "romaji": "jaajii",
-    "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "jordan.png",
     "kanji": "ヨルダン",
     "kana": "ヨルダン",
@@ -1370,17 +985,6 @@
     "kanji": "ケニア",
     "kana": "ケニア",
     "romaji": "kenia",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "kiribati.png",
-    "kanji": "キリバス",
-    "kana": "キリバス",
-    "romaji": "kiribasu",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -1520,17 +1124,6 @@
     ]
   },
   {
-    "question": "macao.png",
-    "kanji": "澳門",
-    "kana": "まかお",
-    "romaji": "makao",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "macedonia.png",
     "kanji": "マケドニア",
     "kana": "マケドニア",
@@ -1575,54 +1168,10 @@
     ]
   },
   {
-    "question": "maldives.png",
-    "kanji": "マルディブ",
-    "kana": "マルディブ",
-    "romaji": "marudibu",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "mali.png",
     "kanji": "マリ",
     "kana": "マリ",
     "romaji": "mari",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "malta.png",
-    "kanji": "マルタ",
-    "kana": "マルタ",
-    "romaji": "maruta",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "marshall-islands.png",
-    "kanji": "マーシャル諸島",
-    "kana": "マーシャルしょとう",
-    "romaji": "maasharushotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "martinique.png",
-    "kanji": "マルティニク",
-    "kana": "マルティニク",
-    "romaji": "maruteiniku",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -1645,17 +1194,6 @@
     "kanji": "毛里求斯",
     "kana": "モーリシャス",
     "romaji": "moorishasu",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "mayotte.png",
-    "kanji": "マヨット",
-    "kana": "マヨット",
-    "romaji": "mayotto",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -1729,17 +1267,6 @@
     ]
   },
   {
-    "question": "montserrat.png",
-    "kanji": "モンセラー",
-    "kana": "モンセラー",
-    "romaji": "monseraa",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "morocco.png",
     "kanji": "摩洛哥",
     "kana": "モロッコ",
@@ -1784,17 +1311,6 @@
     ]
   },
   {
-    "question": "nauru.png",
-    "kanji": "ナウル",
-    "kana": "ナウル",
-    "romaji": "nauru",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "nepal.png",
     "kanji": "捏巴爾",
     "kana": "ネパール",
@@ -1811,17 +1327,6 @@
     "kana": "オランダ",
     "romaji": "oranda",
     "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "new-caledonia.png",
-    "kanji": "ニューカレドニア",
-    "kana": "ニューカレドニア",
-    "romaji": "nyuukaredonia",
-    "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
@@ -1872,28 +1377,6 @@
     ]
   },
   {
-    "question": "niue.png",
-    "kanji": "ニウエ",
-    "kana": "ニウエ",
-    "romaji": "niue",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
-    ]
-  },
-  {
-    "question": "norfolk-island.png",
-    "kanji": "ノーフォーク松",
-    "kana": "ノーフォークまつ",
-    "romaji": "noofookumatsu",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "north-korea.png",
     "kanji": "北朝鮮",
     "kana": "きたちょうせん",
@@ -1902,17 +1385,6 @@
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
-    ]
-  },
-  {
-    "question": "northern-mariana-islands.png",
-    "kanji": "きたマリアナしょとう",
-    "kana": "きたマリアナしょとう",
-    "romaji": "kitamarianashotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
     ]
   },
   {
@@ -1943,17 +1415,6 @@
     "kana": "パキスタン",
     "romaji": "pakisutan",
     "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "palau.png",
-    "kanji": "パラオ",
-    "kana": "パラオ",
-    "romaji": "parao",
-    "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
@@ -2026,17 +1487,6 @@
     ]
   },
   {
-    "question": "pitcairn-islands.png",
-    "kanji": "ピトケアン諸島",
-    "kana": "ピトケアンしょうとう",
-    "romaji": "pitokeanshotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "poland.png",
     "kanji": "波蘭",
     "kana": "ポーランド",
@@ -2081,18 +1531,6 @@
     ]
   },
   {
-    "question": "reunion.png",
-    "kanji": "レユニオン",
-    "kana": "レユニオン",
-    "romaji": "reyunion",
-    "is_common": true,
-    "jlpt": "jlpt-n1",
-    "parts_of_speech": [
-      "Noun",
-      "Suru verb"
-    ]
-  },
-  {
     "question": "romania.png",
     "kanji": "羅馬尼亜",
     "kana": "ルーマニア",
@@ -2126,98 +1564,10 @@
     ]
   },
   {
-    "question": "saint-helena.png",
-    "kanji": "セントヘレナバタフライフィッシュ",
-    "kana": "セントヘレナバタフライフィッシュ",
-    "romaji": "santoherenabatafisshu",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "saint-kitts-and-nevis.png",
-    "kanji": "セントキッツネイビス",
-    "kana": "セントキッツネイビス",
-    "romaji": "santokittsuneibisu",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "saint-lucia.png",
-    "kanji": "セントルシア",
-    "kana": "セントルシア",
-    "romaji": "santorushia",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "saint-martin.png",
-    "kanji": "セントマーチン島",
-    "kana": "セントマーチンとう",
-    "romaji": "santomaachintou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "saint-pierre-and-miquelon.png",
-    "kanji": "サンピエール島・ミクロン島",
-    "kana": "サンピエールとうミクロンとう",
-    "romaji": "sanpieerutoumikurontou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "saint-vincent-and-grenadines.png",
-    "kanji": "セントビンセントおよびグレナディーン諸島",
-    "kana": "セントビンセントおよびグレナディーンしょとう",
-    "romaji": "santobinsantoouobugurenadiinshotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "samoa.png",
-    "kanji": "サモア",
-    "kana": "サモア",
-    "romaji": "samoa",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "san-marino.png",
     "kanji": "サンマリノ",
     "kana": "サンマリノ",
     "romaji": "sanmarino",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "sao-tome-and-principe.png",
-    "kanji": "サントメプリンシペ",
-    "kana": "サントメプリンシペ",
-    "romaji": "santomepurintsupe",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -2269,17 +1619,6 @@
     ]
   },
   {
-    "question": "seychelles.png",
-    "kanji": "セーシェル",
-    "kana": "セイシェル",
-    "romaji": "seisheru",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "sierra-leone.png",
     "kanji": "シエラレオネ",
     "kana": "シエラレオネ",
@@ -2296,17 +1635,6 @@
     "kana": "シンガポール",
     "romaji": "shingapooru",
     "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "sint-maarten.png",
-    "kanji": "シントマールテン",
-    "kana": "シントマールテン",
-    "romaji": "shintomaaruten",
-    "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
@@ -2335,17 +1663,6 @@
     ]
   },
   {
-    "question": "solomon-islands.png",
-    "kanji": "ソロモン諸島",
-    "kana": "ソロモンしょとう",
-    "romaji": "soromonshotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
     "question": "somalia.png",
     "kanji": "ソマリア",
     "kana": "ソマリア",
@@ -2362,17 +1679,6 @@
     "kana": "みなみアフリカ",
     "romaji": "minamiafurika",
     "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "south-georgia-and-south-sandwich-islands.png",
-    "kanji": "サウスジョージアサウスサンドウィッチ諸島",
-    "kana": "サウスジョージアサウスサンドウィッチしょうとう",
-    "romaji": "sausujoojiasaususandouicchishotou",
-    "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
       "Noun"
@@ -2439,17 +1745,6 @@
     "kanji": "スリナム",
     "kana": "スリナム",
     "romaji": "surinamu",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "svalbard-and-jan-mayen.png",
-    "kanji": "スバールバル諸島とヤンマイエン島",
-    "kana": "スバールバルしょうとうとヤンマイエンとう",
-    "romaji": "subaarubarushoutoutoyanmaientou",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -2534,61 +1829,6 @@
     ]
   },
   {
-    "question": "togo.png",
-    "kanji": "都護",
-    "kana": "とご",
-    "romaji": "togo",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "tokelau.png",
-    "kanji": "トケラウ",
-    "kana": "トケラウ",
-    "romaji": "tokerau",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Place"
-    ]
-  },
-  {
-    "question": "tonga.png",
-    "kanji": "トンガ",
-    "kana": "トンガ",
-    "romaji": "tonga",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "trinidad-and-tobago.png",
-    "kanji": "トリニダード・トバゴ",
-    "kana": "トリニダードトバゴ",
-    "romaji": "torinidaadototobago",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "tristan.png",
-    "kanji": "トリスタンとイゾルデ",
-    "kana": "トリスタンとイゾルデ",
-    "romaji": "torisutantoizorude",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Full name"
-    ]
-  },
-  {
     "question": "tunisia.png",
     "kanji": "突尼斯",
     "kana": "チュニジア",
@@ -2615,28 +1855,6 @@
     "kanji": "トルクメニスタン",
     "kana": "トルクメニスタン",
     "romaji": "torukumenisutan",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "turks-and-caicos-islands.png",
-    "kanji": "タークス・カイコス諸島",
-    "kana": "タークスカイコスしょとう",
-    "romaji": "taakusukaikosushotou",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "tuvalu.png",
-    "kanji": "ツバル",
-    "kana": "ツバル",
-    "romaji": "tsubaru",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [
@@ -2694,17 +1912,6 @@
     "romaji": "kokuren",
     "is_common": true,
     "jlpt": "jlpt-n1",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "united-states-virgin-islands.png",
-    "kanji": "アメリカ領ヴァージン諸島",
-    "kana": "アメリカりょうヴァージンしょとう",
-    "romaji": "amerikaryovuaajinshotou",
-    "is_common": "-",
-    "jlpt": "-",
     "parts_of_speech": [
       "Noun"
     ]
@@ -2780,28 +1987,6 @@
     "kanji": "越南",
     "kana": "えつなん",
     "romaji": "etsunan",
-    "is_common": "-",
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "wales.png",
-    "kanji": "ウェールズ",
-    "kana": "ウェールズ",
-    "romaji": "ueerusu",
-    "is_common": true,
-    "jlpt": "-",
-    "parts_of_speech": [
-      "Noun"
-    ]
-  },
-  {
-    "question": "wallis-and-futuna.png",
-    "kanji": "ウォリスフツナ",
-    "kana": "ウォリスフツナ",
-    "romaji": "uorisufutsuna",
     "is_common": "-",
     "jlpt": "-",
     "parts_of_speech": [

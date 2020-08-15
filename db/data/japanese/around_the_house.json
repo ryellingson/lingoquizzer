@@ -267,18 +267,6 @@
     ]
   },
   {
-    "question": "graduation.png",
-    "kanji": "卒業",
-    "kana": "そつぎょう",
-    "romaji": "sotsugyou",
-    "is_common": true,
-    "jlpt": "jlpt-n4",
-    "parts_of_speech": [
-      "Noun",
-      "Suru verb"
-    ]
-  },
-  {
     "question": "handbag.png",
     "kanji": "財布",
     "kana": "さいふ",

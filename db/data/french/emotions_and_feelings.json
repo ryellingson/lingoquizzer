@@ -1,0 +1,356 @@
+[
+  {
+    "question": "adventurous.png",
+    "answer": "la aventureuse",
+    "answer": "le aventureux"
+  },
+  {
+    "question": "affection.png",
+    "answer": "l'affection"
+  },
+  {
+    "question": "anguish.png",
+    "answer": "l'angoisse"
+  },
+  {
+    "question": "anxious.png",
+    "answer": "les anxieux"
+  },
+  {
+    "question": "astonishment.png",
+    "answer": "l'étonnement"
+  },
+  {
+    "question": "beaming.png",
+    "answer": "le rayonnant"
+  },
+  {
+    "question": "blush.png",
+    "answer": "le blush"
+  },
+  {
+    "question": "calmly.png",
+    "answer": "le chut"
+  },
+  {
+    "question": "cheeky.png",
+    "answer": "la effrontée",
+    "answer": "le effronté"
+  },
+  {
+    "question": "confound.png",
+    "answer": "la confusion"
+  },
+  {
+    "question": "confusion.png",
+    "answer": "la perplexité"
+  },
+  {
+    "question": "crazy-about.png",
+    "answer": "le fou amoureux"
+  },
+  {
+    "question": "dead.png",
+    "answer": "le mort"
+  },
+  {
+    "question": "disappointment.png",
+    "answer": "la déception"
+  },
+  {
+    "question": "disapproval.png",
+    "answer": "la désapprobation"
+  },
+  {
+    "question": "distress.png",
+    "answer": "la détresse"
+  },
+  {
+    "question": "dizzy.png",
+    "answer": "le vertige"
+  },
+  {
+    "question": "downcast.png",
+    "answer": "le abattu"
+  },
+  {
+    "question": "dubious.png",
+    "answer": "le douteux"
+  },
+  {
+    "question": "duck-face.png",
+    "answer": "le duckface"
+  },
+  {
+    "question": "embarrassment.png",
+    "answer": "l'embarras"
+  },
+  {
+    "question": "expressionless.png",
+    "answer": "le sans expression"
+  },
+  {
+    "question": "fatigue.png",
+    "answer": "la fatigue"
+  },
+  {
+    "question": "fearful.png",
+    "answer": "le craintif"
+  },
+  {
+    "question": "fever.png",
+    "answer": "la fièvre"
+  },
+  {
+    "question": "flattery.png",
+    "answer": "la flatterie"
+  },
+  {
+    "question": "flirtatious.png",
+    "answer": "le coquin"
+  },
+  {
+    "question": "frustrated.png",
+    "answer": "le frustré"
+  },
+  {
+    "question": "gasp.png",
+    "answer": "le halètement"
+  },
+  {
+    "question": "greed.png",
+    "answer": "la cupidité"
+  },
+  {
+    "question": "grimace.png",
+    "answer": "la grimace"
+  },
+  {
+    "question": "grin.png",
+    "answer": "le sourire"
+  },
+  {
+    "question": "happy.png",
+    "answer": "l'heureux"
+  },
+  {
+    "question": "hurt.png",
+    "answer": "le mal"
+  },
+  {
+    "question": "hysterical.png",
+    "answer": "l'hystérique"
+  },
+  {
+    "question": "insane.png",
+    "answer": "le fou"
+  },
+  {
+    "question": "joy.png",
+    "answer": "la joie"
+  },
+  {
+    "question": "kakkoi.png",
+    "answer": "le chouette"
+  },
+  {
+    "question": "kiss.png",
+    "answer": "le baiser"
+  },
+  {
+    "question": "laugh.png",
+    "answer": "le rire"
+  },
+  {
+    "question": "love.png",
+    "answer": "l'amour"
+  },
+  {
+    "question": "melancholy.png",
+    "answer": "la mélancolie"
+  },
+  {
+    "question": "mind.png",
+    "answer": "l'esprit soufflé"
+  },
+  {
+    "question": "mischievous.png",
+    "answer": "le malicieux"
+  },
+  {
+    "question": "nauseous.png",
+    "answer": "les nauséeux"
+  },
+  {
+    "question": "otaku-nerd.png",
+    "answer": "le geek"
+  },
+  {
+    "question": "partying.png",
+    "answer": "faire la fête"
+  },
+  {
+    "question": "pensive.png",
+    "answer": "le pensif"
+  },
+  {
+    "question": "pissed.png",
+    "answer": "le pissé"
+  },
+  {
+    "question": "playful.png",
+    "answer": "le ludique"
+  },
+  {
+    "question": "plead.png",
+    "answer": "le plaidoyer"
+  },
+  {
+    "question": "pleased.png",
+    "answer": "le content"
+  },
+  {
+    "question": "pout.png",
+    "answer": "la moue"
+  },
+  {
+    "question": "pretentious.png",
+    "answer": "le prétentieux"
+  },
+  {
+    "question": "pure-heart.png",
+    "answer": "le pur de coeur"
+  },
+  {
+    "question": "relief.png",
+    "answer": "le relief"
+  },
+  {
+    "question": "roar-of-laughter.png",
+    "answer": "hurler de rire"
+  },
+  {
+    "question": "sad.png",
+    "answer": "le triste"
+  },
+  {
+    "question": "samui.png",
+    "answer": "le froid"
+  },
+  {
+    "question": "sarcastic.png",
+    "answer": "le sarcastique"
+  },
+  {
+    "question": "sick.png",
+    "answer": "le malade"
+  },
+  {
+    "question": "silly.png",
+    "answer": "le idiot"
+  },
+  {
+    "question": "sleeping.png",
+    "answer": "le sommeil"
+  },
+  {
+    "question": "sleepy.png",
+    "answer": "le somnolent"
+  },
+  {
+    "question": "smirk.png",
+    "answer": "le sourire narquois"
+  },
+  {
+    "question": "sneeze.png",
+    "answer": "l'éternuement"
+  },
+  {
+    "question": "snicker.png",
+    "answer": "le ricanement"
+  },
+  {
+    "question": "sob.png",
+    "answer": "le sanglot"
+  },
+  {
+    "question": "sober.png",
+    "answer": "le sobre"
+  },
+  {
+    "question": "speechless.png",
+    "answer": "le sans voix"
+  },
+  {
+    "question": "star-struck.png",
+    "answer": "l'étoile a frappé"
+  },
+  {
+    "question": "surprise.png",
+    "answer": "la surprise"
+  },
+  {
+    "question": "terror.png",
+    "answer": "la terreur"
+  },
+  {
+    "question": "thought-consideration.png",
+    "answer": "la prise en compte"
+  },
+  {
+    "question": "to-be-upset.png",
+    "answer": "le bouleversé"
+  },
+  {
+    "question": "to-cry.png",
+    "answer": "pleurer"
+  },
+  {
+    "question": "to-drool.png",
+    "answer": "baver"
+  },
+  {
+    "question": "to-get-drunk.png",
+    "answer": "se soûler"
+  },
+  {
+    "question": "to-get-irritated.png",
+    "answer": "les irrités"
+  },
+  {
+    "question": "to-lie.png",
+    "answer": "mentir"
+  },
+  {
+    "question": "to-vomit.png",
+    "answer": "vomir"
+  },
+  {
+    "question": "unamused.png",
+    "answer": "les non amusés"
+  },
+  {
+    "question": "wacky.png",
+    "answer": "le farfelu"
+  },
+  {
+    "question": "weary.png",
+    "answer": "le fatigué"
+  },
+  {
+    "question": "wink.png",
+    "answer": "le clin d'oeil"
+  },
+  {
+    "question": "worried.png",
+    "answer": "le souci"
+  },
+  {
+    "question": "yawn.png",
+    "answer": "le bâillement"
+  },
+  {
+    "question": "zip-it.png",
+    "answer": "le tais-toi"
+  }
+]
