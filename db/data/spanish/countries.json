@@ -1,0 +1,727 @@
+[
+  {
+    "question": "afghanistan.png",
+    "answer": "afganistán"
+  },
+  {
+    "question": "albania.png",
+    "answer": "albania"
+  },
+  {
+    "question": "algeria.png",
+    "answer": "argelia"
+  },
+  {
+    "question": "andorra.png",
+    "answer": "andorra"
+  },
+  {
+    "question": "angola.png",
+    "answer": "angola"
+  },
+  {
+    "question": "antarctica.png",
+    "answer": "antártida"
+  },
+  {
+    "question": "argentina.png",
+    "answer": "argentina"
+  },
+  {
+    "question": "armenia.png",
+    "answer": "armenia"
+  },
+  {
+    "question": "australia.png",
+    "answer": "australia"
+  },
+  {
+    "question": "austria.png",
+    "answer": "austria"
+  },
+  {
+    "question": "azerbaijan.png",
+    "answer": "azerbaiyán"
+  },
+  {
+    "question": "bahrain.png",
+    "answer": "bahrein"
+  },
+  {
+    "question": "bangladesh.png",
+    "answer": "bangladesh"
+  },
+  {
+    "question": "belarus.png",
+    "answer": "bielorrusia"
+  },
+  {
+    "question": "belgium.png",
+    "answer": "bélgica"
+  },
+  {
+    "question": "belize.png",
+    "answer": "belice"
+  },
+  {
+    "question": "benin.png",
+    "answer": "benin"
+  },
+  {
+    "question": "bhutan.png",
+    "answer": "bután"
+  },
+  {
+    "question": "bolivia.png",
+    "answer": "bolivia"
+  },
+  {
+    "question": "bosnia-and-herzegovina.png",
+    "answer": "bosnia y herzegovina"
+  },
+  {
+    "question": "botswana.png",
+    "answer": "botswana"
+  },
+  {
+    "question": "brazil.png",
+    "answer": "brasil"
+  },
+  {
+    "question": "brunei.png",
+    "answer": "brunei"
+  },
+  {
+    "question": "bulgaria.png",
+    "answer": "bulgaria"
+  },
+  {
+    "question": "burkina-faso.png",
+    "answer": "burkina faso."
+  },
+  {
+    "question": "burundi.png",
+    "answer": "burundi"
+  },
+  {
+    "question": "cambodia.png",
+    "answer": "camboya"
+  },
+  {
+    "question": "cameroon.png",
+    "answer": "camerún"
+  },
+  {
+    "question": "canada.png",
+    "answer": "canadá"
+  },
+  {
+    "question": "central-african-republic.png",
+    "answer": "república centroafricana"
+  },
+  {
+    "question": "chad.png",
+      "answer": "chad"
+  },
+  {
+    "question": "chile.png",
+    "answer": "chile"
+  },
+  {
+    "question": "china.png",
+    "answer": "china"
+  },
+  {
+    "question": "colombia.png",
+    "answer": "colombia"
+  },
+  {
+    "question": "congo-brazzaville.png",
+    "answer": "congo brazzaville"
+  },
+  {
+    "question": "congo-kinshasa.png",
+    "answer": "congo kinshasa"
+  },
+  {
+    "question": "costa-rica.png",
+    "answer": "costa rica"
+  },
+  {
+    "question": "cote-d'ivoire.png",
+     "answer": "costa de marfil"
+  },
+  {
+    "question": "croatia.png",
+    "answer": "croacia"
+  },
+  {
+    "question": "cuba.png",
+    "answer": "cuba"
+  },
+  {
+    "question": "cyprus.png",
+    "answer": "chipre"
+  },
+  {
+    "question": "czech-republic.png",
+    "answer": "republica checa"
+  },
+  {
+    "question": "denmark.png",
+    "answer": "dinamarca"
+  },
+  {
+    "question": "djibouti.png",
+    "answer": "djibouti"
+  },
+  {
+    "question": "dominica.png",
+    "answer": "dominica"
+  },
+  {
+    "question": "dominican-republic.png",
+    "answer": "república dominicana"
+  },
+  {
+    "question": "east-timor.png",
+     "answer": "timor oriental"
+  },
+  {
+    "question": "ecuador.png",
+    "answer": "ecuador"
+  },
+  {
+    "question": "egypt.png",
+    "answer": "egipto"
+  },
+  {
+    "question": "el-salvador.png",
+    "answer": "el salvador"
+  },
+  {
+    "question": "england.png",
+    "answer": "inglaterra"
+  },
+  {
+    "question": "equatorial-guinea.png",
+    "answer": "guinea ecuatorial"
+  },
+  {
+    "question": "eritrea.png",
+    "answer": "eritrea"
+  },
+  {
+    "question": "estonia.png",
+    "answer": "estonia"
+  },
+  {
+    "question": "eswatini.png",
+    "answer": "eswatini"
+  },
+  {
+    "question": "ethiopia.png",
+    "answer": "etiopía"
+  },
+  {
+    "question": "european-union.png",
+    "answer": "unión europea"
+  },
+  {
+    "question": "fiji.png",
+     "answer": "fiji"
+  },
+  {
+    "question": "finland.png",
+    "answer": "finlandia"
+  },
+  {
+    "question": "france.png",
+    "answer": "francia"
+  },
+  {
+    "question": "french-guiana.png",
+    "answer": "guayana francesa"
+  },
+  {
+    "question": "gabon.png",
+    "answer": "gabón"
+  },
+  {
+    "question": "gambia.png",
+    "answer": "gambia"
+  },
+  {
+    "question": "georgia.png",
+    "answer": "georgia"
+  },
+  {
+    "question": "germany.png",
+    "answer": "alemania"
+  },
+  {
+    "question": "ghana.png",
+    "answer": "ghana"
+  },
+  {
+    "question": "greece.png",
+    "answer": "grecia"
+  },
+  {
+    "question": "greenland.png",
+    "answer": "groenlandia"
+  },
+  {
+    "question": "guatemala.png",
+    "answer": "guatemala"
+  },
+  {
+    "question": "guinea-bissau.png",
+    "answer": "guinea-bisáu"
+  },
+  {
+    "question": "guinea.png",
+    "answer": "guinea"
+  },
+  {
+    "question": "guyana.png",
+    "answer": "guayana"
+  },
+  {
+    "question": "haiti.png",
+    "answer": "haití"
+  },
+  {
+    "question": "honduras.png",
+    "answer": "honduras"
+  },
+  {
+    "question": "hong-kong-sar-china.png",
+    "answer": "hong kong"
+  },
+  {
+    "question": "hungary.png",
+    "answer": "hungría"
+  },
+  {
+    "question": "iceland.png",
+    "answer": "islandia"
+  },
+  {
+    "question": "india.png",
+    "answer": "india"
+  },
+  {
+    "question": "indonesia.png",
+    "answer": "indonesia"
+  },
+  {
+    "question": "iran.png",
+    "answer": "irán"
+  },
+  {
+    "question": "iraq.png",
+    "answer": "irak"
+  },
+  {
+    "question": "ireland.png",
+     "answer": "irlanda"
+  },
+  {
+    "question": "israel.png",
+    "answer": "israel"
+  },
+  {
+    "question": "italy.png",
+    "answer": "italia"
+  },
+  {
+    "question": "jamaica.png",
+    "answer": "jamaica"
+  },
+  {
+    "question": "japan.png",
+    "answer": "japón"
+  },
+  {
+    "question": "jordan.png",
+    "answer": "jordán"
+  },
+  {
+    "question": "kazakhstan.png",
+    "answer": "kazajstán"
+  },
+  {
+    "question": "kenya.png",
+    "answer": "kenia"
+  },
+  {
+    "question": "kosovo.png",
+    "answer": "kosovo"
+  },
+  {
+    "question": "kuwait.png",
+    "answer": "kuwait"
+  },
+  {
+    "question": "kyrgyzstan.png",
+    "answer": "kirguistán"
+  },
+  {
+    "question": "laos.png",
+    "answer": "laos"
+  },
+  {
+    "question": "latvia.png",
+    "answer": "letonia"
+  },
+  {
+    "question": "lebanon.png",
+    "answer": "líbano"
+  },
+  {
+    "question": "lesotho.png",
+    "answer": "lesoto"
+  },
+  {
+    "question": "liberia.png",
+    "answer": "liberia"
+  },
+  {
+    "question": "libya.png",
+    "answer": "libia"
+  },
+  {
+    "question": "liechtenstein.png",
+    "answer": "liechtenstein"
+  },
+  {
+    "question": "lithuania.png",
+    "answer": "lituania"
+  },
+  {
+    "question": "luxembourg.png",
+    "answer": "Luxemburgo"
+  },
+  {
+    "question": "macedonia.png",
+    "answer": "macedonia"
+  },
+  {
+    "question": "madagascar.png",
+    "answer": "madagascar"
+  },
+  {
+    "question": "malawi.png",
+    "answer": "malawi"
+  },
+  {
+    "question": "malaysia.png",
+    "answer": "malasia"
+  },
+  {
+    "question": "mali.png",
+    "answer": "mali"
+  },
+  {
+    "question": "malta.png",
+    "answer": "malta"
+  },
+  {
+    "question": "mauritania.png",
+    "answer": "mauritania"
+  },
+  {
+    "question": "mexico.png",
+    "answer": "méxico"
+  },
+  {
+    "question": "moldova.png",
+    "answer": "moldavia"
+  },
+  {
+    "question": "mongolia.png",
+    "answer": "mongolia"
+  },
+  {
+    "question": "montenegro.png",
+    "answer": "montenegro"
+  },
+  {
+    "question": "morocco.png",
+    "answer": "marruecos"
+  },
+  {
+    "question": "mozambique.png",
+    "answer": "mozambique"
+  },
+  {
+    "question": "myanmar-burma.png",
+    "answer": "myanmar"
+  },
+  {
+    "question": "namibia.png",
+    "answer": "namibia"
+  },
+  {
+    "question": "nepal.png",
+    "answer": "nepal"
+  },
+  {
+    "question": "netherlands.png",
+    "answer": "países bajos"
+  },
+  {
+    "question": "new-zealand.png",
+    "answer": "nueva zelanda"
+  },
+  {
+    "question": "nicaragua.png",
+    "answer": "nicaragua"
+  },
+  {
+    "question": "niger.png",
+    "answer": "níger"
+  },
+  {
+    "question": "nigeria.png",
+    "answer": "nigeria"
+  },
+  {
+    "question": "north-korea.png",
+    "answer": "corea del norte"
+  },
+  {
+    "question": "norway.png",
+    "answer": "noruega"
+  },
+  {
+    "question": "oman.png",
+    "answer": "omán"
+  },
+  {
+    "question": "pakistan.png",
+    "answer": "pakistán"
+  },
+  {
+    "question": "palestine.png",
+    "answer": "palestino"
+  },
+  {
+    "question": "panama.png",
+    "answer": "panamá"
+  },
+  {
+    "question": "papua-new-guinea.png",
+    "answer": "papúa nueva guinea"
+  },
+  {
+    "question": "paraguay.png",
+    "answer": "paraguay"
+  },
+  {
+    "question": "peru.png",
+    "answer": "perú"
+  },
+  {
+    "question": "philippines.png",
+    "answer": "filipinas"
+  },
+  {
+    "question": "poland.png",
+    "answer": "Polonia"
+  },
+  {
+    "question": "portugal.png",
+    "answer": "portugal"
+  },
+  {
+    "question": "puerto-rico.png",
+    "answer": "puerto rico"
+  },
+  {
+    "question": "qatar.png",
+    "answer": "katar"
+  },
+  {
+    "question": "romania.png",
+    "answer": "rumania"
+  },
+  {
+    "question": "russia.png",
+    "answer": "rusia"
+  },
+  {
+    "question": "rwanda.png",
+    "answer": "ruanda"
+  },
+  {
+    "question": "samoa.png",
+    "answer": "samoa"
+  },
+  {
+    "question": "san-marino.png",
+    "answer": "san marino"
+  },
+  {
+    "question": "saudi-arabia.png",
+    "answer": "arabia saudita"
+  },
+  {
+    "question": "scotland.png",
+    "answer": "escocia"
+  },
+  {
+    "question": "senegal.png",
+    "answer": "senegal"
+  },
+  {
+    "question": "serbia.png",
+    "answer": "serbia"
+  },
+  {
+    "question": "sierra-leone.png",
+    "answer": "sierra leona"
+  },
+  {
+    "question": "singapore.png",
+    "answer": "singapur"
+  },
+  {
+    "question": "slovakia.png",
+    "answer": "eslovaquia"
+  },
+  {
+    "question": "slovenia.png",
+    "answer": "eslovenia"
+  },
+
+  {
+    "question": "somalia.png",
+    "answer": "somalia"
+  },
+  {
+    "question": "south-africa.png",
+    "answer": "sudáfrica"
+  },
+  {
+    "question": "south-korea.png",
+    "answer": "corea del sur"
+  },
+  {
+    "question": "south-sudan.png",
+    "answer": "sudán del sur"
+  },
+  {
+    "question": "spain.png",
+    "answer": "españa"
+  },
+  {
+    "question": "sri-lanka.png",
+    "answer": "sri lanka"
+  },
+  {
+    "question": "sudan.png",
+    "answer": "sudán"
+  },
+  {
+    "question": "suriname.png",
+    "answer": "surinam"
+  },
+  {
+    "question": "sweden.png",
+    "answer": "suecia"
+  },
+  {
+    "question": "switzerland.png",
+    "answer": "suiza"
+  },
+  {
+    "question": "syria.png",
+    "answer": "siria"
+  },
+  {
+    "question": "taiwan.png",
+    "answer": "taiwán"
+  },
+  {
+    "question": "tajikistan.png",
+    "answer": "tayikistán"
+  },
+  {
+    "question": "tanzania.png",
+    "answer": "tanzania"
+  },
+  {
+    "question": "thailand.png",
+    "answer": "tailandia"
+  },
+  {
+    "question": "tunisia.png",
+    "answer": "túnez"
+  },
+  {
+    "question": "turkey.png",
+    "answer": "turquía"
+  },
+  {
+    "question": "turkmenistan.png",
+    "answer": "turkmenistán"
+  },
+  {
+    "question": "uganda.png",
+    "answer": "uganda"
+  },
+  {
+    "question": "ukraine.png",
+    "answer": "ucrania"
+  },
+  {
+    "question": "united-arab-emirates.png",
+    "answer": "emiratos árabes unidos"
+  },
+  {
+    "question": "united-kingdom.png",
+    "answer": "reino unido"
+  },
+  {
+    "question": "united-nations.png",
+    "answer": "naciones unidas"
+  },
+  {
+    "question": "united-states.png",
+    "answer": "estados unidos"
+  },
+  {
+    "question": "uruguay.png",
+    "answer": "uruguay"
+  },
+  {
+    "question": "uzbekistan.png",
+    "answer": "uzbekistán"
+  },
+  {
+    "question": "vatican-city.png",
+    "answer": "ciudad del vaticano"
+  },
+  {
+    "question": "venezuela.png",
+    "answer": "venezuela"
+  },
+  {
+    "question": "vietnam.png",
+    "answer": "vietnam"
+  },
+  {
+    "question": "yemen.png",
+    "answer": "yemen"
+  },
+  {
+    "question": "zambia.png",
+    "answer": "zambia"
+  },
+  {
+    "question": "zimbabwe.png",
+    "answer": "zimbabue"
+  }
+]

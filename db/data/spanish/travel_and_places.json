@@ -1,0 +1,367 @@
+[
+  {
+    "question": "aerial-tramway.png",
+    "answer": "el teleférico"
+  },
+  {
+    "question": "airplane.png",
+    "answer": "el avión"
+  },
+  {
+    "question": "ambulance.png",
+    "answer": "la ambulancia"
+  },
+  {
+    "question": "auto-rickshaw.png",
+    "answer": "el carro de culí"
+  },
+  {
+    "question": "bank.png",
+    "answer": "el banco"
+  },
+  {
+    "question": "beach.png",
+    "answer": "la playa"
+  },
+  {
+    "question": "bicycle.png",
+    "answer": "la bicicleta"
+  },
+  {
+    "question": "bullet-train.png",
+    "answer": "el tren bala"
+  },
+  {
+    "question": "bus-stop.png",
+    "answer": "la parada de autobús"
+  },
+  {
+    "question": "bus.png",
+    "answer": "el autobús"
+  },
+  {
+    "question": "car.png",
+    "answer": "el coche",
+    "answer": "el carro"
+  },
+  {
+    "question": "castle.png",
+    "answer": "el castillo"
+  },
+  {
+    "question": "church.png",
+    "answer": "la iglesia"
+  },
+  {
+    "question": "circus.png",
+    "answer": "el circo"
+  },
+  {
+    "question": "city.png",
+    "answer": "la ciudad"
+  },
+  {
+    "question": "construction-site.png",
+    "answer": "el sitio de construcción"
+  },
+  {
+    "question": "convenience-store.png",
+    "answer": "la tienda de conveniencia"
+  },
+  {
+    "question": "courthouse.png",
+    "answer": "el juzgado"
+  },
+  {
+    "question": "cruise-ship.png",
+    "answer": "el crucero"
+  },
+  {
+    "question": "delivery-truck.png",
+    "answer": "el camión de reparto"
+  },
+  {
+    "question": "department-store.png",
+    "answer": "los grandes almacenes"
+  },
+  {
+    "question": "derelict-building.png",
+    "answer": "el edificio abandonado"
+  },
+  {
+    "question": "down.png",
+    "answer": "abajo"
+  },
+  {
+    "question": "factory.png",
+    "answer": "la fábrica"
+  },
+  {
+    "question": "ferry.png",
+    "answer": "el ferry"
+  },
+  {
+    "question": "fire-engine.png",
+    "answer": "el camión de bomberos"
+  },
+  {
+    "question": "flying-saucer.png",
+    "answer": "el platillo volador"
+  },
+  {
+    "question": "fortress.png",
+    "answer": "la fortaleza"
+  },
+  {
+    "question": "fuel-pump.png",
+    "answer": "la bomba de gasolina"
+  },
+  {
+    "question": "golden-gate-bridge.png",
+    "answer": "el puente golden gate"
+  },
+  {
+    "question": "gondola.png",
+    "answer": "la aerosilla"
+  },
+  {
+    "question": "helicopter.png",
+    "answer": "el helicóptero"
+  },
+  {
+    "question": "hindu.png",
+    "answer": "el templo hindú"
+  },
+  {
+    "question": "hospital.png",
+    "answer": "el hospital"
+  },
+  {
+    "question": "hotel.png",
+    "answer": "el hotel"
+  },
+  {
+    "question": "house.png",
+    "answer": "la casa"
+  },
+  {
+    "question": "kaaba.png",
+    "answer": "la kaaba"
+  },
+  {
+    "question": "kick-scooter.png",
+    "answer": "el patinete"
+  },
+  {
+    "question": "landing.png",
+    "answer": "el aterrizaje"
+  },
+  {
+    "question": "left.png",
+    "answer": "la izquierda"
+  },
+  {
+    "question": "light-railway.png",
+    "answer": "el tren ligero"
+  },
+  {
+    "question": "locomotive.png",
+    "answer": "la locomotora"
+  },
+  {
+    "question": "love-hotel.png",
+    "answer": "el burdel"
+  },
+  {
+    "question": "metro.png",
+    "answer": "el metro"
+  },
+  {
+    "question": "minivan.png",
+    "answer": "la furgoneta"
+  },
+  {
+    "question": "moai.png",
+    "answer": "el moai"
+  },
+  {
+    "question": "monorail.png",
+    "answer": "el monorraíl"
+  },
+  {
+    "question": "mosque.png",
+    "answer": "la mezquita"
+  },
+  {
+    "question": "motor-scooter.png",
+    "answer": "la moto"
+  },
+  {
+    "question": "motorboat.png",
+    "answer": "la lancha"
+  },
+  {
+    "question": "motorcycle.png",
+    "answer": "la motocicleta"
+  },
+  {
+    "question": "motorized-wheelchair.png",
+    "answer": "la silla de ruedas eléctrica"
+  },
+  {
+    "question": "motorway.png",
+    "answer": "la autopista"
+  },
+  {
+    "question": "mount-fuji.png",
+    "answer": "el monte fuji"
+  },
+  {
+    "question": "national-park.png",
+    "answer": "el parque nacional"
+  },
+  {
+    "question": "office-building.png",
+    "answer": "el edificio de oficinas"
+  },
+  {
+    "question": "police-car-light.png",
+    "answer": "las luces intermitentes"
+  },
+  {
+    "question": "police-car.png",
+    "answer": "el coche de la policía"
+  },
+  {
+    "question": "post-office.png",
+    "answer": "el correo"
+  },
+  {
+    "question": "prop-plane.png",
+    "answer": "el avión de hélice"
+  },
+  {
+    "question": "race-car.png",
+    "answer": "el coche de carreras"
+  },
+  {
+    "question": "railcar.png",
+    "answer": "el vagón"
+  },
+  {
+    "question": "railway-track.png",
+    "answer": "las vías del tren"
+  },
+  {
+    "question": "right.png",
+    "answer": "la derecha"
+  },
+  {
+    "question": "rocket.png",
+    "answer": "el cohete"
+  },
+  {
+    "question": "sailboat.png",
+    "answer": "el velero"
+  },
+  {
+    "question": "school.png",
+    "answer": "la escuela"
+  },
+  {
+    "question": "seat.png",
+    "answer": "el asiento"
+  },
+  {
+    "question": "semi-truck.png",
+    "answer": "el camión semi"
+  },
+  {
+    "question": "shinto-shrine.png",
+    "answer": "el santuario sintoísta"
+  },
+  {
+    "question": "ship.png",
+    "answer": "el barco"
+  },
+  {
+    "question": "speedboat.png",
+    "answer": "la lancha rápida"
+  },
+  {
+    "question": "stadium.png",
+    "answer": "el estadio"
+  },
+  {
+    "question": "station.png",
+    "answer": "la estación"
+  },
+  {
+    "question": "statue-of-liberty.png",
+    "answer": "La estatua de la libertad"
+  },
+  {
+    "question": "suspension-railway.png",
+    "answer": "el ferrocarril colgante"
+  },
+  {
+    "question": "suv.png",
+    "answer": "vud"
+  },
+  {
+    "question": "synagogue.png",
+    "answer": "la sinagoga"
+  },
+  {
+    "question": "takeoff.png",
+    "answer": "el despegue"
+  },
+  {
+    "question": "taxi.png",
+    "answer": "el taxi"
+  },
+  {
+    "question": "tent.png",
+    "answer": "la tienda"
+  },
+  {
+    "question": "tokyo-tower.png",
+    "answer": "la torre de tokio"
+  },
+  {
+    "question": "town.png",
+    "answer": "el pueblo"
+  },
+  {
+    "question": "tractor.png",
+    "answer": "el tractor"
+  },
+  {
+    "question": "traffic-light.png",
+    "answer": "el semáforo"
+  },
+  {
+    "question": "train.png",
+    "answer": "el tren"
+  },
+  {
+    "question": "tram-car.png",
+    "answer": "el tranvía"
+  },
+  {
+    "question": "trolleybus.png",
+    "answer": "el trolebús"
+  },
+  {
+    "question": "up.png",
+    "answer": "arriba"
+  },
+  {
+    "question": "wheelchair.png",
+    "answer": "la silla de ruedas"
+  },
+  {
+    "question": "world-map.png",
+    "answer": "el mapa"
+  }
+]

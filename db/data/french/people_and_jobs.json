@@ -1,0 +1,417 @@
+[
+  {
+    "question": "agree.png",
+    "answer": "pouces vers le haut"
+  },
+  {
+    "question": "alien.png",
+    "answer": "l'extraterrestre"
+  },
+  {
+    "question": "arm.png",
+    "answer": "le bras"
+  },
+  {
+    "question": "astronaut.png",
+    "answer": "l'astronaute"
+  },
+  {
+    "question": "baby.png",
+    "answer": "le bébé"
+  },
+  {
+    "question": "back-off!.png",
+    "answer": "reculer"
+  },
+  {
+    "question": "bald.png",
+    "answer": "le chauve"
+  },
+  {
+    "question": "beard.png",
+    "answer": "la barbe"
+  },
+  {
+    "question": "blind.png",
+    "answer": "les aveugles"
+  },
+  {
+    "question": "blond.png",
+    "answer": "la blonde"
+  },
+  {
+    "question": "bone.png",
+    "answer": "l'os"
+  },
+  {
+    "question": "bow.png",
+    "answer": "faire un révérence"
+  },
+  {
+    "question": "brain.png",
+    "answer": "le cerveau"
+  },
+  {
+    "question": "breast-feeding.png",
+    "answer": "l'allaitement maternel"
+  },
+  {
+    "question": "bride.png",
+    "answer": "la mariée"
+  },
+  {
+    "question": "brunette.png",
+    "answer": "la brune"
+  },
+  {
+    "question": "caca.png",
+    "answer": "le caca"
+  },
+  {
+    "question": "clapping.png",
+    "answer": "les applaudissements"
+  },
+  {
+    "question": "clown.png",
+    "answer": "le clown"
+  },
+  {
+    "question": "construction-worker.png",
+    "answer": "le ouvrier du bâtiment"
+  },
+  {
+    "question": "cook.png",
+    "answer": "le cuisinier",
+    "answer": "la cuisinière"
+  },
+  {
+    "question": "crossed-fingers.png",
+    "answer": "les doigts croisés"
+  },
+  {
+    "question": "cupid.png",
+    "answer": "le cupidon"
+  },
+  {
+    "question": "curly-hair.png",
+    "answer": "les cheveux bouclés"
+  },
+  {
+    "question": "deaf.png",
+    "answer": "la sourde",
+    "answer": "le sourd",
+  },
+  {
+    "question": "demon.png",
+    "answer": "la démone",
+    "answer": "le démon"
+  },
+  {
+    "question": "detective.png",
+    "answer": "le détective"
+  },
+  {
+    "question": "disagree.png",
+    "answer": "pouces vers le bas"
+  },
+  {
+    "question": "doctor.png",
+    "answer": "le docteur"
+  },
+  {
+    "question": "ear.png",
+    "answer": "l'oreille"
+  },
+  {
+    "question": "elf.png",
+    "answer": "l'elfe"
+  },
+  {
+    "question": "eye.png",
+    "answer": "l'oeil"
+  },
+  {
+    "question": "fairy.png",
+    "answer": "la fée"
+  },
+  {
+    "question": "farmer.png",
+    "answer": "l'agriculteur"
+  },
+  {
+    "question": "feature.png",
+    "answer": "mais qu'il est con"
+  },
+  {
+    "question": "female-office-worker.png",
+    "answer": "la professionnelle"
+  },
+  {
+    "question": "firefighter.png",
+    "answer": "le pompier"
+  },
+  {
+    "question": "fist.png",
+    "answer": "le poing"
+  },
+  {
+    "question": "foot.png",
+    "answer": "le pied"
+  },
+  {
+    "question": "footprints.png",
+    "answer": "les empreintes"
+  },
+  {
+    "question": "gay-person.png",
+    "answer": "le gay"
+  },
+  {
+    "question": "genie.png",
+    "answer": "le génie"
+  },
+  {
+    "question": "ghost.png",
+    "answer": "le fantôme"
+  },
+  {
+    "question": "goblin.png",
+    "answer": "le gobelin"
+  },
+  {
+    "question": "grandma.png",
+    "answer": "la grand-mère"
+  },
+  {
+    "question": "grandpa.png",
+    "answer": "le papy"
+  },
+  {
+    "question": "grey-hair.png",
+    "answer": "les cheveux gris"
+  },
+  {
+    "question": "guard.png",
+    "answer": "le garde"
+  },
+  {
+    "question": "haircut.png",
+    "answer": "la coupe de cheveux"
+  },
+  {
+    "question": "hand.png",
+    "answer": "la main"
+  },
+  {
+    "question": "handicapped.png",
+    "answer": "les handicapés"
+  },
+  {
+    "question": "hands.png",
+    "answer": "haut le mains"
+  },
+  {
+    "question": "hearing-aid.png",
+    "answer": "l'aide auditive"
+  },
+  {
+    "question": "hijab.png",
+    "answer": "le hijab"
+  },
+  {
+    "question": "judge.png",
+    "answer": "le juge"
+  },
+  {
+    "question": "kneel.png",
+    "answer": "se mettre à genoux"
+  },
+  {
+    "question": "leg.png",
+    "answer": "la jambe"
+  },
+  {
+    "question": "mage.png",
+    "answer": "le mage"
+  },
+  {
+    "question": "mechanic.png",
+    "answer": "la mécanique"
+  },
+  {
+    "question": "mermaid.png",
+    "answer": "la sirène"
+  },
+  {
+    "question": "merman.png",
+    "answer": "le merman"
+  },
+  {
+    "question": "mouth.png",
+    "answer": "la bouche"
+  },
+  {
+    "question": "nonke.png",
+    "answer": "l'hétéro"
+  },
+  {
+    "question": "nose.png",
+    "answer": "le nez"
+  },
+  {
+    "question": "office-worker.png",
+    "answer": "l'homme d'affaires"
+  },
+  {
+    "question": "ogre.png",
+    "answer": "l'ogre"
+  },
+  {
+    "question": "ok.png",
+    "answer": "d'accord"
+  },
+  {
+    "question": "painter.png",
+    "answer": "le peintre"
+  },
+  {
+    "question": "peace.png",
+    "answer": "la paix"
+  },
+  {
+    "question": "pilot.png",
+    "answer": "le pilote"
+  },
+  {
+    "question": "police-officer.png",
+    "answer": "la police"
+  },
+  {
+    "question": "prayer.png",
+    "answer": "la prière"
+  },
+  {
+    "question": "pregnant.png",
+    "answer": "la femme enceinte"
+  },
+  {
+    "question": "prince.png",
+    "answer": "le prince"
+  },
+  {
+    "question": "princess.png",
+    "answer": "la princesse"
+  },
+  {
+    "question": "programmer.png",
+    "answer": "le programmeur"
+  },
+  {
+    "question": "raise-hand.png",
+    "answer": "lève ta main"
+  },
+  {
+    "question": "redhead.png",
+    "answer": "la rousse"
+  },
+  {
+    "question": "rezubian.png",
+    "answer": "la lesbienne"
+  },
+  {
+    "question": "robot.png",
+    "answer": "le robot"
+  },
+  {
+    "question": "rock-on.png",
+    "answer": "rock on"
+  },
+  {
+    "question": "santa-claus.png",
+    "answer": "père noël"
+  },
+  {
+    "question": "scientist.png",
+    "answer": "le scientifique"
+  },
+  {
+    "question": "shrug.png",
+    "answer": "le haussement d'épaules"
+  },
+  {
+    "question": "singer.png",
+    "answer": "le chanteur"
+  },
+  {
+    "question": "skull.png",
+    "answer": "le crâne"
+  },
+  {
+    "question": "spa.png",
+    "answer": "le spa"
+  },
+  {
+    "question": "student.png",
+    "answer": "l'étudiant"
+  },
+  {
+    "question": "superhero.png",
+    "answer": "la super héros"
+  },
+  {
+    "question": "supervillain.png",
+    "answer": "le supervillain"
+  },
+  {
+    "question": "teacher.png",
+    "answer": "l'enseignant"
+  },
+  {
+    "question": "to-pinch.png",
+    "answer": "la pincée"
+  },
+  {
+    "question": "to-stand.png",
+    "answer": "se tenir debout"
+  },
+  {
+    "question": "tongue.png",
+    "answer": "la langue"
+  },
+  {
+    "question": "tooth.png",
+    "answer": "la dent"
+  },
+  {
+    "question": "turban.png",
+    "answer": "le turban"
+  },
+  {
+    "question": "vampire.png",
+    "answer": "le vampire"
+  },
+  {
+    "question": "vulcan.png",
+    "answer": "le vulcan"
+  },
+  {
+    "question": "wave-hand.png",
+    "answer": "dire au revoir"
+  },
+  {
+    "question": "welder.png",
+    "answer": "le soudeur"
+  },
+  {
+    "question": "witch.png",
+    "answer": "la sorcière"
+  },
+  {
+    "question": "wizard.png",
+    "answer": "le sorcier"
+  },
+  {
+    "question": "zombie.png",
+    "answer": "le zombie"
+  }
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "question": "adventurous.png",
+    "answer": "adventurous"
+  },
+  {
+    "question": "affection.png",
+    "answer": "affectionate"
+  },
+  {
+    "question": "anguish.png",
+    "answer": "anguish"
+  },
+  {
+    "question": "anxious.png",
+    "answer": "anxious"
+  },
+  {
+    "question": "astonishment.png",
+    "answer": "astonishment"
+  },
+  {
+    "question": "beaming.png",
+    "answer": "beaming"
+  },
+  {
+    "question": "blush.png",
+    "answer": "blush"
+  },
+  {
+    "question": "calmly.png",
+    "answer": "shush"
+  },
+  {
+    "question": "cheeky.png",
+    "answer": "cheeky"
+  },
+  {
+    "question": "confound.png",
+    "answer": "confound"
+  },
+  {
+    "question": "confusion.png",
+    "answer": "confusion"
+  },
+  {
+    "question": "crazy-about.png",
+    "answer": "smitten"
+  },
+  {
+    "question": "dead.png",
+    "answer": "dead"
+  },
+  {
+    "question": "disappointment.png",
+    "answer": "disappointment"
+  },
+  {
+    "question": "disapproval.png",
+    "answer": "disapproval"
+  },
+  {
+    "question": "distress.png",
+    "answer": "distress"
+  },
+  {
+    "question": "dizzy.png",
+    "answer": "dizzy"
+  },
+  {
+    "question": "downcast.png",
+    "answer": "downcast"
+  },
+  {
+    "question": "dubious.png",
+    "answer": "dubious"
+  },
+  {
+    "question": "duck-face.png",
+    "answer": "duck face"
+  },
+  {
+    "question": "embarrassment.png",
+    "answer": "embarrassment"
+  },
+  {
+    "question": "expressionless.png",
+    "answer": "expressionless"
+  },
+  {
+    "question": "fatigue.png",
+    "answer": "fatigue"
+  },
+  {
+    "question": "fearful.png",
+    "answer": "fearful"
+  },
+  {
+    "question": "fever.png",
+    "answer": "fever"
+  },
+  {
+    "question": "flattery.png",
+    "answer": "flattery"
+  },
+  {
+    "question": "flirtatious.png",
+    "answer": "flirtatious"
+  },
+  {
+    "question": "frustrated.png",
+    "answer": "frustration"
+  },
+  {
+    "question": "gasp.png",
+    "answer": "gasp"
+  },
+  {
+    "question": "greed.png",
+    "answer": "greed"
+  },
+  {
+    "question": "grimace.png",
+    "answer": "grimace"
+  },
+  {
+    "question": "grin.png",
+    "answer": "grin"
+  },
+  {
+    "question": "happy.png",
+    "answer": "happy"
+  },
+  {
+    "question": "hurt.png",
+    "answer": "hurt"
+  },
+  {
+    "question": "hysterical.png",
+    "answer": "hysterical"
+  },
+  {
+    "question": "insane.png",
+    "answer": "insane"
+  },
+  {
+    "question": "joy.png",
+    "answer": "joy"
+  },
+  {
+    "question": "kakkoi.png",
+    "answer": "cool"
+  },
+  {
+    "question": "kiss.png",
+    "answer": "kiss"
+  },
+  {
+    "question": "laugh.png",
+    "answer": "laugh"
+  },
+  {
+    "question": "love.png",
+    "answer": "love"
+  },
+  {
+    "question": "melancholy.png",
+    "answer": "melancholy"
+  },
+  {
+    "question": "mind.png",
+    "answer": "mind blown"
+  },
+  {
+    "question": "mischievous.png",
+    "answer": "mischievous"
+  },
+  {
+    "question": "nauseous.png",
+    "answer": "nauseous"
+  },
+  {
+    "question": "otaku-nerd.png",
+    "answer": "nerd"
+  },
+  {
+    "question": "partying.png",
+    "answer": "partying"
+  },
+  {
+    "question": "pensive.png",
+    "answer": "pensive"
+  },
+  {
+    "question": "pissed.png",
+    "answer": "pissed"
+  },
+  {
+    "question": "playful.png",
+    "answer": "playful"
+  },
+  {
+    "question": "plead.png",
+    "answer": "plead"
+  },
+  {
+    "question": "pleased.png",
+    "answer": "pleased"
+  },
+  {
+    "question": "pout.png",
+    "answer": "pout"
+  },
+  {
+    "question": "pretentious.png",
+    "answer": "pretentious"
+  },
+  {
+    "question": "pure-heart.png",
+    "answer": "pure of heart"
+  },
+  {
+    "question": "relief.png",
+    "answer": "relief"
+  },
+  {
+    "question": "roar-of-laughter.png",
+    "answer": "roar of laughter"
+  },
+  {
+    "question": "sad.png",
+    "answer": "sad"
+  },
+  {
+    "question": "samui.png",
+    "answer": "cold"
+  },
+  {
+    "question": "sarcastic.png",
+    "answer": "sarcastic"
+  },
+  {
+    "question": "sick.png",
+    "answer": "sick"
+  },
+  {
+    "question": "silly.png",
+    "answer": "silly"
+  },
+  {
+    "question": "sleeping.png",
+    "answer": "sleeping"
+  },
+  {
+    "question": "sleepy.png",
+    "answer": "sleepy"
+  },
+  {
+    "question": "smirk.png",
+    "answer": "smirk"
+  },
+  {
+    "question": "sneeze.png",
+    "answer": "sneeze"
+  },
+  {
+    "question": "snicker.png",
+    "answer": "chuckle"
+  },
+  {
+    "question": "sob.png",
+    "answer": "sob"
+  },
+  {
+    "question": "sober.png",
+    "answer": "sober"
+  },
+  {
+    "question": "speechless.png",
+    "answer": "speechless"
+  },
+  {
+    "question": "star-struck.png",
+    "answer": "star struck"
+  },
+  {
+    "question": "surprise.png",
+    "answer": "surprise"
+  },
+  {
+    "question": "terror.png",
+    "answer": "terror"
+  },
+  {
+    "question": "thought-consideration.png",
+    "answer": "considering"
+  },
+  {
+    "question": "to-be-upset.png",
+    "answer": "upset"
+  },
+  {
+    "question": "to-cry.png",
+    "answer": "cry"
+  },
+  {
+    "question": "to-drool.png",
+    "answer": "drool"
+  },
+  {
+    "question": "to-get-drunk.png",
+    "answer": "drunk"
+  },
+  {
+    "question": "to-get-irritated.png",
+    "answer": "irritated"
+  },
+  {
+    "question": "to-lie.png",
+    "answer": "lie"
+  },
+  {
+    "question": "to-vomit.png",
+    "answer": "vomit"
+  },
+  {
+    "question": "unamused.png",
+    "answer": "unamused"
+  },
+  {
+    "question": "wacky.png",
+    "answer": "wacky"
+  },
+  {
+    "question": "weary.png",
+    "answer": "weary"
+  },
+  {
+    "question": "wink.png",
+    "answer": "wink"
+  },
+  {
+    "question": "worried.png",
+    "answer": "worry"
+  },
+  {
+    "question": "yawn.png",
+    "answer": "yawn"
+  },
+  {
+    "question": "zip-it.png",
+    "answer": "zip it"
+  }
+]

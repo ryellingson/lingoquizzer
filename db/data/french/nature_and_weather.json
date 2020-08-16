@@ -1,0 +1,226 @@
+[
+  {
+    "question": "blossom.png",
+    "answer": "la fleur"
+  },
+  {
+    "question": "cactus.png",
+    "answer": "le cactus"
+  },
+  {
+    "question": "cherry-blossom.png",
+    "answer": "la fleur de cerisier"
+  },
+  {
+    "question": "christmas-tree.png",
+    "answer": "l'arbre de noël"
+  },
+  {
+    "question": "cloud.png",
+    "answer": "le nuage"
+  },
+  {
+    "question": "clover.png",
+    "answer": "le trèfle à quatre feuilles"
+  },
+  {
+    "question": "comet.png",
+    "answer": "la comète"
+  },
+  {
+    "question": "crescent-moon.png",
+    "answer": "le croissant de lune"
+  },
+  {
+    "question": "deciduous-tree.png",
+    "answer": "l'arbre à feuilles caduques"
+  },
+  {
+    "question": "desert-island.png",
+    "answer": "l'île déserte"
+  },
+  {
+    "question": "desert.png",
+    "answer": "le désert"
+  },
+  {
+    "question": "earth.png",
+    "answer": "la terre"
+  },
+  {
+    "question": "evergreen-tree.png",
+    "answer": "l'arbre à feuilles persistantes"
+  },
+  {
+    "question": "fallen-leaf.png",
+    "answer": "la feuille tombée"
+  },
+  {
+    "question": "fire.png",
+    "answer": "le feu"
+  },
+  {
+    "question": "fog.png",
+    "answer": "le brouillard"
+  },
+  {
+    "question": "full-moon.png",
+    "answer": "la pleine lune"
+  },
+  {
+    "question": "half-moon.png",
+    "answer": "la demi lune"
+  },
+  {
+    "question": "herb.png",
+    "answer": "l'herbe"
+  },
+  {
+    "question": "hibiscus.png",
+    "answer": "l'hibiscus"
+  },
+  {
+    "question": "lightning.png",
+    "answer": "l'éclair"
+  },
+  {
+    "question": "maple-leaf.png",
+    "answer": "la feuille d'érable"
+  },
+  {
+    "question": "milky-way.png",
+    "answer": "la voie lactée"
+  },
+  {
+    "question": "mountain-range.png",
+    "answer": "la chaîne de montagnes"
+  },
+  {
+    "question": "mountain.png",
+    "answer": "la montagne"
+  },
+  {
+    "question": "mushroom.png",
+    "answer": "le champignon"
+  },
+  {
+    "question": "new-moon.png",
+    "answer": "la nouvelle lune"
+  },
+  {
+    "question": "palm-tree.png",
+    "answer": "le palmier"
+  },
+  {
+    "question": "planet.png",
+    "answer": "la planète"
+  },
+  {
+    "question": "rain.png",
+    "answer": "la pluie"
+  },
+  {
+    "question": "rainbow.png",
+    "answer": "l'arc-en-ciel"
+  },
+  {
+    "question": "rose.png",
+    "answer": "la rose"
+  },
+  {
+    "question": "seedling.png",
+    "answer": "le semis"
+  },
+  {
+    "question": "shamrock.png",
+    "answer": "le trèfle"
+  },
+  {
+    "question": "sheaf-of-rice.png",
+    "answer": "la gerbe de riz"
+  },
+  {
+    "question": "shooting-star.png",
+    "answer": "l'étoile filante"
+  },
+  {
+    "question": "smoke.png",
+    "answer": "la fumée"
+  },
+  {
+    "question": "snow.png",
+    "answer": "la neige"
+  },
+  {
+    "question": "snowflake.png",
+    "answer": "le flocon de neige"
+  },
+  {
+    "question": "snowman.png",
+    "answer": "le bonhomme de neige"
+  },
+  {
+    "question": "spider-web.png",
+    "answer": "la toile d'araignée"
+  },
+  {
+    "question": "spiral-shell.png",
+    "answer": "la coquille en spirale"
+  },
+  {
+    "question": "star.png",
+    "answer": "l'étoile"
+  },
+  {
+    "question": "sun.png",
+    "answer": "le soleil"
+  },
+  {
+    "question": "sunflower.png",
+    "answer": "le tournesol"
+  },
+  {
+    "question": "sunrise.png",
+    "answer": "le lever du soleil"
+  },
+  {
+    "question": "sunset.png",
+    "answer": "le coucher du soleil"
+  },
+  {
+    "question": "tanabata.png",
+    "answer": "le tanabata"
+  },
+  {
+    "question": "thunderstorm.png",
+    "answer": "L'orage"
+  },
+  {
+    "question": "tornado.png",
+    "answer": "la tornade"
+  },
+  {
+    "question": "tracks.png",
+    "answer": "les pistes"
+  },
+  {
+    "question": "tulip.png",
+    "answer": "la tulipe"
+  },
+  {
+    "question": "volcano.png",
+    "answer": "le volcan"
+  },
+  {
+    "question": "water.png",
+    "answer": "l'eau"
+  },
+  {
+    "question": "wilt.png",
+    "answer": "flétrir"
+  },
+  {
+    "question": "wind.png",
+    "answer": "le vent"
+  }
+]

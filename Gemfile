@@ -5,6 +5,10 @@ ruby '2.6.6'
 
 # Begin Custom Gems
 
+gem "google-cloud"
+
+gem "google-cloud-translate"
+
 gem 'blazer'
 
 gem 'rails_admin'

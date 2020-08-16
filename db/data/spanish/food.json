@@ -1,0 +1,406 @@
+[
+  {
+    "question": "apple.png",
+    "answer": "la manzana"
+  },
+  {
+    "question": "avocado.png",
+    "answer": "el aguacate"
+  },
+  {
+    "question": "bacon.png",
+    "answer": "el tocino"
+  },
+  {
+    "question": "bagel.png",
+    "answer": "el bagel"
+  },
+  {
+    "question": "baguette.png",
+    "answer": "la baguette"
+  },
+  {
+    "question": "banana.png",
+    "answer": "el plátano"
+  },
+  {
+    "question": "beer.png",
+    "answer": "la cerveza"
+  },
+  {
+    "question": "bento.png",
+    "answer": "el bento"
+  },
+  {
+    "question": "bread.png",
+    "answer": "el pan"
+  },
+  {
+    "question": "broccoli.png",
+    "answer": "el brócoli"
+  },
+  {
+    "question": "burrito.png",
+    "answer": "el burrito"
+  },
+  {
+    "question": "butter.png",
+    "answer": "la mantequilla"
+  },
+  {
+    "question": "cake.png",
+    "answer": "el pastel"
+  },
+  {
+    "question": "candy.png",
+    "answer": "los dulces"
+  },
+  {
+    "question": "capsicum.png",
+    "answer": "el pimiento"
+  },
+  {
+    "question": "carrot.png",
+    "answer": "la zanahoria"
+  },
+  {
+    "question": "champagne.png",
+    "answer": "el champagne"
+  },
+  {
+    "question": "cheese.png",
+    "answer": "el queso"
+  },
+  {
+    "question": "cherry.png",
+    "answer": "la cereza"
+  },
+  {
+    "question": "chestnut.png",
+    "answer": "la castaña"
+  },
+  {
+    "question": "chicken.png",
+    "answer": "el pollo"
+  },
+  {
+    "question": "chocolate.png",
+    "answer": "el chocolate"
+  },
+  {
+    "question": "coconut.png",
+    "answer": "el coco"
+  },
+  {
+    "question": "coffee.png",
+    "answer": "el café"
+  },
+  {
+    "question": "cooked-rice.png",
+    "answer": "el arroz"
+  },
+  {
+    "question": "cookie.png",
+    "answer": "la galleta"
+  },
+  {
+    "question": "corn.png",
+    "answer": "el maiz"
+  },
+  {
+    "question": "croissant.png",
+    "answer": "la medialuna"
+  },
+  {
+    "question": "cucumber.png",
+    "answer": "el pepino"
+  },
+  {
+    "question": "cupcake.png",
+    "answer": "la magdalena"
+  },
+  {
+    "question": "curry.png",
+    "answer": "el curry"
+  },
+  {
+    "question": "custard.png",
+    "answer": "la natilla"
+  },
+  {
+    "question": "dango.png",
+    "answer": "el dango"
+  },
+  {
+    "question": "doughnut.png",
+    "answer": "el donut"
+  },
+  {
+    "question": "dumpling.png",
+    "answer": "la bola de masa"
+  },
+  {
+    "question": "egg.png",
+    "answer": "el huevo"
+  },
+  {
+    "question": "eggplant.png",
+    "answer": "la berenjena"
+  },
+  {
+    "question": "falafel.png",
+    "answer": "el falafel"
+  },
+  {
+    "question": "fish-cake.png",
+    "answer": "el pastel de pescado"
+  },
+  {
+    "question": "fortune-cookie.png",
+    "answer": "la galleta de la suerte"
+  },
+  {
+    "question": "french-fries.png",
+    "answer": "las papas fritas"
+  },
+  {
+    "question": "frozen-yogurt.png",
+    "answer": "el yogur helado"
+  },
+  {
+    "question": "garlic.png",
+    "answer": "el ajo"
+  },
+  {
+    "question": "grape.png",
+    "answer": "la uva"
+  },
+  {
+    "question": "green-tea.png",
+    "answer": "el té verde"
+  },
+  {
+    "question": "hamburger.png",
+    "answer": "la hamburguesa"
+  },
+  {
+    "question": "honey.png",
+    "answer": "la miel"
+  },
+  {
+    "question": "hot-dog.png",
+    "answer": "el perrito caliente"
+  },
+  {
+    "question": "ice-cream.png",
+    "answer": "el helado"
+  },
+  {
+    "question": "ice-cube.png",
+    "answer": "el hielo"
+  },
+  {
+    "question": "juice.png",
+    "answer": "el jugo"
+  },
+  {
+    "question": "kiwi.png",
+    "answer": "el kiwi"
+  },
+  {
+    "question": "lemon.png",
+    "answer": "el limón"
+  },
+  {
+    "question": "lettuce.png",
+    "answer": "la lechuga"
+  },
+  {
+    "question": "lollipop.png",
+    "answer": "la piruleta"
+  },
+  {
+    "question": "mango.png",
+    "answer": "el mango"
+  },
+  {
+    "question": "martini.png",
+    "answer": "el martini"
+  },
+  {
+    "question": "meat.png",
+    "answer": "la carne"
+  },
+  {
+    "question": "melon.png",
+    "answer": "el melon"
+  },
+  {
+    "question": "milk.png",
+    "answer": "la leche"
+  },
+  {
+    "question": "mooncake.png",
+    "answer": "el pastel de luna"
+  },
+  {
+    "question": "oden.png",
+    "answer": "el oden"
+  },
+  {
+    "question": "onigiri.png",
+    "answer": "el onigiri"
+  },
+  {
+    "question": "onion.png",
+    "answer": "la cebolla"
+  },
+  {
+    "question": "paella.png",
+    "answer": "la paella"
+  },
+  {
+    "question": "pancakes.png",
+    "answer": "los panqueques"
+  },
+  {
+    "question": "peach.png",
+    "answer": "el durazno"
+  },
+  {
+    "question": "peanuts.png",
+    "answer": "los cacahuetes"
+  },
+  {
+    "question": "pear.png",
+    "answer": "la pera"
+  },
+  {
+    "question": "pie.png",
+    "answer": "el pastel"
+  },
+  {
+    "question": "pineapple.png",
+    "answer": "la piña"
+  },
+  {
+    "question": "pita.png",
+    "answer": "la pita"
+  },
+  {
+    "question": "pizza.png",
+    "answer": "la pizza"
+  },
+  {
+    "question": "popcorn.png",
+    "answer": "las palomitas"
+  },
+  {
+    "question": "potato.png",
+    "answer": "la papa"
+  },
+  {
+    "question": "pretzel.png",
+    "answer": "el pretzel"
+  },
+  {
+    "question": "ramen.png",
+    "answer": "el ramen"
+  },
+  {
+    "question": "rice-cracker.png",
+    "answer": "la galleta de arroz"
+  },
+  {
+    "question": "sake.png",
+    "answer": "el sake"
+  },
+  {
+    "question": "salad.png",
+    "answer": "la ensalada"
+  },
+  {
+    "question": "salt.png",
+    "answer": "la sal"
+  },
+  {
+    "question": "sandwich.png",
+    "answer": "el sándwich"
+  },
+  {
+    "question": "shaved-ice.png",
+    "answer": "el hielo raspado"
+  },
+  {
+    "question": "shortcake.png",
+    "answer": "el pastelito"
+  },
+  {
+    "question": "soda.png",
+    "answer": "el refresco"
+  },
+  {
+    "question": "spaghetti.png",
+    "answer": "el espagueti"
+  },
+  {
+    "question": "stew.png",
+    "answer": "el estofado"
+  },
+  {
+    "question": "strawberry.png",
+    "answer": "la fresa"
+  },
+  {
+    "question": "sushi.png",
+    "answer": "el sushi"
+  },
+  {
+    "question": "sweet-potato.png",
+    "answer": "la batata"
+  },
+  {
+    "question": "taco.png",
+    "answer": "el taco"
+  },
+  {
+    "question": "takeout.png",
+    "answer": "la comida para llevar"
+  },
+  {
+    "question": "tangerine.png",
+    "answer": "la naranja"
+  },
+  {
+    "question": "tempura.png",
+    "answer": "la tempura"
+  },
+  {
+    "question": "tomato.png",
+    "answer": "el tomate"
+  },
+  {
+    "question": "tropical-drink.png",
+    "answer": "la bebida tropical"
+  },
+  {
+    "question": "waffle.png",
+    "answer": "el gofre"
+  },
+  {
+    "question": "watermelon.png",
+    "answer": "la sandia"
+  },
+  {
+    "question": "whiskey.png",
+    "answer": "el whisky"
+  },
+  {
+    "question": "wine.png",
+    "answer": "el vino"
+  },
+  {
+    "question": "yerba-mate.png",
+    "answer": "el maté"
+  }
+]

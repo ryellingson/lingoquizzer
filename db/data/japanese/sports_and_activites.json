@@ -123,9 +123,9 @@
   },
   {
     "question": "bullseye.png",
-    "kanji": "大当たり",
-    "kana": "おおあたり",
-    "romaji": "ooatari",
+    "kanji": "ダーツ",
+    "kana": "ダーツ",
+    "romaji": "daatsu",
     "is_common": true,
     "jlpt": "-",
     "parts_of_speech": [
@@ -687,9 +687,9 @@
   },
   {
     "question": "salsa-dance.png",
-    "kanji": "サルサ",
-    "kana": "サルサ",
-    "romaji": "sarusa",
+    "kanji": "踊る",
+    "kana": "おどる",
+    "romaji": "odoru",
     "is_common": true,
     "jlpt": "-",
     "parts_of_speech": [
@@ -709,11 +709,11 @@
   },
   {
     "question": "score.png",
-    "kanji": "楽譜",
-    "kana": "がくふ",
-    "romaji": "gakufu",
+    "kanji": "音楽",
+    "kana": "おんがく",
+    "romaji": "ongaku",
     "is_common": true,
-    "jlpt": "jlpt-n1",
+    "jlpt": "",
     "parts_of_speech": [
       "Noun"
     ]

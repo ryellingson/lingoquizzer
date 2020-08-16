@@ -1,0 +1,414 @@
+[
+  {
+    "question": "agree.png",
+    "answer": "thumbs up"
+  },
+  {
+    "question": "alien.png",
+    "answer": "alien"
+  },
+  {
+    "question": "arm.png",
+    "answer": "arm"
+  },
+  {
+    "question": "astronaut.png",
+    "answer": "astronaut"
+  },
+  {
+    "question": "baby.png",
+    "answer": "baby"
+  },
+  {
+    "question": "back-off!.png",
+    "answer": "back off"
+  },
+  {
+    "question": "bald.png",
+    "answer": "bald"
+  },
+  {
+    "question": "beard.png",
+    "answer": "beard"
+  },
+  {
+    "question": "blind.png",
+    "answer": "blind"
+  },
+  {
+    "question": "blond.png",
+    "answer": "blond"
+  },
+  {
+    "question": "bone.png",
+    "answer": "bone"
+  },
+  {
+    "question": "bow.png",
+    "answer": "bow"
+  },
+  {
+    "question": "brain.png",
+    "answer": "brain"
+  },
+  {
+    "question": "breast-feeding.png",
+    "answer": "breast feeding."
+  },
+  {
+    "question": "bride.png",
+    "answer": "bride"
+  },
+  {
+    "question": "brunette.png",
+    "answer": "brunette"
+  },
+  {
+    "question": "caca.png",
+    "answer": "poop"
+  },
+  {
+    "question": "clapping.png",
+    "answer": "applause"
+  },
+  {
+    "question": "clown.png",
+    "answer": "clown"
+  },
+  {
+    "question": "construction-worker.png",
+    "answer": "construction worker"
+  },
+  {
+    "question": "cook.png",
+    "answer": "cook"
+  },
+  {
+    "question": "crossed-fingers.png",
+    "answer": "fingers crossed"
+  },
+  {
+    "question": "cupid.png",
+    "answer": "cupid"
+  },
+  {
+    "question": "curly-hair.png",
+    "answer": "curly hair"
+  },
+  {
+    "question": "deaf.png",
+    "answer": "deaf"
+  },
+  {
+    "question": "demon.png",
+    "answer": "demon"
+  },
+  {
+    "question": "detective.png",
+    "answer": "detective"
+  },
+  {
+    "question": "disagree.png",
+    "answer": "thumbs down"
+  },
+  {
+    "question": "doctor.png",
+    "answer": "doctor"
+  },
+  {
+    "question": "ear.png",
+    "answer": "ear"
+  },
+  {
+    "question": "elf.png",
+    "answer": "elf"
+  },
+  {
+    "question": "eye.png",
+    "answer": "eye"
+  },
+  {
+    "question": "fairy.png",
+    "answer": "fairy"
+  },
+  {
+    "question": "farmer.png",
+    "answer": "farmer"
+  },
+  {
+    "question": "feature.png",
+    "answer": "face palm"
+  },
+  {
+    "question": "female-office-worker.png",
+    "answer": "professional"
+  },
+  {
+    "question": "firefighter.png",
+    "answer": "firefighter"
+  },
+  {
+    "question": "fist.png",
+    "answer": "fist"
+  },
+  {
+    "question": "foot.png",
+    "answer": "foot"
+  },
+  {
+    "question": "footprints.png",
+    "answer": "footprints"
+  },
+  {
+    "question": "gay-person.png",
+    "answer": "gay"
+  },
+  {
+    "question": "genie.png",
+    "answer": "genie"
+  },
+  {
+    "question": "ghost.png",
+    "answer": "ghost"
+  },
+  {
+    "question": "goblin.png",
+    "answer": "goblin"
+  },
+  {
+    "question": "grandma.png",
+    "answer": "grandma"
+  },
+  {
+    "question": "grandpa.png",
+    "answer": "grandpa"
+  },
+  {
+    "question": "grey-hair.png",
+    "answer": "grey hair"
+  },
+  {
+    "question": "guard.png",
+    "answer": "guard"
+  },
+  {
+    "question": "haircut.png",
+    "answer": "haircut"
+  },
+  {
+    "question": "hand.png",
+    "answer": "hand"
+  },
+  {
+    "question": "handicapped.png",
+    "answer": "disabled"
+  },
+  {
+    "question": "hands.png",
+    "answer": "hands up"
+  },
+  {
+    "question": "hearing-aid.png",
+    "answer": "hearing-aid"
+  },
+  {
+    "question": "hijab.png",
+    "answer": "hijab"
+  },
+  {
+    "question": "judge.png",
+    "answer": "judge"
+  },
+  {
+    "question": "kneel.png",
+    "answer": "kneel"
+  },
+  {
+    "question": "leg.png",
+    "answer": "leg"
+  },
+  {
+    "question": "mage.png",
+    "answer": "mage"
+  },
+  {
+    "question": "mechanic.png",
+    "answer": "mechanic"
+  },
+  {
+    "question": "mermaid.png",
+    "answer": "mermaid"
+  },
+  {
+    "question": "merman.png",
+    "answer": "merman"
+  },
+  {
+    "question": "mouth.png",
+    "answer": "mouth"
+  },
+  {
+    "question": "nonke.png",
+    "answer": "straight"
+  },
+  {
+    "question": "nose.png",
+    "answer": "nose"
+  },
+  {
+    "question": "office-worker.png",
+    "answer": "businessman"
+  },
+  {
+    "question": "ogre.png",
+    "answer": "ogre"
+  },
+  {
+    "question": "ok.png",
+    "answer": "ok"
+  },
+  {
+    "question": "painter.png",
+    "answer": "painter"
+  },
+  {
+    "question": "peace.png",
+    "answer": "peace"
+  },
+  {
+    "question": "pilot.png",
+    "answer": "pilot"
+  },
+  {
+    "question": "police-officer.png",
+    "answer": "police officer"
+  },
+  {
+    "question": "prayer.png",
+    "answer": "prayer"
+  },
+  {
+    "question": "pregnant.png",
+    "answer": "pregnant"
+  },
+  {
+    "question": "prince.png",
+    "answer": "prince"
+  },
+  {
+    "question": "princess.png",
+    "answer": "princess"
+  },
+  {
+    "question": "programmer.png",
+    "answer": "programmer"
+  },
+  {
+    "question": "raise-hand.png",
+    "answer": "raise your hand"
+  },
+  {
+    "question": "redhead.png",
+    "answer": "redhead"
+  },
+  {
+    "question": "rezubian.png",
+    "answer": "lesbian"
+  },
+  {
+    "question": "robot.png",
+    "answer": "robot"
+  },
+  {
+    "question": "rock-on.png",
+    "answer": "rock on"
+  },
+  {
+    "question": "santa-claus.png",
+    "answer": "santa claus"
+  },
+  {
+    "question": "scientist.png",
+    "answer": "scientist"
+  },
+  {
+    "question": "shrug.png",
+    "answer": "shrug"
+  },
+  {
+    "question": "singer.png",
+    "answer": "singer"
+  },
+  {
+    "question": "skull.png",
+    "answer": "skull"
+  },
+  {
+    "question": "spa.png",
+    "answer": "spa"
+  },
+  {
+    "question": "student.png",
+    "answer": "student"
+  },
+  {
+    "question": "superhero.png",
+    "answer": "superhero"
+  },
+  {
+    "question": "supervillain.png",
+    "answer": "supervillain"
+  },
+  {
+    "question": "teacher.png",
+    "answer": "teacher"
+  },
+  {
+    "question": "to-pinch.png",
+    "answer": "pinch"
+  },
+  {
+    "question": "to-stand.png",
+    "answer": "stand"
+  },
+  {
+    "question": "tongue.png",
+    "answer": "tongue"
+  },
+  {
+    "question": "tooth.png",
+    "answer": "tooth"
+  },
+  {
+    "question": "turban.png",
+    "answer": "turban"
+  },
+  {
+    "question": "vampire.png",
+    "answer": "vampire"
+  },
+  {
+    "question": "vulcan.png",
+    "answer": "vulcan"
+  },
+  {
+    "question": "wave-hand.png",
+    "answer": "wave"
+  },
+  {
+    "question": "welder.png",
+    "answer": "welder"
+  },
+  {
+    "question": "witch.png",
+    "answer": "witch"
+  },
+  {
+    "question": "wizard.png",
+    "answer": "wizard"
+  },
+  {
+    "question": "zombie.png",
+    "answer": "zombie"
+  }
+]

@@ -1,0 +1,391 @@
+[
+  {
+    "question": "adventurous.png",
+    "answer": "aventurero",
+    "answer": "aventurera"
+  },
+  {
+    "question": "affection.png",
+    "answer": "cariñoso",
+    "answer": "cariñosa"
+  },
+  {
+    "question": "anguish.png",
+    "answer": "angustia"
+  },
+  {
+    "question": "anxious.png",
+    "answer": "ansioso",
+    "answer": "ansiosa"
+  },
+  {
+    "question": "astonishment.png",
+    "answer": "asombro"
+  },
+  {
+    "question": "beaming.png",
+    "answer": "radiante"
+  },
+  {
+    "question": "blush.png",
+    "answer": "sonrojo"
+  },
+  {
+    "question": "calmly.png",
+    "answer": "tranquilo",
+    "answer": "tranquila"
+  },
+  {
+    "question": "cheeky.png",
+    "answer": "fresco",
+    "answer": "fresca"
+  },
+  {
+    "question": "confound.png",
+    "answer": "confundir"
+  },
+  {
+    "question": "confusion.png",
+    "answer": "confusión"
+  },
+  {
+    "question": "crazy-about.png",
+    "answer": "loco por ti",
+    "answer": "loca por ti"
+  },
+  {
+    "question": "dead.png",
+    "answer": "muerto",
+    "answer": "muerta"
+  },
+  {
+    "question": "disappointment.png",
+    "answer": "decepción"
+  },
+  {
+    "question": "disapproval.png",
+    "answer": "desaprobación"
+  },
+  {
+    "question": "distress.png",
+    "answer": "intranquilidad"
+  },
+  {
+    "question": "dizzy.png",
+    "answer": "mareado",
+    "answer": "mareada"
+  },
+  {
+    "question": "downcast.png",
+    "answer": "alicaído",
+    "answer": "alicaída"
+  },
+  {
+    "question": "dubious.png",
+    "answer": "dudoso",
+    "answer": "dudosa"
+  },
+  {
+    "question": "duck-face.png",
+    "answer": "cara de pato"
+  },
+  {
+    "question": "embarrassment.png",
+    "answer": "vergüenza"
+  },
+  {
+    "question": "expressionless.png",
+    "answer": "inexpresivo",
+    "answer": "inexpresiva"
+  },
+  {
+    "question": "fatigue.png",
+    "answer": "fatiga"
+  },
+  {
+    "question": "fearful.png",
+    "answer": "temeroso",
+    "answer": "temerosa"
+  },
+  {
+    "question": "fever.png",
+    "answer": "fiebre"
+  },
+  {
+    "question": "flattery.png",
+    "answer": "adulación"
+  },
+  {
+    "question": "flirtatious.png",
+    "answer": "coqueto",
+    "answer": "coqueta"
+  },
+  {
+    "question": "frustrated.png",
+    "answer": "frustración"
+  },
+  {
+    "question": "gasp.png",
+    "answer": "soplido"
+  },
+  {
+    "question": "greed.png",
+    "answer": "codicia"
+  },
+  {
+    "question": "grimace.png",
+    "answer": "mueca"
+  },
+  {
+    "question": "grin.png",
+    "answer": "sonrisa"
+  },
+  {
+    "question": "happy.png",
+    "answer": "feliz"
+  },
+  {
+    "question": "hurt.png",
+    "answer": "herido",
+    "answer": "herida"
+  },
+  {
+    "question": "hysterical.png",
+    "answer": "histérico",
+    "answer": "histérica"
+  },
+  {
+    "question": "insane.png",
+    "answer": "loco",
+    "answer": "loca"
+  },
+  {
+    "question": "joy.png",
+    "answer": "alegría"
+  },
+  {
+    "question": "kakkoi.png",
+    "answer": "chévere"
+  },
+  {
+    "question": "kiss.png",
+    "answer": "besar"
+  },
+  {
+    "question": "laugh.png",
+    "answer": "reír"
+  },
+  {
+    "question": "love.png",
+    "answer": "amor"
+  },
+  {
+    "question": "melancholy.png",
+    "answer": "melancolía"
+  },
+  {
+    "question": "mind.png",
+    "answer": "mente asombrada"
+  },
+  {
+    "question": "mischievous.png",
+    "answer": "travieso",
+    "answer": "traviesa"
+  },
+  {
+    "question": "nauseous.png",
+    "answer": "sentir náuseas"
+  },
+  {
+    "question": "otaku-nerd.png",
+    "answer": "nerd"
+  },
+  {
+    "question": "partying.png",
+    "answer": "de fiesta"
+  },
+  {
+    "question": "pensive.png",
+    "answer": "pensativo",
+    "answer": "pensativa"
+  },
+  {
+    "question": "pissed.png",
+    "answer": "enojado",
+    "answer": "enojada"
+  },
+  {
+    "question": "playful.png",
+    "answer": "juguetón",
+    "answer": "juguetona"
+  },
+  {
+    "question": "plead.png",
+    "answer": "alegar"
+  },
+  {
+    "question": "pleased.png",
+    "answer": "satisfecho",
+    "answer": "satisfecha"
+  },
+  {
+    "question": "pout.png",
+    "answer": "puchero"
+  },
+  {
+    "question": "pretentious.png",
+    "answer": "pretencioso",
+    "answer": "pretenciosa"
+  },
+  {
+    "question": "pure-heart.png",
+    "answer": "Puro de corazón",
+    "answer": "Pura de corazón"
+  },
+  {
+    "question": "relief.png",
+    "answer": "alivio"
+  },
+  {
+    "question": "roar-of-laughter.png",
+    "answer": "reírse a carcajadas"
+  },
+  {
+    "question": "sad.png",
+    "answer": "triste"
+  },
+  {
+    "question": "samui.png",
+    "answer": "frío",
+    "answer": "fría"
+  },
+  {
+    "question": "sarcastic.png",
+    "answer": "sarcástico",
+    "answer": "sarcástica"
+  },
+  {
+    "question": "sick.png",
+    "answer": "enfermos",
+    "answer": "enfermas"
+  },
+  {
+    "question": "silly.png",
+    "answer": "tonto",
+    "answer": "tonta"
+  },
+  {
+    "question": "sleeping.png",
+    "answer": "dormir"
+  },
+  {
+    "question": "sleepy.png",
+    "answer": "cansado",
+    "answer": "cansada"
+  },
+  {
+    "question": "smirk.png",
+    "answer": "sonrisita"
+  },
+  {
+    "question": "sneeze.png",
+    "answer": "estornudo"
+  },
+  {
+    "question": "snicker.png",
+    "answer": "risita"
+  },
+  {
+    "question": "sob.png",
+    "answer": "sollozar"
+  },
+  {
+    "question": "sober.png",
+    "answer": "sobrio",
+    "answer": "sobria"
+  },
+  {
+    "question": "speechless.png",
+    "answer": "sin palabras"
+  },
+  {
+    "question": "star-struck.png",
+    "answer": "deslumbrado",
+    "answer": "deslumbrada"
+  },
+  {
+    "question": "surprise.png",
+    "answer": "sorpresa"
+  },
+  {
+    "question": "terror.png",
+    "answer": "terror"
+  },
+  {
+    "question": "thought-consideration.png",
+    "answer": "consideración"
+  },
+  {
+    "question": "to-be-upset.png",
+    "answer": "trastornado",
+    "answer": "trastornada"
+  },
+  {
+    "question": "to-cry.png",
+    "answer": "llorar"
+  },
+  {
+    "question": "to-drool.png",
+    "answer": "babear"
+  },
+  {
+    "question": "to-get-drunk.png",
+    "answer": "borracho",
+    "answer": "borracha"
+  },
+  {
+    "question": "to-get-irritated.png",
+    "answer": "irritado",
+    "answer": "irritada"
+  },
+  {
+    "question": "to-lie.png",
+    "answer": "mentir"
+  },
+  {
+    "question": "to-vomit.png",
+    "answer": "vomitar"
+  },
+  {
+    "question": "unamused.png",
+    "answer": "aburrido",
+    "answer": "aburrida"
+  },
+  {
+    "question": "wacky.png",
+    "answer": "chiflado",
+    "answer": "chiflada"
+  },
+  {
+    "question": "weary.png",
+    "answer": "agotado",
+    "answer": "agotada"
+  },
+  {
+    "question": "wink.png",
+    "answer": "guiño"
+  },
+  {
+    "question": "worried.png",
+    "answer": "preocupado",
+    "answer": "preocupada"
+  },
+  {
+    "question": "yawn.png",
+    "answer": "bostezo"
+  },
+  {
+    "question": "zip-it.png",
+    "answer": "cállate"
+  }
+]
