@@ -1,0 +1,23 @@
+## Emotions and feelings
+
+---
+
+Time to talk about our emotions in Japanese!
+
+Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+
+| Icon | Romaji | Kana | Kanji |
+| ----------  | -- | -- | --|
+| 🙂　-> | ureshii | うれしい | 嬉しい |
+| 🙁　-> | kanashi | かなしい | 悲しい |
+
+etc...
+
+
+Just hit **PLAY** to get started!
+
+You can skip an answer you don't know with the **back** and **next** buttons, or with the **arrows** on your keyboard.
+
+Try to get everyone right for a **bonus**!!!
+
+がんばって!!!
