@@ -20,32 +20,34 @@
       <h1><%= @game.name %></h1>
     </div>
     <% if current_user %>
-    <%= link_to user_path(current_user) do %>
-    <div class="game-header-button stroke">
-      <h2 class="p-absolute">
-        <% if user_signed_in? %>
-        <div class="profile-link">
-          <% if current_user.avatar.attached? %>
-          <%= cl_image_tag current_user.avatar.key, class: 'avatar' %>
+      <%= link_to user_path(current_user) do %>
+      <div class="game-header-button stroke">
+        <h2 class="p-absolute">
+          <% if user_signed_in? %>
+            <div class="profile-link">
+              <% if current_user.avatar.attached? %>
+                <%= cl_image_tag current_user.avatar.key, class: 'avatar' %>
+              <% else %>
+                <div class="avatar text-3xl">
+                  <%= current_user.default_avatar %>
+                </div>
+              <% end %> <!-- avatar loop -->
+                <div class="username-game">
+                  <p><%= current_user.username %></p>
+                </div>
+            </div>
           <% else %>
-          <div class="avatar text-3xl">
-            <%= current_user.default_avatar %>
-          </div>
-          <% end %> <!-- avatar loop -->
-          <div class="username-game">
-            <p><%= current_user.username %></p>
-          </div>
-        </div>
-        <% else %>
-        <p>Login</p>
-        <% end %>
-      </h2>
-      <svg>
-        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-      </svg>
-    </div>
-    <% end %> <!-- Link to user path -->
+            <div class="btn btn-primary">
+              <p class="text-6xl">Sign Up</p>
+            </div>
+          <% end %>  <!-- if user_signed_in? -->
+        </h2>
+        <svg>
+          <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+          <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        </svg>
+      </div>
+      <% end %> <!-- Link to user path -->
     <% end %> <!-- if current user -->
   </div>
   <div class="w-40">

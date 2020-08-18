@@ -22,17 +22,17 @@
         <div class="level-header">
           <h2>Games</h2>
         </div>
-        <div class="games-grid">
+        <div class="games-grid" data-controller="bg_color_set">
           <% @games.each do |game| %>
           <%= link_to game_path(game), class: "level-card" do %>
           <div class="level-icon">
             <% problem = game.problems.order("RANDOM()").first %>
             <% if game.icon_based %>
-            <%= image_tag problem.question %>
+              <%= image_tag problem.question %>
             <% else %>
-            <div class="text-icon">
-              <%= problem.question %>
-            </div>
+              <div class="text-icon">
+                <%= problem.question %>
+              </div>
             <% end %> <!-- icon selection -->
           </div>
           <div class="level-title">

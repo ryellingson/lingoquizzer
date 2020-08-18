@@ -1,5 +1,5 @@
 class Game < ApplicationRecord
-  validates :name, uniqueness: :true
+  validates :name, uniqueness: { scope: :language }
   has_many :problems, dependent: :destroy
   has_many :answers, through: :problems
   has_many :plays, dependent: :destroy
