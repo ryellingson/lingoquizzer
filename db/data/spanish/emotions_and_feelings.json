@@ -1,13 +1,11 @@
 [
   {
     "question": "adventurous.png",
-    "answer": "aventurero",
-    "answer": "aventurera"
+    "answer": "aventurero|aventurera"
   },
   {
     "question": "affection.png",
-    "answer": "cariñoso",
-    "answer": "cariñosa"
+    "answer": "cariñoso|cariñosa"
   },
   {
     "question": "anguish.png",
@@ -15,8 +13,7 @@
   },
   {
     "question": "anxious.png",
-    "answer": "ansioso",
-    "answer": "ansiosa"
+    "answer": "ansioso|ansiosa"
   },
   {
     "question": "astonishment.png",
@@ -32,13 +29,11 @@
   },
   {
     "question": "calmly.png",
-    "answer": "tranquilo",
-    "answer": "tranquila"
+    "answer": "tranquilo|tranquila"
   },
   {
     "question": "cheeky.png",
-    "answer": "fresco",
-    "answer": "fresca"
+    "answer": "fresco|fresca"
   },
   {
     "question": "confound.png",
@@ -50,13 +45,11 @@
   },
   {
     "question": "crazy-about.png",
-    "answer": "loco por ti",
-    "answer": "loca por ti"
+    "answer": "loco por ti|loca por ti"
   },
   {
     "question": "dead.png",
-    "answer": "muerto",
-    "answer": "muerta"
+    "answer": "muerto|muerta"
   },
   {
     "question": "disappointment.png",
@@ -72,18 +65,15 @@
   },
   {
     "question": "dizzy.png",
-    "answer": "mareado",
-    "answer": "mareada"
+    "answer": "mareado|mareada"
   },
   {
     "question": "downcast.png",
-    "answer": "alicaído",
-    "answer": "alicaída"
+    "answer": "alicaído|alicaída"
   },
   {
     "question": "dubious.png",
-    "answer": "dudoso",
-    "answer": "dudosa"
+    "answer": "dudoso|dudosa"
   },
   {
     "question": "duck-face.png",
@@ -95,8 +85,7 @@
   },
   {
     "question": "expressionless.png",
-    "answer": "inexpresivo",
-    "answer": "inexpresiva"
+    "answer": "inexpresivo|inexpresiva"
   },
   {
     "question": "fatigue.png",
@@ -104,8 +93,7 @@
   },
   {
     "question": "fearful.png",
-    "answer": "temeroso",
-    "answer": "temerosa"
+    "answer": "temeroso|temerosa"
   },
   {
     "question": "fever.png",
@@ -117,8 +105,7 @@
   },
   {
     "question": "flirtatious.png",
-    "answer": "coqueto",
-    "answer": "coqueta"
+    "answer": "coqueto|coqueta"
   },
   {
     "question": "frustrated.png",
@@ -146,18 +133,15 @@
   },
   {
     "question": "hurt.png",
-    "answer": "herido",
-    "answer": "herida"
+    "answer": "herido|herida"
   },
   {
     "question": "hysterical.png",
-    "answer": "histérico",
-    "answer": "histérica"
+    "answer": "histérico|histérica"
   },
   {
     "question": "insane.png",
-    "answer": "loco",
-    "answer": "loca"
+    "answer": "loco|loca"
   },
   {
     "question": "joy.png",
@@ -189,8 +173,7 @@
   },
   {
     "question": "mischievous.png",
-    "answer": "travieso",
-    "answer": "traviesa"
+    "answer": "travieso|traviesa"
   },
   {
     "question": "nauseous.png",
@@ -206,18 +189,15 @@
   },
   {
     "question": "pensive.png",
-    "answer": "pensativo",
-    "answer": "pensativa"
+    "answer": "pensativo|pensativa"
   },
   {
     "question": "pissed.png",
-    "answer": "enojado",
-    "answer": "enojada"
+    "answer": "enojado|enojada"
   },
   {
     "question": "playful.png",
-    "answer": "juguetón",
-    "answer": "juguetona"
+    "answer": "juguetón|juguetona"
   },
   {
     "question": "plead.png",
@@ -225,8 +205,7 @@
   },
   {
     "question": "pleased.png",
-    "answer": "satisfecho",
-    "answer": "satisfecha"
+    "answer": "satisfecho|satisfecha"
   },
   {
     "question": "pout.png",
@@ -234,13 +213,11 @@
   },
   {
     "question": "pretentious.png",
-    "answer": "pretencioso",
-    "answer": "pretenciosa"
+    "answer": "pretencioso|pretenciosa"
   },
   {
     "question": "pure-heart.png",
-    "answer": "Puro de corazón",
-    "answer": "Pura de corazón"
+    "answer": "puro de corazón|pura de corazón"
   },
   {
     "question": "relief.png",
@@ -256,23 +233,19 @@
   },
   {
     "question": "samui.png",
-    "answer": "frío",
-    "answer": "fría"
+    "answer": "frío|fría"
   },
   {
     "question": "sarcastic.png",
-    "answer": "sarcástico",
-    "answer": "sarcástica"
+    "answer": "sarcástico|sarcástica"
   },
   {
     "question": "sick.png",
-    "answer": "enfermos",
-    "answer": "enfermas"
+    "answer": "enfermos|enfermas"
   },
   {
     "question": "silly.png",
-    "answer": "tonto",
-    "answer": "tonta"
+    "answer": "tonto|tonta"
   },
   {
     "question": "sleeping.png",
@@ -280,8 +253,7 @@
   },
   {
     "question": "sleepy.png",
-    "answer": "cansado",
-    "answer": "cansada"
+    "answer": "cansado|cansada"
   },
   {
     "question": "smirk.png",
@@ -301,8 +273,7 @@
   },
   {
     "question": "sober.png",
-    "answer": "sobrio",
-    "answer": "sobria"
+    "answer": "sobrio|sobria"
   },
   {
     "question": "speechless.png",
@@ -310,8 +281,7 @@
   },
   {
     "question": "star-struck.png",
-    "answer": "deslumbrado",
-    "answer": "deslumbrada"
+    "answer": "deslumbrado|deslumbrada"
   },
   {
     "question": "surprise.png",
@@ -327,8 +297,7 @@
   },
   {
     "question": "to-be-upset.png",
-    "answer": "trastornado",
-    "answer": "trastornada"
+    "answer": "trastornado|trastornada"
   },
   {
     "question": "to-cry.png",
@@ -340,13 +309,11 @@
   },
   {
     "question": "to-get-drunk.png",
-    "answer": "borracho",
-    "answer": "borracha"
+    "answer": "borracho|borracha"
   },
   {
     "question": "to-get-irritated.png",
-    "answer": "irritado",
-    "answer": "irritada"
+    "answer": "irritado|irritada"
   },
   {
     "question": "to-lie.png",
@@ -358,18 +325,15 @@
   },
   {
     "question": "unamused.png",
-    "answer": "aburrido",
-    "answer": "aburrida"
+    "answer": "aburrido|aburrida"
   },
   {
     "question": "wacky.png",
-    "answer": "chiflado",
-    "answer": "chiflada"
+    "answer": "chiflado|chiflada"
   },
   {
     "question": "weary.png",
-    "answer": "agotado",
-    "answer": "agotada"
+    "answer": "agotado|agotada"
   },
   {
     "question": "wink.png",
@@ -377,8 +341,7 @@
   },
   {
     "question": "worried.png",
-    "answer": "preocupado",
-    "answer": "preocupada"
+    "answer": "preocupado|preocupada"
   },
   {
     "question": "yawn.png",

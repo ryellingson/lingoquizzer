@@ -81,8 +81,7 @@
   },
   {
     "question": "cook.png",
-    "answer": "le cuisinier",
-    "answer": "la cuisinière"
+    "answer": "le cuisinier|la cuisinière"
   },
   {
     "question": "crossed-fingers.png",
@@ -98,13 +97,11 @@
   },
   {
     "question": "deaf.png",
-    "answer": "la sourde",
-    "answer": "le sourd"
+    "answer": "la sourde|le sourd"
   },
   {
     "question": "demon.png",
-    "answer": "la démone",
-    "answer": "le démon"
+    "answer": "la démone|le démon"
   },
   {
     "question": "detective.png",

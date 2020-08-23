@@ -13,8 +13,7 @@
   },
   {
     "question": "astronaut.png",
-    "answer": "el astronauta",
-    "answer": "la astronauta"
+    "answer": "el astronauta|la astronauta"
   },
   {
     "question": "baby.png",
@@ -26,8 +25,7 @@
   },
   {
     "question": "bald.png",
-    "answer": "la calva",
-    "answer": "el calvo"
+    "answer": "la calva|el calvo"
   },
   {
     "question": "beard.png",
@@ -35,13 +33,11 @@
   },
   {
     "question": "blind.png",
-    "answer": "el ciego",
-    "answer": "la ciega"
+    "answer": "el ciego|la ciega"
   },
   {
     "question": "blond.png",
-    "answer": "el rubio",
-    "answer": "la rubia"
+    "answer": "el rubio|la rubia"
   },
   {
     "question": "bone.png",
@@ -81,13 +77,11 @@
   },
   {
     "question": "construction-worker.png",
-    "answer": "la trabajadora de la construcción",
-    "answer": "el trabajador de la construcción"
+    "answer": "la trabajadora de la construcción|el trabajador de la construcción"
   },
   {
     "question": "cook.png",
-    "answer": "la cocinera",
-    "answer": "el cocinero"
+    "answer": "la cocinera|el cocinero"
   },
   {
     "question": "crossed-fingers.png",
@@ -103,8 +97,7 @@
   },
   {
     "question": "deaf.png",
-    "answer": "el sordo",
-    "answer": "la sorda"
+    "answer": "el sordo|la sorda"
   },
   {
     "question": "demon.png",
@@ -112,8 +105,7 @@
   },
   {
     "question": "detective.png",
-    "answer": "el detective",
-    "answer": "la detective"
+    "answer": "el detective|la detective"
   },
   {
     "question": "disagree.png",
@@ -121,8 +113,7 @@
   },
   {
     "question": "doctor.png",
-    "answer": "el médico",
-    "answer": "la médica"
+    "answer": "el médico|la médica"
   },
   {
     "question": "ear.png",
@@ -142,8 +133,7 @@
   },
   {
     "question": "farmer.png",
-    "answer": "el granjero",
-    "answer": "la granjera"
+    "answer": "el granjero|la granjera"
   },
   {
     "question": "feature.png",
@@ -151,13 +141,11 @@
   },
   {
     "question": "female-office-worker.png",
-    "answer": "el profesional",
-    "answer": "la profesional"
+    "answer": "el profesional|la profesional"
   },
   {
     "question": "firefighter.png",
-    "answer": "el bombero",
-    "answer": "la bombera"
+    "answer": "el bombero|la bombera"
   },
   {
     "question": "fist.png",
@@ -201,8 +189,7 @@
   },
   {
     "question": "guard.png",
-    "answer": "el guardia",
-    "answer": "la guardia"
+    "answer": "el guardia|la guardia"
   },
   {
     "question": "haircut.png",
@@ -214,8 +201,7 @@
   },
   {
     "question": "handicapped.png",
-    "answer": "los discapacitados",
-    "answer": "las discapacitadas"
+    "answer": "los discapacitados|las discapacitadas"
   },
   {
     "question": "hands.png",
@@ -231,8 +217,7 @@
   },
   {
     "question": "judge.png",
-    "answer": "el juez",
-    "answer": "la jueza"
+    "answer": "el juez|la jueza"
   },
   {
     "question": "kneel.png",
@@ -244,13 +229,11 @@
   },
   {
     "question": "mage.png",
-    "answer": "el hechicero",
-    "answer": "la hercicera"
+    "answer": "el hechicero|la hercicera"
   },
   {
     "question": "mechanic.png",
-    "answer": "el mecánico",
-    "answer": "la mecánica"
+    "answer": "el mecánico|la mecánica"
   },
   {
     "question": "mermaid.png",
@@ -266,8 +249,7 @@
   },
   {
     "question": "nonke.png",
-    "answer": "el heterosexual",
-    "answer": "la heterosexual"
+    "answer": "el heterosexual|la heterosexual"
   },
   {
     "question": "nose.png",
@@ -275,8 +257,7 @@
   },
   {
     "question": "office-worker.png",
-    "answer": "el empresario",
-    "answer": "el empresaria"
+    "answer": "el empresario|la empresaria"
   },
   {
     "question": "ogre.png",
@@ -288,8 +269,7 @@
   },
   {
     "question": "painter.png",
-    "answer": "el pintor",
-    "answer": "la pintora"
+    "answer": "el pintor|la pintora"
   },
   {
     "question": "peace.png",
@@ -321,8 +301,7 @@
   },
   {
     "question": "programmer.png",
-    "answer": "el programador",
-    "answer": "la programadora"
+    "answer": "el programador|la programadora"
   },
   {
     "question": "raise-hand.png",
@@ -330,8 +309,7 @@
   },
   {
     "question": "redhead.png",
-    "answer": "el pelirrojo",
-    "answer": "la pelirroja"
+    "answer": "el pelirrojo|la pelirroja"
   },
   {
     "question": "rezubian.png",
@@ -351,8 +329,7 @@
   },
   {
     "question": "scientist.png",
-    "answer": "el científico",
-    "answer": "la científica"
+    "answer": "el científico|la científica"
 
   },
   {
@@ -361,8 +338,7 @@
   },
   {
     "question": "singer.png",
-    "answer": "la cantante",
-    "answer": "el cantante"
+    "answer": "la cantante|el cantante"
   },
   {
     "question": "skull.png",
@@ -374,23 +350,19 @@
   },
   {
     "question": "student.png",
-    "answer": "la estudiante",
-    "answer": "el estudiante"
+    "answer": "la estudiante|el estudiante"
   },
   {
     "question": "superhero.png",
-    "answer": "el superhéroe",
-    "answer": "la superhéroe"
+    "answer": "el superhéroe|la superhéroe"
   },
   {
     "question": "supervillain.png",
-    "answer": "el supervillano",
-    "answer": "la supervillana"
+    "answer": "el supervillano|la supervillana"
   },
   {
     "question": "teacher.png",
-    "answer": "el profesor",
-    "answer": "la profesora"
+    "answer": "el profesor|la profesora"
   },
   {
     "question": "to-pinch.png",
@@ -414,13 +386,11 @@
   },
   {
     "question": "vampire.png",
-    "answer": "el vampiro",
-    "answer": "la vampira"
+    "answer": "el vampiro|la vampira"
   },
   {
     "question": "vulcan.png",
-    "answer": "el vulcan",
-    "answer": "la vulcan"
+    "answer": "el vulcan|la vulcan"
   },
   {
     "question": "wave-hand.png",
@@ -428,8 +398,7 @@
   },
   {
     "question": "welder.png",
-    "answer": "el soldador",
-    "answer": "la soldadora"
+    "answer": "el soldador|la soldadora"
   },
   {
     "question": "witch.png",
@@ -437,12 +406,10 @@
   },
   {
     "question": "wizard.png",
-    "answer": "el mago",
-    "answer": "la maga"
+    "answer": "el mago|la maga"
   },
   {
     "question": "zombie.png",
-    "answer": "el zombi",
-    "answer": "la zombi"
+    "answer": "el zombi|la zombi"
   }
 ]
