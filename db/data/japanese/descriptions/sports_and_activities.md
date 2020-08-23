@@ -2,7 +2,7 @@
 
 ---
 
-Let's learn about people and jobs in Japanese!
+Let's learn about sports and activities in Japanese!
 
 Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
 

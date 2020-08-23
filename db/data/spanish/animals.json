@@ -1,359 +1,354 @@
 [
   {
-    "problem_icon": "ant.png",
+    "question": "ant.png",
     "answer": "la hormiga"
   },
   {
-    "problem_icon": "baby-chick.png",
+    "question": "baby-chick.png",
     "answer": "el pollito"
   },
   {
-    "problem_icon": "badger.png",
+    "question": "badger.png",
     "answer": "el tejón"
   },
   {
-    "problem_icon": "bat.png",
+    "question": "bat.png",
     "answer": "el murciélago"
   },
   {
-    "problem_icon": "bear.png",
+    "question": "bear.png",
     "answer": "el oso"
   },
   {
-    "problem_icon": "bird.png",
+    "question": "bird.png",
     "answer": "un pájaro"
   },
   {
-    "problem_icon": "blowfish.png",
+    "question": "blowfish.png",
     "answer": "la pez globo"
   },
   {
-    "problem_icon": "bug.png",
+    "question": "bug.png",
     "answer": "el bicho"
   },
   {
-    "problem_icon": "butterfly.png",
+    "question": "butterfly.png",
     "answer": "la mariposa"
   },
   {
-    "problem_icon": "camel.png",
+    "question": "camel.png",
     "answer": "el camello"
   },
   {
-    "problem_icon": "cat.png",
-    "answer": "el gato",
-    "answer": "el gata"
+    "question": "cat.png",
+    "answer": "el gato|la gata"
   },
   {
-    "problem_icon": "rooster.png",
+    "question": "rooster.png",
     "answer": "el gallo"
   },
   {
-    "problem_icon": "chipmunk.png",
+    "question": "chipmunk.png",
     "answer": "la ardilla"
   },
   {
-    "problem_icon": "cow.png",
+    "question": "cow.png",
     "answer": "la vaca"
   },
   {
-    "problem_icon": "crab.png",
+    "question": "crab.png",
     "answer": "el cangrejo"
   },
   {
-    "problem_icon": "cricket.png",
+    "question": "cricket.png",
     "answer": "el grillo"
   },
   {
-    "problem_icon": "crocodile.png",
+    "question": "crocodile.png",
     "answer": "el cocodrilo"
   },
   {
-    "problem_icon": "deer.png",
+    "question": "deer.png",
     "answer": "el ciervo"
   },
   {
-    "problem_icon": "dog.png",
-    "answer": "el perro",
-    "answer": "el perra"
+    "question": "dog.png",
+    "answer": "el perro|la perra"
   },
   {
-    "problem_icon": "boar.png",
+    "question": "boar.png",
     "answer": "el jabalí"
   },
   {
-    "problem_icon": "dolphin.png",
+    "question": "dolphin.png",
     "answer": "el delfín"
   },
   {
-    "problem_icon": "dove.png",
+    "question": "dove.png",
     "answer": "la paloma"
   },
   {
-    "problem_icon": "dragon.png",
+    "question": "dragon.png",
     "answer": "el dragón"
   },
   {
-    "problem_icon": "duck.png",
+    "question": "duck.png",
     "answer": "el pato"
   },
   {
-    "problem_icon": "eagle.png",
+    "question": "eagle.png",
     "answer": "el águila"
   },
   {
-    "problem_icon": "elephant.png",
+    "question": "elephant.png",
     "answer": "el elefante"
   },
   {
-    "problem_icon": "ewe.png",
+    "question": "ewe.png",
     "answer": "la oveja"
   },
   {
-    "problem_icon": "fish.png",
+    "question": "fish.png",
     "answer": "el pez"
   },
   {
-    "problem_icon": "flamingo.png",
+    "question": "flamingo.png",
     "answer": "el flamenco"
   },
   {
-    "problem_icon": "fox.png",
+    "question": "fox.png",
     "answer": "el zorro"
   },
   {
-    "problem_icon": "frog.png",
+    "question": "frog.png",
     "answer": "la rana"
   },
   {
-    "problem_icon": "giraffe.png",
+    "question": "giraffe.png",
     "answer": "la jirafa"
   },
   {
-    "problem_icon": "goat.png",
+    "question": "goat.png",
     "answer": "la cabra"
   },
   {
-    "problem_icon": "gorilla.png",
+    "question": "gorilla.png",
     "answer": "el gorila"
   },
   {
-    "problem_icon": "hamster.png",
+    "question": "hamster.png",
     "answer": "el hámster"
   },
   {
-    "problem_icon": "hedgehog.png",
+    "question": "hedgehog.png",
     "answer": "el erizo"
   },
   {
-    "problem_icon": "hippopotamus.png",
+    "question": "hippopotamus.png",
     "answer": "el hipopótamo"
   },
   {
-    "problem_icon": "honeybee.png",
+    "question": "honeybee.png",
     "answer": "la abeja"
   },
   {
-    "problem_icon": "horse.png",
+    "question": "horse.png",
     "answer": "el caballo"
   },
   {
-    "problem_icon": "kangaroo.png",
+    "question": "kangaroo.png",
     "answer": "el canguro"
   },
   {
-    "problem_icon": "koala.png",
+    "question": "koala.png",
     "answer": "el koala"
   },
   {
-    "problem_icon": "lady-beetle.png",
+    "question": "lady-beetle.png",
     "answer": "la mariquita"
   },
   {
-    "problem_icon": "leopard.png",
+    "question": "leopard.png",
     "answer": "el leopardo"
   },
   {
-    "problem_icon": "lion.png",
+    "question": "lion.png",
     "answer": "el león"
   },
   {
-    "problem_icon": "lizard.png",
+    "question": "lizard.png",
     "answer": "el largarto"
   },
   {
-    "problem_icon": "llama.png",
+    "question": "llama.png",
     "answer": "la llama"
   },
   {
-    "problem_icon": "lobster.png",
+    "question": "lobster.png",
     "answer": "la langosta"
   },
   {
-    "problem_icon": "monkey.png",
+    "question": "monkey.png",
     "answer": "el mono"
   },
   {
-    "problem_icon": "mosquito.png",
+    "question": "mosquito.png",
     "answer": "el mosquito"
   },
   {
-    "problem_icon": "mouse.png",
+    "question": "mouse.png",
     "answer": "el ratón"
   },
   {
-    "problem_icon": "octopus.png",
+    "question": "octopus.png",
     "answer": "el pulpo"
   },
   {
-    "problem_icon": "orangutan.png",
+    "question": "orangutan.png",
     "answer": "el orangután"
   },
   {
-    "problem_icon": "otter.png",
+    "question": "otter.png",
     "answer": "la nutria"
   },
   {
-    "problem_icon": "owl.png",
-    "answer": "el búho",
-    "answer": "la lechuza"
+    "question": "owl.png",
+    "answer": "el búho|la lechuza"
   },
   {
-    "problem_icon": "ox.png",
+    "question": "ox.png",
     "answer": "el buey"
   },
   {
-    "problem_icon": "oyster.png",
+    "question": "oyster.png",
     "answer": "la ostra"
   },
   {
-    "problem_icon": "panda.png",
+    "question": "panda.png",
     "answer": "el panda"
   },
   {
-    "problem_icon": "parrot.png",
-    "answer": "el loro",
-    "answer": "la lora"
+    "question": "parrot.png",
+    "answer": "el loro|la lora"
   },
   {
-    "problem_icon": "peacock.png",
+    "question": "peacock.png",
     "answer": "el pavo real"
   },
   {
-    "problem_icon": "penguin.png",
-    "answer": "Pinguino",
+    "question": "penguin.png",
     "answer": "Pinguino"
   },
   {
-    "problem_icon": "pig.png",
+    "question": "pig.png",
     "answer": "el cerdo"
   },
   {
-    "problem_icon": "poodle.png",
+    "question": "poodle.png",
     "answer": "el caniche"
   },
   {
-    "problem_icon": "rabbit.png",
+    "question": "rabbit.png",
     "answer": "el conejo"
   },
   {
-    "problem_icon": "raccoon.png",
+    "question": "raccoon.png",
     "answer": "el mapache"
   },
   {
-    "problem_icon": "ram.png",
+    "question": "ram.png",
     "answer": "el carnero"
   },
   {
-    "problem_icon": "rat.png",
+    "question": "rat.png",
     "answer": "la rata"
   },
   {
-    "problem_icon": "rhinoceros.png",
+    "question": "rhinoceros.png",
     "answer": "el rinoceronte"
   },
   {
-    "problem_icon": "sauropod.png",
+    "question": "sauropod.png",
     "answer": "el dinosaurio"
   },
   {
-    "problem_icon": "scorpion.png",
+    "question": "scorpion.png",
     "answer": "el escorpión"
   },
   {
-    "problem_icon": "shark.png",
+    "question": "shark.png",
     "answer": "el tiburón"
   },
   {
-    "problem_icon": "shrimp.png",
+    "question": "shrimp.png",
     "answer": "el camarón"
   },
   {
-    "problem_icon": "skunk.png",
+    "question": "skunk.png",
     "answer": "el zorrillo"
   },
   {
-    "problem_icon": "sloth.png",
+    "question": "sloth.png",
     "answer": "el perezoso"
   },
   {
-    "problem_icon": "snail.png",
+    "question": "snail.png",
     "answer": "el caracol"
   },
   {
-    "problem_icon": "snake.png",
+    "question": "snake.png",
     "answer": "la serpiente"
   },
   {
-    "problem_icon": "spider.png",
+    "question": "spider.png",
     "answer": "la araña"
   },
   {
-    "problem_icon": "squid.png",
+    "question": "squid.png",
     "answer": "el calamar"
   },
   {
-    "problem_icon": "swan.png",
+    "question": "swan.png",
     "answer": "el cisne"
   },
   {
-    "problem_icon": "t-rex.png",
+    "question": "t-rex.png",
     "answer": "tiranosaurio"
   },
   {
-    "problem_icon": "tiger.png",
+    "question": "tiger.png",
     "answer": "el tigre"
   },
   {
-    "problem_icon": "tropical-fish.png",
+    "question": "tropical-fish.png",
     "answer": "el pez tropical"
   },
   {
-    "problem_icon": "turkey.png",
+    "question": "turkey.png",
     "answer": "el pavo"
   },
   {
-    "problem_icon": "turtle.png",
+    "question": "turtle.png",
     "answer": "la tortuga"
   },
   {
-    "problem_icon": "unicorn.png",
+    "question": "unicorn.png",
     "answer": "el unicornio"
   },
   {
-    "problem_icon": "water-buffalo.png",
+    "question": "water-buffalo.png",
     "answer": "búfalo de agua"
   },
   {
-    "problem_icon": "whale.png",
+    "question": "whale.png",
     "answer": "la ballena"
   },
   {
-    "problem_icon": "wolf.png",
+    "question": "wolf.png",
     "answer": "el lobo"
   },
   {
-    "problem_icon": "zebra.png",
+    "question": "zebra.png",
     "answer": "la cebra"
   }
 ]

@@ -2,21 +2,29 @@
 
 ---
 
-Time to learn all the countries of the world in Japanese!
+Time to practice your **countries** in Spanish!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its Spanish **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ----------  | -- | -- | --|
-| 🇯🇵　-> | nihon | にほん | 日本 |
-| 🇧🇷　-> | burajiru | ブラジル | 伯剌西爾 |
+| Icon | Word | 
+| ---- | ---- |
+| 🇯🇵　->  | japón |
+| 🇧🇷　->  | brasil | 
 
- etc...
+etc...
 
- Just hit **PLAY** to get started!
+Careful about **accent marks**.
+
+Remember on your keyboard: 
+option + e + a = á
+option + e + i = í
+option + n + n = ñ
+etc...
+
+Just hit **PLAY** to get started!
 
 You can skip an answer you don't know with the **back** and **next** buttons, or with the **arrows** on your keyboard.
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Buena suerte!!!

@@ -151,7 +151,7 @@ export default class extends Controller {
     const displayEndGameModal = () => {
       endGameModal.classList.add("bg-active");
       const perfectPlayDisplay = correctCountValue === answerCount ?
-        `<div class="perfect-play-display">Perfect!</div>` : ""
+        `<div class="perfect-play-display"><%= image_tag 'perfect_play.svg' %></div>` : ""
       const correctAnswers =
         `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>`
       const timeBonus = timeLeft > 0 ?

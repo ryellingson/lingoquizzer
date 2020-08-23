@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_18_223005) do
+ActiveRecord::Schema.define(version: 2020_08_16_015722) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -138,6 +138,7 @@ ActiveRecord::Schema.define(version: 2020_07_18_223005) do
     t.integer "difficulty"
     t.integer "genre"
     t.text "markdown_content"
+    t.string "slug"
     t.index ["language_id"], name: "index_games_on_language_id"
   end
 

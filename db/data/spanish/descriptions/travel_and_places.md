@@ -2,17 +2,24 @@
 
 ---
 
-Let's learn about travel and places in Japanese!
+Time to practice your **travel and places** vocab in Spanish!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its Spanish **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ----------  | -- | -- | --|
-| 🏯 -> | shiro | しろ | 城 |
-| 🚗 -> | kuruma | くるま | 車 |
+| Icon | Word | 
+| ---- | ---- |
+| 🚗　->  | el carro |
+| 🚅　->  | el tren bala | 
 
 etc...
 
+Careful about **articles (el, la)** and **accent marks**.
+
+Remember on your keyboard: 
+option + e + a = á
+option + e + i = í
+option + n + n = ñ
+etc...
 
 Just hit **PLAY** to get started!
 
@@ -20,4 +27,4 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Buena suerte!!!
