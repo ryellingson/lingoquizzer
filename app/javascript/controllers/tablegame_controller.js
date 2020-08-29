@@ -44,6 +44,19 @@ export default class extends Controller {
     let interval;
     let score = 0;
 
+    const pressed = [];
+    const secretCode = 'perfecto';
+
+    window.addEventListener('keyup', (e) => {
+      pressed.push(e.key);
+      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+      if (pressed.join('').includes(secretCode)) {
+        console.log('DING DING!');
+        correctCountValue = answerCount;
+        endGame();
+      }
+      console.log(pressed);
+    });
 
 
     const startGame = () => {
@@ -155,7 +168,7 @@ export default class extends Controller {
 
     const displayEndGameModal = () => {
       endGameModal.classList.add("bg-active");
-      const perfectPlayDisplay = correctCountValue !== answerCount ?
+      const perfectPlayDisplay = correctCountValue === answerCount ?
         `<div class="perfect-play-display"><img src="${gameDataObject.perfectPlayUrl}" alt=""/></div>` : ""
       const correctAnswers =
         `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>`

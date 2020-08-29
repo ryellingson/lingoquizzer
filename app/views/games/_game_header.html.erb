@@ -43,9 +43,11 @@
     </div>
     <% end %> <!-- Link to user path -->
     <% else %>
-    <div class="btn btn-primary border-glow">
-      <p class="text-6xl">Sign Up</p>
+    <%= link_to new_user_registration_path do %>
+    <div class="btn btn-primary border-glow text-3xl font-bold m-3">
+      <p>Sign Up</p>
     </div>
+    <% end %> <!-- link to new user -->
     <% end %> <!-- if user signed in -->
   </div>
   <div class="w-40">
