@@ -25,7 +25,7 @@
         <div class="games-grid" data-controller="bg_color_set">
           <% @games.each do |game| %>
           <%= link_to game_path(game), class: "level-card" do %>
-          <div class="level-icon">
+          <div class="level-icon type-<%= game.language.name %>">
             <% problem = game.problems.order("RANDOM()").first %>
             <% if game.icon_based %>
               <%= image_tag problem.question %>

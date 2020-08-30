@@ -120,6 +120,14 @@ table {
   margin: 20px 0px
 }
 
+.perfect-play-display {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .game-input {
   border: 1px solid rgba(0,0,0,0.15);
   border-radius: 5px;
@@ -169,7 +177,7 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 5px;
+  padding: 0px 10px;
   flex-grow: 1;
   border: 1px solid lightgrey;
   font-size: 25px;

@@ -1,9 +1,9 @@
 <div class="game-header hidden sm:flex sm:justify-between sm:items-center">
   <div class="w-40">
     <%= link_to root_path do %>
-      <div class="logo">
-        <%= image_tag "logo.png" %> <!-- change to svg?  -->
-      </div>
+    <div class="logo">
+      <%= image_tag "logo.png" %> <!-- change to svg?  -->
+    </div>
     <% end %> <!-- link to root path -->
   </div>
   <div class="game-header-hub">
@@ -19,36 +19,36 @@
     <div class="table-title text-4xl">
       <h1><%= @game.name %></h1>
     </div>
-    <% if current_user %>
-      <%= link_to user_path(current_user) do %>
-      <div class="game-header-button stroke">
-        <h2 class="p-absolute">
-          <% if user_signed_in? %>
-            <div class="profile-link">
-              <% if current_user.avatar.attached? %>
-                <%= cl_image_tag current_user.avatar.key, class: 'avatar' %>
-              <% else %>
-                <div class="avatar text-3xl">
-                  <%= current_user.default_avatar %>
-                </div>
-              <% end %> <!-- avatar loop -->
-                <div class="username-game">
-                  <p><%= current_user.username %></p>
-                </div>
-            </div>
+    <% if user_signed_in? %>
+    <%= link_to user_path(current_user) do %>
+    <div class="game-header-button stroke">
+      <h2 class="p-absolute">
+        <div class="profile-link">
+          <% if current_user.avatar.attached? %>
+          <%= cl_image_tag current_user.avatar.key, class: 'avatar' %>
           <% else %>
-            <div class="btn btn-primary">
-              <p class="text-6xl">Sign Up</p>
-            </div>
-          <% end %>  <!-- if user_signed_in? -->
-        </h2>
-        <svg>
-          <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-          <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
-        </svg>
-      </div>
-      <% end %> <!-- Link to user path -->
-    <% end %> <!-- if current user -->
+          <div class="avatar text-3xl">
+            <%= current_user.default_avatar %>
+          </div>
+          <% end %> <!-- avatar loop -->
+          <div class="username-game">
+            <p><%= current_user.username %></p>
+          </div>
+        </div>
+      </h2>
+      <svg>
+        <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+        <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+      </svg>
+    </div>
+    <% end %> <!-- Link to user path -->
+    <% else %>
+    <%= link_to new_user_registration_path do %>
+    <div class="btn btn-primary border-glow text-3xl font-bold m-3">
+      <p>Sign Up</p>
+    </div>
+    <% end %> <!-- link to new user -->
+    <% end %> <!-- if user signed in -->
   </div>
   <div class="w-40">
     <%= render "shared/tooltip", description: @description.html_safe %>

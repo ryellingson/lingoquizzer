@@ -24,7 +24,7 @@
                   <% end %>
                 </td>
                   <% answers_hash = {} %>
-                  <% problem.answers.pluck(:data, :character_type).each { |arr| answers_hash[arr[1]] = arr[0] } %>
+                  <% problem.answers.pluck(:data, :character_type).each { |arr| answers_hash[arr[1]] = arr[0].split('|') } %>
                   <% answers_hash[:icon_based] = @game.icon_based %>
                   <td data-answers="<%= answers_hash.to_json %>" class="answer"></td>
               </tr>

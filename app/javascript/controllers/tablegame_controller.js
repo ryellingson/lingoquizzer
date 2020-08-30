@@ -30,7 +30,8 @@ export default class extends Controller {
       score: parseInt(gameData.dataset.score),
       playTime: gameData.dataset.playTime,
       category: gameData.dataset.category,
-      characterType: gameData.dataset.characterType
+      characterType: gameData.dataset.characterType,
+      perfectPlayUrl: gameData.dataset.perfectPlayUrl
     }
 
     // const kanaCount = 46;
@@ -43,6 +44,19 @@ export default class extends Controller {
     let interval;
     let score = 0;
 
+    const pressed = [];
+    const secretCode = 'perfecto';
+
+    window.addEventListener('keyup', (e) => {
+      pressed.push(e.key);
+      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+      if (pressed.join('').includes(secretCode)) {
+        console.log('DING DING!');
+        correctCountValue = answerCount;
+        endGame();
+      }
+      // console.log(pressed);
+    });
 
 
     const startGame = () => {
@@ -62,7 +76,8 @@ export default class extends Controller {
     }
 
     const handleInputChange = () => {
-      if (Object.values(JSON.parse(currentAnswer.dataset.answers)).includes(gameInput.value.trim())) {
+        console.log(Object.values(JSON.parse(currentAnswer.dataset.answers)).flat());
+      if (Object.values(JSON.parse(currentAnswer.dataset.answers)).flat().includes(gameInput.value.trim())) {
         if (!currentAnswer.classList.contains("correct-answer")) {
           currentAnswer.classList.add("correct-answer");
           score += gameDataObject.score;
@@ -91,6 +106,9 @@ export default class extends Controller {
         }
         if (answerKeys.includes("romaji")) {
           cards += `<div class="romaji-box">${answer["romaji"]}</div>`;
+        }
+        if (answerKeys.includes("latin")) {
+          cards += `<div>${answer["latin"].join(', ')}</div>`;
         }
       } else {
         cards += `<div>${answer["romaji"]}</div>`;
@@ -151,7 +169,7 @@ export default class extends Controller {
     const displayEndGameModal = () => {
       endGameModal.classList.add("bg-active");
       const perfectPlayDisplay = correctCountValue === answerCount ?
-        `<div class="perfect-play-display"><%= image_tag 'perfect_play.svg' %></div>` : ""
+        `<div class="perfect-play-display"><img src="${gameDataObject.perfectPlayUrl}" alt=""/></div>` : ""
       const correctAnswers =
         `<div class="endgame-modal-item">Correct Answers: ${correctCountValue}/${answerCount}</div>`
       const timeBonus = timeLeft > 0 ?
