@@ -57,11 +57,14 @@ User.create(username: "admin1", email: "admin1@go.com", password: "admin1pass", 
 
 puts "generating languages"
 
-language_names = { ja: "japanese", es: "spanish", en: "english", fr: "french" }
+languages_array = [
+  {language_code: 'ja', name: 'japanese', video_url: "https://www.youtube.com/embed/45vSd2dLaQU"},
+  {language_code: 'en', name: 'english', video_url: "https://www.youtube.com/embed/B1ed-pfqdZg"},
+  {language_code: 'es', name: 'spanish', video_url: "https://www.youtube.com/embed/lO9X-7beRa8"},
+  {language_code: 'fr', name: 'french', video_url: "https://www.youtube.com/embed/ujDtm0hZyII"}
+]
 
-language_names.each do |code, language|
-  Language.create(language_code: code, name: language)
-end
+Language.create(languages_array)
 
 japanese = Language.find_by(name: "japanese")
 
