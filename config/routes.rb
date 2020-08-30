@@ -38,14 +38,6 @@ Rails.application.routes.draw do
     resources :plays, only: :create
   end
 
-  namespace :admin do
-    resources :games
-
-    get '/home', controller: 'pages', action: 'home'
-
-    get '/game_home', controller: 'pages', action: 'game_home'
-  end
-
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 
