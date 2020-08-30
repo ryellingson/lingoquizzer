@@ -1,6 +1,6 @@
 class ApplicationService
   attr_accessor :result, :called
-​
+
   def self.call(*args, &block)
     service = new(*args, &block)
     service.result = service.call
