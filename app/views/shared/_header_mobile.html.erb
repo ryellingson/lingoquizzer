@@ -4,6 +4,9 @@
       <%= image_tag "logo-mobile.png", class: "h-12" %>
     </div>
   <% end %> <!-- link to root -->
+  <div class="w-32">
+    <%= render "shared/tooltip", description: @description.html_safe %>
+  </div>
   <div class="wrapper-dropdown m-3 w-auto" id="hamburger">
     <i class="fas fa-bars fa-2x dropdown-trigger"></i>
     <% if user_signed_in? %>

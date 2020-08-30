@@ -55,7 +55,7 @@ export default class extends Controller {
         correctCountValue = answerCount;
         endGame();
       }
-      console.log(pressed);
+      // console.log(pressed);
     });
 
 
