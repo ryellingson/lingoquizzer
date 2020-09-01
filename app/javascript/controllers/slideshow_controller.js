@@ -4,7 +4,6 @@ export default class extends Controller {
   static targets = [ "topImage", "bottomImage", "settings" ]
 
   connect() {
-    console.log(this.topImageTarget, this.bottomImageTarget);
     this.transitionIn = true;
     const slideDuration = this.settingsTarget.dataset.slideDuration
     const fadeDuration = this.settingsTarget.dataset.fadeDuration

@@ -5,13 +5,11 @@ export default class extends Controller {
   static targets = [ "messages", "chatInput", "form", "hiddenSubmitBtn" ]
 
   connect() {
-    console.log('Hello, from the conversations controller')
     this.scrollToBottom()
     this.alignMessages()
   }
 
   new() {
-    console.log('made it to the create partial')
   }
 
   scrollToBottom() {

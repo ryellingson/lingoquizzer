@@ -5,7 +5,6 @@ export default class extends Controller {
   static targets = []
 
   connect() {
-    console.log("hello from tableGame in Stimulus")
     const playButton = document.querySelector("#play-button");
     const replayButton = document.querySelector(".restart")
     const gameInput = document.querySelector(".game-input");
@@ -76,12 +75,10 @@ export default class extends Controller {
     }
 
     const handleInputChange = () => {
-        console.log(Object.values(JSON.parse(currentAnswer.dataset.answers)).flat());
       if (Object.values(JSON.parse(currentAnswer.dataset.answers)).flat().includes(gameInput.value.trim())) {
         if (!currentAnswer.classList.contains("correct-answer")) {
           currentAnswer.classList.add("correct-answer");
           score += gameDataObject.score;
-          console.log("score", score, scoreShow);
           scoreShow.forEach(element => element.innerHTML = `${score}pts`);
           currentAnswer.innerHTML = buildAnswerCards(JSON.parse(currentAnswer.dataset.answers));
         }
