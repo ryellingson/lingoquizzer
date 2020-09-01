@@ -12,7 +12,7 @@ class GamesController < ApplicationController
     # Initializes a Markdown parser
     @description = @game.markdown_content
     if @game.icon_based
-      @problems = @game.problems.sample(32)
+      @problems = @game.problems.sample(36)
     else
       @problems = @game.problems.shuffle
     end
