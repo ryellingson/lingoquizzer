@@ -18,7 +18,7 @@
               <tr class="#">
                 <td>
                   <% if @game.icon_based %>
-                    <%= image_tag problem.question, class: "mx-auto" %>
+                    <%= image_tag "problem_icons/#{@game.name.downcase.gsub(' ', '_')}/#{problem.question}", class: "mx-auto" %>
                   <% else %>
                     <%= problem.question %>
                   <% end %>

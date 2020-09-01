@@ -28,7 +28,7 @@
           <div class="level-icon type-<%= game.language.name %>">
             <% problem = game.problems.order("RANDOM()").first %>
             <% if game.icon_based %>
-              <%= image_tag problem.question %>
+              <%= image_tag "problem_icons/#{game.name.downcase.gsub(' ', '_')}/#{problem.question}" %>
             <% else %>
               <div class="text-icon">
                 <%= problem.question %>
