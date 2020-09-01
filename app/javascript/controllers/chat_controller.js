@@ -2,7 +2,7 @@ import { Controller } from "stimulus"
 import EmojiButton from '@joeattardi/emoji-button';
 
 export default class extends Controller {
-  static targets = [ "messages", "chatInput", "form" ]
+  static targets = [ "messages", "chatInput", "form", "hiddenSubmitBtn" ]
 
   connect() {
     console.log('Hello, from the conversations controller')
@@ -23,7 +23,7 @@ export default class extends Controller {
   }
 
   submit() {
-    this.formTarget.submit()
+    this.hiddenSubmitBtnTarget.click()
     this.clearInput()
   }
 

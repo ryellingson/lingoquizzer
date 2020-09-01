@@ -21,7 +21,10 @@ class MessagesController < ConversationsController
     }
     authorize @message
     if @message.save
-      ActionCable.server.broadcast('chat_channel', content: render_to_string(partial: 'messages/message', locals: { message: @message }))
+      respond_to do |format|
+        format.js { ActionCable.server.broadcast('chat_channel', content: render_to_string(partial: 'messages/message', locals: { message: @message })) }
+        format.html { redirect_to chat_index_path(@message.language.language_code) }
+      end
     end
   end
 
