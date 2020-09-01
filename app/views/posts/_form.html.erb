@@ -4,7 +4,7 @@
   <%= f.text_field :language_id, value: post.language.id, hidden: true %>
 
   <div class="post-create-title">
-    <%= f.text_field :title, placeholder: "Title", class: "pct-form border border-gray-500 rounded" %>
+    <%= f.text_field :title, placeholder: "Title", class: "pct-form border border-gray-500 rounded px-1" %>
   </div>
   <div class="post-create-content">
     <%= f.rich_text_area :content, placeholder: "Text (optional)", class: "pcc-form border border-gray-500" %>
