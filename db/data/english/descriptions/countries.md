@@ -2,21 +2,21 @@
 
 ---
 
-Time to learn all the countries of the world in Japanese!
+Time to practice your **countries** vocabulary in English!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its English **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ----------  | -- | -- | --|
-| 🇯🇵　-> | nihon | にほん | 日本 |
-| 🇧🇷　-> | burajiru | ブラジル | 伯剌西爾 |
+| Icon | Word | 
+| ---- | ---- |
+| 🇯🇵　->  | japan |
+| 🇧🇷　->  | brasil | 
 
- etc...
+etc...
 
- Just hit **PLAY** to get started!
+Just hit **PLAY** to get started!
 
 You can skip an answer you don't know with the **back** and **next** buttons, or with the **arrows** on your keyboard.
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Good Luck!!!

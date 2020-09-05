@@ -2,14 +2,14 @@
 
 ---
 
-Let's learn about people and jobs in Japanese!
+Time to practice your **people and jobs** vocabulary in English!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its English **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ----------  | -- | -- | --|
-| 👅　-> | shita | した | 舌 |
-| 🧑‍🏫　-> | sensei | せんせい | 先生 |
+| Icon | Word | 
+| ---- | ---- |
+| 👅　->  | tongue |
+| 👍　->  | thumbs up | 
 
 etc...
 
@@ -19,4 +19,4 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Good Luck!!!

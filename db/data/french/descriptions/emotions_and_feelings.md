@@ -2,17 +2,28 @@
 
 ---
 
-Time to talk about our emotions in Japanese!
+Time to practice your **emotions and feelings** vocabulary in French!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its French **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ----------  | -- | -- | --|
-| 🙂　-> | ureshii | うれしい | 嬉しい |
-| 🙁　-> | kanashi | かなしい | 悲しい |
+| Icon | Word | 
+| ---- | ---- |
+| 🙂 ->  | l'heureux |
+| 🙁　->  | le triste | 
 
 etc...
 
+Careful about **articles (le, la)** and **accent marks**.
+
+Remember on your keyboard: 
+option + e + e = é
+option + ` + e = è
+option + c = ç
+option + i + e = ê
+option + u + e = ë
+option + q = œ
+
+etc...
 
 Just hit **PLAY** to get started!
 
@@ -20,4 +31,4 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Bonne chance!!!

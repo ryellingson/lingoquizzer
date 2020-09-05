@@ -2,14 +2,14 @@
 
 ---
 
-Time to learn some household items in Japanese!
+Time to practice your **around the house** vocabulary in English!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its English **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ----------  | -- | -- | --|
-| 👞　-> | kutsu | くつ | 靴 |
-| 👓　-> | megane | めがね | 眼鏡 |
+| Icon | Word | 
+| ---- | ---- |
+| 👞　->  | shoe |
+| 👓　->  | glasses | 
 
 etc...
 
@@ -19,4 +19,4 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Good Luck!!!
