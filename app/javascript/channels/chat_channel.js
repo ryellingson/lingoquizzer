@@ -1,15 +1,14 @@
 import consumer from "./consumer"
-console.log("Loading chat_channel.js");
 
 consumer.subscriptions.create("ChatChannel", {
   connected() {
-    console.log("yeehaw we are live!");
+    // console.log("yeehaw we are live!");
     // Called when the subscription is ready for use on the server
     this.alignMessages();
   },
 
   disconnected() {
-    console.log("signing off");
+    // console.log("signing off");
     // Called when the subscription has been terminated by the server
   },
 
@@ -23,7 +22,6 @@ consumer.subscriptions.create("ChatChannel", {
 
     chatBox.scrollTop = chatBox.scrollHeight;
 
-    // console.log(data.content);
     // Called when there's incoming data on the websocket for this channel
   },
 

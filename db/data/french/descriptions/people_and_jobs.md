@@ -2,14 +2,26 @@
 
 ---
 
-Let's learn about people and jobs in Japanese!
+Time to practice your **people and jobs** vocabulary in French!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its French **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ----------  | -- | -- | --|
-| 👅　-> | shita | した | 舌 |
-| 🧑‍🏫　-> | sensei | せんせい | 先生 |
+| Icon | Word | 
+| ---- | ---- |
+| 👅　->  | la langue |
+| 👍　->  | pouces vers le haut |
+
+etc...
+
+Careful about **articles (le, la)** and **accent marks**.
+
+Remember on your keyboard: 
+option + e + e = é
+option + ` + e = è
+option + c = ç
+option + i + e = ê
+option + u + e = ë
+option + q = œ
 
 etc...
 
@@ -19,4 +31,4 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Bonne chance!!!

@@ -2,14 +2,14 @@
 
 ---
 
-Time to practice your animals in Japanese!
+Time to practice your **animals** in English!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its English **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ------------- | ------------- | -- | -- |
-| 🐶　->  | inu  | いぬ | 犬 |
-| 🐸　->  | kaeru  | かえる | 蛙 |
+| Icon | Word | 
+| ---- | ---- |
+| 🐶　->  | dog |
+| 🐸　->  | frog | 
 
 etc...
 
@@ -19,4 +19,4 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Good Luck!!!

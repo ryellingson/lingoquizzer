@@ -17,32 +17,9 @@
         </div>
       </div>
     </div>
-    <div class="games-container">
-      <div class="games-wrapper">
-        <div class="level-header">
-          <h2>Games</h2>
-        </div>
-        <div class="games-grid" data-controller="bg_color_set">
-          <% @games.each do |game| %>
-          <%= link_to game_path(game), class: "level-card" do %>
-          <div class="level-icon type-<%= game.language.name %>">
-            <% problem = game.problems.order("RANDOM()").first %>
-            <% if game.icon_based %>
-              <%= image_tag "problem_icons/#{game.name.downcase.gsub(' ', '_')}/#{problem.question}" %>
-            <% else %>
-              <div class="text-icon">
-                <%= problem.question %>
-              </div>
-            <% end %> <!-- icon selection -->
-          </div>
-          <div class="level-title">
-            <h3><%= game.name %></h3>
-          </div>
-          <% end %> <!-- link to level -->
-          <% end %> <!-- game iteration -->
-        </div>
-      </div>
-    </div>
+
+    <%= render "games_container" %>
+
     <div class="classifications">
       <div class="game-type-select">
         <div class="game-type-select-header">
@@ -60,6 +37,7 @@
           </div>
         </div>
       </div>
+
       <div class="game-type-select">
         <div class="game-type-select-header">
           <h2>Difficulty</h2>

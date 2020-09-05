@@ -2,14 +2,14 @@
 
 ---
 
-Let's work on our nature and weather related words in Japanese!
+Time to practice your **nature and weather** vocabulary in English!
 
-Your goal is to match the icon to its Japanese word, in either **romaji**, **kana**, or even **kanji**.
+Your goal is to match the **icon** to its English **word**.
 
-| Icon | Romaji | Kana | Kanji |
-| ----------  | -- | -- | --|
-| 🌧　-> | ame | あめ | 雨 |
-| 🌻　-> | himawari | ひまわり | 向日葵 |
+| Icon | Word | 
+| ---- | ---- |
+| 🌧　->  | rain |
+| 🌻　->  | sunflower | 
 
 etc...
 
@@ -19,4 +19,4 @@ You can skip an answer you don't know with the **back** and **next** buttons, or
 
 Try to get everyone right for a **bonus**!!!
 
-がんばって!!!
+Good Luck!!!
