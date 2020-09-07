@@ -21,9 +21,9 @@ class Game < ApplicationRecord
     LIMIT 10;
     SQL
     User.find_by_sql(sql)
- end
+  end
 
- class << self
+  class << self
     def markdown
       Redcarpet::Markdown.new(Redcarpet::Render::HTML, tables: true)
     end

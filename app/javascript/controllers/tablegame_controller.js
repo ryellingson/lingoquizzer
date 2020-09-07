@@ -196,15 +196,15 @@ export default class extends Controller {
 
     document.onkeydown = function(event) {
       switch (event.keyCode) {
-        case 37: // left
-        updateCurrentAnswer("back");
-        break;
+        // case 37: // left
+        // updateCurrentAnswer("back");
+        // break;
         case 38: // up
         updateCurrentAnswer("back");
         break;
-        case 39: // right
-        updateCurrentAnswer("next");
-        break;
+        // case 39: // right
+        // updateCurrentAnswer("next");
+        // break;
         case 40: // down
         updateCurrentAnswer("next");
         break;

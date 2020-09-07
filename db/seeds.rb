@@ -47,7 +47,7 @@ Post.destroy_all
 
 puts "generating users"
 
-usernames = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15"]
+usernames = ["Ry", "Trouni", "test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15"]
 
 usernames.each do |username|
   User.create(username: username, email: "#{username}#{'@example.com'}", password: "#{username}#{'pass'}", password_confirmation: "#{username}#{'pass'}")
@@ -83,7 +83,13 @@ def game_builder(lang, game_attr)
   puts "adding description"
   game_attr[:description] = File.read(Rails.root + "db/data/#{lang.name}/descriptions/#{game_attr[:slug]}.md")
     puts "making #{game_attr[:name]} and setting language"
-    game = Game.find_or_create_by(**game_attr, language: lang)
+    game = Game.find_or_create_by(**game_attr, language: lang, authors: [{
+      name: 'Ry',
+      url: 'https://github.com/ryellingson',
+    }, {
+      name: 'Trouni',
+      url: 'https://github.com/trouni/'
+    }])
     puts "parsing JSON"
     game_data = JSON.parse(File.read(Rails.root + "db/data/#{lang.name}/#{game.slug}.json"))
     puts "parsed"
