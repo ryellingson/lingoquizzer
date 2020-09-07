@@ -19,10 +19,13 @@
                     <% end %> <!-- icon selection -->
                 </div>
               </div>
+              <h1 class='game-card-action btn-primary'>Play!</h1>
             </div>
         <% end %> <!-- link to game path -->
             <div class="description">
-              <h1><%= game.name %></h1>
+              <%= link_to game_path(game) do %>
+                <h1><%= game.name %></h1>
+              <% end %>
               <h2><%= game.language.name %></h2>
               <p>Test your <%= game.language.name.capitalize %> vocabulary!</p>
               <p>- Difficulty: <%= game.difficulty.capitalize %></p>

@@ -5,7 +5,7 @@ module GamesHelper
 
   def display_authors(game)
     author_results = game.authors.map do |author|
-      link_to author['name'], author['url']
+      link_to author['name'], author['url'], target: "_blank", class: "authors-display"
     end
     author_results.join(' and ')
   end

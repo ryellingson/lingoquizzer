@@ -65,6 +65,14 @@ $nav-height: 85px;
   background-color: rgba(246,191,2,0.6);
 }
 
+.type-french {
+  background-color: rgba(50, 245, 75, 0.3);
+}
+
+.type-french:hover {
+  background-color: rgba(50, 245, 75, 0.6);
+}
+
 .games-wrapper {
   border: 2px solid #eee;
   background-color: gainsboro;
@@ -152,6 +160,7 @@ $color_white: #fff;
 $color_prime: #5ad67d;
 $color_grey: #e2e2e2;
 $color_grey_dark: #a2a2a2;
+$blue: #3498db;
 
 .game-card {
   display: flex;
@@ -178,20 +187,30 @@ $color_grey_dark: #a2a2a2;
     }
     transform: scale(1.1);
     border: 1px solid black;
-    cursor: pointer;
   }
   .game-card-media {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 200px;
     background-color: rgba(0,0,0, 0.08);
   }
+
   .game-card-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform .2s;
+  }
+
+  .game-card-action {
+    position: absolute;
+    bottom: 10px;
+    background-color: $blue;
+    padding: 5px;
+    border-radius: 5px;
   }
 
   .description {
@@ -254,6 +273,17 @@ $color_grey_dark: #a2a2a2;
       }
     }
   }
+
+  .authors-display {
+    font-size: 1.2rem;
+    transition: 1s;
+  }
+
+  .authors-display:hover {
+    text-decoration: underline;
+    color: black;
+  }
+
 
   @media (min-width: 640px) {
     flex-direction: row;
