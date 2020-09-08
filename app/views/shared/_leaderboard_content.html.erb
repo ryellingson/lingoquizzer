@@ -1,31 +1,31 @@
 <div class="menu-leaderboard-content">
-    <% users = game ? game.top_users_specific : User.top_users %>
+  <% users = game ? game.top_users_specific : User.top_users %>
     <% users.each_with_index do |user, index| %>
-  <%= link_to user_path(user) do %>
-  <ul class="menu-leaderboard-rows">
-    <li class="menu-leaderboard-row">
-      <% if user.avatar.attached? %>
-      <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
-      <% else %>
-      <div class="menu-leaderboard-avatar default-avatar">
-        <%= user.default_avatar %>
-      </div>
-      <% end %>
-      <span class="menu-leaderboard-rank"><%= index + 1 %></span>
-      <span class="menu-leaderboard-username">
-        <%= user.username %>
-      </span>
-      <span class="menu-leaderboard-points">
-        <span>
-          <% if game %>
-            <%= user.specific_score %>
+      <%= link_to user_path(user) do %>
+      <ul class="menu-leaderboard-rows">
+        <li class="menu-leaderboard-row">
+          <% if user.avatar.attached? %>
+            <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
           <% else %>
-            <%= user.total_score %>
-          <% end %> <!-- conditional checking if game exists -->
-        </span>
-      </span>
-    </li>
-  </ul>
-  <% end %> <!-- link to user path -->
-    <% end %> <!-- users with index iteration -->
+          <div class="menu-leaderboard-avatar default-avatar">
+            <%= user.default_avatar %>
+          </div>
+          <% end %>
+          <span class="menu-leaderboard-rank"><%= index + 1 %></span>
+          <span class="menu-leaderboard-username">
+            <%= user.username %>
+          </span>
+          <span class="menu-leaderboard-points">
+            <span>
+              <% if game %>
+                <%= user.specific_score %>
+              <% else %>
+                <%= user.total_score %>
+              <% end %> <!-- conditional checking if game exists -->
+            </span>
+          </span>
+        </li>
+      </ul>
+    <% end %> <!-- link to user path -->
+  <% end %> <!-- users with index iteration -->
 </div>
