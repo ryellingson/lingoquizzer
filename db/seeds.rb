@@ -28,32 +28,36 @@ GAMES_HASH = [
 ]
 
 
-puts "destroying previous data"
+# puts "destroying previous data"
 
-puts "Language"
-Language.destroy_all
+# puts "Language"
+# Language.destroy_all
 
-puts "Game"
-Game.destroy_all
+# puts "Game"
+# Game.destroy_all
 
-puts "User"
-User.destroy_all
+# puts "User"
+# User.destroy_all
 
-puts "Comment"
-Comment.destroy_all
+# puts "Comment"
+# Comment.destroy_all
 
-puts "Post"
-Post.destroy_all
+# puts "Post"
+# Post.destroy_all
 
 puts "generating users"
 
 usernames = ["Ry", "Trouni", "test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15"]
 
 usernames.each do |username|
-  User.create(username: username, email: "#{username}#{'@example.com'}", password: "#{username}#{'pass'}", password_confirmation: "#{username}#{'pass'}")
+  user = User.find_or_initialize_by(username: username, email: "#{username}#{'@example.com'}")
+  user.password = "#{username}#{'pass'}"
+  user.save
 end
 
-User.create(username: "admin1", email: "admin1@go.com", password: "admin1pass", password_confirmation: "admin1pass", admin: true)
+admin = User.find_or_initialize_by(username: "admin1", email: "admin1@go.com", admin: true)
+admin.password = "admin1pass"
+admin.save
 
 puts "generating languages"
 
@@ -64,9 +68,7 @@ languages_array = [
   {language_code: 'fr', name: 'french', video_url: "https://www.youtube.com/embed/ujDtm0hZyII"}
 ]
 
-Language.create(languages_array)
-
-japanese = Language.find_by(name: "japanese")
+languages_array.each { |language| Language.find_or_create_by(language) }
 
 puts "generating posts"
 
@@ -75,7 +77,7 @@ puts "generating posts"
   post.content = Faker::Lorem.paragraphs(number: rand(1...5)).join
   post.save
 end
-# "table_game" = Genre.create(name: "table_game games")
+# "table_game" = Genre.find_or_create_by(name: "table_game games")
 
 puts "おはよう"
 
@@ -83,7 +85,8 @@ def game_builder(lang, game_attr)
   puts "adding description"
   game_attr[:description] = File.read(Rails.root + "db/data/#{lang.name}/descriptions/#{game_attr[:slug]}.md")
     puts "making #{game_attr[:name]} and setting language"
-    game = Game.find_or_create_by(**game_attr, language: lang, authors: [{
+    game = Game.find_or_create_by(name: game_attr[:name], language: lang)
+    game.update(**game_attr, language: lang, authors: [{
       name: 'Ry',
       url: 'https://github.com/ryellingson',
     }, {
@@ -103,8 +106,8 @@ def game_builder(lang, game_attr)
       end
     elsif game_data.first.keys.include?("romanization")
       game_data.each do |problem_data|
-       problem = Problem.find_or_create_by!(game: game, question: problem_data["character"])
-       answer = Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"], character_type: "romaji")
+        problem = Problem.find_or_create_by!(game: game, question: problem_data["character"])
+        answer = Answer.find_or_create_by!(problem: problem, data: problem_data["romanization"], character_type: "romaji")
       end
     else
       game_data.each do |problem_data|
@@ -124,6 +127,15 @@ Language.all.each do |lang|
   GAMES_HASH.each do |game_attr|
     game_builder(lang, game_attr)
   end
+end
+
+puts "done with games"
+
+puts "creating plays"
+
+500.times do
+  game = Game.all.sample
+  Play.find_or_create_by(score: game.score * rand(game.problems.count), time: rand(game.play_time), user: User.all.sample, game: game)
 end
 
 puts "おわり"

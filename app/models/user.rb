@@ -44,8 +44,13 @@ class User < ApplicationRecord
     banned
   end
 
+  def total_score
+    plays.sum(&:score)
+  end
+
   def self.top_users
-    self.order(total_score: :desc).first(25)
+    all.sort_by(&:total_score).reverse
+    # self.order(total_score: :desc).first(25)
   end
 
   def self.find_for_database_authentication(warden_conditions)

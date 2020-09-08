@@ -15,6 +15,12 @@ $nav-height: 85px;
   align-items: center;
 }
 
+.classifications {
+  position: sticky;
+  top: 115px;
+  height: fit-content;
+}
+
 .game-type-select {
   border: 1px solid #eee;
   border-radius: 5px;
@@ -36,7 +42,7 @@ $nav-height: 85px;
   opacity: 0.5;
 }
 
-.game-type-select-content-item:hover {
+.game-type-select-content-item:hover, .game-type-select-content-item.active {
   opacity: 1.0;
   text-shadow: 0px 1px 2px rgba(61, 61, 61, 0.5);
 }
@@ -45,7 +51,7 @@ $nav-height: 85px;
   background-color: rgba(230,26,4,0.2);
 }
 
-.type-japanese:hover {
+.type-japanese:hover, .type-japanese.active {
   background-color: rgba(230,26,4,0.6);
 }
 
@@ -53,7 +59,7 @@ $nav-height: 85px;
   background-color: rgba(11,33,102,0.2);
 }
 
-.type-english:hover {
+.type-english:hover, .type-english.active {
   background-color: rgba(11,33,102,0.6);
 }
 
@@ -61,7 +67,7 @@ $nav-height: 85px;
   background-color: rgba(246,191,2,0.2);
 }
 
-.type-spanish:hover {
+.type-spanish:hover, .type-spanish.active {
   background-color: rgba(246,191,2,0.6);
 }
 
@@ -69,7 +75,7 @@ $nav-height: 85px;
   background-color: rgba(50, 245, 75, 0.3);
 }
 
-.type-french:hover {
+.type-french:hover, .type-french.active {
   background-color: rgba(50, 245, 75, 0.6);
 }
 
