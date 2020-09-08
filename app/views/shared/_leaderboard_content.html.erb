@@ -1,7 +1,8 @@
 <div class="menu-leaderboard-content">
-  <ul class="menu-leaderboard-rows">
     <% users = game ? game.top_users_specific : User.top_users %>
     <% users.each_with_index do |user, index| %>
+  <%= link_to user_path(user) do %>
+  <ul class="menu-leaderboard-rows">
     <li class="menu-leaderboard-row">
       <% if user.avatar.attached? %>
       <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
@@ -12,7 +13,7 @@
       <% end %>
       <span class="menu-leaderboard-rank"><%= index + 1 %></span>
       <span class="menu-leaderboard-username">
-        <%= link_to user.username, user_path(user) %>
+        <%= user.username %>
       </span>
       <span class="menu-leaderboard-points">
         <span>
@@ -24,6 +25,7 @@
         </span>
       </span>
     </li>
-    <% end %>
   </ul>
+  <% end %> <!-- link to user path -->
+    <% end %> <!-- users with index iteration -->
 </div>

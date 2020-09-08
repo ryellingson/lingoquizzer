@@ -23,6 +23,19 @@
   text-align: center;
 }
 
+.menu-leaderboard-call {
+  transition: 2s;
+  color: rgba(0,0,0, 0.5);
+  font-size: .8rem;
+}
+
+.menu-leaderboard-header:hover {
+  .menu-leaderboard-call {
+    transform: scale(1.3);
+    color: rgba(0,0,0, 0.9);
+  }
+}
+
 .menu-leaderboard-image {
   // for the trophy
 }
