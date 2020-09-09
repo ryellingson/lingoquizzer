@@ -1,9 +1,9 @@
 <div class="menu-leaderboard-content">
+      <div class="menu-leaderboard-rows">
   <% users = game ? game.top_users_specific : User.top_users %>
     <% users.each_with_index do |user, index| %>
-      <%= link_to user_path(user) do %>
-      <ul class="menu-leaderboard-rows">
-        <li class="menu-leaderboard-row">
+       <!--  <li class="menu-leaderboard-row"> -->
+      <%= link_to user_path(user), class: "menu-leaderboard-row" do %>
           <% if user.avatar.attached? %>
             <%= cl_image_tag user.avatar.key, class: 'menu-leaderboard-avatar' %>
           <% else %>
@@ -24,8 +24,8 @@
               <% end %> <!-- conditional checking if game exists -->
             </span>
           </span>
-        </li>
-      </ul>
     <% end %> <!-- link to user path -->
+       <!--  </li> -->
   <% end %> <!-- users with index iteration -->
+      </div>
 </div>

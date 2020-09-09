@@ -1,12 +1,10 @@
 <div class="leaderboards-main-container">
-  <div class="leaderboards-sidebar-left">
     <%= link_to root_path do %>
     <div class="logo">
       <%= image_tag "logo.png" %> <!-- change to svg?  -->
     </div>
     <% end %>
-  </div>
-  <div class="leaderboards-wrapper">
+  <div class="leaderboards-wrapper basic-grid">
     <% @games.each do |game| %>
     <div class="leaderboard">
       <div class="leaderboard-header">
@@ -17,5 +15,4 @@
     </div>
     <% end %> <!-- game iteration -->
   </div>
-  <div class="leaderboards-sidebar-right"></div>
 </div>
