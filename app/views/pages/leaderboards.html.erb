@@ -10,6 +10,7 @@
       <div class="leaderboard-header">
         <span class="leaderboard-image"><i class="fas fa-trophy"></i></span>
         <span class="leaderboard-text"><%= game.name %></span>
+        <p class="opacity-50"><%= game.language.name.capitalize %></p>
       </div>
       <%= render 'shared/leaderboard_content', game: game %>
     </div>
