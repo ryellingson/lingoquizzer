@@ -135,7 +135,7 @@ puts "creating plays"
 
 500.times do
   game = Game.all.sample
-  Play.find_or_create_by(score: game.score * rand(game.problems.count), time: rand(game.play_time), user: User.all.sample, game: game)
+  Play.find_or_create_by(score: game.score * rand(game.problems.count), time: rand(game.play_time), user: User.all.sample, game: game, count: game.count * rand(game.problems.count))
 end
 
 puts "おわり"

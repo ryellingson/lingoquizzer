@@ -22,23 +22,23 @@
   flex-grow: 1;
 }
 
-.profile-header {
+.profile-main {
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
 
-.profile-header-a {
+.profile-main-a {
   margin: 0px 30px;
 }
 
-.profile-header-b {
+.profile-main-b {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.profile-header-c {
+.profile-main-c {
 
 }
 
@@ -99,15 +99,14 @@
 
 }
 
+.profile-record-content {
+  max-height: 32%;
+  overflow: scroll;
+}
+
 .profile-record-row {
   border-bottom: 1px solid #eee;
   font-size: 25px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 700px;
-  height: 50px;
-
 }
 
 .profile-lists {

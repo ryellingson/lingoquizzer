@@ -32,8 +32,8 @@
 
   /* Explicit grid */
   grid-template-areas:
-    'a  b'
     '🌟 🌟'
+    'a  b'
     'c  d';
 
   grid-template-rows: repeat(3, 33%);
