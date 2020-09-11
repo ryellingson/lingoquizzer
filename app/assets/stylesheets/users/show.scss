@@ -243,9 +243,12 @@
   transform: translateX(3rem); // will this make it work on mobile
 }
 
-// .plays-card:hover ~.plays-card {
-//   background: red;
-// }
+.plays-cards-active {
+  background: red;
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
 
 .expanded {
   height: 100%;
