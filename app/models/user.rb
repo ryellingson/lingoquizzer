@@ -9,6 +9,7 @@ class User < ApplicationRecord
   has_many :messages, dependent: :destroy
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
+  has_many :badges
 
   validates :email, uniqueness: true
   validates :username, uniqueness: true, length: { in: 3..16 }
@@ -44,8 +45,13 @@ class User < ApplicationRecord
     banned
   end
 
+  def total_score
+    plays.sum(&:score)
+  end
+
   def self.top_users
-    self.order(total_score: :desc).first(25)
+    all.sort_by(&:total_score).reverse
+    # self.order(total_score: :desc).first(25)
   end
 
   def self.find_for_database_authentication(warden_conditions)
