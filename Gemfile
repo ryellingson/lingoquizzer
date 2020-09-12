@@ -5,6 +5,8 @@ ruby '2.6.6'
 
 # Begin Custom Gems
 
+gem 'merit'
+
 gem "google-cloud"
 
 gem "google-cloud-translate"
