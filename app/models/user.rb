@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_merit
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   attr_writer :login
@@ -9,7 +11,6 @@ class User < ApplicationRecord
   has_many :messages, dependent: :destroy
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
-  has_many :badges
 
   validates :email, uniqueness: true
   validates :username, uniqueness: true, length: { in: 3..16 }
