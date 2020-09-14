@@ -1,7 +1,7 @@
 # Use this hook to configure merit parameters
 Merit.setup do |config|
   # Check rules on each request or in background
-  # config.checks_on_each_request = true
+  config.checks_on_each_request = true
 
   # Add application observers to get notifications when reputation changes.
   # config.add_observer 'MyObserverClassName'
@@ -22,12 +22,15 @@ badge_id = 0
 
 badges = []
 
-path = Rails.root.join('app/assets/images/badges/perfect_plays/jp')
+Language.all.pluck(:language_code).each do |language_code|
+  path = Rails.root.join("app/assets/images/badges/perfect_plays/#{language_code}")
 
-filenames = Dir.children(path).map { |e| e.split('.') }
-filenames.each do |fname|
-  badges << { id: (badge_id = badge_id+1), name: fname[1] }
+  filenames = Dir.children(path).map { |e| e.split('.') }
+  filenames.each do |fname|
+    badges << { id: (badge_id = badge_id+1), name: fname[1], custom_fields: { image_path: "badges/perfect_plays/#{language_code}/#{fname.join('.')}" } }
+  end
 end
+
 
 badges.each do |attrs|
   Merit::Badge.create! attrs
