@@ -3,6 +3,10 @@ class Play < ApplicationRecord
   belongs_to :game
 
   def perfect?
-    count == game.answers.count
+    if game.icon_based
+      count == 36
+    else
+      count == game.problems.count
+    end
   end
 end

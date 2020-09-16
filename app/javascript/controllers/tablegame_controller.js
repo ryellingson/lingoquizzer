@@ -52,6 +52,7 @@ export default class extends Controller {
       if (pressed.join('').includes(secretCode)) {
         console.log('DING DING!');
         correctCountValue = answerCount;
+        console.log("correctCountValue", correctCountValue);
         endGame();
       }
       // console.log(pressed);
@@ -173,8 +174,10 @@ export default class extends Controller {
         `<div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>` : ``
       const scoreDisplay =
         `<div class="endgame-modal-item">Score: ${score}pts</div>`
+      const badgeDisplay =
+        `<div class="modal-badge">You got the badge</div>`
 
-      const htmlToRender = perfectPlayDisplay + timeBonus + correctAnswers  + scoreDisplay;
+      const htmlToRender = perfectPlayDisplay + timeBonus + correctAnswers  + scoreDisplay + badgeDisplay;
 
       gameStats.insertAdjacentHTML("afterbegin", htmlToRender)
     }

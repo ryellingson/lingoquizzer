@@ -25,7 +25,7 @@
 
 
 .animated-grid {
-  height: 85vh;
+  // height: 85vh;
 
   display: grid;
   gap: 1rem;
@@ -34,9 +34,10 @@
   grid-template-areas:
     '🌟 🌟'
     'a  b'
-    'c  d';
+    'c  b'
+    'd  d';
 
-  grid-template-rows: repeat(3, 1fr );
+  grid-template-rows: repeat(4, 1fr ); // auto fit or fill?
   grid-template-columns: 1fr 1fr;
 
   --stagger-delay: 100ms;
@@ -56,12 +57,14 @@
 }
 
 .grid-card {
+  max-height: 459px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(0,0,0, 0.1);
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   animation: cardEntrance 700ms ease-out;
   animation-fill-mode: backwards;
+  overflow: scroll;
   transition: 3s;
 }
 

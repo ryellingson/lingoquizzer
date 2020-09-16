@@ -25,6 +25,7 @@ module Merit
       # Should be "current_user" after registration for badge to be granted.
       # Find badge by badge_id, badge_id takes presidence over badge
       # grant_on 'users#create', badge_id: 7, badge: 'just-registered', to: :itself
+      # grant_on 'registrations#create', badge_id: 7, badge: 'just-registered', to: :itself possibly for devise
 
       # If it has 10 comments, grant commenter-10 badge
       # grant_on 'comments#create', badge: 'commenter', level: 10 do |comment|
@@ -46,8 +47,16 @@ module Merit
       # end
 
       # if the user has the first perfect play of a particular game, grant badge
-      grant_on 'plays#create', badge: 'しょうがっこう', to: :action_user do |play|
-        play.perfect?
+
+      Language.all.pluck(:language_code).each do |language_code|
+        path = Rails.root.join("app/assets/images/badges/perfect_plays/#{language_code}")
+
+        filenames = Dir.children(path).map { |e| e.split('.') }
+        filenames.each do |fname|
+          grant_on 'plays#create', badge: fname[1], to: :user do |play|
+            play.perfect? && play.game.slug == fname[0] && play.game.language.language_code == language_code
+          end
+        end
       end
     end
   end
