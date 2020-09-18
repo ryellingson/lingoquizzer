@@ -1,226 +1,24 @@
-<div class="profile-main-container" data-controller="user">
+<div class="profile-main-container">
   <div class="profile-wrapper">
     <section class="animated-grid">
       <div class="grid-card">
         <p class='plays-card-header'>Recent Plays</p>
-        <div class="plays-cards">
-          <div class="plays-card" data-target="" data-action="">
-            <div class="plays-card-title">
-              <h2>Game Name <p class='plays-card-language'>(French)</p></h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>- Score: 145<%#= play.score %></p>
-              <p>- Time: 30s<%#= play.time %></p>
-              <p>- Count: 12/36<%#= play.count %></p>
-              <p class='plays-card-timestamp'>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card" data-target="" data-action="">
-            <div class="plays-card-title">
-              <h2>Game Name <p class='plays-card-language'>(French)</p></h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>- Score: 145<%#= play.score %></p>
-              <p>- Time: 30s<%#= play.time %></p>
-              <p>- Count: 12/36<%#= play.count %></p>
-              <p class='plays-card-timestamp'>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card" data-target="" data-action="">
-            <div class="plays-card-title">
-              <h2>Game Name <p class='plays-card-language'>(French)</p></h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>- Score: 145<%#= play.score %></p>
-              <p>- Time: 30s<%#= play.time %></p>
-              <p>- Count: 12/36<%#= play.count %></p>
-              <p class='plays-card-timestamp'>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card" data-target="" data-action="">
-            <div class="plays-card-title">
-              <h2>Game Name <p class='plays-card-language'>(French)</p></h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>- Score: 145<%#= play.score %></p>
-              <p>- Time: 30s<%#= play.time %></p>
-              <p>- Count: 12/36<%#= play.count %></p>
-              <p class='plays-card-timestamp'>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card" data-target="" data-action="">
-            <div class="plays-card-title">
-              <h2>Game Name <p class='plays-card-language'>(French)</p></h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>- Score: 145<%#= play.score %></p>
-              <p>- Time: 30s<%#= play.time %></p>
-              <p>- Count: 12/36<%#= play.count %></p>
-              <p class='plays-card-timestamp'>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card" data-target="" data-action="">
-            <div class="plays-card-title">
-              <h2>Game Name <p class='plays-card-language'>(French)</p></h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>- Score: 145<%#= play.score %></p>
-              <p>- Time: 30s<%#= play.time %></p>
-              <p>- Count: 12/36<%#= play.count %></p>
-              <p class='plays-card-timestamp'>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-        </div>
+        <%= render "recent_plays" %>
       </div>
       <div class="grid-card">
         <p class='plays-card-header'>Posts</p>
-        <div class="profile-posts-content">
-          <% @user.posts.each do |post| %>
-            <%= render "posts/thin_preview", post: post %>
-          <% end %>
-        </div>
+        <%= render "profile_posts" %>
       </div>
       <div class="grid-card">
           <p class='plays-card-header'>Best Plays</p>
-        <div class="plays-cards">
-          <div class="plays-card" data-target="" data-action="">
-            <div class="plays-card-title">
-              <h2>Game Name</h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>Score: 145<%#= play.score %></p>
-              <p>Time: 30s<%#= play.time %></p>
-              <p>Count: 12/36<%#= play.count %></p>
-              <p>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card">
-            <div class="plays-card-title">
-              <h2>Game Name</h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>Score: 145<%#= play.score %></p>
-              <p>Time: 30s<%#= play.time %></p>
-              <p>Count: 12/36<%#= play.count %></p>
-              <p>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card">
-            <div class="plays-card-title">
-              <h2>Game Name</h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>Score: 145<%#= play.score %></p>
-              <p>Time: 30s<%#= play.time %></p>
-              <p>Count: 12/36<%#= play.count %></p>
-              <p>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card">
-            <div class="plays-card-title">
-              <h2>Game Name</h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>Score: 145<%#= play.score %></p>
-              <p>Time: 30s<%#= play.time %></p>
-              <p>Count: 12/36<%#= play.count %></p>
-              <p>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card">
-            <div class="plays-card-title">
-              <h2>Game Name</h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>Score: 145<%#= play.score %></p>
-              <p>Time: 30s<%#= play.time %></p>
-              <p>Count: 12/36<%#= play.count %></p>
-              <p>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card">
-            <div class="plays-card-title">
-              <h2>Game Name</h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>Score: 145<%#= play.score %></p>
-              <p>Time: 30s<%#= play.time %></p>
-              <p>Count: 12/36<%#= play.count %></p>
-              <p>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-          <div class="plays-card">
-            <div class="plays-card-title">
-              <h2>Game Name</h2>
-            </div>
-            <%# @user.best_plays.each do |play| %>
-            <div class="plays-card-content">
-              <p>Score: 145<%#= play.score %></p>
-              <p>Time: 30s<%#= play.time %></p>
-              <p>Count: 12/36<%#= play.count %></p>
-              <p>Timestamp</p>
-            </div>
-            <%# end %>
-          </div>
-        </div>
+          <%= render "best_plays" %>
       </div>
       <div class="grid-card">
         <p class='plays-card-header'>Badges</p>
-        <div class="plays-cards">
-          <% current_user.badges.each do |badge| %>
-            <%= image_tag badge.custom_fields[:image_path], class: "plays-card" %>
-          <% end %>
-        </div>
+        <%= render "profile_badges" %>
       </div>
       <div class="grid-card">
-        <div class="profile-main">
-          <div class="profile-main-a">
-            <% if @user.avatar.attached? %>
-            <%= cl_image_tag @user.avatar.key, class: 'profile-avatar' %>
-            <% else %>
-            <div class="default-profile-avatar">
-              <%= @user.default_avatar %>
-            </div>
-            <% end %>
-          </div>
-          <div class="profile-main-b">
-            <div class="profile-username"><%= @user.username %></div>
-            <div class="profile-city"><%= @user.city %></div>
-          </div>
-          <% if @user == current_user %>
-            <div class="profile-main-c">
-              <%= link_to edit_user_registration_path, data: { turbolinks: false } do %>
-                <div class="profile-edit-icon">
-                  <i class="fas fa-edit"></i>
-                </div>
-              <% end %> <!-- link to edit -->
-            </div>
-          <% end %> <!-- if user -->
-        </div>
+        <%= render "profile_header" %>
       </div>
     </section>
   </div>

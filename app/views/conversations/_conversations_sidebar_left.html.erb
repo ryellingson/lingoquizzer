@@ -1,0 +1,97 @@
+<div class="sidebar-left">
+  <%= link_to root_path do %>
+  <div class="logo chat-logo">
+    <%= image_tag "logo.png" %> <!-- change to svg?  -->
+  </div>
+  <% end %> <!-- link to root -->
+  <div class="room-header">
+    <h2>Conversations</h2>
+  </div>
+  <% if user_signed_in? %>
+  <%= link_to user_path(current_user) do %>
+  <div class="conversations-current-user">
+    <% if current_user.avatar.attached? %>
+    <div class="comment-avatar">
+      <%= cl_image_tag current_user.avatar.key, class: 'comment-avatar' %>
+    </div>
+    <p><%= current_user&.username %></p>
+    <% else %>
+    <div class="default-comment-avatar mar-top-8 text-black">
+      <%= current_user.default_avatar %>
+    </div>
+    <p><%= current_user&.username %></p>
+    <% end %> <!-- if current_user -->
+  </div>
+  <% end %> <!-- link to user path -->
+  <% else %>
+  <div class="conversations-current-user">
+    <p>Guest</p>
+  </div>
+  <% end %> <!-- if user signed in -->
+  <div class="left-sidebar-section">
+    <div class="conversations-section-header">
+      <h3>Channel <i class="fas fa-random"></i></h3>
+    </div>
+    <div class="conversations-channels">
+      <p class="channel-tab">
+        <%= link_to forum_index_path @language.language_code do %>
+        <i class="fas fa-angle-double-right"></i>  Forum
+        <% if params[:controller] == 'posts' %>
+        <i class="fas fa-arrow-circle-left"></i>
+        <% end %> <!-- if params -->
+        <% end %> <!-- link to forum -->
+      </p>
+      <p class="channel-tab">
+        <%= link_to chat_index_path @language.language_code do %>
+        <i class="fas fa-angle-double-right"></i>  Chat
+        <% if params[:controller] == 'messages' %>
+        <i class="fas fa-arrow-circle-left"></i>
+        <% end %> <!-- if params -->
+        <% end %> <!-- link to chat -->
+      </p>
+    </div>
+  </div>
+  <div class="left-sidebar-section">
+    <div class="conversations-section-header">
+      <h3>Language <i class="fas fa-comments"></i></h3>
+    </div>
+    <div class="conversations-channels">
+      <% Language.all.each do |lang| %>
+      <p class="language-tab">
+        <% path = params[:controller] == 'posts' ? forum_index_path(lang.language_code) : chat_index_path(lang.language_code) %>
+        <%= link_to path do %>
+        <i class="fas fa-circle-notch"></i>  <%= lang.name.capitalize %>
+        <% if @language == lang %>
+        <i class="fas fa-arrow-circle-left"></i>
+        <% end %> <!-- if language -->
+        <% end %> <!-- link to path -->
+      </p>
+      <% end %>
+    </div>
+  </div>
+  <div class="left-sidebar-section">
+    <div class="conversations-section-header">
+      <h3>Online <i class="fas fa-user"></i></h3>
+    </div>
+    <div class="conversations-online-users">
+      <p class="mb-1"><%= @online_users.size %> people online</p>
+      <% @online_users.each do |user| %>
+      <%= link_to user_path(user) do %>
+      <% if user.avatar.attached? %>
+      <div class="">
+        <%= cl_image_tag user.avatar.key, class: 'comment-avatar' %>
+      </div>
+      <p><%= user.username %></p>
+      <% else %>
+      <div class="flex flex-row">
+        <div class="default-comment-avatar text-black my-1">
+          <%= user.default_avatar %>
+        </div>
+        <p><%= user.username %></p>
+      </div>
+      <% end %> <!-- if user -->
+      <% end %> <!-- link to user path -->
+      <% end %> <!-- users iteration -->
+    </div>
+  </div>
+</div>

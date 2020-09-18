@@ -1,0 +1,5 @@
+<div class="profile-posts-content">
+  <% @user.posts.each do |post| %>
+    <%= render "posts/thin_preview", post: post %>
+  <% end %>
+</div>
