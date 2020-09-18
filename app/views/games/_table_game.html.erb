@@ -3,6 +3,11 @@
 </div>
 <div class="table-wrapper">
   <div class="content-table" id="gameTable" data-controller="tablegame">
-    <%= render partial: "kana_game_col", locals: { problems: @problems, question_header: @game.question_header, icon_based: @game.icon_based } %>
+    <%= render partial: "table_game_col",
+      locals: {
+        problems: @problems,
+        question_header: @game.question_header,
+        icon_based: @game.icon_based
+      } %>
   </div>
 </div>

@@ -17,6 +17,10 @@ class GamesController < ApplicationController
   def show
     #create an instance variable assigning problems to the game instance
     @game = Game.find(params[:id])
+    perfect_badges = Merit::Badge.find do |badge|
+      badge.custom_fields[:game_slug] == @game.slug && @game.language.language_code == badge.custom_fields[:language_code]
+    end
+    @perfect_badge = perfect_badges.first unless current_user.badges.include?(perfect_badges.first)
     authorize @game
     # Initializes a Markdown parser
     @description = @game.markdown_content

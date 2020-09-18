@@ -49,7 +49,7 @@ module Merit
       # if the user has the first perfect play of a particular game, grant badge
 
       Language.all.pluck(:language_code).each do |language_code|
-        path = Rails.root.join("app/assets/images/badges/perfect_plays/#{language_code}")
+        path = Rails.root.join("app/assets/images/badges/games/perfect_plays/#{language_code}")
 
         filenames = Dir.children(path).map { |e| e.split('.') }
         filenames.each do |fname|
