@@ -2,11 +2,11 @@ class Play < ApplicationRecord
   belongs_to :user
   belongs_to :game
 
+  def perfect_score
+    game.icon_based ? 36 : game.problems.count
+  end
+
   def perfect?
-    if game.icon_based
-      count == 36
-    else
-      count == game.problems.count
-    end
+    count == perfect_score
   end
 end

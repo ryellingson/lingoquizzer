@@ -162,9 +162,10 @@ trix-toolbar .trix-button-row {
   background: white;
 }
 
-.tp-image {
-  width: 100px;
-  background-color: lightgray;
+.tp-image img {
+  max-width: 100px;
+  max-height: 200px;
+  object-fit: cover;
   border: 1px solid black;
   margin-right: 10px;
 }

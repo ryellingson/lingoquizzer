@@ -48,6 +48,21 @@ module Merit
 
       # if the user has the first perfect play of a particular game, grant badge
 
+      conversations_rules = [
+        {
+          badge: 'first_post',
+          model_name: 'Post',
+          rule: 'resource.user.posts.count >= 1'
+        }
+      ]
+
+      conversations_rules.each do |rule_hash|
+        grant_on "#{rule_hash[:model_name].downcase.pluralize}#create", badge: rule_hash[:badge], model_name: rule_hash[:model_name], to: :user do |resource|
+          eval(rule_hash[:rule])
+        end
+      end
+
+
       Language.all.pluck(:language_code).each do |language_code|
         path = Rails.root.join("app/assets/images/badges/games/perfect_plays/#{language_code}")
 
