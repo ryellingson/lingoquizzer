@@ -27,10 +27,11 @@ export default class extends Controller {
       difficulty: gameData.dataset.difficulty,
       genre: gameData.dataset.genre,
       score: parseInt(gameData.dataset.score),
-      playTime: gameData.dataset.playTime,
+      playTime: parseInt(gameData.dataset.playTime),
       category: gameData.dataset.category,
       characterType: gameData.dataset.characterType,
-      perfectPlayUrl: gameData.dataset.perfectPlayUrl
+      perfectPlayUrl: gameData.dataset.perfectPlayUrl,
+      perfectBadgeUrl: gameData.dataset.perfectBadgeUrl
     }
 
     // const kanaCount = 46;
@@ -133,6 +134,7 @@ export default class extends Controller {
 
     const postResults = () => {
       const postURL = document.querySelector(".game-container").dataset.url;
+      console.log('posting');
       fetch(postURL, {
         method: "POST",
         body: JSON.stringify({
@@ -147,6 +149,7 @@ export default class extends Controller {
           "X-CSRF-Token": Rails.csrfToken(),
         }
       })
+      console.log('posted');
     }
 
     const endGame = () => {
@@ -174,8 +177,9 @@ export default class extends Controller {
         `<div class="endgame-modal-item">Time Bonus: ${timeLeft}pts</div>` : ``
       const scoreDisplay =
         `<div class="endgame-modal-item">Score: ${score}pts</div>`
-      const badgeDisplay =
-        `<div class="modal-badge">You got the badge</div>`
+      const badgeDisplay = correctCountValue === answerCount && gameDataObject.perfectBadgeUrl ?
+        `<div class="modal-badge"><img src="${gameDataObject.perfectBadgeUrl}"/></div>
+         <div>You got the badge!</div>` : ""
 
       const htmlToRender = perfectPlayDisplay + timeBonus + correctAnswers  + scoreDisplay + badgeDisplay;
 

@@ -67,7 +67,7 @@
 
 /*sidebar end */
 
-/*badges start*/
+/*notches start*/
 
 .green-circle {
   color: #1FE5BD;
@@ -85,7 +85,7 @@
   opacity: 1 !important;
 }
 
-/*badges end*/
+/*notches end*/
 
 /*content layout start*/
 
@@ -183,3 +183,8 @@
 }
 
 // sidebar right ends
+
+/* Small screens */
+@media screen and (max-width: 600px) {
+
+}

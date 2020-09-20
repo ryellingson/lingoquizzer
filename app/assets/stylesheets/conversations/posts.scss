@@ -157,7 +157,6 @@ trix-toolbar .trix-button-row {
 .tp-wrapper {
   border: 1px solid #eee;
   display: flex;
-  justify-content: space-around;
   padding: 8px;
   margin: 1px 0;
   background: white;
@@ -167,8 +166,22 @@ trix-toolbar .trix-button-row {
   width: 100px;
   background-color: lightgray;
   border: 1px solid black;
+  margin-right: 10px;
 }
 
+.tp-info {
+
+}
+
+.tp-author {
+  margin-top: 4px;
+  font-size: 10px;
+  color: rgba(0,0,0,0.4);
+}
+
+.tp-title {
+  font-size: 12px;
+}
 
 
 

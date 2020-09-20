@@ -23,11 +23,19 @@ badge_id = 0
 badges = []
 
 Language.all.pluck(:language_code).each do |language_code|
-  path = Rails.root.join("app/assets/images/badges/perfect_plays/#{language_code}")
+  path = Rails.root.join("app/assets/images/badges/games/perfect_plays/#{language_code}")
 
   filenames = Dir.children(path).map { |e| e.split('.') }
   filenames.each do |fname|
-    badges << { id: (badge_id = badge_id+1), name: fname[1], custom_fields: { image_path: "badges/perfect_plays/#{language_code}/#{fname.join('.')}" } }
+    badges << {
+      id: (badge_id = badge_id+1),
+      name: fname[1],
+      custom_fields: {
+        image_path: "badges/games/perfect_plays/#{language_code}/#{fname.join('.')}",
+        game_slug: fname[0],
+        language_code: language_code
+      }
+    }
   end
 end
 

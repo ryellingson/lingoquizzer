@@ -7,8 +7,8 @@
   <% end %>
   </div>
   <div class="tp-info">
-    <h3><%= post.title %></h3>
-    <p>Posted by: <%= post.user.username %> <%= time_ago_in_words(post.created_at) %> ago</p>
+    <h3 class='tp-title'><%= post.title %></h3>
+    <p class='tp-author'>Posted by: <%= post.user.username %> <%= time_ago_in_words(post.created_at) %> ago</p>
     <div class="post-toolbar">
       <span class="post-comment-icon">
         <img src="https://img.icons8.com/material-two-tone/24/000000/topic.png"/>

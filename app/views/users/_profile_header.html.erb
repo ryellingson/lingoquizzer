@@ -1,0 +1,24 @@
+<div class="profile-main">
+  <div class="profile-main-a">
+    <% if @user.avatar.attached? %>
+    <%= cl_image_tag @user.avatar.key, class: 'profile-avatar' %>
+    <% else %>
+    <div class="default-profile-avatar">
+      <%= @user.default_avatar %>
+    </div>
+    <% end %>
+  </div>
+  <div class="profile-main-b">
+    <div class="profile-username"><%= @user.username %></div>
+    <div class="profile-city"><%= @user.city %></div>
+  </div>
+  <% if @user == current_user %>
+    <div class="profile-main-c">
+      <%= link_to edit_user_registration_path, data: { turbolinks: false } do %>
+        <div class="profile-edit-icon">
+          <i class="fas fa-edit"></i>
+        </div>
+      <% end %> <!-- link to edit -->
+    </div>
+  <% end %> <!-- if user -->
+</div>

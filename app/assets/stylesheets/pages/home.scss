@@ -65,4 +65,22 @@
   height: 25px;
 }
 
+/* Small screens */
+@media screen and (max-width: 600px) {
+  .main {
+    position: absolute;
+    top: 170px;
+    left: 25px;
+    height: auto;
+  }
+
+  .gateway-wrapper {
+    padding: 0px;
+  }
+
+  .gateway {
+    width: 330px;
+  }
+}
+
 
