@@ -25,7 +25,8 @@
     'c  b'
     'd  d';
 
-  grid-template-rows: 175px repeat(auto-fit, minmax(250px, 1fr)); // auto fit or fill?
+  // grid-template-rows: 175px repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 175px repeat(3, 1fr); // auto fit or fill?
   grid-template-columns: 1fr 1fr;
 
   --stagger-delay: 100ms;
@@ -98,7 +99,7 @@
       'b'
       'd';
 
-    grid-template-rows: 150px repeat(3, 205px); // auto fit or fill?
+    grid-template-rows: 150px repeat(3, 258px); // auto fit or fill?
     grid-template-columns: 1fr;
 
     --stagger-delay: 100ms;
