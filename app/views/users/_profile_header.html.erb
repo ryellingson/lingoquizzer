@@ -12,13 +12,18 @@
     <div class="profile-username"><%= @user.username %></div>
     <div class="profile-city"><%= @user.city %></div>
   </div>
-  <% if @user == current_user %>
     <div class="profile-main-c">
-      <%= link_to edit_user_registration_path, data: { turbolinks: false } do %>
-        <div class="profile-edit-icon">
-          <i class="fas fa-edit"></i>
-        </div>
-      <% end %> <!-- link to edit -->
+      <% if @user == current_user %>
+          <%= link_to edit_user_registration_path, data: { turbolinks: false } do %>
+            <div class="profile-edit-icon">
+              <i class="fas fa-edit"></i>
+            </div>
+          <% end %> <!-- link to edit -->
+      <% end %> <!-- if user -->
+      <div class="profile-scores">
+        <p>Game Points(GP): 11,212</p>
+        <p>Assit Points(AP): 55</p>
+        <p>Hint Points(HP): 3</p>
+      </div>
     </div>
-  <% end %> <!-- if user -->
 </div>
