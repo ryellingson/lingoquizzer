@@ -88,20 +88,22 @@
 .profile-posts-content {
   display: flex;
   flex-direction: column;
-  background: rgba(118,150,120, 0.5);
+  background: rgba(118,150,120, 0.2);
   padding: 2px;
   border-radius: 5px;
   overflow: scroll;
   max-height: 448px;
+  min-height: 412px;
 }
 
 .plays-cards {
-  background: rgba(118,150,120, 0.5);
+  background: rgba(118,150,120, 0.2);
   border-radius: 5px;
   display: flex;
   align-items: stretch;
   padding: 5px;
   overflow: scroll;
+  min-height: 180px;
 }
 
 .plays-card {
