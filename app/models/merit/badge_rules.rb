@@ -48,11 +48,79 @@ module Merit
 
       # if the user has the first perfect play of a particular game, grant badge
 
+      # generals
+
+      grant_on 'users/registrations#create', model_name: 'User', badge: 'signed_up', to: :action_user
+
+      grant_on 'contact#send_message', badge: 'first_contact', to: :action_user
+
+      # check application controller for additional rules
+
+      # generals
+
+      # stats_rules = [
+      #   {
+      #     badge: 'made_first_rank',
+      #     model_name: 'User',
+      #     rule: ''
+      #   },
+      #   {
+      #     badge: 'made_second_rank',
+      #     model_name: 'User',
+      #     rule: ''
+      #   },
+      #   {
+      #     badge: 'made_third_rank',
+      #     model_name: 'User',
+      #     rule: ''
+      #   }
+      # ]
+
       conversations_rules = [
         {
           badge: 'first_post',
           model_name: 'Post',
-          rule: 'resource.user.posts.count >= 1'
+          rule: 'resource.user.posts.count == 1'
+        },
+        {
+          badge: 'tenth_post',
+          model_name: 'Post',
+          rule: 'resource.user.posts.count == 10'
+        },
+        {
+          badge: 'hundredth_post',
+          model_name: 'Post',
+          rule: 'resource.user.posts.count == 100'
+        },
+        {
+          badge: 'first_comment',
+          model_name: 'Comment',
+          rule: 'resource.user.comments.count == 1'
+        },
+        {
+          badge: 'tenth_comment',
+          model_name: 'Comment',
+          rule: 'resource.user.comments.count == 10'
+        },
+        {
+          badge: 'hundredth_comment',
+          model_name: 'Comment',
+          rule: 'resource.user.comments.count == 100'
+        },
+        {
+          badge: 'first_message',
+          model_name: 'Message',
+          rule: 'resource.user.messages.count == 1'
+        },
+        {
+          badge: 'tenth_message',
+          model_name: 'Message',
+          rule: 'resource.user.messages.count == 10'
+        },
+        {
+          badge: 'hundredth_message',
+          model_name: 'Message',
+          rule: 'resource.user.messages.count == 100'
         }
       ]
 
@@ -61,7 +129,6 @@ module Merit
           eval(rule_hash[:rule])
         end
       end
-
 
       Language.all.pluck(:language_code).each do |language_code|
         path = Rails.root.join("app/assets/images/badges/games/perfect_plays/#{language_code}")

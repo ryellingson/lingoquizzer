@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   before_action :set_online_users
   layout :layout_by_resource
   before_action :banned?
+  before_action :check_badges, if: :user_signed_in?
 
   include Pundit
   # Pundit: white-list approach.
@@ -17,6 +18,16 @@ class ApplicationController < ActionController::Base
   #   redirect_to(root_path)
   # end
   private
+
+  def check_badges
+    grant_badge('been_a_member_for_a_month') if current_user.created_at <= Date.today - 1.month
+    grant_badge('been_a_member_for_a_year') if current_user.created_at <= Date.today - 1.year
+  end
+
+  def grant_badge(badge_name)
+    badge = Merit::Badge.all.find { |badge| badge.name == badge_name }
+    current_user.add_badge(badge.id) unless current_user.badges.include?(badge)
+  end
 
   def banned?
     if current_user.present? && current_user.banned?
