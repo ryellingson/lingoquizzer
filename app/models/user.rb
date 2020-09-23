@@ -52,7 +52,7 @@ class User < ApplicationRecord
   end
 
   def self.top_users
-    all.sort_by(&:total_score).reverse
+    all.sort_by(&:total_score).reverse.first(10)
     # self.order(total_score: :desc).first(25)
   end
 

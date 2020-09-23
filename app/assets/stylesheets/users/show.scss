@@ -22,7 +22,7 @@
 
 .profile-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
 }
 
@@ -37,7 +37,9 @@
 }
 
 .profile-main-c {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .profile-avatar {
@@ -75,148 +77,33 @@
   font-size: 35px;
 }
 
+.profile-scores {
+  color: rgba(0,0,0,0.6);
+}
+
 .profile-city {
   font-size: 20px;
-}
-
-.profile-record {
-  border-bottom: 1px solid rgba(200,200,200,0.8);
-  height: 315px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: scroll;
-}
-
-.profile-record-header {
-  border-top: 1px solid rgba(200,200,200,0.8);
-  border-bottom: 1px solid rgba(200,200,200,0.8);
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-
-}
-
-.profile-record-content {
-
-}
-
-.profile-record-row {
-  border-bottom: 1px solid #eee;
-  font-size: 25px;
-}
-
-.profile-lists {
-  height: 312px;
-  display: flex;
-}
-
-.profile-badges {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-}
-
-.profile-badges-header {
-  border-bottom: 1px solid rgba(200,200,200,0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.profile-badges-content {
-  display: flex;
-  justify-content: center;
-}
-
-.profile-badges-row {
-  border-bottom: 1px solid #eee;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-posts {
-  border-left: 1px solid rgba(200,200,200,0.8);
-  border-right: 1px solid rgba(200,200,200,0.8);
-  width: 34%;
-  height: 310px;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
-}
-
-.profile-posts-header {
-  border-bottom: 1px solid rgba(200,200,200,0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 30px;
-  width: 331px;
-  margin-bottom: 10px;
-  background-color: white;
 }
 
 .profile-posts-content {
   display: flex;
   flex-direction: column;
-  background: rgba(118,150,120, 0.5);
+  background: rgba(118,150,120, 0.2);
   padding: 2px;
-}
-
-// .profile-posts-row {
-//   border-bottom: 1px solid #eee;
-//   width: 90%;
-//   display: flex;
-//   justify-content: center;
-// }
-
-.profile-best-plays {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
+  border-radius: 5px;
   overflow: scroll;
-}
-
-.profile-best-plays-header {
-  border-bottom: 1px solid rgba(200,200,200,0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  padding: 4px;
-  margin-bottom: 10px;
-}
-
-.profile-best-plays-subheader {
-  border-bottom: 1px solid rgba(200,200,200,0.8);
-  display: flex;
-  justify-content: space-around;
-  height: 20px;
-  margin-bottom: 5px;
-}
-
-.profile-best-plays-content {
-  // display: flex;
-  // justify-content: center;
-}
-
-.profile-best-plays-row {
-  border-bottom: 1px solid #eee;
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  max-height: 448px;
+  min-height: 412px;
 }
 
 .plays-cards {
-  background: rgba(118,150,120, 0.5);
+  background: rgba(118,150,120, 0.2);
+  border-radius: 5px;
   display: flex;
   align-items: stretch;
   padding: 5px;
+  overflow: scroll;
+  min-height: 180px;
 }
 
 .plays-card {
@@ -228,7 +115,6 @@
   transition: 0.2s;
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-width: 130px;
   min-height: 170px;
 }
@@ -258,8 +144,10 @@
 .plays-card-header {
   font-weight: 600;
   font-size: 16px;
-  margin-left: 10px;
   padding: 4px;
+  padding-left: 18px;
+  margin-bottom: 1px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
   font-style: italic;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -269,6 +157,7 @@
   margin-bottom: 7px;
   border-bottom: 1px solid rgba(0,0,0,0.3);
   font-weight: 700;
+  font-size: 15px;
 }
 
 .plays-card-timestamp {

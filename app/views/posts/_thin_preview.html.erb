@@ -1,11 +1,9 @@
 <div class="tp-wrapper">
-  <div class="tp-image">
   <% if post.content.embeds[0] %>
-    <%= cl_image_tag post.content.embeds[0].key %>
-  <% else %>
-    <!-- add placeholder -->
+    <div class="tp-image">
+      <%= cl_image_tag post.content.embeds[0].key %>
+    </div>
   <% end %>
-  </div>
   <div class="tp-info">
     <h3 class='tp-title'><%= post.title %></h3>
     <p class='tp-author'>Posted by: <%= post.user.username %> <%= time_ago_in_words(post.created_at) %> ago</p>

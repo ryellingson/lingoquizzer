@@ -11,9 +11,12 @@
   border-radius: 5px;
   margin-top: 15px;
   transition: 4s;
+  height: fit-content;
+  height: -moz-fit-content;
+  position: sticky;
+  top: 70px;
   &:hover {
     border: 2px solid rgba(0,0,0, 0.7);
-    // transform: scale(1.1);
   }
 }
 

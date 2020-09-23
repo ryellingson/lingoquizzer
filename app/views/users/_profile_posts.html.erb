@@ -1,5 +1,7 @@
 <div class="profile-posts-content">
   <% @user.posts.each do |post| %>
-    <%= render "posts/thin_preview", post: post %>
+    <%= link_to post do %>
+      <%= render "posts/thin_preview", post: post %>
+    <% end %>
   <% end %>
 </div>

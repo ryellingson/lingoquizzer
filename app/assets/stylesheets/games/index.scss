@@ -112,54 +112,6 @@ $nav-height: 85px;
   font-size: 32px;
 }
 
-.games-grid {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 1fr 1fr;
-  // grid-row-gap: 25px;
-  // justify-items: center;
-  padding: 15px;
-}
-
-.level-header {
-  border-bottom: 1px solid black;
-  display: flex;
-  padding: 5px;
-  margin: 15px;
-  font-size: 25px;
-  justify-content: center;
-  text-shadow: 0px 1px 1px rgba(61, 61, 61, 0.7);
-}
-
-.level-card {
-  border: 1px solid grey;
-  background-color: ghostwhite;
-  height: 150px;
-  width: 125px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  opacity: 0.8;
-}
-
-.level-card:hover {
-  opacity: 1.0;
-  -webkit-box-shadow: 0px 24px 85px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 24px 85px -6px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.75);
-}
-
-.level-title {
-  border-top: 1px solid grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 32px;
-  width: 100%;
-  font-size: 0.8vw;
-}
-
 // level cards
 
 $color_white: #fff;

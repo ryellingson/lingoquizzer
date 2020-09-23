@@ -156,15 +156,21 @@ trix-toolbar .trix-button-row {
 
 .tp-wrapper {
   border: 1px solid #eee;
+  border-radius: 5px;
   display: flex;
   padding: 8px;
   margin: 1px 0;
   background: white;
+  transition: .5s;
+  &:hover {
+    border: 2px solid rgba(0,0,0, 0.5);
+  }
 }
 
-.tp-image {
-  width: 100px;
-  background-color: lightgray;
+.tp-image img {
+  max-width: 100px;
+  max-height: 200px;
+  object-fit: cover;
   border: 1px solid black;
   margin-right: 10px;
 }

@@ -1,93 +1,15 @@
 <div class="plays-cards">
-  <div class="plays-card">
-    <div class="plays-card-title">
-      <h2>Game Name</h2>
+  <% @user.best_plays.each do |play| %>
+    <div class="plays-card">
+      <div class="plays-card-title">
+        <h2><%= play.game.name %> <p class='plays-card-language'>(<%= play.game.language.name %>)</p></h2>
+      </div>
+      <div class="plays-card-content">
+        <p>- Score: <%= play.score %></p>
+        <p>- Time: <%= play.time %></p>
+        <p>- Count: <%= play.count %>/<%= play.perfect_score %></p>
+        <p class='plays-card-timestamp'><%= play.created_at.strftime("%d %b %Y, %H:%M") %></p>
+      </div>
     </div>
-    <%# @user.best_plays.each do |play| %>
-    <div class="plays-card-content">
-      <p>Score: 145<%#= play.score %></p>
-      <p>Time: 30s<%#= play.time %></p>
-      <p>Count: 12/36<%#= play.count %></p>
-      <p>Timestamp</p>
-    </div>
-    <%# end %>
-  </div>
-  <div class="plays-card">
-    <div class="plays-card-title">
-      <h2>Game Name</h2>
-    </div>
-    <%# @user.best_plays.each do |play| %>
-    <div class="plays-card-content">
-      <p>Score: 145<%#= play.score %></p>
-      <p>Time: 30s<%#= play.time %></p>
-      <p>Count: 12/36<%#= play.count %></p>
-      <p>Timestamp</p>
-    </div>
-    <%# end %>
-  </div>
-  <div class="plays-card">
-    <div class="plays-card-title">
-      <h2>Game Name</h2>
-    </div>
-    <%# @user.best_plays.each do |play| %>
-    <div class="plays-card-content">
-      <p>Score: 145<%#= play.score %></p>
-      <p>Time: 30s<%#= play.time %></p>
-      <p>Count: 12/36<%#= play.count %></p>
-      <p>Timestamp</p>
-    </div>
-    <%# end %>
-  </div>
-  <div class="plays-card">
-    <div class="plays-card-title">
-      <h2>Game Name</h2>
-    </div>
-    <%# @user.best_plays.each do |play| %>
-    <div class="plays-card-content">
-      <p>Score: 145<%#= play.score %></p>
-      <p>Time: 30s<%#= play.time %></p>
-      <p>Count: 12/36<%#= play.count %></p>
-      <p>Timestamp</p>
-    </div>
-    <%# end %>
-  </div>
-  <div class="plays-card">
-    <div class="plays-card-title">
-      <h2>Game Name</h2>
-    </div>
-    <%# @user.best_plays.each do |play| %>
-    <div class="plays-card-content">
-      <p>Score: 145<%#= play.score %></p>
-      <p>Time: 30s<%#= play.time %></p>
-      <p>Count: 12/36<%#= play.count %></p>
-      <p>Timestamp</p>
-    </div>
-    <%# end %>
-  </div>
-  <div class="plays-card">
-    <div class="plays-card-title">
-      <h2>Game Name</h2>
-    </div>
-    <%# @user.best_plays.each do |play| %>
-    <div class="plays-card-content">
-      <p>Score: 145<%#= play.score %></p>
-      <p>Time: 30s<%#= play.time %></p>
-      <p>Count: 12/36<%#= play.count %></p>
-      <p>Timestamp</p>
-    </div>
-    <%# end %>
-  </div>
-  <div class="plays-card">
-    <div class="plays-card-title">
-      <h2>Game Name</h2>
-    </div>
-    <%# @user.best_plays.each do |play| %>
-    <div class="plays-card-content">
-      <p>Score: 145<%#= play.score %></p>
-      <p>Time: 30s<%#= play.time %></p>
-      <p>Count: 12/36<%#= play.count %></p>
-      <p>Timestamp</p>
-    </div>
-    <%# end %>
-  </div>
+  <% end %>
 </div>

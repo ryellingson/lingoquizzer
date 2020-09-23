@@ -1,5 +1,5 @@
 <div class="plays-cards">
-  <% current_user.badges.each do |badge| %>
+  <% @user.badges.each do |badge| %>
     <%= image_tag badge.custom_fields[:image_path], class: "plays-card" %>
   <% end %>
 </div>

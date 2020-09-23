@@ -44,27 +44,30 @@ export default class extends Controller {
     let interval;
     let score = 0;
 
-    const pressed = [];
-    const secretCode = 'perfecto';
+    const konamiCode = () => {
+      let pressed = [];
+      const secretCode = 'perfecto';
 
-    window.addEventListener('keyup', (e) => {
-      pressed.push(e.key);
-      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
-      if (pressed.join('').includes(secretCode)) {
-        console.log('DING DING!');
-        correctCountValue = answerCount;
-        console.log("correctCountValue", correctCountValue);
-        endGame();
-      }
-      // console.log(pressed);
-    });
-
+      window.addEventListener('keyup', (e) => {
+        // console.log('listening');
+        pressed.push(e.key);
+        pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+        if (pressed.join('').includes(secretCode)) {
+          console.log('DING DING!');
+          correctCountValue = answerCount;
+          // console.log("correctCountValue", correctCountValue);
+          endGame();
+        }
+        // console.log(pressed);
+      });
+    }
 
     const startGame = () => {
       interval = setInterval(updateTimer, 1000);
       playButton.classList.add("hidden");
       gameInput.parentNode.classList.remove("hidden");
       gameInput.addEventListener('input', handleInputChange);
+      gameInput.addEventListener('input', konamiCode);
       gameInput.focus();
       currentAnswer.parentNode.classList.add("active-row");
     }

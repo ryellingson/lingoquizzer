@@ -25,7 +25,8 @@
     'c  b'
     'd  d';
 
-  grid-template-rows: 175px repeat(3, 212px); // auto fit or fill?
+  // grid-template-rows: 175px repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 175px repeat(3, 1fr); // auto fit or fill?
   grid-template-columns: 1fr 1fr;
 
   --stagger-delay: 100ms;
@@ -45,7 +46,6 @@
 }
 
 .grid-card {
-  max-height: 459px;
   min-width: 300px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(0,0,0, 0.1);
@@ -53,7 +53,6 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   animation: cardEntrance 700ms ease-out;
   animation-fill-mode: backwards;
-  overflow: scroll;
   transition: 3s;
 }
 
@@ -100,7 +99,7 @@
       'b'
       'd';
 
-    grid-template-rows: 150px repeat(3, 205px); // auto fit or fill?
+    grid-template-rows: 150px repeat(3, 258px); // auto fit or fill?
     grid-template-columns: 1fr;
 
     --stagger-delay: 100ms;
