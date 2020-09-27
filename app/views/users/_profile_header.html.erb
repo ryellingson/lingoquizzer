@@ -21,9 +21,9 @@
           <% end %> <!-- link to edit -->
       <% end %> <!-- if user -->
       <div class="profile-scores">
-        <p>Game Points(GP): 11,212</p>
-        <p>Assit Points(AP): 55</p>
-        <p>Hint Points(HP): 3</p>
+        <p>Game Points(GP): <%= @user.total_score %></p>
+        <p>Assit Points(AP): <%= @user.assist_points %></p>
+        <p>Hint Points(HP): <%= @user.hint_points %></p>
       </div>
     </div>
 </div>

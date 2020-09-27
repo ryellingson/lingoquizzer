@@ -51,6 +51,10 @@ class User < ApplicationRecord
     plays.sum(&:score)
   end
 
+  def hint_points
+    self.hint_points = self.assist_points / 10
+  end
+
   def self.top_users
     all.sort_by(&:total_score).reverse.first(10)
     # self.order(total_score: :desc).first(25)

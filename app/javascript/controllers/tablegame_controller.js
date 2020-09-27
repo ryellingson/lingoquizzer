@@ -58,7 +58,7 @@ export default class extends Controller {
             endGame();
             pressed = [];
           }
-          console.log(pressed);
+          // console.log(pressed);
         });
         window.listenerAdded = true;
       }
