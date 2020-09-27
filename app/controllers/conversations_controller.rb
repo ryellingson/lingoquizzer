@@ -11,7 +11,7 @@ class ConversationsController < ApplicationController
   def set_slideshow_keywords
     slideshow_keywords_data = {
       ja: "japan,kyushu,hokkaido,kanji",
-      en: "england,united%20states,australia,new%20zealand,english",
+      en: "england,united%20states,australia,new%20zealand,english,scotland,ireland,south%20africa",
       es: "mexico,spain,latin%20america,costa%20rica,ecuador,argentina,chile,colombia",
       fr: "france,cameroon,quebec,paris,avignon,bordeaux,brittany,lyon"
     }

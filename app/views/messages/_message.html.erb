@@ -1,7 +1,7 @@
 <div class="message" data-author-id='<%= message.user.id %>'>
   <div class="message-avatar-wrapper">
-    <% if current_user.avatar.attached? %>
-      <%= cl_image_tag current_user.avatar.key, class: 'message-avatar' %>
+    <% if message.user.avatar.attached? %>
+      <%= cl_image_tag message.user.avatar.key, class: 'message-avatar' %>
     <% else %>
       <div class="default-message-avatar">
         <%= message.user.default_avatar %>
