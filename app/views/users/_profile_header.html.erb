@@ -1,7 +1,7 @@
 <div class="profile-main">
   <div class="profile-main-a">
     <% if @user.avatar.attached? %>
-    <%= cl_image_tag @user.avatar.key, class: 'profile-avatar' %>
+      <%= cl_image_tag @user.avatar.key, class: 'profile-avatar' %>
     <% else %>
     <div class="default-profile-avatar">
       <%= @user.default_avatar %>
