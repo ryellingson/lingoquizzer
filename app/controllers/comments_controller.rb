@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.user = current_user
     @comment.post = @post
-    new_ap_total = current_user.assist_points + 3
+    new_ap_total = current_user.assist_points + 2
     current_user.update(assist_points: new_ap_total)
     authorize @comment
     if @comment.save

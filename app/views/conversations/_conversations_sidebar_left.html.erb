@@ -11,16 +11,19 @@
   <%= link_to user_path(current_user) do %>
   <div class="conversations-current-user">
     <% if current_user.avatar.attached? %>
-    <div class="comment-avatar">
-      <%= cl_image_tag current_user.avatar.key, class: 'comment-avatar' %>
-    </div>
-    <p><%= current_user&.username %></p>
+      <div class="flex flex-row items-center">
+        <%= cl_image_tag current_user.avatar.key, class: 'menu-leaderboard-avatar m-0 mr-2' %>
+        <p><%= current_user&.username %></p>
+      </div>
     <% else %>
-    <div class="default-comment-avatar mar-top-8 text-black">
-      <%= current_user.default_avatar %>
-    </div>
-    <p><%= current_user&.username %></p>
+      <div class="flex flex-row items-center">
+        <div class='menu-leaderboard-avatar default-avatar text-black m-0 mr-2'>
+          <%= current_user.default_avatar %>
+        </div>
+        <p><%= current_user&.username %></p>
+      </div>
     <% end %> <!-- if current_user -->
+    <p>AP: <%= current_user.assist_points %></p>
   </div>
   <% end %> <!-- link to user path -->
   <% else %>

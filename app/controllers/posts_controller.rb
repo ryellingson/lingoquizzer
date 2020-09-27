@@ -57,7 +57,7 @@ class PostsController < ConversationsController
     @language = Language.find(params[:post][:language_id])
     @post = Post.new(post_params)
     @post.user = current_user
-    new_ap_total = current_user.assist_points + 10
+    new_ap_total = current_user.assist_points + 5
     current_user.update(assist_points: new_ap_total)
     authorize @post
     if @post.save
