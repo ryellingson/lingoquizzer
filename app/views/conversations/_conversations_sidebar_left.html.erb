@@ -76,21 +76,21 @@
     <div class="conversations-online-users">
       <p class="mb-1"><%= @online_users.size %> people online</p>
       <% @online_users.each do |user| %>
-      <%= link_to user_path(user) do %>
-      <% if user.avatar.attached? %>
-      <div class="">
-        <%= cl_image_tag user.avatar.key, class: 'comment-avatar' %>
-      </div>
-      <p><%= user.username %></p>
-      <% else %>
-      <div class="flex flex-row">
-        <div class="default-comment-avatar text-black my-1">
-          <%= user.default_avatar %>
-        </div>
-        <p><%= user.username %></p>
-      </div>
-      <% end %> <!-- if user -->
-      <% end %> <!-- link to user path -->
+        <%= link_to user_path(user) do %>
+          <% if user.avatar.attached? %>
+          <div class="flex flex-row">
+            <%= cl_image_tag user.avatar.key, class: 'comment-avatar' %>
+            <p><%= user.username %></p>
+          </div>
+          <% else %>
+          <div class="flex flex-row">
+            <div class="default-comment-avatar text-black my-1">
+              <%= user.default_avatar %>
+            </div>
+            <p><%= user.username %></p>
+          </div>
+          <% end %> <!-- if user -->
+        <% end %> <!-- link to user path -->
       <% end %> <!-- users iteration -->
     </div>
   </div>
