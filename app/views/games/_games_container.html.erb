@@ -4,25 +4,24 @@
       <h2>Games</h2>
     </div>
       <% @games.each do |game| %>
-
-        <div class="game-card locked">
-        <%= link_to game_path(game) do %>
-          <div class="game-card-media">
-            <div class="game-card-icon">
-              <div class="level-icon type-<%= game.language.name %>">
-                <% problem = game.problems.order("RANDOM()").first %>
-                  <% if game.icon_based %>
-                    <%= image_tag "problem_icons/#{game.name.downcase.gsub(' ', '_')}/#{problem.question}" %>
-                  <% else %>
-                    <div class="text-icon">
-                      <%= problem.question %>
-                    </div>
-                  <% end %> <!-- icon selection -->
+        <div class="game-card">
+          <%= link_to game_path(game) do %>
+            <div class="game-card-media">
+              <div class="game-card-icon">
+                <div class="level-icon type-<%= game.language.name %>">
+                  <% problem = game.problems.order("RANDOM()").first %>
+                    <% if game.icon_based %>
+                      <%= image_tag "problem_icons/#{game.name.downcase.gsub(' ', '_')}/#{problem.question}" %>
+                    <% else %>
+                      <div class="text-icon">
+                        <%= problem.question %>
+                      </div>
+                    <% end %> <!-- icon selection -->
+                </div>
               </div>
+              <h1 class='game-card-action btn-primary'>Play!</h1>
             </div>
-            <h1 class='game-card-action btn-primary'>Play!</h1>
-          </div>
-        <% end %> <!-- link to game path -->
+          <% end %> <!-- link to game path -->
           <div class="description">
             <%= link_to game_path(game) do %>
               <h1><%= game.name %></h1>
@@ -33,8 +32,12 @@
             <p>- Category: <%= game.category.capitalize %></p>
             <p>- Author: <%= display_authors(game).html_safe %></p>
           </div>
+          <div class="locked-overlay">
+            <%= image_tag "utility_icons/lock.png" %>
+            <h3>You need X Assist Points to play this game.</h3>
+            <h3> Join the conversation!</h3>
+          </div>
         </div>
-      <!-- <div class="locked-overlay"></div> -->
       <% end %> <!-- games iteration -->
   </div>
 </div>
