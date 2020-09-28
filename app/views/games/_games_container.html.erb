@@ -32,11 +32,13 @@
             <p>- Category: <%= game.category.capitalize %></p>
             <p>- Author: <%= display_authors(game).html_safe %></p>
           </div>
-          <div class="locked-overlay">
-            <%= image_tag "utility_icons/lock.png" %>
-            <h3>You need X Assist Points to play this game.</h3>
-            <h3> Join the conversation!</h3>
-          </div>
+          <%= link_to forum_index_path(:en) do %>
+            <div class="locked-overlay">
+              <%= image_tag "utility_icons/lock.png" %>
+              <h3>You need X Convo Points to play this game.</h3>
+              <h3> Join the conversation!</h3>
+            </div>
+          <% end %>
         </div>
       <% end %> <!-- games iteration -->
   </div>

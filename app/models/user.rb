@@ -52,7 +52,7 @@ class User < ApplicationRecord
   end
 
   def hint_points
-    self.hint_points = self.assist_points / 10
+    self.hint_points = self.convo_points / 10
   end
 
   def self.top_users

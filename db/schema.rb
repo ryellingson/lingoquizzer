@@ -259,7 +259,7 @@ ActiveRecord::Schema.define(version: 2020_09_27_044655) do
     t.boolean "banned", default: false
     t.integer "sash_id"
     t.integer "level", default: 0
-    t.integer "assist_points", default: 0
+    t.integer "convo_points", default: 0
     t.integer "hint_points", default: 0
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
