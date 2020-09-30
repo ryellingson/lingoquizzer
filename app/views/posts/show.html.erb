@@ -6,9 +6,9 @@
           <p>Posted by: <%= @post.user.username %> at <%= @post.created_at.strftime("%l:%M %p") %></p>
         </div>
         <% if @post.user == current_user %>
-        <%= link_to edit_post_path do %>
-        <i class="fas fa-edit icon-shrink"></i>
-        <% end %> <!-- link to edit -->
+          <%= link_to edit_post_path do %>
+            <i class="fas fa-edit icon-shrink"></i>
+          <% end %> <!-- link to edit -->
         <% end %> <!-- if @user -->
       </div>
       <div class="post-title">
