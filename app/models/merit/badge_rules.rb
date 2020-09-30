@@ -58,23 +58,22 @@ module Merit
 
       # generals
 
-      # stats_rules = [
-      #   {
-      #     badge: 'made_first_rank',
-      #     model_name: 'User',
-      #     rule: ''
-      #   },
-      #   {
-      #     badge: 'made_second_rank',
-      #     model_name: 'User',
-      #     rule: ''
-      #   },
-      #   {
-      #     badge: 'made_third_rank',
-      #     model_name: 'User',
-      #     rule: ''
-      #   }
-      # ]
+      # stats
+
+      grant_on 'plays#create', badge: 'made_first_rank', to: :action_user do |play|
+        User.top_users.first == play.user
+      end
+
+      grant_on 'plays#create', badge: 'made_second_rank', to: :action_user do |play|
+        User.top_users.second == play.user
+      end
+
+      grant_on 'plays#create', badge: 'made_third_rank', to: :action_user do |play|
+        User.top_users.third == play.user
+      end
+
+      # stats
+
 
       conversations_rules = [
         {

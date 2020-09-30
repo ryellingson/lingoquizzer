@@ -4,8 +4,8 @@
       <h2>Games</h2>
     </div>
       <% @games.each do |game| %>
-          <div class="game-card">
-        <%= link_to game_path(game) do %>
+        <div class="game-card">
+          <%= link_to game_path(game) do %>
             <div class="game-card-media">
               <div class="game-card-icon">
                 <div class="level-icon type-<%= game.language.name %>">
@@ -21,18 +21,25 @@
               </div>
               <h1 class='game-card-action btn-primary'>Play!</h1>
             </div>
-        <% end %> <!-- link to game path -->
-            <div class="description">
-              <%= link_to game_path(game) do %>
-                <h1><%= game.name %></h1>
-              <% end %>
-              <h2><%= game.language.name %></h2>
-              <p>Test your <%= game.language.name.capitalize %> vocabulary!</p>
-              <p>- Difficulty: <%= game.difficulty.capitalize %></p>
-              <p>- Category: <%= game.category.capitalize %></p>
-              <p>- Author: <%= display_authors(game).html_safe %></p>
-            </div>
+          <% end %> <!-- link to game path -->
+          <div class="description">
+            <%= link_to game_path(game) do %>
+              <h1><%= game.name %></h1>
+            <% end %>
+            <h2><%= game.language.name %></h2>
+            <p>Test your <%= game.language.name.capitalize %> vocabulary!</p>
+            <p>- Difficulty: <%= game.difficulty.capitalize %></p>
+            <p>- Category: <%= game.category.capitalize %></p>
+            <p>- Author: <%= display_authors(game).html_safe %></p>
           </div>
+          <%= link_to forum_index_path(:en) do %>
+            <div class="locked-overlay">
+              <%= image_tag "utility_icons/lock.png" %>
+              <h3>You need X Convo Points to play this game.</h3>
+              <h3> Join the conversation!</h3>
+            </div>
+          <% end %>
+        </div>
       <% end %> <!-- games iteration -->
   </div>
 </div>

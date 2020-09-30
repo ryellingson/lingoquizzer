@@ -5,6 +5,7 @@ Merit.setup do |config|
 
   # Add application observers to get notifications when reputation changes.
   # config.add_observer 'MyObserverClassName'
+  config.add_observer 'ReputationChangeObserver'
 
   # Define :user_model_name. This model will be used to grant badge if no
   # `:to` option is given. Default is 'User'.
@@ -81,7 +82,7 @@ stats_filenames.map { |e| e.split('.') }.each do |fname|
     name: fname[0],
     description: fname[1].gsub("_", " ").titleize,
     custom_fields: {
-      image_path: "badges/conversations/#{fname.join('.')}"
+      image_path: "badges/stats/#{fname.join('.')}"
     }
   }
 end

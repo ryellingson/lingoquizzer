@@ -15,8 +15,6 @@ export default class extends Controller {
     const correctCountShow = document.querySelectorAll(".correct-count");
     const timeShow = document.querySelector(".timer");
     const scoreShow = document.querySelectorAll(".score");
-    const endGameModal = document.querySelector(".modal-bg");
-    const gameStats = document.querySelector(".game-stats-content");
     const url_string = window.location.href;
     const url = new URL(url_string);
     const autoplay = url.searchParams.get("autoplay");
@@ -47,27 +45,33 @@ export default class extends Controller {
     const konamiCode = () => {
       let pressed = [];
       const secretCode = 'perfecto';
-
-      window.addEventListener('keyup', (e) => {
-        // console.log('listening');
-        pressed.push(e.key);
-        pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
-        if (pressed.join('').includes(secretCode)) {
-          console.log('DING DING!');
-          correctCountValue = answerCount;
-          // console.log("correctCountValue", correctCountValue);
-          endGame();
-        }
-        // console.log(pressed);
-      });
+      console.log(!window.listenerAdded);
+      if (!window.listenerAdded) {
+        window.addEventListener('keyup', (e) => {
+          console.log('listening');
+          pressed.push(e.key);
+          pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+          if (pressed.join('').includes(secretCode)) {
+            console.log('DING DING!');
+            correctCountValue = answerCount;
+            timeLeft = 0;
+            // console.log("correctCountValue", correctCountValue);
+            endGame();
+            pressed = [];
+          }
+          // console.log(pressed);
+        });
+        window.listenerAdded = true;
+      }
     }
+
+    konamiCode();
 
     const startGame = () => {
       interval = setInterval(updateTimer, 1000);
       playButton.classList.add("hidden");
       gameInput.parentNode.classList.remove("hidden");
       gameInput.addEventListener('input', handleInputChange);
-      gameInput.addEventListener('input', konamiCode);
       gameInput.focus();
       currentAnswer.parentNode.classList.add("active-row");
     }
@@ -168,10 +172,14 @@ export default class extends Controller {
       scoreShow.forEach(element => element.innerHTML = `${score}pts`);
       displayEndGameModal();
       postResults();
+      console.log('passed endGame');
     }
 
     const displayEndGameModal = () => {
+      const endGameModal = document.querySelector(".modal-bg");
+      const gameStats = document.querySelector(".game-stats-content");
       endGameModal.classList.add("bg-active");
+
       const perfectPlayDisplay = correctCountValue === answerCount ?
         `<div class="perfect-play-display"><img src="${gameDataObject.perfectPlayUrl}" alt=""/></div>` : ""
       const correctAnswers =

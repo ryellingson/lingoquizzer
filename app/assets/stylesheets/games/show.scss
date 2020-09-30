@@ -89,11 +89,13 @@ table {
 }
 
 .game-controls {
-  width: 100%;
+  width: fit-content;
+  width: -mox-fit-content;
   display: flex;
   align-self: self-start;
   border: 1px solid #dddddd;
   background: rgb(248,248,255);
+  margin-top: 10px;
 }
 
 .hub {
@@ -186,6 +188,7 @@ table {
   border: 1px solid lightgrey;
   font-size: 25px;
   background-color: #f3f3f3;
+  font-family: monospace;
 }
 
 .correct-answer {

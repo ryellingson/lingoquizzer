@@ -19,6 +19,8 @@ class MessagesController < ConversationsController
       content: current_user.avatar.attached? ? current_user.avatar.service_url : current_user.default_avatar,
       default: !current_user.avatar.attached?
     }
+    new_cp_total = current_user.convo_points + 1
+    current_user.update(convo_points: new_cp_total)
     authorize @message
     if @message.save
       respond_to do |format|

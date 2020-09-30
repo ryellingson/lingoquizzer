@@ -57,6 +57,8 @@ class PostsController < ConversationsController
     @language = Language.find(params[:post][:language_id])
     @post = Post.new(post_params)
     @post.user = current_user
+    new_cp_total = current_user.convo_points + 5
+    current_user.update(convo_points: new_cp_total)
     authorize @post
     if @post.save
       redirect_to post_path(@post)

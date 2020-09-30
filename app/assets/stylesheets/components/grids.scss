@@ -46,6 +46,8 @@
 }
 
 .grid-card {
+  display: flex;
+  flex-direction: column;
   min-width: 300px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(0,0,0, 0.1);
@@ -53,7 +55,7 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   animation: cardEntrance 700ms ease-out;
   animation-fill-mode: backwards;
-  transition: 3s;
+  transition-duration: 3s;
 }
 
 .grid-card:nth-child(1) {

@@ -10,6 +10,7 @@
     "@rails/webpacker": "^5.2.1",
     "jquery": "^3.5.0",
     "stimulus": "^1.1.1",
+    "sweetalert2": "^10.3.5",
     "tailwindcss": "^1.4.6",
     "tailwindcss-stimulus-components": "^1.2.0",
     "trix": "^1.2.0",

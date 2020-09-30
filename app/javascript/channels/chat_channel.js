@@ -13,25 +13,39 @@ consumer.subscriptions.create("ChatChannel", {
   },
 
   received(data) {
-
-    const chatBox = document.getElementById("chatbox");
-
-    chatBox.insertAdjacentHTML('beforeend', data.content);
-
-    this.alignMessages();
-
-    chatBox.scrollTop = chatBox.scrollHeight;
-
     // Called when there's incoming data on the websocket for this channel
-  },
+    if (data.type === 'badge') {
+      console.log(data);
 
-  alignMessages() {
-    const messages = document.querySelectorAll('#chatbox .message');
-    const currentUserId = document.querySelector('body').dataset.userId;
-    messages.forEach(message => {
-      if (message.dataset.authorId === currentUserId) {
-        message.classList.add('current-user');
-      }
-    });
+      Swal.fire({
+        title: 'Sweet!',
+        text: 'Modal with a custom image.',
+        imageUrl: 'https://unsplash.it/400/200',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+    } else {
+
+      const chatBox = document.getElementById("chatbox");
+
+      chatBox.insertAdjacentHTML('beforeend', data.content);
+
+      this.alignMessages();
+
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+    // badge handling, may refactor to another connection in future
   }
+},
+
+alignMessages() {
+  const messages = document.querySelectorAll('#chatbox .message');
+  const currentUserId = document.querySelector('body').dataset.userId;
+  messages.forEach(message => {
+    if (message.dataset.authorId === currentUserId) {
+      message.classList.add('current-user');
+    }
+  });
+}
 });

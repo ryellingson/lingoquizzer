@@ -1,7 +1,7 @@
 <div class="profile-main">
   <div class="profile-main-a">
     <% if @user.avatar.attached? %>
-    <%= cl_image_tag @user.avatar.key, class: 'profile-avatar' %>
+      <%= cl_image_tag @user.avatar.key, class: 'profile-avatar' %>
     <% else %>
     <div class="default-profile-avatar">
       <%= @user.default_avatar %>
@@ -21,9 +21,9 @@
           <% end %> <!-- link to edit -->
       <% end %> <!-- if user -->
       <div class="profile-scores">
-        <p>Game Points(GP): 11,212</p>
-        <p>Assit Points(AP): 55</p>
-        <p>Hint Points(HP): 3</p>
+        <p>Game Points(GP): <%= @user.total_score %></p>
+        <p>Convo Points(CP): <%= @user.convo_points %></p>
+        <p>Hint Points(HP): <%= @user.hint_points %></p>
       </div>
     </div>
 </div>
