@@ -23,8 +23,13 @@ consumer.subscriptions.create("ChatChannel", {
         imageUrl: data.badge_image_url,
         imageWidth: 200,
         imageHeight: 200,
-        imageAlt: 'Custom image',
-      })
+        imageAlt: 'Custom image'
+        },
+        function(isConfirm) {
+          if (isConfirm) {
+            window.location.reload();
+          }
+        });
     } else {
 
       const chatBox = document.getElementById("chatbox");
