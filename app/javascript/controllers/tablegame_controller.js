@@ -54,6 +54,7 @@ export default class extends Controller {
           if (pressed.join('').includes(secretCode)) {
             console.log('DING DING!');
             correctCountValue = answerCount;
+            timeLeft = 0;
             // console.log("correctCountValue", correctCountValue);
             endGame();
             pressed = [];
