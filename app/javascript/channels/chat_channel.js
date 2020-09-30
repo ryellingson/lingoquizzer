@@ -19,9 +19,9 @@ consumer.subscriptions.create("ChatChannel", {
 
       Swal.fire({
         title: 'Sweet!',
-        text: 'Modal with a custom image.',
-        imageUrl: 'https://unsplash.it/400/200',
-        imageWidth: 400,
+        text: `You got the ${data.badge.description} badge!`,
+        imageUrl: data.badge_image_url,
+        imageWidth: 200,
         imageHeight: 200,
         imageAlt: 'Custom image',
       })

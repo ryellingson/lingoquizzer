@@ -4,13 +4,13 @@
 <body data-user-id='<%= current_user&.id || 'Guest' %>'>
   <%= render 'layouts/alerts' %>
   <div class="conversations-main-container">
-    <%= render "conversations_sidebar_left" %>
+    <%= render "conversations/conversations_sidebar_left" %>
     <div class="channel-container">
       <div class="channel-tab-content">
         <%= yield %> <!-- conversations-content-container -->
       </div>
     </div>
-    <%= render "conversations_sidebar_right" %>
+    <%= render "conversations/conversations_sidebar_right" %>
   </div>
 </body>
 </html>
