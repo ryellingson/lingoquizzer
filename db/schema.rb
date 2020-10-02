@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_27_044655) do
+ActiveRecord::Schema.define(version: 2020_10_01_183122) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -150,6 +150,7 @@ ActiveRecord::Schema.define(version: 2020_09_27_044655) do
     t.text "markdown_content"
     t.string "slug"
     t.jsonb "authors"
+    t.integer "unlock_cp"
     t.index ["language_id"], name: "index_games_on_language_id"
   end
 
