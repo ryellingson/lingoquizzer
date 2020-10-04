@@ -60,7 +60,7 @@ export default class extends Controller {
   }
 
   konamiListener = (e) => {
-    const secretCode = 'perfecto';
+    const secretCode = 'perfecto'; //change to up up down down left right?
     this.pressed.push(e.key);
     this.pressed.splice(-secretCode.length - 1, this.pressed.length - secretCode.length);
     if (this.pressed.join('').includes(secretCode)) {
