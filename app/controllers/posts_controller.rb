@@ -61,7 +61,8 @@ class PostsController < ConversationsController
     current_user.update(convo_points: new_cp_total)
     authorize @post
     if @post.save
-      redirect_to post_path(@post)
+      ActionCable.server.broadcast('posts', post: render_to_string(partial: 'posts/post', locals: { post: @post }))
+      redirect_to post_path @post
     else
       set_slideshow_keywords
       render :new, layout: "conversations"

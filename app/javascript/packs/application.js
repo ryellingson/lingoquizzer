@@ -20,10 +20,13 @@ import { initSignUpModal } from "../components/modal";
 
 import { initDropDowns } from "../components/dropdown";
 
+import { initPostCable } from "../channels/post_channel"
+
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();
   initInteractiveForm();
   initDropDowns();
+  initPostCable();
 });
 
 

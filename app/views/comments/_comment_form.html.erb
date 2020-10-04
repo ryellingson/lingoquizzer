@@ -1,6 +1,6 @@
 <div class="comment-form-hub">
   <%= render 'devise/shared/error_messages', resource: comment %>
-  <%= form_for [post, comment] do |f| %>
+  <%= form_for [post, comment], remote: true do |f| %>
     <%= f.text_field(:comment_id, value: parent_comment&.id, hidden: true) if defined?(parent_comment) %>
     <div class="post-create-comment">
       <%= f.text_area :content, placeholder: "Share your thoughts...", class: "comment-form" %>
