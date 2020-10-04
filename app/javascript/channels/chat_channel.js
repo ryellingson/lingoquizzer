@@ -24,11 +24,6 @@ consumer.subscriptions.create("ChatChannel", {
         imageWidth: 200,
         imageHeight: 200,
         imageAlt: 'Custom image'
-        },
-        function(isConfirm) {
-          if (isConfirm) {
-            window.location.reload();
-          }
         });
     } else {
 

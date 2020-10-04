@@ -10,7 +10,7 @@ export default class extends Controller {
     // } else {
     //   this.locked();
     // }
-    this.unlocked();
+    this.locked();
   }
 
   initialize() {

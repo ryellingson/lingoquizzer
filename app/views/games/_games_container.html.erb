@@ -1,10 +1,10 @@
-<div class="games-container" data-controller="game-lock" data-user="<%= current_user %>" >
+<div class="games-container">
   <div class="games-wrapper">
     <div class="level-header">
       <h2>Games</h2>
     </div>
       <% @games.each do |game| %>
-        <div class="game-card">
+        <div class="game-card <%= 'locked' if current_user.convo_points < game.unlock_cp %>">
           <%= link_to game_path(game) do %>
             <div class="game-card-media">
               <div class="game-card-icon">

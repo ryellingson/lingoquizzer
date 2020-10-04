@@ -50,7 +50,7 @@ module Merit
 
       # generals
 
-      grant_on 'users/registrations#create', model_name: 'User', badge: 'signed_up', to: :action_user
+      grant_on 'pages#home', model_name: 'User', badge: 'signed_up', to: :action_user
 
       grant_on 'contact#send_message', badge: 'first_contact', to: :action_user
 
