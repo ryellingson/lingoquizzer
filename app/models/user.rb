@@ -15,6 +15,7 @@ class User < ApplicationRecord
 
   validates :email, uniqueness: true
   validates :username, uniqueness: true, length: { in: 3..16 }
+  validates :username, format: { without: /\s/, message: "must contain no spaces" }
 
   # Only allow letter, number, underscore and punctuation.
   validates_format_of :username, with: /[一-龠]+|[ぁ-ゔ]+|[ァ-ヴー]+|[a-zA-Z0-9]+|[ａ-ｚＡ-Ｚ０-９]+|[々〆〤]+/u, :multiline => true

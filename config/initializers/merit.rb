@@ -32,7 +32,7 @@ Language.all.pluck(:language_code).each do |language_code|
     badges << {
       id: (badge_id = badge_id+1),
       name: fname[1],
-      description: fname[1],
+      description: fname[1].gsub("_", " ").titleize,
       custom_fields: {
         image_path: "badges/games/perfect_plays/#{language_code}/#{fname.join('.')}",
         game_slug: fname[0],

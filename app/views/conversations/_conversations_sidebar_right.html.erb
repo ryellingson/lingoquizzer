@@ -11,7 +11,7 @@
       data-slide-urls="<%= @slide_urls.to_json %>"
       data-fade-duration=2000
       data-slide-duration=15000>
-      <%= image_tag @slide_urls.first, data: {target: "slideshow.bottomImage"} %>
+      <%= image_tag @slide_urls.first, data: {target: "slideshow.bottomImage"} if @slide_urls %>
       <!-- not using image_tag helper because it leaves a broken image icon for first image -->
       <img class="opacity-0 fade-out" data-target="slideshow.topImage">
     </div>
