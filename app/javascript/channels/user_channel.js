@@ -3,7 +3,7 @@ import consumer from "./consumer"
 consumer.subscriptions.create("UserChannel", {
   connected() {
     // Called when the subscription is ready for use on the server
-    console.log('connected to users action');
+    console.log('connected to users channel');
   },
 
   disconnected() {
