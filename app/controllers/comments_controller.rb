@@ -14,7 +14,10 @@ class CommentsController < ApplicationController
     current_user.update(convo_points: new_cp_total)
     authorize @comment
     if @comment.save
-      redirect_to post_path @post
+      respond_to do |format|
+        format.js { PostChannel.broadcast_to(@post, comments: render_to_string(partial: 'comments/comments', locals: { post: @post })) }
+        format.html { redirect_to post_path @post }
+      end
     else
       render "posts/show", layout: "conversations"
     end

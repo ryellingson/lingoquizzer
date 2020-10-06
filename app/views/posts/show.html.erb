@@ -1,5 +1,5 @@
 <div class="conversations-content-items forum-bg">
-  <div class="post-main-container post-show-border">
+  <div class="post-main-container post-show-border" data-post-id="<%= @post.id %>">
     <div class="post-group">
       <div class="post-header">
         <div class="post-creation-time">
@@ -30,14 +30,7 @@
   <div class="comments-container">
     <%= render 'comments/comment_form', post: @post, comment: @comment %>
     <div class="comments-display">
-      <% @post.comments.each do |parent_comment| %>
-        <%= render 'comments/comment', post: @post, comment: parent_comment, parent_comment: parent_comment %>
-        <div class="comment-replies">
-          <% parent_comment.replies.each do |reply| %>
-            <%= render 'comments/comment', post: @post, comment: reply, parent_comment: parent_comment %>
-          <% end %>
-        </div>
-      <% end %>
+      <%= render "comments/comments", post: @post %>
     </div>
   </div>
 </div>

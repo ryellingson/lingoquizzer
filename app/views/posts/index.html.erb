@@ -1,5 +1,5 @@
 <div class="conversations-content-container" data-controller="forum">
-  <div class="conversations-content-items forum-bg" data-target="forum.posts" data-action="scroll->forum#infiniteScroll">
+  <div class="conversations-content-items forum-bg" data-target="forum.posts" data-action="scroll->forum#infiniteScroll" id="posts">
     <%= render 'posts/page_content', posts: @posts %>
   </div>
 

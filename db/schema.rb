@@ -150,7 +150,7 @@ ActiveRecord::Schema.define(version: 2020_10_01_183122) do
     t.text "markdown_content"
     t.string "slug"
     t.jsonb "authors"
-    t.integer "unlock_cp"
+    t.integer "unlock_cp", default: 0
     t.index ["language_id"], name: "index_games_on_language_id"
   end
 
