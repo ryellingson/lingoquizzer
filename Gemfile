@@ -5,6 +5,10 @@ ruby '2.6.6'
 
 # Begin Custom Gems
 
+gem 'sidekiq'
+
+gem 'sidekiq-failures', '~> 1.0'
+
 gem 'merit'
 
 gem "google-cloud"

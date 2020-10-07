@@ -80,19 +80,19 @@ module Merit
           badge: 'first_post',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 1',
-          grant_on: 'posts#create'
+          grant_on: 'posts#show'
         },
         {
           badge: 'tenth_post',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 10',
-          grant_on: 'posts#create'
+          grant_on: 'posts#show'
         },
         {
           badge: 'hundredth_post',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 100',
-          grant_on: 'posts#create'
+          grant_on: 'posts#show'
         },
         {
           badge: 'first_comment',

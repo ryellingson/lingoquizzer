@@ -5,13 +5,16 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   post 'messages', to: 'messages#create'
 
+
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
 
+  require "sidekiq/web"
   authenticate :user, ->(user) { user.admin? } do
     mount Blazer::Engine, at: "blazer"
+    mount Sidekiq::Web => '/sidekiq'
   end
 
   resources :languages, only: :index, path: "/", param: :lang do
