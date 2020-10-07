@@ -50,7 +50,11 @@ module Merit
 
       # generals
 
-      grant_on 'users#show', model_name: 'User', badge: 'signed_up', to: :action_user
+      grant_on 'pages#notify_badges', model_name: 'User', badge: 'signed_up', to: :action_user
+
+      grant_on 'pages#notify_badges', model_name: 'User', badge: 'first_post', to: :action_user do |user|
+        user.posts.count == 1
+      end
 
       grant_on 'contact#send_message', badge: 'first_contact', to: :action_user
 
@@ -76,64 +80,64 @@ module Merit
 
 
       conversations_rules = [
-        {
-          badge: 'first_post',
-          model_name: 'Post',
-          rule: 'resource.user.posts.count == 1',
-          grant_on: 'show'
-        },
+        # {
+        #   badge: 'first_post',
+        #   model_name: 'User',
+        #   rule: 'resource.posts.count == 1',
+        #   grant_on: 'pages#notify_badges'
+        # },
         {
           badge: 'tenth_post',
-          model_name: 'Post',
-          rule: 'resource.user.posts.count == 10',
-          grant_on: 'show'
+          model_name: 'User',
+          rule: 'resource.posts.count == 10',
+          grant_on: 'pages#notify_badges'
         },
         {
           badge: 'hundredth_post',
-          model_name: 'Post',
-          rule: 'resource.user.posts.count == 100',
-          grant_on: 'show'
+          model_name: 'User',
+          rule: 'resource.posts.count == 100',
+          grant_on: 'pages#notify_badges'
         },
         {
           badge: 'first_comment',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 1',
-          grant_on: 'create'
+          grant_on: 'comments#create'
         },
         {
           badge: 'tenth_comment',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 10',
-          grant_on: 'create'
+          grant_on: 'comments#create'
         },
         {
           badge: 'hundredth_comment',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 100',
-          grant_on: 'create'
+          grant_on: 'comments#create'
         },
         {
           badge: 'first_message',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 1',
-          grant_on: 'create'
+          grant_on: 'messages#create'
         },
         {
           badge: 'tenth_message',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 10',
-          grant_on: 'create'
+          grant_on: 'messages#create'
         },
         {
           badge: 'hundredth_message',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 100',
-          grant_on: 'create'
+          grant_on: 'messages#create'
         }
       ]
 
       conversations_rules.each do |rule_hash|
-        grant_on "#{rule_hash[:model_name].downcase.pluralize}##{rule_hash[:grant_on]}", badge: rule_hash[:badge], model_name: rule_hash[:model_name], to: :user do |resource|
+        grant_on rule_hash[:grant_on], badge: rule_hash[:badge], model_name: rule_hash[:model_name] do |resource|
           eval(rule_hash[:rule])
         end
       end

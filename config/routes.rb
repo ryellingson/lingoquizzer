@@ -24,6 +24,8 @@ Rails.application.routes.draw do
 
   get '/leaderboards', controller: 'pages', action: 'leaderboards'
 
+  get '/notify_badges', controller: 'pages', action: 'notify_badges'
+
   post '/contact/send', controller: 'contact', action: 'send_message'
 
   resources :posts, only: [ :create, :show, :edit, :update ] do
