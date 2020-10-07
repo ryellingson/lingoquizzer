@@ -52,10 +52,6 @@ module Merit
 
       grant_on 'pages#notify_badges', model_name: 'User', badge: 'signed_up', to: :action_user
 
-      grant_on 'pages#notify_badges', model_name: 'User', badge: 'first_post', to: :action_user do |user|
-        user.posts.count == 1
-      end
-
       grant_on 'contact#send_message', badge: 'first_contact', to: :action_user
 
       # check application controller for additional rules
@@ -80,23 +76,23 @@ module Merit
 
 
       conversations_rules = [
-        # {
-        #   badge: 'first_post',
-        #   model_name: 'User',
-        #   rule: 'resource.posts.count == 1',
-        #   grant_on: 'pages#notify_badges'
-        # },
+        {
+          badge: 'first_post',
+          model_name: 'Post',
+          rule: 'resource.user.posts.count == 1',
+          grant_on: 'posts#create'
+        },
         {
           badge: 'tenth_post',
-          model_name: 'User',
-          rule: 'resource.posts.count == 10',
-          grant_on: 'pages#notify_badges'
+          model_name: 'Post',
+          rule: 'resource.user.posts.count == 10',
+          grant_on: 'posts#create'
         },
         {
           badge: 'hundredth_post',
-          model_name: 'User',
-          rule: 'resource.posts.count == 100',
-          grant_on: 'pages#notify_badges'
+          model_name: 'Post',
+          rule: 'resource.user.posts.count == 100',
+          grant_on: 'posts#create'
         },
         {
           badge: 'first_comment',
