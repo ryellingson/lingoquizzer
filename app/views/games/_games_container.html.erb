@@ -4,7 +4,7 @@
       <h2>Games</h2>
     </div>
       <% @games.each do |game| %>
-        <div class="game-card <%= 'locked' if current_user.convo_points < game.unlock_cp %>">
+        <div class="game-card <%= 'unlocked' if user_signed_in? && current_user.convo_points >= game.unlock_cp || game.unlock_cp == 0 %>">
           <%= link_to game_path(game) do %>
             <div class="game-card-media">
               <div class="game-card-icon">
@@ -35,7 +35,7 @@
           <%= link_to forum_index_path(:en) do %>
             <div class="locked-overlay">
               <%= image_tag "utility_icons/lock.png" %>
-              <h3>You need X Convo Points to play this game.</h3>
+              <h3>You need <%= game.unlock_cp %> Convo Points to play this game.</h3>
               <h3> Join the conversation!</h3>
             </div>
           <% end %>

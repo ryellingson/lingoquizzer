@@ -2,6 +2,8 @@
 
 class Users::SessionsController < Devise::SessionsController
   respond_to :html, :js
+  after_action :add_user_cookie, only: :create
+  after_action :remove_user_cookie, only: :destroy
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
@@ -30,6 +32,16 @@ class Users::SessionsController < Devise::SessionsController
       super
     end
   end
+
+  def add_user_cookie
+    cookies.signed[:user_id] = current_user.id
+  end
+
+  def remove_user_cookie
+    cookies.delete(:user_id)
+  end
+
+
 
   # If you have extra params to permit, append them to the sanitizer.
   # def configure_sign_in_params
