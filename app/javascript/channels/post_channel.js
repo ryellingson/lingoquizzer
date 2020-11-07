@@ -10,7 +10,7 @@ const initPostCable = () => {
       connected() {
         // Called when the subscription is ready for use on the server
         console.log('connected to posts', 'id:' + id);
-        fetch('/notify_badges');
+        // fetch('/notify_badges');
       },
 
       disconnected() {
