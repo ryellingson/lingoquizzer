@@ -204,7 +204,7 @@ export default class extends Controller {
   }
 
   restartGame = () => {
-    if (autoplay == "true") {
+    if (this.autoplay == "true") {
       window.location.reload();
     } else {
       window.location.replace(window.location.href + "?autoplay=true");
