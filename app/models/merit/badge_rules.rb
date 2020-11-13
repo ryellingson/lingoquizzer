@@ -60,15 +60,15 @@ module Merit
 
       # stats
 
-      grant_on 'plays#create', badge: 'made_first_rank', to: :action_user do |play|
+      grant_on 'plays#create', badge: 'made_first_rank', to: :user do |play|
         User.top_users.first == play.user
       end
 
-      grant_on 'plays#create', badge: 'made_second_rank', to: :action_user do |play|
+      grant_on 'plays#create', badge: 'made_second_rank', to: :user do |play|
         User.top_users.second == play.user
       end
 
-      grant_on 'plays#create', badge: 'made_third_rank', to: :action_user do |play|
+      grant_on 'plays#create', badge: 'made_third_rank', to: :user do |play|
         User.top_users.third == play.user
       end
 
@@ -133,7 +133,7 @@ module Merit
       ]
 
       conversations_rules.each do |rule_hash|
-        grant_on rule_hash[:grant_on], badge: rule_hash[:badge], model_name: rule_hash[:model_name] do |resource|
+        grant_on rule_hash[:grant_on], badge: rule_hash[:badge], to: :user, model_name: rule_hash[:model_name] do |resource|
           eval(rule_hash[:rule])
         end
       end
