@@ -219,7 +219,7 @@ export default class extends Controller {
       this.backButton.addEventListener('click', () => this.updateCurrentAnswer("back"));
     }
 
-    document.onkeydown = function(event) {
+    document.addEventListener('keydown', (event) => {
       switch (event.keyCode) {
         // case 37: // left
         // updateCurrentAnswer("back");
@@ -234,7 +234,7 @@ export default class extends Controller {
         this.updateCurrentAnswer("next");
         break;
       }
-    }
+    });
 
     if (this.autoplay == "true") {
       this.startGame();

@@ -12,17 +12,17 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  def create
-    @user = User.new(sign_up_params)
-    if @user.save
-      sign_up(resource_name, @user)
-      render :create
-    else
-      clean_up_passwords @user
-      set_minimum_password_length
-      render :new
-    end
-  end
+  # def create
+  #   @user = User.new(sign_up_params)
+  #   if @user.save
+  #     sign_up(resource_name, @user)
+  #     render :create
+  #   else
+  #     clean_up_passwords @user
+  #     set_minimum_password_length
+  #     render :new
+  #   end
+  # end
 
   # GET /resource/edit
   # def edit
