@@ -20,7 +20,7 @@
       <h1><%= @game.name %></h1>
     </div>
     <% if user_signed_in? %>
-    <%= link_to user_path(current_user) do %>
+    <%= link_to profile_path do %>
     <div class="game-header-button stroke">
       <h2 class="p-absolute">
         <div class="profile-link">

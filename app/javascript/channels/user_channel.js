@@ -4,7 +4,7 @@ consumer.subscriptions.create("UserChannel", {
   connected() {
     // Called when the subscription is ready for use on the server
     console.log('connected to users channel');
-    fetch('/notify_badges');
+    // fetch('/notify_badges');
   },
 
   disconnected() {
