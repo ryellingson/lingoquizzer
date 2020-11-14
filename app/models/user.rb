@@ -69,4 +69,8 @@ class User < ApplicationRecord
       where(conditions.to_h).first
     end
   end
+
+  def badges_to_display
+    badges.any? ? badges : [Merit::Badge.all.find { |badge| badge.name == 'signed_up' }]
+  end
 end

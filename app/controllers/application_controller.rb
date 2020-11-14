@@ -27,6 +27,11 @@ class ApplicationController < ActionController::Base
   def grant_badge(badge_name)
     badge = Merit::Badge.all.find { |badge| badge.name == badge_name }
     current_user.add_badge(badge.id) unless current_user.badges.include?(badge)
+    # Merit::Judge.notify_observers(
+    #       description: I18n.t("merit.granted_badge", badge_name: badge.name),
+    #       merit_object: current_user.sash,
+    #       sash_id: current_user.sash_id
+    #     )
   end
 
   def banned?

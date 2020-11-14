@@ -39,6 +39,8 @@ Rails.application.routes.draw do
 
   resources :users, only: :show
 
+  get '/profile', to: 'users#profile', as: :profile
+
   resources :games, only: [ :show, :index ] do
     resources :plays, only: :create
   end
