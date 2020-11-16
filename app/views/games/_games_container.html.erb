@@ -4,7 +4,7 @@
       <h2>Games</h2>
     </div>
       <% @games.each do |game| %>
-        <div class="game-card <%= 'unlocked' if user_signed_in? && current_user.convo_points >= game.unlock_cp || game.unlock_cp == 0 %>">
+        <div class="game-card unlocked <%#= 'unlocked' if user_signed_in? && current_user.convo_points >= game.unlock_cp || game.unlock_cp == 0 %>">
           <%= link_to game_path(game) do %>
             <div class="game-card-media">
               <div class="game-card-icon">
