@@ -70,7 +70,6 @@ export default class extends Controller {
       this.endGame();
       this.pressed = [];
     }
-    console.log(this.pressed);
   };
 
   startGame = () => {
