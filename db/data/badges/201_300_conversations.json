@@ -1,0 +1,74 @@
+[
+  {
+    "id":201,
+    "name":"Knowledge is Power",
+    "description":"Tenth Post",
+    "custom_fields": {
+      "image_path": "badges/conversations/tenth_post.knowledge_is_power.svg"
+    }
+  },
+  {
+    "id":202,
+    "name":"chatterbox",
+    "description":"tenth_message",
+    "custom_fields": {
+      "image_path":"badges/conversations/tenth_message.chatterbox.svg"
+    }
+  },
+  {
+    "id":203,
+    "name":"giver",
+    "description":"tenth_comment",
+    "custom_fields": {
+      "image_path":"badges/conversations/tenth_comment.giver.svg"
+    }
+  },
+  {
+    "id":204,
+    "name":"scribe",
+    "description":"hundredth_post",
+    "custom_fields": {
+      "image_path":"badges/conversations/hundredth_post.scribe.svg"
+    }
+  },
+  {
+    "id":205,
+    "name":"extrovert",
+    "description":"hundredth_message",
+    "custom_fields": {
+      "image_path":"badges/conversations/hundredth_message.extrovert.svg"
+    }
+  },
+  {
+    "id":206,
+    "name":"socrates",
+    "description":"hundredth_comment",
+    "custom_fields": {
+      "image_path":"badges/conversations/hundredth_comment.socrates.svg"
+    }
+  },
+  {
+    "id":207,
+    "name":"knowledge_seeker",
+    "description":"first_post",
+    "custom_fields": {
+      "image_path":"badges/conversations/first_post.knowledge_seeker.svg"
+    }
+  },
+  {
+    "id":208,
+    "name":"babbler",
+    "description":"first_message",
+    "custom_fields": {
+      "image_path":"badges/conversations/first_message.babbler.svg"
+    }
+  },
+  {
+    "id":209,
+    "name":"helping_hand",
+    "description":"first_comment",
+    "custom_fields": {
+      "image_path":"badges/conversations/first_comment.helping_hand.svg"
+    }
+  }
+]
