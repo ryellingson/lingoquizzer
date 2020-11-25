@@ -77,55 +77,55 @@ module Merit
 
       conversations_rules = [
         {
-          badge: 'first_post',
+          badge: 'knowledge seeker',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 1',
           grant_on: 'posts#create'
         },
         {
-          badge: 'tenth_post',
+          badge: 'knowledge is power',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 10',
           grant_on: 'posts#create'
         },
         {
-          badge: 'hundredth_post',
+          badge: 'scribe',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 100',
           grant_on: 'posts#create'
         },
         {
-          badge: 'first_comment',
+          badge: 'helping hand',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 1',
           grant_on: 'comments#create'
         },
         {
-          badge: 'tenth_comment',
+          badge: 'giver',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 10',
           grant_on: 'comments#create'
         },
         {
-          badge: 'hundredth_comment',
+          badge: 'socrates',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 100',
           grant_on: 'comments#create'
         },
         {
-          badge: 'first_message',
+          badge: 'babbler',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 1',
           grant_on: 'messages#create'
         },
         {
-          badge: 'tenth_message',
+          badge: 'chatterbox',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 10',
           grant_on: 'messages#create'
         },
         {
-          badge: 'hundredth_message',
+          badge: 'extrovert',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 100',
           grant_on: 'messages#create'
