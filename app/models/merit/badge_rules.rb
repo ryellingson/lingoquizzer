@@ -52,7 +52,7 @@ module Merit
 
       grant_on 'users#profile', model_name: 'User', badge: 'welcome', to: :action_user
 
-      grant_on 'contact#send_message', badge: 'first_contact', to: :action_user
+      grant_on 'contact#send_message', badge: 'postman', to: :action_user
 
       # check application controller for additional rules
 
@@ -60,15 +60,15 @@ module Merit
 
       # stats
 
-      grant_on 'plays#create', badge: 'made_first_rank', to: :user do |play|
+      grant_on 'plays#create', badge: 'gold', to: :user do |play|
         User.top_users.first == play.user
       end
 
-      grant_on 'plays#create', badge: 'made_second_rank', to: :user do |play|
+      grant_on 'plays#create', badge: 'silver', to: :user do |play|
         User.top_users.second == play.user
       end
 
-      grant_on 'plays#create', badge: 'made_third_rank', to: :user do |play|
+      grant_on 'plays#create', badge: 'bronze', to: :user do |play|
         User.top_users.third == play.user
       end
 
@@ -148,6 +148,7 @@ module Merit
           end
         end
       end
+
     end
   end
 end

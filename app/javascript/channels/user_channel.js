@@ -17,7 +17,7 @@ consumer.subscriptions.create("UserChannel", {
     if (data.type === 'badge') {
       Swal.fire({
         title: 'Sweet!',
-        text: `You got the ${data.badge.name} badge for ${data.badge.description}!`,
+        text: `You got the ${data.badge.name.toUpperCase().replace(/_/g, " ")} badge for ${data.badge.description}!`,
         imageUrl: data.badge_image_url,
         imageWidth: 200,
         imageHeight: 200,

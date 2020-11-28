@@ -2,31 +2,31 @@
   {
     "id":101,
     "name":"welcome",
-    "description":"Signed Up",
+    "description":"signing up",
     "custom_fields": {
       "image_path": "badges/general/signed_up.welcome.svg"
     }
   },
   {
     "id":102,
-    "name":"Community Member",
-    "description":"Been a Member for a Month",
+    "name":"community member",
+    "description":"being a member for a month",
     "custom_fields": {
       "image_path": "badges/general/been_a_member_for_a_month.community_member.svg"
     }
   },
   {
     "id":103,
-    "name":"Community Leader",
-    "description":"Been a Member for a Year",
+    "name":"community leader",
+    "description":"being a member for a year",
     "custom_fields": {
       "image_path": "badges/general/been_a_member_for_a_year.community_leader.svg"
     }
   },
   {
     "id":104,
-    "name":"Postman",
-    "description":"First Contact",
+    "name":"postman",
+    "description":"sending us a message",
     "custom_fields": {
       "image_path": "badges/general/first_contact.postman.svg"
     }
