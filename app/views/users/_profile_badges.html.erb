@@ -1,6 +1,6 @@
 <div class="plays-cards">
- <!--  <%= @user.badges %> -->
+  <!-- had to change image_path from a symbol to a string -->
   <% @user.badges_to_display.each do |badge| %>
-    <%= image_tag badge.custom_fields[:image_path], class: "plays-card", data: {id: badge.id} %>
+    <%= image_tag badge.custom_fields["image_path"], class: "plays-card", data: {id: badge.id} %>
   <% end %>
 </div>

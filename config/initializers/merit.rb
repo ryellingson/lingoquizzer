@@ -18,75 +18,75 @@ Merit.setup do |config|
 end
 
 # Create application badges (uses https://github.com/norman/ambry)
+badge_jsons = ["001_100_stats.json", "101_200_general.json", "201_300_conversations.json", "301_400_perfect_plays.json"]
 
-badge_id = 0
-
-badges = []
-
-Language.all.pluck(:language_code).each do |language_code|
-  games_path = Rails.root.join("app/assets/images/badges/games/perfect_plays/#{language_code}")
-
-  pp_filenames = Dir.children(games_path)
-  pp_filenames.delete('.DS_Store')
-  pp_filenames.map { |e| e.split('.') }.each do |fname|
-    badges << {
-      id: (badge_id = badge_id+1),
-      name: fname[1],
-      description: fname[1].gsub("_", " ").titleize,
-      custom_fields: {
-        image_path: "badges/games/perfect_plays/#{language_code}/#{fname.join('.')}",
-        game_slug: fname[0],
-        language_code: language_code
-      }
-    }
+badge_jsons.each do |json|
+  JSON.parse(File.read(Rails.root + "db/data/badges/#{json}")).each do |attrs|
+    Merit::Badge.create! attrs
   end
 end
 
-conversations_path = Rails.root.join("app/assets/images/badges/conversations/")
+# Language.all.pluck(:language_code).each do |language_code|
+#   games_path = Rails.root.join("app/assets/images/badges/games/perfect_plays/#{language_code}")
 
-conversations_filenames = Dir.children(conversations_path)
-conversations_filenames.delete('.DS_Store')
-conversations_filenames.map { |e| e.split('.') }.each do |fname|
-  badges << {
-    id: (badge_id = badge_id+1),
-    name: fname[0],
-    description: fname[1].gsub("_", " ").titleize,
-    custom_fields: {
-      image_path: "badges/conversations/#{fname.join('.')}"
-    }
-  }
-end
+#   pp_filenames = Dir.children(games_path)
+#   pp_filenames.delete('.DS_Store')
+#   pp_filenames.map { |e| e.split('.') }.each do |fname|
+#     badges << {
+#       id: (badge_id = badge_id+1),
+#       name: fname[1],
+#       description: fname[1].gsub("_", " ").titleize,
+#       custom_fields: {
+#         image_path: "badges/games/perfect_plays/#{language_code}/#{fname.join('.')}",
+#         game_slug: fname[0],
+#         language_code: language_code
+#       }
+#     }
+#   end
+# end
 
-general_path = Rails.root.join("app/assets/images/badges/general/")
 
-general_filenames = Dir.children(general_path)
-general_filenames.delete('.DS_Store')
-general_filenames.map { |e| e.split('.') }.each do |fname|
-  badges << {
-    id: (badge_id = badge_id+1),
-    name: fname[0],
-    description: fname[1].gsub("_", " ").titleize,
-    custom_fields: {
-      image_path: "badges/general/#{fname.join('.')}"
-    }
-  }
-end
+# conversations_path = Rails.root.join("app/assets/images/badges/conversations/")
 
-stats_path = Rails.root.join("app/assets/images/badges/stats/")
+# conversations_filenames = Dir.children(conversations_path)
+# conversations_filenames.delete('.DS_Store')
+# conversations_filenames.map { |e| e.split('.') }.each do |fname|
+#   badges << {
+#     id: (badge_id = badge_id+1),
+#     name: fname[0],
+#     description: fname[1].gsub("_", " ").titleize,
+#     custom_fields: {
+#       image_path: "badges/conversations/#{fname.join('.')}"
+#     }
+#   }
+# end
 
-stats_filenames = Dir.children(stats_path)
-stats_filenames.delete('.DS_Store')
-stats_filenames.map { |e| e.split('.') }.each do |fname|
-  badges << {
-    id: (badge_id = badge_id+1),
-    name: fname[0],
-    description: fname[1].gsub("_", " ").titleize,
-    custom_fields: {
-      image_path: "badges/stats/#{fname.join('.')}"
-    }
-  }
-end
+# general_path = Rails.root.join("app/assets/images/badges/general/")
 
-badges.each do |attrs|
-  Merit::Badge.create! attrs
-end
+# general_filenames = Dir.children(general_path)
+# general_filenames.delete('.DS_Store')
+# general_filenames.map { |e| e.split('.') }.each do |fname|
+#   badges << {
+#     id: (badge_id = badge_id+1),
+#     name: fname[0],
+#     description: fname[1].gsub("_", " ").titleize,
+#     custom_fields: {
+#       image_path: "badges/general/#{fname.join('.')}"
+#     }
+#   }
+# end
+
+# stats_path = Rails.root.join("app/assets/images/badges/stats/")
+
+# stats_filenames = Dir.children(stats_path)
+# stats_filenames.delete('.DS_Store')
+# stats_filenames.map { |e| e.split('.') }.each do |fname|
+#   badges << {
+#     id: (badge_id = badge_id+1),
+#     name: fname[0],
+#     description: fname[1].gsub("_", " ").titleize,
+#     custom_fields: {
+#       image_path: "badges/stats/#{fname.join('.')}"
+#     }
+#   }
+# end

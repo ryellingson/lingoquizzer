@@ -1,0 +1,462 @@
+[
+  {
+    "id":301,
+    "name":"irwin",
+    "description":"an english animals perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/animals.irwin.svg",
+      "game_slug":"animals",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":302,
+    "name":"picket_fence",
+    "description":"an english around the house perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/around_the_house.picket_fence.svg",
+      "game_slug":"around_the_house",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":303,
+    "name":"sun_never_sets",
+    "description":"an english countries perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/countries.sun_never_sets.svg",
+      "game_slug":"countries",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":304,
+    "name":"empath",
+    "description":"an english emotions and feelings perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/emotions_and_feelings.empath.svg",
+      "game_slug":"emotions_and_feelings",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":305,
+    "name":"freedom_fries",
+    "description":"an english food perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/food.freedom_fries.svg",
+      "game_slug":"food",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":306,
+    "name":"yosemite",
+    "description":"an english nature and weather perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/nature_and_weather.yosemite.svg",
+      "game_slug":"nature_and_weather",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":307,
+    "name":"public_servant",
+    "description":"an english animals perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/people_and_places.public_servant.svg",
+      "game_slug":"people_and_jobs",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":308,
+    "name":"superbowl",
+    "description":"an english sports and activities perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/sports_and_activities.superbowl.svg",
+      "game_slug":"sports_and_activities",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":309,
+    "name":"stark",
+    "description":"an english tech and tools perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/tech_and_tools.stark.svg",
+      "game_slug":"tech_and_tools",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":310,
+    "name":"mr_worldwide",
+    "description":"an english travel and places perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/en/travel_and_places.mr_worldwide.svg",
+      "game_slug":"travel_and_places",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":311,
+    "name":"alpaca",
+    "description":"a spanish animals perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/animals.alpaca.svg",
+      "game_slug":"animals",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":312,
+    "name":"mi_casa_tu_casa",
+    "description":"a spanish around the house perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/around-the_house.mi_casa_tu_casa.svg",
+      "game_slug":"around_the_house",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":313,
+    "name":"cortes",
+    "description":"a spanish countries perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/countries.cortes.svg",
+      "game_slug":"countries",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":314,
+    "name":"despacito",
+    "description":"a spanish emotions and feelings perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/emotions_and_feelings.despacito.svg",
+      "game_slug":"emotions_and_feelings",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":315,
+    "name":"parrilla",
+    "description":"a spanish food perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/food.parrilla.svg",
+      "game_slug":"food",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":316,
+    "name":"titicaca",
+    "description":"a spanish nature and weather perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/nature_and_weather.titicaca.svg",
+      "game_slug":"nature_and_weather",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":317,
+    "name":"mi_gente",
+    "description":"a spanish people and jobs perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/people_and_jobs.mi_gente.svg",
+      "game_slug":"people_and_jobs",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":318,
+    "name":"campeon_mundial",
+    "description":"a spanish sports and activities perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/sports_and_activities.campeon_mundial.svg",
+      "game_slug":"sports_and_activities",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":319,
+    "name":"ingeniero",
+    "description":"a spanish tech and tools perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/tech_and_tools.ingeniero.svg",
+      "game_slug":"tech_and_tools",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":320,
+    "name":"camino_inca",
+    "description":"a spanish travel and places perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/es/travel_and_places.camino_inca.svg",
+      "game_slug":"travel_and_places",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":321,
+    "name":"papillon",
+    "description":"a french animals perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/animals.papillon.svg",
+      "game_slug":"animals",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":322,
+    "name":"chateau",
+    "description":"a french around the house perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/around_the_house.chateau.svg",
+      "game_slug":"around_the_house",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":323,
+    "name":"napoleon",
+    "description":"a french countries perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/countries.napoleon.svg",
+      "game_slug":"countries",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":324,
+    "name":"a_bout_de_souffle",
+    "description":"a french emotions and feelings perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/emotions_and_feelings.a_bout_de_souffle.svg",
+      "game_slug":"emotions_and_feelings",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":325,
+    "name":"croissant",
+    "description":"a french food perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/food.croissant.svg",
+      "game_slug":"food",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":326,
+    "name":"chamonix",
+    "description":"a french nature and weather perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/nature_and_weather.chamonix.svg",
+      "game_slug":"nature_and_weather",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":327,
+    "name":"francophonie",
+    "description":"a french people and jobs perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/people_and_jobs.francophonie.svg",
+      "game_slug":"people_and_jobs",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":328,
+    "name":"zidane",
+    "description":"a french sports and activities perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/sports_and_activities.zidane.svg",
+      "game_slug":"sports_and_activities",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":329,
+    "name":"neon",
+    "description":"a french tech and tools perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/tech_and_tools.neon.svg",
+      "game_slug":"tech_and_tools",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":330,
+    "name":"tour_de_france",
+    "description":"a french travel and places perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/fr/travel_and_places.tour_de_france.svg",
+      "game_slug":"travel_and_places",
+      "language_code":"fr"
+    }
+  },
+  {
+    "id":331,
+    "name":"猿",
+    "description":"a japanese animals perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/animals.猿.svg",
+      "game_slug":"animals",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":332,
+    "name":"お帰り",
+    "description":"a japanese around the house perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/around_the_house.お帰り.svg",
+      "game_slug":"around_the_house",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":333,
+    "name":"帝国",
+    "description":"a japanese countries perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/countries.帝国.svg",
+      "game_slug":"countries",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":334,
+    "name":"エモジ",
+    "description":"a japanese emotions and feelings perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/emotions_and_feelings.エモジ.svg",
+      "game_slug":"emotions_and_feelings",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":335,
+    "name":"ご飯",
+    "description":"a japanese food perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/food.ご飯.svg",
+      "game_slug":"food",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":336,
+    "name":"富士山",
+    "description":"a japanese nature and weather perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/nature_and_weather.富士山.svg",
+      "game_slug":"nature_and_weather",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":337,
+    "name":"日本人",
+    "description":"a japanese people and jobs perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/people_and_jobs.日本人.svg",
+      "game_slug":"people_and_jobs",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":338,
+    "name":"横綱",
+    "description":"a japanese sports and activities perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/sports_and_activities.横綱.svg",
+      "game_slug":"sports_and_activities",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":339,
+    "name":"正義",
+    "description":"a japanese tech and tools perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/tech_and_tools.正義.svg",
+      "game_slug":"tech_and_tools",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":340,
+    "name":"回峰行",
+    "description":"a japanese travel and places perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/travel_and_places.回峰行.svg",
+      "game_slug":"travel_and_places",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":341,
+    "name":"しょうがっこう",
+    "description":"a japanese hiragana 1 perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/hiragana_1.しょうがっこう.svg",
+      "game_slug":"hiragana_1",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":342,
+    "name":"ちゅうがっこう",
+    "description":"a japanese hiragana 2 perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/hiragana_2.ちゅうがっこう.svg",
+      "game_slug":"hiragana_2",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":343,
+    "name":"こうとうがっこう",
+    "description":"a japanese ultimate hiragana perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/ultimate_hiragana.こうとうがっこう.svg",
+      "game_slug":"ultimate_hiragana",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":344,
+    "name":"ショウガッコウ",
+    "description":"a japanese katakana 1 perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/katakana_1.ショウガッコウ.svg",
+      "game_slug":"katakana_1",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":345,
+    "name":"チュウガッコウ",
+    "description":"a japanese katakana 2 perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/katakana_2.チュウガッコウ.svg",
+      "game_slug":"katakana_2",
+      "language_code":"jp"
+    }
+  },
+  {
+    "id":346,
+    "name":"コウトウガッコウ",
+    "description":"a japanese ultimate katakana perfect play",
+    "custom_fields": {
+      "image_path":"badges/games/perfect_plays/jp/ultimate_katakana.コウトウガッコウ.svg",
+      "game_slug":"ultimate_katakana",
+      "language_code":"jp"
+    }
+  }
+]

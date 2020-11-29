@@ -8,7 +8,7 @@ class NotifyBadgeJob < ApplicationJob
     UserChannel.broadcast_to(user,
       type: 'badge',
       badge: badge,
-      badge_image_url: ActionController::Base.helpers.image_url(badge.custom_fields[:image_path])
+      badge_image_url: ActionController::Base.helpers.image_url(badge.custom_fields["image_path"])
     )
   end
 end

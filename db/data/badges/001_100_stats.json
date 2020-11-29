@@ -1,0 +1,26 @@
+[
+  {
+   "id": 1,
+   "name": "gold",
+   "description": "making first rank",
+   "custom_fields": {
+     "image_path":"badges/stats/made_first_rank.gold.svg"
+    }
+  },
+  {
+   "id": 2,
+   "name": "silver",
+   "description": "making second rank",
+   "custom_fields": {
+     "image_path":"badges/stats/made_second_rank.silver.svg"
+    }
+  },
+  {
+   "id": 3,
+   "name": "bronze",
+   "description": "making third rank",
+   "custom_fields": {
+     "image_path":"badges/stats/made_third_rank.bronze.svg"
+    }
+  }
+]

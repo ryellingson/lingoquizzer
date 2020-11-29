@@ -50,9 +50,9 @@ module Merit
 
       # generals
 
-      grant_on 'users#profile', model_name: 'User', badge: 'signed_up', to: :action_user
+      grant_on 'users#profile', model_name: 'User', badge: 'welcome', to: :action_user
 
-      grant_on 'contact#send_message', badge: 'first_contact', to: :action_user
+      grant_on 'contact#send_message', badge: 'postman', to: :action_user
 
       # check application controller for additional rules
 
@@ -60,15 +60,15 @@ module Merit
 
       # stats
 
-      grant_on 'plays#create', badge: 'made_first_rank', to: :user do |play|
+      grant_on 'plays#create', badge: 'gold', to: :user do |play|
         User.top_users.first == play.user
       end
 
-      grant_on 'plays#create', badge: 'made_second_rank', to: :user do |play|
+      grant_on 'plays#create', badge: 'silver', to: :user do |play|
         User.top_users.second == play.user
       end
 
-      grant_on 'plays#create', badge: 'made_third_rank', to: :user do |play|
+      grant_on 'plays#create', badge: 'bronze', to: :user do |play|
         User.top_users.third == play.user
       end
 
@@ -77,55 +77,55 @@ module Merit
 
       conversations_rules = [
         {
-          badge: 'first_post',
+          badge: 'knowledge seeker',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 1',
           grant_on: 'posts#create'
         },
         {
-          badge: 'tenth_post',
+          badge: 'knowledge is power',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 10',
           grant_on: 'posts#create'
         },
         {
-          badge: 'hundredth_post',
+          badge: 'scribe',
           model_name: 'Post',
           rule: 'resource.user.posts.count == 100',
           grant_on: 'posts#create'
         },
         {
-          badge: 'first_comment',
+          badge: 'helping hand',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 1',
           grant_on: 'comments#create'
         },
         {
-          badge: 'tenth_comment',
+          badge: 'giver',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 10',
           grant_on: 'comments#create'
         },
         {
-          badge: 'hundredth_comment',
+          badge: 'socrates',
           model_name: 'Comment',
           rule: 'resource.user.comments.count == 100',
           grant_on: 'comments#create'
         },
         {
-          badge: 'first_message',
+          badge: 'babbler',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 1',
           grant_on: 'messages#create'
         },
         {
-          badge: 'tenth_message',
+          badge: 'chatterbox',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 10',
           grant_on: 'messages#create'
         },
         {
-          badge: 'hundredth_message',
+          badge: 'extrovert',
           model_name: 'Message',
           rule: 'resource.user.messages.count == 100',
           grant_on: 'messages#create'
@@ -148,6 +148,7 @@ module Merit
           end
         end
       end
+
     end
   end
 end
