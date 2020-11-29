@@ -304,9 +304,9 @@
     "name":"猿",
     "description":"a japanese animals perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/animals.猿.svg",
+      "image_path":"badges/games/perfect_plays/ja/animals.猿.svg",
       "game_slug":"animals",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -314,9 +314,9 @@
     "name":"お帰り",
     "description":"a japanese around the house perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/around_the_house.お帰り.svg",
+      "image_path":"badges/games/perfect_plays/ja/around_the_house.お帰り.svg",
       "game_slug":"around_the_house",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -324,9 +324,9 @@
     "name":"帝国",
     "description":"a japanese countries perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/countries.帝国.svg",
+      "image_path":"badges/games/perfect_plays/ja/countries.帝国.svg",
       "game_slug":"countries",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -334,9 +334,9 @@
     "name":"エモジ",
     "description":"a japanese emotions and feelings perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/emotions_and_feelings.エモジ.svg",
+      "image_path":"badges/games/perfect_plays/ja/emotions_and_feelings.エモジ.svg",
       "game_slug":"emotions_and_feelings",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -344,9 +344,9 @@
     "name":"ご飯",
     "description":"a japanese food perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/food.ご飯.svg",
+      "image_path":"badges/games/perfect_plays/ja/food.ご飯.svg",
       "game_slug":"food",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -354,9 +354,9 @@
     "name":"富士山",
     "description":"a japanese nature and weather perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/nature_and_weather.富士山.svg",
+      "image_path":"badges/games/perfect_plays/ja/nature_and_weather.富士山.svg",
       "game_slug":"nature_and_weather",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -364,9 +364,9 @@
     "name":"日本人",
     "description":"a japanese people and jobs perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/people_and_jobs.日本人.svg",
+      "image_path":"badges/games/perfect_plays/ja/people_and_jobs.日本人.svg",
       "game_slug":"people_and_jobs",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -374,9 +374,9 @@
     "name":"横綱",
     "description":"a japanese sports and activities perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/sports_and_activities.横綱.svg",
+      "image_path":"badges/games/perfect_plays/ja/sports_and_activities.横綱.svg",
       "game_slug":"sports_and_activities",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -384,9 +384,9 @@
     "name":"正義",
     "description":"a japanese tech and tools perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/tech_and_tools.正義.svg",
+      "image_path":"badges/games/perfect_plays/ja/tech_and_tools.正義.svg",
       "game_slug":"tech_and_tools",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -394,9 +394,9 @@
     "name":"回峰行",
     "description":"a japanese travel and places perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/travel_and_places.回峰行.svg",
+      "image_path":"badges/games/perfect_plays/ja/travel_and_places.回峰行.svg",
       "game_slug":"travel_and_places",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -404,9 +404,9 @@
     "name":"しょうがっこう",
     "description":"a japanese hiragana 1 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/hiragana_1.しょうがっこう.svg",
+      "image_path":"badges/games/perfect_plays/ja/hiragana_1.しょうがっこう.svg",
       "game_slug":"hiragana_1",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -414,9 +414,9 @@
     "name":"ちゅうがっこう",
     "description":"a japanese hiragana 2 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/hiragana_2.ちゅうがっこう.svg",
+      "image_path":"badges/games/perfect_plays/ja/hiragana_2.ちゅうがっこう.svg",
       "game_slug":"hiragana_2",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -424,9 +424,9 @@
     "name":"こうとうがっこう",
     "description":"a japanese ultimate hiragana perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/ultimate_hiragana.こうとうがっこう.svg",
+      "image_path":"badges/games/perfect_plays/ja/ultimate_hiragana.こうとうがっこう.svg",
       "game_slug":"ultimate_hiragana",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -434,9 +434,9 @@
     "name":"ショウガッコウ",
     "description":"a japanese katakana 1 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/katakana_1.ショウガッコウ.svg",
+      "image_path":"badges/games/perfect_plays/ja/katakana_1.ショウガッコウ.svg",
       "game_slug":"katakana_1",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -444,9 +444,9 @@
     "name":"チュウガッコウ",
     "description":"a japanese katakana 2 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/katakana_2.チュウガッコウ.svg",
+      "image_path":"badges/games/perfect_plays/ja/katakana_2.チュウガッコウ.svg",
       "game_slug":"katakana_2",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   },
   {
@@ -454,9 +454,9 @@
     "name":"コウトウガッコウ",
     "description":"a japanese ultimate katakana perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/jp/ultimate_katakana.コウトウガッコウ.svg",
+      "image_path":"badges/games/perfect_plays/ja/ultimate_katakana.コウトウガッコウ.svg",
       "game_slug":"ultimate_katakana",
-      "language_code":"jp"
+      "language_code":"ja"
     }
   }
 ]
