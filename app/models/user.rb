@@ -52,6 +52,10 @@ class User < ApplicationRecord
     plays.sum(&:score)
   end
 
+  def self.leaderboard
+
+  end
+
   def hint_points
     self.hint_points = self.convo_points / 10
   end
