@@ -20,8 +20,8 @@ class ApplicationController < ActionController::Base
   private
 
   def check_badges
-    grant_badge('been_a_member_for_a_month') if current_user.created_at <= Date.today - 1.month
-    grant_badge('been_a_member_for_a_year') if current_user.created_at <= Date.today - 1.year
+    grant_badge('community member') if current_user.created_at <= Date.today - 1.month
+    grant_badge('community leader') if current_user.created_at <= Date.today - 1.year
   end
 
   def grant_badge(badge_name)
