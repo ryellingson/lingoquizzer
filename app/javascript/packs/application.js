@@ -10,6 +10,7 @@ require("channels");
 require("trix");
 require("@rails/actiontext");
 
+
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 import 'sweetalert2/src/sweetalert2.scss';
 window.Swal = Swal;
@@ -20,7 +21,7 @@ import { initSignUpModal } from "../components/modal";
 
 import { initDropDowns } from "../components/dropdown";
 
-import { initPostCable } from "../channels/post_channel"
+import { initPostCable } from "../channels/post_channel";
 
 document.addEventListener('turbolinks:load', function(e) {
   initSignUpModal();

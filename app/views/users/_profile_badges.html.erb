@@ -1,6 +1,12 @@
-<div class="plays-cards">
-  <!-- had to change image_path from a symbol to a string -->
+<div class="profile-cards">
   <% @user.badges_to_display.each do |badge| %>
-    <%= image_tag badge.custom_fields["image_path"], class: "plays-card", data: {id: badge.id} %>
+    <div class="badges-card">
+      <div class="badges-image">
+        <%= image_tag badge.custom_fields["image_path"], data: {id: badge.id} %>
+      </div>
+      <div class="badges-description">
+        for <%= badge.description %>
+      </div>
+    </div>
   <% end %>
 </div>

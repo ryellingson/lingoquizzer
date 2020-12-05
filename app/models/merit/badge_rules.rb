@@ -79,55 +79,55 @@ module Merit
         {
           badge: 'knowledge seeker',
           model_name: 'Post',
-          rule: 'resource.user.posts.count == 1',
+          rule: 'resource.user.posts.count >= 1',
           grant_on: 'posts#create'
         },
         {
           badge: 'knowledge is power',
           model_name: 'Post',
-          rule: 'resource.user.posts.count == 10',
+          rule: 'resource.user.posts.count >= 10',
           grant_on: 'posts#create'
         },
         {
           badge: 'scribe',
           model_name: 'Post',
-          rule: 'resource.user.posts.count == 100',
+          rule: 'resource.user.posts.count >= 100',
           grant_on: 'posts#create'
         },
         {
           badge: 'helping hand',
           model_name: 'Comment',
-          rule: 'resource.user.comments.count == 1',
+          rule: 'resource.user.comments.count >= 1',
           grant_on: 'comments#create'
         },
         {
           badge: 'giver',
           model_name: 'Comment',
-          rule: 'resource.user.comments.count == 10',
+          rule: 'resource.user.comments.count >= 10',
           grant_on: 'comments#create'
         },
         {
           badge: 'socrates',
           model_name: 'Comment',
-          rule: 'resource.user.comments.count == 100',
+          rule: 'resource.user.comments.count >= 100',
           grant_on: 'comments#create'
         },
         {
           badge: 'babbler',
           model_name: 'Message',
-          rule: 'resource.user.messages.count == 1',
+          rule: 'resource.user.messages.count >= 1',
           grant_on: 'messages#create'
         },
         {
           badge: 'chatterbox',
           model_name: 'Message',
-          rule: 'resource.user.messages.count == 10',
+          rule: 'resource.user.messages.count >= 10',
           grant_on: 'messages#create'
         },
         {
           badge: 'extrovert',
           model_name: 'Message',
-          rule: 'resource.user.messages.count == 100',
+          rule: 'resource.user.messages.count >= 100',
           grant_on: 'messages#create'
         }
       ]

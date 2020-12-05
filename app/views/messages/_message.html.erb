@@ -14,7 +14,7 @@
         <p><%= message.user.username %></p>
       </div>
       <div class="message-creation-time">
-        <p><%= message.created_at.strftime("%l:%M %p") %></p>
+        <p><%= time_ago_in_words(message.created_at)%> ago</p>
       </div>
     </div>
     <div class="message-text">

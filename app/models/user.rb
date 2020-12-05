@@ -52,6 +52,12 @@ class User < ApplicationRecord
     plays.sum(&:score)
   end
 
+  def self.leaderboard
+    Play.joins(:user).group(:user_id)
+        .select("MIN(users.username) AS username, MIN(users.default_avatar) AS default_avatar, SUM(score) AS score")
+        .order("score DESC").limit(10)
+  end
+
   def hint_points
     self.hint_points = self.convo_points / 10
   end
