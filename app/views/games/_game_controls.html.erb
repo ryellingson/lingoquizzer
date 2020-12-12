@@ -9,21 +9,30 @@
       <button class="back-button mr-1">Back</button>
       <button class="next-button">Next</button>
     </div>
-    <input type="text" class="game-input pl-1 mt-2">
   </div>
+  <div class="flex">
   <div class="game-stat-box hidden sm:flex mr-1"> <!-- correct count -->
     <p class="correct-count">0/<%= @problems.count %></p>
   </div>
+
   <div class="game-stat-box hidden sm:flex mr-1"> <!-- score -->
     <p class="score">0pts</p>
   </div>
+
   <div class="game-stat-box sm:hidden text-xl mr-1"> <!-- mobile view -->
     <p class='score'>0pts</p>
     <p class='correct-count'>0/<%= @problems.count %></p>
   </div>
+
   <div class="game-stat-box"> <!-- timer -->
     <p class='timer'><%= calculate_time_from_seconds(@game.play_time) %></p>
   </div>
+  </div>
+
+  <div>
+    <input type="text" class="game-input pl-1 mt-2">
+  </div>
+
   <div class="modal-bg">
     <div class="game-stats modal">
       <h2 class="endgame-modal-header">Game Over!</h2>
