@@ -10,14 +10,13 @@ class Game < ApplicationRecord
   enum character_type: { kana: 0, kanji: 1, romaji: 2 }
   before_save :assign_markdown_content, if: -> { description_changed? }
 
-  def top_users_specific
+  def top_users
     sql = <<-SQL
-    SELECT sum(plays.score) as specific_score, users.* FROM plays
+    SELECT sum(plays.score) as score, users.* FROM plays
     JOIN users ON users.id = plays.user_id
-    JOIN games ON games.id = plays.game_id
-    WHERE games.id = #{id}
+    WHERE game_id = #{id}
     GROUP BY users.id
-    ORDER BY specific_score DESC
+    ORDER BY score DESC
     LIMIT 10;
     SQL
     User.find_by_sql(sql)

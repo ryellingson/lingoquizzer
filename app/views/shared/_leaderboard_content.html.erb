@@ -1,6 +1,6 @@
 <div class="menu-leaderboard-content">
       <div class="menu-leaderboard-rows">
-  <% users = game ? game.top_users_specific : User.top_users %>
+  <% users = game ? game.top_users : User.top_users %>
     <% users.each_with_index do |user, index| %>
        <!--  <li class="menu-leaderboard-row"> -->
       <%= link_to user_path(user), class: "menu-leaderboard-row" do %>
@@ -17,11 +17,7 @@
           </span>
           <span class="menu-leaderboard-points">
             <span>
-              <% if game %>
-                <%= user.specific_score %>
-              <% else %>
-                <%= user.total_score %>
-              <% end %> <!-- conditional checking if game exists -->
+              <%= user.score %>
             </span>
           </span>
     <% end %> <!-- link to user path -->

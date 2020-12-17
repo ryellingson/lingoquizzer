@@ -48,23 +48,24 @@ class User < ApplicationRecord
     banned
   end
 
-  def total_score
-    plays.sum(&:score)
-  end
-
-  def self.leaderboard
-    Play.joins(:user).group(:user_id)
-        .select("MIN(users.username) AS username, MIN(users.default_avatar) AS default_avatar, SUM(score) AS score")
-        .order("score DESC").limit(10)
+  def self.top_users
+    sql = <<-SQL
+    SELECT users.*, SUM(score) as score
+    FROM plays
+    JOIN users ON users.id = plays.user_id
+    GROUP BY users.id
+    ORDER BY score DESC
+    LIMIT 10
+    SQL
+    User.find_by_sql(sql)
   end
 
   def hint_points
     self.hint_points = self.convo_points / 10
   end
 
-  def self.top_users
-    all.sort_by(&:total_score).reverse.first(10)
-    # self.order(total_score: :desc).first(25)
+  def total_score
+    plays.sum(&:score)
   end
 
   def self.find_for_database_authentication(warden_conditions)

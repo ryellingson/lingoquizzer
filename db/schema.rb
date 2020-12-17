@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_01_183122) do
+ActiveRecord::Schema.define(version: 2020_12_12_031012) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -254,7 +254,6 @@ ActiveRecord::Schema.define(version: 2020_10_01_183122) do
     t.boolean "admin", default: false
     t.string "username"
     t.string "city"
-    t.integer "total_score", default: 0
     t.string "default_avatar"
     t.datetime "last_seen_at"
     t.boolean "banned", default: false

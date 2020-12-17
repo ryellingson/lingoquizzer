@@ -6,8 +6,6 @@ class PlaysController < ApplicationController
     @play.user = current_user
     authorize @play
     @play.save
-    new_total_score = current_user.total_score + @play.score
-    current_user.update(total_score: new_total_score)
     head :ok
     # a response that has no content, just a header giving JS a response that the function worked because JS expects something
   end
