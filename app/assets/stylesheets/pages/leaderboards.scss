@@ -9,9 +9,11 @@
 .leaderboards-main-container {
   background-color: rgba(102,138,106, 0.9);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   width: 100%;
+  padding: 20px 0px;
 }
 
 .leaderboards-wrapper {
