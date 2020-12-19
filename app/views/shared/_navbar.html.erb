@@ -1,0 +1,20 @@
+  <header class="navbar">
+    <nav class="nav bd-grid">
+      <%= link_to root_path do %>
+        <div class="logo-mobile m-3">
+          <%= image_tag "logo-mobile.png", class: "h-12" %>
+        </div>
+      <% end %> <!-- link to root -->
+      <div class="div nav__menu" id='nav-menu'>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Games</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Conversations</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Profile/Login</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
