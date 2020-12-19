@@ -1,7 +1,26 @@
 <%= render 'shared/header' %>
 <main>
   <div class="games-main-container">
-    <div class="classifications">
+    <div class="mobile-classifications sm:hidden" data-controller= "game-filters">
+      <div>
+        <%= form_with url: "/games", method: :get, local: true, data: {target: "game-filters.form"} do |f| %>
+          <%= f.label :language, "Language" %>
+          <%= f.select(:language, options_for_select(Language.all.pluck(:name, :language_code), selected: params[:language]), {}, {data: {action: "change->game-filters#submit"}}) %>
+          <%= f.label :difficulty, "Difficulty" %>
+          <%= f.select(:difficulty, options_for_select(Game.difficulties.keys, selected: params[:difficulty]), {}, {data: {action: "change->game-filters#submit"}}) %>
+          <%= f.label :category, "Category" %>
+          <%= f.select(:category, options_for_select(Game.categories.keys, selected: params[:category]), {}, {data: {action: "change->game-filters#submit"}}) %>
+          <%= f.button type: :submit %>
+        <% end %>
+      </div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+    <div class="classifications hidden sm:block">
       <div class="game-type-select">
         <div class="game-type-select-header">
           <h2>Language</h2>
@@ -33,7 +52,7 @@
 
     <%= render "games_container" %>
 
-    <div class="classifications">
+    <div class="classifications hidden sm:block">
       <div class="game-type-select">
         <div class="game-type-select-header">
           <h2>Category</h2>
