@@ -14,7 +14,7 @@
       <% end %> <!-- link to root -->
       </div>
       <div>
-        <div class="nav__menu" id='nav-menu'>
+        <div class="nav__menu" id='nav-menu'  data-target="navbar.nav">
           <ul class="nav__list">
             <%= link_to games_path do %>
               <li class="nav__item nav__link">Games</li>
@@ -39,7 +39,7 @@
             <% end %>
           </ul>
         </div>
-        <div class="nav__toggle" id="nav-toggle">
+        <div class="nav__toggle" id="nav-toggle" data-action="click->navbar#showMenu">
           <i class="fas fa-bars fa-2x"></i>
         </div>
       </div>
