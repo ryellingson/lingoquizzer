@@ -1,5 +1,5 @@
-  <header class="navbar">
-    <nav class="nav"> <!-- bd-grid -->
+  <header class="navbar" data-controller="navbar">
+    <nav class="nav"> <!-- bd-grid was here -->
     <div class="flex justify-between items-center">
     <div class="logoss flex items-center">
       <%= link_to root_path do %>
@@ -16,15 +16,29 @@
       <div>
         <div class="nav__menu" id='nav-menu'>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link active">Games</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">Conversations</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link">Profile/Login</a></li>
-            <li class="nav__item"><a href="#leaderboards" class="nav__link">Leaderboards</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            <%= link_to games_path do %>
+              <li class="nav__item nav__link">Games</li>
+            <% end %>
+            <%= link_to forum_index_path(:en) do %>
+              <li class="nav__item nav__link">Conversations</li>
+            <% end %>
+            <% if user_signed_in? %>
+              <%= link_to profile_path do %>
+                <li class="nav__item nav__link">My Profile</li>
+              <% end %>
+            <% else %>
+              <%= link_to new_user_session_path do %>
+                <li class="nav__item nav__link">Login</li>
+              <% end %>
+            <% end %>
+            <%= link_to leaderboards_path do %>
+              <li class="nav__item nav__link">Leaderboards</li>
+            <% end %>
+            <li class="nav__item nav__link">Contact</li>
           </ul>
         </div>
         <div class="nav__toggle" id="nav-toggle">
-          <i class='bx bx-menu'></i>
+          <i class="fas fa-bars fa-2x"></i>
         </div>
       </div>
       </div>

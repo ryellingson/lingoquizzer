@@ -1,10 +1,8 @@
-$nav-height: 85px;
-
 .games-main-container {
   background-color: ghostwhite;
   display: flex;
   justify-content: space-around;
-  padding-top: $nav-height;
+  padding-top: 10px;
 }
 
 .games-container {

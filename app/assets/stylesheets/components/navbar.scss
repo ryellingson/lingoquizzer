@@ -91,6 +91,7 @@ img {
 .nav__link {
   position: relative;
   color: #fff;
+  cursor: pointer;
 }
 
 .nav__link:hover {
@@ -119,9 +120,12 @@ img {
 }
 
 .nav__toggle {
-  color: var(--second-color);
-  font-size: 1.5rem;
+  color: #8AA8BD;
+  padding: 7px;
+  font-size: 11px;
   cursor: pointer;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .active::after {
