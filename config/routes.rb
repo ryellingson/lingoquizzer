@@ -29,6 +29,8 @@ Rails.application.routes.draw do
 
   get '/notify_badges', controller: 'pages', action: 'notify_badges'
 
+  get '/contact', controller: 'pages', action: 'contact'
+
   post '/contact/send', controller: 'contact', action: 'send_message'
 
   resources :posts, only: [ :create, :show, :edit, :update ] do

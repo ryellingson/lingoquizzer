@@ -1,0 +1,25 @@
+<div class="profile-main-container h-screen flex justify-center p-10">
+  <div class="profile-wrapper">
+    <h2 class='text-3xl text-center border-b w-full mb-2'>Contact Us</h2>
+    <div class="flex flex-col items-center justify-center p-10">
+        <div class="contact-line">
+          <p class="contact-text">Use the form below to send any questions, comments, bug reports, or tasty snacks.</p>
+          <p class="contact-text">If you are contacting about a bug, please mention as much information as you can so we can better assist you. Examples of helpful information are the following: steps on how to reproduce the issue, a link to the problematic page, or a link to a screenshot.</p>
+        </div>
+        <%= form_for(ContactForm.new, remote: :true, url: contact_send_path) do |f| %>
+        <% unless user_signed_in? && current_user.email.present? %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: "w-full border border-gray-400 rounded-lg" %>
+        <% end %>
+        <%= f.label :subject %>
+        <%= f.text_field :subject, class: "w-full border border-gray-400 rounded-lg" %>
+        <%= f.label :message %>
+        <%= f.text_area :message, class: "w-full border border-gray-400 rounded-lg" %>
+        <%= f.label :file %>
+        <%= f.file_field :file, class: "w-full border border-gray-400 rounded-lg" %>
+        <%= f.submit "Send", class: "contact-form-button" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
