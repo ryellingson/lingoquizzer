@@ -8,7 +8,7 @@
         </div>
       <% end %> <!-- link to root -->
       <%= link_to root_path do %>
-        <div class="logo-text hidden md:block">
+        <div class="logo-text hidden lg:block">
           <%= image_tag "logo-text.png", class: "" %>
         </div>
       <% end %> <!-- link to root -->
@@ -24,7 +24,7 @@
             <% end %>
             <% if user_signed_in? %>
               <%= link_to profile_path do %>
-                <li class="nav__item nav__link">My Profile</li>
+                <li class="nav__item nav__link">Profile</li>
               <% end %>
             <% else %>
               <%= link_to new_user_session_path do %>
