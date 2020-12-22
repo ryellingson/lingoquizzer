@@ -6,12 +6,6 @@
     </div>
   </div>
   <%# end %>
-  <div class="hidden hub mr-1">
-    <div class="shift-buttons flex">
-      <button class="back-button mr-1">Back</button>
-      <button class="next-button">Next</button>
-    </div>
-  </div>
   <div class="flex">
     <div class="game-stat-box hidden sm:flex mr-1"> <!-- correct count -->
       <p class="correct-count">0/<%= @problems.count %></p>
@@ -31,9 +25,19 @@
     </div>
   </div>
 
-  <div>
-    <input type="text" class="game-input pl-1 mt-2">
-  </div>
+  <form>
+    <fieldset class="answer-set">
+      <div class="shift-button-left">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div>
+        <input type="text" class="game-input pl-1 mt-2">
+      </div>
+      <button class="shift-button-right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </fieldset>
+  </form>
 
   <div class="modal-bg">
     <div class="game-stats modal">

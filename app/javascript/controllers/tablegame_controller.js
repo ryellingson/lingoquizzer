@@ -10,8 +10,8 @@ export default class extends Controller {
     this.gameInput = document.querySelector(".game-input");
     this.answers = document.querySelectorAll(".answer");
     this.answerCount = this.answers.length
-    this.backButton = document.querySelector(".back-button");
-    this.nextButton = document.querySelector(".next-button");
+    this.backButton = document.querySelector(".shift-button-left");
+    this.nextButton = document.querySelector(".shift-button-right");
     this.correctCountShow = document.querySelectorAll(".correct-count");
     this.timeShow = document.querySelector(".timer");
     this.scoreShow = document.querySelectorAll(".score");
