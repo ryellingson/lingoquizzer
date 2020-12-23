@@ -5,11 +5,15 @@
     top: 95px;
     transition: opacity 0.5s;
     opacity: 0;
-    z-index: 1;
+    display: none;
   }
 
-  .popover span:hover + .content, .popover span:active + .content {
+  .popover span:hover + .content, .popover span:active + .content, .popover .content:hover {
+    // active is for mobile maybe
     opacity: 1;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+    display: unset;
   }
 
   p {
