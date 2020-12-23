@@ -24,7 +24,7 @@
 }
 
 .plays-card:not(:first-child) {
-  margin-left: -3rem;
+  margin-left: -0.5rem;
 }
 
 .plays-card:hover {
@@ -84,8 +84,9 @@
   transition: 0.2s;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-width: 130px;
-  height: fit-content;
+  // height: fit-content;
 }
 
 .badges-description {
@@ -94,17 +95,17 @@
   text-align: center;
 }
 
-// .badges-card:not(:first-child) {
-//   margin-left: -3rem;
-// }
+.badges-card:not(:first-child) {
+  margin-left: -0.5rem;
+}
 
-// .badges-card:hover {
-//   transform: translateY(-1rem);
-//   ~.badges-card {
-//     transform: translateX(3rem);
-//   }
-// }
+.badges-card:hover {
+  transform: translateY(-1rem);
+  ~.badges-card {
+    transform: translateX(3rem);
+  }
+}
 
-// .badges-card:focus-within ~.plays-card {
-//   transform: translateX(3rem); // will this make it work on mobile
-// }
+.badges-card:focus-within ~.plays-card {
+  transform: translateX(3rem); // will this make it work on mobile
+}

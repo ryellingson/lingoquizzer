@@ -1,0 +1,48 @@
+  <header class="navbar" data-controller="navbar">
+    <nav class="nav"> <!-- bd-grid was here -->
+    <div class="flex justify-between items-center">
+    <div class="logoss flex items-center">
+      <%= link_to root_path do %>
+        <div class="logo">
+          <%= image_tag "logo-mobile.png", class: "" %>
+        </div>
+      <% end %> <!-- link to root -->
+      <%= link_to root_path do %>
+        <div class="logo-text hidden lg:block">
+          <%= image_tag "logo-text.png", class: "" %>
+        </div>
+      <% end %> <!-- link to root -->
+      </div>
+      <div>
+        <div class="nav__menu" id='nav-menu'  data-target="navbar.nav">
+          <ul class="nav__list">
+            <%= link_to games_path do %>
+              <li class="nav__item nav__link">Games</li>
+            <% end %>
+            <%= link_to forum_index_path(:en) do %>
+              <li class="nav__item nav__link">Conversations</li>
+            <% end %>
+            <% if user_signed_in? %>
+              <%= link_to profile_path do %>
+                <li class="nav__item nav__link">Profile</li>
+              <% end %>
+            <% else %>
+              <%= link_to new_user_session_path do %>
+                <li class="nav__item nav__link">Login</li>
+              <% end %>
+            <% end %>
+            <%= link_to leaderboards_path do %>
+              <li class="nav__item nav__link">Leaderboards</li>
+            <% end %>
+            <%= link_to contact_path do %>
+              <li class="nav__item nav__link">Contact</li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle" data-action="click->navbar#showMenu">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>

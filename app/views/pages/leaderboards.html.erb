@@ -1,9 +1,13 @@
 <div class="leaderboards-main-container">
-    <%= link_to root_path do %>
-    <div class="logo">
-      <%= image_tag "logo.png" %> <!-- change to svg?  -->
+  <div class="menu-leaderboard-container mb-3">
+    <div class="menu-leaderboard">
+      <div class="menu-leaderboard-header">
+        <span class="menu-leaderboard-image"><i class="fas fa-trophy"></i></span>
+        <span class="menu-leaderboard-text">Leaderboard</span>
+      </div>
+      <%= render 'shared/leaderboard_content', game: nil %>
     </div>
-    <% end %>
+  </div>
   <div class="leaderboards-wrapper basic-grid">
     <% @games.each do |game| %>
     <div class="leaderboard">

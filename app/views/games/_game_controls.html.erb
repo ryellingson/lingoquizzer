@@ -1,15 +1,11 @@
 <div class="game-controls p-3">
   <%#= link_to game_path(@game, autoplay: true) do %>
-  <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3" id="play-button">
-    <p>Play</p>
-  </div>
-  <%# end %>
-  <div class="hidden hub mr-1">
-    <div class="shift-buttons flex">
-      <button class="back-button mr-1">Back</button>
-      <button class="next-button">Next</button>
+  <div class="flex justify-center">
+    <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 w-3/4 justify-self-center" id="play-button">
+      <p>Play</p>
     </div>
   </div>
+  <%# end %>
   <div class="flex">
     <div class="game-stat-box hidden sm:flex mr-1"> <!-- correct count -->
       <p class="correct-count">0/<%= @problems.count %></p>
@@ -29,9 +25,19 @@
     </div>
   </div>
 
-  <div>
-    <input type="text" class="game-input pl-1 mt-2">
-  </div>
+  <form>
+    <fieldset class="answer-set">
+      <div class="shift-button-left">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div>
+        <input type="text" class="game-input pl-1 mt-2">
+      </div>
+      <button class="shift-button-right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </fieldset>
+  </form>
 
   <div class="modal-bg">
     <div class="game-stats modal">

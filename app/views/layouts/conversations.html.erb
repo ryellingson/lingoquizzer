@@ -2,6 +2,7 @@
 <html>
 <%= render "shared/head" %>
 <body data-user-id='<%= current_user&.id || 'Guest' %>'>
+  <%= render 'shared/navbar' %>
   <%= render 'layouts/alerts' %>
   <div class="conversations-main-container">
     <%= render "conversations/conversations_sidebar_left" %>

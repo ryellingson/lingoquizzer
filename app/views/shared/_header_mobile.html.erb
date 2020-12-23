@@ -1,25 +1,8 @@
-<div class="game-header-mobile sm:hidden flex justify-between items-center">
-  <%= link_to root_path do %>
-    <div class="logo-mobile m-3">
-      <%= image_tag "logo-mobile.png", class: "h-12" %>
-    </div>
-  <% end %> <!-- link to root -->
+<div class="game-header-mobile sm:hidden flex justify-around items-center">
+  <div class="table-title text-4xl ml-1">
+    <h1><%= @game.name %></h1>
+  </div>
   <div class="w-32">
     <%= render "shared/tooltip", description: @description.html_safe %>
-  </div>
-  <div class="wrapper-dropdown m-3 w-auto" id="hamburger">
-    <i class="fas fa-bars fa-2x dropdown-trigger"></i>
-    <% if user_signed_in? %>
-      <ul class="dropdown">
-        <li><%= link_to "Games", games_path %></li>
-        <li><%= link_to "My Profile", profile_path %></li>
-      </ul>
-    <% else %>
-      <ul class="dropdown">
-        <li><%= link_to "Games", games_path %></li>
-        <li><%= link_to "Login", new_user_session_path %></li>
-        <li><%= link_to "Sign up", new_user_registration_path  %></li>
-      </ul>
-    <% end %>
   </div>
 </div>

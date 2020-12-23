@@ -10,8 +10,8 @@ export default class extends Controller {
     this.gameInput = document.querySelector(".game-input");
     this.answers = document.querySelectorAll(".answer");
     this.answerCount = this.answers.length
-    this.backButton = document.querySelector(".back-button");
-    this.nextButton = document.querySelector(".next-button");
+    this.backButton = document.querySelector(".shift-button-left");
+    this.nextButton = document.querySelector(".shift-button-right");
     this.correctCountShow = document.querySelectorAll(".correct-count");
     this.timeShow = document.querySelector(".timer");
     this.scoreShow = document.querySelectorAll(".score");
@@ -184,23 +184,31 @@ export default class extends Controller {
   }
 
   displayEndGameModal() {
-    const endGameModal = document.querySelector(".modal-bg");
-    const gameStats = document.querySelector(".game-stats-content");
-    endGameModal.classList.add("bg-active");
-    console.log(this.gameDataObject);
-    const perfectPlayDisplay = this.correctCountValue === this.answerCount ?
-      `<div class="perfect-play-display"><img src="${this.gameDataObject.perfectPlayUrl}" alt=""/></div>` : ""
-    const correctAnswers =
-      `<div class="endgame-modal-item">Correct Answers: ${this.correctCountValue}/${this.answerCount}</div>`
-    const timeBonus = this.timeLeft > 0 ?
-      `<div class="endgame-modal-item">Time Bonus: ${this.timeLeft}pts</div>` : ``
-    const scoreDisplay =
-      `<div class="endgame-modal-item">Score: ${this.score}pts</div>` //change
-
-    const htmlToRender = perfectPlayDisplay + timeBonus + correctAnswers  + scoreDisplay;
-
-    gameStats.insertAdjacentHTML("afterbegin", htmlToRender)
+    Swal.fire({
+      icon: 'success',
+      title: 'Nice Play!',
+      text: `Score: ${this.score}`
+    });
   }
+
+  // displayEndGameModal() {
+  //   const endGameModal = document.querySelector(".modal-bg");
+  //   const gameStats = document.querySelector(".game-stats-content");
+  //   endGameModal.classList.add("bg-active");
+  //   console.log(this.gameDataObject);
+  //   const perfectPlayDisplay = this.correctCountValue === this.answerCount ?
+  //     `<div class="perfect-play-display"><img src="${this.gameDataObject.perfectPlayUrl}" alt=""/></div>` : ""
+  //   const correctAnswers =
+  //     `<div class="endgame-modal-item">Correct Answers: ${this.correctCountValue}/${this.answerCount}</div>`
+  //   const timeBonus = this.timeLeft > 0 ?
+  //     `<div class="endgame-modal-item">Time Bonus: ${this.timeLeft}pts</div>` : ``
+  //   const scoreDisplay =
+  //     `<div class="endgame-modal-item">Score: ${this.score}pts</div>` //change
+
+  //   const htmlToRender = perfectPlayDisplay + timeBonus + correctAnswers  + scoreDisplay;
+
+  //   gameStats.insertAdjacentHTML("afterbegin", htmlToRender)
+  // }
 
   restartGame = () => {
     if (this.autoplay == "true") {

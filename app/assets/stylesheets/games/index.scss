@@ -1,15 +1,13 @@
-$nav-height: 85px;
-
 .games-main-container {
   background-color: ghostwhite;
   display: flex;
   justify-content: space-around;
-  padding-top: $nav-height;
+  padding-top: 10px;
 }
 
 .games-container {
   height: 100%;
-  width: 50%;
+  // width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +75,18 @@ $nav-height: 85px;
 
 .type-french:hover, .type-french.active {
   background-color: rgba(50, 245, 75, 0.6);
+}
+
+.mobile-classifications {
+  color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #eee;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.labelz {
+  color: red;
 }
 
 .games-wrapper {
@@ -222,22 +232,6 @@ $blue: #3498db;
     }
   }
 
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
-    .description {
-      &:before {
-        left: inherit;
-        right: -10px;
-        transform: skew(3deg)
-      }
-    }
-    &:hover {
-      .game-card-icon {
-        transform: scale(1.3) rotate(-3deg);
-      }
-    }
-  }
-
   .authors-display {
     font-size: 1.2rem;
     transition: 1s;
@@ -275,6 +269,22 @@ $blue: #3498db;
           left: inherit;
           right: -10px;
           transform: skew(3deg)
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      .description {
+        &:before {
+          left: inherit;
+          right: -10px;
+          transform: skew(3deg)
+        }
+      }
+      &:hover {
+        .game-card-icon {
+          transform: scale(1.3) rotate(-3deg);
         }
       }
     }

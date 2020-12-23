@@ -16,4 +16,7 @@ class PagesController < ApplicationController
     @user = current_user
     head :ok
   end
+
+  def contact
+  end
 end
