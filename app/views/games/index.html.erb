@@ -24,25 +24,30 @@
           <h2>Language</h2>
         </div>
         <div class="game-type-select-content">
-          <%= link_to language: params[:language] != "ja" ? "ja" : nil, difficulty: params[:difficulty], category: params[:category] do %>
-          <div class="game-type-select-content-item type-japanese <%= "active" if params[:language] == "ja" %>">
-            <h3>Japanese</h3>
-          </div>
+          <%= link_to games_path difficulty: params[:difficulty], category: params[:category] do %>
+            <div class="game-type-select-content-item">
+              <h3>Any</h3>
+            </div>
+          <% end %>
+            <%= link_to language: params[:language] != "ja" ? "ja" : nil, difficulty: params[:difficulty], category: params[:category] do %>
+            <div class="game-type-select-content-item type-japanese <%= "active" if params[:language] == "ja" %>">
+              <h3>Japanese</h3>
+            </div>
           <% end %>
           <%= link_to language: params[:language] != "en" ? "en" : nil, difficulty: params[:difficulty], category: params[:category] do %>
-          <div class="game-type-select-content-item type-english <%= "active" if params[:language] == "en" %>">
-            <h3>English</h3>
-          </div>
+            <div class="game-type-select-content-item type-english <%= "active" if params[:language] == "en" %>">
+              <h3>English</h3>
+            </div>
           <% end %>
           <%= link_to language: params[:language] != "es" ? "es" : nil, difficulty: params[:difficulty], category: params[:category] do %>
-          <div class="game-type-select-content-item type-spanish <%= "active" if params[:language] == "es" %>">
-            <h3>Spanish</h3>
-          </div>
+            <div class="game-type-select-content-item type-spanish <%= "active" if params[:language] == "es" %>">
+              <h3>Spanish</h3>
+            </div>
           <% end %>
           <%= link_to language: params[:language] != "fr" ? "fr" : nil, difficulty: params[:difficulty], category: params[:category] do %>
-          <div class="game-type-select-content-item type-french <%= "active" if params[:language] == "fr" %>">
-            <h3>French</h3>
-          </div>
+            <div class="game-type-select-content-item type-french <%= "active" if params[:language] == "fr" %>">
+              <h3>French</h3>
+            </div>
           <% end %>
         </div>
       </div>
@@ -56,6 +61,11 @@
           <h2>Category</h2>
         </div>
         <div class="game-type-select-content">
+          <%= link_to games_path language: params[:language], difficulty: params[:difficulty] do %>
+            <div class="game-type-select-content-item">
+              <h3>Any</h3>
+            </div>
+          <% end %>
           <%= link_to category: params[:category] != "typing" ? "typing" : nil, language: params[:language], difficulty: params[:difficulty] do %>
           <div class="game-type-select-content-item <%= "active" if params[:category] == "typing" %>">
             <h3>Typing</h3>
@@ -79,6 +89,11 @@
           <h2>Difficulty</h2>
         </div>
         <div class="game-type-select-content">
+          <%= link_to games_path language: params[:language], category: params[:category] do %>
+            <div class="game-type-select-content-item">
+              <h3>Any</h3>
+            </div>
+          <% end %>
           <%= link_to difficulty: params[:difficulty] != "beginner" ? "beginner" : nil, language: params[:language], category: params[:category] do %>
           <div class="game-type-select-content-item <%= "active" if params[:difficulty] == "beginner" %>">
             <h3>Beginner</h3>
