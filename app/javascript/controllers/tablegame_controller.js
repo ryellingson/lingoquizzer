@@ -184,15 +184,28 @@ export default class extends Controller {
   }
 
   displayEndGameModal() {
-    Swal.fire({
-      icon: 'success',
-      title: '<u>Nice Play!</u>',
-      text: `Score: ${this.score}`,
-      html:
-        `<div>Time Bonus: ${this.timeLeft}pts</div><br>` +
-        `<div>Correct Answers: ${this.correctCountValue}/${this.answerCount}</div><br>` +
-        `<div>Score: ${this.score}pts</div>`
-    });
+    if (this.correctCountValue === this.answerCount) {
+      Swal.fire({
+        imageUrl: `${this.gameDataObject.perfectPlayUrl}`,
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Perfect Play',
+        title: '<u>Perfect Play!</u>',
+        html:
+          `<div>Time Bonus: ${this.timeLeft}pts</div><br>` +
+          `<div>Correct Answers: ${this.correctCountValue}/${this.answerCount}</div><br>` +
+          `<div>Score: ${this.score}pts</div>`
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: '<u>Nice Play!</u>',
+        html:
+          `<div>Time Bonus: ${this.timeLeft}pts</div><br>` +
+          `<div>Correct Answers: ${this.correctCountValue}/${this.answerCount}</div><br>` +
+          `<div>Score: ${this.score}pts</div>`
+      });
+    }
     this.playButton.classList.remove("hidden");
   }
 
