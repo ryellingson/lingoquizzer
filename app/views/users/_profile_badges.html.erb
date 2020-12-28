@@ -1,12 +1,14 @@
 <div class="profile-cards">
   <% @user.badges_to_display.each do |badge| %>
     <div class="badges-card">
+      <%= if badge? %>
       <div class="badges-image">
         <%= image_tag badge.custom_fields["image_path"], data: {id: badge.id} %>
       </div>
       <div class="badges-description">
         For <%= badge.description %>
       </div>
+      <% end %>
     </div>
   <% end %>
 </div>

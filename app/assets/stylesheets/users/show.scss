@@ -36,10 +36,8 @@
   justify-content: center;
 }
 
-.profile-main-c {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.profile-hub {
+
 }
 
 .profile-avatar {
@@ -79,6 +77,8 @@
 
 .profile-scores {
   color: rgba(0,0,0,0.6);
+  align-self: center;
+  font-size: 25px;
 }
 
 .profile-city {
@@ -93,7 +93,7 @@
   padding: 2px;
   border-radius: 5px;
   overflow: scroll;
-  max-height: 448px;
+  max-height: 478px;
   // min-height: 412px;
 }
 

@@ -21,12 +21,13 @@
   /* Explicit grid */
   grid-template-areas:
     '🌟 🌟'
+    'e  e'
     'a  b'
     'c  b'
     'd  d';
 
   // grid-template-rows: 175px repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: 175px repeat(3, 1fr); // auto fit or fill?
+  // grid-template-rows: 175px repeat(3, 1fr); // auto fit or fill?
   grid-template-columns: 1fr 1fr;
 
   --stagger-delay: 100ms;
@@ -74,9 +75,13 @@
   grid-area: d;
   animation-delay: calc(4 * var(--stagger-delay));
 }
+.grid-card:nth-child(5) {
+  grid-area: e;
+  animation-delay: calc(5 * var(--stagger-delay));
+}
 .grid-card:last-child {
   grid-area: 🌟;
-  animation-delay: calc(13 * var(--stagger-delay));
+  animation-delay: calc(10 * var(--stagger-delay));
 }
 
 /* Medium screens */
