@@ -184,11 +184,29 @@ export default class extends Controller {
   }
 
   displayEndGameModal() {
-    Swal.fire({
-      icon: 'success',
-      title: 'Nice Play!',
-      text: `Score: ${this.score}`
-    });
+    if (this.correctCountValue === this.answerCount) {
+      Swal.fire({
+        imageUrl: `${this.gameDataObject.perfectPlayUrl}`,
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Perfect Play',
+        title: '<u>Perfect Play!</u>',
+        html:
+          `<div>Time Bonus: ${this.timeLeft}pts</div><br>` +
+          `<div>Correct Answers: ${this.correctCountValue}/${this.answerCount}</div><br>` +
+          `<div>Score: ${this.score}pts</div>`
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: '<u>Nice Play!</u>',
+        html:
+          `<div>Time Bonus: ${this.timeLeft}pts</div><br>` +
+          `<div>Correct Answers: ${this.correctCountValue}/${this.answerCount}</div><br>` +
+          `<div>Score: ${this.score}pts</div>`
+      });
+    }
+    this.playButton.classList.remove("hidden");
   }
 
   // displayEndGameModal() {
@@ -214,14 +232,14 @@ export default class extends Controller {
     if (this.autoplay == "true") {
       window.location.reload();
     } else {
-      window.location.replace(window.location.href + "?autoplay=true");
+      window.location.replace(window.location.href.split("?")[0] + "?autoplay=true");
     }
   }
 
   initializeGame() {
     if (this.playButton) {
       this.replayButton.addEventListener('click', this.restartGame);
-      this.playButton.addEventListener('click', this.startGame);
+      this.playButton.addEventListener('click', this.restartGame);
       this.nextButton.addEventListener('click', () => this.updateCurrentAnswer("next"));
       this.backButton.addEventListener('click', () => this.updateCurrentAnswer("back"));
     }
