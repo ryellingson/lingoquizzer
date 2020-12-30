@@ -1,8 +1,14 @@
-<div class="sidebar-right">
+<div class="sidebar-right hidden lg:block">
   <div class="sidebar-right-media">
     <div class="chat-lesson">
       <% if @language.video_url %>
-        <iframe width="475" height="300" src="<%= @language.video_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="475"
+          height="300"
+          src="<%= @language.video_url %>"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       <% end %>
     </div>
     <div class="chat-entertainment slideshow"
