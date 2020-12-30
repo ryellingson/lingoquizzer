@@ -24,7 +24,7 @@
 
 .conversations-main-container {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 55px);
 }
 
 .chat-logo {
