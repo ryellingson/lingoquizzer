@@ -13,6 +13,11 @@
     <%= f.submit "Log in", class: "btn btn-secondary mt-2" %>
     <% end %> <!-- form for -->
       <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary border-glow text-lg font-bold mt-4" %>
+    <%= link_to new_user_password_path do %>
+      <div class="flex justify-center text-2xl border-b-2 text-gray-700">
+        <p>Forgot your password?</p>
+      </div>
+    <% end %>
   </div>
 </div>
 
