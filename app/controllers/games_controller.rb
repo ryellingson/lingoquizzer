@@ -3,13 +3,13 @@ class GamesController < ApplicationController
 
   def index
     @games = policy_scope(Game)
-    if params[:language]
+    if params[:language].present?
       @games = @games.where(language: Language.find_by(language_code: params[:language]))
     end
-    if params[:difficulty]
+    if params[:difficulty].present?
       @games = @games.where(difficulty: params[:difficulty])
     end
-    if params[:category]
+    if params[:category].present?
       @games = @games.where(category: params[:category])
     end
   end
