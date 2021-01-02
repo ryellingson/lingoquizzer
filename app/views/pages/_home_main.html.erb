@@ -1,4 +1,4 @@
-<main class="main">
+<main class="main" data-controller='navbar'>
   <div class="gateway-wrapper">
     <div class="gateway">
       <div class="gateway-content">
@@ -36,7 +36,7 @@
             <% end %> <!-- link to user_path -->
           </div>
           <% else %>
-          <div class="gateway-button stroke modal-btn">
+          <div class="gateway-button stroke modal-btn" data-action=''>
             <h2 class="p-absolute text-xl">Join for free!</h2>
             <svg>
               <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>

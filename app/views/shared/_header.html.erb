@@ -61,11 +61,13 @@
         </div>
 
         <% end %> <!-- form_for url session path -->
-        <%= link_to new_user_password_path do %>
-          <div class="password-recovery">
-            <p>Forgot your password?</p>
-          </div>
-        <% end %>
+
+          <%= link_to new_user_password_path do %>
+            <div class="password-recovery">
+              <p>Forgot your password?</p>
+            </div>
+          <% end %>
+
       </ul>
       <% end %> <!-- if user_signed_in? -->
     </div>
