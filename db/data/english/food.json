@@ -117,11 +117,11 @@
   },
   {
     "question": "cupcake.png",
-    "answer": ""
+    "answer": "cupcake"
   },
   {
     "question": "curry.png",
-    "answer": "cupcake"
+    "answer": "curry"
   },
   {
     "question": "custard.png",
@@ -153,7 +153,7 @@
   },
   {
     "question": "fish-cake.png",
-    "answer": "fish cake."
+    "answer": "fish cake"
   },
   {
     "question": "fortune-cookie.png",
@@ -193,7 +193,7 @@
   },
   {
     "question": "ice-cream.png",
-    "answer": "ice cream."
+    "answer": "ice cream"
   },
   {
     "question": "ice-cube.png",
@@ -269,7 +269,7 @@
   },
   {
     "question": "peanuts.png",
-    "answer": "peanuts"
+    "answer": "peanut"
   },
   {
     "question": "pear.png",
