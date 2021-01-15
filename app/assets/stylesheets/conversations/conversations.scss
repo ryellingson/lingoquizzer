@@ -177,8 +177,8 @@
 .conversations-online-users {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
-  height: 150px;
+  overflow: auto;
+  height: 200px;
 }
 
 // sidebar left ends
