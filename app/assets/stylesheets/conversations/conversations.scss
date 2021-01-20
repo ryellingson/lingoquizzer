@@ -65,8 +65,26 @@
 .sidebar-right {
   background: rgb(36,80,54); /*dark green*/
   flex-direction: column;
+  height: 100%;
   width: 35vw;
-  flex-grow: 2;
+  flex-grow: 1;
+  transition: 1s;
+  z-index: 1;
+  .fa-arrow-left {
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    cursor: pointer;
+  }
+}
+
+.sidebar-right.show {
+  margin-left: 0;
+  .fa-arrow-left {
+    transform: scaleX(-1);
+  }
+  .sidebar-right-content {
+    opacity: 1;
+  }
 }
 
 .sidebar-button {
@@ -215,6 +233,17 @@
   }
 
   .sidebar-left-content {
+  transition: 1s;
+  opacity: 0;
+  }
+
+  .sidebar-right {
+    margin-left: 21em;
+    position: absolute;
+    padding: 15px;
+  }
+
+  .sidebar-right-media {
   transition: 1s;
   opacity: 0;
   }

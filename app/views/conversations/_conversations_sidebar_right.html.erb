@@ -1,4 +1,7 @@
-<div class="sidebar-right hidden lg:block">
+<div class="sidebar-right hidden lg:block" data-controller='navbar' data-target='navbar.nav'>
+  <div class="flex justify-start sm:hidden" >
+    <i class="fas fa-arrow-left" data-action="click->navbar#showMenu"></i>
+  </div>
   <div class="sidebar-right-media">
     <div class="chat-lesson">
       <% if @language.video_url %>
