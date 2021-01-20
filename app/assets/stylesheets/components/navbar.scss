@@ -105,6 +105,9 @@ img {
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
+  @media screen and (max-width: 600px) {
+    top: 3rem;
+  }
 }
 
 .logo {

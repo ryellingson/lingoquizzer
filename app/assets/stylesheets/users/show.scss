@@ -64,6 +64,9 @@
 .profile-username {
   font-size: 5rem;
   border-bottom: 1px solid rgba(200,200,200,0.8);
+  @media screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
 }
 
 .profile-edit-icon {
@@ -74,6 +77,9 @@
   color: rgba(0,0,0,0.6);
   align-self: center;
   font-size: 1.5rem;
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 }
 
 .profile-city {
@@ -110,5 +116,6 @@
       align-items: center;
       background-color: aliceblue;
       margin: 0px;
+      font-size: 3rem;
   }
 }
