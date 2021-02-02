@@ -1,7 +1,33 @@
 // const noticeWrapper = document.querySelector(".notice");
 
-if(!alert('Message Sent!')){window.location.reload();}
+var timerInterval
+Swal.fire({
+  title: 'Message sent!',
+  html: 'I will close in <b></b> milliseconds.',
+  imageUrl: 'https://unsplash.com/photos/G_lwAp0TF38',
+  timer: 5000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    timerInterval = setInterval(() => {
+      const content = Swal.getContent()
+      if (content) {
+        const b = content.querySelector('b')
+        if (b) {
+          b.textContent = Swal.getTimerLeft()
+        }
+      }
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
 
-var dropdownClose = document.querySelector("#contact-dropdown");
-
-dropdownClose.classList.remove("active");
+// if(!alert('Message Sent!')){window.location.reload();}
+document.querySelectorAll("input, textarea").forEach(input => input.value = "" );
