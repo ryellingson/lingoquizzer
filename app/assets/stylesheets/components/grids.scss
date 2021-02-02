@@ -20,17 +20,18 @@
 
   /* Explicit grid */
   grid-template-areas:
-    '🌟 🌟'
-    'e  e'
-    'a  b'
-    'c  b'
-    'd  d';
+    '🌟'
+    'e'
+    'd'
+    'a'
+    'c'
+    'b';
 
   // grid-template-rows: 175px repeat(auto-fit, minmax(250px, 1fr));
   // grid-template-rows: 175px repeat(3, 1fr); // auto fit or fill?
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 
-  --stagger-delay: 100ms;
+  --stagger-delay: 200ms;
 }
 
 @keyframes cardEntrance {
@@ -97,26 +98,5 @@
 
 /* Small screens */
 @media screen and (max-width: 600px) {
-  .animated-grid {
-    grid-template-areas:
-      '🌟'
-      'a'
-      'c'
-      'b'
-      'b'
-      'd';
 
-    grid-template-rows: 150px repeat(3, 258px); // auto fit or fill?
-    grid-template-columns: 1fr;
-
-    --stagger-delay: 100ms;
-  }
-
-  .grid-card-tall {
-    grid-row: span 2 / auto;
-  }
-
-  .grid-card-wide {
-    grid-column: span 2 / auto;
-  }
 }

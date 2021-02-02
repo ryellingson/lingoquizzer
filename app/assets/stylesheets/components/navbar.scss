@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 :root {
-  --header-height: 3rem;
+  --header-height: 50px;
   --font-semi: 600;
 }
 
@@ -105,6 +105,9 @@ img {
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
+  @media screen and (max-width: 600px) {
+    top: 3rem;
+  }
 }
 
 .logo {

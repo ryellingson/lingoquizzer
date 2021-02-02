@@ -45,4 +45,19 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model Game do
+
+
+    # list do
+    #   field :name
+    #   field :language
+    # end
+
+    # show do
+    #   field :code
+    # end
+
+    # other sections will show all fields
+  end
 end

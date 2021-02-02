@@ -78,6 +78,6 @@ class User < ApplicationRecord
   end
 
   def badges_to_display
-    badges.any? ? badges : [Merit::Badge.all.find { |badge| badge.name == 'signed_up' }]
+    badges.any? ? badges : [Merit::Badge.all.find { |badge| badge.name == 'welcome' }]
   end
 end

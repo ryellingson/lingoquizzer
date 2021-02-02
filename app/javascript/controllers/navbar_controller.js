@@ -4,7 +4,7 @@ export default class extends Controller {
   static targets = [ "toggle", "nav" ]
 
   connect() {
-    console.log("Hello from the navbar controller");
+
   }
 
   showMenu() {
