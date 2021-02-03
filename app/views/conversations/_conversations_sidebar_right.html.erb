@@ -1,4 +1,4 @@
-<div class="sidebar-right hidden lg:block" data-controller='navbar' data-target='navbar.nav'>
+<div class="sidebar-right hidden lg:block" data-controller='navbar' data-navbar-target='nav'>
   <div class="flex justify-start sm:hidden" >
     <i class="fas fa-arrow-left" data-action="click->navbar#showMenu"></i>
   </div>
@@ -16,13 +16,13 @@
     </div>
     <div class="chat-entertainment slideshow"
       data-controller="slideshow"
-      data-target="slideshow.settings"
+      data-slideshow-target="settings"
       data-slide-urls="<%= @slide_urls.to_json %>"
       data-fade-duration=2000
       data-slide-duration=15000>
-      <%= image_tag @slide_urls.first, data: {target: "slideshow.bottomImage"} if @slide_urls %>
+      <%= image_tag @slide_urls.first, data: {slideshow_target: "bottomImage"} if @slide_urls %>
       <!-- not using image_tag helper because it leaves a broken image icon for first image -->
-      <img class="opacity-0 fade-out" data-target="slideshow.topImage">
+      <img class="opacity-0 fade-out" data-slideshow-target="topImage">
     </div>
   </div>
 </div>
