@@ -5,8 +5,8 @@ export default class extends Controller {
   static targets = []
 
   connect() {
-    this.playButton = document.querySelector("#play-button");
-    this.quitButton = document.querySelector("#quit-button");
+    this.playButtons = document.querySelectorAll(".play-button");
+    this.quitButtons = document.querySelectorAll(".quit-button");
     this.replayButton = document.querySelector(".restart");
     this.gameInput = document.querySelector(".game-input");
     this.answers = document.querySelectorAll(".answer");
@@ -67,8 +67,8 @@ export default class extends Controller {
 
   startGame = () => {
     this.interval = setInterval(this.updateTimer, 1000);
-    this.playButton.classList.add("hidden");
-    this.quitButton.classList.remove("hidden");
+    this.playButtons.forEach((button) => button.classList.add("hidden"));
+    this.quitButtons.forEach((button) => button.classList.remove("hidden"));
     this.gameInput.parentNode.classList.remove("hidden");
     this.gameInput.addEventListener('input', this.handleInputChange);
     this.gameInput.focus();
@@ -194,8 +194,8 @@ export default class extends Controller {
           `<div>Score: ${this.score}pts</div>`
       });
     }
-    this.playButton.classList.remove("hidden");
-    this.quitButton.classList.add("hidden");
+    this.playButtons.forEach((button) => button.classList.remove("hidden"));
+    this.quitButtons.forEach((button) => button.classList.add("hidden"));
   }
 
   restartGame = () => {
@@ -207,10 +207,10 @@ export default class extends Controller {
   }
 
   initializeGame() {
-    if (this.playButton) {
+    if (this.playButtons.length > 0) {
       this.replayButton.addEventListener('click', this.restartGame);
-      this.playButton.addEventListener('click', this.restartGame);
-      this.quitButton.addEventListener('click', () => this.endGame());
+      this.playButtons.forEach((button) => button.addEventListener('click', this.restartGame));
+      this.quitButtons.forEach((button) => button.addEventListener('click', () => this.endGame()));
       this.nextButton.addEventListener('click', () => this.updateCurrentAnswer("next"));
       this.backButton.addEventListener('click', () => this.updateCurrentAnswer("back"));
     }
