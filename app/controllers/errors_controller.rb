@@ -1,6 +1,6 @@
 class ErrorsController < ApplicationController
   skip_before_action :authenticate_user!
-  skip_after_action :verify_authorized, only: [ :not_found, :unacceptable, :internal_error ]
+  skip_after_action :verify_authorized
 
   def not_found
     respond_to do |format|

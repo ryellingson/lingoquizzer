@@ -6,10 +6,11 @@ export default class extends Controller {
 
   connect() {
     this.playButton = document.querySelector("#play-button");
-    this.replayButton = document.querySelector(".restart")
+    this.quitButton = document.querySelector("#quit-button");
+    this.replayButton = document.querySelector(".restart");
     this.gameInput = document.querySelector(".game-input");
     this.answers = document.querySelectorAll(".answer");
-    this.answerCount = this.answers.length
+    this.answerCount = this.answers.length;
     this.backButton = document.querySelector(".shift-button-left");
     this.nextButton = document.querySelector(".shift-button-right");
     this.correctCountShow = document.querySelectorAll(".correct-count");
@@ -41,20 +42,14 @@ export default class extends Controller {
 
     this.initializeGame();
     this.konamiCode();
-    console.log(this.correctCountValue, this.answerCount);
-    console.log('connected');
-
   }
 
   disconnect() {
     clearInterval(this.interval);
     window.removeEventListener('keyup', this.konamiListener);
-    console.log('disconnected');
   }
 
   konamiCode() {
-    console.log("!window.listenerAdded", !window.listenerAdded);
-    console.log('added listener');
     this.pressed = [];
     window.addEventListener('keyup', this.konamiListener);
   }
@@ -64,9 +59,7 @@ export default class extends Controller {
     this.pressed.push(e.key);
     this.pressed.splice(-secretCode.length - 1, this.pressed.length - secretCode.length);
     if (this.pressed.join('').includes(secretCode)) {
-      console.log('DING DING!');
       this.correctCountValue = this.answerCount;
-      console.log(this.correctCountValue, this.answerCount);
       this.endGame();
       this.pressed = [];
     }
@@ -75,11 +68,11 @@ export default class extends Controller {
   startGame = () => {
     this.interval = setInterval(this.updateTimer, 1000);
     this.playButton.classList.add("hidden");
+    this.quitButton.classList.remove("hidden");
     this.gameInput.parentNode.classList.remove("hidden");
     this.gameInput.addEventListener('input', this.handleInputChange);
     this.gameInput.focus();
     this.currentAnswer.parentNode.classList.add("active-row");
-    console.log(this.correctCountValue, this.answerCount);
   }
 
   updateTimer = () => {
@@ -147,9 +140,6 @@ export default class extends Controller {
 
   postResults() {
     const postURL = document.querySelector(".game-container").dataset.url;
-    console.log('posting');
-    console.log("cc value", this.correctCountValue);
-    console.log(this.correctCountValue, this.answerCount);
     fetch(postURL, {
       method: "POST",
       body: JSON.stringify({
@@ -164,7 +154,6 @@ export default class extends Controller {
         "X-CSRF-Token": Rails.csrfToken(),
       }
     })
-    console.log('posted');
   }
 
   endGame() {
@@ -180,7 +169,6 @@ export default class extends Controller {
     this.scoreShow.forEach(element => element.innerHTML = `${this.score}pts`);
     this.displayEndGameModal();
     this.postResults();
-    console.log('passed endGame');
   }
 
   displayEndGameModal() {
@@ -207,26 +195,8 @@ export default class extends Controller {
       });
     }
     this.playButton.classList.remove("hidden");
+    this.quitButton.classList.add("hidden");
   }
-
-  // displayEndGameModal() {
-  //   const endGameModal = document.querySelector(".modal-bg");
-  //   const gameStats = document.querySelector(".game-stats-content");
-  //   endGameModal.classList.add("bg-active");
-  //   console.log(this.gameDataObject);
-  //   const perfectPlayDisplay = this.correctCountValue === this.answerCount ?
-  //     `<div class="perfect-play-display"><img src="${this.gameDataObject.perfectPlayUrl}" alt=""/></div>` : ""
-  //   const correctAnswers =
-  //     `<div class="endgame-modal-item">Correct Answers: ${this.correctCountValue}/${this.answerCount}</div>`
-  //   const timeBonus = this.timeLeft > 0 ?
-  //     `<div class="endgame-modal-item">Time Bonus: ${this.timeLeft}pts</div>` : ``
-  //   const scoreDisplay =
-  //     `<div class="endgame-modal-item">Score: ${this.score}pts</div>` //change
-
-  //   const htmlToRender = perfectPlayDisplay + timeBonus + correctAnswers  + scoreDisplay;
-
-  //   gameStats.insertAdjacentHTML("afterbegin", htmlToRender)
-  // }
 
   restartGame = () => {
     if (this.autoplay == "true") {
@@ -240,6 +210,7 @@ export default class extends Controller {
     if (this.playButton) {
       this.replayButton.addEventListener('click', this.restartGame);
       this.playButton.addEventListener('click', this.restartGame);
+      this.quitButton.addEventListener('click', () => this.endGame());
       this.nextButton.addEventListener('click', () => this.updateCurrentAnswer("next"));
       this.backButton.addEventListener('click', () => this.updateCurrentAnswer("back"));
     }

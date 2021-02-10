@@ -3,7 +3,6 @@ import consumer from "./consumer"
 consumer.subscriptions.create("UserChannel", {
   connected() {
     // Called when the subscription is ready for use on the server
-    console.log('connected to users channel');
     // fetch('/notify_badges');
   },
 
@@ -13,7 +12,6 @@ consumer.subscriptions.create("UserChannel", {
 
   received(data) {
     // Called when there's incoming data on the websocket for this channel
-    console.log(data);
     if (data.type === 'badge') {
       Swal.fire({
         title: 'Sweet!',

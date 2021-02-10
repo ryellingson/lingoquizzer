@@ -11,7 +11,7 @@
       <tr class="# text-xl">
         <td>
           <% if @game.icon_based %>
-            <%= image_tag "problem_icons/#{@game.name.downcase.gsub(' ', '_')}/#{problem.question}", class: "mx-auto" %>
+            <%= image_tag "problem_icons/#{@game.name.downcase.gsub(' ', '_')}/#{problem.question}", class: "mx-auto", alt: problem.question.split(".")[0] %>
           <% else %>
             <%= problem.question %>
           <% end %>

@@ -8,7 +8,6 @@ consumer.subscriptions.create("ChatChannel", {
   },
 
   disconnected() {
-    // console.log("signing off");
     // Called when the subscription has been terminated by the server
   },
 

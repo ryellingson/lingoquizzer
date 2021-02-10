@@ -1,8 +1,11 @@
 <div class="game-controls p-3">
   <%#= link_to game_path(@game, autoplay: true) do %>
   <div class="flex justify-center">
-    <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 w-3/4 justify-self-center" id="play-button">
+    <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 w-3/5 justify-self-center" id="play-button">
       <p>Play</p>
+    </div>
+    <div class="btn btn-danger text-3xl font-bold px-8 m-3 w-3/5 justify-self-center hidden" id="quit-button">
+      <p>Quit</p>
     </div>
   </div>
   <%# end %>

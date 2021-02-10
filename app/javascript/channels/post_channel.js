@@ -9,7 +9,6 @@ const initPostCable = () => {
     consumer.subscriptions.create({channel: "PostChannel", id: id}, {
       connected() {
         // Called when the subscription is ready for use on the server
-        console.log('connected to posts', 'id:' + id);
         // fetch('/notify_badges');
       },
 
@@ -19,7 +18,6 @@ const initPostCable = () => {
 
       received(data) {
         // Called when there's incoming data on the websocket for this channel
-        console.log(data)
         if (data.comments && postContainer) {
           const commentsDisplay = document.querySelector(".comments-display");
           commentsDisplay.innerHTML = data.comments;
