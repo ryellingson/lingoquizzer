@@ -1,0 +1,5 @@
+meta_product_name: "LingoQuizzer"
+meta_title: "LingoQuizzer: Have fun mastering your favorite language!"
+meta_description: "Use our continous stream of engaging games to sharpen your language skills. Then apply them in conversations with other users!"
+meta_image: "logo.png" # should exist in `app/assets/images/`
+twitter_account: "@lingoquizzer"   # required for Twitter Cards
