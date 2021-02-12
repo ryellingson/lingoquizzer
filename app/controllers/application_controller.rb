@@ -63,6 +63,10 @@ class ApplicationController < ActionController::Base
     current_user.update_attribute(:last_seen_at, Time.current)
   end
 
+  def default_url_options
+    { host: ENV["DOMAIN"] || "localhost:3000" }
+  end
+
   protected
 
   def configure_permitted_parameters

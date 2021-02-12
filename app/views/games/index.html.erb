@@ -3,7 +3,7 @@
     <%#= tweet_form.select :user_id, @users.map { |user| [user.name, user.id] }, { selected: tweet_form.object.user_id || "", disabled: "", prompt: 'Please select user' }, { class: 'form-control' } %>
     <div class="mobile-classifications sm:hidden" data-controller= "game-filters">
       <div>
-        <%= form_with url: "/games", method: :get, local: true, data: {target: "game-filters.form"} do |f| %>
+        <%= form_with url: "/games", method: :get, local: true, data: { game_filters_target: "form"} do |f| %>
           <%= f.label :language, "Language:", :class => "font-bold" %>
           <%= f.select(:language, Language.all.pluck(:name, :language_code), { selected: params[:language], disabled: true, include_blank: 'All' }, {data: {action: "change->game-filters#submit"}}) %>
           <%= f.label :difficulty, "Difficulty:", :class => "font-bold" %>

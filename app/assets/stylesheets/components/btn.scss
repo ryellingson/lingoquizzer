@@ -7,6 +7,9 @@ $yellow: #f1c40f;
   border-radius: 4px;
   display: block;
   text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn-primary {
@@ -25,7 +28,6 @@ $yellow: #f1c40f;
   &:hover {
     box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
     text-shadow: 1px 1px 4px rgba(0,0,0,1.0);
-    cursor: pointer;
   }
 }
 
@@ -35,18 +37,21 @@ $yellow: #f1c40f;
   border: 1px solid grey;
   opacity: 0.7;
   text-shadow: 0px 1px 0px #7FA269;
-}
-
-.btn-secondary:hover {
-  opacity: 1.0;
-  border: 1px solid black;
-  cursor: pointer;
-  transition: 3s;
+  &:hover {
+    opacity: 1.0;
+    border: 1px solid black;
+    transition: 3s;
+  }
 }
 
 .btn-danger {
   background-color: red;
   color: white;
   text-shadow: 1px 2px 10px rgba(0,0,0,0.6);
+  &:hover {
+    background-color: orange;
+    border: 1px solid black;
+    transition: 1s;
+  }
 }
 

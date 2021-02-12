@@ -2,7 +2,7 @@
   <% @user.badges_to_display.each do |badge| %>
     <div class="badges-card">
       <div class="badges-image">
-        <%= image_tag badge.custom_fields["image_path"], data: {id: badge.id} %>
+        <%= image_tag badge.custom_fields["image_path"], data: {id: badge.id}, alt: "#{badge.name} - #{badge.description}" %>
       </div>
       <div class="badges-description">
         For <%= badge.description %>

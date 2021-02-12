@@ -1,13 +1,13 @@
 <div class="home-main-container">
   <div class="slideshow"
     data-controller="slideshow"
-    data-target="slideshow.settings"
+    data-slideshow-target="settings"
     data-slide-urls="<%= @slide_urls.to_json %>"
     data-fade-duration=2000
     data-slide-duration=8000>
-    <%= image_tag @slide_urls.first, data: {target: "slideshow.bottomImage"} %>
+    <%= image_tag @slide_urls.first, data: { slideshow_target: "bottomImage" }, alt: "home page image"%>
     <!-- not using image_tag helper because it leaves a broken image icon for first image -->
-    <img class="opacity-0 fade-out" data-target="slideshow.topImage">
+    <img class="opacity-0 fade-out" data-slideshow-target="topImage">
   </div>
   <%= render 'home_main' %>
 </div>

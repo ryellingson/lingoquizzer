@@ -21,7 +21,7 @@
   <div class="comment-content">
     <h4><%= comment.content %></h4>
   </div>
-  <div class="hidden" data-target='comments.replyForm'>
+  <div class="hidden" data-comments-target='replyForm'>
     <%= render 'comments/comment_form', post: post, comment: Comment.new, parent_comment: parent_comment %>
   </div>
 </div>

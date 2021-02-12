@@ -8,7 +8,6 @@ export default class extends Controller {
   }
 
   showMenu() {
-    console.log('inside show menu');
     this.navTarget.classList.toggle('show');
   }
 

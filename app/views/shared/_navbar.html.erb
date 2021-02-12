@@ -4,17 +4,17 @@
     <div class="logoss flex items-center">
       <%= link_to root_path do %>
         <div class="logo">
-          <%= image_tag "logo-mobile.png", class: "" %>
+          <%= image_tag "logo-mobile.png", class: "", alt: "LingoQuizzer" %>
         </div>
       <% end %> <!-- link to root -->
       <%= link_to root_path do %>
         <div class="logo-text hidden lg:block">
-          <%= image_tag "logo-text.png", class: "" %>
+          <%= image_tag "logo-text.png", class: "", alt: "LingoQuizzer" %>
         </div>
       <% end %> <!-- link to root -->
       </div>
       <div>
-        <div class="nav__menu" id='nav-menu'  data-target="navbar.nav">
+        <div class="nav__menu" id='nav-menu'  data-navbar-target="nav">
           <ul class="nav__list text-4xl sm:text-base">
             <%= link_to games_path do %>
               <li class="nav__item nav__link mb-12 sm:mb-0">Games</li>
