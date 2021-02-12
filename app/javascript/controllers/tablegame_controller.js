@@ -139,6 +139,7 @@ export default class extends Controller {
   }
 
   postResults() {
+    console.log("posting");
     const postURL = document.querySelector(".game-container").dataset.url;
     fetch(postURL, {
       method: "POST",
@@ -154,6 +155,7 @@ export default class extends Controller {
         "X-CSRF-Token": Rails.csrfToken(),
       }
     })
+    console.log("posted");
   }
 
   endGame() {
