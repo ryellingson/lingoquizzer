@@ -212,7 +212,7 @@ export default class extends Controller {
     if (this.playButtons.length > 0) {
       this.replayButton.addEventListener('click', this.restartGame);
       this.playButtons.forEach((button) => button.addEventListener('click', this.restartGame));
-      this.quitButtons.forEach((button) => button.addEventListener('click', () => this.endGame()));
+      this.quitButtons.forEach((button) => button.addEventListener('click', () => this.timeLeft = 1));
       this.nextButton.addEventListener('click', () => this.updateCurrentAnswer("next"));
       this.backButton.addEventListener('click', () => this.updateCurrentAnswer("back"));
     }
