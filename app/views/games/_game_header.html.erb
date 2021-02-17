@@ -12,7 +12,7 @@
       <h1><%= @game.name %></h1>
     </div>
     <div class="w-40">
-      <%= render "shared/tooltip", description: @description.html_safe %>
+      <%= render "shared/tooltip", description: @description&.html_safe %>
     </div>
   </div>
 </div>
