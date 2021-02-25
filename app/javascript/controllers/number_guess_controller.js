@@ -21,6 +21,7 @@ export default class extends Controller {
   }
 
   checkGuess() {
+    console.log('checking guess')
     let userGuess = Number(guessField.value);
     if (guessCount === 1) {
       guesses.textContent = 'Previous guesses: ';
@@ -49,8 +50,6 @@ export default class extends Controller {
     guessField.value = '';
     guessField.focus();
   }
-
-  guessSubmit.addEventListener('click', checkGuess);
 
   setGameOver() {
     guessField.disabled = true;

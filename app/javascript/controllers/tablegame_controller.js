@@ -5,6 +5,7 @@ export default class extends Controller {
   static targets = []
 
   connect() {
+    console.log("Welcome to tablegame");
     this.playButtons = document.querySelectorAll(".play-button");
     this.quitButtons = document.querySelectorAll(".quit-button");
     this.replayButton = document.querySelector(".restart");
