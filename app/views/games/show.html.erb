@@ -2,13 +2,9 @@
   <%= render "game_header" %>
   <%= render "shared/header_mobile" %>
 
-  <div class="sticky top-50px">
-    <%= render "game_controls" %>
-  </div>
-
-  <div class="game-container mx-auto sm:w-8/12 md:w-7/12 lg:w-5/12"
+  <div class="game-container mx-auto w-full md:w-8/12 lg:w-5/12 p-3"
     id="game-data"
-    data-controller="tablegame"
+    data-controller="<%= @game.genre.gsub("_", "-") %>"
     data-category="<%= @game.category %>"
     data-score="<%= @game.score %>"
     data-play-time="<%= @game.play_time %>"

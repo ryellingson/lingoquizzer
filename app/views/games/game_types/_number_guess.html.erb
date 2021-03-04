@@ -1,16 +1,26 @@
-<div data-controller="number_guess">
+<div data-numbers="<%= @numbers.to_json %>" data-number-guess-target="numbers">
   <h1>Number guessing game</h1>
 
   <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
 
   <div class="form">
-    <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-    <input type="submit" value="Submit guess" class="guessSubmit" data-action="click->number_guess#checkGuess">
+    <label for="guessField">Enter a guess: </label>
+    <input
+      id="guessField"
+      type="text"
+      data-number-guess-target="guessField"
+    >
+    <input
+      type="submit"
+      value="Submit guess"
+      data-action="click->number-guess#checkGuess"
+      data-number-guess-target="guessSubmit"
+    >
   </div>
 
   <div class="resultParas">
-    <p class="guesses"></p>
-    <p class="lastResult"></p>
-    <p class="lowOrHi"></p>
+    <p data-number-guess-target="guesses"></p>
+    <p data-number-guess-target="lastResult"></p>
+    <p data-number-guess-target="lowOrHi"></p>
   </div>
 </div>
