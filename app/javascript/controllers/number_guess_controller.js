@@ -7,6 +7,9 @@ export default class extends Controller {
     console.log("Welcome to number guess!");
     this.numbers = JSON.parse(this.numbersTarget.dataset.numbers);
     console.log(this.numbers);
+
+
+
     this.randomNumber = Math.floor(Math.random() * 100) + 1;
     // parse to int
 
@@ -26,10 +29,10 @@ export default class extends Controller {
       this.lastResultTarget.textContent = 'Congratulations! You got it right!';
       this.lastResultTarget.style.backgroundColor = 'green';
       this.lowOrHiTarget.textContent = '';
-      setGameOver();
+      this.setGameOver();
     } else if (this.guessCount === 10) {
       this.lastResultTarget.textContent = '!!!GAME OVER!!!';
-      setGameOver();
+      this.setGameOver();
     } else {
       this.lastResultTarget.textContent = 'Wrong!';
       this.lastResultTarget.style.backgroundColor = 'red';
@@ -51,7 +54,7 @@ export default class extends Controller {
     this.resetButton = document.createElement('button');
     this.resetButton.textContent = 'Start new game';
     document.body.appendChild(this.resetButton);
-    this.resetButton.addEventListener('click', resetGame);
+    this.resetButton.addEventListener('click', this.resetGame);
   }
 
   resetGame() {
