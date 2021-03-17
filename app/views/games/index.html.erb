@@ -67,9 +67,9 @@
               <h3>All</h3>
             </div>
           <% end %>
-          <%= link_to category: params[:category] != "typing" ? "typing" : nil, language: params[:language], difficulty: params[:difficulty] do %>
-          <div class="game-type-select-content-item <%= "active" if params[:category] == "typing" %>">
-            <h3>Typing</h3>
+          <%= link_to category: params[:category] != "reading" ? "reading" : nil, language: params[:language], difficulty: params[:difficulty] do %>
+          <div class="game-type-select-content-item <%= "active" if params[:category] == "reading" %>">
+            <h3>Reading</h3>
           </div>
           <% end %>
           <%= link_to category: params[:category] != "vocabulary" ? "vocabulary" : nil, language: params[:language], difficulty: params[:difficulty] do %>

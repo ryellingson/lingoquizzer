@@ -1,83 +1,127 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = []
+  static targets = ["guessSubmit", "guessField", "guesses", "lastResult", "lowOrHi", "numbers", "startButton", "quitButton"]
 
   connect() {
     console.log("Welcome to number guess!");
+    this.numbers = JSON.parse(this.numbersTarget.dataset.numbers);
+    console.log(this.numbers);
 
-    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    this.randomNumber = Math.floor(Math.random() * 100) + 1;
+    // parse to int
 
-    const guesses = document.querySelector('.guesses');
-    const lastResult = document.querySelector('.lastResult');
-    const lowOrHi = document.querySelector('.lowOrHi');
+    this.guessCount = 1;
+    this.guessFieldTarget.focus();
 
-    const guessSubmit = document.querySelector('.guessSubmit');
-    const guessField = document.querySelector('.guessField');
-
-    let guessCount = 1;
-    let resetButton;
-    guessField.focus();
+    this.startButtonTarget.classList.remove('hidden');
+    this.guessFieldTarget.disabled = true;
+    this.guessSubmitTarget.disabled = true;
+    this.guessSubmitTarget.classList.add("btn-disabled");
   }
 
-  checkGuess() {
-    let userGuess = Number(guessField.value);
-    if (guessCount === 1) {
-      guesses.textContent = 'Previous guesses: ';
-    }
-    guesses.textContent += userGuess + ' ';
+  startGame() {
+    this.startButtonTarget.classList.add('hidden');
+    this.quitButtonTarget.classList.remove('hidden');
 
-    if (userGuess === randomNumber) {
-      lastResult.textContent = 'Congratulations! You got it right!';
-      lastResult.style.backgroundColor = 'green';
-      lowOrHi.textContent = '';
-      setGameOver();
-    } else if (guessCount === 10) {
-      lastResult.textContent = '!!!GAME OVER!!!';
-      setGameOver();
-    } else {
-      lastResult.textContent = 'Wrong!';
-      lastResult.style.backgroundColor = 'red';
-      if(userGuess < randomNumber) {
-        lowOrHi.textContent = 'Last guess was too low!';
-      } else if(userGuess > randomNumber) {
-        lowOrHi.textContent = 'Last guess was too high!';
-      }
-    }
-
-    guessCount++;
-    guessField.value = '';
-    guessField.focus();
-  }
-
-  guessSubmit.addEventListener('click', checkGuess);
-
-  setGameOver() {
-    guessField.disabled = true;
-    guessSubmit.disabled = true;
-    resetButton = document.createElement('button');
-    resetButton.textContent = 'Start new game';
-    document.body.appendChild(resetButton);
-    resetButton.addEventListener('click', resetGame);
-  }
-
-  resetGame() {
-    guessCount = 1;
+    this.guessCount = 1;
 
     const resetParas = document.querySelectorAll('.resultParas p');
     for (let i = 0 ; i < resetParas.length ; i++) {
       resetParas[i].textContent = '';
     }
 
-    resetButton.parentNode.removeChild(resetButton);
+    this.interval = setInterval(this.updateTimer, 1000);
 
-    guessField.disabled = false;
-    guessSubmit.disabled = false;
-    guessField.value = '';
-    guessField.focus();
+    this.guessSubmitTarget.classList.remove("btn-disabled");
+    this.guessFieldTarget.disabled = false;
+    this.guessSubmitTarget.disabled = false;
+    this.guessFieldTarget.value = '';
+    this.guessFieldTarget.focus();
 
-    lastResult.style.backgroundColor = 'white';
+    this.lastResultTarget.style.backgroundColor = 'white';
 
-    randomNumber = Math.floor(Math.random() * 100) + 1;
+    this.randomNumber = Math.floor(Math.random() * 100) + 1;
+  }
+
+  updateTimer = () => {
+    this.timeLeft -= 1;
+    const sec = this.timeLeft % 60;
+    this.timeShow.innerHTML = `${Math.floor(this.timeLeft / 60)}:${sec < 10 ? "0" + sec : sec}`;
+    if (this.timeLeft == 0) { this.endGame() };
+  }
+
+  checkGuess() {
+    console.log('checking guess')
+    let userGuess = Number(this.guessFieldTarget.value);
+    if (this.guessCount === 1) {
+      this.guessesTarget.textContent = 'Previous guesses: ';
+    }
+    this.guessesTarget.textContent += userGuess + ' ';
+
+    if (userGuess === this.randomNumber) {
+      this.lastResultTarget.textContent = 'Congratulations! You got it right!';
+      this.lastResultTarget.style.backgroundColor = 'green';
+      this.lowOrHiTarget.textContent = '';
+      this.endGame();
+    } else if (this.guessCount === 10) {
+      this.lastResultTarget.textContent = '!!!GAME OVER!!!';
+      this.endGame();
+    } else {
+      this.lastResultTarget.textContent = 'Wrong!';
+      this.lastResultTarget.style.backgroundColor = 'red';
+      if(userGuess < this.randomNumber) {
+        this.lowOrHiTarget.textContent = 'Last guess was too low!';
+      } else if(userGuess > this.randomNumber) {
+        this.lowOrHiTarget.textContent = 'Last guess was too high!';
+      }
+    }
+
+    this.guessCount++;
+    this.guessFieldTarget.value = '';
+    this.guessFieldTarget.focus();
+  }
+
+  endGame() {
+    clearInterval(this.interval);
+    // this.displayEndGameModal();
+    // this.postResults();
+    this.guessFieldTarget.disabled = true;
+    this.guessSubmitTarget.disabled = true;
+
+    this.startButtonTarget.classList.remove('hidden');
+    this.quitButtonTarget.classList.add('hidden');
+    this.guessSubmitTarget.classList.add("btn-disabled");
+  }
+
+
+  postResults() {
+
+  }
+
+  displayEndGameModal() {
+    if (this.correctCountValue === this.answerCount) {
+      Swal.fire({
+        imageUrl: `${this.gameDataObject.perfectPlayUrl}`,
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Perfect Play',
+        title: '<u>Perfect Play!</u>',
+        html:
+          `<div>Correct Answer: ${this.randomNumber}</div><br>` +
+          `<div>Score: ${this.score}pts</div>`
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: '<u>Nice Play!</u>',
+        html:
+          `<div>Time Bonus: ${this.timeLeft}pts</div><br>` +
+          `<div>Correct Answers: ${this.correctCountValue}/${this.answerCount}</div><br>` +
+          `<div>Score: ${this.score}pts</div>`
+      });
+    }
+    this.playButtons.forEach((button) => button.classList.remove("hidden"));
+    this.quitButtons.forEach((button) => button.classList.add("hidden"));
   }
 }

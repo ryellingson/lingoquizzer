@@ -24,10 +24,25 @@ class GamesController < ApplicationController
     authorize @game
     # Initializes a Markdown parser
     @description = @game.markdown_content
-    if @game.icon_based
-      @problems = @game.problems.sample(30)
-    else
-      @problems = @game.problems.shuffle
-    end
+
+    send "init_#{@game.genre}"
+
+    # the above is an alternative to the case
+
+    # case @game.genre
+    # when "table_game" then init_table_game
+    # when "number_guess" then init_number_guess
+    # end
+  end
+
+  private
+
+  def init_table_game
+    @problems = @game.icon_based ? @game.problems.sample(30) : @game.problems.shuffle
+  end
+
+  def init_number_guess
+    json_file_path = Rails.root + "db/data/#{@game.language.name}/#{@game.slug}.json"
+    @numbers = JSON.parse(File.read(json_file_path))
   end
 end

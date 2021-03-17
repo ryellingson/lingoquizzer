@@ -1,10 +1,10 @@
 <div class="game-header hidden sm:flex justify-center items-center sm:h-24">
   <div class="game-header-hub">
     <div class="flex justify-center">
-      <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 justify-self-center play-button" data-action="tablegame#restartGame">
+      <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 justify-self-center play-button" data-action="table-game#restartGame">
         <p>Play</p>
       </div>
-      <div class="btn btn-danger text-3xl font-bold px-8 m-3 justify-self-center hidden quit-button" data-action="tablegame#endGame">
+      <div class="btn btn-danger text-3xl font-bold px-8 m-3 justify-self-center hidden quit-button" data-action="table-game#endGame">
         <p>Quit</p>
       </div>
     </div>
@@ -12,7 +12,7 @@
       <h1><%= @game.name %></h1>
     </div>
     <div class="w-40">
-      <%= render "shared/tooltip", description: @description.html_safe %>
+      <%= render "shared/tooltip", description: @description&.html_safe %>
     </div>
   </div>
 </div>

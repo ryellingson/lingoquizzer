@@ -1,6 +1,10 @@
+<div class="sticky top-50px">
+  <%= render "game_controls" %>
+</div>
+
 <div class="table-wrapper">
   <div class="content-table" id="gameTable">
-    <%= render partial: "table_game_col",
+    <%= render partial: "games/game_types/table_game_col",
       locals: {
         problems: @problems,
         question_header: @game.question_header,

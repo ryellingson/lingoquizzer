@@ -1,0 +1,52 @@
+{
+  "1": {
+    "kanji":"一",
+    "kana":"いち",
+    "romaji":"ichi"
+  },
+  "2": {
+    "kanji":"二",
+    "kana":"に",
+    "romaji":"ni"
+  },
+  "3": {
+    "kanji":"三",
+    "kana":"さん",
+    "romaji":"san"
+  },
+  "4": {
+    "kanji":"四",
+    "kana":"し",
+    "romaji":"shi"
+  },
+  "5": {
+    "kanji":"五",
+    "kana":"ご",
+    "romaji":"go"
+  },
+  "6": {
+    "kanji":"六",
+    "kana":"ろく",
+    "romaji":"roku"
+  },
+  "7": {
+    "kanji":"七",
+    "kana":"しち",
+    "romaji":"shichi"
+  },
+  "8": {
+    "kanji":"八",
+    "kana":"はち",
+    "romaji":"hachi"
+  },
+  "9": {
+    "kanji":"九",
+    "kana":"きゅう",
+    "romaji":"kyuu"
+  },
+  "10": {
+    "kanji":"十",
+    "kana":"じゅう",
+    "romaji":"jyuu"
+  }
+}
