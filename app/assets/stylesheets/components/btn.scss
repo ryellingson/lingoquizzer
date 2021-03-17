@@ -55,3 +55,9 @@ $yellow: #f1c40f;
   }
 }
 
+.btn-disabled {
+  background-color: grey;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
