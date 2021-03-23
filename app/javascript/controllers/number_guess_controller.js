@@ -1,36 +1,50 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = ["guessSubmit", "guessField", "guesses", "lastResult", "lowOrHi", "numbers", "startButton", "quitButton"]
+  static targets = [
+    "guessSubmit",
+    "guessField",
+    "guesses",
+    "lastResult",
+    "lowOrHi",
+    "numbers",
+    "startButton",
+    "quitButton",
+    "timeShow"
+  ]
 
   connect() {
     console.log("Welcome to number guess!");
     this.numbers = JSON.parse(this.numbersTarget.dataset.numbers);
-    console.log(this.numbers);
+    console.log(this.numbers)
 
-    this.randomNumber = Math.floor(Math.random() * 100) + 1;
+    this.max = Math.max(...Object.keys(this.numbers).map((e) => parseInt(e)));
+
+    this.randomNumber = Math.floor(Math.random() * this.max);
+    console.log(this.randomNumber);
     // parse to int
 
-    this.guessCount = 1;
     this.guessFieldTarget.focus();
 
     this.startButtonTarget.classList.remove('hidden');
     this.guessFieldTarget.disabled = true;
     this.guessSubmitTarget.disabled = true;
     this.guessSubmitTarget.classList.add("btn-disabled");
+    console.log(this.timeShowTarget)
   }
 
   startGame() {
     this.startButtonTarget.classList.add('hidden');
     this.quitButtonTarget.classList.remove('hidden');
 
-    this.guessCount = 1;
+    this.guessCount = 0;
 
     const resetParas = document.querySelectorAll('.resultParas p');
     for (let i = 0 ; i < resetParas.length ; i++) {
       resetParas[i].textContent = '';
     }
 
+    this.timeLeft = this.element.dataset.playTime;
     this.interval = setInterval(this.updateTimer, 1000);
 
     this.guessSubmitTarget.classList.remove("btn-disabled");
@@ -45,9 +59,10 @@ export default class extends Controller {
   }
 
   updateTimer = () => {
+    console.log(this, "timer")
     this.timeLeft -= 1;
     const sec = this.timeLeft % 60;
-    this.timeShow.innerHTML = `${Math.floor(this.timeLeft / 60)}:${sec < 10 ? "0" + sec : sec}`;
+    this.timeShowTarget.innerHTML = `${Math.floor(this.timeLeft / 60)}:${sec < 10 ? "0" + sec : sec}`;
     if (this.timeLeft == 0) { this.endGame() };
   }
 
@@ -84,8 +99,10 @@ export default class extends Controller {
 
   endGame() {
     clearInterval(this.interval);
+
     // this.displayEndGameModal();
     // this.postResults();
+
     this.guessFieldTarget.disabled = true;
     this.guessSubmitTarget.disabled = true;
 
