@@ -12,6 +12,9 @@ class GamesController < ApplicationController
     if params[:category].present?
       @games = @games.where(category: params[:category])
     end
+    if params[:genre].present?
+      @games = @games.where(genre: params[:genre])
+    end
   end
 
   def show

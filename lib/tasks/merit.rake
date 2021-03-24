@@ -1,4 +1,5 @@
 namespace :merit do
+  desc "removes all badges from every user"
   task :delete_user_badges do |task, args|
     puts "delete user badges"
     User.all.each do |user|

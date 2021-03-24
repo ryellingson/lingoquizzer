@@ -18,11 +18,10 @@ export default class extends Controller {
     this.numbers = JSON.parse(this.numbersTarget.dataset.numbers);
     console.log("data", this.numbers)
 
-    this.max = Math.max(...Object.keys(this.numbers).map((e) => parseInt(e)));
+    this.reverseNumbers = this.reverseNumbersDict(this.numbers);
+    console.log("reverse", this.reverseNumbers);
 
-    this.randomNumber = Math.floor(Math.random() * this.max);
-    console.log("rand =" ,this.randomNumber);
-    // parse to int
+    this.max = Math.max(...Object.keys(this.numbers).map((e) => parseInt(e)));
 
     this.guessFieldTarget.focus();
 
@@ -30,6 +29,22 @@ export default class extends Controller {
     this.guessFieldTarget.disabled = true;
     this.guessSubmitTarget.disabled = true;
     this.guessSubmitTarget.classList.add("btn-disabled");
+  }
+
+  reverseNumbersDict(dict) {
+    let revdict = {};
+    Object.keys(dict).forEach((numkey) => {
+      // ["1", "2", "3", ...]
+      Object.values(dict[numkey]).forEach((answer) => {
+        // ["ichi", "いち", "一"], ...
+        // if (answer == array) then iterate over array to assign the keys
+        // else line 42
+        revdict[answer] = parseInt(numkey);
+      });
+    });
+    return revdict;
+    // {"ichi": 1, "いち": 1, "一": 1, "ni": 2, "san": 3, ...}
+    // dict[key] = value
   }
 
   startGame() {
@@ -54,20 +69,26 @@ export default class extends Controller {
 
     this.lastResultTarget.style.backgroundColor = 'white';
 
-    this.randomNumber = Math.floor(Math.random() * 100) + 1;
+    this.randomNumber = Math.floor(Math.random() * this.max);
+    console.log("rand =" ,this.randomNumber);
   }
 
   updateTimer = () => {
-    console.log(this, "timer")
     this.timeLeft -= 1;
     const sec = this.timeLeft % 60;
     this.timeShowTarget.innerHTML = `${Math.floor(this.timeLeft / 60)}:${sec < 10 ? "0" + sec : sec}`;
     if (this.timeLeft == 0) { this.endGame() };
   }
 
+  convertInputToInteger(input) {
+
+  }
+
   checkGuess() {
-    console.log('checking guess')
-    let userGuess = Number(this.guessFieldTarget.value);
+    this.guessCount++;
+    let userInput = this.guessFieldTarget.value;
+    let userGuess = convertInputToInteger(userInput);
+
     if (this.guessCount === 1) {
       this.guessesTarget.textContent = 'Previous guesses: ';
     }
@@ -91,12 +112,12 @@ export default class extends Controller {
       }
     }
 
-    this.guessCount++;
     this.guessFieldTarget.value = '';
     this.guessFieldTarget.focus();
   }
 
   endGame() {
+    console.log('guess count', this.guessCount)
     clearInterval(this.interval);
 
     // this.displayEndGameModal();

@@ -9,8 +9,8 @@
             <div class="game-card-media">
               <div class="game-card-icon">
                 <div class="level-icon type-<%= game.language.name %>">
-                 <% if game.problems.any? %>
-                  <% problem = game.problems.order("RANDOM()").first %>
+                  <% if game.genre == "table_game" %>
+                    <% problem = game.problems.order("RANDOM()").first %>
                     <% if game.icon_based %>
                       <%= image_tag "problem_icons/#{game.name.downcase.gsub(' ', '_')}/#{problem.question}" %>
                     <% else %>
@@ -18,6 +18,10 @@
                         <%= problem.question %>
                       </div>
                     <% end %> <!-- icon selection -->
+                  <% elsif game.genre == "number_guess" %>
+                    <div class="text-icon">
+                      <%= rand(1...100) %>
+                    </div>
                   <% end %>
                 </div>
               </div>
