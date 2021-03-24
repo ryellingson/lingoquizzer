@@ -16,12 +16,12 @@ export default class extends Controller {
   connect() {
     console.log("Welcome to number guess!");
     this.numbers = JSON.parse(this.numbersTarget.dataset.numbers);
-    console.log(this.numbers)
+    console.log("data", this.numbers)
 
     this.max = Math.max(...Object.keys(this.numbers).map((e) => parseInt(e)));
 
     this.randomNumber = Math.floor(Math.random() * this.max);
-    console.log(this.randomNumber);
+    console.log("rand =" ,this.randomNumber);
     // parse to int
 
     this.guessFieldTarget.focus();
@@ -30,7 +30,6 @@ export default class extends Controller {
     this.guessFieldTarget.disabled = true;
     this.guessSubmitTarget.disabled = true;
     this.guessSubmitTarget.classList.add("btn-disabled");
-    console.log(this.timeShowTarget)
   }
 
   startGame() {
