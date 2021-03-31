@@ -30,11 +30,11 @@ class User < ApplicationRecord
   end
 
   def display_plays
-    self.plays.order(created_at: :desc).first(50)
+    self.plays.order(created_at: :desc).limit(50)
   end
 
   def best_plays
-    self.plays.order(score: :desc).first(25)
+    self.plays.order(score: :desc).limit(25)
   end
 
   def best_score(game)

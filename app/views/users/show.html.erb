@@ -1,18 +1,28 @@
 <div class="profile-main-container">
   <div class="profile-wrapper">
     <section class="animated-grid">
+
       <div class="grid-card">
         <p class='plays-card-header'>Recent Plays</p>
-        <%= render "recent_plays" %>
+        <div class="profile-cards">
+          <% @user.display_plays.each do |play| %>
+            <%= render "plays/play", play: play %>
+          <% end %>
+        </div>
       </div>
+
       <div class="grid-card">
         <p class='plays-card-header'>Posts</p>
         <%= render "profile_posts" %>
       </div>
+
       <div class="grid-card">
           <p class='plays-card-header'>Best Plays</p>
-          <%= render "best_plays" %>
+          <div class="profile-cards">
+            <%= render @user.best_plays %>
+          </div>
       </div>
+
       <div class="grid-card">
         <p class='plays-card-header'>Badges</p>
         <%= render "profile_badges" %>

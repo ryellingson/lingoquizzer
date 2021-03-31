@@ -15,6 +15,9 @@ export default class extends Controller {
 
   connect() {
     console.log("Welcome to number guess!");
+
+    this.winningScore = this.element.dataset.score;
+    this.postURL = this.element.dataset.url;
     this.numbers = JSON.parse(this.numbersTarget.dataset.numbers);
     console.log("data", this.numbers)
 
@@ -41,11 +44,9 @@ export default class extends Controller {
         if (Array.isArray(answer)) {
           answer.forEach((element) => {
             revdict[element] = parseInt(numkey);
-            console.log("revdict[element]", revdict[element]);
           });
         } else {
             revdict[answer] = parseInt(numkey);
-            console.log("revdict[answer]", revdict[answer]);
         }
       });
     });
@@ -59,13 +60,15 @@ export default class extends Controller {
     this.quitButtonTarget.classList.remove('hidden');
 
     this.guessCount = 0;
+    this.score = 0;
 
     const resetParas = document.querySelectorAll('.resultParas p');
     for (let i = 0 ; i < resetParas.length ; i++) {
       resetParas[i].textContent = '';
     }
 
-    this.timeLeft = this.element.dataset.playTime;
+    this.initialTime = this.element.dataset.playTime;
+    this.timeLeft = this.initialTime;
     this.interval = setInterval(this.updateTimer, 1000);
 
     this.guessSubmitTarget.classList.remove("btn-disabled");
@@ -87,27 +90,41 @@ export default class extends Controller {
     if (this.timeLeft == 0) { this.endGame() };
   }
 
-  convertInputToInteger(input) {
-
+  checkOnEnter(event) {
+    if (event.keyCode== 13) this.checkGuess();
   }
 
   checkGuess() {
-    this.guessCount++;
+    console.log("event", event);
+    this.lastResultTarget.textContent = "";
     let userInput = this.guessFieldTarget.value;
-    let userGuess = convertInputToInteger(userInput);
+    let userGuess = this.reverseNumbers[userInput];
+    console.log("userGuess", userGuess);
+
+    this.guessFieldTarget.value = '';
+    this.guessFieldTarget.focus();
+
+    if (!userGuess) {
+      this.lastResultTarget.textContent = "Not a valid input!";
+      return;
+    }
+
+    this.guessCount++;
 
     if (this.guessCount === 1) {
       this.guessesTarget.textContent = 'Previous guesses: ';
     }
-    this.guessesTarget.textContent += userGuess + ' ';
+    this.guessesTarget.textContent += `${userGuess} `;
 
     if (userGuess === this.randomNumber) {
       this.lastResultTarget.textContent = 'Congratulations! You got it right!';
       this.lastResultTarget.style.backgroundColor = 'green';
       this.lowOrHiTarget.textContent = '';
+      this.score = this.winningScore;
       this.endGame();
     } else if (this.guessCount === 10) {
       this.lastResultTarget.textContent = '!!!GAME OVER!!!';
+      this.score = 0;
       this.endGame();
     } else {
       this.lastResultTarget.textContent = 'Wrong!';
@@ -118,9 +135,6 @@ export default class extends Controller {
         this.lowOrHiTarget.textContent = 'Last guess was too high!';
       }
     }
-
-    this.guessFieldTarget.value = '';
-    this.guessFieldTarget.focus();
   }
 
   endGame() {
@@ -128,7 +142,7 @@ export default class extends Controller {
     clearInterval(this.interval);
 
     // this.displayEndGameModal();
-    // this.postResults();
+    this.postResults();
 
     this.guessFieldTarget.disabled = true;
     this.guessSubmitTarget.disabled = true;
@@ -140,7 +154,22 @@ export default class extends Controller {
 
 
   postResults() {
-
+    console.log("posting");
+    fetch(this.postURL, {
+      method: "POST",
+      body: JSON.stringify({
+        play: {
+          score: this.score,
+          time: (this.initialTime - this.timeLeft),
+          count: this.guessCount
+        }
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": Rails.csrfToken(),
+      }
+    })
+    console.log("posted");
   }
 
   displayEndGameModal() {
