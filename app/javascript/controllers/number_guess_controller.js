@@ -38,8 +38,15 @@ export default class extends Controller {
       Object.values(dict[numkey]).forEach((answer) => {
         // ["ichi", "いち", "一"], ...
         // if (answer == array) then iterate over array to assign the keys
-        // else line 42
-        revdict[answer] = parseInt(numkey);
+        if (Array.isArray(answer)) {
+          answer.forEach((element) => {
+            revdict[element] = parseInt(numkey);
+            console.log("revdict[element]", revdict[element]);
+          });
+        } else {
+            revdict[answer] = parseInt(numkey);
+            console.log("revdict[answer]", revdict[answer]);
+        }
       });
     });
     return revdict;
