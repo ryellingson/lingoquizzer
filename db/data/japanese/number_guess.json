@@ -41,8 +41,8 @@
   },
   "9": {
     "kanji":"九",
-    "kana":"きゅう",
-    "romaji":"kyuu"
+    "kana":["きゅう", "く"],
+    "romaji":["kyuu", "ku"]
   },
   "10": {
     "kanji":"十",

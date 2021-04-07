@@ -26,10 +26,6 @@ export default class extends Controller {
 
     this.max = Math.max(...Object.keys(this.numbers).map((e) => parseInt(e)));
 
-    let userInput = this.guessFieldTarget.value;
-    let userGuess = this.reverseNumbers[userInput];
-    console.log("userGuess", userGuess);
-
     this.guessFieldTarget.focus();
 
     this.startButtonTarget.classList.remove('hidden');
@@ -102,10 +98,15 @@ export default class extends Controller {
     console.log("event", event);
     this.lastResultTarget.textContent = "";
 
+    this.userInput = this.guessFieldTarget.value;
+    this.userGuess = this.reverseNumbers[this.userInput];
+
+    console.log("this.userGuess", this.userGuess);
+
     this.guessFieldTarget.value = '';
     this.guessFieldTarget.focus();
 
-    if (!userGuess) {
+    if (!this.userGuess) {
       this.lastResultTarget.textContent = "Not a valid input!";
       return;
     }
@@ -115,34 +116,34 @@ export default class extends Controller {
     if (this.guessCount === 1) {
       this.guessesTarget.textContent = 'Previous guesses: ';
     }
-    this.guessesTarget.textContent += `${userGuess} `;
+    this.guessesTarget.textContent += `${this.userGuess} `;
 
-    if (userGuess === this.randomNumber) {
+    if (this.userGuess === this.randomNumber) {
       // this.lastResultTarget.textContent = 'Congratulations! You got it right!';
       // this.lastResultTarget.style.backgroundColor = 'green';
       this.lowOrHiTarget.textContent = '';
       this.score = this.winningScore;
-      this.endGame();
+      this.endGame(true);
     } else if (this.guessCount === 10) {
-      this.lastResultTarget.textContent = '!!!GAME OVER!!!';
+      // this.lastResultTarget.textContent = '!!!GAME OVER!!!';
       this.score = 0;
-      this.endGame();
+      this.endGame(false);
     } else {
       this.lastResultTarget.textContent = 'Wrong!';
       this.lastResultTarget.style.backgroundColor = 'red';
-      if(userGuess < this.randomNumber) {
+      if(this.userGuess < this.randomNumber) {
         this.lowOrHiTarget.textContent = 'Last guess was too low!';
-      } else if(userGuess > this.randomNumber) {
+      } else if(this.userGuess > this.randomNumber) {
         this.lowOrHiTarget.textContent = 'Last guess was too high!';
       }
     }
   }
 
-  endGame() {
+  endGame(win) {
     console.log('guess count', this.guessCount)
     clearInterval(this.interval);
 
-    this.displayEndGameModal();
+    this.displayEndGameModal(win);
     this.postResults();
 
     this.guessFieldTarget.disabled = true;
@@ -173,29 +174,35 @@ export default class extends Controller {
     console.log("posted");
   }
 
-  displayEndGameModal() {
-    if (userGuess === this.randomNumber) {
-      Swal.fire({
-        imageUrl: `${this.gameDataObject.perfectPlayUrl}`,
-        imageWidth: 200,
-        imageHeight: 200,
-        imageAlt: 'Perfect Play',
-        title: '<u>Perfect Play!</u>',
-        // icon: 'success',
+  displayEndGameModal(win) {
+    if (win) {
+      let alertContent = {
+        icon: 'success',
         html:
           `<div>You got it right!<div>` +
           `<div>Correct Answer: ${this.randomNumber}</div><br>` +
           `<div>Score: ${this.score}pts</div>`
-      });
+      }
+      // const firstWin = ;
+      // if (firstWin) {
+      //   Object.assign(alertContent, {
+      //     imageUrl: `${this.gameDataObject.perfectPlayUrl}`,
+      //     imageWidth: 200,
+      //     imageHeight: 200,
+      //     imageAlt: 'Badge',
+      //     title: '<u>Perfect Play!</u>'
+      //   })
+      // }
+      Swal.fire(alertContent);
     } else {
       Swal.fire({
         icon: 'error',
-        title: '<u>Game Over!!!</u>',
+        title: '<u>Game Over!</u>',
         html:
           `<div>Try again, you're so close!</div>`
       });
     }
-    this.playButtons.forEach((button) => button.classList.remove("hidden"));
-    this.quitButtons.forEach((button) => button.classList.add("hidden"));
+    // this.playButtons.forEach((button) => button.classList.remove("hidden"));
+    // this.quitButtons.forEach((button) => button.classList.add("hidden"));
   }
 }

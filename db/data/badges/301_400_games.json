@@ -4,7 +4,7 @@
     "name":"irwin",
     "description":"an english animals perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/animals.irwin.svg",
+      "image_path":"badges/games/en/animals.irwin.svg",
       "game_slug":"animals",
       "language_code":"en"
     }
@@ -14,7 +14,7 @@
     "name":"picket_fence",
     "description":"an english around the house perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/around_the_house.picket_fence.svg",
+      "image_path":"badges/games/en/around_the_house.picket_fence.svg",
       "game_slug":"around_the_house",
       "language_code":"en"
     }
@@ -24,7 +24,7 @@
     "name":"sun_never_sets",
     "description":"an english countries perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/countries.sun_never_sets.svg",
+      "image_path":"badges/games/en/countries.sun_never_sets.svg",
       "game_slug":"countries",
       "language_code":"en"
     }
@@ -34,7 +34,7 @@
     "name":"empath",
     "description":"an english emotions and feelings perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/emotions_and_feelings.empath.svg",
+      "image_path":"badges/games/en/emotions_and_feelings.empath.svg",
       "game_slug":"emotions_and_feelings",
       "language_code":"en"
     }
@@ -44,7 +44,7 @@
     "name":"freedom_fries",
     "description":"an english food perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/food.freedom_fries.svg",
+      "image_path":"badges/games/en/food.freedom_fries.svg",
       "game_slug":"food",
       "language_code":"en"
     }
@@ -54,7 +54,7 @@
     "name":"yosemite",
     "description":"an english nature and weather perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/nature_and_weather.yosemite.svg",
+      "image_path":"badges/games/en/nature_and_weather.yosemite.svg",
       "game_slug":"nature_and_weather",
       "language_code":"en"
     }
@@ -64,7 +64,7 @@
     "name":"public_servant",
     "description":"an english animals perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/people_and_places.public_servant.svg",
+      "image_path":"badges/games/en/people_and_places.public_servant.svg",
       "game_slug":"people_and_jobs",
       "language_code":"en"
     }
@@ -74,7 +74,7 @@
     "name":"superbowl",
     "description":"an english sports and activities perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/sports_and_activities.superbowl.svg",
+      "image_path":"badges/games/en/sports_and_activities.superbowl.svg",
       "game_slug":"sports_and_activities",
       "language_code":"en"
     }
@@ -84,7 +84,7 @@
     "name":"stark",
     "description":"an english tech and tools perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/tech_and_tools.stark.svg",
+      "image_path":"badges/games/en/tech_and_tools.stark.svg",
       "game_slug":"tech_and_tools",
       "language_code":"en"
     }
@@ -94,7 +94,7 @@
     "name":"mr_worldwide",
     "description":"an english travel and places perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/en/travel_and_places.mr_worldwide.svg",
+      "image_path":"badges/games/en/travel_and_places.mr_worldwide.svg",
       "game_slug":"travel_and_places",
       "language_code":"en"
     }
@@ -104,7 +104,7 @@
     "name":"alpaca",
     "description":"a spanish animals perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/animals.alpaca.svg",
+      "image_path":"badges/games/es/animals.alpaca.svg",
       "game_slug":"animals",
       "language_code":"es"
     }
@@ -114,7 +114,7 @@
     "name":"mi_casa_tu_casa",
     "description":"a spanish around the house perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/around-the_house.mi_casa_tu_casa.svg",
+      "image_path":"badges/games/es/around-the_house.mi_casa_tu_casa.svg",
       "game_slug":"around_the_house",
       "language_code":"es"
     }
@@ -124,7 +124,7 @@
     "name":"cortes",
     "description":"a spanish countries perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/countries.cortes.svg",
+      "image_path":"badges/games/es/countries.cortes.svg",
       "game_slug":"countries",
       "language_code":"es"
     }
@@ -134,7 +134,7 @@
     "name":"despacito",
     "description":"a spanish emotions and feelings perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/emotions_and_feelings.despacito.svg",
+      "image_path":"badges/games/es/emotions_and_feelings.despacito.svg",
       "game_slug":"emotions_and_feelings",
       "language_code":"es"
     }
@@ -144,7 +144,7 @@
     "name":"parrilla",
     "description":"a spanish food perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/food.parrilla.svg",
+      "image_path":"badges/games/es/food.parrilla.svg",
       "game_slug":"food",
       "language_code":"es"
     }
@@ -154,7 +154,7 @@
     "name":"titicaca",
     "description":"a spanish nature and weather perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/nature_and_weather.titicaca.svg",
+      "image_path":"badges/games/es/nature_and_weather.titicaca.svg",
       "game_slug":"nature_and_weather",
       "language_code":"es"
     }
@@ -164,7 +164,7 @@
     "name":"mi_gente",
     "description":"a spanish people and jobs perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/people_and_jobs.mi_gente.svg",
+      "image_path":"badges/games/es/people_and_jobs.mi_gente.svg",
       "game_slug":"people_and_jobs",
       "language_code":"es"
     }
@@ -174,7 +174,7 @@
     "name":"campeon_mundial",
     "description":"a spanish sports and activities perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/sports_and_activities.campeon_mundial.svg",
+      "image_path":"badges/games/es/sports_and_activities.campeon_mundial.svg",
       "game_slug":"sports_and_activities",
       "language_code":"es"
     }
@@ -184,7 +184,7 @@
     "name":"ingeniero",
     "description":"a spanish tech and tools perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/tech_and_tools.ingeniero.svg",
+      "image_path":"badges/games/es/tech_and_tools.ingeniero.svg",
       "game_slug":"tech_and_tools",
       "language_code":"es"
     }
@@ -194,7 +194,7 @@
     "name":"camino_inca",
     "description":"a spanish travel and places perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/es/travel_and_places.camino_inca.svg",
+      "image_path":"badges/games/es/travel_and_places.camino_inca.svg",
       "game_slug":"travel_and_places",
       "language_code":"es"
     }
@@ -204,7 +204,7 @@
     "name":"papillon",
     "description":"a french animals perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/animals.papillon.svg",
+      "image_path":"badges/games/fr/animals.papillon.svg",
       "game_slug":"animals",
       "language_code":"fr"
     }
@@ -214,7 +214,7 @@
     "name":"chateau",
     "description":"a french around the house perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/around_the_house.chateau.svg",
+      "image_path":"badges/games/fr/around_the_house.chateau.svg",
       "game_slug":"around_the_house",
       "language_code":"fr"
     }
@@ -224,7 +224,7 @@
     "name":"napoleon",
     "description":"a french countries perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/countries.napoleon.svg",
+      "image_path":"badges/games/fr/countries.napoleon.svg",
       "game_slug":"countries",
       "language_code":"fr"
     }
@@ -234,7 +234,7 @@
     "name":"a_bout_de_souffle",
     "description":"a french emotions and feelings perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/emotions_and_feelings.a_bout_de_souffle.svg",
+      "image_path":"badges/games/fr/emotions_and_feelings.a_bout_de_souffle.svg",
       "game_slug":"emotions_and_feelings",
       "language_code":"fr"
     }
@@ -244,7 +244,7 @@
     "name":"croissant",
     "description":"a french food perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/food.croissant.svg",
+      "image_path":"badges/games/fr/food.croissant.svg",
       "game_slug":"food",
       "language_code":"fr"
     }
@@ -254,7 +254,7 @@
     "name":"chamonix",
     "description":"a french nature and weather perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/nature_and_weather.chamonix.svg",
+      "image_path":"badges/games/fr/nature_and_weather.chamonix.svg",
       "game_slug":"nature_and_weather",
       "language_code":"fr"
     }
@@ -264,7 +264,7 @@
     "name":"francophonie",
     "description":"a french people and jobs perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/people_and_jobs.francophonie.svg",
+      "image_path":"badges/games/fr/people_and_jobs.francophonie.svg",
       "game_slug":"people_and_jobs",
       "language_code":"fr"
     }
@@ -274,7 +274,7 @@
     "name":"zidane",
     "description":"a french sports and activities perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/sports_and_activities.zidane.svg",
+      "image_path":"badges/games/fr/sports_and_activities.zidane.svg",
       "game_slug":"sports_and_activities",
       "language_code":"fr"
     }
@@ -284,7 +284,7 @@
     "name":"neon",
     "description":"a french tech and tools perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/tech_and_tools.neon.svg",
+      "image_path":"badges/games/fr/tech_and_tools.neon.svg",
       "game_slug":"tech_and_tools",
       "language_code":"fr"
     }
@@ -294,7 +294,7 @@
     "name":"tour_de_france",
     "description":"a french travel and places perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/fr/travel_and_places.tour_de_france.svg",
+      "image_path":"badges/games/fr/travel_and_places.tour_de_france.svg",
       "game_slug":"travel_and_places",
       "language_code":"fr"
     }
@@ -304,7 +304,7 @@
     "name":"猿",
     "description":"a japanese animals perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/animals.猿.svg",
+      "image_path":"badges/games/ja/animals.猿.svg",
       "game_slug":"animals",
       "language_code":"ja"
     }
@@ -314,7 +314,7 @@
     "name":"お帰り",
     "description":"a japanese around the house perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/around_the_house.お帰り.svg",
+      "image_path":"badges/games/ja/around_the_house.お帰り.svg",
       "game_slug":"around_the_house",
       "language_code":"ja"
     }
@@ -324,7 +324,7 @@
     "name":"帝国",
     "description":"a japanese countries perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/countries.帝国.svg",
+      "image_path":"badges/games/ja/countries.帝国.svg",
       "game_slug":"countries",
       "language_code":"ja"
     }
@@ -334,7 +334,7 @@
     "name":"エモジ",
     "description":"a japanese emotions and feelings perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/emotions_and_feelings.エモジ.svg",
+      "image_path":"badges/games/ja/emotions_and_feelings.エモジ.svg",
       "game_slug":"emotions_and_feelings",
       "language_code":"ja"
     }
@@ -344,7 +344,7 @@
     "name":"ご飯",
     "description":"a japanese food perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/food.ご飯.svg",
+      "image_path":"badges/games/ja/food.ご飯.svg",
       "game_slug":"food",
       "language_code":"ja"
     }
@@ -354,7 +354,7 @@
     "name":"富士山",
     "description":"a japanese nature and weather perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/nature_and_weather.富士山.svg",
+      "image_path":"badges/games/ja/nature_and_weather.富士山.svg",
       "game_slug":"nature_and_weather",
       "language_code":"ja"
     }
@@ -364,7 +364,7 @@
     "name":"日本人",
     "description":"a japanese people and jobs perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/people_and_jobs.日本人.svg",
+      "image_path":"badges/games/ja/people_and_jobs.日本人.svg",
       "game_slug":"people_and_jobs",
       "language_code":"ja"
     }
@@ -374,7 +374,7 @@
     "name":"横綱",
     "description":"a japanese sports and activities perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/sports_and_activities.横綱.svg",
+      "image_path":"badges/games/ja/sports_and_activities.横綱.svg",
       "game_slug":"sports_and_activities",
       "language_code":"ja"
     }
@@ -384,7 +384,7 @@
     "name":"正義",
     "description":"a japanese tech and tools perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/tech_and_tools.正義.svg",
+      "image_path":"badges/games/ja/tech_and_tools.正義.svg",
       "game_slug":"tech_and_tools",
       "language_code":"ja"
     }
@@ -394,7 +394,7 @@
     "name":"回峰行",
     "description":"a japanese travel and places perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/travel_and_places.回峰行.svg",
+      "image_path":"badges/games/ja/travel_and_places.回峰行.svg",
       "game_slug":"travel_and_places",
       "language_code":"ja"
     }
@@ -404,7 +404,7 @@
     "name":"しょうがっこう",
     "description":"a japanese hiragana 1 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/hiragana_1.しょうがっこう.svg",
+      "image_path":"badges/games/ja/hiragana_1.しょうがっこう.svg",
       "game_slug":"hiragana_1",
       "language_code":"ja"
     }
@@ -414,7 +414,7 @@
     "name":"ちゅうがっこう",
     "description":"a japanese hiragana 2 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/hiragana_2.svg",
+      "image_path":"badges/games/ja/hiragana_2.svg",
       "game_slug":"hiragana_2",
       "language_code":"ja"
     }
@@ -424,7 +424,7 @@
     "name":"こうとうがっこう",
     "description":"a japanese ultimate hiragana perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/ultimate_hiragana.こうとうがっこう.svg",
+      "image_path":"badges/games/ja/ultimate_hiragana.こうとうがっこう.svg",
       "game_slug":"ultimate_hiragana",
       "language_code":"ja"
     }
@@ -434,7 +434,7 @@
     "name":"ショウガッコウ",
     "description":"a japanese katakana 1 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/katakana_1.ショウガッコウ.svg",
+      "image_path":"badges/games/ja/katakana_1.ショウガッコウ.svg",
       "game_slug":"katakana_1",
       "language_code":"ja"
     }
@@ -444,7 +444,7 @@
     "name":"チュウガッコウ",
     "description":"a japanese katakana 2 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/katakana_2.チュウガッコウ.svg",
+      "image_path":"badges/games/ja/katakana_2.チュウガッコウ.svg",
       "game_slug":"katakana_2",
       "language_code":"ja"
     }
@@ -454,9 +454,49 @@
     "name":"コウトウガッコウ",
     "description":"a japanese ultimate katakana perfect play",
     "custom_fields": {
-      "image_path":"badges/games/perfect_plays/ja/ultimate_katakana.コウトウガッコウ.svg",
+      "image_path":"badges/games/ja/ultimate_katakana.コウトウガッコウ.svg",
       "game_slug":"ultimate_katakana",
       "language_code":"ja"
+    }
+  },
+  {
+    "id":347,
+    "name":"なな",
+    "description":"You guessed the number!",
+    "custom_fields": {
+      "image_path":"badges/games/ja/numguess.nana.png",
+      "game_slug":"number_guess",
+      "language_code":"ja"
+    }
+  },
+  {
+    "id":348,
+    "name":"Keepin it a Hunnit",
+    "description":"You guessed the number!",
+    "custom_fields": {
+      "image_path":"badges/games/en/numguess.keepin_it_a_hunnit.png",
+      "game_slug":"number_guess",
+      "language_code":"en"
+    }
+  },
+  {
+    "id":349,
+    "name":"Uno",
+    "description":"You guessed the number!",
+    "custom_fields": {
+      "image_path":"badges/games/es/numguess.uno.png",
+      "game_slug":"number_guess",
+      "language_code":"es"
+    }
+  },
+  {
+    "id":350,
+    "name":"Quatre-Vingt",
+    "description":"You guessed the number!",
+    "custom_fields": {
+      "image_path":"badges/games/fr/numguess.quatre-vingt.png",
+      "game_slug":"number_guess",
+      "language_code":"fr"
     }
   }
 ]

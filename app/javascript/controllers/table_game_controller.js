@@ -34,7 +34,7 @@ export default class extends Controller {
       category: this.gameData.dataset.category,
       characterType: this.gameData.dataset.characterType,
       perfectPlayUrl: this.gameData.dataset.perfectPlayUrl,
-      perfectBadgeUrl: this.gameData.dataset.perfectBadgeUrl
+      // badgeUrl: this.gameData.dataset.badgeUrl
     }
 
     this.initialTime = this.gameDataObject.playTime;
