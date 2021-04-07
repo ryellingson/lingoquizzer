@@ -26,6 +26,10 @@ export default class extends Controller {
 
     this.max = Math.max(...Object.keys(this.numbers).map((e) => parseInt(e)));
 
+    let userInput = this.guessFieldTarget.value;
+    let userGuess = this.reverseNumbers[userInput];
+    console.log("userGuess", userGuess);
+
     this.guessFieldTarget.focus();
 
     this.startButtonTarget.classList.remove('hidden');
@@ -97,9 +101,6 @@ export default class extends Controller {
   checkGuess() {
     console.log("event", event);
     this.lastResultTarget.textContent = "";
-    let userInput = this.guessFieldTarget.value;
-    let userGuess = this.reverseNumbers[userInput];
-    console.log("userGuess", userGuess);
 
     this.guessFieldTarget.value = '';
     this.guessFieldTarget.focus();
@@ -117,8 +118,8 @@ export default class extends Controller {
     this.guessesTarget.textContent += `${userGuess} `;
 
     if (userGuess === this.randomNumber) {
-      this.lastResultTarget.textContent = 'Congratulations! You got it right!';
-      this.lastResultTarget.style.backgroundColor = 'green';
+      // this.lastResultTarget.textContent = 'Congratulations! You got it right!';
+      // this.lastResultTarget.style.backgroundColor = 'green';
       this.lowOrHiTarget.textContent = '';
       this.score = this.winningScore;
       this.endGame();
@@ -141,7 +142,7 @@ export default class extends Controller {
     console.log('guess count', this.guessCount)
     clearInterval(this.interval);
 
-    // this.displayEndGameModal();
+    this.displayEndGameModal();
     this.postResults();
 
     this.guessFieldTarget.disabled = true;
@@ -173,25 +174,25 @@ export default class extends Controller {
   }
 
   displayEndGameModal() {
-    if (this.correctCountValue === this.answerCount) {
+    if (userGuess === this.randomNumber) {
       Swal.fire({
         imageUrl: `${this.gameDataObject.perfectPlayUrl}`,
         imageWidth: 200,
         imageHeight: 200,
         imageAlt: 'Perfect Play',
         title: '<u>Perfect Play!</u>',
+        // icon: 'success',
         html:
+          `<div>You got it right!<div>` +
           `<div>Correct Answer: ${this.randomNumber}</div><br>` +
           `<div>Score: ${this.score}pts</div>`
       });
     } else {
       Swal.fire({
-        icon: 'success',
-        title: '<u>Nice Play!</u>',
+        icon: 'error',
+        title: '<u>Game Over!!!</u>',
         html:
-          `<div>Time Bonus: ${this.timeLeft}pts</div><br>` +
-          `<div>Correct Answers: ${this.correctCountValue}/${this.answerCount}</div><br>` +
-          `<div>Score: ${this.score}pts</div>`
+          `<div>Try again, you're so close!</div>`
       });
     }
     this.playButtons.forEach((button) => button.classList.remove("hidden"));
