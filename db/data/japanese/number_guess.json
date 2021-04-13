@@ -16,8 +16,8 @@
   },
   "4": {
     "kanji":"四",
-    "kana":"し",
-    "romaji":"shi"
+    "kana":["し", "よん"],
+    "romaji":["shi", "yon"]
   },
   "5": {
     "kanji":"五",
@@ -31,8 +31,8 @@
   },
   "7": {
     "kanji":"七",
-    "kana":"しち",
-    "romaji":"shichi"
+    "kana":["しち", "なな"],
+    "romaji":["shichi", "nana"]
   },
   "8": {
     "kanji":"八",
@@ -41,8 +41,8 @@
   },
   "9": {
     "kanji":"九",
-    "kana":"きゅう",
-    "romaji":"kyuu"
+    "kana":["きゅう", "く"],
+    "romaji":["kyuu", "ku"]
   },
   "10": {
     "kanji":"十",

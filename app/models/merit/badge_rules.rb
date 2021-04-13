@@ -138,20 +138,9 @@ module Merit
         end
       end
 
-      # Language.all.pluck(:language_code).each do |language_code|
-      #   path = Rails.root.join("app/assets/images/badges/games/perfect_plays/#{language_code}")
+      game_badges = JSON.parse(File.read(Rails.root + "db/data/badges/301_400_games.json"))
 
-      #   filenames = Dir.children(path).map { |e| e.split('.') }
-      #   filenames.each do |fname|
-      #     grant_on 'plays#create', badge: fname[1], to: :user do |play|
-      #       play.perfect? && play.game.slug == fname[0] && play.game.language.language_code == language_code
-      #     end
-      #   end
-      # end
-
-      perfect_play_badges = JSON.parse(File.read(Rails.root + "db/data/badges/301_400_perfect_plays.json"))
-
-      perfect_play_badges.each do |badge|
+      game_badges.each do |badge|
         grant_on 'plays#create', badge: badge["name"], to: :user do |play|
           play.perfect? && play.game.slug == badge["custom_fields"]["game_slug"] && play.game.language.language_code == badge["custom_fields"]["language_code"]
         end

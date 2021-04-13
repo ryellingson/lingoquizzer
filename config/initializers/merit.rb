@@ -18,7 +18,7 @@ Merit.setup do |config|
 end
 
 # Create application badges (uses https://github.com/norman/ambry)
-badge_jsons = ["001_100_stats.json", "101_200_general.json", "201_300_conversations.json", "301_400_perfect_plays.json"]
+badge_jsons = ["001_100_stats.json", "101_200_general.json", "201_300_conversations.json", "301_400_games.json"]
 
 badge_jsons.each do |json|
   JSON.parse(File.read(Rails.root + "db/data/badges/#{json}")).each do |attrs|

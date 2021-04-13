@@ -12,8 +12,8 @@
     data-difficulty="<%= @game.difficulty %>"
     data-character-type="<%= @game.character_type %>"
     data-url="<%= game_plays_path(@game) %>"
-    data-perfect-play-url="<%= asset_url 'badges/games/perfect_plays/perfect_play.svg' %>"
-    <%= "data-perfect-badge-url=#{asset_url @perfect_badge.custom_fields["image_path"]}" if @perfect_badge %>
+    data-perfect-play-url="<%= asset_url 'badges/games/perfect_play.svg' %>"
+    <%#= "data-badge-url=#{asset_url @badge.custom_fields["image_path"]}" if @badge %>
   >
     <%= render "games/game_types/#{@game.genre}" %>
   </div>

@@ -7,6 +7,10 @@ class Play < ApplicationRecord
   end
 
   def perfect?
-    count == perfect_score
+    case game.genre
+      when "table_game" then count == perfect_score
+      # when "number_guess" then true
+      else true # defines that by default completing a game is enough to get the badge
+    end
   end
 end
