@@ -1,0 +1,92 @@
+[
+  {
+    "verb":"hablar",
+    "1st_singular": "hablo",
+    "2nd_singular": "hablas",
+    "3rd_singular": "habla",
+    "1st_plural": "hablamos",
+    "2nd_plural": "habláis",
+    "3rd_plural": "hablan"
+  },
+  {
+    "verb":"comer",
+    "1st_singular": "como",
+    "2nd_singular": "comes",
+    "3rd_singular": "come",
+    "1st_plural": "comemos",
+    "2nd_plural": "coméis",
+    "3rd_plural": "comen"
+  },
+  {
+    "verb":"vivir",
+    "1st_singular": "vivo",
+    "2nd_singular": "vives",
+    "3rd_singular": "vive",
+    "1st_plural": "vivimos",
+    "2nd_plural": "vivís",
+    "3rd_plural": "viven"
+  },
+  {
+    "verb":"tomar",
+    "1st_singular": "tomo",
+    "2nd_singular": "tomas",
+    "3rd_singular": "toma",
+    "1st_plural": "tomamos",
+    "2nd_plural": "tomáis",
+    "3rd_plural": "toman"
+  },
+  {
+    "verb":"bailar",
+    "1st_singular": "bailo",
+    "2nd_singular": "bailas",
+    "3rd_singular": "baila",
+    "1st_plural": "bailamos",
+    "2nd_plural": "bailáis",
+    "3rd_plural": "bailan"
+  },
+  {
+    "verb":"estar",
+    "1st_singular": "estoy",
+    "2nd_singular": "estás",
+    "3rd_singular": "está",
+    "1st_plural": "estamos",
+    "2nd_plural": "estáis",
+    "3rd_plural": "están"
+  },
+  {
+    "verb":"ser",
+    "1st_singular": "soy",
+    "2nd_singular": "eres",
+    "3rd_singular": "es",
+    "1st_plural": "somos",
+    "2nd_plural": "sois",
+    "3rd_plural": "son"
+  },
+  {
+    "verb":"hacer",
+    "1st_singular": "hago",
+    "2nd_singular": "haces",
+    "3rd_singular": "hace",
+    "1st_plural": "hacemos",
+    "2nd_plural": "hacéis",
+    "3rd_plural": "hacen"
+  },
+  {
+    "verb":"querer",
+    "1st_singular": "quiero",
+    "2nd_singular": "quieres",
+    "3rd_singular": "quiere",
+    "1st_plural": "queremos",
+    "2nd_plural": "queréis",
+    "3rd_plural": "quieren"
+  },
+  {
+    "verb":"jugar",
+    "1st_singular": "jugo",
+    "2nd_singular": "juegas",
+    "3rd_singular": "juega",
+    "1st_plural": "jugamos",
+    "2nd_plural": "jugáis",
+    "3rd_plural": "juegan"
+  }
+]
