@@ -21,7 +21,11 @@ GAMES_HASH = [
 ]
 
 NUMBER_GUESS_HASH = [
-  {name: "Guess the Number", icon_based: false, question_header: nil, genre: "number_guess", difficulty: "beginner", category: "numbers", play_time:60, score: 50, slug: "number_guess", unlock_cp: 5}
+  {name: "Guess the Number", icon_based: false, question_header: nil, genre: "number_guess", difficulty: "beginner", category: "numbers", play_time: 60, score: 50, slug: "number_guess", unlock_cp: 5}
+]
+
+CONJUGATION_TABLE_GAME_JAPANESE_HASH = [
+  {name: "Japanese Verb Conjugation", icon_based: false, question_header: nil, genre: "table_game", difficulty: "intermediate", category: "grammar", play_time: 120, score: 5, slug: "japanese_verb_conjugation", unlock_cp: 5}
 ]
 
 def game_builder(lang, game_attr)
@@ -93,6 +97,11 @@ namespace :games do
       NUMBER_GUESS_HASH.each do |game_attr|
         game_builder(lang, game_attr)
       end
+    end
+
+    CONJUGATION_TABLE_GAME_JAPANESE_HASH.each do |game_attr|
+      japanese = Language.find_by(name: "japanese")
+      game_builder(japanese, game_attr)
     end
 
     puts "done with games"
