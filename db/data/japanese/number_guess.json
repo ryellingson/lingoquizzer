@@ -47,6 +47,456 @@
   "10": {
     "kanji":"十",
     "kana":"じゅう",
-    "romaji":"jyuu"
+    "romaji":"juu"
+  },
+ "11": {
+    "kanji":"十一",
+    "kana":"じゅういち",
+    "romaji":"juuichi"
+  },
+  "12": {
+    "kanji":"十二",
+    "kana":"じゅうに",
+    "romaji":"juuni"
+  },
+  "13": {
+    "kanji":"十三",
+    "kana":"じゅうさん",
+    "romaji":"juusan"
+  },
+  "14": {
+    "kanji":"十四",
+    "kana":"じゅうよん",
+    "romaji":"juuyon"
+  },
+  "15": {
+    "kanji":"十五",
+    "kana":"じゅうご",
+    "romaji":"juugo"
+  },
+  "16": {
+    "kanji":"十六",
+    "kana":"じゅうろく",
+    "romaji":"juuroku"
+  },
+  "17": {
+    "kanji":"十七",
+    "kana":"じゅうなな",
+    "romaji":"juunana"
+  },
+  "18": {
+    "kanji":"十八",
+    "kana":"じゅうはち",
+    "romaji":"juuhachi"
+  },
+  "19": {
+    "kanji":"十九",
+    "kana":"じゅうきゅう",
+    "romaji":"juukyuu"
+  },
+  "20": {
+    "kanji":"二十",
+    "kana":"にじゅう",
+    "romaji":"nijuu"
+  },
+  "21": {
+    "kanji":"二十一",
+    "kana":"にじゅういち",
+    "romaji":"nijuuichi"
+  },
+  "22": {
+    "kanji":"二十二",
+    "kana":"にじゅうに",
+    "romaji":"nijuuni"
+  },
+  "23": {
+    "kanji":"二十三",
+    "kana":"にじゅうさん",
+    "romaji":"nijuusan"
+  },
+  "24": {
+    "kanji":"二十四",
+    "kana":"にじゅうよん",
+    "romaji":"nijuuyon"
+  },
+  "25": {
+    "kanji":"二十五",
+    "kana":"にじゅうご",
+    "romaji":"nijuugo"
+  },
+  "26": {
+    "kanji":"二十六",
+    "kana":"にじゅうろく",
+    "romaji":"nijuuroku"
+  },
+  "27": {
+    "kanji":"二十七",
+    "kana":"にじゅうなな",
+    "romaji":"nijuunana"
+  },
+  "28": {
+    "kanji":"二十八",
+    "kana":"にじゅうはち",
+    "romaji":"nijuuhachi"
+  },
+  "29": {
+    "kanji":"二十九",
+    "kana":"にじゅうきゅう",
+    "romaji":"nijuukyuu"
+  },
+  "30": {
+    "kanji":"三十",
+    "kana":"さんじゅう",
+    "romaji":"sanjuu"
+  },
+  "31": {
+    "kanji":"三十一",
+    "kana":"さんじゅう一",
+    "romaji":"sanjuuichi"
+  },
+  "32": {
+    "kanji":"三十二",
+    "kana":"さんじゅうに",
+    "romaji":"sanjuuni"
+  },
+  "33": {
+    "kanji":"三十三",
+    "kana":"さんじゅうさん",
+    "romaji":"sanjuusan"
+  },
+  "34": {
+    "kanji":"三十四",
+    "kana":"さんじゅうよん",
+    "romaji":"sanjuuyon"
+  },
+  "35": {
+    "kanji":"三十五",
+    "kana":"さんじゅうご",
+    "romaji":"sanjuugo"
+  },
+  "36": {
+    "kanji":"三十六",
+    "kana":"さんじゅうろく",
+    "romaji":"sanjuuroku"
+  },
+  "37": {
+    "kanji":"三十七",
+    "kana":"さんじゅうなな",
+    "romaji":"sanjuunana"
+  },
+  "38": {
+    "kanji":"三十八",
+    "kana":"さんじゅうはち",
+    "romaji":"sanjuuhachi"
+  },
+  "39": {
+    "kanji":"三十九",
+    "kana":"さんじゅうきゅう",
+    "romaji":"sanjuukyuu"
+  },
+  "40": {
+    "kanji":"四十",
+    "kana":"よんじゅう",
+    "romaji":"yonjuu"
+  },
+  "41": {
+    "kanji":"四十一",
+    "kana":"よんじゅういち",
+    "romaji":"yonjuuichi"
+  },
+  "42": {
+    "kanji":"四十二",
+    "kana":"よんじゅうに",
+    "romaji":"yonjuuni"
+  },
+  "43": {
+    "kanji":"四十三",
+    "kana":"よんじゅうさん",
+    "romaji":"yonjuusan"
+  },
+  "44": {
+    "kanji":"四十四",
+    "kana":"よんじゅうよん",
+    "romaji":"yonjuuyon"
+  },
+  "45": {
+    "kanji":"四十五",
+    "kana":"よんじゅうご",
+    "romaji":"yonjuugo"
+  },
+  "46": {
+    "kanji":"四十六",
+    "kana":"よんじゅうろく",
+    "romaji":"yonjuuroku"
+  },
+  "47": {
+    "kanji":"四十七",
+    "kana":"よんじゅうなな",
+    "romaji":"yonjuunana"
+  },
+  "48": {
+    "kanji":"四十八",
+    "kana":"よんじゅうはち",
+    "romaji":"yonjuuhachi"
+  },
+  "49": {
+    "kanji":"四十九",
+    "kana":"よんじゅうきゅう",
+    "romaji":"yonjuukyuu"
+  },
+  "50": {
+    "kanji":"五十",
+    "kana":"ごじゅう",
+    "romaji":"gojuu"
+  },
+  "51": {
+    "kanji":"五十一",
+    "kana":"ごじゅういち",
+    "romaji":"gojuuichi"
+  },
+  "52": {
+    "kanji":"五十二",
+    "kana":"ごじゅうに",
+    "romaji":"gojuuni"
+  },
+  "53": {
+    "kanji":"五十三",
+    "kana":"ごじゅうさん",
+    "romaji":"gojuusan"
+  },
+  "54": {
+    "kanji":"五十四",
+    "kana":"ごじゅうよん",
+    "romaji":"gojuuyon"
+  },
+  "55": {
+    "kanji":"五十五",
+    "kana":"ごじゅうご",
+    "romaji":"gojuugo"
+  },
+  "56": {
+    "kanji":"五十六",
+    "kana":"ごじゅうろく",
+    "romaji":"gojuuroku"
+  },
+  "57": {
+    "kanji":"五十七",
+    "kana":"ごじゅうなな",
+    "romaji":"gojuunana"
+  },
+  "58": {
+    "kanji":"五十八",
+    "kana":"ごじゅうはち",
+    "romaji":"gojuuhachi"
+  },
+  "59": {
+    "kanji":"五十九",
+    "kana":"ごじゅうきゅう",
+    "romaji":"gojuukyuu"
+  },
+  "60": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuu"
+  },
+  "61": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuuichi"
+  },
+  "62": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuuni"
+  },
+  "63": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuusan"
+  },
+  "64": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuuyon"
+  },
+  "65": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuugo"
+  },
+  "66": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuuroku"
+  },
+  "67": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuunana"
+  },
+  "68": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuuhachi"
+  },
+  "69": {
+    "kanji":"六十",
+    "kana":"ろくじゅう",
+    "romaji":"rokujuukyuu"
+  },
+  "70": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "71": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "72": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "73": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "74": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "75": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "76": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "77": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "78": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "79": {
+    "kanji":"七十",
+    "kana":"ななじゅう",
+    "romaji":"nanajuu"
+  },
+  "80": {
+    "kanji":"八十",
+    "kana":"はちじゅう",
+    "romaji":"hachijuu"
+  },
+  "81": {
+    "kanji":"八十一",
+    "kana":"はちじゅういち",
+    "romaji":"hachijuuichi"
+  },
+  "82": {
+    "kanji":"八十二",
+    "kana":"はちじゅうに",
+    "romaji":"hachijuuni"
+  },
+  "83": {
+    "kanji":"八十三",
+    "kana":"はちじゅうさん",
+    "romaji":"hachijuusan"
+  },
+  "84": {
+    "kanji":"八十四",
+    "kana":"はちじゅうよん",
+    "romaji":"hachijuuyon"
+  },
+  "85": {
+    "kanji":"八十五",
+    "kana":"はちじゅうご",
+    "romaji":"hachijuugo"
+  },
+  "86": {
+    "kanji":"八十六",
+    "kana":"はちじゅうろく",
+    "romaji":"hachijuuroku"
+  },
+  "87": {
+    "kanji":"八十七",
+    "kana":"はちじゅうなな",
+    "romaji":"hachijuunana"
+  },
+  "88": {
+    "kanji":"八十八",
+    "kana":"はちじゅうはち",
+    "romaji":"hachijuuhachi"
+  },
+  "89": {
+    "kanji":"八十九",
+    "kana":"はちじゅうきゅう",
+    "romaji":"hachijuukyuu"
+  },
+  "90": {
+    "kanji":"九十",
+    "kana":"きゅうじゅう",
+    "romaji":"kyuujuu"
+  },
+  "91": {
+    "kanji":"九十一",
+    "kana":"きゅうじゅういち",
+    "romaji":"kyuujuuichi"
+  },
+  "92": {
+    "kanji":"九十二",
+    "kana":"きゅうじゅうに",
+    "romaji":"kyuujuuni"
+  },
+  "93": {
+    "kanji":"九十三",
+    "kana":"きゅうじゅうさん",
+    "romaji":"kyuujuusan"
+  },
+  "94": {
+    "kanji":"九十四",
+    "kana":"きゅうじゅうよん",
+    "romaji":"kyuujuushi"
+  },
+  "95": {
+    "kanji":"九十五",
+    "kana":"きゅうじゅうご",
+    "romaji":"kyuujuugo"
+  },
+  "96": {
+    "kanji":"九十六",
+    "kana":"きゅうじゅうろく",
+    "romaji":"kyuujuuroku"
+  },
+  "97": {
+    "kanji":"九十七",
+    "kana":"きゅうじゅうなな",
+    "romaji":"kyuujuunana"
+  },
+  "98": {
+    "kanji":"九十八",
+    "kana":"きゅうじゅうはち",
+    "romaji":"kyuujuuhachi"
+  },
+  "99": {
+    "kanji":"九十九",
+    "kana":"きゅうじゅうきゅう",
+    "romaji":"kyuujuukyuu"
+  },
+  "100": {
+    "kanji":"百",
+    "kana":"ひゃく",
+    "romaji":"hyaku"
   }
 }

@@ -28,5 +28,275 @@
   },
   "10": {
     "answer":"dix"
+  },
+ "11": {
+    "answer":"onze"
+  },
+  "12": {
+    "answer":"douze"
+  },
+  "13": {
+    "answer":"treize"
+  },
+  "14": {
+    "answer":"quatorze"
+  },
+  "15": {
+    "answer":"quize"
+  },
+  "16": {
+    "answer":"seize"
+  },
+  "17": {
+    "answer":"dix-sept"
+  },
+  "18": {
+    "answer":"dix-huit"
+  },
+  "19": {
+    "answer":"dix-neuf"
+  },
+  "20": {
+    "answer":"vingt"
+  },
+  "21": {
+    "answer":"vingt-et-un"
+  },
+  "22": {
+    "answer":"vingt-deux"
+  },
+  "23": {
+    "answer":"vingt-trois"
+  },
+  "24": {
+    "answer":"vingt-quatre"
+  },
+  "25": {
+    "answer":"vingt-cinq"
+  },
+  "26": {
+    "answer":"vingt-six"
+  },
+  "27": {
+    "answer":"vingt-sept"
+  },
+  "28": {
+    "answer":"vingt-huit"
+  },
+  "29": {
+    "answer":"vingt-neuf"
+  },
+  "30": {
+    "answer":"trente"
+  },
+  "31": {
+    "answer":"trente-et-un"
+  },
+  "32": {
+    "answer":"trente-deux"
+  },
+  "33": {
+    "answer":"trente-trois"
+  },
+  "34": {
+    "answer":"trente-quatre"
+  },
+  "35": {
+    "answer":"trente-cinq"
+  },
+  "36": {
+    "answer":"trente-six"
+  },
+  "37": {
+    "answer":"trente-sept"
+  },
+  "38": {
+    "answer":"trente-huit"
+  },
+  "39": {
+    "answer":"trente-neuf"
+  },
+  "40": {
+    "answer":"quarante"
+  },
+  "41": {
+    "answer":"quarante-et-un"
+  },
+  "42": {
+    "answer":"quarante-deux"
+  },
+  "43": {
+    "answer":"quarante-trois"
+  },
+  "44": {
+    "answer":"quarante-quatre"
+  },
+  "45": {
+    "answer":"quarante-cinq"
+  },
+  "46": {
+    "answer":"quarante-six"
+  },
+  "47": {
+    "answer":"quarante-sept"
+  },
+  "48": {
+    "answer":"quarante-huit"
+  },
+  "49": {
+    "answer":"quarante-neuf"
+  },
+  "50": {
+    "answer":"cinquante"
+  },
+  "51": {
+    "answer":"cinquante-et-un"
+  },
+  "52": {
+    "answer":"cinquante-deux"
+  },
+  "53": {
+    "answer":"cinquante-trois"
+  },
+  "54": {
+    "answer":"cinquante-quatre"
+  },
+  "55": {
+    "answer":"cinquante-cinq"
+  },
+  "56": {
+    "answer":"cinquante-six"
+  },
+  "57": {
+    "answer":"cinquante-sept"
+  },
+  "58": {
+    "answer":"cinquante-huit"
+  },
+  "59": {
+    "answer":"cinquante-neuf"
+  },
+  "60": {
+    "answer":"soixante"
+  },
+  "61": {
+    "answer":"soixante-et-one"
+  },
+  "62": {
+    "answer":"soixante-two"
+  },
+  "63": {
+    "answer":"soixante-three"
+  },
+  "64": {
+    "answer":"soixante-four"
+  },
+  "65": {
+    "answer":"soixante-five"
+  },
+  "66": {
+    "answer":"soixante-six"
+  },
+  "67": {
+    "answer":"soixante-seven"
+  },
+  "68": {
+    "answer":"soixante-eight"
+  },
+  "69": {
+    "answer":"soixante-nine"
+  },
+  "70": {
+    "answer":"soixante"
+  },
+  "71": {
+    "answer":"soixante-onze"
+  },
+  "72": {
+    "answer":"soixante-douze"
+  },
+  "73": {
+    "answer":"soixante-treize"
+  },
+  "74": {
+    "answer":"soixante-quatorze"
+  },
+  "75": {
+    "answer":"soixante-quinze"
+  },
+  "76": {
+    "answer":"soixante-seize"
+  },
+  "77": {
+    "answer":"soixante-dix-sept"
+  },
+  "78": {
+    "answer":"soixante-dix-huit"
+  },
+  "79": {
+    "answer":"soixante-dix-neuf"
+  },
+  "80": {
+    "answer":"quatre-vingt"
+  },
+  "81": {
+    "answer":"quatre-vingt-un"
+  },
+  "82": {
+    "answer":"quatre-vingt-deux"
+  },
+  "83": {
+    "answer":"quatre-vingt-trois"
+  },
+  "84": {
+    "answer":"quatre-vingt-quatre"
+  },
+  "85": {
+    "answer":"quatre-vingt-cinq"
+  },
+  "86": {
+    "answer":"quatre-vingt-six"
+  },
+  "87": {
+    "answer":"quatre-vingt-sept"
+  },
+  "88": {
+    "answer":"quatre-vingt-huit"
+  },
+  "89": {
+    "answer":"quatre-vingt-neuf"
+  },
+  "90": {
+    "answer":"quatre-vingt"
+  },
+  "91": {
+    "answer":"quatre-vingt-onze"
+  },
+  "92": {
+    "answer":"quatre-vingt-douze"
+  },
+  "93": {
+    "answer":"quatre-vingt-treize"
+  },
+  "94": {
+    "answer":"quatre-vingt-quatorze"
+  },
+  "95": {
+    "answer":"quatre-vingt-quinze"
+  },
+  "96": {
+    "answer":"quatre-vingt-seize"
+  },
+  "97": {
+    "answer":"quatre-vingt-dix-sept"
+  },
+  "98": {
+    "answer":"quatre-vingt-huit"
+  },
+  "99": {
+    "answer":"quatre-vingt-neuf"
+  },
+  "100": {
+    "answer":"cent"
   }
 }
