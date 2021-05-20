@@ -83,7 +83,7 @@ export default class extends Controller {
   }
 
   handleInputChange = () => {
-    if (Object.values(JSON.parse(this.currentAnswer.dataset.answers)).flat().includes(this.gameInput.value.trim())) {
+    if (Object.values(JSON.parse(this.currentAnswer.dataset.answers)).flat().includes(this.gameInput.value.trim().toLowerCase())) {
       if (!this.currentAnswer.classList.contains("correct-answer")) {
         this.currentAnswer.classList.add("correct-answer");
         this.score += this.gameDataObject.score;
