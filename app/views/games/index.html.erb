@@ -65,15 +65,12 @@
               <h3>All</h3>
             </div>
           <% end %>
-          <%= link_to genre: params[:genre] != "table_game" ? "table_game" : nil, language: params[:language], difficulty: params[:difficulty], category: params[:category] do %>
-            <div class="game-type-select-content-item <%= "active" if params[:genre] == "table_game" %>">
-              <h3>Table Game</h3>
-            </div>
-          <% end %>
-          <%= link_to genre: params[:genre] != "number_guess" ? "number_guess" : nil, language: params[:language], difficulty: params[:difficulty], category: params[:category] do %>
-            <div class="game-type-select-content-item <%= "active" if params[:genre] == "number_guess" %>">
-              <h3>Number Guess</h3>
-            </div>
+          <% Game.genres.keys.each do |genre| %>
+            <%= link_to genre: params[:genre] != genre ? genre : nil, language: params[:language], difficulty: params[:difficulty], category: params[:category] do %>
+              <div class="game-type-select-content-item <%= "active" if params[:genre] == genre %>">
+                <h3><%= genre.gsub("_", " ").titleize %></h3>
+              </div>
+            <% end %>
           <% end %>
         </div>
       </div>

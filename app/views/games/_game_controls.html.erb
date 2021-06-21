@@ -10,22 +10,7 @@
   </div>
   <%# end %>
   <div class="flex">
-    <div class="game-stat-box hidden sm:flex mr-1"> <!-- correct count -->
-      <p class="correct-count">0/<%= @problems.count %></p>
-    </div>
-
-    <div class="game-stat-box hidden sm:flex mr-1"> <!-- score -->
-      <p class="score">0pts</p>
-    </div>
-
-    <div class="game-stat-box sm:hidden text-xl mr-1"> <!-- mobile view -->
-      <p class='score'>0pts</p>
-      <p class='correct-count'>0/<%= @problems.count %></p>
-    </div>
-
-    <div class="game-stat-box"> <!-- timer -->
-      <p class='timer'><%= calculate_time_from_seconds(@game.play_time) %></p>
-    </div>
+    <%= render "stat_box", correct_count: @problems.count, timer: calculate_time_from_seconds(@game.play_time) %>
   </div>
 
 

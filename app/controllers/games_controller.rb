@@ -36,6 +36,9 @@ class GamesController < ApplicationController
     # when "table_game" then init_table_game
     # when "number_guess" then init_number_guess
     # end
+  rescue NoMethodError
+    render :show
+    # this was created for the place holder genre, if a game doesn't need specific configuration then it doesn't need one of the init methods below, if you don't have an init it won't crash
   end
 
   private
@@ -47,5 +50,9 @@ class GamesController < ApplicationController
   def init_number_guess
     json_file_path = Rails.root + "db/data/#{@game.language.name}/#{@game.slug}.json"
     @numbers = JSON.parse(File.read(json_file_path))
+  end
+
+  def init_place_holder
+    @problems = [ Problem.new(question: "食べる", game: @game) ]
   end
 end
