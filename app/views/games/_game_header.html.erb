@@ -10,7 +10,10 @@
       </div>
     <% end %>
     </div>
-    <div>
+    <div class="game-flag-l">
+      <%= image_tag "utility_icons/#{@game.language.language_code}.png" %>
+    </div>
+    <div class="game-flag-r">
       <%= image_tag "utility_icons/#{@game.language.language_code}.png" %>
     </div>
     <div class="table-title text-4xl absolute transform -translate-x-1/2 -left-1/2">
