@@ -1,6 +1,6 @@
 <div>
   <div class="m-4">
-    <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 w-2/5 justify-self-center play-button" data-action="table-game#restartGame">
+    <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 w-2/5 justify-self-center play-button" data-action="click->place-holder#startGame">
       <p>Play</p>
     </div>
     <div>
@@ -8,6 +8,6 @@
     </div>
   </div>
   <div class="">
-    <%= render "game_controls" %>
+    <%= render "game_controls", stimulus_controller: "place-holder" %>
   </div>
 </div>

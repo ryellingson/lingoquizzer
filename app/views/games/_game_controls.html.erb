@@ -13,15 +13,16 @@
     <%= render "stat_box", correct_count: @problems.count, timer: calculate_time_from_seconds(@game.play_time) %>
   </div>
 
+  <!-- input form -->
 
   <fieldset class="answer-set">
-    <div class="shift-button-left">
+    <div class="shift-button-left" data-action="click-><%= local_assigns[:stimulus_controller] %>#checkAnswer">
       <i class="fas fa-chevron-left"></i>
     </div>
     <div>
-      <input type="text" class="game-input pl-1 mt-2">
+      <input type="text" class="game-input pl-1 mt-2" data-action="keyup-><%= local_assigns[:stimulus_controller] %>#keyUp">
     </div>
-    <button class="shift-button-right">
+    <button class="shift-button-right" data-action="click-><%= local_assigns[:stimulus_controller] %>#checkAnswer">
       <i class="fas fa-chevron-right"></i>
     </button>
   </fieldset>
