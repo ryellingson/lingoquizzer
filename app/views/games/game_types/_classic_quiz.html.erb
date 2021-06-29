@@ -1,0 +1,13 @@
+<div class="">
+  <div class="bg-indigo-400 flex h-40 items-center justify-center text-4xl text-white mt-1">
+    <!--  make a dynamic (text, styles) component, a single button component that changes based on parameters passed -->
+    <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 w-2/5 justify-self-center play-button" data-action="click->classic-quiz#startGame">
+      <p>Play</p>
+    </div>
+    <div data-classic-quiz-target="questionField"></div>
+  </div>
+  <%= render "games/components/input_with_arrows",
+    right_action: "click->classic-quiz#checkAnswer",
+    input_action: "keyup->classic-quiz#keyUp"
+  %>
+</div>

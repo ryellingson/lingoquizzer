@@ -52,7 +52,7 @@ class GamesController < ApplicationController
     @numbers = JSON.parse(File.read(json_file_path))
   end
 
-  def init_place_holder
+  def init_classic_quiz
     @problems = [ Problem.new(question: "食べる", game: @game) ]
   end
 end
