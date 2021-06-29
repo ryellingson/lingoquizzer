@@ -21,10 +21,14 @@ GAMES_HASH = [
 ]
 
 NUMBER_GUESS_HASH = [
-  {name: "Guess the Number", icon_based: false, question_header: nil, genre: "number_guess", difficulty: "beginner", category: "numbers", play_time:60, score: 50, slug: "number_guess", unlock_cp: 5}
+  {name: "Guess the Number", icon_based: false, question_header: nil, genre: "number_guess", difficulty: "beginner", category: "numbers", play_time: 60, score: 50, slug: "number_guess", unlock_cp: 5}
 ]
 
-def game_builder(lang, game_attr)
+CONJUGATION_TABLE_GAME_JAPANESE_HASH = [
+  {name: "Japanese Verb Conjugation", icon_based: false, question_header: nil, genre: "place_holder", difficulty: "intermediate", category: "grammar", play_time: 120, score: 5, slug: "japanese_verb_conjugation", unlock_cp: 5}
+]
+
+def game_builder(lang, game_attr, json_required: true)
 
   game = Game.find_or_initialize_by(name: game_attr[:name], language: lang)
   if game.persisted? && !ENV["force"]
@@ -32,10 +36,12 @@ def game_builder(lang, game_attr)
   else
     puts "parsing JSON"
     json_file_path = Rails.root + "db/data/#{lang.name}/#{game_attr[:slug]}.json"
-    return unless File.exist?(json_file_path)
-
-    game_data = JSON.parse(File.read(json_file_path))
-    puts "parsed"
+    if File.exist?(json_file_path)
+      game_data = JSON.parse(File.read(json_file_path))
+      puts "parsed"
+    elsif json_required
+      return
+    end
 
     puts "adding description"
     md_file_path = Rails.root + "db/data/#{lang.name}/descriptions/#{game_attr[:slug]}.md"
@@ -53,7 +59,7 @@ def game_builder(lang, game_attr)
     }])
     puts "created #{game.language.name}: #{game.name}"
 
-    if game.table_game?
+    if game.table_game? && game_data
       puts "populating game with problems..."
       if game_data.first.keys.include?("kanji")
         game_data.each do |problem_data|
@@ -93,6 +99,11 @@ namespace :games do
       NUMBER_GUESS_HASH.each do |game_attr|
         game_builder(lang, game_attr)
       end
+    end
+
+    CONJUGATION_TABLE_GAME_JAPANESE_HASH.each do |game_attr|
+      japanese = Language.find_by(name: "japanese")
+      game_builder(japanese, game_attr, json_required: false)
     end
 
     puts "done with games"

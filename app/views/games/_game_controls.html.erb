@@ -10,33 +10,19 @@
   </div>
   <%# end %>
   <div class="flex">
-    <div class="game-stat-box hidden sm:flex mr-1"> <!-- correct count -->
-      <p class="correct-count">0/<%= @problems.count %></p>
-    </div>
-
-    <div class="game-stat-box hidden sm:flex mr-1"> <!-- score -->
-      <p class="score">0pts</p>
-    </div>
-
-    <div class="game-stat-box sm:hidden text-xl mr-1"> <!-- mobile view -->
-      <p class='score'>0pts</p>
-      <p class='correct-count'>0/<%= @problems.count %></p>
-    </div>
-
-    <div class="game-stat-box"> <!-- timer -->
-      <p class='timer'><%= calculate_time_from_seconds(@game.play_time) %></p>
-    </div>
+    <%= render "stat_box", correct_count: @problems.count, timer: calculate_time_from_seconds(@game.play_time) %>
   </div>
 
+  <!-- input form -->
 
   <fieldset class="answer-set">
-    <div class="shift-button-left">
+    <div class="shift-button-left" data-action="click-><%= local_assigns[:stimulus_controller] %>#checkAnswer">
       <i class="fas fa-chevron-left"></i>
     </div>
     <div>
-      <input type="text" class="game-input pl-1 mt-2">
+      <input type="text" class="game-input pl-1 mt-2" data-action="keyup-><%= local_assigns[:stimulus_controller] %>#keyUp">
     </div>
-    <button class="shift-button-right">
+    <button class="shift-button-right" data-action="click-><%= local_assigns[:stimulus_controller] %>#checkAnswer">
       <i class="fas fa-chevron-right"></i>
     </button>
   </fieldset>
