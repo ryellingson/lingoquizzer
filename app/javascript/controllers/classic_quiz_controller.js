@@ -1,7 +1,8 @@
 import { Controller } from "stimulus"
+import { ClassicQuiz } from "../components/games/classic_quiz.js"
 
 export default class extends Controller {
-  static targets = [ "questionField" ]
+  static targets = [ "questionField", "correctCount", "score", "timer" ]
 
   connect() {
     console.log('Hello, from place holder!');
@@ -19,12 +20,16 @@ export default class extends Controller {
         answer: "はした"
       }
     ]
-    this.currentQuestionIndex = 0;
+
+    this.classicQuiz = new ClassicQuiz(this.questionData);
+    this.points = 5;
   }
 
   startGame() {
     // reset parameters
+    this.classicQuiz.resetGame(problems)
     // populate the question area
+    this.questionFieldTarget.innerHTML = this.classicQuiz.currentQuestion();
     // play button disappears
     // timer starts
     // cursor focused to form
@@ -39,17 +44,14 @@ export default class extends Controller {
     }
   }
 
-  nextQuestion() {
-    this.currentQuestionIndex += 1;
-  }
-
-  checkAnswer() {
-    console.log("checkAnswer");
-    // check input against question
-
-    // to check answer
-    this.questionData[this.currentQuestionIndex];
-    // to track what is the current question: instance variable
-    // select answer key and compare against submitted input
+  submit(input) {
+    if (this.classicQuiz.checkAnswer(input)) {
+      this.classicQuiz.incrementScore(this.points);
+      // add visual confirmation (green outline)
+      this.questionFieldTarget.style.border = "solid 3px green"
+    } else {
+      // present error colors (red outline) and message
+      this.questionFieldTarget.style.border = "solid 3px red"
+    }
   }
 }

@@ -51,7 +51,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   protected
 
   def add_user_cookie
-    cookies.signed[:user_id] = current_user.id
+    cookies.signed[:user_id] = current_user.id if current_user
   end
 
   # If you have extra params to permit, append them to the sanitizer.
