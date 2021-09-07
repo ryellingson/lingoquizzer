@@ -5,7 +5,7 @@
     </div>
   <% end %>
   <div>
-    <input type="text" class="game-input pl-1 mt-2" data-action="<%= local_assigns[:input_action] %>">
+    <input type="text" class="game-input pl-1 mt-2" data-action="<%= local_assigns[:input_action] %>" data-classic-quiz-target="input">
   </div>
   <% if local_assigns[:right_action] %>
     <button class="shift-button-right" data-action="<%= local_assigns[:right_action] %>">

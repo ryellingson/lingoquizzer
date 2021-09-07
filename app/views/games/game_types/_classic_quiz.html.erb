@@ -7,20 +7,26 @@
     <div data-classic-quiz-target="questionField"></div>
   </div>
   <%= render "games/components/input_with_arrows",
-    right_action: "click->classic-quiz#checkAnswer",
+    right_action: "click->classic-quiz#submit",
     input_action: "keyup->classic-quiz#keyUp"
   %>
   <div class="flex flex-col sm:flex-row gap-1 my-2">
     <!-- removed hidden on correct count and score -->
-    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full" data-classic-quiz-target="correctCount"> <!-- correct count -->
+    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full"
+      data-classic-quiz-target="correctCount"
+    > <!-- correct count -->
       0/0
     </div>
 
-    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full" data-classic-quiz-target="score"> <!-- score -->
+    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full"
+      data-classic-quiz-target="score"
+    > <!-- score -->
       0pts
     </div>
 
-    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full" data-classic-quiz-target="timer"> <!-- timer -->
+    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full"
+      data-classic-quiz-target="timer"
+    > <!-- timer -->
       1:00
     </div>
   </div>

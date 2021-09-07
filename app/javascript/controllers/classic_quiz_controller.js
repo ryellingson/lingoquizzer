@@ -2,10 +2,11 @@ import { Controller } from "stimulus"
 import { ClassicQuiz } from "../components/games/classic_quiz.js"
 
 export default class extends Controller {
-  static targets = [ "questionField", "correctCount", "score", "timer" ]
+  static targets = [ "questionField", "correctCount", "score", "timer", "input" ]
 
   connect() {
     console.log('Hello, from place holder!');
+    this.fullTime = 60;
     this.questionData = [
       {
         question: "食べる(past tense polite)",
@@ -21,19 +22,36 @@ export default class extends Controller {
       }
     ]
 
-    this.classicQuiz = new ClassicQuiz(this.questionData);
-    this.points = 5;
+    this.pointsPerQuestion = 5;
+    this.classicQuiz = new ClassicQuiz(this.questionData, this.fullTime, this.pointsPerQuestion);
   }
 
-  startGame() {
+  startGame(event) {
     // reset parameters
-    this.classicQuiz.resetGame(problems)
+    this.classicQuiz.resetGame(this.questionData)
     // populate the question area
     this.questionFieldTarget.innerHTML = this.classicQuiz.currentQuestion();
     // play button disappears
+    event.currentTarget.style.display = "none";
     // timer starts
-    // cursor focused to form
+    this.classicQuiz.start();
+    // starts the UI
+    this._startUI()
+
     console.log("starting game");
+  }
+
+  _displayTime() {
+    const sec = this.classicQuiz.timeLeft % 60;
+    this.timerTarget.innerText = `${Math.floor(this.classicQuiz.timeLeft / 60)}:${sec < 10 ? "0" + sec : sec}`;
+  }
+
+  _displayScore() {
+    this.scoreTarget.innerText = `${this.classicQuiz.score}pts`;
+  }
+
+  _displayCorrectCount() {
+    this.correctCountTarget.innerText = `${this.classicQuiz.correctCountValue}/${this.classicQuiz.answerCount}`
   }
 
   keyUp(e) {
@@ -46,12 +64,21 @@ export default class extends Controller {
 
   submit(input) {
     if (this.classicQuiz.checkAnswer(input)) {
-      this.classicQuiz.incrementScore(this.points);
       // add visual confirmation (green outline)
       this.questionFieldTarget.style.border = "solid 3px green"
     } else {
       // present error colors (red outline) and message
       this.questionFieldTarget.style.border = "solid 3px red"
     }
+  }
+
+  _startUI() {
+    // cursor focused to form
+    this.inputTarget.focus();
+    setInterval(() => {
+      this._displayTime();
+    }, 1000);
+    this._displayCorrectCount();
+    this._displayScore();
   }
 }
