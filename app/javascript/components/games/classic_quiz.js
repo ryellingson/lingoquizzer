@@ -11,8 +11,11 @@ export class ClassicQuiz  {
 
   nextQuestion() {
     // check that there is a next question
+    console.log("next");
     this.currentProblemIndex += 1;
     this.answerCount += 1;
+    this.greenLight = null;
+    return this.problems[this.currentProblemIndex];
   }
 
   currentQuestion() {
@@ -27,8 +30,11 @@ export class ClassicQuiz  {
     console.log("checkAnswer");
     if (input === this.problems[this.currentProblemIndex].answer) {
       this.incrementScore();
+      this.correctCountValue += 1;
+      this.greenLight = true;
       return true;
     }
+    this.greenLight = false;
     return false;
   }
 
@@ -39,6 +45,13 @@ export class ClassicQuiz  {
     this.timeLeft = fullTime;
     this.correctCountValue = 0;
     this.answerCount = 0;
+    this.totalQuestions = problems.length;
+    // greenLight is true when the last checked answer returns and is used to change enter to nextQuestion
+    this.greenLight = null;
+  }
+
+  stopGame() {
+
   }
 
   _startTimer() {
