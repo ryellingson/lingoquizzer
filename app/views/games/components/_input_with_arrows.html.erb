@@ -4,9 +4,7 @@
       <i class="fas fa-chevron-left"></i>
     </div>
   <% end %>
-  <div>
-    <input type="text" class="game-input pl-1 mt-2" data-action="<%= local_assigns[:input_action] %>" data-classic-quiz-target="input">
-  </div>
+  <input type="text" class="game-input pl-1 mt-2" data-action="<%= local_assigns[:input_action] %>" data-classic-quiz-target="input">
   <% if local_assigns[:right_action] %>
     <button class="shift-button-right" data-action="<%= local_assigns[:right_action] %>">
       <i class="fas fa-chevron-right"></i>

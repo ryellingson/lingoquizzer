@@ -19,7 +19,7 @@ export class ClassicQuiz  {
   }
 
   currentQuestion() {
-    return this.problems[this.currentProblemIndex].question;
+    return this.problems[this.currentProblemIndex]?.question;
   }
 
   incrementScore(points = this.pointsPerQuestion) {
@@ -51,11 +51,11 @@ export class ClassicQuiz  {
   }
 
   stopGame() {
-
+    clearInterval(this.gameTimer);
   }
 
   _startTimer() {
-    setInterval(() => {
+    this.gameTimer = setInterval(() => {
       this.timeLeft -= 1;
     }, 1000);
   }

@@ -6,7 +6,8 @@ export default class extends Controller {
 
   connect() {
     console.log('Hello, from classic quiz!');
-    this.fullTime = 60;
+    this.gameRunning = false;
+    this.fullTime = 3;
     this.questionData = [
       {
         question: "食べる(past tense polite)",
@@ -24,11 +25,14 @@ export default class extends Controller {
 
     this.pointsPerQuestion = 5;
     this.classicQuiz = new ClassicQuiz(this.questionData, this.fullTime, this.pointsPerQuestion);
+    this._resetUI();
   }
 
   startGame(event) {
+    // gameRunning attribute changes from false to true
+    this.gameRunning = true;
     // reset parameters
-    this.classicQuiz.resetGame(this.questionData)
+    this.classicQuiz.resetGame(this.questionData);
     // populate the question area
     this.questionFieldTarget.innerHTML = this.classicQuiz.currentQuestion();
     // play button disappears
@@ -43,6 +47,8 @@ export default class extends Controller {
 
   endGame() {
     console.log("endgame");
+    // gameRunning attribute changes from true to false
+    this.gameRunning = false;
     this.classicQuiz.stopGame();
     this._updateUI();
     this._displayEndGameModal();
@@ -81,7 +87,7 @@ export default class extends Controller {
   }
 
   next() {
-    console.log("next ui", this.classicQuiz.currentQuestion())
+    console.log("next ui")
     if (!this.classicQuiz.nextQuestion()) {
       this.endGame();
     }
@@ -91,10 +97,11 @@ export default class extends Controller {
   _startUI() {
     // cursor focused to form
     this.inputTarget.focus();
-    setInterval(() => {
+    const uiInterval = setInterval(() => {
       this._displayTime();
       if (this.classicQuiz.timeLeft <= 0) {
         this.endGame();
+        clearInterval(uiInterval);
       }
     }, 1000);
     this._displayCorrectCount();
@@ -102,7 +109,7 @@ export default class extends Controller {
   }
 
   _updateUI() {
-    this.questionFieldTarget.innerText = this.classicQuiz.currentQuestion();
+    this.questionFieldTarget.innerText = this.classicQuiz.currentQuestion() || "End of game";
     if (this.classicQuiz.greenLight === null) {
       this.questionFieldTarget.style.border = "none"
     } else if (this.classicQuiz.greenLight) {
@@ -114,6 +121,11 @@ export default class extends Controller {
     }
     this._displayScore();
     this._displayCorrectCount();
+  }
+
+  _resetUI() {
+    this._displayTime();
+    this.inputTarget.disabled = true;
   }
 
   _displayEndGameModal() {
