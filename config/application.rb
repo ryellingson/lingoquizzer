@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Webpacker::Compiler.env["TAILWIND_MODE"] = "build"
+
 module Lingoquizzer
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.

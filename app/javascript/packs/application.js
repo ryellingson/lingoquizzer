@@ -6,10 +6,15 @@
 require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
-require("channels");
-require("trix");
-require("@rails/actiontext");
+require("../css/application.scss")
 
+// uncomment the next three lines to restore conversations
+
+// require("channels");
+// require("trix");
+// require("@rails/actiontext");
+
+import "controllers"
 
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 import 'sweetalert2/src/sweetalert2.scss';
@@ -38,5 +43,3 @@ document.addEventListener('turbolinks:load', function(e) {
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import "controllers"
-  require("../css/application.scss")

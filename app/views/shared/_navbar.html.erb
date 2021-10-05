@@ -19,9 +19,9 @@
             <%= link_to games_path do %>
               <li class="nav__item nav__link mb-12 sm:mb-0">Games</li>
             <% end %>
-            <%= link_to forum_index_path(:en) do %>
-              <li class="nav__item nav__link mb-12 sm:mb-0">Conversations</li>
-            <% end %>
+            <%#= link_to forum_index_path(:en) do %>
+              <!-- <li class="nav__item nav__link mb-12 sm:mb-0">Conversations</li> -->
+            <%# end %>
             <% if user_signed_in? %>
               <%= link_to profile_path do %>
                 <li class="nav__item nav__link mb-12 sm:mb-0">Profile</li>

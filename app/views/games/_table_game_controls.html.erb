@@ -1,3 +1,5 @@
+<!-- This file is legacy, games now use components for controls -->
+
 <div class="game-controls">
   <%#= link_to game_path(@game, autoplay: true) do %>
   <div class="flex justify-center sm:hidden">
@@ -15,17 +17,11 @@
 
   <!-- input form -->
 
-  <fieldset class="answer-set">
-    <div class="shift-button-left" data-action="click-><%= local_assigns[:stimulus_controller] %>#checkAnswer">
-      <i class="fas fa-chevron-left"></i>
-    </div>
-    <div>
-      <input type="text" class="game-input pl-1 mt-2" data-action="keyup-><%= local_assigns[:stimulus_controller] %>#keyUp">
-    </div>
-    <button class="shift-button-right" data-action="click-><%= local_assigns[:stimulus_controller] %>#checkAnswer">
-      <i class="fas fa-chevron-right"></i>
-    </button>
-  </fieldset>
+  <%= render "games/components/input_with_arrows",
+    left_action: "click->table-game#checkAnswer",
+    right_action: "click->table-game#checkAnswer",
+    input_action: "keyup->table-game#keyUp"
+  %>
 
 
   <div class="modal-bg">

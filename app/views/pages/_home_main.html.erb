@@ -15,37 +15,38 @@
             </svg>
           </div>
           <% end %> <!-- link to games path -->
-          <%= link_to forum_index_path(:en) do %>
-          <div class="gateway-button stroke">
+          <%#= link_to forum_index_path(:en) do %>
+<!--           <div class="gateway-button stroke">
             <h2 class="p-absolute text-xl">Conversations</h2>
             <svg>
               <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
               <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
             </svg>
-          </div>
-          <% end %> <!-- link to forum path -->
+          </div> -->
+          <%# end %> <!-- link to forum path -->
           <% if user_signed_in? %>
-            <%= link_to profile_path do %>
-            <div class="gateway-button stroke">
-              <h2 class="p-absolute text-xl">My Profile</h2>
-              <svg>
-                <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-                <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
-              </svg>
-            </div>
-            <% end %> <!-- link to user_path -->
+          <%= link_to profile_path do %>
+          <div class="gateway-button stroke">
+            <h2 class="p-absolute text-xl">My Profile</h2>
+            <svg>
+              <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
+              <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
+            </svg>
           </div>
+          <% end %> <!-- link to user_path -->
           <% else %>
-          <div class="gateway-button stroke modal-btn" data-action=''>
+          <%= link_to new_user_registration_path do %>
+          <div class="gateway-button stroke">
             <h2 class="p-absolute text-xl">Join for free!</h2>
             <svg>
               <polyline class="o1" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
               <polyline class="o2" points="0 0, 240 0, 240 100, 0 100, 0 0"></polyline>
             </svg>
           </div>
-        <% end %> <!-- if user signed in join modal -->
+          <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
-  <%= render "home_signup_modal" %>
 </main>

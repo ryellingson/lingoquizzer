@@ -1,14 +1,16 @@
-<div class="sticky top-50px">
-  <%= render "game_controls" %>
-</div>
+<div class="mx-auto w-full md:w-8/12 lg:w-5/12 p-3">
+  <div class="sticky top-50px">
+    <%= render "table_game_controls" %>
+  </div>
 
-<div class="table-wrapper">
-  <div class="content-table" id="gameTable">
-    <%= render partial: "games/game_types/table_game_col",
-      locals: {
-        problems: @problems,
-        question_header: @game.question_header,
-        icon_based: @game.icon_based
-      } %>
+  <div class="table-wrapper">
+    <div class="content-table" id="gameTable">
+      <%= render partial: "games/game_types/table_game_col",
+        locals: {
+          problems: @problems,
+          question_header: @game.question_header,
+          icon_based: @game.icon_based
+        } %>
+    </div>
   </div>
 </div>

@@ -1,0 +1,33 @@
+<div class="">
+  <div class="bg-indigo-400 flex h-64 items-center justify-center text-4xl text-white mt-1">
+    <!--  make a dynamic (text, styles) component, a single button component that changes based on parameters passed -->
+    <div class="btn btn-primary border-glow text-3xl font-bold px-8 m-3 w-2/5 justify-self-center play-button" data-action="click->classic-quiz#startGame">
+      <p>Play</p>
+    </div>
+    <div data-classic-quiz-target="questionField"></div>
+  </div>
+  <%= render "games/components/input_with_arrows",
+    right_action: "click->classic-quiz#next",
+    input_action: "keyup->classic-quiz#keyUp"
+  %>
+  <div class="flex flex-col sm:flex-row gap-1 my-2">
+    <!-- removed hidden on correct count and score -->
+    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full"
+      data-classic-quiz-target="correctCount"
+    > <!-- correct count -->
+      0/0
+    </div>
+
+    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full"
+      data-classic-quiz-target="score"
+    > <!-- score -->
+      0pts
+    </div>
+
+    <div class="text-center self-center px-2.5 border border-gray-600 text-xl leading-loose bg-gray-200 font-mono flex-grow w-full"
+      data-classic-quiz-target="timer"
+    > <!-- timer -->
+      1:00
+    </div>
+  </div>
+</div>
