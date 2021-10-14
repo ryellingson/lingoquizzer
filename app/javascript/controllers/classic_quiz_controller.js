@@ -2,7 +2,7 @@ import { Controller } from "stimulus"
 import { ClassicQuiz } from "../components/games/classic_quiz.js"
 
 export default class extends Controller {
-  static targets = [ "questionField", "correctCount", "score", "timer", "input" ]
+  static targets = [ "questionField", "correctCount", "score", "timer", "input", "nextArrow" ]
 
   connect() {
     console.log('Hello, from classic quiz!');
@@ -36,7 +36,8 @@ export default class extends Controller {
     // populate the question area
     this.questionFieldTarget.innerHTML = this.classicQuiz.currentQuestion();
     // play button disappears
-    event.currentTarget.style.display = "none";
+    this.playButton = event.currentTarget;
+    this.playButton.style.display = "none";
     // timer starts
     this.classicQuiz.start();
     // starts the UI
@@ -50,8 +51,9 @@ export default class extends Controller {
     // gameRunning attribute changes from true to false
     this.gameRunning = false;
     this.classicQuiz.stopGame();
-    this._updateUI();
     this._displayEndGameModal();
+    this._updateUI();
+    this._resetUI()
   }
 
   _displayTime() {
@@ -95,6 +97,8 @@ export default class extends Controller {
   }
 
   _startUI() {
+    this.inputTarget.disabled = false;
+    this.nextArrowTarget.style.display = "unset";
     // cursor focused to form
     this.inputTarget.focus();
     const uiInterval = setInterval(() => {
@@ -126,6 +130,10 @@ export default class extends Controller {
   _resetUI() {
     this._displayTime();
     this.inputTarget.disabled = true;
+    this.nextArrowTarget.style.display = "none";
+    this.questionFieldTarget.innerHTML = "";
+    // play button appears
+    this.playButton.style.display = "unset";
   }
 
   _displayEndGameModal() {
