@@ -2,8 +2,10 @@ class Play < ApplicationRecord
   belongs_to :user
   belongs_to :game
 
+  ICON_PROBLEM_COUNT = 30
+
   def perfect_score
-    game.icon_based ? 36 : game.problems.count
+    game.icon_based ? ICON_PROBLEM_COUNT : game.problems.count
   end
 
   def perfect?

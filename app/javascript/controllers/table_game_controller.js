@@ -49,6 +49,11 @@ export default class extends Controller {
     window.removeEventListener('keyup', this.konamiListener);
   }
 
+  keyUp() {
+    // this method is here to stop an error temporarily
+    // in here define any action that should happen upon user input
+  }
+
   konamiCode() {
     this.pressed = [];
     window.addEventListener('keyup', this.konamiListener);
@@ -140,7 +145,7 @@ export default class extends Controller {
 
   postResults() {
     console.log("posting");
-    const postURL = document.querySelector(".game-container").dataset.url;
+    const postURL = document.querySelector("#game-data").dataset.url;
     fetch(postURL, {
       method: "POST",
       body: JSON.stringify({
