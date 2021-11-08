@@ -44,7 +44,7 @@ class GamesController < ApplicationController
   private
 
   def init_table_game
-    @problems = @game.icon_based ? @game.problems.sample(30) : @game.problems.shuffle
+    @problems = @game.icon_based ? @game.problems.sample(Play::ICON_PROBLEM_COUNT) : @game.problems.shuffle
   end
 
   def init_number_guess

@@ -10,9 +10,10 @@ require("../css/application.scss")
 
 // uncomment the next three lines to restore conversations
 
-// require("channels");
 // require("trix");
 // require("@rails/actiontext");
+
+require("channels");
 
 import "controllers"
 
