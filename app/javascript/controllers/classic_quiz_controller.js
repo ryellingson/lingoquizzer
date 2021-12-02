@@ -1,13 +1,14 @@
+import { bind } from 'wanakana';
 import { Controller } from "stimulus"
 import { ClassicQuiz } from "../components/games/classic_quiz.js"
 
 export default class extends Controller {
-  static targets = [ "questionField", "correctCount", "score", "timer", "input", "nextArrow" ]
+  static targets = [ "questionField", "correctCount", "score", "timer", "input", "nextArrow", "playButton" ]
 
   connect() {
     console.log('Hello, from classic quiz!');
     this.gameRunning = false;
-    this.fullTime = 3;
+    this.fullTime = 30;
     this.questionData = [
       {
         question: "食べる(past tense polite)",
@@ -26,6 +27,7 @@ export default class extends Controller {
     this.pointsPerQuestion = 5;
     this.classicQuiz = new ClassicQuiz(this.questionData, this.fullTime, this.pointsPerQuestion);
     this._resetUI();
+    bind(this.inputTarget);
   }
 
   startGame(event) {
@@ -36,8 +38,7 @@ export default class extends Controller {
     // populate the question area
     this.questionFieldTarget.innerHTML = this.classicQuiz.currentQuestion();
     // play button disappears
-    this.playButton = event.currentTarget;
-    this.playButton.style.display = "none";
+    this.playButtonTarget.style.display = "none";
     // timer starts
     this.classicQuiz.start();
     // starts the UI
@@ -133,7 +134,7 @@ export default class extends Controller {
     this.nextArrowTarget.style.display = "none";
     this.questionFieldTarget.innerHTML = "";
     // play button appears
-    this.playButton.style.display = "unset";
+    this.playButtonTarget.style.display = "unset";
   }
 
   _displayEndGameModal() {
