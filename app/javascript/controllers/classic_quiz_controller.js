@@ -2,32 +2,106 @@ import { bind } from 'wanakana';
 import { Controller } from "stimulus"
 import { ClassicQuiz } from "../components/games/classic_quiz.js"
 
+import Kuroshiro from "kuroshiro";
+// Initialize kuroshiro with an instance of analyzer (You could check the [apidoc](#initanalyzer) for more information):
+// For this example, you should npm install and import the kuromoji analyzer first
+import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
+
 export default class extends Controller {
   static targets = [ "questionField", "correctCount", "score", "timer", "input", "nextArrow", "playButton" ]
 
-  connect() {
+  async connect() {
     console.log('Hello, from classic quiz!');
     this.gameRunning = false;
     this.fullTime = 30;
-    this.questionData = [
-      {
-        question: "食べる(past tense polite)",
-        answer: "たべました"
-      },
-      {
-        question: "読む(present tense polite)",
-        answer: "よみます"
-      },
-      {
-        question: "走る(past tense plain)",
-        answer: "はした"
-      }
-    ]
 
+    // Instantiate
+    this.kuroshiro = new Kuroshiro();
+
+    // Initialize
+    // Here uses async/await, you could also use Promise
+    await this.kuroshiro.init(new KuromojiAnalyzer());
+    this.questionData = this.buildQuestions();
+    
+    
     this.pointsPerQuestion = 5;
     this.classicQuiz = new ClassicQuiz(this.questionData, this.fullTime, this.pointsPerQuestion);
     this._resetUI();
     bind(this.inputTarget);
+  }
+
+  fetchQuestions() {
+
+  }
+  
+  buildQuestions() {
+    // returns an array with this structure
+    // this.questionData = [
+    //   {
+    //     question: "食べる(past tense polite)",
+    //     answer: "たべました"
+    //   },
+    //   {
+    //     question: "読む(present tense polite)",
+    //     answer: "よみます"
+    //   },
+    //   {
+    //     question: "走る(past tense plain)",
+    //     answer: "はした"
+    //   }
+    // ]
+
+    // call API
+    const response = this.fetchQuestions();
+    // API sends questions in this format 
+
+    // {
+    //   "data": {
+    //     "randomList": [
+    //       {
+    //         "dictionary_form": "残す",
+    //         "short_present_form": "残す",
+    //         "short_present_negative_form": "残さない",
+    //         "polite_present_form": "残します",
+    //         "polite_present_negative_form": "残しません"
+    //       },
+    //       {
+    //         "dictionary_form": "寄る",
+    //         "short_present_form": "寄る",
+    //         "short_present_negative_form": "寄らない",
+    //         "polite_present_form": "寄ります",
+    //         "polite_present_negative_form": "寄りません"
+    //       }
+    //     ]
+    //   }
+    // }
+
+    // convert randomList array into format of questionData array
+    response.data.randomList.map(element => {
+      // access dictionary form
+      const dictionaryForm = element.dictionary_form;
+      // put the keys from the obj into an array, so we can select one at random and exclude dictionary form
+      const possibleForms = Object.keys(element).filter(form => (form !== "dictionary_form"));
+      // randomly pick target form
+      const targetForm = possibleForms[Math.floor(Math.random() * possibleForms.length)];
+      // take value of target form as answer
+      // convert answer into hiragana
+      const answer = this.convertToHiragana(element[targetForm]);
+      console.log("answer", answer);
+      // return the obj below
+      {
+        question: `${dictionaryForm} (${targetForm})`,
+        answer
+      }
+    });
+    
+
+  }
+
+  async convertToHiragana(string) {
+    // Convert what you want
+    // using kuroshiro (a package) to convert kanji to hiragana
+    return await this.kuroshiro.convert(string, { to: "hiragana" });
   }
 
   startGame(event) {
@@ -54,7 +128,7 @@ export default class extends Controller {
     this.classicQuiz.stopGame();
     this._displayEndGameModal();
     this._updateUI();
-    this._resetUI()
+    this._resetUI();
   }
 
   _displayTime() {

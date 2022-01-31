@@ -9,6 +9,7 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "^5.2.1",
     "jquery": "^3.5.0",
+    "kuroshiro": "^1.2.0",
     "stimulus": "^2.0.0",
     "sweetalert2": "^10.3.5",
     "tailwindcss": "^1.4.6",
