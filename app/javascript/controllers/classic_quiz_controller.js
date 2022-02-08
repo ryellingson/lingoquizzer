@@ -16,68 +16,56 @@ export default class extends Controller {
     this.fullTime = 30;
 
     // Instantiate
-    this.kuroshiro = new Kuroshiro();
+
+    // this.kuroshiro = new Kuroshiro();
+    console.log('this.kuroshiro: ', this.kuroshiro);
 
     // Initialize
     // Here uses async/await, you could also use Promise
-    await this.kuroshiro.init(new KuromojiAnalyzer());
+    // await this.kuroshiro.init(new KuromojiAnalyzer())
+    // const result = await this.kuroshiro.convert("感じ取れたら手を繋ごう、重なるのは人生のライン and レミリア最高！", { to: "hiragana" });
+    // console.log('k-result: ', result);
+    // console.log('this.kuroshiro2: ', this.kuroshiro);
     this.questionData = this.buildQuestions();
-    
-    
     this.pointsPerQuestion = 5;
     this.classicQuiz = new ClassicQuiz(this.questionData, this.fullTime, this.pointsPerQuestion);
     this._resetUI();
     bind(this.inputTarget);
   }
 
-  fetchQuestions() {
+  async fetchQuestions() {
+    // query requests the randomList query as defined in the Graphql resolvers
+    // we have explicitly written out the verb forms we want
+    const query = `query {
+      randomList {
+        dictionary_form
+        short_present_form
+        short_present_negative_form
+    		polite_present_form
+        polite_present_negative_form
+      }
+    }`;
+
+    // Here we make an API call to the Graphql endpoint 
+    // example https://www.netlify.com/blog/2020/12/21/send-graphql-queries-with-the-fetch-api-without-using-apollo-urql-or-other-graphql-clients/
+    let response = await fetch("http://localhost:4000", { 
+      method: "POST", 
+      body: JSON.stringify({ query }),
+      headers: {'Content-Type': 'application/json'}
+    });
+    // extract the body from the response
+    const data = await response.json();
+    return data;
+    // console.log('data: ', data);
 
   }
   
-  buildQuestions() {
-    // returns an array with this structure
-    // this.questionData = [
-    //   {
-    //     question: "食べる(past tense polite)",
-    //     answer: "たべました"
-    //   },
-    //   {
-    //     question: "読む(present tense polite)",
-    //     answer: "よみます"
-    //   },
-    //   {
-    //     question: "走る(past tense plain)",
-    //     answer: "はした"
-    //   }
-    // ]
-
-    // call API
-    const response = this.fetchQuestions();
-    // API sends questions in this format 
-
-    // {
-    //   "data": {
-    //     "randomList": [
-    //       {
-    //         "dictionary_form": "残す",
-    //         "short_present_form": "残す",
-    //         "short_present_negative_form": "残さない",
-    //         "polite_present_form": "残します",
-    //         "polite_present_negative_form": "残しません"
-    //       },
-    //       {
-    //         "dictionary_form": "寄る",
-    //         "short_present_form": "寄る",
-    //         "short_present_negative_form": "寄らない",
-    //         "polite_present_form": "寄ります",
-    //         "polite_present_negative_form": "寄りません"
-    //       }
-    //     ]
-    //   }
-    // }
-
+  async buildQuestions() {
+    // call API and store in response
+    const response = await this.fetchQuestions();
     // convert randomList array into format of questionData array
-    response.data.randomList.map(element => {
+    console.log('response: ', response);
+    return response.data.randomList.map(async element => {
       // access dictionary form
       const dictionaryForm = element.dictionary_form;
       // put the keys from the obj into an array, so we can select one at random and exclude dictionary form
@@ -86,12 +74,12 @@ export default class extends Controller {
       const targetForm = possibleForms[Math.floor(Math.random() * possibleForms.length)];
       // take value of target form as answer
       // convert answer into hiragana
-      const answer = this.convertToHiragana(element[targetForm]);
-      console.log("answer", answer);
+      // const answer = await this.convertToHiragana(element[targetForm]);
+      // console.log("answer", answer);
       // return the obj below
-      {
+      return {
         question: `${dictionaryForm} (${targetForm})`,
-        answer
+        answer: targetForm
       }
     });
     
