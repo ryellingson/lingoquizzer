@@ -13,24 +13,21 @@ export default class extends Controller {
   async connect() {
     console.log('Hello, from classic quiz!');
     this.gameRunning = false;
-    this.fullTime = 30;
-
-    // Instantiate
-
-    // this.kuroshiro = new Kuroshiro();
-    console.log('this.kuroshiro: ', this.kuroshiro);
-
-    // Initialize
-    // Here uses async/await, you could also use Promise
-    // await this.kuroshiro.init(new KuromojiAnalyzer())
-    // const result = await this.kuroshiro.convert("感じ取れたら手を繋ごう、重なるのは人生のライン and レミリア最高！", { to: "hiragana" });
-    // console.log('k-result: ', result);
-    // console.log('this.kuroshiro2: ', this.kuroshiro);
-    this.questionData = this.buildQuestions();
+    this.fullTime = 300;
     this.pointsPerQuestion = 5;
-    this.classicQuiz = new ClassicQuiz(this.questionData, this.fullTime, this.pointsPerQuestion);
+
     this._resetUI();
-    bind(this.inputTarget);
+
+    // Instantiate kuroshiro
+    this.kuroshiro = new Kuroshiro();
+
+    // Initialize KuromojiAnalyzer
+    // Here uses async/await, you could also use Promise
+    const analyzer = new KuromojiAnalyzer(
+      { dictPath: "/kuromoji/dict" } // this points to the public/kuromoji/dict folder which was created as a workaround to bypass an error with kuromoji looking in the wrong place possibly because of webpacker
+    );
+    await this.kuroshiro.init(analyzer);
+    // bind(this.inputTarget);
   }
 
   async fetchQuestions() {
@@ -64,8 +61,8 @@ export default class extends Controller {
     // call API and store in response
     const response = await this.fetchQuestions();
     // convert randomList array into format of questionData array
-    console.log('response: ', response);
-    return response.data.randomList.map(async element => {
+    // we need to wait for each promise in the map array to resolve
+    return await Promise.all(response.data.randomList.map(async element => {
       // access dictionary form
       const dictionaryForm = element.dictionary_form;
       // put the keys from the obj into an array, so we can select one at random and exclude dictionary form
@@ -74,14 +71,14 @@ export default class extends Controller {
       const targetForm = possibleForms[Math.floor(Math.random() * possibleForms.length)];
       // take value of target form as answer
       // convert answer into hiragana
-      // const answer = await this.convertToHiragana(element[targetForm]);
+      const answer = await this.convertToHiragana(element[targetForm]);
       // console.log("answer", answer);
       // return the obj below
       return {
         question: `${dictionaryForm} (${targetForm})`,
-        answer: targetForm
+        answer
       }
-    });
+    }));
     
 
   }
@@ -92,13 +89,18 @@ export default class extends Controller {
     return await this.kuroshiro.convert(string, { to: "hiragana" });
   }
 
-  startGame(event) {
+  async startGame(event) {
+    this.questionData = await this.buildQuestions();
+    // create an instance of our ClassicQuiz class, passing it questionData taken from the API
+    this.classicQuiz = new ClassicQuiz(this.questionData, this.fullTime, this.pointsPerQuestion);
     // gameRunning attribute changes from false to true
     this.gameRunning = true;
     // reset parameters
     this.classicQuiz.resetGame(this.questionData);
+    console.log('this.questionData: ', this.questionData);
     // populate the question area
     this.questionFieldTarget.innerHTML = this.classicQuiz.currentQuestion();
+    console.log('this.classicQuiz: ', this.classicQuiz);
     // play button disappears
     this.playButtonTarget.style.display = "none";
     // timer starts
@@ -119,9 +121,11 @@ export default class extends Controller {
     this._resetUI();
   }
 
-  _displayTime() {
-    const sec = this.classicQuiz.timeLeft % 60;
-    this.timerTarget.innerText = `${Math.floor(this.classicQuiz.timeLeft / 60)}:${sec < 10 ? "0" + sec : sec}`;
+  _displayTime(time = null) {
+    // we can pass a time directly, useful when ClassicQuiz is not instantiated
+    const timeLeft = time ? time : this.classicQuiz.timeLeft;
+    const sec = timeLeft % 60;
+    this.timerTarget.innerText = `${Math.floor(timeLeft / 60)}:${sec < 10 ? "0" + sec : sec}`;
   }
 
   _displayScore() {
@@ -182,6 +186,7 @@ export default class extends Controller {
     } else if (this.classicQuiz.greenLight) {
       // add visual confirmation (green outline)
       this.questionFieldTarget.style.border = "solid 3px green"
+      this.inputTarget.value = "";
     } else {
       // present error colors (red outline) and message
       this.questionFieldTarget.style.border = "solid 3px red"
@@ -191,7 +196,7 @@ export default class extends Controller {
   }
 
   _resetUI() {
-    this._displayTime();
+    this._displayTime(this.fullTime);
     this.inputTarget.disabled = true;
     this.nextArrowTarget.style.display = "none";
     this.questionFieldTarget.innerHTML = "";
