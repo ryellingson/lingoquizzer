@@ -9,12 +9,15 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "^5.2.1",
     "jquery": "^3.5.0",
+    "kuroshiro": "^1.2.0",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0",
     "stimulus": "^2.0.0",
     "sweetalert2": "^10.3.5",
     "tailwindcss": "^1.4.6",
     "tailwindcss-stimulus-components": "^1.2.0",
     "trix": "^1.2.0",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "wanakana": "^4.0.2"
   },
   "version": "0.1.0",
   "devDependencies": {
