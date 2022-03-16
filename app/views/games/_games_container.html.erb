@@ -22,7 +22,11 @@
                     <div class="text-icon">
                       <%= rand(1...100) %>
                     </div>
-                  <% end %>
+                  <% elsif game.genre == "classic_quiz" %>
+                    <div class="text-icon">
+                      <%= "文法" %>
+                    </div>
+                <% end %>
                 </div>
               </div>
               <h1 class='game-card-action btn-primary'>Play!</h1>
