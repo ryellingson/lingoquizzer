@@ -5,9 +5,7 @@
       <div class="grid-card">
         <p class='plays-card-header'>Recent Plays</p>
         <div class="profile-cards">
-          <% @user.display_plays.each do |play| %>
-            <%= render "plays/play", play: play %>
-          <% end %>
+          <%= render @user.display_plays %>
         </div>
       </div>
 

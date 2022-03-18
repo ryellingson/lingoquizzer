@@ -157,7 +157,6 @@ export default class extends Controller {
     this.endGame(false);
   }
 
-
   postResults() {
     console.log("posting");
     fetch(this.postURL, {
