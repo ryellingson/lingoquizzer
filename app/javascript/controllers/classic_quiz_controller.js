@@ -8,7 +8,7 @@ import Kuroshiro from "kuroshiro";
 import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
 
 export default class extends Controller {
-  static targets = [ "questionField", "correctCount", "score", "timer", "input", "nextArrow", "playButton" ]
+  static targets = [ "questionField", "questionBanner", "correctCount", "score", "timer", "input", "nextArrow", "playButton" ]
 
   async connect() {
     console.log('Hello, from classic quiz!');
@@ -185,11 +185,13 @@ export default class extends Controller {
       this.questionFieldTarget.style.border = "none"
     } else if (this.classicQuiz.greenLight) {
       // add visual confirmation (green outline)
-      this.questionFieldTarget.style.border = "solid 3px green"
+      this.questionBannerTarget.style.transition = "ease 2s";
+      this.questionBannerTarget.style.backgroundColor = "green";
       this.inputTarget.value = "";
     } else {
       // present error colors (red outline) and message
-      this.questionFieldTarget.style.border = "solid 3px red"
+      this.questionBannerTarget.style.transition = "ease 2s";
+      this.questionBannerTarget.style.backgroundColor = "red";
     }
     this._displayScore();
     this._displayCorrectCount();

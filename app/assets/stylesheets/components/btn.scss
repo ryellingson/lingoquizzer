@@ -20,7 +20,7 @@ $yellow: #f1c40f;
 }
 
 .border-glow {
-  border-color: $blue;
+  border-color: rgba(26, 32, 44, .3);
   color: #fff;
   box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
   transition: all 150ms ease-in-out;

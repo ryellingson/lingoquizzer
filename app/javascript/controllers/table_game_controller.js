@@ -9,6 +9,7 @@ export default class extends Controller {
     this.quitButtons = document.querySelectorAll(".quit-button");
     this.replayButton = document.querySelector(".restart");
     this.gameInput = document.querySelector(".game-input");
+    this.gameInput.disabled = true;
     this.answers = document.querySelectorAll(".answer");
     this.answerCount = this.answers.length;
     this.backButton = document.querySelector(".shift-button-left");
@@ -71,6 +72,7 @@ export default class extends Controller {
   };
 
   startGame = () => {
+    this.gameInput.disabled = false;
     this.interval = setInterval(this.updateTimer, 1000);
     this.playButtons.forEach((button) => button.classList.add("hidden"));
     this.quitButtons.forEach((button) => button.classList.remove("hidden"));
@@ -203,6 +205,7 @@ export default class extends Controller {
     }
     this.playButtons.forEach((button) => button.classList.remove("hidden"));
     this.quitButtons.forEach((button) => button.classList.add("hidden"));
+    this.gameInput.disabled = true;
   }
 
   restartGame = () => {

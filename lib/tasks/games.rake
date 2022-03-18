@@ -21,7 +21,7 @@ GAMES_HASH = [
 ]
 
 NUMBER_GUESS_HASH = [
-  {name: "Guess the Number", icon_based: false, question_header: nil, genre: "number_guess", difficulty: "beginner", category: "numbers", play_time: 60, score: 50, slug: "number_guess", unlock_cp: 5}
+  {name: "Guess the Number", icon_based: false, question_header: nil, genre: "number_guess", difficulty: "beginner", category: "numbers", play_time: 180, score: 50, slug: "number_guess", unlock_cp: 5}
 ]
 
 CONJUGATION_TABLE_GAME_JAPANESE_HASH = [
@@ -31,7 +31,7 @@ CONJUGATION_TABLE_GAME_JAPANESE_HASH = [
 def game_builder(lang, game_attr, json_required: true)
 
   game = Game.find_or_initialize_by(name: game_attr[:name], language: lang)
-  if game.persisted? && ENV["force"]
+  if game.persisted? && !ENV["force"]
     puts "#{game.name} already exists, skipping it"
   else
     puts "parsing JSON"
@@ -83,41 +83,41 @@ def game_builder(lang, game_attr, json_required: true)
   end
 end
 
-# namespace :games do
-#   desc "update all the games"
-#   task update: :environment do |task, args|
-
-#     KANA_GAMES_HASH.each do |game_attr|
-#       japanese = Language.find_by(name: "japanese")
-#       game_builder(japanese, game_attr)
-#     end
-
-#     Language.all.each do |lang|
-#       GAMES_HASH.each do |game_attr|
-#         game_builder(lang, game_attr)
-#       end
-#       NUMBER_GUESS_HASH.each do |game_attr|
-#         game_builder(lang, game_attr)
-#       end
-#     end
-
-#     CONJUGATION_TABLE_GAME_JAPANESE_HASH.each do |game_attr|
-#       japanese = Language.find_by(name: "japanese")
-#       game_builder(japanese, game_attr, json_required: false)
-#     end
-
-#     puts "done with games"
-#   end
-# end
-
 namespace :games do
   desc "update all the games"
   task update: :environment do |task, args|
+
+    KANA_GAMES_HASH.each do |game_attr|
+      japanese = Language.find_by(name: "japanese")
+      game_builder(japanese, game_attr)
+    end
+
     Language.all.each do |lang|
+      GAMES_HASH.each do |game_attr|
+        game_builder(lang, game_attr)
+      end
       NUMBER_GUESS_HASH.each do |game_attr|
         game_builder(lang, game_attr)
       end
     end
-    puts "update num desc"
+
+    CONJUGATION_TABLE_GAME_JAPANESE_HASH.each do |game_attr|
+      japanese = Language.find_by(name: "japanese")
+      game_builder(japanese, game_attr, json_required: false)
+    end
+
+    puts "done with games"
   end
 end
+
+# namespace :games do
+#   desc "update all the games"
+#   task update: :environment do |task, args|
+#     Language.all.each do |lang|
+#       NUMBER_GUESS_HASH.each do |game_attr|
+#         game_builder(lang, game_attr)
+#       end
+#     end
+#     puts "update num desc"
+#   end
+# end
