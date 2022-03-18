@@ -22,9 +22,9 @@
       >
     </div>
 
-    <div class="resultParas">
+    <div class="resultParas text-center">
       <p data-number-guess-target="guesses"></p>
-      <p data-number-guess-target="lastResult"></p>
+      <p class="p-3 rounded" data-number-guess-target="lastResult"></p>
       <p data-number-guess-target="lowOrHi"></p>
     </div>
 
@@ -36,7 +36,7 @@
     </div>
 
     <div class="hidden btn btn-danger text-xl w-1/3 mx-auto quit-button"
-      data-action="click->number-guess#endGame"
+      data-action="click->number-guess#quitGame"
       data-number-guess-target="quitButton"
     >
       <p>Quit</p>

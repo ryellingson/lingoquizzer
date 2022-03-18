@@ -2,8 +2,8 @@
       <div class="sm:flex justify-around">
         <div class="profile-scores text-center sm:text-left">
           <p>Game Points(GP): <%= @user.total_score %></p>
-          <p>Convo Points(CP): <%= @user.convo_points %></p>
-          <p>Hint Points(HP): <%= @user.hint_points %></p>
+          <!-- <p>Convo Points(CP): <%#= @user.convo_points %></p> -->
+          <!-- <p>Hint Points(HP): <%#= @user.hint_points %></p> -->
         </div>
         <div class="flex justify-around sm:flex-col sm:w-1/4">
           <% if @user == current_user %>
