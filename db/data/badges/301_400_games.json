@@ -414,7 +414,7 @@
     "name":"ちゅうがっこう",
     "description":"a japanese hiragana 2 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/ja/hiragana_2.ちゅうがっこう.svg",
+      "image_path":"badges/games/ja/hiragana_2.ちゅうがっこう.svg",
       "game_slug":"hiragana_2",
       "language_code":"ja"
     }
