@@ -6,12 +6,12 @@ Follow the on screen instructions and you'll be sure to win this one.
 
 Make sure to **WRITE OUT** the number in the language.
 
-one, thirty, sixty-seven = ✅ 😄  
+uno, treinta, sesenta y siete = ✅ 😄  
 1, 30, 67 = ❌ 😣
 
-Remember in **English** to use a hyphen when writing two-word numbers from twenty-one to ninety-nine (inclusive) as words.
+Remember in **Spanish** some numbers have accent marks!
 
-For example: thirty-two (32)
+For example: veintidós (22)
 
 Hit **Play** to get started!
 

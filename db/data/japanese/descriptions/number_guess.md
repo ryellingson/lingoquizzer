@@ -6,12 +6,16 @@ Follow the on screen instructions and you'll be sure to win this one.
 
 Make sure to **WRITE OUT** the number in the language.
 
-one, thirty, sixty-seven = ✅ 😄  
+いち, さんじゅう, ろくじゅうなな = ✅ 😄  
 1, 30, 67 = ❌ 😣
 
-Remember in **English** to use a hyphen when writing two-word numbers from twenty-one to ninety-nine (inclusive) as words.
+Remember in **Japanese** you can use Kanji, Kana, or Romaji!
 
-For example: thirty-two (32)
+For example: 5
+
+Kanji = 五 <br>
+Kana = ご <br>
+Romaji = go
 
 Hit **Play** to get started!
 

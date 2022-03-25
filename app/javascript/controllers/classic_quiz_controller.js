@@ -13,7 +13,7 @@ export default class extends Controller {
   async connect() {
     console.log('Hello, from classic quiz!');
     this.gameRunning = false;
-    this.fullTime = 300;
+    this.fullTime = 3;
     this.pointsPerQuestion = 5;
 
     this._resetUI();
@@ -27,7 +27,7 @@ export default class extends Controller {
       { dictPath: "/kuromoji/dict" } // this points to the public/kuromoji/dict folder which was created as a workaround to bypass an error with kuromoji looking in the wrong place possibly because of webpacker
     );
     await this.kuroshiro.init(analyzer);
-    // bind(this.inputTarget);
+    bind(this.inputTarget);
   }
 
   async fetchQuestions() {
@@ -75,7 +75,7 @@ export default class extends Controller {
       // console.log("answer", answer);
       // return the obj below
       return {
-        question: `${dictionaryForm} (${targetForm})`,
+        question: `${dictionaryForm} (${targetForm.replaceAll("_", " ")})`,
         answer
       }
     }));
@@ -111,11 +111,31 @@ export default class extends Controller {
     console.log("starting game");
   }
 
-  endGame() {
+  _postResults() {
+    console.log("posting");
+    const postURL = this.element.dataset.url;
+    return fetch(postURL, {
+      method: "POST",
+      body: JSON.stringify({
+        play: {
+          score: this.classicQuiz.score,
+          time: (this.fullTime - this.classicQuiz.timeLeft),
+          count: this.classicQuiz.correctCountValue
+        }
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": Rails.csrfToken(),
+      }
+    })
+  }
+
+  async endGame() {
     console.log("endgame");
     // gameRunning attribute changes from true to false
     this.gameRunning = false;
     this.classicQuiz.stopGame();
+    await this._postResults();
     this._displayEndGameModal();
     this._updateUI();
     this._resetUI();
