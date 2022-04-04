@@ -13,7 +13,7 @@ export default class extends Controller {
   async connect() {
     console.log('Hello, from classic quiz!');
     this.gameRunning = false;
-    this.fullTime = 3;
+    this.fullTime = this.element.dataset.playTime;
     this.pointsPerQuestion = 5;
 
     this._resetUI();
@@ -30,11 +30,11 @@ export default class extends Controller {
     bind(this.inputTarget);
   }
 
-  async fetchQuestions() {
+  async fetchQuestions(problemCount) {
     // query requests the randomList query as defined in the Graphql resolvers
     // we have explicitly written out the verb forms we want
     const query = `query {
-      randomList {
+      randomList(size: ${problemCount}) {
         dictionary_form
         short_present_form
         short_present_negative_form
@@ -59,7 +59,7 @@ export default class extends Controller {
   
   async buildQuestions() {
     // call API and store in response
-    const response = await this.fetchQuestions();
+    const response = await this.fetchQuestions(this.element.dataset.problemCount);
     // convert randomList array into format of questionData array
     // we need to wait for each promise in the map array to resolve
     return await Promise.all(response.data.randomList.map(async element => {
@@ -113,6 +113,7 @@ export default class extends Controller {
 
   _postResults() {
     console.log("posting");
+    // we grab data from the html data atrributes to use in our JS
     const postURL = this.element.dataset.url;
     return fetch(postURL, {
       method: "POST",
@@ -153,7 +154,7 @@ export default class extends Controller {
   }
 
   _displayCorrectCount() {
-    this.correctCountTarget.innerText = `${this.classicQuiz.correctCountValue}/${this.classicQuiz.totalQuestions}`
+    this.correctCountTarget.innerText = `${this.classicQuiz.correctCountValue}/${this.classicQuiz.problemCount}`
   }
 
   keyUp(e) {
@@ -172,7 +173,11 @@ export default class extends Controller {
 
   submit(input) {
     this.classicQuiz.checkAnswer(input);
-    this._updateUI();
+    if (this.classicQuiz.gameWon()) {
+      this.endGame();
+    } else {
+      this._updateUI();
+    }
   }
 
   next() {
@@ -200,17 +205,18 @@ export default class extends Controller {
   }
 
   _updateUI() {
-    this.questionFieldTarget.innerText = this.classicQuiz.currentQuestion() || "End of game";
+    this.questionFieldTarget.innerText = this.classicQuiz.currentQuestion() || "Great Play!";
     if (this.classicQuiz.greenLight === null) {
-      this.questionFieldTarget.style.border = "none"
+      this.questionBannerTarget.style.transition = "ease 0.3s";
+      this.questionBannerTarget.style.backgroundColor = null;
     } else if (this.classicQuiz.greenLight) {
       // add visual confirmation (green outline)
-      this.questionBannerTarget.style.transition = "ease 2s";
+      this.questionBannerTarget.style.transition = "ease 1s";
       this.questionBannerTarget.style.backgroundColor = "green";
       this.inputTarget.value = "";
     } else {
       // present error colors (red outline) and message
-      this.questionBannerTarget.style.transition = "ease 2s";
+      this.questionBannerTarget.style.transition = "ease 1s";
       this.questionBannerTarget.style.backgroundColor = "red";
     }
     this._displayScore();
@@ -227,7 +233,7 @@ export default class extends Controller {
   }
 
   _displayEndGameModal() {
-    if (this.classicQuiz.correctCountValue === this.classicQuiz.totalQuestions) {
+    if (this.classicQuiz.correctCountValue === this.classicQuiz.problemCount) {
       Swal.fire({
         // imageUrl: `${this.classicQuiz.gameDataObject.perfectPlayUrl}`,
         imageWidth: 200,

@@ -5,8 +5,8 @@
   <div class="plays-card-content">
     <p>- Score: <%= play.score %></p>
     <p>- Time: <%= play.time %></p>
-    <% if play.perfect_score.positive? %>
-      <p>- Count: <%= play.count %>/<%= play.perfect_score %></p>
+    <% if play.game.problem_count.positive? %>
+      <p>- Count: <%= play.count %>/<%= play.game.problem_count %></p>
     <% end %>
     <p class='plays-card-timestamp'><%= play.created_at.strftime("%d %b %Y, %H:%M") %></p>
   </div>

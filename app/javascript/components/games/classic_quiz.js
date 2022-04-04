@@ -38,6 +38,10 @@ export class ClassicQuiz  {
     return false;
   }
 
+  gameWon() {
+    return this.correctCountValue === this.problemCount;
+  }
+
   resetGame(problems, fullTime = this.fullTime) {
     this.score = 0;
     this.currentProblemIndex = 0;
@@ -45,7 +49,7 @@ export class ClassicQuiz  {
     this.timeLeft = fullTime;
     this.correctCountValue = 0;
     this.answerCount = 0;
-    this.totalQuestions = problems.length;
+    this.problemCount = problems.length;
     // greenLight is true when the last checked answer returns and is used to change enter to nextQuestion
     this.greenLight = null;
   }

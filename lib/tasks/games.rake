@@ -25,7 +25,7 @@ NUMBER_GUESS_HASH = [
 ]
 
 CONJUGATION_TABLE_GAME_JAPANESE_HASH = [
-  {name: "Japanese Verb Conjugation", icon_based: false, question_header: nil, genre: "classic_quiz", difficulty: "intermediate", category: "grammar", play_time: 120, score: 5, slug: "japanese_verb_conjugation", unlock_cp: 5}
+  {name: "Japanese Verb Conjugation", icon_based: false, question_header: nil, genre: "classic_quiz", difficulty: "intermediate", category: "grammar", play_time: 120, score: 5, slug: "verb_conjugation_1", unlock_cp: 5}
 ]
 
 def game_builder(lang, game_attr, json_required: true)

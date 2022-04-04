@@ -498,5 +498,15 @@
       "game_slug":"number_guess",
       "language_code":"fr"
     }
+  },
+  {
+    "id":347,
+    "name":"文法王",
+    "description":"You congugated all the verbs in Japanese!",
+    "custom_fields": {
+      "image_path":"badges/games/ja/verb_conjugation_1.文法王.png",
+      "game_slug":"verb_conjugation_1",
+      "language_code":"ja"
+    }
   }
 ]
