@@ -22,7 +22,7 @@ export default class extends Controller {
     this.kuroshiro = new Kuroshiro();
 
     // Initialize KuromojiAnalyzer
-    // Here uses async/await, you could also use Promise
+    // Here we use async/await, you could also use Promise
     const analyzer = new KuromojiAnalyzer(
       { dictPath: "/kuromoji/dict" } // this points to the public/kuromoji/dict folder which was created as a workaround to bypass an error with kuromoji looking in the wrong place possibly because of webpacker
     );
@@ -43,8 +43,8 @@ export default class extends Controller {
       }
     }`;
 
-    // Here we make an API call to the Graphql endpoint 
-    // example https://www.netlify.com/blog/2020/12/21/send-graphql-queries-with-the-fetch-api-without-using-apollo-urql-or-other-graphql-clients/
+    // here we make an API call to the Graphql endpoint 
+    // example: https://www.netlify.com/blog/2020/12/21/send-graphql-queries-with-the-fetch-api-without-using-apollo-urql-or-other-graphql-clients/
     let response = await fetch("http://localhost:4000", { 
       method: "POST", 
       body: JSON.stringify({ query }),
@@ -72,7 +72,6 @@ export default class extends Controller {
       // take value of target form as answer
       // convert answer into hiragana
       const answer = await this.convertToHiragana(element[targetForm]);
-      // console.log("answer", answer);
       // return the obj below
       return {
         question: `${dictionaryForm} (${targetForm.replaceAll("_", " ")})`,
@@ -189,10 +188,13 @@ export default class extends Controller {
   }
 
   _startUI() {
+    // enables the answer form
     this.inputTarget.disabled = false;
+    // resets the next arrow to its inherited style value, making it visible again
     this.nextArrowTarget.style.display = "unset";
     // cursor focused to form
     this.inputTarget.focus();
+    // begins displaying time, ends the game when the timer reaches 0, and stops the timer
     const uiInterval = setInterval(() => {
       this._displayTime();
       if (this.classicQuiz.timeLeft <= 0) {
@@ -200,39 +202,48 @@ export default class extends Controller {
         clearInterval(uiInterval);
       }
     }, 1000);
+    // displays relevant data to users
     this._displayCorrectCount();
     this._displayScore();
   }
 
   _updateUI() {
+    // either displays the current question or prompts the user that the game is over
     this.questionFieldTarget.innerText = this.classicQuiz.currentQuestion() || "Great Play!";
+    // displays the neutral color
     if (this.classicQuiz.greenLight === null) {
       this.questionBannerTarget.style.transition = "ease 0.3s";
       this.questionBannerTarget.style.backgroundColor = null;
     } else if (this.classicQuiz.greenLight) {
-      // add visual confirmation (green outline)
+      // displays the correct answer color and clears the form
       this.questionBannerTarget.style.transition = "ease 1s";
       this.questionBannerTarget.style.backgroundColor = "green";
       this.inputTarget.value = "";
     } else {
-      // present error colors (red outline) and message
+      // displays the wrong answer color
       this.questionBannerTarget.style.transition = "ease 1s";
-      this.questionBannerTarget.style.backgroundColor = "red";
+      this.questionBannerTarget.style.backgroundColor = "firebrick";
     }
+    // displays relevant data to users
     this._displayScore();
     this._displayCorrectCount();
   }
 
   _resetUI() {
+    // resets the timer
     this._displayTime(this.fullTime);
+    // disables the form
     this.inputTarget.disabled = true;
+    // hides the next arrow
     this.nextArrowTarget.style.display = "none";
+    // clears the form
     this.questionFieldTarget.innerHTML = "";
-    // play button appears
+    // play button reappears
     this.playButtonTarget.style.display = "unset";
   }
 
   _displayEndGameModal() {
+    // checks for a perfect play, and fires the relevant endgame modal
     if (this.classicQuiz.correctCountValue === this.classicQuiz.problemCount) {
       Swal.fire({
         // imageUrl: `${this.classicQuiz.gameDataObject.perfectPlayUrl}`,

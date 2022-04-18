@@ -51,8 +51,8 @@ class GamesController < ApplicationController
     json_file_path = Rails.root + "db/data/#{@game.language.name}/#{@game.slug}.json"
     @numbers = JSON.parse(File.read(json_file_path))
   end
-  
-  # We are init through the API
+
+  # We are initializing through the API
   # def init_classic_quiz
   #   @problems = [ Problem.new(question: "食べる", game: @game) ]
   # end
