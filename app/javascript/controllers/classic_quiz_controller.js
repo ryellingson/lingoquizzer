@@ -182,6 +182,7 @@ export default class extends Controller {
   next() {
     console.log("next ui")
     this.inputTarget.value = "";
+    this.inputTarget.focus();
     // if (!this.classicQuiz.nextQuestion()) {
     //   this.endGame();
     // }
