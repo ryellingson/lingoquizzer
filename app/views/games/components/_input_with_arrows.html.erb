@@ -1,13 +1,13 @@
 <fieldset class="answer-set">
   <% if local_assigns[:left_action] %>
-    <div class="shift-button-left" data-action="<%= local_assigns[:left_action] %>">
+    <div class="shift-button-left rounded-lg" data-action="<%= local_assigns[:left_action] %>">
      <p><i class="fas fa-chevron-left"></i>&nbsp;Back</p>
     </div>
   <% end %>
   <input type="text" class="game-input pl-1 mt-2" data-action="<%= local_assigns[:input_action] %>" data-classic-quiz-target="input">
   <% if local_assigns[:right_action] %>
-    <button class="shift-button-right" data-action="<%= local_assigns[:right_action] %>" data-classic-quiz-target="nextArrow">
-     <p>Next&nbsp;<i class="fas fa-chevron-right"></i></p>
+    <button class="shift-button-right rounded-lg" data-action="<%= local_assigns[:right_action] %>" data-classic-quiz-target="nextArrow">
+     <p>Next&nbsp;<i class="fas fa-chevron-right "></i></p>
     </button>
   <% end %>
 </fieldset>
