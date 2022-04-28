@@ -60,6 +60,8 @@ export class ClassicQuiz  {
     this.problemCount = problems.length;
     // greenLight is true when the last checked answer returns and is used to change enter to nextQuestion
     this.greenLight = null;
+
+    // build a data structure to remove correctly answered problems
   }
 
   stopGame() {

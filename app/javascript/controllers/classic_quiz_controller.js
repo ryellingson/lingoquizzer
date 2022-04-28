@@ -181,9 +181,10 @@ export default class extends Controller {
 
   next() {
     console.log("next ui")
-    if (!this.classicQuiz.nextQuestion()) {
-      this.endGame();
-    }
+    this.inputTarget.value = "";
+    // if (!this.classicQuiz.nextQuestion()) {
+    //   this.endGame();
+    // }
     this._updateUI();
   }
 
@@ -230,6 +231,8 @@ export default class extends Controller {
   }
 
   _resetUI() {
+    // puts banner display to neutral color
+    this.questionBannerTarget.style.backgroundColor = null;
     // resets the timer
     this._displayTime(this.fullTime);
     // disables the form
@@ -246,14 +249,14 @@ export default class extends Controller {
     // checks for a perfect play, and fires the relevant endgame modal
     if (this.classicQuiz.correctCountValue === this.classicQuiz.problemCount) {
       Swal.fire({
-        // imageUrl: `${this.classicQuiz.gameDataObject.perfectPlayUrl}`,
+        imageUrl: this.element.dataset.perfectPlayUrl,
         imageWidth: 200,
         imageHeight: 200,
         imageAlt: 'Perfect Play',
         title: '<u>Perfect Play!</u>',
         html:
           `<div>Time Bonus: ${this.classicQuiz.timeLeft}pts</div><br>` +
-          `<div>Correct Answers: ${this.classicQuiz.correctCountValue}/${this.classicQuiz.answerCount}</div><br>` +
+          `<div>Correct Answers: ${this.classicQuiz.correctCountValue}/${this.classicQuiz.problemCount}</div><br>` +
           `<div>Score: ${this.classicQuiz.score}pts</div>`
       });
     } else {
@@ -262,7 +265,7 @@ export default class extends Controller {
         title: '<u>Nice Play!</u>',
         html:
           `<div>Time Bonus: ${this.classicQuiz.timeLeft}pts</div><br>` +
-          `<div>Correct Answers: ${this.classicQuiz.correctCountValue}/${this.classicQuiz.answerCount}</div><br>` +
+          `<div>Correct Answers: ${this.classicQuiz.correctCountValue}/${this.classicQuiz.problemCount}</div><br>` +
           `<div>Score: ${this.classicQuiz.score}pts</div>`
       });
     }
