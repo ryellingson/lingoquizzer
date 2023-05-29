@@ -19,10 +19,10 @@ export default class extends Controller {
     this.winningScore = this.element.dataset.score;
     this.postURL = this.element.dataset.url;
     this.numbers = JSON.parse(this.numbersTarget.dataset.numbers);
-    console.log("data", this.numbers)
+    // console.log("data", this.numbers)
 
     this.reverseNumbers = this.reverseNumbersDict(this.numbers);
-    console.log("reverse", this.reverseNumbers);
+    // console.log("reverse", this.reverseNumbers);
 
     this.max = Math.max(...Object.keys(this.numbers).map((e) => parseInt(e)));
 
@@ -80,7 +80,6 @@ export default class extends Controller {
     this.lastResultTarget.style.backgroundColor = 'white';
 
     this.randomNumber = Math.floor(Math.random() * this.max);
-    console.log("rand =" ,this.randomNumber);
   }
 
   updateTimer = () => {
@@ -95,13 +94,13 @@ export default class extends Controller {
   }
 
   checkGuess() {
-    console.log("event", event);
+    // console.log("event", event);
     this.lastResultTarget.textContent = "";
 
     this.userInput = this.guessFieldTarget.value;
     this.userGuess = this.reverseNumbers[this.userInput];
 
-    console.log("this.userGuess", this.userGuess);
+    // console.log("this.userGuess", this.userGuess);
 
     this.guessFieldTarget.value = '';
     this.guessFieldTarget.focus();
@@ -140,7 +139,7 @@ export default class extends Controller {
   }
 
   endGame(win) {
-    console.log('guess count', this.guessCount)
+    // console.log('guess count', this.guessCount)
     clearInterval(this.interval);
 
     this.displayEndGameModal(win);
@@ -154,6 +153,9 @@ export default class extends Controller {
     this.guessSubmitTarget.classList.add("btn-disabled");
   }
 
+  quitGame() {
+    this.endGame(false);
+  }
 
   postResults() {
     console.log("posting");

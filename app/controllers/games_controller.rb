@@ -44,7 +44,7 @@ class GamesController < ApplicationController
   private
 
   def init_table_game
-    @problems = @game.icon_based ? @game.problems.sample(Play::ICON_PROBLEM_COUNT) : @game.problems.shuffle
+    @problems = @game.icon_based ? @game.problems.sample(@game.problem_count) : @game.problems.shuffle
   end
 
   def init_number_guess
@@ -52,7 +52,8 @@ class GamesController < ApplicationController
     @numbers = JSON.parse(File.read(json_file_path))
   end
 
-  def init_classic_quiz
-    @problems = [ Problem.new(question: "食べる", game: @game) ]
-  end
+  # We are initializing through the API
+  # def init_classic_quiz
+  #   @problems = [ Problem.new(question: "食べる", game: @game) ]
+  # end
 end

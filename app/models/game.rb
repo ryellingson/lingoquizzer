@@ -10,6 +10,16 @@ class Game < ApplicationRecord
   enum character_type: { kana: 0, kanji: 1, romaji: 2 }
   before_save :assign_markdown_content, if: -> { description_changed? }
 
+  # this defines the number of quesitons per game
+  def problem_count
+    if icon_based
+      30
+    elsif genre == "classic_quiz"
+      2
+    else
+      problems.count
+    end
+  end
 
   def top_users
     sql = <<-SQL

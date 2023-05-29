@@ -8,12 +8,12 @@ import Kuroshiro from "kuroshiro";
 import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
 
 export default class extends Controller {
-  static targets = [ "questionField", "correctCount", "score", "timer", "input", "nextArrow", "playButton" ]
+  static targets = [ "questionField", "questionBanner", "correctCount", "score", "timer", "input", "nextArrow", "playButton" ]
 
   async connect() {
     console.log('Hello, from classic quiz!');
     this.gameRunning = false;
-    this.fullTime = 300;
+    this.fullTime = this.element.dataset.playTime;
     this.pointsPerQuestion = 5;
 
     this._resetUI();
@@ -22,19 +22,19 @@ export default class extends Controller {
     this.kuroshiro = new Kuroshiro();
 
     // Initialize KuromojiAnalyzer
-    // Here uses async/await, you could also use Promise
+    // Here we use async/await, you could also use Promise
     const analyzer = new KuromojiAnalyzer(
       { dictPath: "/kuromoji/dict" } // this points to the public/kuromoji/dict folder which was created as a workaround to bypass an error with kuromoji looking in the wrong place possibly because of webpacker
     );
     await this.kuroshiro.init(analyzer);
-    // bind(this.inputTarget);
+    bind(this.inputTarget);
   }
 
-  async fetchQuestions() {
+  async fetchQuestions(problemCount) {
     // query requests the randomList query as defined in the Graphql resolvers
     // we have explicitly written out the verb forms we want
     const query = `query {
-      randomList {
+      randomList(size: ${problemCount}) {
         dictionary_form
         short_present_form
         short_present_negative_form
@@ -43,8 +43,8 @@ export default class extends Controller {
       }
     }`;
 
-    // Here we make an API call to the Graphql endpoint 
-    // example https://www.netlify.com/blog/2020/12/21/send-graphql-queries-with-the-fetch-api-without-using-apollo-urql-or-other-graphql-clients/
+    // here we make an API call to the Graphql endpoint 
+    // example: https://www.netlify.com/blog/2020/12/21/send-graphql-queries-with-the-fetch-api-without-using-apollo-urql-or-other-graphql-clients/
     let response = await fetch("http://localhost:4000", { 
       method: "POST", 
       body: JSON.stringify({ query }),
@@ -59,7 +59,7 @@ export default class extends Controller {
   
   async buildQuestions() {
     // call API and store in response
-    const response = await this.fetchQuestions();
+    const response = await this.fetchQuestions(this.element.dataset.problemCount);
     // convert randomList array into format of questionData array
     // we need to wait for each promise in the map array to resolve
     return await Promise.all(response.data.randomList.map(async element => {
@@ -72,10 +72,9 @@ export default class extends Controller {
       // take value of target form as answer
       // convert answer into hiragana
       const answer = await this.convertToHiragana(element[targetForm]);
-      // console.log("answer", answer);
       // return the obj below
       return {
-        question: `${dictionaryForm} (${targetForm})`,
+        question: `${dictionaryForm} (${targetForm.replaceAll("_", " ")})`,
         answer
       }
     }));
@@ -111,11 +110,32 @@ export default class extends Controller {
     console.log("starting game");
   }
 
-  endGame() {
+  _postResults() {
+    console.log("posting");
+    // we grab data from the html data atrributes to use in our JS
+    const postURL = this.element.dataset.url;
+    return fetch(postURL, {
+      method: "POST",
+      body: JSON.stringify({
+        play: {
+          score: this.classicQuiz.score,
+          time: (this.fullTime - this.classicQuiz.timeLeft),
+          count: this.classicQuiz.correctCountValue
+        }
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": Rails.csrfToken(),
+      }
+    })
+  }
+
+  async endGame() {
     console.log("endgame");
     // gameRunning attribute changes from true to false
     this.gameRunning = false;
     this.classicQuiz.stopGame();
+    await this._postResults();
     this._displayEndGameModal();
     this._updateUI();
     this._resetUI();
@@ -133,7 +153,7 @@ export default class extends Controller {
   }
 
   _displayCorrectCount() {
-    this.correctCountTarget.innerText = `${this.classicQuiz.correctCountValue}/${this.classicQuiz.totalQuestions}`
+    this.correctCountTarget.innerText = `${this.classicQuiz.correctCountValue}/${this.classicQuiz.problemCount}`
   }
 
   keyUp(e) {
@@ -152,22 +172,31 @@ export default class extends Controller {
 
   submit(input) {
     this.classicQuiz.checkAnswer(input);
-    this._updateUI();
+    if (this.classicQuiz.gameWon()) {
+      this.endGame();
+    } else {
+      this._updateUI();
+    }
   }
 
   next() {
     console.log("next ui")
-    if (!this.classicQuiz.nextQuestion()) {
-      this.endGame();
-    }
+    this.inputTarget.value = "";
+    this.inputTarget.focus();
+    // if (!this.classicQuiz.nextQuestion()) {
+    //   this.endGame();
+    // }
     this._updateUI();
   }
 
   _startUI() {
+    // enables the answer form
     this.inputTarget.disabled = false;
+    // resets the next arrow to its inherited style value, making it visible again
     this.nextArrowTarget.style.display = "unset";
     // cursor focused to form
     this.inputTarget.focus();
+    // begins displaying time, ends the game when the timer reaches 0, and stops the timer
     const uiInterval = setInterval(() => {
       this._displayTime();
       if (this.classicQuiz.timeLeft <= 0) {
@@ -175,46 +204,60 @@ export default class extends Controller {
         clearInterval(uiInterval);
       }
     }, 1000);
+    // displays relevant data to users
     this._displayCorrectCount();
     this._displayScore();
   }
 
   _updateUI() {
-    this.questionFieldTarget.innerText = this.classicQuiz.currentQuestion() || "End of game";
+    // either displays the current question or prompts the user that the game is over
+    this.questionFieldTarget.innerText = this.classicQuiz.currentQuestion() || "Great Play!";
+    // displays the neutral color
     if (this.classicQuiz.greenLight === null) {
-      this.questionFieldTarget.style.border = "none"
+      this.questionBannerTarget.style.transition = "ease 0.3s";
+      this.questionBannerTarget.style.backgroundColor = null;
     } else if (this.classicQuiz.greenLight) {
-      // add visual confirmation (green outline)
-      this.questionFieldTarget.style.border = "solid 3px green"
+      // displays the correct answer color and clears the form
+      this.questionBannerTarget.style.transition = "ease 1s";
+      this.questionBannerTarget.style.backgroundColor = "green";
       this.inputTarget.value = "";
     } else {
-      // present error colors (red outline) and message
-      this.questionFieldTarget.style.border = "solid 3px red"
+      // displays the wrong answer color
+      this.questionBannerTarget.style.transition = "ease 1s";
+      this.questionBannerTarget.style.backgroundColor = "firebrick";
     }
+    // displays relevant data to users
     this._displayScore();
     this._displayCorrectCount();
   }
 
   _resetUI() {
+    // puts banner display to neutral color
+    this.questionBannerTarget.style.backgroundColor = null;
+    // resets the timer
     this._displayTime(this.fullTime);
+    // disables the form
     this.inputTarget.disabled = true;
+    // hides the next arrow
     this.nextArrowTarget.style.display = "none";
+    // clears the form
     this.questionFieldTarget.innerHTML = "";
-    // play button appears
+    // play button reappears
     this.playButtonTarget.style.display = "unset";
   }
 
   _displayEndGameModal() {
-    if (this.classicQuiz.correctCountValue === this.classicQuiz.totalQuestions) {
+    // checks for a perfect play, and fires the relevant endgame modal
+    if (this.classicQuiz.correctCountValue === this.classicQuiz.problemCount) {
       Swal.fire({
-        // imageUrl: `${this.classicQuiz.gameDataObject.perfectPlayUrl}`,
+        imageUrl: this.element.dataset.perfectPlayUrl,
         imageWidth: 200,
         imageHeight: 200,
         imageAlt: 'Perfect Play',
         title: '<u>Perfect Play!</u>',
         html:
           `<div>Time Bonus: ${this.classicQuiz.timeLeft}pts</div><br>` +
-          `<div>Correct Answers: ${this.classicQuiz.correctCountValue}/${this.classicQuiz.answerCount}</div><br>` +
+          `<div>Correct Answers: ${this.classicQuiz.correctCountValue}/${this.classicQuiz.problemCount}</div><br>` +
           `<div>Score: ${this.classicQuiz.score}pts</div>`
       });
     } else {
@@ -223,7 +266,7 @@ export default class extends Controller {
         title: '<u>Nice Play!</u>',
         html:
           `<div>Time Bonus: ${this.classicQuiz.timeLeft}pts</div><br>` +
-          `<div>Correct Answers: ${this.classicQuiz.correctCountValue}/${this.classicQuiz.answerCount}</div><br>` +
+          `<div>Correct Answers: ${this.classicQuiz.correctCountValue}/${this.classicQuiz.problemCount}</div><br>` +
           `<div>Score: ${this.classicQuiz.score}pts</div>`
       });
     }

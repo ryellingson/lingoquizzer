@@ -21,11 +21,11 @@ GAMES_HASH = [
 ]
 
 NUMBER_GUESS_HASH = [
-  {name: "Guess the Number", icon_based: false, question_header: nil, genre: "number_guess", difficulty: "beginner", category: "numbers", play_time: 60, score: 50, slug: "number_guess", unlock_cp: 5}
+  {name: "Guess the Number", icon_based: false, question_header: nil, genre: "number_guess", difficulty: "beginner", category: "numbers", play_time: 180, score: 50, slug: "number_guess", unlock_cp: 5}
 ]
 
 CONJUGATION_TABLE_GAME_JAPANESE_HASH = [
-  {name: "Japanese Verb Conjugation", icon_based: false, question_header: nil, genre: "classic_quiz", difficulty: "intermediate", category: "grammar", play_time: 120, score: 5, slug: "japanese_verb_conjugation", unlock_cp: 5}
+  {name: "Japanese Verb Conjugation", icon_based: false, question_header: nil, genre: "classic_quiz", difficulty: "intermediate", category: "grammar", play_time: 120, score: 5, slug: "verb_conjugation_1", unlock_cp: 5}
 ]
 
 def game_builder(lang, game_attr, json_required: true)
@@ -109,3 +109,15 @@ namespace :games do
     puts "done with games"
   end
 end
+
+# namespace :games do
+#   desc "update all the games"
+#   task update: :environment do |task, args|
+#     Language.all.each do |lang|
+#       NUMBER_GUESS_HASH.each do |game_attr|
+#         game_builder(lang, game_attr)
+#       end
+#     end
+#     puts "update num desc"
+#   end
+# end

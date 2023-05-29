@@ -12,6 +12,7 @@
     data-difficulty="<%= @game.difficulty %>"
     data-character-type="<%= @game.character_type %>"
     data-url="<%= game_plays_path(@game) %>"
+    data-problem-count="<%= @game.problem_count %>"
     data-perfect-play-url="<%= asset_url 'badges/games/perfect_play.svg' %>"
     <%#= "data-badge-url=#{asset_url @badge.custom_fields["image_path"]}" if @badge %>
   >

@@ -1,5 +1,5 @@
 import { Controller } from "stimulus"
-import EmojiButton from '@joeattardi/emoji-button';
+// import EmojiButton from '@joeattardi/emoji-button';
 
 export default class extends Controller {
   static targets = [ "messages", "chatInput", "form", "hiddenSubmitBtn" ]
@@ -33,13 +33,13 @@ export default class extends Controller {
   }
 
   toggleEmojis(event) {
-    const picker = new EmojiButton({
-      emojiSize: "3em"
-    });
-    picker.on('emoji', emoji => {
-      this.chatInputTarget.value += emoji;
-    });
-    picker.togglePicker(event.currentTarget);
+    // const picker = new EmojiButton({
+    //   emojiSize: "3em"
+    // });
+    // picker.on('emoji', emoji => {
+    //   this.chatInputTarget.value += emoji;
+    // });
+    // picker.togglePicker(event.currentTarget);
   }
 
   alignMessages() {

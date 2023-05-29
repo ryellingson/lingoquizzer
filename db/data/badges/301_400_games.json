@@ -414,7 +414,7 @@
     "name":"ちゅうがっこう",
     "description":"a japanese hiragana 2 perfect play",
     "custom_fields": {
-      "image_path":"badges/games/ja/hiragana_2.ちゅうがっこう.svg",
+      "image_path":"badges/games/ja/hiragana_2.ちゅうがっこう.svg",
       "game_slug":"hiragana_2",
       "language_code":"ja"
     }
@@ -462,7 +462,7 @@
   {
     "id":347,
     "name":"なな",
-    "description":"You guessed the number!",
+    "description":"You guessed the number in Japanese!",
     "custom_fields": {
       "image_path":"badges/games/ja/numguess.nana.png",
       "game_slug":"number_guess",
@@ -472,7 +472,7 @@
   {
     "id":348,
     "name":"Keepin it a Hunnit",
-    "description":"You guessed the number!",
+    "description":"You guessed the number in English!",
     "custom_fields": {
       "image_path":"badges/games/en/numguess.keepin_it_a_hunnit.png",
       "game_slug":"number_guess",
@@ -482,7 +482,7 @@
   {
     "id":349,
     "name":"Uno",
-    "description":"You guessed the number!",
+    "description":"You guessed the number in Spanish!",
     "custom_fields": {
       "image_path":"badges/games/es/numguess.uno.png",
       "game_slug":"number_guess",
@@ -492,11 +492,21 @@
   {
     "id":350,
     "name":"Quatre-Vingt",
-    "description":"You guessed the number!",
+    "description":"You guessed the number in French!",
     "custom_fields": {
       "image_path":"badges/games/fr/numguess.quatre-vingt.png",
       "game_slug":"number_guess",
       "language_code":"fr"
+    }
+  },
+  {
+    "id":351,
+    "name":"文法王",
+    "description":"You congugated all the verbs in Japanese!",
+    "custom_fields": {
+      "image_path":"badges/games/ja/verb_conjugation_1.文法王.png",
+      "game_slug":"verb_conjugation_1",
+      "language_code":"ja"
     }
   }
 ]
