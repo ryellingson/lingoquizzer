@@ -46,6 +46,8 @@ gem 'redcarpet'
 gem 'psych', '< 4'
 
 gem 'net-smtp', require: false
+gem 'net-pop', require: false
+gem 'net-imap', require: false
 
 gem 'will_paginate'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -93,6 +93,7 @@ GEM
     concurrent-ruby (1.1.9)
     connection_pool (2.2.5)
     crass (1.0.6)
+    date (3.3.3)
     declarative (0.0.20)
     devise (4.8.1)
       bcrypt (~> 3.0)
@@ -476,6 +477,11 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.1.1)
     nested_form (0.3.2)
+    net-imap (0.3.4)
+      date
+      net-protocol
+    net-pop (0.1.2)
+      net-protocol
     net-protocol (0.2.1)
       timeout
     net-smtp (0.3.3)
@@ -684,6 +690,8 @@ DEPENDENCIES
   mail_form
   merit
   mini_magick
+  net-imap
+  net-pop
   net-smtp
   pg (>= 0.18, < 2.0)
   pry (~> 0.14.2)
