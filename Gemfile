@@ -39,6 +39,8 @@ gem 'devise'
 
 gem 'pundit'
 
+gem 'mail', '2.8.0'
+
 gem 'faker'
 
 gem 'redcarpet'
