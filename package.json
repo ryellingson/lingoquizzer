@@ -1,7 +1,7 @@
 {
   "name": "lingoquizzer",
   "engines": {
-    "node": "16.18.1"
+    "node": "16.x"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +20,8 @@
     "trix": "^1.2.0",
     "turbolinks": "^5.2.0",
     "wanakana": "^4.0.2",
-    "webpack": "4.46.0"
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
   "version": "0.1.0",
   "devDependencies": {
