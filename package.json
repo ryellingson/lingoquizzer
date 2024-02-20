@@ -20,7 +20,7 @@
     "trix": "^1.2.0",
     "turbolinks": "^5.2.0",
     "wanakana": "^4.0.2",
-    "webpack": "^4.0.0"
+    "webpack": "4.46.0"
   },
   "version": "0.1.0",
   "devDependencies": {
